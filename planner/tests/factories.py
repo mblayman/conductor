@@ -4,6 +4,13 @@ from faker import Factory
 fake = Factory.create()
 
 
+class MilestoneFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Milestone'
+
+    date = factory.Faker('date_time')
+
+
 class SchoolFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.School'

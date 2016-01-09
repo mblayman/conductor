@@ -1,4 +1,14 @@
+import datetime
+
 from lcp.tests import TestCase
+
+
+class TestMilestone(TestCase):
+
+    def test_has_date(self):
+        date = datetime.datetime.now()
+        milestone = self.MilestoneFactory.build(date=date)
+        self.assertEqual(date, milestone.date)
 
 
 class TestSchool(TestCase):
