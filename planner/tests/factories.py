@@ -10,3 +10,4 @@ class SchoolFactory(factory.django.DjangoModelFactory):
 
     name = factory.LazyAttribute(
         lambda o: '{0} College'.format(fake.last_name_female()))
+    url = factory.Faker('url')
