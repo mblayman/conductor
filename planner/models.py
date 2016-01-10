@@ -7,5 +7,6 @@ class Milestone(models.Model):
 
 class School(models.Model):
     name = models.TextField()
+    slug = models.SlugField(max_length=256, unique=True)
     url = models.URLField()
     milestones_url = models.URLField()

@@ -17,5 +17,6 @@ class SchoolFactory(factory.django.DjangoModelFactory):
 
     name = factory.LazyAttribute(
         lambda o: '{0} College'.format(fake.last_name_female()))
+    slug = factory.Faker('slug')
     url = factory.Faker('url')
     milestones_url = factory.Faker('url')

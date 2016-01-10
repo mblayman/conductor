@@ -17,6 +17,10 @@ class TestSchool(TestCase):
         school = self.SchoolFactory.build(name='University of Virginia')
         self.assertEqual('University of Virginia', school.name)
 
+    def test_has_slug(self):
+        school = self.SchoolFactory.build(slug='university-of-virginia')
+        self.assertEqual('university-of-virginia', school.slug)
+
     def test_has_url(self):
         school = self.SchoolFactory.build(url='http://www.virginia.edu/')
         self.assertEqual('http://www.virginia.edu/', school.url)
