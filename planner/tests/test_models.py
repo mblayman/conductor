@@ -20,3 +20,9 @@ class TestSchool(TestCase):
     def test_has_url(self):
         school = self.SchoolFactory.build(url='http://www.virginia.edu/')
         self.assertEqual('http://www.virginia.edu/', school.url)
+
+    def test_has_milestones_url(self):
+        school = self.SchoolFactory.build(
+            milestones_url='http://admission.virginia.edu/events')
+        self.assertEqual(
+            'http://admission.virginia.edu/events', school.milestones_url)

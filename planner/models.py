@@ -8,3 +8,4 @@ class Milestone(models.Model):
 class School(models.Model):
     name = models.TextField()
     url = models.URLField()
+    milestones_url = models.URLField()
