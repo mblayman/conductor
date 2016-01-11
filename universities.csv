@@ -1,39 +1,1320 @@
 school,url
-A.T. Still University of Health Sciences,http://www.atsu.edu/
+University of Virginia,http://www.virginia.edu/
+Johns Hopkins University,https://www.jhu.edu/
+Yale University,http://www.yale.edu/
+Harvard University,http://www.harvard.edu/
+Massachusetts Institute of Technology,http://web.mit.edu/
+Dartmouth College,http://dartmouth.edu/
+Princeton University,http://www.princeton.edu/
+Columbia University,http://www.columbia.edu/
+Brown University,http://www.brown.edu/
+Stanford University,http://www.stanford.edu/
+California Institute of Technology,http://www.caltech.edu/
+Pomona College,http://www.pomona.edu/
+University of Chicago,http://www.uchicago.edu/
+Northwestern University,http://www.northwestern.edu/
+University of Notre Dame,http://www.nd.edu/
+Bowdoin College,http://www.bowdoin.edu/
+Amherst College,http://www.amherst.edu/
+Williams College,http://www.williams.edu/
+Washington University in Saint Louis,http://www.wustl.edu/
+Duke University,http://duke.edu/
+University of Pennsylvania,http://www.upenn.edu/
+Swarthmore College,http://www.swarthmore.edu/
+Vanderbilt University,http://www.vanderbilt.edu/
+Rice University,http://www.riceinfo.rice.edu/
+Franklin W. Olin College of Engineering,http://www.olin.edu/
+University of California-Berkeley,http://www.berkeley.edu/
+Claremont McKenna College,http://www.cmc.edu/
+Harvey Mudd College,https://www.hmc.edu/
+University of Southern California,http://www.usc.edu/
+Wesleyan University,http://www.wesleyan.edu/
+Georgetown University,http://www.georgetown.edu/
+Tufts University,http://www.tufts.edu/
+Carleton College,http://www.carleton.edu/
+Cornell University,http://www.cornell.edu/
+Haverford College,https://www.haverford.edu/
+Middlebury College,http://www.middlebury.edu/
+Washington & Lee University,http://www.wlu.edu/
+Colorado College,http://www.coloradocollege.edu/
+Barnard College,http://www.barnard.edu/
+Hamilton College,http://www.hamilton.edu/
+Vassar College,http://www.vassar.edu/
+Davidson College,http://www.davidson.edu/
+Carnegie Mellon University,http://www.cmu.edu/
+University of California-Los Angeles,http://www.ucla.edu/
+Scripps College,http://www.scrippscollege.edu/
+Emory University,http://www.emory.edu/
+Grinnell College,http://www.grinnell.edu/
+Colby College,http://www.colby.edu/
+Boston College,http://www.bc.edu/
+Wellesley College,http://www.wellesley.edu/
+Colgate University,http://www.colgate.edu/
+The Cooper Union for the Advancement of Science & Art,http://cooper.edu/
+Oberlin College,http://www.oberlin.edu/
+Bucknell University,http://www.bucknell.edu/
+College of William and Mary,http://www.wm.edu/
+University of Michigan,http://umich.edu/
+Macalester College,http://www.macalester.edu/
+University of North Carolina-Chapel Hill,http://www.unc.edu/
+Kenyon College,http://www.kenyon.edu/
+University of Richmond,http://www.richmond.edu/
+Occidental College,http://www.oxy.edu/
+Pitzer College,http://www.pitzer.edu/
+George Washington University,http://www.gwu.edu/
+Babson College,http://www.babson.edu/
+Brandeis University,http://www.brandeis.edu/
+Northeastern University,http://www.northeastern.edu/
+New York University,http://www.nyu.edu/
+University of Rochester,http://www.rochester.edu/
+Reed College,http://www.reed.edu/
+Lafayette College,https://www.lafayette.edu/
+Lehigh University,http://www.lehigh.edu/
+Rhode Island School of Design,http://www.risd.edu/
+University of California-San Diego,http://www.ucsd.edu/
+Trinity College,http://www.trincoll.edu/
+Bryn Mawr College,http://www.brynmawr.edu/
+University of Miami,http://www.miami.edu/
+Rensselaer Polytechnic Institute,http://www.rpi.edu/
+Dickinson College,http://www.dickinson.edu/
+Gettysburg College,http://www.gettysburg.edu/
+University of Florida,http://www.ufl.edu/
+Stevens Institute of Technology,http://www.stevens.edu/
+The Jewish Theological Seminary of America,http://www.jtsa.edu/
+Skidmore College,http://www.skidmore.edu/
+Binghamton,http://www.binghamton.edu/
+Muhlenberg College,http://www.muhlenberg.edu/
+Villanova University,http://www.villanova.edu/
+Pepperdine University,http://www.pepperdine.edu/
+University of Connecticut,http://uconn.edu/
+American University,http://www.american.edu/
+University of Maryland-College Park,http://www.umd.edu/
+The College of New Jersey,http://www.tcnj.edu/
+Fordham University,http://www.fordham.edu/
+College at Geneseo,http://www.geneseo.edu/
+University of Texas-Austin,http://www.utexas.edu/
+Texas Christian University,http://www.tcu.edu/
+Whitman College,https://www.whitman.edu/
+"California Polytechnic State University, San Luis Obispo",http://www.calpoly.edu/
+University of California-Davis,http://ucdavis.edu/
+University of California-Santa Barbara,http://www.ucsb.edu/
+University of San Diego,http://www.sandiego.edu/
+Bentley University,http://www.bentley.edu/
+Boston University,http://www.bu.edu/
+Gordon College,http://www.gordon.edu/
+University of Tulsa,http://utulsa.edu/
+Soka University of America,http://www.soka.edu/
+Colorado School of Mines,http://www.mines.edu/
+Georgia Institute of Technology,http://www.gatech.edu/
+Denison University,http://denison.edu/
+University of the Pacific,http://www.pacific.edu/
+Santa Clara University,http://www.scu.edu/
+Emerson College,http://www.emerson.edu/
+Case Western Reserve University,http://www.case.edu/
+Pennsylvania State University,http://www.psu.edu/
+University of California-Irvine,http://www.uci.edu/
+Chapman University,http://www.chapman.edu/
+University of Minnesota-Twin Cities,http://www.umn.edu/
+Baruch College,http://www.baruch.cuny.edu/
+Stony Brook University,http://www.stonybrook.edu/
+Elon University,http://www.elon.edu/
+Brigham Young University,http://www.byu.edu/
+Loyola Marymount University,http://www.lmu.edu/
+Rhodes College,http://www.rhodes.edu/
+Southern Methodist University,http://www.smu.edu/
+Cornell College,http://www.cornellcollege.edu/
+Saint Olaf College,http://www.stolaf.edu/
+Syracuse University,http://www.syracuse.edu/
+University of Pittsburgh,http://www.pitt.edu/
+University of the South,http://www.sewanee.edu/
+University of Puget Sound,http://www.pugetsound.edu/
+University of Washington,http://www.washington.edu/
+Marquette University,http://www.mu.edu/
+Florida State University,http://www.fsu.edu/
+Illinois Wesleyan University,http://www.iwu.edu/
+Simmons College,http://www.simmons.edu/
+University of Dayton,http://www.udayton.edu/
+College of Wooster,http://www.wooster.edu/
+University of Alabama,http://www.ua.edu/
+University of Illinois-Urbana-Champaign,http://illinois.edu/
+DePauw University,http://www.depauw.edu/
+Maryland Institute College of Art,http://www.mica.edu/
+Campbell University,http://www.campbell.edu/
+University of Texas-Dallas,http://www.utdallas.edu/
+Gonzaga University,http://www.gonzaga.edu/
+University of Central Florida,http://www.ucf.edu/
+Rollins College,http://www.rollins.edu/
+Illinois Institute of Technology,http://www.iit.edu/
+North Carolina State University,https://www.ncsu.edu/
+Austin College,http://www.austincollege.edu/
+Virginia Military Institute,http://www.vmi.edu/
+University of Delaware,http://www.udel.edu/
+University of Georgia,http://www.uga.edu/
+Loyola University Chicago,http://www.luc.edu/
+Rose-Hulman Institute of Technology,http://www.rose-hulman.edu/
+Saint Mary's College of Maryland,http://www.smcm.edu/
+Gustavus Adolphus College,http://gustavus.edu/
+Millsaps College,http://www.millsaps.edu/
+College of Environmental Science & Forestry,http://www.esf.edu/
+College at New Paltz,http://www.newpaltz.edu/
+Ohio State University,http://www.osu.edu/
+Clemson University,http://www.clemson.edu/
+Baptist Memorial College of Health Sciences,http://www.bchs.edu/
+Trinity University,http://www.trinity.edu/
+New College of Florida,http://www.ncf.edu/
+Point Loma Nazarene University,http://www.pointloma.edu/
+San Diego State University,http://www.sdsu.edu/
+Rutgers University-New Brunswick,http://www.rutgers.edu/
+Rochester Institute of Technology,http://www.rit.edu/
+Buffalo,http://www.buffalo.edu/
+Allegheny College,http://allegheny.edu/
+Providence College,http://www.providence.edu/
+Baylor University,http://www.baylor.edu/
+Dallas Baptist University,http://www.dbu.edu/
+Southwestern University,http://www.southwestern.edu/
+Purdue University,http://www.purdue.edu/
+California Lutheran University,http://www.callutheran.edu/
+Wheaton College,http://www.wheaton.edu/
+Goshen College,http://www.goshen.edu/
+Centre College,http://www.centre.edu/
+Loyola University Maryland,http://www.loyola.edu/
+Andrews University,http://www.andrews.edu/
+Ramapo College of New Jersey,http://www.ramapo.edu/
+Roberts Wesleyan College,http://www.roberts.edu/
+College at Purchase,http://www.purchase.edu/
+Wofford College,http://www.wofford.edu/
+Lipscomb University,http://www.lipscomb.edu/
+Azusa Pacific University,http://www.apu.edu/
+University of South Florida,http://www.usf.edu/
+College at Oneonta,http://www.oneonta.edu/
+University of North Carolina-Wilmington,http://www.uncw.edu/
+Juniata College,http://www.juniata.edu/
 Abilene Christian University,http://www.acu.edu/
-Abraham Baldwin Agricultural College,http://www.abac.edu/
-Academy of Art University,http://www.academyart.edu/
-Adams State College,http://www.adams.edu/
+LeTourneau University,http://www.letu.edu/
+Texas A&M University,http://www.tamu.edu/
+George Mason University,http://www.gmu.edu/
+University of Wisconsin-Madison,http://www.wisc.edu/
+Westmont College,http://www.westmont.edu/
+University of Denver,http://www.du.edu/
+Lyme Academy College of Fine Arts,http://www.lymeacademy.edu/
+Bradley University,http://www.bradley.edu/
+Butler University,https://www.butler.edu/
+Kalamazoo College,http://www.kzoo.edu/
+Pratt Institute,http://www.pratt.edu/
+Siena College,http://www.siena.edu/
+University of South Carolina,http://www.sc.edu/
+James Madison University,http://www.jmu.edu/
+Beloit College,http://www.beloit.edu/
+University of Hartford,http://www.hartford.edu/
+Drake University,http://www.drake.edu/
+Salisbury University,http://www.salisbury.edu/
+McDaniel College,http://www.mcdaniel.edu/
+Alfred University,http://www.alfred.edu/
+University of North Carolina-School of the Arts,http://www.uncsa.edu/
+Messiah College,http://www.messiah.edu/
+Presbyterian College,http://www.presby.edu/
+Milwaukee School of Engineering,http://www.msoe.edu/
+Spring Hill College,http://www.shc.edu/
+Stetson University,http://www.stetson.edu/
+Spelman College,http://www.spelman.edu/
+Lewis University,http://www.lewisu.edu/
+Hanover College,http://www.hanover.edu/
+Mount Saint Mary's University,http://www.msmary.edu/
+Boston Conservatory,http://www.bostonconservatory.edu/
+University of Minnesota-Morris,http://www.morris.umn.edu/
+Saint Louis University,http://www.slu.edu/
+University of Nebraska-Lincoln,http://www.unl.edu/
+Ithaca College,http://www.ithaca.edu/
+Westminster College,http://www.westminstercollege.edu/
+Bryan College,http://www.bryan.edu/
+Hampden-Sydney College,http://www.hsc.edu/
+University of Maryland-Baltimore County,http://www.umbc.edu/
+Emmanuel College,http://www.emmanuel.edu/
+University of Massachusetts-Amherst,http://www.umass.edu/
+Kettering University,http://www.kettering.edu/
+Northwestern College,http://www.nwciowa.edu/
+William Jewell College,http://www.jewell.edu/
+Rowan University,http://www.rowan.edu/
+Hunter College,http://www.hunter.cuny.edu/
+Queens College,http://www.qc.cuny.edu/
+Albany,http://www.albany.edu/
+College at Cortland,http://www.cortland.edu/
+Xavier University,http://www.xavier.edu/
+University of Portland,http://www.up.edu/
+Arcadia University,https://www.arcadia.edu/
+Ursinus College,http://www.ursinus.edu/
+Freed-Hardeman University,http://www.fhu.edu/
+Virginia Polytechnic Institute & State University,http://www.vt.edu/
+Birmingham-Southern College,http://www.bsc.edu/
+John Brown University,http://www.jbu.edu/
+Flagler College,http://www.flagler.edu/
+University of Tampa,http://www.ut.edu/
+Covenant College,http://www.covenant.edu/
+DePaul University,http://www.depaul.edu/
+Millikin University,http://www.millikin.edu/
+North Central College,http://www.northcentralcollege.edu/
+University of Illinois-Springfield,http://www.uis.edu/
+Wabash College,http://www.wabash.edu/
+Asbury University,http://www.asbury.edu/
+College of the Ozarks,http://www.cofo.edu/
+Brooklyn College,http://www.brooklyn.cuny.edu/
+College at Brockport,http://www.brockport.edu/
+College at Oswego,http://www.oswego.edu/
+Miami University,http://www.miamioh.edu/
+Oklahoma Christian University,http://www.oc.edu/
+Converse College,http://www.converse.edu/
+University of Redlands,http://www.redlands.edu/
+The Catholic University of America,http://www.cua.edu/
+Howard University,http://www.howard.edu/
+Florida Institute of Technology,http://www.fit.edu/
+Mercer University,http://www.mercer.edu/
+Coe College,http://www.coe.edu/
+Washington College,http://www.washcoll.edu/
+Calvin College,http://www.calvin.edu/
+Minneapolis College of Art & Design,http://mcad.edu/
+Webster University,http://www.webster.edu/
 Adelphi University,http://www.adelphi.edu/
+Saint John's University,http://www.stjohns.edu/
+Wells College,https://www.wells.edu/
+Queens University of Charlotte,http://www.queens.edu/
+Saint Edward's University,https://www.stedwards.edu/
+Seattle University,http://www.seattleu.edu/
+University of Arkansas,http://www.uark.edu/
+California State University-Long Beach,http://www.csulb.edu/
+University of California-Santa Cruz,http://www.ucsc.edu/
+Florida International University,http://www.fiu.edu/
+Savannah College of Art & Design,http://www.scad.edu/
+Benedictine College,http://www.benedictine.edu/
+Tulane University,http://www.tulane.edu/
+Towson University,http://www.towson.edu/
+University of Detroit Mercy,http://www.udmercy.edu/
+Michigan State University,http://www.msu.edu/
+Bethel University,http://www.bethelu.edu/
+Saint Catherine University,http://www.stkate.edu/
+University of Mississippi,http://www.olemiss.edu/
+University of Missouri-Kansas City,http://www.umkc.edu/
+Hofstra University,http://www.hofstra.edu/
+Bryn Athyn College,http://www.chatham.edu/
+University of the Sciences in Philadelphia,http://www.usciences.edu/
+West Chester University of Pennsylvania,http://www.wcupa.edu/
+Furman University,http://www.furman.edu/
+Christian Brothers University,http://www.cbu.edu/
+Southern Adventist University,http://www1.southern.edu/
+University of Tennessee,http://www.utk.edu/
+Randolph-Macon College,http://www.rmc.edu/
+University of North Florida,http://www.unf.edu/
+Berry College,http://www.berry.edu/
+Indiana University-Bloomington,http://www.iub.edu/
+Luther College,http://www.luther.edu/
+Centenary College of Louisiana,http://www.centenary.edu/
+Lawrence Technological University,http://www.ltu.edu/
+Hamline University,http://www.hamline.edu/
+College of Saint Benedict & Saint John's University,http://www.csbsju.edu/
+Mississippi State University,http://www.msstate.edu/
+William Carey University,http://www.wmcarey.edu/
+Truman State University,http://www.truman.edu/
+Montana State University,http://www.montana.edu/
+New Jersey Institute of Technology,http://www.njit.edu/
+Albany College of Pharmacy & Health Sciences,http://www.acphs.edu/
+Saint John Fisher College,http://www.sjfc.edu/
+College at Plattsburgh,http://www.plattsburgh.edu/
+Appalachian State University,http://www.appstate.edu/
+Corban University,https://www.corban.edu/
+Albright College,http://www.albright.edu/
+Elizabethtown College,http://www.etown.edu/
+Misericordia University,http://www.misericordia.edu/
+Brigham Young University-Hawaii,http://byuh.edu/
+Lyon College,http://www.lyon.edu/
+The Master's College,http://www.masters.edu/
+Mills College,http://www.mills.edu/
+The College of Idaho,http://www.collegeofidaho.edu/
+Dominican University,http://www.dom.edu/
+University of Saint Francis,http://www.sf.edu/
+College for Creative Studies,http://www.collegeforcreativestudies.edu/
+Creighton University,http://www.creighton.edu/
+Nebraska Methodist College,http://www.methodistcollege.edu/
+Polytechnic Institute,https://sunypoly.edu/
+Lebanon Valley College,http://www.lvc.edu/
+North Greenville University,http://www.ngu.edu/
+Houston Baptist University,http://www.hbu.edu/
+Texas Tech University,http://www.ttu.edu/
+Wisconsin Lutheran College,http://www.wlc.edu/
+Auburn University,http://www.auburn.edu/
+Samford University,http://www.samford.edu/
+Hendrix College,http://www.hendrix.edu/
+Ouachita Baptist University,http://www.obu.edu/
+University of San Francisco,http://www.usfca.edu/
+Eckerd College,http://www.eckerd.edu/
+Florida Southern College,http://www.flsouthern.edu/
+North Park University,http://www.northpark.edu/
+Anderson University,http://www.andersonuniversity.edu/
+Taylor University,http://www.taylor.edu/
+Albion College,http://www.albion.edu/
+Michigan Technological University,http://www.mtu.edu/
+Stockton University,http://www.stockton.edu/
+The New School,http://www.newschool.edu/
+College at Fredonia,http://www.fredonia.edu/
+Wagner College,http://wagner.edu/
+Yeshiva University,http://www.yu.edu/
+Catawba College,http://catawba.edu/
+University of North Carolina-Asheville,http://www.unca.edu/
+Baldwin-Wallace University,http://www.bw.edu/
+Cedarville University,http://www.cedarville.edu/
+Franciscan University of Steubenville,http://www.franciscan.edu/
+Willamette University,http://www.willamette.edu/
+Drexel University,http://www.drexel.edu/
+Saint Vincent College,http://www.stvincent.edu/
+Susquehanna University,http://www.susqu.edu/
+Salve Regina University,http://www.salve.edu/
+University of South Dakota,http://www.usd.edu/
+Milligan College,http://www.milligan.edu/
+Saint Michael's College,http://www.smcvt.edu/
+University of Vermont,http://www.uvm.edu/
+Christopher Newport University,http://cnu.edu/
+Hollins University,https://www.hollins.edu/
+Otis College of Art & Design,http://www.otis.edu/
+Saint Mary's College of California,http://www.stmarys-ca.edu/
+Quinnipiac University,http://www.quinnipiac.edu/
+Eureka College,http://www.eureka.edu/
+University of Illinois-Chicago,http://www.uic.edu/
+University of Iowa,http://www.uiowa.edu/
+University of Kentucky,http://www.uky.edu/
+Wentworth Institute of Technology,http://www.wit.edu/
+Clarkson University,http://www.clarkson.edu/
+Salem College,http://www.salem.edu/
+"California State Polytechnic University, Pomona",http://www.cpp.edu/
+Thomas Aquinas College,http://www.thomasaquinas.edu/
+University of North Georgia,http://ung.edu/
+Elmhurst College,http://www.elmhurst.edu/
+Valparaiso University,http://www.valpo.edu/
+Central College,http://www.central.edu/
+Newman University,http://newmanu.edu/
+Maryville University of Saint Louis,http://www.maryville.edu/
+Rockhurst University,http://www.rockhurst.edu/
+City College,http://www.ccny.cuny.edu/
+Houghton College,http://www.houghton.edu/
+Oklahoma City University,http://www.okcu.edu/
+DeSales University,http://www.desales.edu/
+Geneva College,http://www.geneva.edu/
+Temple University,http://www.temple.edu/
+Union University,http://www.uu.edu/
+University of Houston,http://www.uh.edu/
+Eastern Mennonite University,http://www.emu.edu/
+University of Charleston,http://www.ucwv.edu/
+Biola University,http://www.biola.edu/
+University of California-Riverside,http://www.ucr.edu/
+University of La Verne,http://laverne.edu/
+Saint Xavier University,http://www.sxu.edu/
+Marian University,http://www.marian.edu/
+Bethel College,http://www.bethelcollege.edu/
+Transylvania University,http://www.transy.edu/
+University of New Orleans,http://www.uno.edu/
+Notre Dame of Maryland University,http://www.ndm.edu/
+Bay Path University,http://www.baypath.edu/
+Alma College,http://www.alma.edu/
+Hope College,http://www.hope.edu/
+Spring Arbor University,http://www.arbor.edu/
+Augsburg College,http://www.augsburg.edu/
+Mississippi College,http://www.mc.edu/
+Carroll College,http://www.carroll.edu/
+Rutgers University-Newark,http://www.newark.rutgers.edu/
+Le Moyne College,http://lemoyne.edu/
+Molloy College,http://www.molloy.edu/
+Utica College,http://www.utica.edu/
+University of Cincinnati,http://www.uc.edu/
+Hiram College,http://www.hiram.edu/
+University of Oklahoma,http://www.ou.edu/
+Duquesne University,http://www.duq.edu/
+University of Sioux Falls,http://www.usiouxfalls.edu/
+Saint Mary's University,https://www.stmarytx.edu/
+Mary Baldwin College,http://www.mbc.edu/
+Western Washington University,http://www.wwu.edu/
+Carthage College,https://www.carthage.edu/
+Harding University,http://www.harding.edu/
+Dominican University of California,http://www.dominican.edu/
+Georgia College & State University,http://www.gcsu.edu/
+Georgia Southern University,http://www.georgiasouthern.edu/
+Georgia State University,http://www.gsu.edu/
+Northern Illinois University,http://www.niu.edu/
+Saint Mary's College,https://www.saintmarys.edu/
+Sterling College,http://www.sterlingcollege.edu/
+Endicott College,http://www.endicott.edu/
+Stonehill College,http://www.stonehill.edu/
+Adrian College,http://adrian.edu/
+University of Michigan-Dearborn,http://umdearborn.edu/
+Belhaven University,http://www.belhaven.edu/
+Canisius College,http://www.canisius.edu/
+Western Carolina University,http://www.wcu.edu/
+Bluffton University,http://www.bluffton.edu/
+Ohio Wesleyan University,http://www.owu.edu/
+University of Oregon,http://uoregon.edu/
+Edinboro University of Pennsylvania,http://www.edinboro.edu/
+Saint Joseph's University,http://www.sju.edu/
+Columbia International University,http://www.ciu.edu/
+Augustana College,http://www.augie.edu/
+Bridgewater College,http://www.bridgewater.edu/
+University of Mary Washington,http://www.umw.edu/
+Roanoke College,http://www.roanoke.edu/
+Wheeling Jesuit University,http://www.wju.edu/
+Cardinal Stritch University,http://www.stritch.edu/
+The King's College,http://www.tkc.edu/
+University of Arizona,http://www.arizona.edu/
+Colorado State University,http://www.colostate.edu/
+The Baptist College of Florida,http://www.baptistcollege.edu/
+Florida Atlantic University,http://www.fau.edu/
+University of Idaho,http://www.uidaho.edu/
+Concordia University-Chicago,https://www.cuchicago.edu/
+Greenville College,http://www.greenville.edu/
+Concordia College-Moorhead,https://www.concordiacollege.edu/
+College of Saint Scholastica,http://www.css.edu/
+University of Saint Thomas,http://www.stthomas.edu/
+University of Missouri,http://www.missouri.edu/
+Missouri University of Science & Technology,http://www.mst.edu/
+Oral Roberts University,http://www.oru.edu/
+Concordia University-Portland,http://www.cu-portland.edu/
+Lycoming College,http://www.lycoming.edu/
+Bryant University,http://www.bryant.edu/
+Belmont University,http://www.belmont.edu
+University of Dallas,http://www.udallas.edu/
+Pacific Lutheran University,http://www.plu.edu/
+Seattle Pacific University,http://www.spu.edu/
+Ohio Valley University,http://www.ovu.edu/
+Ripon College,http://www.ripon.edu/
+University of Wisconsin-La Crosse,http://www.uwlax.edu/
+Pacific Union College,http://www.puc.edu/
+University of Colorado-Boulder,http://www.colorado.edu/
+LaGrange College,http://www.lagrange.edu/
+Northwest Nazarene University,http://www.nnu.edu/
+VanderCook College of Music,http://www.vandercook.edu/
+University of Evansville,http://www.evansville.edu/
+Indiana Wesleyan University,https://www.indwes.edu/
+Wartburg College,http://www.wartburg.edu/
+Brescia University,http://www.brescia.edu/
+Kentucky Wesleyan College,http://www.kwc.edu/
+University of Massachusetts-Lowell,http://www.uml.edu/
+Massachusetts College of Art & Design,http://www.massart.edu/
+Nebraska Wesleyan University,https://www.nebrwesleyan.edu/
+Saint Anselm College,http://www.anselm.edu/
+Monmouth University,http://www.monmouth.edu/
+Meredith College,http://www.meredith.edu/
+Ohio Northern University,http://www.onu.edu/
+Oklahoma State University,http://www.okstate.edu/
+Oklahoma Baptist University,http://www.okbu.edu/
+University of Science & Arts of Oklahoma,https://usao.edu/
+University of the Arts,http://www.uarts.edu/
+Champlain College,http://www.champlain.edu/
+Norwich University,http://www.norwich.edu/
+Sweet Briar College,http://www.sbc.edu/
+Nova Southeastern University,http://www.nova.edu/
+Blackburn College,http://blackburn.edu/
+Saint Joseph's College,http://www.sjcny.edu/
+Dordt College,http://www.dordt.edu/
+Iowa State University,http://www.iastate.edu/
+Loras College,http://loras.edu/
+University of Saint Mary,http://stmary.edu/
+Alice Lloyd College,http://www.alc.edu/
+Maine Maritime Academy,http://mainemaritime.edu/
+Framingham State University,http://www.framingham.edu/
+Crown College,http://www.crown.edu/
+Drew University,http://www.drew.edu/
+New Mexico Institute of Mining & Technology,http://www.nmt.edu/
+Capital University,http://www.capital.edu/
+Cleveland Institute of Art,http://www.cia.edu/
+The University of Findlay,http://www.findlay.edu/
+John Carroll University,http://www.jcu.edu/
+George Fox University,http://www.georgefox.edu/
+Linfield College,http://www.linfield.edu/
+Aquinas College,http://www.aquinascollege.edu/
+Fisk University,http://www.fisk.edu/
+Johnson University,http://www.johnsonu.edu/
+Virginia Commonwealth University,http://www.vcu.edu/
+Trinity Lutheran College,https://www.tlc.edu/
+Saint Norbert College,http://www.snc.edu/
+California State University-Fullerton,http://www.fullerton.edu/
+California Maritime Academy,http://www.csum.edu/
+Jacksonville University,http://www.ju.edu/
+Ball State University,http://www.bsu.edu/
+Graceland University,http://www.graceland.edu/
+Morningside College,http://www.morningside.edu/
+University of Louisville,http://www.louisville.edu/
+Louisiana State University,http://www.lsu.edu/
+Mississippi University for Women,http://www.muw.edu/
+University of Missouri-Saint Louis,http://www.umsl.edu/
+University of New Hampshire,http://www.unh.edu/
+Guilford College,http://www.guilford.edu/
+Malone University,http://www.malone.edu/
+Mount Vernon Nazarene University,http://www.mvnu.edu/
+Wittenberg University,http://www.wittenberg.edu/
+Eastern University,http://www.eastern.edu/
+Millersville University of Pennsylvania,http://www.millersville.edu/
+Maryville College,http://www.maryvillecollege.edu/
+Hardin-Simmons University,http://www.hsutx.edu/
+Hampton University,http://www.hamptonu.edu/
+Alderson-Broaddus College,http://www.ab.edu/
+Northland College,http://www.northland.edu/
+Whittier College,http://www.whittier.edu/
+Toccoa Falls College,http://www.tfc.edu/
+Wesleyan College,http://www.wesleyancollege.edu/
+School of the Art Institute of Chicago,http://www.saic.edu/
+Saint Ambrose University,http://www.sau.edu/
+University of Maine,https://umaine.edu/
+Hood College,http://www.hood.edu/
+Stevenson University,http://www.stevenson.edu/
+Martin Luther College,http://www.mlc-wels.edu/
+Winona State University,http://www.winona.edu/
+Rutgers University-Camden,http://www.camden.rutgers.edu/
+Niagara University,http://www.niagara.edu/
+East Carolina University,http://www.ecu.edu/
+Kettering College,http://www.kc.edu/
+Oregon State University,http://oregonstate.edu/
+Baptist Bible College,http://www.gobbc.edu/
+Mercyhurst University,http://www.mercyhurst.edu/
+Columbia College,http://www.columbiasc.edu/
+Dallas Christian College,http://www.dallas.edu/
+University of North Texas,http://www.unt.edu/
+Southern California Institute of Architecture,http://www.sciarc.edu/
+Embry-Riddle Aeronautical University,http://www.erau.edu/
+Piedmont College,http://www.piedmont.edu/
+Illinois State University,http://illinoisstate.edu/
+Judson University,http://www.judsonu.edu/
+Moody Bible Institute,http://www.moody.edu/
+Xavier University of Louisiana,http://www.xula.edu/
+Avila University,http://www.avila.edu/
+Hannibal-Lagrange College,http://www.hlg.edu/
+Stephens College,http://www.stephens.edu/
+Doane College,http://www.doane.edu/
+Seton Hall University,http://www.shu.edu/
+Maritime College at Fort Schuyler,http://www.sunymaritime.edu/
+Marietta College,http://www.marietta.edu/
+University of Mary Hardin-Baylor,http://www.umhb.edu/
+Emory & Henry College,http://www.ehc.edu/
+Northwest University,http://www.northwestu.edu/
+Bellin College,http://www.bellincollege.edu/
+University of Wisconsin-Eau Claire,http://www.uwec.edu/
+Concordia University-Irvine,http://www.cui.edu/
+Oakland City University,http://www.oak.edu/
+Faith Baptist Bible College & Theological Seminary,http://www.faith.edu/
+Simpson College,http://simpson.edu/
+Bellarmine University,http://www.bellarmine.edu/
+Louisiana Tech University,http://www.latech.edu/
+Springfield College,http://www.springfieldcollege.edu/
+Drury University,http://www.drury.edu/
+Evangel University,http://www.evangel.edu/
+Hastings College,http://www.hastings.edu/
+Union College,http://www.ucollege.edu/
+University of North Dakota,http://und.edu/
+Ohio University,http://www.ohio.edu/
+Otterbein University,http://www.otterbein.edu/
+University of Scranton,http://www.scranton.edu/
+Erskine College,http://www.erskine.edu/
+Texas State University-San Marcos,http://www.txstate.edu/
+Texas Lutheran University,http://www.tlu.edu/
+Southern Utah University,http://www.suu.edu/
+Randolph College,http://www.randolphcollege.edu/
+Ave Maria University,http://www.avemaria.edu/
+University of Alabama-Birmingham,http://www.uab.edu/
+University of Colorado-Colorado Springs,http://www.uccs.edu/
+University of New Haven,http://www.newhaven.edu/
+University of West Florida,http://uwf.edu/
+McKendree University,http://www.mckendree.edu/
+Olivet Nazarene University,http://www.olivet.edu/
+University of Kansas,http://www.ku.edu/
+Lesley University,http://www.lesley.edu/
+Grand Valley State University,http://www.gvsu.edu/
+Oakland University,http://www.oakland.edu/
+Rocky Mountain College,http://www.rocky.edu/
+Montclair State University,http://www.montclair.edu/
+Rider University,http://www.rider.edu/
+Saint Bonaventure University,http://www.sbu.edu/
+University of North Carolina-Greensboro,http://www.uncg.edu/
+University of Mary,http://www.umary.edu/
+Art Academy of Cincinnati,http://www.artacademy.edu/
+Ashland University,https://www.ashland.edu/
+Bloomsburg University of Pennsylvania,http://www.bloomu.edu/
+Lancaster Bible College,http://www.lbc.edu/
+Rosemont College,http://www.rosemont.edu/
+Howard Payne University,http://www.hputx.edu/
+Texas A&M University-Galveston,http://www.tamug.edu/
+University of Alabama-Huntsville,http://www.uah.edu/
+William Jessup University,http://www.jessup.edu/
+Southern Illinois University-Carbondale,http://siu.edu/
+Trinity Christian College,http://www.trnty.edu/
+Manchester University,http://www.manchester.edu/
+Bethany College,http://www.bethanylb.edu/
+Kansas Wesleyan University,http://www.kwu.edu/
+Massachusetts Maritime Academy,http://www.maritime.edu/
+Western New England University,http://www.wne.edu/
+Wheelock College,http://www.wheelock.edu/
+University of Michigan-Flint,http://www.umflint.edu/
+Kuyper College,http://www.kuyper.edu/
+Bethany Lutheran College,http://www.blc.edu/
+Fairleigh Dickinson University,http://www.fdu.edu/
+University of New Mexico,http://www.unm.edu/
+Lehman College,http://www.lehman.cuny.edu/
+University of Mount Union,http://www.mountunion.edu/
+Oklahoma Wesleyan University,http://www.okwu.edu/
+Moore College of Art & Design,http://www.moore.edu/
+"Pennsylvania State University-Erie, The Behrend College",http://psbehrend.psu.edu/
+Saint Francis University,http://francis.edu/
+Waynesburg University,http://www.waynesburg.edu/
+Memphis College of Art,http://mca.edu/
+Trevecca Nazarene University,http://www.trevecca.edu/
+University of Utah,http://www.utah.edu/
+Walla Walla University,http://www.wallawalla.edu/
+Washington State University,https://wsu.edu/
+Concordia University-Wisconsin,https://www.cuw.edu/
+Huntingdon College,http://www.huntingdon.edu/
+University of Arkansas-Fort Smith,http://uafs.edu/
+Morehouse College,http://www.morehouse.edu/
+Eastern Illinois University,http://www.eiu.edu/
+University of Northern Iowa,http://www.uni.edu/
+Upper Iowa University,http://www.uiu.edu/
+Friends University,http://www.friends.edu/
+University of Louisiana-Lafayette,http://www.louisiana.edu/
+Massachusetts College of Pharmacy & Health Sciences,http://www.mcphs.edu/
+Westfield State University,http://www.wsc.ma.edu/
+Central Michigan University,http://www.cmich.edu/
+Northwood University,http://www.northwood.edu/
+University of New Hampshire at Manchester,http://manchester.unh.edu/
+Elmira College,http://www.elmira.edu/
+Marymount Manhattan College,http://www.mmm.edu/
+Minot State University,http://www.minotstateu.edu/
+Marywood University,http://www.marywood.edu/
+York College of Pennsylvania,http://www.ycp.edu/
+Winthrop University,http://www.winthrop.edu/
+Lincoln Memorial University,http://www.lmunet.edu/
+Jefferson College of Health Sciences,http://www.jchs.edu/
+Carroll University,http://www.carrollu.edu/
+Edgewood College,http://www.edgewood.edu/
+California State University-Channel Islands,http://www.csuci.edu/
+University of Minnesota-Rochester,http://r.umn.edu/
+San Francisco Art Institute,http://www.sfai.edu/
+Brenau University,http://www.brenau.edu/
+University of Hawaii-Manoa,http://manoa.hawaii.edu/
+Lincoln Christian University,http://www.lincolnchristian.edu/
+Huntington University,https://www.huntington.edu/
+Buena Vista University,http://www.bvu.edu/
+Clarke University,http://www.clarke.edu/
+University of Minnesota-Duluth,http://www.d.umn.edu/
+University of Southern Mississippi,http://www.usm.edu/
+Concordia University-Nebraska,http://www.cune.edu/
+Buffalo State College,http://suny.buffalostate.edu/
+Pacific University,http://www.pacificu.edu/
+Warner Pacific College,http://www.warnerpacific.edu/
+La Roche College,http://www.laroche.edu/
+Philadelphia College of Textiles & Science,http://www.philau.edu/
+Wilson College,http://www.wilson.edu/
+University of Rhode Island,http://www.uri.edu/
+Arizona State University,http://www.asu.edu/
+Regis University,http://www.regis.edu/
+Georgetown College,http://www.georgetowncollege.edu/
+Bemidji State University,http://www.bemidjistate.edu/
+Fontbonne University,http://www.fontbonne.edu/
+Saint Louis Christian College,https://stlchristian.edu/
+Grace University,https://www.graceuniversity.edu/
+York College,http://www.york.cuny.edu/
+Hartwick College,http://www.hartwick.edu/
+New York Institute of Technology,http://www.nyit.edu/
+Barton College,https://www.barton.edu/
+Ohio Dominican University,http://www.ohiodominican.edu/
+Slippery Rock University of Pennsylvania,http://www.sru.edu/
+South Dakota School of Mines & Technology,http://www.sdsmt.edu/
+Concordia University-Texas,http://www.concordia.edu/
+Green Mountain College,http://www.greenmtn.edu/
+Appalachian Bible College,http://www.abc.edu/
+University of Wisconsin-Stevens Point,http://www.uwsp.edu/
+University of Mobile,http://umobile.edu/
+Kennesaw State University,http://www.kennesaw.edu/
+Trinity International University,http://www.tiu.edu/
+Grace College & Seminary,http://www.grace.edu/
+McPherson College,http://www.mcpherson.edu/
+Kentucky Christian University,http://www.kcu.edu/
+Spalding University,https://spalding.edu/
+Southeastern Louisiana University,http://www.southeastern.edu/
+Eastern Nazarene College,http://www.enc.edu/
+Massachusetts College of Liberal Arts,http://www.mcla.edu/
+Cleary University,http://www.cleary.edu/
+Cornerstone University,https://www.cornerstone.edu/
+Saint Mary's University of Minnesota,http://www.smumn.edu/
+Lindenwood University,http://www.lindenwood.edu/
+Saint Louis College of Pharmacy,http://www.stlcop.edu/
+University of North Carolina-Charlotte,http://www.uncc.edu/
+University of Jamestown,http://www.uj.edu/
+North Dakota State University,http://www.ndsu.edu/
+Tiffin University,http://www.tiffin.edu/
+Walsh University,https://www.walsh.edu/
+Cedar Crest College,http://www.cedarcrest.edu/
+Delaware Valley College,http://www.delval.edu/
+Gannon University,http://www.gannon.edu/
+Indiana University of Pennsylvania,http://www.iup.edu/
+Point Park University,http://www.pointpark.edu/
+Seton Hill University,http://www.setonhill.edu/
+University of Valley Forge,http://www.valleyforge.edu/
+Carson-Newman University,http://www.cn.edu/
+University of Memphis,http://www.memphis.edu/
+Texas A&M University-Commerce,http://www.tamuc.edu/
+Texas Wesleyan University,http://txwes.edu/
+Shenandoah University,http://www.su.edu/
+Viterbo University,http://www.viterbo.edu/
+California College of the Arts,https://www.cca.edu/
+Vanguard University of Southern California,http://www.vanguard.edu/
+Reinhardt University,http://www.reinhardt.edu/
+University of Indianapolis,http://www.uindy.edu/
+Mount Mercy University,http://www.mtmercy.edu/
+Baker University,http://www.bakeru.edu/
+Loyola University New Orleans,http://www.loyno.edu/
+University of New England,http://www.une.edu/
+University of Massachusetts-Boston,http://www.umb.edu/
+Regis College,http://www.regiscollege.edu/
+Eastern Michigan University,http://www.emich.edu/
+Olivet College,http://www.olivetcollege.edu/
+Northwest Missouri State University,http://www.nwmissouri.edu/
+Missouri State University,http://www.missouristate.edu/
+Clarkson College,http://www.clarksoncollege.edu/
+University of Nebraska-Kearney,http://www.unk.edu/
+Manhattanville College,http://www.mville.edu/
+Saint Thomas Aquinas College,http://www.stac.edu/
+College at Old Westbury,https://www.oldwestbury.edu/
+College of Mount Saint Joseph,http://www.msj.edu/
+Carlow University,http://www.carlow.edu/
+Pennsylvania State University-Altoona,http://www.aa.psu.edu/
+Pennsylvania State University-Harrisburg,http://harrisburg.psu.edu/
+Newberry College,http://www.newberry.edu/
+Lee University,http://www.leeuniversity.edu/
+West Virginia University,http://www.wvu.edu/
+California State University-Monterey Bay,https://csumb.edu/
+University of South Florida Saint Petersburg,http://www.usfsp.edu/
+Williams Baptist College,http://www.wbcoll.edu/
+California State University-Chico,http://www.csuchico.edu/
+Fresno Pacific University,http://www.fresno.edu/
+Hope International University,http://www.hiu.edu/
+Simpson University,http://simpsonu.edu/
+Clearwater Christian College,http://www.clearwater.edu/
+Valdosta State University,http://www.valdosta.edu/
+Saint Mary-of-the-Woods College,http://www.smwc.edu/
+Emporia State University,http://www.emporia.edu/
+Campbellsville University,http://www.campbellsville.edu/
+University of Massachusetts-Dartmouth,http://www.umassd.edu/
+Calvary Bible College & Theological Seminary,http://www.calvary.edu/
+University of Nevada-Reno,http://www.unr.edu/
+Farmingdale State College,http://www.farmingdale.edu/
+Greensboro College,http://www.greensboro.edu/
+Montreat College,http://www.montreat.edu/
+Lake Erie College,http://www.lec.edu/
+Clarion University of Pennsylvania,http://www.clarion.edu/
+Wilkes University,http://www.wilkes.edu/
+University of South Carolina-Aiken,http://www.usca.edu/
+Dakota Wesleyan University,http://www.dwu.edu/
+University of Texas-Arlington,http://www.uta.edu/
+Lynchburg College,http://www.lynchburg.edu/
+Evergreen State College,http://www.evergreen.edu/
+West Virginia Wesleyan College,http://www.wvwc.edu/
+Lakeland College,http://www.lakeland.edu/
+University of Wyoming,http://www.uwyo.edu/
+Northern Arizona University,http://www.nau.edu/
+Central Baptist College,http://www.cbc.edu/
+California State University-East Bay,http://www.csueastbay.edu/
+San Francisco State University,http://www.sfsu.edu/
+Oglethorpe University,http://www.oglethorpe.edu/
+Rockford University,http://www.rockford.edu/
+Franklin College,http://www.franklincollege.edu/
+Midway College,http://www.midway.edu/
+Elms College,http://www.elms.edu/
+Rochester College,http://www.rc.edu/
+Minnesota State University-Mankato,http://www.mnsu.edu/
+Tougaloo College,http://www.tougaloo.edu/
+William Woods University,http://www.williamwoods.edu/
+College of Saint Mary,http://www.csm.edu/
+William Paterson University,http://www.wpunj.edu/
+Davis College,http://www.davisny.edu/
+College of Technology at Delhi,http://www.delhi.edu/
+Bowling Green State University,http://www.bgsu.edu/
+Defiance College,http://www.defiance.edu/
+Muskingum University,http://www.muskingum.edu/
+Ursuline College,http://www.ursuline.edu/
+Portland State University,http://www.pdx.edu/
+California University of Pennsylvania,http://www.calu.edu/
+Lander University,http://www.lander.edu/
+Tennessee Technological University,http://www.tntech.edu/
+California State University-San Marcos,http://www.csusm.edu/
+Pennsylvania College of Health Sciences,http://www.pacollege.edu/
+Oakwood University,http://www.oakwood.edu/
+University of Colorado-Denver,http://www.ucdenver.edu/
+University of Northern Colorado,http://www.unco.edu/
+Central Connecticut State University,http://www.ccsu.edu/
+Monmouth College,http://www.monmouthcollege.edu/
+Northeastern Illinois University,http://www.neiu.edu/
+Western Illinois University,http://www.wiu.edu/
+MidAmerica Nazarene University,http://www.mnu.edu/
+Jackson State University,http://www.jsums.edu/
+College of Saint Elizabeth,http://www.cse.edu/
+Mount Saint Mary College,http://www.msmc.edu/
+Warren Wilson College,http://www.warren-wilson.edu/
+Cincinnati Christian University,http://www.ccuniversity.edu/
+Notre Dame College,http://www.notredamecollege.edu/
+Multnomah University,http://www.multnomah.edu/
+La Salle University,http://www.lasalle.edu/
+Lincoln University,http://www.lincoln.edu/
+Pennsylvania State University-Hazleton,http://www.hazleton.psu.edu/
+Coker College,http://www.coker.edu/
+Stephen F. Austin State University,http://www.sfasu.edu/
+West Virginia University Institute of Technology,http://www.wvutech.edu/
+Maranatha Baptist University,http://www.mbu.edu/
+Mount Mary University,http://www.mtmary.edu/
+University of Montevallo,http://www.montevallo.edu/
+Eastern Connecticut State University,http://www.easternct.edu/
+Shorter University,http://su.shorter.edu/
+Roosevelt University,http://www.roosevelt.edu/
+Trine University,http://www.trine.edu/
+McNeese State University,http://www.mcneese.edu/
+Washington Adventist University,https://www.wau.edu/
+Northern Michigan University,http://www.nmu.edu/
+Western Michigan University,http://www.wmich.edu/
+University of Minnesota-Crookston,http://www.crk.umn.edu/
+Central Methodist University,http://www.centralmethodist.edu/
+Caldwell University,http://www.caldwell.edu/
+John Jay College of Criminal Justice,http://www.jjay.cuny.edu/
+Gardner-Webb University,http://www.gardner-webb.edu/
+Wingate University,http://www.wingate.edu/
+Mount Carmel College of Nursing,http://www.mccn.edu/
+Saint Gregory's University,http://www.stgregorys.edu/
+Oregon Institute of Technology,http://www.oit.edu/
+Pennsylvania State University-Berks,http://www.bk.psu.edu/
+Robert Morris University,http://www.rmu.edu/
+Cumberland University,http://www.cumberland.edu/
+Sam Houston State University,http://www.shsu.edu/
+Utah State University,http://www.usu.edu/
+Concord University,http://www.concord.edu/
+University of Wisconsin-Whitewater,http://www.uww.edu/
+La Sierra University,http://lasierra.edu/
+Florida Agricultural & Mechanical University,http://www.famu.edu/
+Saint Thomas University,http://www.stu.edu/
+Albany State University,http://www.asurams.edu/
+Columbus State University,http://www.columbusstate.edu/
+Southern Illinois University-Edwardsville,http://www.siue.edu/
+Southwestern College,http://www.sckans.edu/
+Frostburg State University,http://www.frostburg.edu/
+Cottey College,http://www.cottey.edu/
+Missouri Baptist University,http://www.mobap.edu/
+University of Nebraska-Omaha,http://www.unomaha.edu/
+Iona College,http://www.iona.edu/
+Belmont Abbey College,http://belmontabbeycollege.edu/
+Cleveland State University,http://www.csuohio.edu/
+Gwynedd Mercy University,http://www.gmercyu.edu/
+Lock Haven University of Pennsylvania,http://www.lhup.edu/
+Widener University,http://www.widener.edu/
+Claflin University,http://www.claflin.edu/
+Mount Marty College,http://www.mtmc.edu/
+South Dakota State University,http://www.sdstate.edu/
+McMurry University,http://www.mcm.edu/
+Schreiner University,http://www.schreiner.edu/
+University of Wisconsin-Green Bay,http://www.uwgb.edu/
+University of California-Merced,http://www.ucmerced.edu/
+University of West Alabama,http://www.uwa.edu/
+Troy University,http://www.troy.edu/
+Alaska Pacific University,http://www.alaskapacific.edu/
+Arkansas State University,http://www.astate.edu/
+California State University-Fresno,http://www.fresnostate.edu/
+Western Connecticut State University,http://www.wcsu.edu/
+Indiana University/Purdue University at Indianapolis,http://www.iupui.edu/
+Purdue University-Calumet,http://www.purduecal.edu/
+Murray State University,http://www.murraystate.edu/
+Fitchburg State University,http://www.fitchburgstate.edu/
+Suffolk University,http://www.suffolk.edu/
+Saint Peter's University,http://www.saintpeters.edu/
+Cazenovia College,http://www.cazenovia.edu/
+Holy Family University,http://www.holyfamily.edu/
+Pennsylvania State University-New Kensington,http://www.nk.psu.edu/
+Middle Tennessee State University,http://www.mtsu.edu/
+Texas A&M University-Texarkana,http://www.tamut.edu/
+Texas A&M International University,http://www.tamiu.edu/
+Longwood University,http://www.longwood.edu/
+Henderson State University,http://www.hsu.edu/
+California Baptist University,http://www.calbaptist.edu/
+San Diego Christian College,http://sdcc.edu/
+Life Pacific College,http://lifepacific.edu/
+Woodbury University,http://woodbury.edu/
+Fort Lewis College,http://www.fortlewis.edu/
+Palm Beach Atlantic University,http://www.pba.edu/
+Dalton State College,http://www.daltonstate.edu/
+Tabor College,http://tabor.edu/
+Northern Kentucky University,http://www.nku.edu/
+Bridgewater State University,http://www.bridgew.edu/
+Southwest Baptist University,http://www.sbuniv.edu/
+Montana Tech of The University of Montana,http://www.mtech.edu/
+Concordia College-New York,http://www.concordia-ny.edu/
+Pace University,http://www.pace.edu/
+Lenoir-Rhyne University,http://www.lr.edu/
+University of Mount Olive,http://www.umo.edu/
+Columbus College of Art & Design,http://www.ccad.edu/
+Francis Marion University,http://www.fmarion.edu/
+East Texas Baptist University,http://www.etbu.edu/
+Old Dominion University,http://www.odu.edu/
+Fairmont State University,http://www.fairmontstate.edu/
+Florida Gulf Coast University,http://www.fgcu.edu/
+Stillman College,http://www.stillman.edu/
+Southern Arkansas University,http://www.saumag.edu/
+Holy Names University,http://www.hnu.edu/
+Florida College,http://www.floridacollege.edu/
+Clayton State University,http://www.clayton.edu/
+Eastern Kentucky University,http://www.eku.edu/
+Thomas More College,http://www.thomasmore.edu/
+Louisiana College,http://www.lacollege.edu/
+Bowie State University,http://www.bowiestate.edu/
+Becker College,http://www.becker.edu/
+Worcester State University,http://www.worcester.edu/
+Ferris State University,http://www.ferris.edu
+Culver-Stockton College,http://www.culver.edu/
+University of Montana-Missoula,http://www.umt.edu/
+New Jersey City University,http://www.njcu.edu/
+Medaille College,http://www.medaille.edu/
+Brevard College,http://www.brevard.edu/
+Johnson C. Smith University,http://www.jcsu.edu/
+Pfeiffer University,http://www.pfeiffer.edu/
+Kent State University,http://www.kent.edu/
+Limestone College,http://www.limestone.edu/
+Averett University,http://www.averett.edu/
+Central Washington University,http://www.cwu.edu/
+Saint Martin's University,http://www.stmartin.edu/
+Arizona Christian University,http://arizonachristian.edu/
+California State University-San Bernardino,http://www.csusb.edu/
+California State University-Northridge,http://www.csun.edu/
+Sonoma State University,http://www.sonoma.edu/
+Delaware State University,http://www.desu.edu/
+Gallaudet University,http://www.gallaudet.edu/
+Webber International University,http://webber.edu/
+Fort Valley State University,http://www.fvsu.edu/
+University of West Georgia,http://www.westga.edu/
+Young Harris College,http://www.yhc.edu/
+Indiana University-East,http://www.iue.edu/
+Iowa Wesleyan University,http://www.iw.edu/
+Western Kentucky University,http://www.wku.edu/
+Nichols College,http://www.nichols.edu/
+Siena Heights University,http://www.sienaheights.edu/
+Southern New Hampshire University,http://www.snhu.edu/
+Plymouth State University,http://www.plymouth.edu/
+Maria College,http://www.mariacollege.edu/
+Elizabeth City State University,http://www.ecsu.edu/
+Methodist University,http://www.methodist.edu/
+Mid-Atlantic Christian University,http://www.macuniversity.edu/
+Eastern Oregon University,https://www.eou.edu/
+Kutztown University of Pennsylvania,http://www.kutztown.edu/
+Mansfield University of Pennsylvania,http://www.mansfield.edu/
+University of Tennessee-Chattanooga,http://www.utc.edu/
+Prairie View A&M University,http://www.pvamu.edu/
+Tarleton State University,http://www.tarleton.edu/
+Radford University,http://www.radford.edu/
+Silver Lake College,http://www.sl.edu/
+Prescott College,http://www.prescott.edu/
+Warner University,http://warner.edu/
+Brigham Young University-Idaho,http://www.byui.edu/
+Benedictine University,http://www.ben.edu/
+Calumet College of Saint Joseph,http://www.ccsj.edu/
+Dillard University,http://www.dillard.edu/
+Mount Ida College,http://www.mountida.edu/
+Salem State University,http://www.salemstate.edu/
+Minnesota State University-Moorhead,http://www.mnstate.edu/
+Mississippi Valley State University,http://www.mvsu.edu/
+Keene State College,http://www.keene.edu/
+Georgian Court University,http://www.georgian.edu/
+Hillsdale College,http://www.hillsdale.edu/
+Rogers State University,http://www.rsu.edu/
+Cabrini College,http://www.cabrini.edu/
+University of Pittsburgh-Bradford,http://www.upb.pitt.edu/
+University of Pittsburgh-Johnstown,http://www.upj.pitt.edu/
+University of Tennessee-Martin,http://www.utm.edu/
+University of Texas-Tyler,http://www.uttyler.edu/
+Bluefield College,http://www.bluefield.edu/
+Regent University,http://www.regent.edu/
+Bluefield State College,http://bluefieldstate.edu/
+Marshall University,http://www.marshall.edu/
+University of Wisconsin-Platteville,http://www.uwplatt.edu/
+Jacksonville State University,http://www.jsu.edu/
+University of Central Arkansas,http://uca.edu/
+Humboldt State University,http://www.humboldt.edu/
+Pittsburg State University,http://www.pittstate.edu/
+Southern University at New Orleans,http://suno.edu/
+Lasell College,http://www.lasell.edu/
+North Central University,http://www.northcentral.edu/
+Southwest Minnesota State University,http://www.smsu.edu/
+Southern Oregon University,http://www.sou.edu/
+Pennsylvania State University-Wilkes-Barre,http://www.wb.psu.edu/
+Shippensburg University of Pennsylvania,http://www.ship.edu/
+Thiel College,http://www.thiel.edu/
+University of South Carolina-Upstate,http://www.uscupstate.edu/
+King University,http://www.king.edu/
+University of Arkansas-Pine Bluff,http://www.uapb.edu/
+University of the Ozarks,http://www.ozarks.edu/
+California State University-Sacramento,http://www.csus.edu/
+Wesley College,http://wesley.edu/
+Edward Waters College,http://www.ewc.edu/
+Point University,http://point.edu/
+Aurora University,http://www.aurora.edu/
+Chicago State University,http://www.csu.edu/
+Lexington College,http://www.lexingtoncollege.edu/
+Southern University and A&M College at Baton Rouge,http://www.subr.edu/
+University of Baltimore,http://www.ubalt.edu/
+Dean College,http://www.dean.edu/
+Wayne State University,http://wayne.edu/
+Saint Cloud State University,http://www.stcloudstate.edu/
+Alcorn State University,http://www.alcorn.edu/
+D'Youville College,http://www.dyc.edu/
+North Carolina Central University,http://www.nccu.edu/
+University of Pittsburgh-Greensburg,http://www.upg.pitt.edu/
+East Tennessee State University,http://www.etsu.edu/
+Tennessee Wesleyan College,http://www.twcnet.edu/
+Lubbock Christian University,http://www.lcu.edu/
+Marymount University,http://www.marymount.edu/
+West Liberty University,http://westliberty.edu/
+Tuskegee University,http://www.tuskegee.edu/
+Arkansas Tech University,http://www.atu.edu/
+Adams State College,http://www.adams.edu/
+Metropolitan State University of Denver,http://www.msudenver.edu/
+University of Hawaii-Hilo,http://hilo.hawaii.edu/
+University of the Cumberlands,http://www.ucumberlands.edu/
+Grambling State University,http://www.gram.edu/
+University of Maine-Machias,http://machias.edu/
+Coppin State University,http://www.coppin.edu/
+Lake Superior State University,http://www.lssu.edu/
+Southeast Missouri State University,http://www.semo.edu/
+New Mexico State University,http://www.nmsu.edu/
+Cabarrus College of Health Sciences,http://www.cabarruscollege.edu/
+William Peace University,http://www.peace.edu/
+Winston-Salem State University,http://www.wssu.edu/
+Central State University,http://www.centralstate.edu/
+Ohio Christian University,http://www.ohiochristian.edu/
+East Stroudsburg State University of Pennsylvania,http://www.esu.edu/
+Immaculata University,http://www.immaculata.edu/
+Pennsylvania State University-York,http://www.yk.psu.edu/
+Coastal Carolina University,http://www.coastal.edu/
+University of Texas-Pan American,http://www.utpa.edu/
+West Texas A&M University,http://www.wtamu.edu/
+University of Wisconsin-Oshkosh,http://www.uwosh.edu/
+University of Wisconsin-Stout,http://www.uwstout.edu/
+Alabama State University,http://www.alasu.edu/
+University of South Alabama,http://www.usouthal.edu/
+University of Southern Indiana,http://www.usi.edu/
+Wichita State University,http://www.wichita.edu/
+Thomas College,http://www.thomas.edu/
+Fisher College,http://www.fisher.edu/
+Missouri Valley College,http://www.moval.edu/
+Kean University,http://www.kean.edu/
+University of Wisconsin-River Falls,http://www.uwrf.edu/
+Notre Dame de Namur University,http://www.ndnu.edu/
+Georgia Southwestern State University,http://www.gsw.edu/
+Quincy University,http://www.quincy.edu/
+Indiana University-Northwest,http://www.iun.edu/
+Kentucky State University,http://kysu.edu/
+Louisiana State University-Alexandria,http://www.lsua.edu/
+Our Lady of the Lake College,http://www.ololcollege.edu/
+Newbury College,http://www.newbury.edu/
+Park University,http://www.park.edu/
+Long Island University-C.W. Post Campus,http://www.liu.edu/cwpost/
+College of New Rochelle,http://www.cnr.edu/
+College of Agriculture & Technology at Morrisville (Morrisville State College),http://www.morrisville.edu/
+Bacone College,http://www.bacone.edu/
+Pennsylvania State University-Beaver,http://www.br.psu.edu/
+Virginia Wesleyan College,http://www.vwc.edu/
+University of Washington-Bothell,http://www.uwb.edu/
+Alabama A&M University,http://www.aamu.edu/
+Auburn University at Montgomery,http://www.aum.edu/
+Armstrong State University,http://www.armstrong.edu/
+Boise State University,http://www.boisestate.edu/
+William Penn University,http://www.wmpenn.edu/
+Morehead State University,http://www.moreheadstate.edu/
+Capitol Technology University,http://www.captechu.edu/
+Anna Maria College,http://www.annamaria.edu/
+Vaughn College of Aeronautics & Technology,http://www.vaughn.edu/
+Saint Francis College,http://www.sfc.edu/
+Saint Augustine College,http://www.staugustine.edu/
+Alvernia University,http://www.alvernia.edu/
+Pennsylvania State University-Shenango,http://www.shenango.psu.edu/
+Shepherd University,http://www.shepherd.edu/
+Hawaii Pacific University,http://www.hpu.edu/
+Fort Hays State University,http://www.fhsu.edu/
+Kentucky Mountain Bible College,http://www.kmbc.edu/
+University of Maryland-Eastern Shore,http://www.umes.edu/
+Curry College,http://www.curry.edu/
+Pine Manor College,http://www.pmc.edu/
+Marygrove College,http://www.marygrove.edu/
+University of Central Missouri,http://www.ucmo.edu/
+University of Nevada-Las Vegas,http://www.unlv.edu/
+Franklin Pierce University,http://www.franklinpierce.edu/
+Bloomfield College,http://www.bloomfield.edu/
+Eastern New Mexico University,http://www.enmu.edu/
+College of Agriculture & Technology at Cobleskill,http://www.cobleskill.edu/
+Mars Hill University,http://www.mhu.edu/
+North Carolina Wesleyan College,http://www.ncwc.edu/
+Southwestern Christian University,http://swcu.edu/
+Northwest Christian University,http://www.nwcu.edu/
+Pennsylvania State University-DuBois,http://www.ds.psu.edu/
+Tusculum College,http://www.tusculum.edu/
+University of Houston-Victoria,http://www.uhv.edu/
+Midwestern State University,http://www.mwsu.edu/
+University of Texas-San Antonio,http://www.utsa.edu/
+Eastern Washington University,http://www.ewu.edu/
+Alverno College,http://www.alverno.edu/
+California State University-Bakersfield,http://www.csub.edu/
+California State University-Stanislaus,https://www.csustan.edu/
+California State University-Dominguez Hills,http://www.csudh.edu/
+Menlo College,http://www.menlo.edu/
+Trinity Bible College,http://www.trinitybiblecollege.edu/
+MacMurray College,http://www.mac.edu/
+Louisiana State University-Shreveport,http://www.lsus.edu/
+Saint Joseph's College of Maine,http://www.sjcme.edu/
+University of Southern Maine,http://usm.maine.edu/
+Nyack College,http://www.nyack.edu/
+North Carolina A&T State University,http://www.ncat.edu/
+University of Akron,http://www.uakron.edu/
+University of Central Oklahoma,http://www.uco.edu/
+Northwestern Oklahoma State University,http://www.nwosu.edu/
+Pennsylvania State University-Lehigh Valley,http://www.lv.psu.edu/
+Austin Peay State University,http://www.apsu.edu/
+Southern Virginia University,http://svu.edu/
+University of Wisconsin-Superior,http://www.uwsuper.edu/
+Judson College,http://www.judson.edu/
+Clark Atlanta University,http://www.cau.edu/
+University of Dubuque,http://www.dbq.edu/
+Morgan State University,http://www.morgan.edu/
+Concordia University-Ann Arbor,http://www.cuaa.edu/
+Saginaw Valley State University,http://www.svsu.edu/
+Oak Hills Christian College,http://www.oakhills.edu/
+Paul Smith's College,http://www.paulsmiths.edu/
+Chowan University,https://www.chowan.edu/
+Wilmington College,http://www.wilmington.edu/
+Oklahoma Panhandle State University,http://www.opsu.edu/
+Neumann University,http://www.neumann.edu/
+Pennsylvania State University-Abington,http://www.abington.psu.edu/
+Rhode Island College,http://www.ric.edu/
+Charleston Southern University,http://www.csuniv.edu/
+Northern State University,http://www.northern.edu/
+Presentation College,http://www.presentation.edu/
+Huston-Tillotson University,http://htu.edu/
+Texas Southern University,http://www.tsu.edu/
+Vermont Technical College,http://www.vtc.edu/
+Southern Connecticut State University,http://www.southernct.edu/
+Northwestern State University,http://www.nsula.edu/
+Midland University,http://www.midlandu.edu/
+College of Staten Island,http://www.csi.cuny.edu/
+Pennsylvania State University-Mont Alto,http://www.ma.psu.edu/
+Southern Wesleyan University,http://www.swu.edu/
+University of Wisconsin-Milwaukee,http://www.uwm.edu/
+"Watkins College of Art, Design, & Film",http://www.watkins.edu/
+University of Bridgeport,http://www.bridgeport.edu/
+Chaminade University,http://www.chaminade.edu/
+Indiana Institute of Technology,http://www.indianatech.edu/
+Husson University,http://www.husson.edu/
+Bryan College of Health Sciences,http://www.bryanhealthcollege.edu/
+Dominican College,http://www.dc.edu/
+Pennsylvania State University-Worthington Scranton,http://www.sn.psu.edu/
+Our Lady of the Lake University,http://www.ollusa.edu/
+Castleton State College,http://www.castleton.edu/
+University of Washington-Tacoma,http://www.tacoma.uw.edu/
+Western State Colorado University,http://www.western.edu/
+Indiana University/Purdue University at Fort Wayne,http://www.ipfw.edu/
+Indiana University-South Bend,http://www.iusb.edu/
+Purdue University-North Central,http://www.pnc.edu/
+Conception Seminary College,http://www.conception.edu/
+Fayetteville State University,http://www.uncfsu.edu/
+Lees-McRae College,http://www.lmc.edu/
+Dickinson State University,http://www.dickinsonstate.edu/
+Chestnut Hill College,http://www.chc.edu/
+Pennsylvania State University-Greater Allegheny,http://www.ga.psu.edu/
+Dakota State University,http://dsu.edu/
+University of Arkansas-Little Rock,http://ualr.edu/
+California State University-Los Angeles,http://www.calstatela.edu/
+American Jewish University,http://www.aju.edu/
+Washburn University,http://www.washburn.edu/
+University of Louisiana-Monroe,http://www.ulm.edu/
+University of Maine-Fort Kent,http://www.umfk.edu/
+Midwestern Baptist Theological Seminary,http://www.mbts.edu/
+College of Mount Saint Vincent,http://www.mountsaintvincent.edu/
+Livingstone College,http://www.livingstone.edu/
+University of North Carolina-Pembroke,http://www.uncp.edu/
+Southeastern Oklahoma State University,http://www.se.edu/
+Southwestern Oklahoma State University,http://www.swosu.edu/
+Pennsylvania State University-Schuylkill,http://www.sl.psu.edu/
+University of Virginia's College at Wise,http://www.uvawise.edu/
+Davis & Elkins College,http://www.dewv.edu/
+University of North Alabama,https://www.una.edu/
+Albertus Magnus College,http://www.albertus.edu/
+Indiana University-Kokomo,http://www.iuk.edu/
+Missouri Southern State University,http://www.mssu.edu/
+Centenary College,http://www.centenarycollege.edu/
+Northeastern State University,http://www.nsuok.edu/
+Pennsylvania State University-Brandywine,http://www.brandywine.psu.edu/
+University of the Incarnate Word,http://www.uiw.edu/
+University of Texas of the Permian Basin,http://www.utpb.edu/
+Texas Woman's University,http://www.twu.edu/
+College of Saint Joseph,http://www.csj.edu/
+Norfolk State University,http://www.nsu.edu/
+West Virginia State University,http://www.wvstateu.edu/
+Hebrew Theological College,http://www.htc.edu/
+Holy Cross College,http://www.hcc-nd.edu/
+Indiana University-Southeast,http://www.ius.edu/
+Grand View University,http://www.grandview.edu/
+Valley City State University,http://www.vcsu.edu/
+Texas A&M University-Corpus Christi,http://www.tamucc.edu/
+University of Wisconsin-Parkside,http://www.uwp.edu/
+American International College,http://www.aic.edu/
+Wayland Baptist University,http://www.wbu.edu/
+Colorado Mesa University,http://www.coloradomesa.edu/
+Bethune-Cookman University,http://www.bethune.cookman.edu/
+Indiana State University,http://www.indstate.edu/
+Nicholls State University,http://www.nicholls.edu/
+Western Oregon University,http://www.wou.edu/
+Mount Aloysius College,http://www.mtaloy.edu/
+Paine College,http://www.paine.edu/
+University of South Carolina-Beaufort,http://www.uscb.edu/
+Colorado State University-Pueblo,http://www.csupueblo.edu/
+Rivier University,http://www.rivier.edu/
+East Central University,http://www.ecok.edu/
+"Pennsylvania State University-Fayette, The Eberly Campus",http://www.fe.psu.edu/
+Angelo State University,http://www.angelo.edu/
+Ferrum College,http://www.ferrum.edu/
+Keystone College,http://www.keystone.edu/
+Black Hills State University,http://www.bhsu.edu/
+Johnson State College,http://www.jsc.edu/
+Virginia State University,http://www.vsu.edu/
+Truett-McConnell College,http://www.truett.edu/
+University of Hawaii-West O'ahu,http://www.uhwo.hawaii.edu/
+Lewis-Clark State College,http://www.lcsc.edu/
+Methodist College,http://www.methodistcol.edu/
+Abraham Baldwin Agricultural College,http://www.abac.edu/
+Delta State University,http://www.deltastate.edu/
+Montana State University-Northern,http://www.msun.edu/
+Lamar University,http://www.lamar.edu/
+Savannah State University,http://www.savannahstate.edu/
+New York City College of Technology,http://www.citytech.cuny.edu/
+Glenville State College,http://www.glenville.edu/
+Lincoln College,http://lincolncollege.edu/
+Long Island University-Brooklyn Campus,http://www.liu.edu/brooklyn/
+Lyndon State College,http://lyndonstate.edu/
+Southern Vermont College,http://www.svc.edu/
+Medgar Evers College,http://www.mec.cuny.edu/
+Sul Ross State University,http://www.sulross.edu/
+Texas A&M University-Kingsville,http://www.tamuk.edu/
+Felician College,http://www.felician.edu/
+Brewton-Parker College,http://www.bpc.edu/
+College of Coastal Georgia,http://www.ccga.edu/
+Mid-Continent University,http://www.midcontinent.edu/
+South Carolina State University,http://www.scsu.edu/
+Virginia Union University,http://www.vuu.edu/
+Paul Quinn College,http://www.pqc.edu/
+A.T. Still University of Health Sciences,http://www.atsu.edu/
+Academy of Art University,http://www.academyart.edu/
 Adler Graduate School,http://www.alfredadler.edu/
 Adler University,http://www.adler.edu/
-Adrian College,http://adrian.edu/
 Adventist University of Health Sciences,http://www.adu.edu/
 Agnes Scott College,http://www.agnesscott.edu/
 AIB College of Business,http://www.aib.edu/
 Air Force Institute of Technology,http://www.afit.edu/
 Air University,http://www.maxwell.af.mil/units/au/
-Alabama A&M University,http://www.aamu.edu/
-Alabama State University,http://www.alasu.edu/
 Alaska Bible College,http://www.akbible.edu/
-Alaska Pacific University,http://www.alaskapacific.edu/
-Albany College of Pharmacy & Health Sciences,http://www.acphs.edu/
 Albany Medical College,http://www.amc.edu/
-Albany State University,http://www.asurams.edu/
-Albertus Magnus College,http://www.albertus.edu/
-Albion College,http://www.albion.edu/
-Albright College,http://www.albright.edu/
-Alcorn State University,http://www.alcorn.edu/
-Alderson-Broaddus College,http://www.ab.edu/
-Alfred University,http://www.alfred.edu/
-Alice Lloyd College,http://www.alc.edu/
-Allegheny College,http://allegheny.edu/
 Allen College,http://www.allencollege.edu/
 Allen University,http://www.allenuniversity.edu/
 Alliant International University,http://www.alliant.edu/
-Alma College,http://www.alma.edu/
-Alvernia University,http://www.alvernia.edu/
-Alverno College,http://www.alverno.edu/
 Ambassador University,http://www.ambassador.edu/
 Amberton University,http://www.amberton.edu/
 American Academy of Art,http://www.aaart.edu/
@@ -44,46 +1325,28 @@ American Conservatory Theater,http://www.act-sf.org/
 American Film Institute,http://www.afi.com/
 American Indian College of the Assemblies of God,http://www.aicag.edu/
 American InterContinental University,http://www.aiuniv.edu/
-American International College,http://www.aic.edu/
-American Jewish University,http://www.aju.edu/
 American Military University,http://www.amu.apus.edu/
 American Public University,http://www.apu.apus.edu/
-American University,http://www.american.edu/
 American University of Puerto Rico,http://www.aupr.edu/
-Amherst College,http://www.amherst.edu/
 Amridge University,http://amridgeuniversity.edu/
 Anabaptist Mennonite Biblical Seminary,http://www.ambs.edu/
-Anderson University,http://www.andersonuniversity.edu/
 Anderson University,http://www.anderson.edu/
 Andover Newton Theological School,http://www.ants.edu/
-Andrews University,http://www.andrews.edu/
-Angelo State University,http://www.angelo.edu/
-Anna Maria College,http://www.annamaria.edu/
 Antioch College,http://www.antiochcollege.org/
-Antioch University–Midwest,http://www.antiochmidwest.edu/
-Antioch University–New England,http://www.antiochne.edu/
-Antioch University–Los Angeles,http://www.antiochla.edu/
-Antioch University–Santa Barbara,http://www.antiochsb.edu/
-Antioch University–Seattle,http://www.antiochseattle.edu/
+Antioch University-Midwest,http://www.antiochmidwest.edu/
+Antioch University-New England,http://www.antiochne.edu/
+Antioch University-Los Angeles,http://www.antiochla.edu/
+Antioch University-Santa Barbara,http://www.antiochsb.edu/
+Antioch University-Seattle,http://www.antiochseattle.edu/
 AOMA Graduate School of Integrative Medicine,http://aoma.edu/
-Appalachian Bible College,http://www.abc.edu/
-Appalachian State University,http://www.appstate.edu/
 Aquinas College,http://www.aquinas.edu/
-Aquinas College,http://www.aquinascollege.edu/
 Aquinas Institute of Theology,http://www.ai.edu/
-Arcadia University,https://www.arcadia.edu/
 Argosy University,https://www.argosy.edu/
-Arizona Christian University,http://arizonachristian.edu/
-Arizona State University,http://www.asu.edu/
-Arizona State University–Downtown Phoenix Campus,https://campus.asu.edu/downtown/
-Arizona State–Polytechnic Campus,http://campus.asu.edu/polytechnic/
-Arizona State University–West Campus,http://campus.asu.edu/west/
+Arizona State University-Downtown Phoenix Campus,https://campus.asu.edu/downtown/
+Arizona State-Polytechnic Campus,http://campus.asu.edu/polytechnic/
+Arizona State University-West Campus,http://campus.asu.edu/west/
 Arkansas Baptist College,http://www.arkansasbaptist.edu/
-Arkansas State University,http://www.astate.edu/
-Arkansas Tech University,http://www.atu.edu/
 Arlington Baptist College,http://www.arlingtonbaptistcollege.edu/
-Armstrong State University,http://www.armstrong.edu/
-Art Academy of Cincinnati,http://www.artacademy.edu/
 Art Center College of Design,http://www.artcenter.edu/
 Art Institute of Atlanta,http://www.artinstitutes.edu/atlanta/
 Art Institute of Colorado,http://www.artinstitutes.edu/denver/
@@ -93,210 +1356,76 @@ Art Institute of Pittsburgh,http://www.artinstitutes.edu/pittsburgh/
 Art Institute of Portland,http://www.artinstitutes.edu/portland/
 Art Institute of Seattle,http://www.artinstitutes.edu/seattle/
 Asbury Theological Seminary,http://asburyseminary.edu/
-Asbury University,http://www.asbury.edu/
 Ashford University,http://www.ashford.edu/
-Ashland University,https://www.ashland.edu/
 Assumption College,http://www.assumption.edu/
 Athenaeum of Ohio,http://www.athenaeum.edu/
 Athens State University,http://www.athens.edu/
-Auburn University,http://www.auburn.edu/
-Auburn University at Montgomery,http://www.aum.edu/
-Augsburg College,http://www.augsburg.edu/
 Augustana College,http://www.augustana.edu/
-Augustana College,http://www.augie.edu/
-Aurora University,http://www.aurora.edu/
-Austin College,http://www.austincollege.edu/
 Austin Graduate School of Theology,http://www.austingrad.edu/
-Austin Peay State University,http://www.apsu.edu/
 Austin Presbyterian Theological Seminary,http://www.austinseminary.edu/
-Ave Maria University,http://www.avemaria.edu/
-Averett University,http://www.averett.edu/
-Avila University,http://www.avila.edu/
-Azusa Pacific University,http://www.apu.edu/
 Daemen College,http://www.daemen.edu/
-Dakota State University,http://dsu.edu/
-Dakota Wesleyan University,http://www.dwu.edu/
-Dallas Baptist University,http://www.dbu.edu/
-Dallas Christian College,http://www.dallas.edu/
 Dallas Theological Seminary,http://www.dts.edu/
-Dalton State College,http://www.daltonstate.edu/
 Daniel Webster College,http://www.dwc.edu/
-Dartmouth College,http://dartmouth.edu/
 Davenport University,http://www.davenport.edu/
-Davidson College,http://www.davidson.edu/
-Davis College,http://www.davisny.edu/
-Davis & Elkins College,http://www.dewv.edu/
 Daytona State College,http://www.daytonastate.edu/
-Dean College,http://www.dean.edu/
-Defiance College,http://www.defiance.edu/
-Delaware State University,http://www.desu.edu/
-Delaware Valley College,http://www.delval.edu/
-Delta State University,http://www.deltastate.edu/
-Denison University,http://denison.edu/
 Denver Seminary,http://www.denverseminary.edu/
-DePaul University,http://www.depaul.edu/
-DePauw University,http://www.depauw.edu/
-Des Moines University–Osteopathic Medical Center,http://www.dmu.edu/
-DeSales University,http://www.desales.edu/
+Des Moines University-Osteopathic Medical Center,http://www.dmu.edu/
 DeVry University,http://www.devry.edu/
-DeVry University–Addison,http://www.add.devry.edu/
-DeVry University–Arlington,http://www.devry.edu/locations/campuses/loc_arlingtoncampus.jsp
-DeVry University–Chicago,http://www.chi.devry.edu/
-DeVry University–Georgia,http://www.atl.devry.edu/
-DeVry University–Irving,http://www.dal.devry.edu/
-DeVry University–Kansas City,http://www.kc.devry.edu/
-DeVry University–Long Beach,http://www.lb.devry.edu/
-DeVry University–Orlando,http://www.orl.devry.edu/
-DeVry University–Phoenix,http://www.phx.devry.edu/
-DeVry University–Pomona,http://www.pom.devry.edu/
-Dickinson College,http://www.dickinson.edu/
-Dickinson State University,http://www.dickinsonstate.edu/
-Dillard University,http://www.dillard.edu/
+DeVry University-Addison,http://www.add.devry.edu/
+DeVry University-Arlington,http://www.devry.edu/locations/campuses/loc_arlingtoncampus.jsp
+DeVry University-Chicago,http://www.chi.devry.edu/
+DeVry University-Georgia,http://www.atl.devry.edu/
+DeVry University-Irving,http://www.dal.devry.edu/
+DeVry University-Kansas City,http://www.kc.devry.edu/
+DeVry University-Long Beach,http://www.lb.devry.edu/
+DeVry University-Orlando,http://www.orl.devry.edu/
+DeVry University-Phoenix,http://www.phx.devry.edu/
+DeVry University-Pomona,http://www.pom.devry.edu/
 Divine Word College,http://www.dwci.edu/
 Dixie State University,http://www.dixie.edu/
-Doane College,http://www.doane.edu/
-Dominican College,http://www.dc.edu/
 Dominican House of Studies,http://www.dhs.edu/
 Dominican School of Philosophy & Theology,http://www.dspt.edu/
-Dominican University,http://www.dom.edu/
-Dominican University of California,http://www.dominican.edu/
 Donnelly College,http://www.donnelly.edu/
-Dordt College,http://www.dordt.edu/
 Dowling College,http://www.dowling.edu/
-Drake University,http://www.drake.edu/
-Drew University,http://www.drew.edu/
-Drexel University,http://www.drexel.edu/
-Drury University,http://www.drury.edu/
-Duke University,http://duke.edu/
 Dunwoody College of Technology,http://www.dunwoody.edu/
-Duquesne University,http://www.duq.edu/
-D´Youville College,http://www.dyc.edu/
 Earlham College,http://www.earlham.edu/
-East Carolina University,http://www.ecu.edu/
-East Central University,http://www.ecok.edu/
-East Stroudsburg State University of Pennsylvania,http://www.esu.edu/
-East Tennessee State University,http://www.etsu.edu/
-East Texas Baptist University,http://www.etbu.edu/
 East-West University,http://www.eastwest.edu/
-Eastern Connecticut State University,http://www.easternct.edu/
 Eastern Florida State College,http://www.easternflorida.edu/
-Eastern Illinois University,http://www.eiu.edu/
-Eastern Kentucky University,http://www.eku.edu/
-Eastern Mennonite University,http://www.emu.edu/
-Eastern Michigan University,http://www.emich.edu/
-Eastern Nazarene College,http://www.enc.edu/
-Eastern New Mexico University,http://www.enmu.edu/
-Eastern Oregon University,https://www.eou.edu/
-Eastern University,http://www.eastern.edu/
 Eastern Virginia Medical School,http://www.evms.edu/
-Eastern Washington University,http://www.ewu.edu/
-Eckerd College,http://www.eckerd.edu/
 ECPI University,http://www.ecpi.edu/
 Eden Theological Seminary,http://www.eden.edu/
-Edgewood College,http://www.edgewood.edu/
-Edinboro University of Pennsylvania,http://www.edinboro.edu/
 EDP College,http://www.edpuniversity.edu/
-Edward Waters College,http://www.ewc.edu/
-Elizabeth City State University,http://www.ecsu.edu/
-Elizabethtown College,http://www.etown.edu/
-Elmhurst College,http://www.elmhurst.edu/
-Elmira College,http://www.elmira.edu/
-Elms College,http://www.elms.edu/
-Elon University,http://www.elon.edu/
-Embry-Riddle Aeronautical University,http://www.erau.edu/
-Emerson College,http://www.emerson.edu/
 Emmanuel Christian Seminary,http://www.ecs.edu/
 Emmanuel College,http://www.ec.edu/
-Emmanuel College,http://www.emmanuel.edu/
 Emmaus Bible College,http://www.emmaus.edu/
-Emporia State University,http://www.emporia.edu/
-Emory & Henry College,http://www.ehc.edu/
-Emory University,http://www.emory.edu/
-Endicott College,http://www.endicott.edu/
 Erikson Institute,http://www.erikson.edu/
-Erskine College,http://www.erskine.edu/
 Escuela de Artes Plásticas de Puerto Rico,http://www.eap.edu/
-Eureka College,http://www.eureka.edu/
-Evangel University,http://www.evangel.edu/
 Evangelical Theological Seminary,http://evangelical.edu/
 Everglades University,http://www.evergladesuniversity.edu/
-Evergreen State College,http://www.evergreen.edu/
 Excelsior College,http://www.excelsior.edu/
 Fairfield University,http://www.fairfield.edu/
-Fairleigh Dickinson University,http://www.fdu.edu/
-Fairmont State University,http://www.fairmontstate.edu/
-Faith Baptist Bible College & Theological Seminary,http://www.faith.edu/
 Fashion Institute of Design & Merchandising,http://fidm.edu/
 Faulkner University,http://www.faulkner.edu/
-Fayetteville State University,http://www.uncfsu.edu/
-Felician College,http://www.felician.edu/
-Ferris State University,http://www.ferris.edu
-Ferrum College,http://www.ferrum.edu/
 Fielding Graduate University,http://www.fielding.edu/
 Finlandia University,http://www.finlandia.edu/
-Fisher College,http://www.fisher.edu/
-Fisk University,http://www.fisk.edu/
-Fitchburg State University,http://www.fitchburgstate.edu/
 Five Towns College,http://www.ftc.edu/
-Flagler College,http://www.flagler.edu/
-Florida Agricultural & Mechanical University,http://www.famu.edu/
-Florida Atlantic University,http://www.fau.edu/
-Florida College,http://www.floridacollege.edu/
 Florida Gateway College,http://www.fgc.edu/
-Florida Gulf Coast University,http://www.fgcu.edu/
-Florida Institute of Technology,http://www.fit.edu/
-Florida International University,http://www.fiu.edu/
 Florida Memorial University,http://www.fmuniv.edu/
 Florida National University,http://www.fnu.edu/
-Florida Southern College,http://www.flsouthern.edu/
 Florida SouthWestern State College,http://www.fsw.edu/
 Florida State College at Jacksonville,http://www.fscj.edu/
-Florida State University,http://www.fsu.edu/
-Fontbonne University,http://www.fontbonne.edu/
-Fordham University,http://www.fordham.edu/
 Forest Institute of Professional Psychology,http://www.forest.edu/
-Fort Hays State University,http://www.fhsu.edu/
-Fort Lewis College,http://www.fortlewis.edu/
-Fort Valley State University,http://www.fvsu.edu/
-Framingham State University,http://www.framingham.edu/
-Francis Marion University,http://www.fmarion.edu/
 Franciscan School of Theology,http://fst.edu/
-Franciscan University of Steubenville,http://www.franciscan.edu/
 Frank Lloyd Wright School of Architecture,http://www.taliesin.edu/
 Franklin & Marshall College,http://www.fandm.edu/
-Franklin College,http://www.franklincollege.edu/
-Franklin Pierce University,http://www.franklinpierce.edu/
 Franklin University,http://www.franklin.edu/
-Franklin W. Olin College of Engineering,http://www.olin.edu/
-Freed-Hardeman University,http://www.fhu.edu/
-Fresno Pacific University,http://www.fresno.edu/
-Friends University,http://www.friends.edu/
 Frontier Nursing University,http://www.frontier.edu/
-Frostburg State University,http://www.frostburg.edu/
 Fuller Theological Seminary,http://fuller.edu/
-Furman University,http://www.furman.edu/
 Future Generations Graduate School,http://www.future.edu/
-Gallaudet University,http://www.gallaudet.edu/
-Gannon University,http://www.gannon.edu/
-Gardner-Webb University,http://www.gardner-webb.edu/
 Garrett-Evangelical Theological Seminary,http://www.garrett.edu/
-Geneva College,http://www.geneva.edu/
-George Fox University,http://www.georgefox.edu/
-George Mason University,http://www.gmu.edu/
-George Washington University,http://www.gwu.edu/
-George Washington University–Virginia Science & Technology Campus,http://virginia.gwu.edu/
-Georgetown College,http://www.georgetowncollege.edu/
-Georgetown University,http://www.georgetown.edu/
-Georgia College & State University,http://www.gcsu.edu/
+George Washington University-Virginia Science & Technology Campus,http://virginia.gwu.edu/
 Georgia Gwinnett College,http://www.ggc.edu/
-Georgia Institute of Technology,http://www.gatech.edu/
 Georgia Regents University,http://www.gru.edu/
-Georgia Southern University,http://www.georgiasouthern.edu/
-Georgia Southwestern State University,http://www.gsw.edu/
-Georgia State University,http://www.gsu.edu/
-Georgian Court University,http://www.georgian.edu/
-Gettysburg College,http://www.gettysburg.edu/
-Glenville State College,http://www.glenville.edu/
 Global University,http://www.globaluniversity.edu/
 God's Bible School & College,http://www.gbs.edu/
 Goddard College,http://www.goddard.edu/
@@ -304,189 +1433,83 @@ Golden Gate Baptist Theological Seminary,http://www.ggbts.edu/
 Golden Gate University,http://www.ggu.edu/
 Goldey-Beacom College,http://www.gbc.edu/
 Goldfarb School of Nursing at Barnes-Jewish College,http://www.barnesjewishcollege.edu/
-Gonzaga University,http://www.gonzaga.edu/
 Goodwin College,http://www.goodwin.edu/
 Gordon State College,http://www.gordonstate.edu/
-Gordon College,http://www.gordon.edu/
 Gordon-Conwell Theological Seminary,http://www.gordonconwell.edu/
-Goshen College,http://www.goshen.edu/
 Goucher College,http://www.goucher.edu/
 Governors State University,http://www.govst.edu/
 Grace Bible College,http://www.gbcol.edu/
-Grace College & Seminary,http://www.grace.edu/
-Grace University,https://www.graceuniversity.edu/
-Graceland University,http://www.graceland.edu/
 Graduate Institute of Applied Linguistics,http://www.gial.edu/
 Graduate Theological Union,http://gtu.edu/
-Grambling State University,http://www.gram.edu/
 Grand Canyon University,http://www.gcu.edu/
-Grand Valley State University,http://www.gvsu.edu/
-Grand View University,http://www.grandview.edu/
 Granite State College,http://www.granite.edu/
 Gratz College,http://www.gratz.edu/
 Great Basin College,http://www.gbcnv.edu/
 Great Lakes Christian College,http://www.glcc.edu/
-Green Mountain College,http://www.greenmtn.edu/
-Greensboro College,http://www.greensboro.edu/
-Greenville College,http://www.greenville.edu/
-Grinnell College,http://www.grinnell.edu/
 Grove City College,http://www.gcc.edu/
-Guilford College,http://www.guilford.edu/
 Gulf Coast State College,http://www.gulfcoast.edu/
-Gustavus Adolphus College,http://gustavus.edu/
-Gwynedd Mercy University,http://www.gmercyu.edu/
 Icahn School of Medicine at Mount Sinai,http://icahn.mssm.edu/
 Idaho State University,http://www.isu.edu/
 Iliff School of Theology,http://www.iliff.edu/
 Illinois College,http://www.ic.edu/
 Illinois College of Optometry,http://www.ico.edu/
 Illinois Institute of Art,https://www.artinstitutes.edu/chicago/
-Illinois Institute of Art–Schaumburg,http://www.artinstitutes.edu/schaumburg/
-Illinois Institute of Technology,http://www.iit.edu/
-Illinois State University,http://illinoisstate.edu/
-Illinois Wesleyan University,http://www.iwu.edu/
-Immaculata University,http://www.immaculata.edu/
+Illinois Institute of Art-Schaumburg,http://www.artinstitutes.edu/schaumburg/
 Indian River State College,http://www.irsc.edu/
-Indiana Institute of Technology,http://www.indianatech.edu/
-Indiana State University,http://www.indstate.edu/
-Indiana University–Bloomington,http://www.iub.edu/
-Indiana University–East,http://www.iue.edu/
-Indiana University–Kokomo,http://www.iuk.edu/
-Indiana University–Northwest,http://www.iun.edu/
-Indiana University–South Bend,http://www.iusb.edu/
-Indiana University–Southeast,http://www.ius.edu/
 Indiana University System,http://www.indiana.edu/
 Indiana University/Purdue University at Columbus,http://www.iupuc.edu/
-Indiana University/Purdue University at Fort Wayne,http://www.ipfw.edu/
-Indiana University/Purdue University at Indianapolis,http://www.iupui.edu/
-Indiana University of Pennsylvania,http://www.iup.edu/
-Indiana Wesleyan University,https://www.indwes.edu/
 Institute for Clinical Social Work,http://www.icsw.edu/
 Institute for the Psychological Sciences,http://ipsciences.edu/
 Institute of American Indian Arts,http://www.iaia.edu/
 Institute of World Politics,http://www.iwp.edu/
 Interdenominational Theological Center,http://www.itc.edu/
-Iona College,http://www.iona.edu/
-Iowa State University,http://www.iastate.edu/
-Iowa Wesleyan University,http://www.iw.edu/
 Irell & Manella Graduate School of Biological Sciences,http://www.cityofhope.org/grad-school
-Ithaca College,http://www.ithaca.edu/
-Jackson State University,http://www.jsums.edu/
-Jacksonville University,http://www.ju.edu/
-Jacksonville State University,http://www.jsu.edu/
-James Madison University,http://www.jmu.edu/
 Jarvis Christian College,http://www.jarvis.edu/
-Jefferson College of Health Sciences,http://www.jchs.edu/
-The Jewish Theological Seminary of America,http://www.jtsa.edu/
-John Brown University,http://www.jbu.edu/
-John Carroll University,http://www.jcu.edu/
 John F. Kennedy University,http://www.jfku.edu/
 John Marshall Law School,http://www.jmls.edu/
-Johns Hopkins University,https://www.jhu.edu/
-Johnson University,http://www.johnsonu.edu/
 Johnson University Florida,http://www.johnsonu.edu/florida/
-Johnson C. Smith University,http://www.jcsu.edu/
-Johnson State College,http://www.jsc.edu/
 Johnson & Wales University,http://www.jwu.edu/
 Jones International University,http://www.jiu.edu/
-Judson College,http://www.judson.edu/
-Judson University,http://www.judsonu.edu/
 The Juilliard School,http://www.juilliard.edu/
-Juniata College,http://www.juniata.edu/
-La Roche College,http://www.laroche.edu/
-La Salle University,http://www.lasalle.edu/
-La Sierra University,http://lasierra.edu/
 Labouré College,http://www.laboure.edu/
-Lafayette College,https://www.lafayette.edu/
-LaGrange College,http://www.lagrange.edu/
 Laguna College of Art & Design,http://www.lcad.edu/
-Lake Erie College,http://www.lec.edu/
 Lake Erie College of Osteopathic Medicine,http://lecom.edu/
 Lake Forest College,http://www.lakeforest.edu/
 Lake Forest Graduate School of Management,http://www.lakeforestmba.edu/
-Lake Superior State University,http://www.lssu.edu/
 Lake-Sumter State College,http://www.lssc.edu/
-Lakeland College,http://www.lakeland.edu/
 Lakeview College of Nursing,http://www.lakeviewcol.edu/
-Lamar University,http://www.lamar.edu/
-Lancaster Bible College,http://www.lbc.edu/
 Lancaster Theological Seminary,http://www.lancasterseminary.edu/
-Lander University,http://www.lander.edu/
 Landmark College,http://www.landmark.edu/
 Lane College,http://www.lanecollege.edu/
 Langston University,http://www.langston.edu/
-Lasell College,http://www.lasell.edu/
-Lawrence Technological University,http://www.ltu.edu/
 Lawrence University,http://www.lawrence.edu/
-Le Moyne College,http://lemoyne.edu/
-Lebanon Valley College,http://www.lvc.edu/
-Lee University,http://www.leeuniversity.edu/
-Lees-McRae College,http://www.lmc.edu/
-Lehigh University,http://www.lehigh.edu/
 LeMoyne-Owen College,http://www.loc.edu/
-Lenoir-Rhyne University,http://www.lr.edu/
-Lesley University,http://www.lesley.edu/
-LeTourneau University,http://www.letu.edu/
 Lewis & Clark College,http://www.lclark.edu/
-Lewis-Clark State College,http://www.lcsc.edu/
-Lewis University,http://www.lewisu.edu/
-Lexington College,http://www.lexingtoncollege.edu/
 Liberty University,http://www.liberty.edu/
-Life Pacific College,http://lifepacific.edu/
 Life University,http://www.life.edu/
 LIM College,http://www.limcollege.edu/
-Limestone College,http://www.limestone.edu/
-Lincoln Christian University,http://www.lincolnchristian.edu/
-Lincoln College,http://lincolncollege.edu/
 Lincoln College of New England,http://www.lincolncollegene.edu/
-Lincoln Memorial University,http://www.lmunet.edu/
 Lincoln University,http://www.lincolnu.edu/
-Lincoln University,http://www.lincoln.edu/
-Lindenwood University,http://www.lindenwood.edu/
 Lindsey Wilson College,http://www.lindsey.edu/
-Linfield College,http://www.linfield.edu/
-Lipscomb University,http://www.lipscomb.edu/
-Livingstone College,http://www.livingstone.edu/
-Lock Haven University of Pennsylvania,http://www.lhup.edu/
 Logan University,http://www.logan.edu/
 Loma Linda University,http://www.llu.edu/
 Long Island University,http://www.liu.edu/
-Long Island University–Arnold & Marie Schwartz College of Pharmacy & Health Sciences,http://www.liu.edu/pharmacy/
-Long Island University–Brentwood Campus,http://www.liu.edu/brentwood/
-Long Island University–Brooklyn Campus,http://www.liu.edu/brooklyn/
-Long Island University–C.W. Post Campus,http://www.liu.edu/cwpost/
-Long Island University–Hudson,http://www.liu.edu/hudson/
-Long Island University–Riverhead,http://www.liu.edu/riverhead/
-Longwood University,http://www.longwood.edu/
+Long Island University-Arnold & Marie Schwartz College of Pharmacy & Health Sciences,http://www.liu.edu/pharmacy/
+Long Island University-Brentwood Campus,http://www.liu.edu/brentwood/
+Long Island University-Hudson,http://www.liu.edu/hudson/
+Long Island University-Riverhead,http://www.liu.edu/riverhead/
 Longy School of Music of Bard College,http://longy.edu/
-Loras College,http://loras.edu/
-Louisiana College,http://www.lacollege.edu/
-Louisiana State University,http://www.lsu.edu/
-Louisiana State University–Alexandria,http://www.lsua.edu/
-Louisiana State University–Law Center,http://www.law.lsu.edu/
-Louisiana State University Health Sciences Center–New Orleans,http://www.lsuhsc.edu/
-Louisiana State University Health Sciences Center–Shreveport,http://www.lsuhscshreveport.edu/Education/
-Louisiana State University–Shreveport,http://www.lsus.edu/
+Louisiana State University-Law Center,http://www.law.lsu.edu/
+Louisiana State University Health Sciences Center-New Orleans,http://www.lsuhsc.edu/
+Louisiana State University Health Sciences Center-Shreveport,http://www.lsuhscshreveport.edu/Education/
 Louisiana State University System,http://www.lsusystem.edu/
-Louisiana Tech University,http://www.latech.edu/
 Louisville Presbyterian Theological Seminary,http://www.lpts.edu/
 Lourdes University,http://www.lourdes.edu/
-Loyola University Maryland,http://www.loyola.edu/
-Loyola Marymount University,http://www.lmu.edu/
-Loyola University Chicago,http://www.luc.edu/
-Loyola University New Orleans,http://www.loyno.edu/
-Lubbock Christian University,http://www.lcu.edu/
-Luther College,http://www.luther.edu/
 Luther Seminary,http://www.luthersem.edu/
 Lutheran School of Theology at Chicago,http://www.lstc.edu/
 Lutheran Theological Seminary at Gettysburg,http://www.ltsg.edu/
 Lutheran Theological Seminary at Philadelphia,http://ltsp.edu/
-Lycoming College,http://www.lycoming.edu/
-Lyme Academy College of Fine Arts,http://www.lymeacademy.edu/
-Lynchburg College,http://www.lynchburg.edu/
-Lyndon State College,http://lyndonstate.edu/
 Lynn University,http://www.lynn.edu/
-Lyon College,http://www.lyon.edu/
 Naropa University,http://www.naropa.edu/
 National American University,http://www.national.edu/
 National College of Natural Medicine,http://www.ncnm.edu/
@@ -503,10 +1526,6 @@ Naval Postgraduate School,http://www.nps.navy.mil/
 Nazarene Bible College,http://www.nbc.edu/
 Nazareth College,http://www.naz.edu/
 Nebraska Christian College,http://nechristian.edu/
-Nebraska Methodist College,http://www.methodistcollege.edu/
-Nebraska Wesleyan University,https://www.nebrwesleyan.edu/
-Neumann University,http://www.neumann.edu/
-New College of Florida,http://www.ncf.edu/
 New England College,http://www.nec.edu/
 New England College of Business,http://www.necb.edu/
 New England College of Optometry,http://www.neco.edu/
@@ -514,254 +1533,93 @@ New England Conservatory of Music,http://necmusic.edu/
 New England Institute of Art,http://www.artinstitutes.edu/boston/
 New England Institute of Technology,http://www.neit.edu/
 New Hope Christian College,http://www.newhope.edu/
-New Jersey City University,http://www.njcu.edu/
-New Jersey Institute of Technology,http://www.njit.edu/
 New Mexico Highlands University,http://www.nmhu.edu/
-New Mexico Institute of Mining & Technology,http://www.nmt.edu/
-New Mexico State University,http://www.nmsu.edu/
 New Orleans Baptist Theological Seminary,http://www.nobts.edu/
-The New School,http://www.newschool.edu/
 New York Chiropractic College,http://www.nycc.edu/
-New York Institute of Technology,http://www.nyit.edu/
 New York Medical College,http://www.nymc.edu/
-New York University,http://www.nyu.edu/
-Newberry College,http://www.newberry.edu/
-Newbury College,http://www.newbury.edu/
-Newman University,http://newmanu.edu/
 NewSchool of Architecture & Design,http://newschoolarch.edu/
-Niagara University,http://www.niagara.edu/
-Nichols College,http://www.nichols.edu/
-Nicholls State University,http://www.nicholls.edu/
-Norfolk State University,http://www.nsu.edu/
-North Carolina A&T State University,http://www.ncat.edu/
-North Carolina Central University,http://www.nccu.edu/
-North Carolina Wesleyan College,http://www.ncwc.edu/
-North Central University,http://www.northcentral.edu/
-North Central College,http://www.northcentralcollege.edu/
-North Carolina State University,https://www.ncsu.edu/
-North Dakota State University,http://www.ndsu.edu/
-North Greenville University,http://www.ngu.edu/
-North Park University,http://www.northpark.edu/
 Northcentral University,http://www.ncu.edu/
 Northeast Ohio Medical University,http://www.neomed.edu/
-Northeastern Illinois University,http://www.neiu.edu/
 Northeastern Seminary at Roberts Wesleyan College,https://www.nes.edu/
-Northeastern State University,http://www.nsuok.edu/
-Northeastern State University–Broken Arrow,http://www.nsuok.edu/BrokenArrow.aspx
-Northeastern State University–Muskogee,http://www.nsuok.edu/Muskogee.aspx
-Northeastern University,http://www.northeastern.edu/
-Northern Arizona University,http://www.nau.edu/
+Northeastern State University-Broken Arrow,http://www.nsuok.edu/BrokenArrow.aspx
+Northeastern State University-Muskogee,http://www.nsuok.edu/Muskogee.aspx
 Northern Baptist Theological Seminary,http://www.seminary.edu/
-Northern Illinois University,http://www.niu.edu/
-Northern Kentucky University,http://www.nku.edu/
 Northern Marianas College,http://www.marianas.edu/
-Northern Michigan University,http://www.nmu.edu/
 Northern New Mexico College,http://www.nnmc.edu/
-Northern State University,http://www.northern.edu/
-Northland College,http://www.northland.edu/
-Northwest Christian University,http://www.nwcu.edu/
 Northwest Florida State College,http://www.nwfsc.edu/
 Northwest Indian College,http://www.nwic.edu/
-Northwest Missouri State University,http://www.nwmissouri.edu/
-Northwest Nazarene University,http://www.nnu.edu/
-Northwest University,http://www.northwestu.edu/
-Northwestern College,http://www.nwciowa.edu/
 Northwestern Health Sciences University,http://www.nwhealth.edu/
-Northwestern Oklahoma State University,http://www.nwosu.edu/
-Northwestern State University,http://www.nsula.edu/
-Northwestern University,http://www.northwestern.edu/
-Northwood University,http://www.northwood.edu/
-Norwich University,http://www.norwich.edu/
-Notre Dame College,http://www.notredamecollege.edu/
-Notre Dame of Maryland University,http://www.ndm.edu/
-Notre Dame de Namur University,http://www.ndnu.edu/
 Notre Dame Seminary,http://nds.edu/
-Nova Southeastern University,http://www.nova.edu/
-Nyack College,http://www.nyack.edu/
-Oak Hills Christian College,http://www.oakhills.edu/
-Oakland City University,http://www.oak.edu/
-Oakland University,http://www.oakland.edu/
-Oakwood University,http://www.oakwood.edu/
-Oberlin College,http://www.oberlin.edu/
 Oblate School of Theology,http://www.ost.edu/
-Occidental College,http://www.oxy.edu/
 Oglala Lakota College,http://www.olc.edu/
-Oglethorpe University,http://www.oglethorpe.edu/
-Ohio Christian University,http://www.ohiochristian.edu/
-Ohio Dominican University,http://www.ohiodominican.edu/
-Ohio Northern University,http://www.onu.edu/
-Ohio State University,http://www.osu.edu/
-Ohio State University–Lima,http://www.lima.osu.edu/
-Ohio State University–Mansfield,http://mansfield.osu.edu/
-Ohio State University–Marion,http://osumarion.osu.edu/
-Ohio State University–Newark,http://newark.osu.edu/
-Ohio University,http://www.ohio.edu/
-Ohio University–Eastern Campus,https://www.ohio.edu/eastern/
-Ohio University–Lancaster,http://www.ohio.edu/lancaster/
-Ohio University–Zanesville,http://www.ohio.edu/zanesville/
-Ohio Valley University,http://www.ovu.edu/
-Ohio Wesleyan University,http://www.owu.edu/
-Oklahoma Baptist University,http://www.okbu.edu/
-Oklahoma Christian University,http://www.oc.edu/
-Oklahoma City University,http://www.okcu.edu/
-Oklahoma Panhandle State University,http://www.opsu.edu/
-Oklahoma State University,http://www.okstate.edu/
-Oklahoma State University–Center for Health Sciences,http://www.healthsciences.okstate.edu/
-Oklahoma State University–Institute of Technology,http://www.osuit.edu/
-Oklahoma State University–Oklahoma City,http://www.osuokc.edu/
-Oklahoma State University–Tulsa,http://www.osu-tulsa.okstate.edu/
-Oklahoma Wesleyan University,http://www.okwu.edu/
-Old Dominion University,http://www.odu.edu/
-Olivet College,http://www.olivetcollege.edu/
-Olivet Nazarene University,http://www.olivet.edu/
+Ohio State University-Lima,http://www.lima.osu.edu/
+Ohio State University-Mansfield,http://mansfield.osu.edu/
+Ohio State University-Marion,http://osumarion.osu.edu/
+Ohio State University-Newark,http://newark.osu.edu/
+Ohio University-Eastern Campus,https://www.ohio.edu/eastern/
+Ohio University-Lancaster,http://www.ohio.edu/lancaster/
+Ohio University-Zanesville,http://www.ohio.edu/zanesville/
+Oklahoma State University-Center for Health Sciences,http://www.healthsciences.okstate.edu/
+Oklahoma State University-Institute of Technology,http://www.osuit.edu/
+Oklahoma State University-Oklahoma City,http://www.osuokc.edu/
+Oklahoma State University-Tulsa,http://www.osu-tulsa.okstate.edu/
 Olivet University,http://www.olivetuniversity.edu/
 Olympic College,http://www.olympic.edu/
-Oral Roberts University,http://www.oru.edu/
 Oregon College of Art & Craft,http://ocac.edu/
 Oregon Health & Science University,http://www.ohsu.edu/
-Oregon Institute of Technology,http://www.oit.edu/
-Oregon State University,http://oregonstate.edu/
-Otis College of Art & Design,http://www.otis.edu/
 Ottawa University,http://www.ottawa.edu/
-Otterbein University,http://www.otterbein.edu/
-Ouachita Baptist University,http://www.obu.edu/
 Our Lady of Holy Cross College,http://www.olhcc.edu/
-Our Lady of the Lake College,http://www.ololcollege.edu/
-Our Lady of the Lake University,http://www.ollusa.edu/
 Ozark Christian College,http://occ.edu/
-Queens University of Charlotte,http://www.queens.edu/
-Quincy University,http://www.quincy.edu/
-Quinnipiac University,http://www.quinnipiac.edu/
-Radford University,http://www.radford.edu/
-Ramapo College of New Jersey,http://www.ramapo.edu/
-Randolph College,http://www.randolphcollege.edu/
-Randolph-Macon College,http://www.rmc.edu/
 Ranken Technical College,http://ranken.edu/
 Rasmussen College,http://www.rasmussen.edu/
 Reconstructionist Rabbinical College,http://www.rrc.edu/
-Reed College,http://www.reed.edu/
 Reformed Theological Seminary,http://www.rts.edu/
-Regent University,http://www.regent.edu/
-Regis College,http://www.regiscollege.edu/
-Regis University,http://www.regis.edu/
-Reinhardt University,http://www.reinhardt.edu/
-Rensselaer Polytechnic Institute,http://www.rpi.edu/
 Research College of Nursing,http://researchcollege.edu/
 Resurrection University,http://resu.edu/
-Rhode Island College,http://www.ric.edu/
-Rhode Island School of Design,http://www.risd.edu/
-Rhodes College,http://www.rhodes.edu/
-Rice University,http://www.riceinfo.rice.edu/
 Richmont Graduate University,http://richmont.edu/
-Rider University,http://www.rider.edu/
 Ringling College of Art & Design,http://www.ringling.edu/
-Ripon College,http://www.ripon.edu/
-Rivier University,http://www.rivier.edu/
-Roanoke College,http://www.roanoke.edu/
-Robert Morris University,http://www.rmu.edu/
 Robert Morris University Illinois,http://www.robertmorris.edu/
-Roberts Wesleyan College,http://www.roberts.edu/
-Rochester College,http://www.rc.edu/
-Rochester Institute of Technology,http://www.rit.edu/
-Rockford University,http://www.rockford.edu/
-Rockhurst University,http://www.rockhurst.edu/
-Rocky Mountain College,http://www.rocky.edu/
 Rocky Mountain College of Art & Design,http://www.rmcad.edu/
 Roger Williams University,http://www.rwu.edu/
-Rogers State University,http://www.rsu.edu/
-Rollins College,http://www.rollins.edu/
-Roosevelt University,http://www.roosevelt.edu/
 Rosalind Franklin University of Medicine & Science,http://www.rosalindfranklin.edu/
-Rose-Hulman Institute of Technology,http://www.rose-hulman.edu/
 Roseman University of Health Sciences,http://www.roseman.edu/
-Rosemont College,http://www.rosemont.edu/
-Rowan University,http://www.rowan.edu/
 Rush University,http://www.rushu.rush.edu/
 Rust College,http://www.rustcollege.edu/
-Rutgers University–Camden,http://www.camden.rutgers.edu/
-Rutgers University–New Brunswick,http://www.rutgers.edu/
-Rutgers University–Newark,http://www.newark.rutgers.edu/
-Tabor College,http://tabor.edu/
 Talladega College,http://www.talladega.edu/
-Tarleton State University,http://www.tarleton.edu/
-Taylor University,http://www.taylor.edu/
 TCM International Institute,http://www.tcmi.org/
-Temple University,http://www.temple.edu/
 Tennessee State University,http://www.tnstate.edu/
-Tennessee Technological University,http://www.tntech.edu/
-Tennessee Wesleyan College,http://www.twcnet.edu/
-Texas A&M International University,http://www.tamiu.edu/
-Texas A&M University,http://www.tamu.edu/
-Texas A&M University–Central Texas,http://www.tamuct.edu/
-Texas A&M University–Commerce,http://www.tamuc.edu/
-Texas A&M University–Corpus Christi,http://www.tamucc.edu/
-Texas A&M University–Galveston,http://www.tamug.edu/
+Texas A&M University-Central Texas,http://www.tamuct.edu/
 Texas A&M University Health Science Center,http://www.tamhsc.edu/
-Texas A&M University–Kingsville,http://www.tamuk.edu/
-Texas A&M University–San Antonio,http://www.tamusa.edu/
-Texas A&M University–Texarkana,http://www.tamut.edu/
+Texas A&M University-San Antonio,http://www.tamusa.edu/
 Texas Chiropractic College,http://www.txchiro.edu/
-Texas Christian University,http://www.tcu.edu/
 Texas College,http://www.texascollege.edu/
-Texas Lutheran University,http://www.tlu.edu/
-Texas Southern University,http://www.tsu.edu/
-Texas State University–San Marcos,http://www.txstate.edu/
-Texas Tech University,http://www.ttu.edu/
 Texas Tech University Health Sciences Center,http://www.ttuhsc.edu/
-Texas Wesleyan University,http://txwes.edu/
-Texas Woman's University,http://www.twu.edu/
-Thiel College,http://www.thiel.edu/
-Thomas Aquinas College,http://www.thomasaquinas.edu/
 Thomas University,http://www.thomasu.edu/
-Thomas College,http://www.thomas.edu/
 Thomas Edison State College,http://www.tesc.edu/
 Thomas Jefferson University,http://www.jefferson.edu/university.html
 Thomas M. Cooley Law School,http://www.cooley.edu/
-Thomas More College,http://www.thomasmore.edu/
 The Thomas More College of Liberal Arts,http://www.thomasmorecollege.edu/
 Thunderbird School of Global Management,http://www.thunderbird.edu/
-Tiffin University,http://www.tiffin.edu/
-Toccoa Falls College,http://www.tfc.edu/
-Tougaloo College,http://www.tougaloo.edu/
 Touro College,http://www.touro.edu/
 Touro College Los Angeles,http://www.touro.edu/losangeles/
 Touro University California,http://www.tu.edu/
 Touro University Nevada,http://tun.touro.edu/
 Touro University Worldwide,http://www.tuw.edu/
-Towson University,http://www.towson.edu/
 Toyota Technological Institute at Chicago,http://www.ttic.edu/
-Transylvania University,http://www.transy.edu/
-Trevecca Nazarene University,http://www.trevecca.edu/
 Trident University International,https://www.trident.edu/
-Trine University,http://www.trine.edu/
-Trinity Bible College,http://www.trinitybiblecollege.edu/
-Trinity Christian College,http://www.trnty.edu/
-Trinity College,http://www.trincoll.edu/
 Trinity College of Nursing & Health Sciences,http://www.trinitycollegeqc.edu/
 Trinity Lutheran Seminary,http://www.tlsohio.edu/
 Trinity Washington University,http://www.trinitydc.edu/
 Trinity College of Florida,http://www.trinitycollege.edu/
-Trinity International University,http://www.tiu.edu/
-Trinity Lutheran College,https://www.tlc.edu/
-Trinity University,http://www.trinity.edu/
-Troy University,http://www.troy.edu/
-Truett-McConnell College,http://www.truett.edu/
-Truman State University,http://www.truman.edu/
-Tufts University,http://www.tufts.edu/
-Tulane University,http://www.tulane.edu/
 Turtle Mountain Community College,http://www.tm.edu/
-Tusculum College,http://www.tusculum.edu/
-Tuskegee University,http://www.tuskegee.edu/
 Unification Theological Seminary,http://www.uts.edu/
 Uniformed Services University of the Health Sciences,https://www.usuhs.edu/
 Union College,http://www.unionky.edu/
-Union College,http://www.ucollege.edu/
 Union College,http://www.union.edu/
 Union Graduate College,http://www.uniongraduatecollege.edu/
 Union Institute & University,http://myunion.edu/
 Union Presbyterian Seminary,http://www.upsem.edu/
 Union Theological Seminary,https://utsnyc.edu/
-Union University,http://www.uu.edu/
 United States Air Force Academy,http://www.usafa.edu/
 United States Army Command & General Staff College,http://usacac.army.mil/organizations/cace/cgsc/
 United States Army War College,http://www.carlisle.army.mil/
@@ -793,1374 +1651,515 @@ School of Law,http://www.derecho.inter.edu/
 School of Optometry,http://www.optonet.inter.edu/
 Universidad Politecnica de Puerto Rico,http://www.pupr.edu/
 University System of Maryland,http://www.usmd.edu/
-Upper Iowa University,http://www.uiu.edu/
 Urbana University,http://www.urbana.edu/
-Ursinus College,http://www.ursinus.edu/
-Ursuline College,http://www.ursuline.edu/
-Utah State University,http://www.usu.edu/
 Utah Valley University,http://www.uvu.edu/
-Utica College,http://www.utica.edu/
 University of Advancing Technology,http://www.uat.edu/
-University of Akron,http://www.uakron.edu/
-University of Alabama,http://www.ua.edu/
-University of Alabama–Birmingham,http://www.uab.edu/
-University of Alabama–Huntsville,http://www.uah.edu/
 University of Alaska System,http://www.alaska.edu/
 Anchorage,http://www.uaa.alaska.edu/
 Fairbanks,http://www.uaf.edu/
 Southeast,http://www.uas.alaska.edu/
-University of Arizona,http://www.arizona.edu/
-University of Arkansas,http://www.uark.edu/
-University of Arkansas–Fort Smith,http://uafs.edu/
-University of Arkansas–Little Rock,http://ualr.edu/
 University of Arkansas for Medical Sciences,http://www.uams.edu/
-University of Arkansas–Monticello,http://www.uamont.edu/
-University of Arkansas–Pine Bluff,http://www.uapb.edu/
+University of Arkansas-Monticello,http://www.uamont.edu/
 University of Arkansas System,http://www.uasys.edu/
-University of Baltimore,http://www.ubalt.edu/
-University of Bridgeport,http://www.bridgeport.edu/
-University of California–Berkeley,http://www.berkeley.edu/
-University of California–Davis,http://ucdavis.edu/
 University of California Hastings College of the Law,http://www.uchastings.edu/
-University of California–Irvine,http://www.uci.edu/
-University of California–Los Angeles,http://www.ucla.edu/
-University of California–Merced,http://www.ucmerced.edu/
-University of California–Riverside,http://www.ucr.edu/
-University of California–San Diego,http://www.ucsd.edu/
-University of California–San Francisco,http://www.ucsf.edu/
-University of California–Santa Barbara,http://www.ucsb.edu/
-University of California–Santa Cruz,http://www.ucsc.edu/
+University of California-San Francisco,http://www.ucsf.edu/
 University of California System,http://www.ucop.edu/
-University of Central Arkansas,http://uca.edu/
-University of Central Florida,http://www.ucf.edu/
-University of Central Missouri,http://www.ucmo.edu/
-University of Central Oklahoma,http://www.uco.edu/
-University of Charleston,http://www.ucwv.edu/
-University of Chicago,http://www.uchicago.edu/
-University of Cincinnati,http://www.uc.edu/
-University of Cincinnati–Blue Ash,http://www.ucblueash.edu/
-University of Colorado–Boulder,http://www.colorado.edu/
-University of Colorado–Colorado Springs,http://www.uccs.edu/
-University of Colorado–Denver,http://www.ucdenver.edu/
+University of Cincinnati-Blue Ash,http://www.ucblueash.edu/
 University of Colorado System,http://www.cu.edu/
-University of Connecticut,http://uconn.edu/
-University of Dallas,http://www.udallas.edu/
-University of Dayton,http://www.udayton.edu/
-University of Delaware,http://www.udel.edu/
-University of Denver,http://www.du.edu/
 University of the District of Columbia,http://www.udc.edu/
-University of Detroit Mercy,http://www.udmercy.edu/
-University of Dubuque,http://www.dbq.edu/
-University of Evansville,http://www.evansville.edu/
-The University of Findlay,http://www.findlay.edu/
-University of Florida,http://www.ufl.edu/
-University of Georgia,http://www.uga.edu/
 University of Great Falls,http://www.ugf.edu/
 University of Guam,http://www.uog.edu/
-University of Hartford,http://www.hartford.edu/
-University of Hawaii–Hilo,http://hilo.hawaii.edu/
-University of Hawaii–Manoa,http://manoa.hawaii.edu/
 University of Hawaii System,http://www.hawaii.edu/
-University of Hawaii–West O'ahu,http://www.uhwo.hawaii.edu/
-University of Houston,http://www.uh.edu/
-University of Houston–Clear Lake,http://www.uhcl.edu/
-University of Houston–Downtown,http://www.uhd.edu/
-University of Houston–Victoria,http://www.uhv.edu/
-University of Idaho,http://www.uidaho.edu/
-University of Illinois–Chicago,http://www.uic.edu/
-University of Illinois–Springfield,http://www.uis.edu/
+University of Houston-Clear Lake,http://www.uhcl.edu/
+University of Houston-Downtown,http://www.uhd.edu/
 University of Illinois System,http://www.uillinois.edu/
-University of Illinois–Urbana-Champaign,http://illinois.edu/
-University of Indianapolis,http://www.uindy.edu/
-University of Iowa,http://www.uiowa.edu/
-University of Jamestown,http://www.uj.edu/
-University of Kansas,http://www.ku.edu/
 University of Kansas Medical Center,http://www.kumc.edu/
-University of Kentucky,http://www.uky.edu/
-University of La Verne,http://laverne.edu/
-University of Louisiana–Monroe,http://www.ulm.edu/
-University of Louisiana–Lafayette,http://www.louisiana.edu/
-University of Louisville,http://www.louisville.edu/
-University of Maine,https://umaine.edu/
-University of Maine–Augusta,http://www.uma.edu/
-University of Maine–Farmington,http://www.umf.maine.edu/
-University of Maine–Fort Kent,http://www.umfk.edu/
-University of Maine–Machias,http://machias.edu/
-University of Maine–Presque Isle,http://www.umpi.edu/
+University of Maine-Augusta,http://www.uma.edu/
+University of Maine-Farmington,http://www.umf.maine.edu/
+University of Maine-Presque Isle,http://www.umpi.edu/
 University of Maine School of Law,http://mainelaw.maine.edu/
 University of Maine System,http://www.maine.edu/
-University of Mary,http://www.umary.edu/
-University of Mary Hardin-Baylor,http://www.umhb.edu/
-University of Mary Washington,http://www.umw.edu/
-University of Maryland–Baltimore,http://www.umaryland.edu/
-University of Maryland–Baltimore County,http://www.umbc.edu/
-University of Maryland–College Park,http://www.umd.edu/
-University of Maryland–Eastern Shore,http://www.umes.edu/
-University of Maryland–University College,http://www.umuc.edu/
-University of Massachusetts–Amherst,http://www.umass.edu/
-University of Massachusetts–Boston,http://www.umb.edu/
-University of Massachusetts–Dartmouth,http://www.umassd.edu/
-University of Massachusetts–Lowell,http://www.uml.edu/
+University of Maryland-Baltimore,http://www.umaryland.edu/
+University of Maryland-University College,http://www.umuc.edu/
 University of Massachusetts Medical School at Worcester,http://www.umassmed.edu/
 University of Massachusetts System,http://www.massachusetts.edu/
 University of Medicine & Dentistry of New Jersey,http://www.umdnj.edu/
-University of Memphis,http://www.memphis.edu/
-University of Miami,http://www.miami.edu/
-University of Michigan,http://umich.edu/
-University of Michigan–Dearborn,http://umdearborn.edu/
-University of Michigan–Flint,http://www.umflint.edu/
-University of Minnesota–Crookston,http://www.crk.umn.edu/
-University of Minnesota–Duluth,http://www.d.umn.edu/
-University of Minnesota–Morris,http://www.morris.umn.edu/
-University of Minnesota–Rochester,http://r.umn.edu/
-University of Minnesota–Twin Cities,http://www.umn.edu/
-University of Mississippi,http://www.olemiss.edu/
 University of Mississippi Medical Center,https://www.umc.edu/
-University of Missouri,http://www.missouri.edu/
-University of Missouri–Kansas City,http://www.umkc.edu/
-University of Missouri–Saint Louis,http://www.umsl.edu/
 University of Missouri System,http://www.umsystem.edu/
-University of Mobile,http://umobile.edu/
-University of Montana–Missoula,http://www.umt.edu/
-University of Montana–Western,http://www.umwestern.edu/
-University of Montevallo,http://www.montevallo.edu/
-University of Mount Olive,http://www.umo.edu/
-University of Mount Union,http://www.mountunion.edu/
-University of Nebraska–Kearney,http://www.unk.edu/
-University of Nebraska–Lincoln,http://www.unl.edu/
+University of Montana-Western,http://www.umwestern.edu/
 University of Nebraska Medical Center,http://www.unmc.edu/
-University of Nebraska–Omaha,http://www.unomaha.edu/
 University of Nebraska System,http://www.nebraska.edu/
-University of Nevada–Las Vegas,http://www.unlv.edu/
-University of Nevada–Reno,http://www.unr.edu/
-University of New England,http://www.une.edu/
-University of New Hampshire,http://www.unh.edu/
-University of New Hampshire at Manchester,http://manchester.unh.edu/
 University of New Hampshire School of Law,http://law.unh.edu/
-University of New Haven,http://www.newhaven.edu/
-University of New Mexico,http://www.unm.edu/
-University of New Orleans,http://www.uno.edu/
-University of North Alabama,https://www.una.edu/
-University of North Carolina–Asheville,http://www.unca.edu/
-University of North Carolina–Chapel Hill,http://www.unc.edu/
-University of North Carolina–Charlotte,http://www.uncc.edu/
-University of North Carolina–Greensboro,http://www.uncg.edu/
-University of North Carolina–Pembroke,http://www.uncp.edu/
-University of North Carolina–School of the Arts,http://www.uncsa.edu/
-University of North Carolina–Wilmington,http://www.uncw.edu/
-University of North Dakota,http://und.edu/
-University of North Florida,http://www.unf.edu/
-University of North Georgia,http://ung.edu/
-University of North Texas,http://www.unt.edu/
-University of North Texas–Dallas,http://www.untdallas.edu/
+University of North Texas-Dallas,http://www.untdallas.edu/
 University of North Texas Health Science Center,http://www.unthsc.edu/
-University of Northern Colorado,http://www.unco.edu/
-University of Northern Iowa,http://www.uni.edu/
 University of Northwestern Ohio,http://www.unoh.edu/
-University of Northwestern–Saint Paul,http://www.unwsp.edu/
-University of Notre Dame,http://www.nd.edu/
-University of Oklahoma,http://www.ou.edu/
+University of Northwestern-Saint Paul,http://www.unwsp.edu/
 University of Oklahoma Health Sciences Center,http://www.ouhsc.edu/
-University of Oklahoma–Tulsa,http://www.ou.edu/tulsa/
-University of Oregon,http://uoregon.edu/
-University of the Ozarks,http://www.ozarks.edu/
-Valdosta State University,http://www.valdosta.edu/
+University of Oklahoma-Tulsa,http://www.ou.edu/tulsa/
 Valencia College,http://valenciacollege.edu/
-Valley City State University,http://www.vcsu.edu/
-Valparaiso University,http://www.valpo.edu/
-Vanderbilt University,http://www.vanderbilt.edu/
-VanderCook College of Music,http://www.vandercook.edu/
-Vanguard University of Southern California,http://www.vanguard.edu/
-Vassar College,http://www.vassar.edu/
-Vaughn College of Aeronautics & Technology,http://www.vaughn.edu/
 Vermont College of Fine Arts,http://vcfa.edu/
 Vermont Law School,http://www.vermontlaw.edu/
-Vermont Technical College,http://www.vtc.edu/
 Villa Maria College,http://www.villa.edu/
-Villanova University,http://www.villanova.edu/
 Vincennes University,http://www.vinu.edu/
-Virginia Commonwealth University,http://www.vcu.edu/
-Virginia Military Institute,http://www.vmi.edu/
-Virginia Polytechnic Institute & State University,http://www.vt.edu/
-Virginia State University,http://www.vsu.edu/
-Virginia Union University,http://www.vuu.edu/
-Virginia Wesleyan College,http://www.vwc.edu/
-Viterbo University,http://www.viterbo.edu/
 Voorhees College,https://www.voorhees.edu/
-Wabash College,http://www.wabash.edu/
 Wade College,http://www.wadecollege.edu/
-Wagner College,http://wagner.edu/
 Wake Forest University,http://www.wfu.edu/
 Walden University,http://www.waldenu.edu/
 Waldorf College,http://www.waldorf.edu/
-Walla Walla University,http://www.wallawalla.edu/
 Walsh College,http://www.walshcollege.edu/
-Walsh University,https://www.walsh.edu/
-Warner Pacific College,http://www.warnerpacific.edu/
-Warner University,http://warner.edu/
-Warren Wilson College,http://www.warren-wilson.edu/
-Wartburg College,http://www.wartburg.edu/
 Wartburg Theological Seminary,http://www.wartburgseminary.edu/
-Washburn University,http://www.washburn.edu/
 Washington & Jefferson College,http://www.washjeff.edu/
-Washington & Lee University,http://www.wlu.edu/
-Washington Adventist University,https://www.wau.edu/
-Washington College,http://www.washcoll.edu/
-Washington State University,https://wsu.edu/
-Washington State University–Spokane,https://spokane.wsu.edu/
-Washington State University–Tri-Cities,http://www.tricity.wsu.edu/
-Washington State University–Vancouver,http://www.vancouver.wsu.edu/
+Washington State University-Spokane,https://spokane.wsu.edu/
+Washington State University-Tri-Cities,http://www.tricity.wsu.edu/
+Washington State University-Vancouver,http://www.vancouver.wsu.edu/
 Washington Theological Union,http://www.wtu.edu/
-Washington University in Saint Louis,http://www.wustl.edu/
-"Watkins College of Art, Design, & Film",http://www.watkins.edu/
-Wayland Baptist University,http://www.wbu.edu/
 Wayne State College,http://www.wsc.edu/
-Wayne State University,http://wayne.edu/
-Waynesburg University,http://www.waynesburg.edu/
 Webb Institute,http://www.webb.edu/
-Webber International University,http://webber.edu/
 Weber State University,http://www.weber.edu/
-Webster University,http://www.webster.edu/
 Welch College,http://www.welch.edu/
-Wellesley College,http://www.wellesley.edu/
-Wells College,https://www.wells.edu/
-Wentworth Institute of Technology,http://www.wit.edu/
-Wesley College,http://wesley.edu/
 Wesley Theological Seminary,http://www.wesleyseminary.edu/
-Wesleyan College,http://www.wesleyancollege.edu/
-Wesleyan University,http://www.wesleyan.edu/
-West Chester University of Pennsylvania,http://www.wcupa.edu/
 West Coast University,http://westcoastuniversity.edu/
-West Liberty University,http://westliberty.edu/
-West Texas A&M University,http://www.wtamu.edu/
-West Virginia State University,http://www.wvstateu.edu/
-West Virginia University,http://www.wvu.edu/
-West Virginia University Institute of Technology,http://www.wvutech.edu/
 West Virginia University at Parkersburg,http://www.wvup.edu/
-West Virginia Wesleyan College,http://www.wvwc.edu/
-Western Carolina University,http://www.wcu.edu/
-Western Connecticut State University,http://www.wcsu.edu/
 Western Governors University,http://www.wgu.edu/
-Western Governors University–Indiana,http://indiana.wgu.edu/
-Western Governors University–Missouri,http://missouri.wgu.edu/
-Western Governors University–Tennessee,http://tennessee.wgu.edu/
-Western Governors University–Texas,http://texas.wgu.edu/
-Western Governors University–Washington,http://washington.wgu.edu/
-Western Illinois University,http://www.wiu.edu/
+Western Governors University-Indiana,http://indiana.wgu.edu/
+Western Governors University-Missouri,http://missouri.wgu.edu/
+Western Governors University-Tennessee,http://tennessee.wgu.edu/
+Western Governors University-Texas,http://texas.wgu.edu/
+Western Governors University-Washington,http://washington.wgu.edu/
 Western International University,http://west.edu/
-Western Kentucky University,http://www.wku.edu/
-Western Michigan University,http://www.wmich.edu/
 Western Nevada College,http://www.wnc.edu/
-Western New England University,http://www.wne.edu/
 Western New Mexico University,http://wnmu.edu/
-Western Oregon University,http://www.wou.edu/
 Western Seminary,http://www.westernseminary.edu/
-Western State Colorado University,http://www.western.edu/
 Western State University College of Law,http://www.wsulaw.edu/
 Western University of Health Sciences,http://www.westernu.edu/
-Western Washington University,http://www.wwu.edu/
-Westfield State University,http://www.wsc.ma.edu/
 Westminster College,http://www.westminster.edu/
 Westminster College,http://www.westminster-mo.edu/
-Westminster College,http://www.westminstercollege.edu/
 Westminster Theological Seminary,http://www.wts.edu/
 Westminster Seminary California,http://wscal.edu/
-Westmont College,http://www.westmont.edu/
-Wheaton College,http://www.wheaton.edu/
 Wheaton College,http://wheatoncollege.edu/
-Wheeling Jesuit University,http://www.wju.edu/
-Wheelock College,http://www.wheelock.edu/
-Whitman College,https://www.whitman.edu/
-Whittier College,http://www.whittier.edu/
 Whitworth University,http://www.whitworth.edu/
-Wichita State University,http://www.wichita.edu/
-Widener University,http://www.widener.edu/
 Wilberforce University,http://www.wilberforce.edu/
 Wiley College,http://www.wileyc.edu/
-Wilkes University,http://www.wilkes.edu/
-Willamette University,http://www.willamette.edu/
-William Carey University,http://www.wmcarey.edu/
 William James College,http://www.williamjames.edu/
-William Jessup University,http://www.jessup.edu/
-William Jewell College,http://www.jewell.edu/
-William Peace University,http://www.peace.edu/
-William Penn University,http://www.wmpenn.edu/
-William Paterson University,http://www.wpunj.edu/
-William Woods University,http://www.williamwoods.edu/
-Williams Baptist College,http://www.wbcoll.edu/
-Williams College,http://www.williams.edu/
 Wilmington University,http://www.wilmu.edu/
-Wilmington College,http://www.wilmington.edu/
-Wilson College,http://www.wilson.edu/
-Wingate University,http://www.wingate.edu/
-Winona State University,http://www.winona.edu/
-Winston-Salem State University,http://www.wssu.edu/
-Winthrop University,http://www.winthrop.edu/
-Wisconsin Lutheran College,http://www.wlc.edu/
 Wisconsin School of Professional Psychology,http://wspp.edu/
-Wittenberg University,http://www.wittenberg.edu/
-Wofford College,http://www.wofford.edu/
 Won Institute of Graduate Studies,http://www.woninstitute.edu/
-Woodbury University,http://woodbury.edu/
 Woods Hole Oceanographic Institution,http://www.whoi.edu/
 Worcester Polytechnic Institute,http://www.wpi.edu/
-Worcester State University,http://www.worcester.edu/
 The Wright Institute,http://www.wi.edu/
 Wright State University,http://www.wright.edu/
-Babson College,http://www.babson.edu/
-Bacone College,http://www.bacone.edu/
-Baldwin-Wallace University,http://www.bw.edu/
-Ball State University,http://www.bsu.edu/
 Baker College,http://www.baker.edu/
-Baker University,http://www.bakeru.edu/
 Bangor Theological Seminary,http://www.bts.edu/
 Bank Street College of Education,https://www.bankstreet.edu/
-Baptist Bible College,http://www.gobbc.edu/
-The Baptist College of Florida,http://www.baptistcollege.edu/
-Baptist Memorial College of Health Sciences,http://www.bchs.edu/
 Baptist Missionary Association Theological Seminary,http://bmats.edu/
 Barclay College,http://www.barclaycollege.edu/
 Bard College,http://www.bard.edu/
 Bard College at Simon's Rock,http://www.simons-rock.edu/
-Barnard College,http://www.barnard.edu/
 Barry University,http://www.barry.edu/
-Barton College,https://www.barton.edu/
 Bastyr University,http://www.bastyr.edu/
 Bates College,http://www.bates.edu/
 Bauder College,http://www.bauder.edu/
-Bay Path University,http://www.baypath.edu/
 Bay State College,http://www.baystate.edu/
 Baylor College of Medicine,http://www.bcm.edu/
-Baylor University,http://www.baylor.edu/
 Beacon College,http://www.beaconcollege.edu/
-Becker College,http://www.becker.edu/
-Belhaven University,http://www.belhaven.edu/
-Bellarmine University,http://www.bellarmine.edu/
 Bellevue College,http://www.bellevuecollege.edu/
 Bellevue University,http://www.bellevue.edu/
-Bellin College,http://www.bellincollege.edu/
-Belmont University,http://www.belmont.edu
-Belmont Abbey College,http://belmontabbeycollege.edu/
-Beloit College,http://www.beloit.edu/
-Bemidji State University,http://www.bemidjistate.edu/
 Benedict College,http://www.benedict.edu/
-Benedictine College,http://www.benedictine.edu/
-Benedictine University,http://www.ben.edu/
 Benjamin Franklin Institute of Technology,http://www.bfit.edu/
 Bennett College,http://www.bennett.edu/
 Bennington College,http://www.bennington.edu/
-Bentley University,http://www.bentley.edu/
 Berea College,http://www.berea.edu/
 Berkeley College,http://www.berkeleycollege.edu/
 Berklee College of Music,https://www.berklee.edu/
-Berry College,http://www.berry.edu/
-Bethany College,http://www.bethanylb.edu/
 Bethany College,http://www.bethanywv.edu/
-Bethany Lutheran College,http://www.blc.edu/
 Bethany Theological Seminary,http://www.bethanyseminary.edu/
-Bethel College,http://www.bethelcollege.edu/
 Bethel College,http://www.bethelks.edu/
 Bethel University & Seminary,http://www.bethel.edu/
-Bethel University,http://www.bethelu.edu/
 Bethesda University of California,http://www.buc.edu/
-Bethune-Cookman University,http://www.bethune.cookman.edu/
 Beulah Heights University,http://www.beulah.edu/
 Biblical Theological Seminary,http://www.biblical.edu/
-Biola University,http://www.biola.edu/
-Birmingham-Southern College,http://www.bsc.edu/
 Bismark State College,http://www.bismarckstate.edu/
-Black Hills State University,http://www.bhsu.edu/
-Blackburn College,http://blackburn.edu/
 Blessing-Rieman College of Nursing,http://www.brcn.edu/
-Bloomfield College,http://www.bloomfield.edu/
-Bloomsburg University of Pennsylvania,http://www.bloomu.edu/
 Blue Mountain College,http://www.bmc.edu/
-Bluefield College,http://www.bluefield.edu/
-Bluefield State College,http://bluefieldstate.edu/
-Bluffton University,http://www.bluffton.edu/
-Boise State University,http://www.boisestate.edu/
 Boricua College,http://www.boricuacollege.edu/
 Boston Architectural College,http://www.the-bac.edu/
-Boston College,http://www.bc.edu/
-Boston Conservatory,http://www.bostonconservatory.edu/
 Boston Graduate School of Psychoanalysis,http://www.bgsp.edu/
-Boston University,http://www.bu.edu/
-Bowdoin College,http://www.bowdoin.edu/
-Bowie State University,http://www.bowiestate.edu/
-Bowling Green State University,http://www.bgsu.edu/
-Bradley University,http://www.bradley.edu/
-Brandeis University,http://www.brandeis.edu/
 Brandman University,http://www.brandman.edu/
-Brenau University,http://www.brenau.edu/
-Brescia University ,http://www.brescia.edu/
-Brevard College,http://www.brevard.edu/
-Brewton-Parker College,http://www.bpc.edu/
 Briar Cliff University,http://www.briarcliff.edu/
 Briarcliffe College,http://www.briarcliffe.edu/
-Bridgewater College,http://www.bridgewater.edu/
-Bridgewater State University,http://www.bridgew.edu/
-Brigham Young University,http://www.byu.edu/
-Brigham Young University–Hawaii,http://byuh.edu/
-Brigham Young University–Idaho,http://www.byui.edu/
 Brite Divinity School,http://www.brite.edu/
 Broward College,http://www.broward.edu/
-Brown University,http://www.brown.edu/
-Bryan College,http://www.bryan.edu/
-Bryan College of Health Sciences,http://www.bryanhealthcollege.edu/
-Bryant University,http://www.bryant.edu/
 Bryn Athyn College,http://www.brynathyn.edu/
-Bryn Mawr College,http://www.brynmawr.edu/
-Bucknell University,http://www.bucknell.edu/
-Buena Vista University,http://www.bvu.edu/
 Burlington College,http://www.burlington.edu/
-Butler University,https://www.butler.edu/
-Cabarrus College of Health Sciences,http://www.cabarruscollege.edu/
-Cabrini College,http://www.cabrini.edu/
 Cairn University,http://cairn.edu/
-Caldwell University,http://www.caldwell.edu/
-California Baptist University,http://www.calbaptist.edu/
-California College of the Arts,https://www.cca.edu/
 California Institute of the Arts,http://calarts.edu/
 California Institute of Integral Studies,http://www.ciis.edu/
-California Institute of Technology,http://www.caltech.edu/
-California Lutheran University,http://www.callutheran.edu/
-California Maritime Academy,http://www.csum.edu/
 California Northstate University,http://www.cnsu.edu/
-"California Polytechnic State University, San Luis Obispo",http://www.calpoly.edu/
-"California State Polytechnic University, Pomona",http://www.cpp.edu/
-California State University–Bakersfield,http://www.csub.edu/
-California State University–Channel Islands,http://www.csuci.edu/
-California State University–Chico,http://www.csuchico.edu/
-California State University–Dominguez Hills,http://www.csudh.edu/
-California State University–East Bay,http://www.csueastbay.edu/
-California State University–Fresno,http://www.fresnostate.edu/
-California State University–Fullerton,http://www.fullerton.edu/
-California State University–Long Beach,http://www.csulb.edu/
-California State University–Los Angeles,http://www.calstatela.edu/
-California State University–Monterey Bay,https://csumb.edu/
-California State University–Northridge,http://www.csun.edu/
-California State University–Sacramento,http://www.csus.edu/
-California State University–San Bernardino,http://www.csusb.edu/
-California State University–San Marcos,http://www.csusm.edu/
-California State University–Stanislaus,https://www.csustan.edu/
 California State University System,http://www.calstate.edu/
-California University of Pennsylvania,http://www.calu.edu/
-Calumet College of Saint Joseph,http://www.ccsj.edu/
 Calvary Baptist Seminary,http://www.cbs.edu/
-Calvary Bible College & Theological Seminary,http://www.calvary.edu/
-Calvin College,http://www.calvin.edu/
 Cambridge College ,https://www.cambridgecollege.edu/
 Cameron University,http://www.cameron.edu/
-Campbell University,http://www.campbell.edu/
-Campbellsville University,http://www.campbellsville.edu/
-Canisius College,http://www.canisius.edu/
 Capella University,http://www.capella.edu/
-Capital University,http://www.capital.edu/
-Capitol Technology University,http://www.captechu.edu/
-Cardinal Stritch University,http://www.stritch.edu/
 Caribbean University,http://www.caribbean.edu/
-Carleton College,http://www.carleton.edu/
 Carlos Albizu University,http://www.albizu.edu/
-Carlos Albizu University–Miami Campus,http://www.mia.albizu.edu/
-Carlow University,http://www.carlow.edu/
-Carnegie Mellon University,http://www.cmu.edu/
-Carroll College,http://www.carroll.edu/
-Carroll University,http://www.carrollu.edu/
-Carson-Newman University,http://www.cn.edu/
-Carthage College,https://www.carthage.edu/
-Case Western Reserve University,http://www.case.edu/
-Castleton State College,http://www.castleton.edu/
-Catawba College,http://catawba.edu/
+Carlos Albizu University-Miami Campus,http://www.mia.albizu.edu/
 Catholic Theological Union,http://www.ctu.edu/
-The Catholic University of America,http://www.cua.edu/
-Cazenovia College,http://www.cazenovia.edu/
-Cedar Crest College,http://www.cedarcrest.edu/
-Cedarville University,http://www.cedarville.edu/
-Centenary College,http://www.centenarycollege.edu/
-Centenary College of Louisiana,http://www.centenary.edu/
-Central Baptist College,http://www.cbc.edu/
 Central Baptist Theological Seminary,http://www.cbts.edu/
 Central Christian College of Kansas,http://www.centralchristian.edu/
 Central Christian College of the Bible,http://www.cccb.edu/
-Central College,http://www.central.edu/
-Central Connecticut State University,http://www.ccsu.edu/
-Central Methodist University,http://www.centralmethodist.edu/
-Central Michigan University,http://www.cmich.edu/
 Central Penn College,http://www.centralpenn.edu/
-Central State University,http://www.centralstate.edu/
-Central Washington University,http://www.cwu.edu/
-Centre College,http://www.centre.edu/
 Centro de Estudios Avanzados de Puerto Rico y el Caribe,http://www.ceaprc.edu/
 Chadron State College,http://www.csc.edu/
 Chamberlain College of Nursing,http://www.chamberlain.edu/
-Chaminade University,http://www.chaminade.edu/
-Champlain College,http://www.champlain.edu/
 Chancellor University,http://www.chancelloru.edu/
-Chapman University,http://www.chapman.edu/
 Charles R. Drew University of Medicine & Science,http://www.cdrewu.edu/
-Charleston Southern University,http://www.csuniv.edu/
 Charter Oak State College,http://www.charteroak.edu/
-Bryn Athyn College,http://www.chatham.edu/
-Chestnut Hill College,http://www.chc.edu/
 Cheyney University,http://www.cheyney.edu/
 The Chicago School of Professional Psychology,http://www.thechicagoschool.edu/
-Chicago State University,http://www.csu.edu/
 Chicago Theological Seminary,https://www.ctschicago.edu/
 Chipola College,http://www.chipola.edu/
-Chowan University,https://www.chowan.edu/
 Christ the King Seminary,http://www.cks.edu/
 Christendom College,http://www.christendom.edu/
-Christian Brothers University,http://www.cbu.edu/
 Christian Theological Seminary,http://www.cts.edu/
-Christopher Newport University,http://cnu.edu/
 Church Divinity School of the Pacific,http://cdsp.edu/
-Cincinnati Christian University,http://www.ccuniversity.edu/
 Cincinnati College of Mortuary Science,https://www.ccms.edu/
 The Citadel,http://www.citadel.edu/
 City University of Seattle,http://www.cityu.edu/
 City University of New York,http://www.cuny.edu/
-Baruch College,http://www.baruch.cuny.edu/
-Brooklyn College,http://www.brooklyn.cuny.edu/
-City College,http://www.ccny.cuny.edu/
-College of Staten Island,http://www.csi.cuny.edu/
 Graduate School & University Center,http://www.gc.cuny.edu/
-Hunter College,http://www.hunter.cuny.edu/
-John Jay College of Criminal Justice,http://www.jjay.cuny.edu/
-Lehman College,http://www.lehman.cuny.edu/
-Medgar Evers College,http://www.mec.cuny.edu/
-New York City College of Technology,http://www.citytech.cuny.edu/
-Queens College,http://www.qc.cuny.edu/
-York College,http://www.york.cuny.edu/
-Claflin University,http://www.claflin.edu/
 Claremont Consortium of Colleges,http://www.claremont.edu/
 Claremont Graduate University,http://www.cgu.edu/
-Claremont McKenna College,http://www.cmc.edu/
-Harvey Mudd College,https://www.hmc.edu/
 Keck Graduate Institute of Applied Life Sciences,http://www.kgi.edu/
-Pitzer College,http://www.pitzer.edu/
-Pomona College,http://www.pomona.edu/
-Scripps College,http://www.scrippscollege.edu/
 Claremont School of Theology,http://cst.edu/
-Clarion University of Pennsylvania,http://www.clarion.edu/
 Clark University,http://www.clarku.edu/
-Clark Atlanta University,http://www.cau.edu/
-Clarke University,http://www.clarke.edu/
-Clarkson College,http://www.clarksoncollege.edu/
-Clarkson University,http://www.clarkson.edu/
-Clayton State University,http://www.clayton.edu/
 Clear Creek Baptist Bible College,http://www.ccbbc.edu/
-Clearwater Christian College,http://www.clearwater.edu/
-Cleary University,http://www.cleary.edu/
-Clemson University,http://www.clemson.edu/
 Cleveland Chiropractic College,http://www.cleveland.edu/
-Cleveland Institute of Art,http://www.cia.edu/
 Cleveland Institute of Music,http://www.cim.edu/
-Cleveland State University,http://www.csuohio.edu/
-Coastal Carolina University,http://www.coastal.edu/
-Coe College,http://www.coe.edu/
 Cogswell Polytechnical College,http://www.cogswell.edu/
-Coker College,http://www.coker.edu/
-Colby College,http://www.colby.edu/
 Colby-Sawyer College,http://www.colby-sawyer.edu/
 Colegio Universitario de San Juan,http://www.cunisanjuan.edu/
-Colgate University,http://www.colgate.edu/
-College for Creative Studies,http://www.collegeforcreativestudies.edu/
 College for Financial Planning,http://www.cffp.edu/
 College of the Atlantic,http://www.coa.edu/
-College of Biblical Studies–Houston,http://cbshouston.edu/
+College of Biblical Studies-Houston,http://cbshouston.edu/
 College of Central Florida,http://www.cf.edu/
 College of Charleston,http://www.cofc.edu/
-College of Coastal Georgia,http://www.ccga.edu/
 College of the Holy Cross,http://www.holycross.edu/
-The College of Idaho,http://www.collegeofidaho.edu/
 College of the Menominee Nation,http://www.menominee.edu/
-College of Mount Saint Joseph,http://www.msj.edu/
-College of Mount Saint Vincent,http://www.mountsaintvincent.edu/
-The College of New Jersey,http://www.tcnj.edu/
-College of New Rochelle,http://www.cnr.edu/
-College of the Ozarks,http://www.cofo.edu/
-College of Saint Benedict & Saint John's University,http://www.csbsju.edu/
-College of Saint Elizabeth,http://www.cse.edu/
 College of Saint Rose,http://www.strose.edu/
-College of Saint Joseph,http://www.csj.edu/
-College of Saint Mary,http://www.csm.edu/
-College of Saint Scholastica,http://www.css.edu/
 College of Southern Nevada,http://www.csn.edu/
-College of William and Mary,http://www.wm.edu/
-College of Wooster,http://www.wooster.edu/
 Colorado Christian University,http://www.ccu.edu/
-Colorado College,http://www.coloradocollege.edu/
-Colorado Mesa University,http://www.coloradomesa.edu/
-Colorado School of Mines,http://www.mines.edu/
-Colorado State University,http://www.colostate.edu/
-Colorado State University–Pueblo,http://www.csupueblo.edu/
 Colorado Technical University,http://www.coloradotech.edu/
 Columbia Centro Universitario,http://www.columbiacentral.edu/
 Columbia College,http://www.ccis.edu/
-Columbia College,http://www.columbiasc.edu/
 Columbia College Chicago,http://www.colum.edu/
 Columbia College Hollywood,http://www.columbiacollege.edu/
 Columbia College of Nursing,http://www.ccon.edu/
-Columbia International University,http://www.ciu.edu/
 Columbia Theological Seminary,http://www.ctsnet.edu/
-Columbia University,http://www.columbia.edu/
-Columbus College of Art & Design,http://www.ccad.edu/
-Columbus State University,http://www.columbusstate.edu/
-Conception Seminary College,http://www.conception.edu/
-Concord University,http://www.concord.edu/
-Concordia College–Alabama,http://www.ccal.edu/
-Concordia College–Bronxville,http://www.concordia-ny.edu/
-Concordia College–Moorhead,https://www.concordiacollege.edu/
-Concordia College–New York,http://www.concordia-ny.edu/
-Concordia Seminary–Saint Louis,http://www.csl.edu/
+Concordia College-Alabama,http://www.ccal.edu/
+Concordia Seminary-Saint Louis,http://www.csl.edu/
 Concordia Theological Seminary,http://www.ctsfw.edu/
-Concordia University–Ann Arbor,http://www.cuaa.edu/
-Concordia University–Chicago,https://www.cuchicago.edu/
-Concordia University–Irvine,http://www.cui.edu/
-Concordia University–Nebraska,http://www.cune.edu/
-Concordia University–Portland,http://www.cu-portland.edu/
-Concordia University–Saint Paul,http://www.csp.edu/
-Concordia University–Texas,http://www.concordia.edu/
-Concordia University–Wisconsin,https://www.cuw.edu/
+Concordia University-Saint Paul,http://www.csp.edu/
 Connecticut College,http://camel.conncoll.edu/
 Conservatorio de Música de Puerto Rico,http://cmpr.edu/
-Converse College,http://www.converse.edu/
 Conway School of Landscape Design,http://www.csld.edu/
-The Cooper Union for the Advancement of Science & Art,http://cooper.edu/
-Coppin State University,http://www.coppin.edu/
-Corban University,https://www.corban.edu/
-Cornell College,http://www.cornellcollege.edu/
-Cornell University,http://www.cornell.edu/
-Cornerstone University,https://www.cornerstone.edu/
 Cornish College of the Arts,http://www.cornish.edu/
-Cottey College,http://www.cottey.edu/
-Covenant College,http://www.covenant.edu/
 Covenant Theological Seminary,http://www.covenantseminary.edu/
 Cox College,http://coxcollege.edu/
 Cranbrook Academy of Art,http://cranbrookart.edu/
-Creighton University,http://www.creighton.edu/
 Criswell College,http://www.criswell.edu/
 Crossroads College,http://www.crossroadscollege.edu/
 Crowley's Ridge College,http://www.crc.edu/
-Crown College,http://www.crown.edu/
 Culinary Institute of America,http://www.ciachef.edu/
-Culver-Stockton College,http://www.culver.edu/
-Cumberland University,http://www.cumberland.edu/
-Curry College,http://www.curry.edu/
 Curtis Institute of Music,http://www.curtis.edu/
-Hamilton College,http://www.hamilton.edu/
-Hamline University,http://www.hamline.edu/
-Hampden-Sydney College,http://www.hsc.edu/
 Hampshire College,http://www.hampshire.edu/
-Hampton University,http://www.hamptonu.edu/
-Hannibal-Lagrange College,http://www.hlg.edu/
-Hanover College,http://www.hanover.edu/
-Hardin-Simmons University,http://www.hsutx.edu/
-Harding University,http://www.harding.edu/
 Harrington College of Design,http://www.harrington.edu/
 Harris-Stowe State University,http://www.hssu.edu/
 Harrisburg University of Science & Technology,http://www.harrisburgu.edu/
 Hartford Seminary,http://www.hartsem.edu/
-Hartwick College,http://www.hartwick.edu/
-Harvard University,http://www.harvard.edu/
 Haskell Indian Nations University,http://www.haskell.edu/
-Hastings College,http://www.hastings.edu/
-Haverford College,https://www.haverford.edu/
-Hawaii Pacific University,http://www.hpu.edu/
 Hazelden Graduate School of Addiction Studies,http://www.hazelden.org/
 Hebrew College,http://www.hebrewcollege.edu/
-Hebrew Theological College,http://www.htc.edu/
-Hebrew Union College–Jewish Institute of Religion,http://huc.edu/
+Hebrew Union College-Jewish Institute of Religion,http://huc.edu/
 Heidelberg University,http://www.heidelberg.edu/
 Hellenic College/Holy Cross Greek Orthodox School of Theology,http://www.hchc.edu/
-Henderson State University,http://www.hsu.edu/
-Hendrix College,http://www.hendrix.edu/
 Heritage University,http://www.heritage.edu/
 Herzing University,https://www.herzing.edu/
 High Point University,http://www.highpoint.edu/
 Hilbert College,http://www.hilbert.edu/
-Hillsdale College,http://www.hillsdale.edu/
-Hiram College,http://www.hiram.edu/
 Hobart & William Smith Colleges,http://www.hws.edu/
 Hobe Sound Bible College,http://hsbc.edu/
 Hodges University,http://www.hodges.edu/
-Hofstra University,http://www.hofstra.edu/
-Hollins University,https://www.hollins.edu/
 Holy Apostles College & Seminary,http://www.holyapostles.edu/
-Holy Cross College,http://www.hcc-nd.edu/
-Holy Family University,http://www.holyfamily.edu/
-Holy Names University,http://www.hnu.edu/
-Hood College,http://www.hood.edu/
-Hope College,http://www.hope.edu/
-Hope International University,http://www.hiu.edu/
-Houghton College,http://www.houghton.edu/
-Houston Baptist University,http://www.hbu.edu/
-Howard Payne University,http://www.hputx.edu/
-Howard University,http://www.howard.edu/
 Hult International Business School,http://www.hult.edu/
-Humboldt State University,http://www.humboldt.edu/
 Humphreys College,http://www.humphreys.edu/
-Huntingdon College,http://www.huntingdon.edu/
-Huntington University,https://www.huntington.edu/
-Husson University,http://www.husson.edu/
-Huston-Tillotson University,http://htu.edu/
-Kalamazoo College,http://www.kzoo.edu/
 Kansas City Art Institute,http://www.kcai.edu/
 Kansas City University of Medicine & Biosciences,http://www.kcumb.edu/
 Kansas State University,http://www.k-state.edu/
-Kansas State University–Salina,http://www.salina.k-state.edu/
-Kansas Wesleyan University,http://www.kwu.edu/
+Kansas State University-Salina,http://www.salina.k-state.edu/
 Kaplan University,http://www.kaplanuniversity.edu/
-Kean University,http://www.kean.edu/
-Keene State College,http://www.keene.edu/
 Keiser University,http://www.keiseruniversity.edu/
 Kendall College,http://www.kendall.edu/
 Kendall College of Art & Design of Ferris State University,http://www.kcad.edu/
-Kennesaw State University,http://www.kennesaw.edu/
 Kenrick-Glennon Seminary,http://www.kenrick.edu/
-Kent State University,http://www.kent.edu/
-Kent State University–Ashtabula Campus,http://www.ashtabula.kent.edu/
-Kent State University–College of Podiatric Medicine,http://www.kent.edu/cpm
-Kent State University–Columbiana County,http://www.kent.edu/columbiana
-Kent State University–Geauga,http://www.kent.edu/geauga
-Kent State University–Stark,http://www.kent.edu/stark
-Kent State University–Trumbull Campus,http://www.kent.edu/trumbull
-Kent State University–Tuscarawas,http://www.kent.edu/tusc
-Kentucky Christian University,http://www.kcu.edu/
-Kentucky Mountain Bible College,http://www.kmbc.edu/
-Kentucky State University,http://kysu.edu/
-Kentucky Wesleyan College,http://www.kwc.edu/
-Kenyon College,http://www.kenyon.edu/
-Kettering College,http://www.kc.edu/
-Kettering University,http://www.kettering.edu/
+Kent State University-Ashtabula Campus,http://www.ashtabula.kent.edu/
+Kent State University-College of Podiatric Medicine,http://www.kent.edu/cpm
+Kent State University-Columbiana County,http://www.kent.edu/columbiana
+Kent State University-Geauga,http://www.kent.edu/geauga
+Kent State University-Stark,http://www.kent.edu/stark
+Kent State University-Trumbull Campus,http://www.kent.edu/trumbull
+Kent State University-Tuscarawas,http://www.kent.edu/tusc
 Keuka College,http://keuka.edu/
-Keystone College,http://www.keystone.edu/
-King University,http://www.king.edu/
 King's College,http://www.kings.edu/
-The King's College,http://www.tkc.edu/
 Knowledge Systems Institute,http://www.ksi.edu/
 Knox College,http://www.knox.edu/
-Kutztown University of Pennsylvania,http://www.kutztown.edu/
-Kuyper College,http://www.kuyper.edu/
-Macalester College,http://www.macalester.edu/
-MacMurray College,http://www.mac.edu/
 Madonna University,http://www.madonna.edu/
 Maharishi University of Management,https://www.mum.edu/
 Maine College of Art,http://www.meca.edu/
-Maine Maritime Academy,http://mainemaritime.edu/
-Malone University,http://www.malone.edu/
-Manchester University,http://www.manchester.edu/
 Manhattan Christian College,http://www.mccks.edu/
 Manhattan College,http://manhattan.edu/
 Manhattan School of Music,http://www.msmnyc.edu/
-Manhattanville  College,http://www.mville.edu/
-Mansfield University of Pennsylvania,http://www.mansfield.edu/
-Maranatha Baptist University,http://www.mbu.edu/
-Maria College,http://www.mariacollege.edu/
-Marian University,http://www.marian.edu/
 Marian University,http://www.marianuniversity.edu/
-Marietta College,http://www.marietta.edu/
 Marine Corps University,http://www.mcu.usmc.mil/
 Marist College,http://www.marist.edu/
 Marlboro College,http://www.marlboro.edu/
-Marquette University,http://www.mu.edu/
-Mars Hill University,http://www.mhu.edu/
 Marshall B. Ketchum University,http://www.ketchum.edu/
-Marshall University,http://www.marshall.edu/
-Martin Luther College,http://www.mlc-wels.edu/
 Martin Methodist College,http://www.martinmethodist.edu/
 Martin University,http://www.martin.edu/
-Mary Baldwin College,http://www.mbc.edu/
-Marygrove College,http://www.marygrove.edu/
-Maryland Institute College of Art,http://www.mica.edu/
 Maryland University of Integrative Health,http://www.muih.edu/
 Marylhurst University,http://www.marylhurst.edu/
 Marymount California University,http://www.marymountcalifornia.edu/
-Marymount Manhattan College,http://www.mmm.edu/
-Marymount University,http://www.marymount.edu/
-Maryville College,http://www.maryvillecollege.edu/
-Maryville University of Saint Louis,http://www.maryville.edu/
-Marywood University,http://www.marywood.edu/
-Massachusetts College of Art & Design,http://www.massart.edu/
-Massachusetts College of Liberal Arts ,http://www.mcla.edu/
-Massachusetts College of Pharmacy & Health Sciences,http://www.mcphs.edu/
-Massachusetts Institute of Technology,http://web.mit.edu/
-Massachusetts Maritime Academy,http://www.maritime.edu/
 Massachusetts School of Law,http://www.mslaw.edu/
-The Master's College,http://www.masters.edu/
 The Master's Seminary,http://www.tms.edu/
 Maui College,http://maui.hawaii.edu
 Mayo Clinic College of Medicine,http://www.mayo.edu/education/
-Mayo Clinic College of Medicine–Graduate School,http://www.mayo.edu/mgs/
-Mayo Clinic College of Medicine–Medical School,http://www.mayo.edu/mms/
-Mayo Clinic College of Medicine–School of Health Sciences,http://www.mayo.edu/mshs/
+Mayo Clinic College of Medicine-Graduate School,http://www.mayo.edu/mgs/
+Mayo Clinic College of Medicine-Medical School,http://www.mayo.edu/mms/
+Mayo Clinic College of Medicine-School of Health Sciences,http://www.mayo.edu/mshs/
 Mayville State University,http://www.mayvillestate.edu/
 McCormick Theological Seminary,http://mccormick.edu/
-McDaniel College,http://www.mcdaniel.edu/
-McKendree University,http://www.mckendree.edu/
-McMurry University,http://www.mcm.edu/
-McNeese State University,http://www.mcneese.edu/
-McPherson College,http://www.mcpherson.edu/
-Medaille College,http://www.medaille.edu/
 Medical College of Wisconsin,http://www.mcw.edu/
 Medical University of South Carolina,http://www.musc.edu/
 Meharry Medical College,http://www.mmc.edu/
-Memphis College of Art,http://mca.edu/
 Memphis Theological Seminary,http://www.memphisseminary.edu/
-Menlo College,http://www.menlo.edu/
-Mercer University,http://www.mercer.edu/
 Mercy College,http://www.mercy.edu/
 Mercy College of Health Sciences,http://www.mchs.edu/
 Mercy College of Northwest Ohio,http://www.mercycollege.edu/
-Mercyhurst University,http://www.mercyhurst.edu/
-Meredith College,http://www.meredith.edu/
 Merrimack College,http://www.merrimack.edu/
-Messiah College,http://www.messiah.edu/
-Methodist College,http://www.methodistcol.edu/
 Methodist Theological School in Ohio,http://www.mtso.edu/
-Methodist University,http://www.methodist.edu/
 Metropolitan College of New York,http://www.mcny.edu/
 Metropolitan State University,http://www.metrostate.edu/
-Metropolitan State University of Denver,http://www.msudenver.edu/
 MGH Institute of Health Professions,http://www.mghihp.edu/
 Miami Dade College,http://www.mdc.edu/
 Miami International University of Art & Design,http://www.artinstitutes.edu/miami/
-Miami University,http://www.miamioh.edu/
-Miami University–Regional Campuses,http://www.regionals.miamioh.edu/
+Miami University-Regional Campuses,http://www.regionals.miamioh.edu/
 Michigan School of Professional Psychology,http://mispp.edu/
-Michigan State University,http://www.msu.edu/
-Michigan Technological University,http://www.mtu.edu/
 Mid-America Baptist Theological Seminary,http://www.mabts.edu/
 Mid-America Christian University,http://www.macu.edu/
-Mid-Atlantic Christian University,http://www.macuniversity.edu/
-MidAmerica Nazarene University,http://www.mnu.edu/
-Mid-Continent University,http://www.midcontinent.edu/
 Middle Georgia State University,http://www.mga.edu/
 Middle Tennessee School of Anesthesia,http://www.mtsa.edu/
-Middle Tennessee State University,http://www.mtsu.edu/
-Middlebury College,http://www.middlebury.edu/
-Midland University,http://www.midlandu.edu/
 Midstate College,http://www.midstate.edu/
-Midway College,http://www.midway.edu/
-Midwestern Baptist Theological Seminary,http://www.mbts.edu/
 Midwestern University,http://www.midwestern.edu/
-Midwestern State University,http://www.mwsu.edu/
 Miles College,http://www.miles.edu/
 Miller College,http://www.millercollege.edu/
-Millersville University of Pennsylvania,http://www.millersville.edu/
-Milligan College,http://www.milligan.edu/
-Millikin University,http://www.millikin.edu/
-Mills College,http://www.mills.edu/
-Millsaps College,http://www.millsaps.edu/
 Milwaukee Institute of Art & Design,http://www.miad.edu/
-Milwaukee School of Engineering,http://www.msoe.edu/
-Minnesota State University–Mankato,http://www.mnsu.edu/
-Minnesota State University–Moorhead,http://www.mnstate.edu/
-Minot State University,http://www.minotstateu.edu/
-Minneapolis College of Art & Design,http://mcad.edu/
-Misericordia University,http://www.misericordia.edu/
-Mississippi College,http://www.mc.edu/
-Mississippi State University,http://www.msstate.edu/
-Mississippi University for Women,http://www.muw.edu/
-Mississippi Valley State University,http://www.mvsu.edu/
-Missouri Baptist University,http://www.mobap.edu/
-Missouri Southern State University,http://www.mssu.edu/
-Missouri State University,http://www.missouristate.edu/
-Missouri University of Science & Technology,http://www.mst.edu/
-Missouri Valley College,http://www.moval.edu/
 Missouri Western State University,http://www.missouriwestern.edu/
 Mitchell College,http://www.mitchell.edu/
-Molloy College,http://www.molloy.edu/
-Monmouth College,http://www.monmouthcollege.edu/
-Monmouth University,http://www.monmouth.edu/
 Monroe College,http://www.monroecollege.edu/
-Montana State University,http://www.montana.edu/
-Montana State University–Billings,http://www.msubillings.edu/
-Montana State University–Northern,http://www.msun.edu/
-Montana Tech of The University of Montana,http://www.mtech.edu/
-Montclair State University,http://www.montclair.edu/
-Montreat College,http://www.montreat.edu/
+Montana State University-Billings,http://www.msubillings.edu/
 Montserrat College of Art,http://www.montserrat.edu/
-Moody Bible Institute,http://www.moody.edu/
-Moore College of Art & Design,http://www.moore.edu/
 Moravian College,http://www.moravian.edu/
-Morehead State University,http://www.moreheadstate.edu/
-Morehouse College,http://www.morehouse.edu/
 Morehouse School of Medicine,http://www.msm.edu/
-Morgan State University,http://www.morgan.edu/
-Morningside College,http://www.morningside.edu/
 Morris College,http://www.morris.edu/
-Mount Aloysius College,http://www.mtaloy.edu/
 Mount Angel Seminary,https://www.mountangelabbey.org/seminary/
-Mount Carmel College of Nursing,http://www.mccn.edu/
 Mount Holyoke College,https://www.mtholyoke.edu/
-Mount Ida College,http://www.mountida.edu/
-Mount Marty College,http://www.mtmc.edu/
-Mount Mary University,http://www.mtmary.edu/
-Mount Mercy University,http://www.mtmercy.edu/
-Mount Saint Mary College,http://www.msmc.edu/
 Mount Saint Mary's University,http://www.msmu.edu/
-Mount Saint Mary's University,http://www.msmary.edu/
-Mount Vernon Nazarene University,http://www.mvnu.edu/
 Mount Washington College,http://www.mountwashington.edu/
 Mountain State University,http://www.mountainstate.edu/
-Muhlenberg College,http://www.muhlenberg.edu/
-Multnomah University,http://www.multnomah.edu/
-Murray State University,http://www.murraystate.edu/
-Muskingum University,http://www.muskingum.edu/
-Pace University,http://www.pace.edu/
-Pacific Lutheran University,http://www.plu.edu/
 Pacific Northwest College of Art,http://www.pnca.edu/
 Pacific Oaks College,http://www.pacificoaks.edu/
 Pacific School of Religion,http://www.psr.edu/
-Pacific Union College,http://www.puc.edu/
-Pacific University,http://www.pacificu.edu/
 Pacifica Graduate Institute,http://www.pacifica.edu/
-Paine College,http://www.paine.edu/
-Palm Beach Atlantic University,http://www.pba.edu/
 Palm Beach State College,http://www.palmbeachstate.edu/
 Palmer College of Chiropractic,http://www.palmer.edu/
 Palo Alto University,http://www.paloaltou.edu/
 Pardee RAND Graduate School,http://www.prgs.edu/
-Park University,http://www.park.edu/
 Parker University,http://www.parker.edu/
 Patten University,http://patten.edu/
-Paul Quinn College,http://www.pqc.edu/
-Paul Smith's College,http://www.paulsmiths.edu/
 Peirce College,http://www.peirce.edu/
 Peninsula College,http://www.pencol.edu/
 Penn State Law,http://pennstatelaw.psu.edu/
 Pennsylvania College of Art & Design,http://pcad.edu/
-Pennsylvania College of Health Sciences,http://www.pacollege.edu/
 Pennsylvania College of Technology,http://www.pct.edu/
-Pennsylvania State University,http://www.psu.edu/
-Pennsylvania State University–Abington,http://www.abington.psu.edu/
-Pennsylvania State University–Altoona,http://www.aa.psu.edu/
-Pennsylvania State University–Beaver,http://www.br.psu.edu/
-Pennsylvania State University–Berks,http://www.bk.psu.edu/
-Pennsylvania State University–Brandywine,http://www.brandywine.psu.edu/
-Pennsylvania State University–Dickinson School of Law,https://dickinsonlaw.psu.edu/
-Pennsylvania State University–DuBois,http://www.ds.psu.edu/
-"Pennsylvania State University–Erie, The Behrend College",http://psbehrend.psu.edu/
-"Pennsylvania State University–Fayette, The Eberly Campus",http://www.fe.psu.edu/
-Pennsylvania State University–Great Valley School of Graduate Professional Studies,http://www.sgps.psu.edu/
-Pennsylvania State University–Greater Allegheny,http://www.ga.psu.edu/
-Pennsylvania State University–Harrisburg,http://harrisburg.psu.edu/
-Pennsylvania State University–Hazleton,http://www.hazleton.psu.edu/
-Pennsylvania State University–Lehigh Valley,http://www.lv.psu.edu/
-Pennsylvania State University–Milton S. Hershey Medical Center,http://www.pennstatehershey.org/
-Pennsylvania State University–Mont Alto,http://www.ma.psu.edu/
-Pennsylvania State University–New Kensington,http://www.nk.psu.edu/
-Pennsylvania State University–Schuylkill,http://www.sl.psu.edu/
-Pennsylvania State University–Shenango,http://www.shenango.psu.edu/
-Pennsylvania State University–Wilkes-Barre,http://www.wb.psu.edu/
-Pennsylvania State University–Worthington Scranton,http://www.sn.psu.edu/
-Pennsylvania State University–York,http://www.yk.psu.edu/
+Pennsylvania State University-Dickinson School of Law,https://dickinsonlaw.psu.edu/
+Pennsylvania State University-Great Valley School of Graduate Professional Studies,http://www.sgps.psu.edu/
+Pennsylvania State University-Milton S. Hershey Medical Center,http://www.pennstatehershey.org/
 Pensacola State College,http://www.pensacolastate.edu/
 Pentecostal Theological Seminary,http://www.ptseminary.edu/
-Pepperdine University,http://www.pepperdine.edu/
 Peru State College,http://www.peru.edu/
-Pfeiffer University,http://www.pfeiffer.edu/
 Philadelphia College of Osteopathic Medicine,http://www.pcom.edu/
-Philadelphia College of Textiles & Science,http://www.philau.edu/
 Philander Smith College,http://www.philander.edu/
 Phillips Graduate Institute,http://www.pgi.edu/
 Phillips Theological Seminary,http://ptstulsa.edu/
 Phillips University,http://www.pulf.org/
-Piedmont College,http://www.piedmont.edu/
 Pillar College,http://pillar.edu/
-Pine Manor College,http://www.pmc.edu/
-Pittsburg State University,http://www.pittstate.edu/
 Pittsburgh Theological Seminary,http://www.pts.edu/
-Plymouth State University,http://www.plymouth.edu/
-Point Loma Nazarene University,http://www.pointloma.edu/
-Point Park University,http://www.pointpark.edu/
-Point University,http://point.edu/
 Polk State College,http://www.polk.edu/
 Ponce Health Sciences University,http://www.psm.edu/
 Pontifical College Josephinum,http://www.pcj.edu/
 Pontificia Universidad Católica de Puerto Rico,http://www.pucpr.edu
-Portland State University,http://www.pdx.edu/
 Post University,http://www.post.edu/
-Prairie View A&M University,http://www.pvamu.edu/
-Pratt Institute,http://www.pratt.edu/
-Prescott College,http://www.prescott.edu/
-Presentation College,http://www.presentation.edu/
 Princeton Theological Seminary,http://www.ptsem.edu/
-Princeton University,http://www.princeton.edu/
 Principia College,http://www.principiacollege.edu/
-Presbyterian College,http://www.presby.edu/
-Providence College,http://www.providence.edu/
-Purdue University,http://www.purdue.edu/
-Purdue University–Calumet,http://www.purduecal.edu/
-Purdue University–North Central,http://www.pnc.edu/
-Purdue Polytechnic Institute–Anderson,https://polytechnic.purdue.edu/anderson
-Purdue Polytechnic Institute–Columbus,https://polytechnic.purdue.edu/columbus
-Purdue Polytechnic Institute–Kokomo,https://polytechnic.purdue.edu/kokomo
-Purdue Polytechnic Institute–Lafayette,https://polytechnic.purdue.edu/lafayette
-Purdue Polytechnic Institute–New Albany,https://polytechnic.purdue.edu/new-albany
-Purdue Polytechnic Institute–Richmond,https://polytechnic.purdue.edu/richmond
-Purdue Polytechnic Institute–South Bend,https://polytechnic.purdue.edu/south-bend
-Purdue Polytechnic Institute–Vincennes,https://polytechnic.purdue.edu/vincennes
+Purdue Polytechnic Institute-Anderson,https://polytechnic.purdue.edu/anderson
+Purdue Polytechnic Institute-Columbus,https://polytechnic.purdue.edu/columbus
+Purdue Polytechnic Institute-Kokomo,https://polytechnic.purdue.edu/kokomo
+Purdue Polytechnic Institute-Lafayette,https://polytechnic.purdue.edu/lafayette
+Purdue Polytechnic Institute-New Albany,https://polytechnic.purdue.edu/new-albany
+Purdue Polytechnic Institute-Richmond,https://polytechnic.purdue.edu/richmond
+Purdue Polytechnic Institute-South Bend,https://polytechnic.purdue.edu/south-bend
+Purdue Polytechnic Institute-Vincennes,https://polytechnic.purdue.edu/vincennes
 Sacred Heart Major Seminary,http://www.shms.edu/
 Sacred Heart Seminary & School of Theology,http://www.shsst.edu/
 Sacred Heart University,http://www.sacredheart.edu/
 The Sage Colleges,http://www.sage.edu/
-Saginaw Valley State University,http://www.svsu.edu/
-Saint Ambrose University,http://www.sau.edu/
 Saint Andrews University,http://www.sa.edu/
-Saint Anselm College,http://www.anselm.edu/
 Saint Anthony College of Nursing,http://www.sacn.edu/
-Saint Augustine College,http://www.staugustine.edu/
 Saint Augustine's University,http://www.st-aug.edu/
-Saint Bonaventure University,http://www.sbu.edu/
-Saint Catherine University,http://www.stkate.edu/
 Saint Catharine College,http://www.sccky.edu/
 Saint Charles Borromeo Seminary,http://www.scs.edu/
-Saint Cloud State University,http://www.stcloudstate.edu/
-Saint Edward's University,https://www.stedwards.edu/
-Saint Francis College,http://www.sfc.edu/
 Saint Francis Medical Center College of Nursing,http://www.sfmccon.edu/
-Saint Francis University,http://francis.edu/
 Saint Gregory the Great Seminary,http://www.stgregoryseminary.edu/
-Saint Gregory's University,http://www.stgregorys.edu/
-Saint John Fisher College,http://www.sjfc.edu/
 Saint John Vianney College Seminary,http://www.sjvcs.edu/
-Saint John's College–Annapolis,http://www.sjc.edu/
+Saint John's College-Annapolis,http://www.sjc.edu/
 Saint John's College,http://www.stjohnscollegespringfield.edu/
 Saint John's Seminary,http://www.stjohnsem.edu/
 Saint John's Seminary,http://www.sjsboston.org/
-Saint John's University & College of Saint Benedict,http://www.csbsju.edu/
-Saint John's University,http://www.stjohns.edu/
 Saint Johns River State College,http://www.sjrstate.edu/
 Saint Joseph Seminary College,http://www.sjasc.edu/
 Saint Joseph's College,http://www.saintjoe.edu/
-Saint Joseph's College,http://www.sjcny.edu/
-Saint Joseph's College of Maine,http://www.sjcme.edu/
 Saint Joseph's Seminary,http://www.dunwoodie.edu/
-Saint Joseph's University,http://www.sju.edu/
 Saint Lawrence University,http://www.stlawu.edu/
 Saint Leo University,http://www.saintleo.edu/
-Saint Louis College of Pharmacy,http://www.stlcop.edu/
-Saint Louis University,http://www.slu.edu/
 Saint Luke's College,http://www.stlukescollege.edu/
 Saint Luke's College of Health Sciences,http://saintlukescollege.edu/
-Saint Martin's University,http://www.stmartin.edu/
 Saint Mary Seminary & Graduate School of Theology,http://www.stmarysem.edu/
-Saint Mary-of-the-Woods College,http://www.smwc.edu/
-Saint Mary's College,https://www.saintmarys.edu/
-Saint Mary's College of California,http://www.stmarys-ca.edu/
-Saint Mary's College of Maryland,http://www.smcm.edu/
 Saint Mary's Seminary & University,http://www.stmarys.edu/
-Saint Mary's University of Minnesota,http://www.smumn.edu/
-Saint Mary's University,https://www.stmarytx.edu/
 Saint Meinrad Seminary & School of Theology,http://www.saintmeinrad.edu/
-Saint Michael's College,http://www.smcvt.edu/
-Saint Norbert College,http://www.snc.edu/
-Saint Olaf College,http://www.stolaf.edu/
 Saint Patrick's Seminary & University,http://www.stpatricksseminary.org/
 Saint Paul School of Theology,http://www.spst.edu/
-Saint Peter's University,http://www.saintpeters.edu/
 Saint Petersburg College,http://www.spcollege.edu/
-Saint Thomas Aquinas College,http://www.stac.edu/
-Saint Thomas University,http://www.stu.edu/
-Saint Vincent College,http://www.stvincent.edu/
 Saint Vincent de Paul Regional Seminary,http://www.svdp.edu/
 Saint Vincent's College,http://www.stvincentscollege.edu/
-Saint Xavier University,http://www.sxu.edu/
-Salem College,http://www.salem.edu/
 Salem International University,http://www.salemu.edu/
-Salem State University,http://www.salemstate.edu/
-Salisbury University,http://www.salisbury.edu/
 Salish Kootenai College,http://www.skc.edu/
 Salus University,http://www.salus.edu/
-Salve Regina University,http://www.salve.edu/
-Sam Houston State University,http://www.shsu.edu/
-Samford University,http://www.samford.edu/
 Samuel Merritt University,http://www.samuelmerritt.edu/
-San Diego Christian College,http://sdcc.edu/
-San Diego State University,http://www.sdsu.edu/
-San Francisco Art Institute,http://www.sfai.edu/
 San Francisco Conservatory of Music,http://www.sfcm.edu/
-San Francisco State University,http://www.sfsu.edu/
 San Francisco Theological Seminary,http://sfts.edu/
 San Joaquin College of Law,http://www.sjcl.edu/
 San José State University,http://www.sjsu.edu/
 San Juan Bautista School of Medicine,http://www.sanjuanbautista.edu/
-Santa Clara University,http://www.scu.edu/
 Santa Fe College,http://www.sfcollege.edu/
 Santa Fe University of Art & Design,http://santafeuniversity.edu/
 Sarah Lawrence College,http://www.sarahlawrence.edu/
-Savannah College of Art & Design,http://www.scad.edu/
-Savannah State University,http://www.savannahstate.edu/
 Saybrook University,http://www.saybrook.edu/
 School for International Training,http://www.sit.edu/
-School of the Art Institute of Chicago,http://www.saic.edu/
 School of Visual Arts,http://www.sva.edu/
-Schreiner University,http://www.schreiner.edu/
 Scripps Research Institute,http://www.scripps.edu/
-Seattle Pacific University,http://www.spu.edu/
-Seattle University,http://www.seattleu.edu/
 Seminario Evangélico de Puerto Rico,http://www.se-pr.edu/
 Seminary of the Immaculate Conception,http://www.icseminary.edu/
 Seminary of the Southwest,http://ssw.edu/
 Seminole State College of Florida,http://www.seminolestate.edu/
-Seton Hall University,http://www.shu.edu/
-Seton Hill University,http://www.setonhill.edu/
 Shaw University,http://www.shawu.edu/
 Shawnee State University,http://www.shawnee.edu/
-Shenandoah University,http://www.su.edu/
-Shepherd University,http://www.shepherd.edu/
 Sherman College of Chiropractic,http://www.sherman.edu/
 Shimer College,http://www.shimer.edu/
-Shippensburg University of Pennsylvania,http://www.ship.edu/
-Shorter University,http://su.shorter.edu/
-Siena College,http://www.siena.edu/
-Siena Heights University,http://www.sienaheights.edu/
 Sierra Nevada College,http://www.sierranevada.edu/
-Silver Lake College,http://www.sl.edu/
-Simmons College,http://www.simmons.edu/
 Sinte Gleska University,http://www.sintegleska.edu/
-Simpson University,http://simpsonu.edu/
-Simpson College,http://simpson.edu/
 Sioux Falls Seminary,https://sfseminary.edu/
 Sistema Universitario Ana G. Méndez,http://www.suagm.edu/
 Universidad del Este,http://www.suagm.edu/une/
 Universidad Metropolitana,http://www.suagm.edu/umet/
 Universidad del Turabo,http://www.suagm.edu/turabo/
 Sitting Bull College,http://sittingbull.edu/
-Skidmore College,http://www.skidmore.edu/
-Slippery Rock University of Pennsylvania,http://www.sru.edu/
 Smith College,http://www.smith.edu/
 Sofia University,http://www.sofia.edu/
-Soka University of America,http://www.soka.edu/
-Sonoma State University,http://www.sonoma.edu/
-South Carolina State University,http://www.scsu.edu/
 South College,http://www.southcollegetn.edu/
-South Dakota School of Mines & Technology,http://www.sdsmt.edu/
-South Dakota State University,http://www.sdstate.edu/
 South Florida Bible College & Theological Seminary,http://sfbc.edu/
 South Florida State College,http://www.southflorida.edu/
 South Georgia State College,http://www.sgsc.edu/
 South Texas College of Law,http://www.stcl.edu/
 South University,http://www.southuniversity.edu/
-Southeast Missouri State University,http://www.semo.edu/
 Southeastern Baptist Theological Seminary,http://www.sebts.edu/
 Southeastern Bible College,http://www.sebc.edu/
 Southeastern University,http://www.seu.edu/
-Southeastern Louisiana University,http://www.southeastern.edu/
-Southeastern Oklahoma State University,http://www.se.edu/
-Southern Adventist University,http://www1.southern.edu/
-Southern Arkansas University,http://www.saumag.edu/
 Southern Baptist Theological Seminary,http://www.sbts.edu/
-Southern California Institute of Architecture,http://www.sciarc.edu/
 Southern California University of Health Sciences,http://www.scuhs.edu/
 Southern College of Optometry,http://www.sco.edu/
-Southern Connecticut State University,http://www.southernct.edu/
-Southern Illinois University–Carbondale,http://siu.edu/
-Southern Illinois University–Edwardsville,http://www.siue.edu/
-Southern Methodist University,http://www.smu.edu/
 Southern Nazarene University,http://snu.edu/
-Southern New Hampshire University,http://www.snhu.edu/
-Southern Oregon University,http://www.sou.edu/
-Southern University and A&M College at Baton Rouge,http://www.subr.edu/
-Southern University at New Orleans,http://suno.edu/
 Southern University at Shreveport,http://www.susla.edu/
 Southern University System,http://www.sus.edu/
-Southern Utah University,http://www.suu.edu/
-Southern Vermont College,http://www.svc.edu/
-Southern Virginia University,http://svu.edu/
-Southern Wesleyan University,http://www.swu.edu/
-Southwest Baptist University,http://www.sbuniv.edu/
 Southwest College of Naturopathic Medicine & Health Sciences,http://www.scnm.edu/
-Southwest Minnesota State University,http://www.smsu.edu/
 Southwest University of Visual Arts,http://www.suva.edu/
 Southwestern Adventist University,http://www.swau.edu/
 Southwestern Assemblies of God University,http://www.sagu.edu/
 Southwestern Baptist Theological Seminary,http://www.swbts.edu/
 Southwestern Christian College,http://www.swcc.edu/
-Southwestern Christian University,http://swcu.edu/
-Southwestern College,http://www.sckans.edu/
 Southwestern College,http://swc.edu/
-Southwestern Oklahoma State University,http://www.swosu.edu/
-Southwestern University,http://www.southwestern.edu/
-Spalding University,https://spalding.edu/
-Spelman College,http://www.spelman.edu/
 Spertus Institute for Jewish Learning & Leadership,http://www.spertus.edu/
-Spring Arbor University,http://www.arbor.edu/
-Spring Hill College,http://www.shc.edu/
-Springfield College,http://www.springfieldcollege.edu/
-Stanford University,http://www.stanford.edu/
 "State College of Florida, Manatee-Sarasota",http://www.scf.edu/
 State University of New York System,http://www.suny.edu/
-Albany,http://www.albany.edu/
 Alfred State University,http://www.alfredstate.edu/
-Binghamton,http://www.binghamton.edu/
-Buffalo,http://www.buffalo.edu/
-Buffalo State College,http://suny.buffalostate.edu/
-College at Brockport,http://www.brockport.edu/
-College at Cortland,http://www.cortland.edu/
-College at Fredonia,http://www.fredonia.edu/
-College at Geneseo,http://www.geneseo.edu/
-College at New Paltz,http://www.newpaltz.edu/
-College at Old Westbury,https://www.oldwestbury.edu/
-College at Oneonta,http://www.oneonta.edu/
-College at Oswego,http://www.oswego.edu/
-College at Plattsburgh,http://www.plattsburgh.edu/
 College at Potsdam,http://www.potsdam.edu/
-College at Purchase,http://www.purchase.edu/
-College of Agriculture & Technology at Cobleskill,http://www.cobleskill.edu/
-College of Agriculture & Technology at Morrisville (Morrisville State College),http://www.morrisville.edu/
-College of Environmental Science & Forestry,http://www.esf.edu/
 College of Optometry,http://www.sunyopt.edu/
 College of Technology at Canton,http://www.canton.edu/
-College of Technology at Delhi,http://www.delhi.edu/
 Downstate Medical Center,http://www.downstate.edu/
 Empire State College,http://www.esc.edu/
-Farmingdale State College,http://www.farmingdale.edu/
 Fashion Institute of Technology,http://www.fitnyc.edu/
-Maritime College at Fort Schuyler,http://www.sunymaritime.edu/
-Polytechnic Institute,https://sunypoly.edu/
-Stony Brook University,http://www.stonybrook.edu/
 Upstate Medical University,http://www.upstate.edu/
-Stephen F. Austin State University,http://www.sfasu.edu/
-Stephens College,http://www.stephens.edu/
 Sterling College,http://www.sterling.edu/
-Sterling College,http://www.sterlingcollege.edu/
-Stetson University,http://www.stetson.edu/
-Stevens Institute of Technology,http://www.stevens.edu/
-Stevenson University,http://www.stevenson.edu/
-Stillman College,http://www.stillman.edu/
-Stockton University,http://www.stockton.edu/
-Stonehill College,http://www.stonehill.edu/
 Strayer University,http://www.strayer.edu/
-Suffolk University,http://www.suffolk.edu/
-Sul Ross State University,http://www.sulross.edu/
 Sullivan University,http://sullivan.edu/
 Summit University,http://www.summitu.edu/
-Susquehanna University,http://www.susqu.edu/
-Swarthmore College,http://www.swarthmore.edu/
-Sweet Briar College,http://www.sbc.edu/
-Syracuse University,http://www.syracuse.edu/
-University of the Pacific,http://www.pacific.edu/
-University of Pennsylvania,http://www.upenn.edu/
 University of Phoenix,http://www.phoenix.edu/
 University of Pikeville,http://www.upike.edu/
-University of Pittsburgh,http://www.pitt.edu/
-University of Pittsburgh–Bradford,http://www.upb.pitt.edu/
-University of Pittsburgh–Greensburg,http://www.upg.pitt.edu/
-University of Pittsburgh–Johnstown,http://www.upj.pitt.edu/
-University of Portland,http://www.up.edu/
 University of the Potomac,http://www.potomac.edu/
-University of Puerto Rico–Aguadilla,http://www.uprag.edu/
-University of Puerto Rico–Arecibo,http://www.upra.edu/
-University of Puerto Rico–Bayamón,http://www.uprb.edu/
-University of Puerto Rico–Carolina,http://www.uprc.edu/
-University of Puerto Rico–Cayey,http://www.cayey.upr.edu/
-University of Puerto Rico–Ciencias Médicas,http://www.rcm.upr.edu/
-University of Puerto Rico–Humacao,http://www.uprh.edu/
-University of Puerto Rico–Mayagüez,http://www.uprm.edu/
-University of Puerto Rico–Ponce,http://www.uprp.edu/
-University of Puerto Rico–Río Piedras,http://www.uprrp.edu/
+University of Puerto Rico-Aguadilla,http://www.uprag.edu/
+University of Puerto Rico-Arecibo,http://www.upra.edu/
+University of Puerto Rico-Bayamón,http://www.uprb.edu/
+University of Puerto Rico-Carolina,http://www.uprc.edu/
+University of Puerto Rico-Cayey,http://www.cayey.upr.edu/
+University of Puerto Rico-Ciencias Médicas,http://www.rcm.upr.edu/
+University of Puerto Rico-Humacao,http://www.uprh.edu/
+University of Puerto Rico-Mayagüez,http://www.uprm.edu/
+University of Puerto Rico-Ponce,http://www.uprp.edu/
+University of Puerto Rico-Río Piedras,http://www.uprrp.edu/
 University of Puerto Rico System,http://www.upr.edu/
-University of Puerto Rico–Utuado,http://www.uprutuado.edu/
-University of Puget Sound,http://www.pugetsound.edu/
-University of Redlands,http://www.redlands.edu/
-University of Rhode Island,http://www.uri.edu/
-University of Richmond,http://www.richmond.edu/
+University of Puerto Rico-Utuado,http://www.uprutuado.edu/
 University of Rio Grande,http://www.rio.edu/
-University of Rochester,http://www.rochester.edu/
 University of the Rockies,http://www.rockies.edu/
 University of Saint Francis,http://www.stfrancis.edu/
-University of Saint Francis,http://www.sf.edu/
 University of Saint Joseph,http://www.usj.edu/
-University of Saint Mary,http://stmary.edu/
-University of San Diego,http://www.sandiego.edu/
-University of San Francisco,http://www.usfca.edu/
-University of Science & Arts of Oklahoma,https://usao.edu/
-University of the Sciences in Philadelphia,http://www.usciences.edu/
-University of Scranton,http://www.scranton.edu/
-University of Sioux Falls,http://www.usiouxfalls.edu/
-University of Southern California,http://www.usc.edu/
-University of Southern Maine,http://usm.maine.edu/
-University of South Carolina,http://www.sc.edu/
-University of South Carolina–Aiken,http://www.usca.edu/
-University of South Carolina–Beaufort,http://www.uscb.edu/
 University of South Carolina System,http://www.sc.edu/about/system_and_campuses/
-University of South Carolina–Upstate,http://www.uscupstate.edu/
-University of South Dakota,http://www.usd.edu/
-University of South Florida,http://www.usf.edu/
-University of South Florida Saint Petersburg,http://www.usfsp.edu/
-University of South Florida Sarasota–Manatee,http://usfsm.edu/
-University of Southern Mississippi,http://www.usm.edu/
+University of South Florida Sarasota-Manatee,http://usfsm.edu/
 University of Saint Thomas,http://www.stthom.edu/
-University of Saint Thomas,http://www.stthomas.edu/
-University of South Alabama,http://www.usouthal.edu/
-University of Southern Indiana,http://www.usi.edu/
-University of Tampa,http://www.ut.edu/
-University of Tennessee,http://www.utk.edu/
-University of Tennessee–Chattanooga,http://www.utc.edu/
 University of Tennessee Health Science Center,http://www.uthsc.edu/
-University of Tennessee–Martin,http://www.utm.edu/
 University of Tennessee System,http://www.tennessee.edu/
-University of Texas–Arlington,http://www.uta.edu/
-University of Texas–Austin,http://www.utexas.edu/
-University of Texas–Brownsville,http://www.utb.edu/
-University of Texas–Dallas,http://www.utdallas.edu/
-University of Texas–El Paso,http://www.utep.edu/
+University of Texas-Brownsville,http://www.utb.edu/
+University of Texas-El Paso,http://www.utep.edu/
 University of Texas Health Science Center at Houston,http://www.uth.edu/
 University of Texas Health Science Center at San Antonio,http://uthscsa.edu/
 University of Texas Health Science Center at Tyler,http://www.uthct.edu/
 University of Texas M.D. Anderson Cancer Center,http://www.mdanderson.org/
 University of Texas Medical Branch at Galveston,http://www.utmb.edu/
-University of Texas–Pan American,http://www.utpa.edu/
-University of Texas of the Permian Basin,http://www.utpb.edu/
-University of Texas–San Antonio,http://www.utsa.edu/
 University of Texas Southwestern Medical Center at Dallas,http://www.utsouthwestern.edu/
 University of Texas System,http://www.utsystem.edu/
-University of Texas–Tyler,http://www.uttyler.edu/
-University of the Arts,http://www.uarts.edu/
-University of the Cumberlands,http://www.ucumberlands.edu/
-University of the Incarnate Word,http://www.uiw.edu/
-University of the South,http://www.sewanee.edu/
 University of the Southwest,http://www.usw.edu/
 University of Toledo,http://www.utoledo.edu/
-University of Tulsa,http://utulsa.edu/
-University of Utah,http://www.utah.edu/
-University of Valley Forge,http://www.valleyforge.edu/
-University of Vermont,http://www.uvm.edu/
 University of the Virgin Islands,http://www.uvi.edu/
-University of Virginia,http://www.virginia.edu/
-University of Virginia's College at Wise,http://www.uvawise.edu/
-University of Washington,http://www.washington.edu/
-University of Washington–Bothell,http://www.uwb.edu/
-University of Washington–Tacoma,http://www.tacoma.uw.edu/
-University of West Alabama,http://www.uwa.edu/
-University of West Florida,http://uwf.edu/
-University of West Georgia,http://www.westga.edu/
 University of Western States,http://www.uws.edu/
 University of the West,http://www.uwest.edu/
-University of Wisconsin–Eau Claire,http://www.uwec.edu/
-University of Wisconsin–Green Bay,http://www.uwgb.edu/
-University of Wisconsin–La Crosse,http://www.uwlax.edu/
-University of Wisconsin–Madison,http://www.wisc.edu/
-University of Wisconsin–Milwaukee,http://www.uwm.edu/
-University of Wisconsin–Oshkosh,http://www.uwosh.edu/
-University of Wisconsin–Parkside,http://www.uwp.edu/
-University of Wisconsin–Platteville,http://www.uwplatt.edu/
-University of Wisconsin–River Falls,http://www.uwrf.edu/
-University of Wisconsin–Stevens Point,http://www.uwsp.edu/
-University of Wisconsin–Stout,http://www.uwstout.edu/
-University of Wisconsin–Superior,http://www.uwsuper.edu/
 University of Wisconsin System,http://www.uwsa.edu/
-University of Wisconsin–Whitewater,http://www.uww.edu/
-University of Wyoming,http://www.uwyo.edu/
-Xavier University,http://www.xavier.edu/
-Xavier University of Louisiana,http://www.xula.edu/
-Yale University,http://www.yale.edu/
-Yeshiva University,http://www.yu.edu/
 York College,http://www.york.edu/
-York College of Pennsylvania,http://www.ycp.edu/
-Young Harris College,http://www.yhc.edu/
 Youngstown State University,http://www.ysu.edu/
 Zaytuna College,https://www.zaytuna.edu/
