@@ -12,5 +12,6 @@ class SchoolAdmin(admin.ModelAdmin):
     clickable_url.short_description = 'url'
 
     list_display = ('name', clickable_url, 'milestones_url')
+    list_per_page = 10
     ordering = ['id']
     search_fields = ['name']
