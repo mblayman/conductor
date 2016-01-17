@@ -123,6 +123,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 10,
+}
+
+
 # Forcing migrations to run during testing is super annoying
 # when the migration hasn't been generated yet.
 # Skip migrations for tests.
