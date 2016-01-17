@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from planner.models import School
+from planner.serializers import SchoolSerializer
+
+
+class SchoolViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = School.objects.all()
+    serializer_class = SchoolSerializer
