@@ -1,5 +1,5 @@
-from planner import serializers
 from lcp.tests import TestCase
+from planner import serializers
 
 
 class TestSchoolSerializer(TestCase):
