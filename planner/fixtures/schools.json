@@ -6306,7 +6306,7 @@
     "name": "Ashland University",
     "slug": "ashland-university",
     "url": "https://www.ashland.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ashland.edu/iss/undergraduate-admissions/application-deadlines"
   }
 },
 {
@@ -6316,7 +6316,7 @@
     "name": "Bloomsburg University of Pennsylvania",
     "slug": "bloomsburg-university-of-pennsylvania",
     "url": "http://www.bloomu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bloomu.edu/freshman"
   }
 },
 {
@@ -6326,7 +6326,7 @@
     "name": "Lancaster Bible College",
     "slug": "lancaster-bible-college",
     "url": "http://www.lbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lbc.edu/undergraduate/admissions/deadlines/index"
   }
 },
 {
@@ -6336,7 +6336,7 @@
     "name": "Rosemont College",
     "slug": "rosemont-college",
     "url": "http://www.rosemont.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rosemont.edu/admissions/undergraduate/faqs.php"
   }
 },
 {
@@ -6346,27 +6346,27 @@
     "name": "Howard Payne University",
     "slug": "howard-payne-university",
     "url": "http://www.hputx.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hputx.edu/campus-offices/admissions/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 636,
   "fields": {
-    "name": "Texas A&M University-Galveston",
+    "name": "Texas A&M University, Galveston",
     "slug": "texas-am-university-galveston",
     "url": "http://www.tamug.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tamug.edu/grad/admissions/Deadlines%20to%20Apply.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 637,
   "fields": {
-    "name": "University of Alabama-Huntsville",
+    "name": "University of Alabama, Huntsville",
     "slug": "university-of-alabama-huntsville",
     "url": "http://www.uah.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uah.edu/admissions/undergraduate/admission-process"
   }
 },
 {
@@ -6376,17 +6376,17 @@
     "name": "William Jessup University",
     "slug": "william-jessup-university",
     "url": "http://www.jessup.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.jessup.edu/undergrad/admissions/dates-and-deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 639,
   "fields": {
-    "name": "Southern Illinois University-Carbondale",
-    "slug": "southern-illinois-university-carbondale",
+    "name": "Southern Illinois University",
+    "slug": "southern-illinois-university",
     "url": "http://siu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://siu.edu/admissions/"
   }
 },
 {
@@ -6396,7 +6396,7 @@
     "name": "Trinity Christian College",
     "slug": "trinity-christian-college",
     "url": "http://www.trnty.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.trnty.edu/index.php?option=com_content&view=article&id=613&Itemid=944?option=com_content&view=article&id=613&Itemid=944"
   }
 },
 {
@@ -6406,7 +6406,7 @@
     "name": "Manchester University",
     "slug": "manchester-university",
     "url": "http://www.manchester.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.manchester.edu/apply"
   }
 },
 {
@@ -6416,7 +6416,7 @@
     "name": "Bethany College",
     "slug": "bethany-college",
     "url": "http://www.bethanylb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bethanylb.edu/admissions/"
   }
 },
 {
@@ -6426,7 +6426,7 @@
     "name": "Kansas Wesleyan University",
     "slug": "kansas-wesleyan-university",
     "url": "http://www.kwu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kwu.edu/future-students/admissions/new-freshmen"
   }
 },
 {
@@ -6436,7 +6436,7 @@
     "name": "Massachusetts Maritime Academy",
     "slug": "massachusetts-maritime-academy",
     "url": "http://www.maritime.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.maritime.edu/application-timeline"
   }
 },
 {
@@ -6446,7 +6446,7 @@
     "name": "Western New England University",
     "slug": "western-new-england-university",
     "url": "http://www.wne.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www1.wne.edu/admissions/faq/?selection=doc.86#79"
   }
 },
 {
@@ -6456,7 +6456,7 @@
     "name": "Wheelock College",
     "slug": "wheelock-college",
     "url": "http://www.wheelock.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wheelock.edu/admissions/undergraduate/apply/first-year-application-process"
   }
 },
 {
@@ -6466,7 +6466,7 @@
     "name": "University of Michigan-Flint",
     "slug": "university-of-michigan-flint",
     "url": "http://www.umflint.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.umflint.edu/graduateprograms/apply/application-deadlines.page"
   }
 },
 {
@@ -6476,7 +6476,7 @@
     "name": "Kuyper College",
     "slug": "kuyper-college",
     "url": "http://www.kuyper.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.kuyper.edu/admissions/first-year-students/"
   }
 },
 {
@@ -6486,7 +6486,7 @@
     "name": "Bethany Lutheran College",
     "slug": "bethany-lutheran-college",
     "url": "http://www.blc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.blc.edu/admissions"
   }
 },
 {
@@ -6496,7 +6496,7 @@
     "name": "Fairleigh Dickinson University",
     "slug": "fairleigh-dickinson-university",
     "url": "http://www.fdu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://view2.fdu.edu/admissions/dates-and-deadlines/"
   }
 },
 {
@@ -6506,7 +6506,7 @@
     "name": "University of New Mexico",
     "slug": "university-of-new-mexico",
     "url": "http://www.unm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.unm.edu/future_students/freshmen.html"
   }
 },
 {
@@ -6516,7 +6516,7 @@
     "name": "Lehman College",
     "slug": "lehman-college",
     "url": "http://www.lehman.cuny.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lehman.edu/admissions/direct-admissions.php"
   }
 },
 {
@@ -6526,7 +6526,7 @@
     "name": "University of Mount Union",
     "slug": "university-of-mount-union",
     "url": "http://www.mountunion.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mountunion.edu/first-time-students"
   }
 },
 {
@@ -6536,7 +6536,7 @@
     "name": "Oklahoma Wesleyan University",
     "slug": "oklahoma-wesleyan-university",
     "url": "http://www.okwu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.okwu.edu/residential/apply/freshman-steps/"
   }
 },
 {
@@ -6546,17 +6546,17 @@
     "name": "Moore College of Art & Design",
     "slug": "moore-college-of-art-design",
     "url": "http://www.moore.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://moore.edu/admissions/bfa-admissions/admission-requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 656,
   "fields": {
-    "name": "Pennsylvania State University-Erie, The Behrend College",
+    "name": "Pennsylvania State University, Erie, The Behrend College",
     "slug": "pennsylvania-state-university-erie-the-behrend-college",
     "url": "http://psbehrend.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://psbehrend.psu.edu/admissions-financial-aid/apply/admissions-timeline"
   }
 },
 {
@@ -6566,7 +6566,7 @@
     "name": "Saint Francis University",
     "slug": "saint-francis-university",
     "url": "http://francis.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://francis.edu/apply-now/"
   }
 },
 {
@@ -6576,7 +6576,7 @@
     "name": "Waynesburg University",
     "slug": "waynesburg-university",
     "url": "http://www.waynesburg.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.waynesburg.edu/undergraduate/admissions"
   }
 },
 {
@@ -6586,7 +6586,7 @@
     "name": "Memphis College of Art",
     "slug": "memphis-college-of-art",
     "url": "http://mca.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mca.edu/academics/undergraduate/"
   }
 },
 {
@@ -6596,7 +6596,7 @@
     "name": "Trevecca Nazarene University",
     "slug": "trevecca-nazarene-university",
     "url": "http://www.trevecca.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.trevecca.edu/admissions/freshman-application-process-timeline"
   }
 },
 {
@@ -6606,7 +6606,7 @@
     "name": "University of Utah",
     "slug": "university-of-utah",
     "url": "http://www.utah.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.utah.edu/deadlines/"
   }
 },
 {
@@ -6616,7 +6616,7 @@
     "name": "Walla Walla University",
     "slug": "walla-walla-university",
     "url": "http://www.wallawalla.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://bulletin.wallawalla.edu/en/2015-2016/Bulletin/Admission-to-the-University/Admission-Procedures"
   }
 },
 {
@@ -6626,17 +6626,17 @@
     "name": "Washington State University",
     "slug": "washington-state-university",
     "url": "https://wsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://admission.wsu.edu/apply/deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 664,
   "fields": {
-    "name": "Concordia University-Wisconsin",
+    "name": "Concordia University, Wisconsin",
     "slug": "concordia-university-wisconsin",
     "url": "https://www.cuw.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.cuw.edu/admissions/undergraduate/highschool/index.html"
   }
 },
 {
@@ -6646,17 +6646,17 @@
     "name": "Huntingdon College",
     "slug": "huntingdon-college",
     "url": "http://www.huntingdon.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.huntingdon.edu/future-students/apply-now/freshman-students/how-to-apply-freshmen/"
   }
 },
 {
   "model": "planner.school",
   "pk": 666,
   "fields": {
-    "name": "University of Arkansas-Fort Smith",
+    "name": "University of Arkansas, Fort Smith",
     "slug": "university-of-arkansas-fort-smith",
     "url": "http://uafs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.uafs.edu/admissions/apply-now"
   }
 },
 {
@@ -6666,7 +6666,7 @@
     "name": "Morehouse College",
     "slug": "morehouse-college",
     "url": "http://www.morehouse.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.morehouse.edu/admissions/home/apply.shtml"
   }
 },
 {
@@ -6676,7 +6676,7 @@
     "name": "Eastern Illinois University",
     "slug": "eastern-illinois-university",
     "url": "http://www.eiu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.eiu.edu/interntl/deadlines.php"
   }
 },
 {
@@ -6686,7 +6686,7 @@
     "name": "University of Northern Iowa",
     "slug": "university-of-northern-iowa",
     "url": "http://www.uni.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uni.edu/admissions/freshmen"
   }
 },
 {
@@ -6696,7 +6696,7 @@
     "name": "Upper Iowa University",
     "slug": "upper-iowa-university",
     "url": "http://www.uiu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uiu.edu/academics/undergraduate/index.html"
   }
 },
 {
@@ -6706,27 +6706,27 @@
     "name": "Friends University",
     "slug": "friends-university",
     "url": "http://www.friends.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.friends.edu/undergraduate/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 672,
   "fields": {
-    "name": "University of Louisiana-Lafayette",
-    "slug": "university-of-louisiana-lafayette",
+    "name": "University of Louisiana",
+    "slug": "university-of-louisiana",
     "url": "http://www.louisiana.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://louisiana.edu/admissions/apply-now"
   }
 },
 {
   "model": "planner.school",
   "pk": 673,
   "fields": {
-    "name": "Massachusetts College of Pharmacy & Health Sciences",
-    "slug": "massachusetts-college-of-pharmacy-health-sciences",
+    "name": "Massachusetts College of Pharmacy and Health Sciences",
+    "slug": "massachusetts-college-of-pharmacy-and-health-sciences",
     "url": "http://www.mcphs.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mcphs.edu/admission%20and%20aid/undergraduate%20applicants/important%20dates"
   }
 },
 {
@@ -6736,7 +6736,7 @@
     "name": "Westfield State University",
     "slug": "westfield-state-university",
     "url": "http://www.wsc.ma.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.westfield.ma.edu/admissions/undergraduate-admissions/decisions-deadlines"
   }
 },
 {
@@ -6746,7 +6746,7 @@
     "name": "Central Michigan University",
     "slug": "central-michigan-university",
     "url": "http://www.cmich.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://apply.cmich.edu/Home/Undergrad"
   }
 },
 {
@@ -6756,17 +6756,17 @@
     "name": "Northwood University",
     "slug": "northwood-university",
     "url": "http://www.northwood.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.northwood.edu/admissions/index.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 677,
   "fields": {
-    "name": "University of New Hampshire at Manchester",
-    "slug": "university-of-new-hampshire-at-manchester",
+    "name": "University of New Hampshire, Manchester",
+    "slug": "university-of-new-hampshire-manchester",
     "url": "http://manchester.unh.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://manchester.unh.edu/admissions/forms"
   }
 },
 {
@@ -6776,7 +6776,7 @@
     "name": "Elmira College",
     "slug": "elmira-college",
     "url": "http://www.elmira.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.elmira.edu/admissions-aid/Apply/Freshman_admissions/Application_Deadlines.html"
   }
 },
 {
@@ -6786,7 +6786,7 @@
     "name": "Marymount Manhattan College",
     "slug": "marymount-manhattan-college",
     "url": "http://www.mmm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mmm.edu/admissions/apply-for-admission.php"
   }
 },
 {
@@ -6796,7 +6796,7 @@
     "name": "Minot State University",
     "slug": "minot-state-university",
     "url": "http://www.minotstateu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.minotstateu.edu/enroll/pages/checklist-first-year.shtml"
   }
 },
 {
