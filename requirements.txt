@@ -1,4 +1,5 @@
 Django==1.9.1
 djangorestframework==3.3.2
+djangorestframework-jsonapi==2.0.0-beta.1
 lxml==3.5.0
 requests==2.9.1
