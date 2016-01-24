@@ -9606,7 +9606,7 @@
     "name": "Bowie State University",
     "slug": "bowie-state-university",
     "url": "http://www.bowiestate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bowiestate.edu/admissions-financial-aid/undergraduate-admissions/freshman-admissions/"
   }
 },
 {
@@ -9616,7 +9616,7 @@
     "name": "Becker College",
     "slug": "becker-college",
     "url": "http://www.becker.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.becker.edu/admissions/apply/admissions-deadlines"
   }
 },
 {
@@ -9626,7 +9626,7 @@
     "name": "Worcester State University",
     "slug": "worcester-state-university",
     "url": "http://www.worcester.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.worcester.edu/Undergraduate-Admissions/"
   }
 },
 {
@@ -9636,7 +9636,7 @@
     "name": "Ferris State University",
     "slug": "ferris-state-university",
     "url": "http://www.ferris.edu",
-    "milestones_url": ""
+    "milestones_url": "http://www.ferris.edu/HTMLS/admision/"
   }
 },
 {
@@ -9646,17 +9646,17 @@
     "name": "Culver-Stockton College",
     "slug": "culver-stockton-college",
     "url": "http://www.culver.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.culver.edu/admission/admission-process/index"
   }
 },
 {
   "model": "planner.school",
   "pk": 967,
   "fields": {
-    "name": "University of Montana-Missoula",
-    "slug": "university-of-montana-missoula",
+    "name": "University of Montana",
+    "slug": "university-of-montana",
     "url": "http://www.umt.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://admissions.umt.edu/admissions/deadlines.php"
   }
 },
 {
@@ -9666,7 +9666,7 @@
     "name": "New Jersey City University",
     "slug": "new-jersey-city-university",
     "url": "http://www.njcu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.njcu.edu/Undergraduate_Students.aspx"
   }
 },
 {
@@ -9676,7 +9676,7 @@
     "name": "Medaille College",
     "slug": "medaille-college",
     "url": "http://www.medaille.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.medaille.edu/undergraduate-programs"
   }
 },
 {
@@ -9686,7 +9686,7 @@
     "name": "Brevard College",
     "slug": "brevard-college",
     "url": "http://www.brevard.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.brevard.edu/admissions/first-year-applicants"
   }
 },
 {
@@ -9696,7 +9696,7 @@
     "name": "Johnson C. Smith University",
     "slug": "johnson-c-smith-university",
     "url": "http://www.jcsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.jcsu.edu/admissions/future_students/admissions-faq"
   }
 },
 {
@@ -9706,7 +9706,7 @@
     "name": "Pfeiffer University",
     "slug": "pfeiffer-university",
     "url": "http://www.pfeiffer.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pfeiffer.edu/admissions/how-apply"
   }
 },
 {
@@ -9716,7 +9716,7 @@
     "name": "Kent State University",
     "slug": "kent-state-university",
     "url": "http://www.kent.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/admissions/undergraduate/new-freshmen"
   }
 },
 {
@@ -9726,7 +9726,7 @@
     "name": "Limestone College",
     "slug": "limestone-college",
     "url": "http://www.limestone.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://legacy.limestone.edu/admissions-how-to-apply"
   }
 },
 {
@@ -9736,7 +9736,7 @@
     "name": "Averett University",
     "slug": "averett-university",
     "url": "http://www.averett.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.averett.edu/admissions/apply-now/"
   }
 },
 {
@@ -9746,7 +9746,7 @@
     "name": "Central Washington University",
     "slug": "central-washington-university",
     "url": "http://www.cwu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cwu.edu/admissions/freshman-admissions-requirements"
   }
 },
 {
@@ -9756,7 +9756,7 @@
     "name": "Saint Martin's University",
     "slug": "saint-martins-university",
     "url": "http://www.stmartin.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.stmartin.edu/admissions-aid/how-to-apply/first-year-undergrad"
   }
 },
 {
@@ -9766,27 +9766,27 @@
     "name": "Arizona Christian University",
     "slug": "arizona-christian-university",
     "url": "http://arizonachristian.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://arizonachristian.edu/admissions/apply/freshman/"
   }
 },
 {
   "model": "planner.school",
   "pk": 979,
   "fields": {
-    "name": "California State University-San Bernardino",
+    "name": "California State University, San Bernardino",
     "slug": "california-state-university-san-bernardino",
     "url": "http://www.csusb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.csusb.edu/freshmen/h_deadlines.shtml"
   }
 },
 {
   "model": "planner.school",
   "pk": 980,
   "fields": {
-    "name": "California State University-Northridge",
+    "name": "California State University, Northridge",
     "slug": "california-state-university-northridge",
     "url": "http://www.csun.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.csun.edu/admissions-records/apply-first-time-freshman"
   }
 },
 {
@@ -9796,7 +9796,7 @@
     "name": "Sonoma State University",
     "slug": "sonoma-state-university",
     "url": "http://www.sonoma.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sonoma.edu/admissions/filing.html"
   }
 },
 {
@@ -9806,7 +9806,7 @@
     "name": "Delaware State University",
     "slug": "delaware-state-university",
     "url": "http://www.desu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.desu.edu/admissions/undergraduate-admissions"
   }
 },
 {
@@ -9816,7 +9816,7 @@
     "name": "Gallaudet University",
     "slug": "gallaudet-university",
     "url": "http://www.gallaudet.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.gallaudet.edu/academic-catalog/admissions/undergraduate/admissions-procedures/when-to-apply.html"
   }
 },
 {
@@ -9826,7 +9826,7 @@
     "name": "Webber International University",
     "slug": "webber-international-university",
     "url": "http://webber.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://webber.edu/freshmen/"
   }
 },
 {
@@ -9836,7 +9836,7 @@
     "name": "Fort Valley State University",
     "slug": "fort-valley-state-university",
     "url": "http://www.fvsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://secure.gacollege411.org/applications/usg/usg_common_app_short/apply.html?application_id=1922"
   }
 },
 {
@@ -9846,7 +9846,7 @@
     "name": "University of West Georgia",
     "slug": "university-of-west-georgia",
     "url": "http://www.westga.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.westga.edu/admissions/dates_deadlines.php"
   }
 },
 {
@@ -9856,17 +9856,17 @@
     "name": "Young Harris College",
     "slug": "young-harris-college",
     "url": "http://www.yhc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.yhc.edu/admissions/deadlines-forms-downloads"
   }
 },
 {
   "model": "planner.school",
   "pk": 988,
   "fields": {
-    "name": "Indiana University-East",
+    "name": "Indiana University East",
     "slug": "indiana-university-east",
     "url": "http://www.iue.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iue.edu/admissions/freshmen/freshmen-apply.php"
   }
 },
 {
@@ -9876,7 +9876,7 @@
     "name": "Iowa Wesleyan University",
     "slug": "iowa-wesleyan-university",
     "url": "http://www.iw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iw.edu/admissions/application-checklist/"
   }
 },
 {
@@ -9886,7 +9886,7 @@
     "name": "Western Kentucky University",
     "slug": "western-kentucky-university",
     "url": "http://www.wku.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.wku.edu/admissions/timeline/"
   }
 },
 {
@@ -9896,7 +9896,7 @@
     "name": "Nichols College",
     "slug": "nichols-college",
     "url": "http://www.nichols.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nicholsschool.org/page.cfm?p=524"
   }
 },
 {
