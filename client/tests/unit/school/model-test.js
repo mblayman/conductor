@@ -10,3 +10,9 @@ test('it exists', function(assert) {
   // let store = this.store();
   assert.ok(!!model);
 });
+
+test('has a name', function(assert) {
+  let model = this.subject();
+  let hasName = Object.keys(model.toJSON()).indexOf('name') > -1;
+  assert.ok(hasName);
+});
