@@ -19,7 +19,7 @@ from rest_framework import routers
 
 from planner.views import SchoolViewSet
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register('schools', SchoolViewSet)
 
 urlpatterns = [
