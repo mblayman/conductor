@@ -10506,27 +10506,17 @@
     "name": "Chicago State University",
     "slug": "chicago-state-university",
     "url": "http://www.csu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1053,
-  "fields": {
-    "name": "Lexington College",
-    "slug": "lexington-college",
-    "url": "http://www.lexingtoncollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.csu.edu/admissions/applicants.htm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1054,
   "fields": {
-    "name": "Southern University and A&M College at Baton Rouge",
-    "slug": "southern-university-and-am-college-at-baton-rouge",
+    "name": "Southern University and A&M College, Baton Rouge",
+    "slug": "southern-university-and-am-college-baton-rouge",
     "url": "http://www.subr.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.subr.edu/index.cfm/page/5/n/6"
   }
 },
 {
@@ -10536,7 +10526,7 @@
     "name": "University of Baltimore",
     "slug": "university-of-baltimore",
     "url": "http://www.ubalt.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ubalt.edu/admission/freshmen/how-to-apply.cfm"
   }
 },
 {
@@ -10546,7 +10536,7 @@
     "name": "Dean College",
     "slug": "dean-college",
     "url": "http://www.dean.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dean.edu/admissions.aspx"
   }
 },
 {
@@ -10556,17 +10546,17 @@
     "name": "Wayne State University",
     "slug": "wayne-state-university",
     "url": "http://wayne.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://wayne.edu/admissions/freshman/deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1058,
   "fields": {
-    "name": "Saint Cloud State University",
-    "slug": "saint-cloud-state-university",
+    "name": "St. Cloud State University",
+    "slug": "st-cloud-state-university",
     "url": "http://www.stcloudstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stcloudstate.edu/scsu4u/admissions/default.aspx"
   }
 },
 {
@@ -10576,7 +10566,7 @@
     "name": "Alcorn State University",
     "slug": "alcorn-state-university",
     "url": "http://www.alcorn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.alcorn.edu/news/item/index.aspx?LinkId=4568&ModuleId=30"
   }
 },
 {
@@ -10586,7 +10576,7 @@
     "name": "D'Youville College",
     "slug": "dyouville-college",
     "url": "http://www.dyc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dyc.edu/admissions/undergraduate/apply.aspx"
   }
 },
 {
@@ -10596,17 +10586,17 @@
     "name": "North Carolina Central University",
     "slug": "north-carolina-central-university",
     "url": "http://www.nccu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nccu.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1062,
   "fields": {
-    "name": "University of Pittsburgh-Greensburg",
+    "name": "University of Pittsburgh, Greensburg",
     "slug": "university-of-pittsburgh-greensburg",
-    "url": "http://www.upg.pitt.edu/",
-    "milestones_url": ""
+    "url": "http://www.greensburg.pitt.edu/",
+    "milestones_url": "http://www.greensburg.pitt.edu/admissions"
   }
 },
 {
@@ -10616,7 +10606,7 @@
     "name": "East Tennessee State University",
     "slug": "east-tennessee-state-university",
     "url": "http://www.etsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.etsu.edu/apply/"
   }
 },
 {
@@ -10626,7 +10616,7 @@
     "name": "Tennessee Wesleyan College",
     "slug": "tennessee-wesleyan-college",
     "url": "http://www.twcnet.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.twcnet.edu/admissions/incoming-freshmen/"
   }
 },
 {
@@ -10636,7 +10626,7 @@
     "name": "Lubbock Christian University",
     "slug": "lubbock-christian-university",
     "url": "http://www.lcu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://lcu.edu/admissions/dates/"
   }
 },
 {
@@ -10646,7 +10636,7 @@
     "name": "Marymount University",
     "slug": "marymount-university",
     "url": "http://www.marymount.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.marymount.edu/Admissions/First-Year-Students/Applying"
   }
 },
 {
@@ -10656,7 +10646,7 @@
     "name": "West Liberty University",
     "slug": "west-liberty-university",
     "url": "http://westliberty.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.westliberty.edu/admissions/apply-now/"
   }
 },
 {
@@ -10666,7 +10656,7 @@
     "name": "Tuskegee University",
     "slug": "tuskegee-university",
     "url": "http://www.tuskegee.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tuskegee.edu/academics/academic_services/admissions/admission_requirements.aspx"
   }
 },
 {
@@ -10676,7 +10666,7 @@
     "name": "Arkansas Tech University",
     "slug": "arkansas-tech-university",
     "url": "http://www.atu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.atu.edu/admissions/index.php"
   }
 },
 {
@@ -10686,7 +10676,7 @@
     "name": "Adams State College",
     "slug": "adams-state-college",
     "url": "http://www.adams.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.adams.edu/admissions/apply_online.php"
   }
 },
 {
@@ -10696,17 +10686,17 @@
     "name": "Metropolitan State University of Denver",
     "slug": "metropolitan-state-university-of-denver",
     "url": "http://www.msudenver.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://catalog.msudenver.edu/content.php?catoid=15&navoid=582#AppDeadline"
   }
 },
 {
   "model": "planner.school",
   "pk": 1072,
   "fields": {
-    "name": "University of Hawaii-Hilo",
+    "name": "University of Hawaii, Hilo",
     "slug": "university-of-hawaii-hilo",
     "url": "http://hilo.hawaii.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://hilo.hawaii.edu/admissions/Apply.php"
   }
 },
 {
@@ -10716,7 +10706,7 @@
     "name": "University of the Cumberlands",
     "slug": "university-of-the-cumberlands",
     "url": "http://www.ucumberlands.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ucumberlands.edu/admissions"
   }
 },
 {
@@ -10726,17 +10716,17 @@
     "name": "Grambling State University",
     "slug": "grambling-state-university",
     "url": "http://www.gram.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gram.edu/admissions/deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1075,
   "fields": {
-    "name": "University of Maine-Machias",
+    "name": "University of Maine, Machias",
     "slug": "university-of-maine-machias",
     "url": "http://machias.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://machias.edu/applying-for-admission"
   }
 },
 {
@@ -10746,7 +10736,7 @@
     "name": "Coppin State University",
     "slug": "coppin-state-university",
     "url": "http://www.coppin.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.coppin.edu/info/200432/enrollment_information"
   }
 },
 {
@@ -10756,7 +10746,7 @@
     "name": "Lake Superior State University",
     "slug": "lake-superior-state-university",
     "url": "http://www.lssu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lssu.edu/admissions/faq.php"
   }
 },
 {
@@ -10766,7 +10756,7 @@
     "name": "Southeast Missouri State University",
     "slug": "southeast-missouri-state-university",
     "url": "http://www.semo.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.semo.edu/admissions/apply.html"
   }
 },
 {
@@ -10776,7 +10766,7 @@
     "name": "New Mexico State University",
     "slug": "new-mexico-state-university",
     "url": "http://www.nmsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://registration.nmsu.edu/fall/important-dates-and-deadlines-fall/"
   }
 },
 {
@@ -10786,7 +10776,7 @@
     "name": "Cabarrus College of Health Sciences",
     "slug": "cabarrus-college-of-health-sciences",
     "url": "http://www.cabarruscollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cabarruscollege.edu/admissions/faqs.cfm"
   }
 },
 {
@@ -10796,7 +10786,7 @@
     "name": "William Peace University",
     "slug": "william-peace-university",
     "url": "http://www.peace.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.peace.edu/admissions/faqs-admissions"
   }
 },
 {
@@ -10806,7 +10796,7 @@
     "name": "Winston-Salem State University",
     "slug": "winston-salem-state-university",
     "url": "http://www.wssu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.wssu.edu/admissions/admission-requirements/application-deadline.aspx"
   }
 },
 {
@@ -10816,7 +10806,7 @@
     "name": "Central State University",
     "slug": "central-state-university",
     "url": "http://www.centralstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.centralstate.edu/apply/index2.php?num=43"
   }
 },
 {
@@ -10826,17 +10816,17 @@
     "name": "Ohio Christian University",
     "slug": "ohio-christian-university",
     "url": "http://www.ohiochristian.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ohiochristian.edu/admission"
   }
 },
 {
   "model": "planner.school",
   "pk": 1085,
   "fields": {
-    "name": "East Stroudsburg State University of Pennsylvania",
-    "slug": "east-stroudsburg-state-university-of-pennsylvania",
+    "name": "East Stroudsburg University",
+    "slug": "east-stroudsburg-university",
     "url": "http://www.esu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.esu.edu/admissions/undergraduate/apply/freshman/process.cfm"
   }
 },
 {
@@ -10846,17 +10836,17 @@
     "name": "Immaculata University",
     "slug": "immaculata-university",
     "url": "http://www.immaculata.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.immaculata.edu/admissions/cus/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1087,
   "fields": {
-    "name": "Pennsylvania State University-York",
+    "name": "Pennsylvania State University, York",
     "slug": "pennsylvania-state-university-york",
     "url": "http://www.yk.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.yk.psu.edu/Admissions/apply.htm"
   }
 },
 {
@@ -10866,17 +10856,17 @@
     "name": "Coastal Carolina University",
     "slug": "coastal-carolina-university",
     "url": "http://www.coastal.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.coastal.edu/admissions/freshman.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1089,
   "fields": {
-    "name": "University of Texas-Pan American",
+    "name": "University of Texas, Pan American",
     "slug": "university-of-texas-pan-american",
     "url": "http://www.utpa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://portal.utpa.edu/utpa_main/dsa_home/admissions_home/admissions_deadlines"
   }
 },
 {
@@ -10886,27 +10876,27 @@
     "name": "West Texas A&M University",
     "slug": "west-texas-am-university",
     "url": "http://www.wtamu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wtamu.edu/admissions/default.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1091,
   "fields": {
-    "name": "University of Wisconsin-Oshkosh",
+    "name": "University of Wisconsin, Oshkosh",
     "slug": "university-of-wisconsin-oshkosh",
     "url": "http://www.uwosh.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.uwosh.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1092,
   "fields": {
-    "name": "University of Wisconsin-Stout",
+    "name": "University of Wisconsin, Stout",
     "slug": "university-of-wisconsin-stout",
     "url": "http://www.uwstout.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uwstout.edu/admissions/apply.cfm"
   }
 },
 {
@@ -10916,7 +10906,7 @@
     "name": "Alabama State University",
     "slug": "alabama-state-university",
     "url": "http://www.alasu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.alasu.edu/admissions/undergrad-admissions/index.aspx"
   }
 },
 {
@@ -10926,7 +10916,7 @@
     "name": "University of South Alabama",
     "slug": "university-of-south-alabama",
     "url": "http://www.usouthal.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://southalabama.edu/departments/admissions/applyundergrad.html"
   }
 },
 {
@@ -10936,7 +10926,7 @@
     "name": "University of Southern Indiana",
     "slug": "university-of-southern-indiana",
     "url": "http://www.usi.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.usi.edu/admissions/application-deadlines"
   }
 },
 {
@@ -10946,7 +10936,7 @@
     "name": "Wichita State University",
     "slug": "wichita-state-university",
     "url": "http://www.wichita.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wichita.edu/thisis/admissions/prospective_students.asp"
   }
 },
 {
@@ -10956,7 +10946,7 @@
     "name": "Thomas College",
     "slug": "thomas-college",
     "url": "http://www.thomas.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.thomas.edu/apply-admissions-aid/undergraduate-admission/dates-deadlines/"
   }
 },
 {
@@ -10966,7 +10956,7 @@
     "name": "Fisher College",
     "slug": "fisher-college",
     "url": "http://www.fisher.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fisher.edu/admissions/application-procedures"
   }
 },
 {
@@ -10976,7 +10966,7 @@
     "name": "Missouri Valley College",
     "slug": "missouri-valley-college",
     "url": "http://www.moval.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.moval.edu/admissions/applying/firstyear.php"
   }
 },
 {
@@ -10986,17 +10976,17 @@
     "name": "Kean University",
     "slug": "kean-university",
     "url": "http://www.kean.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kean.edu/admissions/freshman-application-instructions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1101,
   "fields": {
-    "name": "University of Wisconsin-River Falls",
+    "name": "University of Wisconsin, River Falls",
     "slug": "university-of-wisconsin-river-falls",
     "url": "http://www.uwrf.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uwrf.edu/Admissions/ApplyOnline.cfm"
   }
 },
 {
@@ -11006,7 +10996,7 @@
     "name": "Notre Dame de Namur University",
     "slug": "notre-dame-de-namur-university",
     "url": "http://www.ndnu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ndnu.edu/admissions/apply-freshman/"
   }
 },
 {
