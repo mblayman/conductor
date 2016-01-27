@@ -11006,7 +11006,7 @@
     "name": "Georgia Southwestern State University",
     "slug": "georgia-southwestern-state-university",
     "url": "http://www.gsw.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://gsw.edu/Admissions/ApplytoGSW/Deadlines"
   }
 },
 {
@@ -11016,17 +11016,17 @@
     "name": "Quincy University",
     "slug": "quincy-university",
     "url": "http://www.quincy.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.quincy.edu/admissions/future-freshmen/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1105,
   "fields": {
-    "name": "Indiana University-Northwest",
+    "name": "Indiana University, Northwest",
     "slug": "indiana-university-northwest",
     "url": "http://www.iun.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iun.edu/admissions/"
   }
 },
 {
@@ -11036,17 +11036,17 @@
     "name": "Kentucky State University",
     "slug": "kentucky-state-university",
     "url": "http://kysu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://kysu.edu/administration-governance/student-affairs/admissions/dates-deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1107,
   "fields": {
-    "name": "Louisiana State University-Alexandria",
+    "name": "Louisiana State University, Alexandria",
     "slug": "louisiana-state-university-alexandria",
     "url": "http://www.lsua.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lsua.edu/admissions/apply"
   }
 },
 {
@@ -11056,7 +11056,7 @@
     "name": "Our Lady of the Lake College",
     "slug": "our-lady-of-the-lake-college",
     "url": "http://www.ololcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ololcollege.edu/2015-2016-catalog/undergraduate-admissions/applying-for-admission"
   }
 },
 {
@@ -11066,7 +11066,7 @@
     "name": "Newbury College",
     "slug": "newbury-college",
     "url": "http://www.newbury.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.newbury.edu/apply"
   }
 },
 {
@@ -11076,17 +11076,17 @@
     "name": "Park University",
     "slug": "park-university",
     "url": "http://www.park.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.park.edu/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1111,
   "fields": {
-    "name": "Long Island University-C.W. Post Campus",
+    "name": "Long Island University, C.W. Post Campus",
     "slug": "long-island-university-cw-post-campus",
     "url": "http://www.liu.edu/cwpost/",
-    "milestones_url": ""
+    "milestones_url": "http://www.liu.edu/CWPost/Admissions/Apply"
   }
 },
 {
@@ -11096,17 +11096,17 @@
     "name": "College of New Rochelle",
     "slug": "college-of-new-rochelle",
     "url": "http://www.cnr.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cnr.edu/undergraduate"
   }
 },
 {
   "model": "planner.school",
   "pk": 1113,
   "fields": {
-    "name": "College of Agriculture & Technology at Morrisville (Morrisville State College)",
-    "slug": "college-of-agriculture-technology-at-morrisville-morrisville-state-college",
+    "name": "Morrisville State College",
+    "slug": "morrisville-state-college",
     "url": "http://www.morrisville.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.morrisville.edu/admissions/admissionrequirements.aspx"
   }
 },
 {
@@ -11116,17 +11116,17 @@
     "name": "Bacone College",
     "slug": "bacone-college",
     "url": "http://www.bacone.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bacone.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1115,
   "fields": {
-    "name": "Pennsylvania State University-Beaver",
+    "name": "Pennsylvania State University, Beaver",
     "slug": "pennsylvania-state-university-beaver",
     "url": "http://www.br.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.beaver.psu.edu/Admissions/34855.htm#QA34864"
   }
 },
 {
@@ -11136,17 +11136,17 @@
     "name": "Virginia Wesleyan College",
     "slug": "virginia-wesleyan-college",
     "url": "http://www.vwc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://admissions.vwc.edu/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1117,
   "fields": {
-    "name": "University of Washington-Bothell",
+    "name": "University of Washington, Bothell",
     "slug": "university-of-washington-bothell",
     "url": "http://www.uwb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uwb.edu/admissions/apply/application-dates"
   }
 },
 {
@@ -11156,17 +11156,17 @@
     "name": "Alabama A&M University",
     "slug": "alabama-am-university",
     "url": "http://www.aamu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.aamu.edu/admissions/undergraduateadmissions/apply/pages/application-deadlines.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1119,
   "fields": {
-    "name": "Auburn University at Montgomery",
-    "slug": "auburn-university-at-montgomery",
+    "name": "Auburn University, Montgomery",
+    "slug": "auburn-university-montgomery",
     "url": "http://www.aum.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.aum.edu/admissions/deadlines"
   }
 },
 {
@@ -11176,7 +11176,7 @@
     "name": "Armstrong State University",
     "slug": "armstrong-state-university",
     "url": "http://www.armstrong.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.armstrong.edu/admissions/deadlines-forms"
   }
 },
 {
@@ -11186,7 +11186,7 @@
     "name": "Boise State University",
     "slug": "boise-state-university",
     "url": "http://www.boisestate.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://admissions.boisestate.edu/apply/deadlines/"
   }
 },
 {
@@ -11196,7 +11196,7 @@
     "name": "William Penn University",
     "slug": "william-penn-university",
     "url": "http://www.wmpenn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wmpenn.edu/Admissions/Application_Process/"
   }
 },
 {
@@ -11206,7 +11206,7 @@
     "name": "Morehead State University",
     "slug": "morehead-state-university",
     "url": "http://www.moreheadstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.moreheadstate.edu/freshmen/"
   }
 },
 {
@@ -11216,7 +11216,7 @@
     "name": "Capitol Technology University",
     "slug": "capitol-technology-university",
     "url": "http://www.captechu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.captechu.edu/prospective-students/undergraduate/admissions"
   }
 },
 {
@@ -11226,37 +11226,37 @@
     "name": "Anna Maria College",
     "slug": "anna-maria-college",
     "url": "http://www.annamaria.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.annamaria.edu/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1126,
   "fields": {
-    "name": "Vaughn College of Aeronautics & Technology",
-    "slug": "vaughn-college-of-aeronautics-technology",
+    "name": "Vaughn College",
+    "slug": "vaughn-college",
     "url": "http://www.vaughn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.vaughn.edu/faq-admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1127,
   "fields": {
-    "name": "Saint Francis College",
-    "slug": "saint-francis-college",
+    "name": "St. Francis College",
+    "slug": "st-francis-college",
     "url": "http://www.sfc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sfc.edu/page.cfm?p=4085"
   }
 },
 {
   "model": "planner.school",
   "pk": 1128,
   "fields": {
-    "name": "Saint Augustine College",
-    "slug": "saint-augustine-college",
+    "name": "St. Augustine College",
+    "slug": "st-augustine-college",
     "url": "http://www.staugustine.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.staugustine.edu/index.php?src=gendocs&ref=Admissions"
   }
 },
 {
@@ -11266,17 +11266,17 @@
     "name": "Alvernia University",
     "slug": "alvernia-university",
     "url": "http://www.alvernia.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.alvernia.edu/admissions/undergraduate/apply.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1130,
   "fields": {
-    "name": "Pennsylvania State University-Shenango",
+    "name": "Pennsylvania State University, Shenango",
     "slug": "pennsylvania-state-university-shenango",
     "url": "http://www.shenango.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shenango.psu.edu/Admissions/default.htm"
   }
 },
 {
@@ -11286,7 +11286,7 @@
     "name": "Shepherd University",
     "slug": "shepherd-university",
     "url": "http://www.shepherd.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shepherd.edu/admissions/first-time-freshmen"
   }
 },
 {
@@ -11296,7 +11296,7 @@
     "name": "Hawaii Pacific University",
     "slug": "hawaii-pacific-university",
     "url": "http://www.hpu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hpu.edu/Undergraduate/futurestudents/prospectivestudents/Freshman_Req.html"
   }
 },
 {
@@ -11306,7 +11306,7 @@
     "name": "Fort Hays State University",
     "slug": "fort-hays-state-university",
     "url": "http://www.fhsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.fhsu.edu/admissions/incoming-freshman/"
   }
 },
 {
@@ -11316,17 +11316,17 @@
     "name": "Kentucky Mountain Bible College",
     "slug": "kentucky-mountain-bible-college",
     "url": "http://www.kmbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kmbc.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1135,
   "fields": {
-    "name": "University of Maryland-Eastern Shore",
+    "name": "University of Maryland, Eastern Shore",
     "slug": "university-of-maryland-eastern-shore",
     "url": "http://www.umes.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.umes.edu/Admissions/Default.aspx?id=4328"
   }
 },
 {
@@ -11336,7 +11336,7 @@
     "name": "Curry College",
     "slug": "curry-college",
     "url": "http://www.curry.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.curry.edu/programs-and-courses/undergraduate-programs/apply/dates-and-deadlines.html"
   }
 },
 {
@@ -11346,7 +11346,7 @@
     "name": "Pine Manor College",
     "slug": "pine-manor-college",
     "url": "http://www.pmc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pmc.edu/apply"
   }
 },
 {
@@ -11356,7 +11356,7 @@
     "name": "Marygrove College",
     "slug": "marygrove-college",
     "url": "http://www.marygrove.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.marygrove.edu/future-students/admissions/admissions-overview.html"
   }
 },
 {
@@ -11366,17 +11366,17 @@
     "name": "University of Central Missouri",
     "slug": "university-of-central-missouri",
     "url": "http://www.ucmo.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ucmo.edu/undergrad/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1140,
   "fields": {
-    "name": "University of Nevada-Las Vegas",
+    "name": "University of Nevada, Las Vegas",
     "slug": "university-of-nevada-las-vegas",
     "url": "http://www.unlv.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.unlv.edu/admissions/deadlines"
   }
 },
 {
@@ -11386,7 +11386,7 @@
     "name": "Franklin Pierce University",
     "slug": "franklin-pierce-university",
     "url": "http://www.franklinpierce.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.franklinpierce.edu/admissions/overview.htm"
   }
 },
 {
@@ -11396,7 +11396,7 @@
     "name": "Bloomfield College",
     "slug": "bloomfield-college",
     "url": "http://www.bloomfield.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bloomfield.edu/admission/admission-process/high-school"
   }
 },
 {
@@ -11406,17 +11406,17 @@
     "name": "Eastern New Mexico University",
     "slug": "eastern-new-mexico-university",
     "url": "http://www.enmu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.enmu.edu/future-students/faq/admission.shtml"
   }
 },
 {
   "model": "planner.school",
   "pk": 1144,
   "fields": {
-    "name": "College of Agriculture & Technology at Cobleskill",
-    "slug": "college-of-agriculture-technology-at-cobleskill",
+    "name": "SUNY Cobleskill",
+    "slug": "suny-cobleskill",
     "url": "http://www.cobleskill.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cobleskill.edu/admissions/applying-to-cobleskill.asp"
   }
 },
 {
@@ -11426,7 +11426,7 @@
     "name": "Mars Hill University",
     "slug": "mars-hill-university",
     "url": "http://www.mhu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mhu.edu/admissions/first-time-university-students"
   }
 },
 {
@@ -11436,7 +11436,7 @@
     "name": "North Carolina Wesleyan College",
     "slug": "north-carolina-wesleyan-college",
     "url": "http://www.ncwc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ncwc.edu/admissions/how-to-apply.php"
   }
 },
 {
@@ -11446,7 +11446,7 @@
     "name": "Southwestern Christian University",
     "slug": "southwestern-christian-university",
     "url": "http://swcu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://swcu.edu/Default.aspx?shortcut=what-are-the-important-dates-i-need-to-know"
   }
 },
 {
@@ -11456,17 +11456,17 @@
     "name": "Northwest Christian University",
     "slug": "northwest-christian-university",
     "url": "http://www.nwcu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nwcu.edu/undergraduate/application-process/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1149,
   "fields": {
-    "name": "Pennsylvania State University-DuBois",
+    "name": "Pennsylvania State University, DuBois",
     "slug": "pennsylvania-state-university-dubois",
     "url": "http://www.ds.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://dubois.psu.edu/Admissions/default.htm"
   }
 },
 {
@@ -11476,17 +11476,17 @@
     "name": "Tusculum College",
     "slug": "tusculum-college",
     "url": "http://www.tusculum.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://web.tusculum.edu/mytusculum/application.php"
   }
 },
 {
   "model": "planner.school",
   "pk": 1151,
   "fields": {
-    "name": "University of Houston-Victoria",
+    "name": "University of Houston, Victoria",
     "slug": "university-of-houston-victoria",
     "url": "http://www.uhv.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uhv.edu/freshman/admissionsrequirements.aspx"
   }
 },
 {
@@ -11496,7 +11496,7 @@
     "name": "Midwestern State University",
     "slug": "midwestern-state-university",
     "url": "http://www.mwsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mwsu.edu/admissions/apply"
   }
 },
 {
