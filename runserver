@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-./manage.py runserver 8080
