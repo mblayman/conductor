@@ -13606,7 +13606,7 @@
     "name": "Dallas Theological Seminary",
     "slug": "dallas-theological-seminary",
     "url": "http://www.dts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dts.edu/admissions/apply/importantdates/"
   }
 },
 {
@@ -13616,7 +13616,7 @@
     "name": "Daniel Webster College",
     "slug": "daniel-webster-college",
     "url": "http://www.dwc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dwc.edu/admissions/faqs.cfm"
   }
 },
 {
@@ -13626,7 +13626,7 @@
     "name": "Davenport University",
     "slug": "davenport-university",
     "url": "http://www.davenport.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.davenport.edu/office-admissions/apply-now"
   }
 },
 {
@@ -13636,7 +13636,7 @@
     "name": "Daytona State College",
     "slug": "daytona-state-college",
     "url": "http://www.daytonastate.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.daytonastate.edu/catalog/adm/application_dates.html"
   }
 },
 {
@@ -13646,17 +13646,17 @@
     "name": "Denver Seminary",
     "slug": "denver-seminary",
     "url": "http://www.denverseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.denverseminary.edu/student-life/important-dates/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1371,
   "fields": {
-    "name": "Des Moines University-Osteopathic Medical Center",
-    "slug": "des-moines-university-osteopathic-medical-center",
+    "name": "Des Moines University",
+    "slug": "des-moines-university",
     "url": "http://www.dmu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.dmu.edu/admission/"
   }
 },
 {
@@ -13666,107 +13666,107 @@
     "name": "DeVry University",
     "slug": "devry-university",
     "url": "http://www.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.devry.edu/admissions.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1373,
   "fields": {
-    "name": "DeVry University-Addison",
+    "name": "DeVry University, Addison",
     "slug": "devry-university-addison",
     "url": "http://www.add.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.add.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1374,
   "fields": {
-    "name": "DeVry University-Arlington",
+    "name": "DeVry University, Arlington",
     "slug": "devry-university-arlington",
-    "url": "http://www.devry.edu/locations/campuses/loc_arlingtoncampus.jsp",
-    "milestones_url": ""
+    "url": "http://www.devry.edu/universities/virginia/arlington-campus.html",
+    "milestones_url": "http://www.devry.edu/universities/virginia/arlington-campus.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1375,
   "fields": {
-    "name": "DeVry University-Chicago",
+    "name": "DeVry University, Chicago",
     "slug": "devry-university-chicago",
     "url": "http://www.chi.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.chi.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1376,
   "fields": {
-    "name": "DeVry University-Georgia",
+    "name": "DeVry University, Georgia",
     "slug": "devry-university-georgia",
     "url": "http://www.atl.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.atl.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1377,
   "fields": {
-    "name": "DeVry University-Irving",
+    "name": "DeVry University, Irving",
     "slug": "devry-university-irving",
     "url": "http://www.dal.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dal.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1378,
   "fields": {
-    "name": "DeVry University-Kansas City",
+    "name": "DeVry University, Kansas City",
     "slug": "devry-university-kansas-city",
     "url": "http://www.kc.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kc.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1379,
   "fields": {
-    "name": "DeVry University-Long Beach",
+    "name": "DeVry University, Long Beach",
     "slug": "devry-university-long-beach",
     "url": "http://www.lb.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lb.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1380,
   "fields": {
-    "name": "DeVry University-Orlando",
+    "name": "DeVry University, Orlando",
     "slug": "devry-university-orlando",
     "url": "http://www.orl.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.orl.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1381,
   "fields": {
-    "name": "DeVry University-Phoenix",
+    "name": "DeVry University, Phoenix",
     "slug": "devry-university-phoenix",
     "url": "http://www.phx.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.phx.devry.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1382,
   "fields": {
-    "name": "DeVry University-Pomona",
+    "name": "DeVry University, Pomona",
     "slug": "devry-university-pomona",
     "url": "http://www.pom.devry.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pom.devry.edu/"
   }
 },
 {
@@ -13776,7 +13776,7 @@
     "name": "Divine Word College",
     "slug": "divine-word-college",
     "url": "http://www.dwci.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.dwci.edu/Admissions/Apply.aspx"
   }
 },
 {
@@ -13786,7 +13786,7 @@
     "name": "Dixie State University",
     "slug": "dixie-state-university",
     "url": "http://www.dixie.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://dixie.edu/futurestudents/howToApply.php"
   }
 },
 {
@@ -13796,7 +13796,7 @@
     "name": "Dominican House of Studies",
     "slug": "dominican-house-of-studies",
     "url": "http://www.dhs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dhs.edu/how-to-apply/"
   }
 },
 {
@@ -13806,7 +13806,7 @@
     "name": "Dominican School of Philosophy & Theology",
     "slug": "dominican-school-of-philosophy-theology",
     "url": "http://www.dspt.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.dspt.edu/how-to-apply"
   }
 },
 {
@@ -13816,7 +13816,7 @@
     "name": "Donnelly College",
     "slug": "donnelly-college",
     "url": "http://www.donnelly.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.donnelly.edu/admission/Admission-Process.cfm"
   }
 },
 {
@@ -13826,7 +13826,7 @@
     "name": "Dowling College",
     "slug": "dowling-college",
     "url": "http://www.dowling.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dowling.edu/admissions/apply/"
   }
 },
 {
@@ -13836,7 +13836,7 @@
     "name": "Dunwoody College of Technology",
     "slug": "dunwoody-college-of-technology",
     "url": "http://www.dunwoody.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dunwoody.edu/admissions/apply/"
   }
 },
 {
@@ -13846,7 +13846,7 @@
     "name": "Earlham College",
     "slug": "earlham-college",
     "url": "http://www.earlham.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.earlham.edu/admissions/apply/"
   }
 },
 {
@@ -13856,7 +13856,7 @@
     "name": "East-West University",
     "slug": "east-west-university",
     "url": "http://www.eastwest.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.eastwest.edu/admission/"
   }
 },
 {
@@ -13866,7 +13866,7 @@
     "name": "Eastern Florida State College",
     "slug": "eastern-florida-state-college",
     "url": "http://www.easternflorida.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.easternflorida.edu/admissions/admission-deadlines.cfm"
   }
 },
 {
@@ -13876,7 +13876,7 @@
     "name": "Eastern Virginia Medical School",
     "slug": "eastern-virginia-medical-school",
     "url": "http://www.evms.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.evms.edu/education/prospective_students/"
   }
 },
 {
@@ -13886,7 +13886,7 @@
     "name": "ECPI University",
     "slug": "ecpi-university",
     "url": "http://www.ecpi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ecpi.edu/apply-now"
   }
 },
 {
@@ -13896,17 +13896,17 @@
     "name": "Eden Theological Seminary",
     "slug": "eden-theological-seminary",
     "url": "http://www.eden.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.eden.edu/s/1645/index.aspx?sid=1645&gid=1&pgid=474"
   }
 },
 {
   "model": "planner.school",
   "pk": 1396,
   "fields": {
-    "name": "EDP College",
-    "slug": "edp-college",
+    "name": "EDP University",
+    "slug": "edp-university",
     "url": "http://www.edpuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.edpuniversity.edu/informacion-general"
   }
 },
 {
@@ -13916,7 +13916,7 @@
     "name": "Emmanuel Christian Seminary",
     "slug": "emmanuel-christian-seminary",
     "url": "http://www.ecs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ecs.milligan.edu/apply-now/"
   }
 },
 {
@@ -13936,7 +13936,7 @@
     "name": "Emmaus Bible College",
     "slug": "emmaus-bible-college",
     "url": "http://www.emmaus.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.emmaus.edu/faqs"
   }
 },
 {
@@ -13946,17 +13946,7 @@
     "name": "Erikson Institute",
     "slug": "erikson-institute",
     "url": "http://www.erikson.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1401,
-  "fields": {
-    "name": "Escuela de Artes Pl\u00e1sticas de Puerto Rico",
-    "slug": "escuela-de-artes-plasticas-de-puerto-rico",
-    "url": "http://www.eap.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.erikson.edu/graduate-school/admission/apply/"
   }
 },
 {
@@ -13966,7 +13956,7 @@
     "name": "Evangelical Theological Seminary",
     "slug": "evangelical-theological-seminary",
     "url": "http://evangelical.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://evangelical.edu/admissions/"
   }
 },
 {
@@ -13976,7 +13966,7 @@
     "name": "Everglades University",
     "slug": "everglades-university",
     "url": "http://www.evergladesuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.evergladesuniversity.edu/admissions/"
   }
 },
 {
@@ -13986,7 +13976,7 @@
     "name": "Excelsior College",
     "slug": "excelsior-college",
     "url": "http://www.excelsior.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.excelsior.edu/admissions/apply"
   }
 },
 {
@@ -13996,7 +13986,7 @@
     "name": "Fairfield University",
     "slug": "fairfield-university",
     "url": "http://www.fairfield.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://fairfield.edu/admissionaid/undergraduateadmission/importantdates/"
   }
 },
 {
@@ -14006,7 +13996,7 @@
     "name": "Fashion Institute of Design & Merchandising",
     "slug": "fashion-institute-of-design-merchandising",
     "url": "http://fidm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://fidm.edu/en/about/faq/"
   }
 },
 {
@@ -14016,7 +14006,7 @@
     "name": "Faulkner University",
     "slug": "faulkner-university",
     "url": "http://www.faulkner.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.faulkner.edu/undergrad/admissions/admission-timeline/high-school-senior/"
   }
 },
 {
@@ -14026,7 +14016,7 @@
     "name": "Fielding Graduate University",
     "slug": "fielding-graduate-university",
     "url": "http://www.fielding.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fielding.edu/admission/calendar"
   }
 },
 {
@@ -14036,7 +14026,7 @@
     "name": "Finlandia University",
     "slug": "finlandia-university",
     "url": "http://www.finlandia.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.finlandia.edu/apply"
   }
 },
 {
@@ -14046,7 +14036,7 @@
     "name": "Five Towns College",
     "slug": "five-towns-college",
     "url": "http://www.ftc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ftc.edu/apply-now/"
   }
 },
 {
@@ -14056,7 +14046,7 @@
     "name": "Florida Gateway College",
     "slug": "florida-gateway-college",
     "url": "http://www.fgc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.fgc.edu/calendar-deadlines/"
   }
 },
 {
@@ -14066,7 +14056,7 @@
     "name": "Florida Memorial University",
     "slug": "florida-memorial-university",
     "url": "http://www.fmuniv.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fmuniv.edu/admissions/how-to-apply/requirements-deadlines/"
   }
 },
 {
@@ -14076,7 +14066,7 @@
     "name": "Florida National University",
     "slug": "florida-national-university",
     "url": "http://www.fnu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fnu.edu/deadlines/"
   }
 },
 {
@@ -14086,7 +14076,7 @@
     "name": "Florida SouthWestern State College",
     "slug": "florida-southwestern-state-college",
     "url": "http://www.fsw.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.fsw.edu/admissions/ftic"
   }
 },
 {
@@ -14096,17 +14086,7 @@
     "name": "Florida State College at Jacksonville",
     "slug": "florida-state-college-at-jacksonville",
     "url": "http://www.fscj.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1416,
-  "fields": {
-    "name": "Forest Institute of Professional Psychology",
-    "slug": "forest-institute-of-professional-psychology",
-    "url": "http://www.forest.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fscj.edu/admissions-aid/admissions"
   }
 },
 {
@@ -14116,7 +14096,7 @@
     "name": "Franciscan School of Theology",
     "slug": "franciscan-school-of-theology",
     "url": "http://fst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://fst.edu/admissions/apply-to-fst/"
   }
 },
 {
