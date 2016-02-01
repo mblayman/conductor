@@ -60,3 +60,5 @@ target/
 # Vim
 *.swp
 _vimrc_local.vim
+
+.vagrant
