@@ -12113,7 +12113,7 @@
   "model": "planner.school",
   "pk": 1214,
   "fields": {
-    "name": "Indiana University-South Bend",
+    "name": "Indiana University, South Bend",
     "slug": "indiana-university-south-bend",
     "url": "http://www.iusb.edu/",
     "milestones_url": "https://www.iusb.edu/admissions/apply/first.php"
@@ -14106,7 +14106,7 @@
     "name": "Frank Lloyd Wright School of Architecture",
     "slug": "frank-lloyd-wright-school-of-architecture",
     "url": "http://www.taliesin.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.taliesin.edu/admissions.html"
   }
 },
 {
@@ -14116,7 +14116,7 @@
     "name": "Franklin & Marshall College",
     "slug": "franklin-marshall-college",
     "url": "http://www.fandm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fandm.edu/admission/apply"
   }
 },
 {
@@ -14126,7 +14126,7 @@
     "name": "Franklin University",
     "slug": "franklin-university",
     "url": "http://www.franklin.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.franklin.edu/getting-started/undergraduate-admission-process"
   }
 },
 {
@@ -14136,7 +14136,7 @@
     "name": "Frontier Nursing University",
     "slug": "frontier-nursing-university",
     "url": "http://www.frontier.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.frontier.edu/admissions"
   }
 },
 {
@@ -14146,7 +14146,7 @@
     "name": "Fuller Theological Seminary",
     "slug": "fuller-theological-seminary",
     "url": "http://fuller.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://fuller.edu/homepage-admissions-deadlines-details/"
   }
 },
 {
@@ -14156,7 +14156,7 @@
     "name": "Future Generations Graduate School",
     "slug": "future-generations-graduate-school",
     "url": "http://www.future.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.future.edu/admissions/apply"
   }
 },
 {
@@ -14166,17 +14166,17 @@
     "name": "Garrett-Evangelical Theological Seminary",
     "slug": "garrett-evangelical-theological-seminary",
     "url": "http://www.garrett.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.garrett.edu/admissions/application-process"
   }
 },
 {
   "model": "planner.school",
   "pk": 1425,
   "fields": {
-    "name": "George Washington University-Virginia Science & Technology Campus",
+    "name": "George Washington University, Virginia Science & Technology Campus",
     "slug": "george-washington-university-virginia-science-technology-campus",
     "url": "http://virginia.gwu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://virginia.gwu.edu/undergraduate-programs"
   }
 },
 {
@@ -14186,17 +14186,17 @@
     "name": "Georgia Gwinnett College",
     "slug": "georgia-gwinnett-college",
     "url": "http://www.ggc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ggc.edu/admissions/deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1427,
   "fields": {
-    "name": "Georgia Regents University",
-    "slug": "georgia-regents-university",
-    "url": "http://www.gru.edu/",
-    "milestones_url": ""
+    "name": "Augusta University",
+    "slug": "augusta-university",
+    "url": "http://www.augusta.edu/",
+    "milestones_url": "http://www.augusta.edu/admissions/undergraduatedeadlines.php"
   }
 },
 {
@@ -14206,7 +14206,7 @@
     "name": "Global University",
     "slug": "global-university",
     "url": "http://www.globaluniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.globaluniversity.edu/admissions_undergraduate.cfm"
   }
 },
 {
@@ -14216,7 +14216,7 @@
     "name": "God's Bible School & College",
     "slug": "gods-bible-school-college",
     "url": "http://www.gbs.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.gbs.edu/future-students/"
   }
 },
 {
@@ -14226,7 +14226,7 @@
     "name": "Goddard College",
     "slug": "goddard-college",
     "url": "http://www.goddard.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.goddard.edu/admissions/application-deadlines/"
   }
 },
 {
@@ -14236,7 +14236,7 @@
     "name": "Golden Gate Baptist Theological Seminary",
     "slug": "golden-gate-baptist-theological-seminary",
     "url": "http://www.ggbts.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ggbts.edu/admissions/"
   }
 },
 {
@@ -14246,7 +14246,7 @@
     "name": "Golden Gate University",
     "slug": "golden-gate-university",
     "url": "http://www.ggu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ggu.edu/apply/"
   }
 },
 {
@@ -14256,17 +14256,17 @@
     "name": "Goldey-Beacom College",
     "slug": "goldey-beacom-college",
     "url": "http://www.gbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.gbc.edu/admissions/undergraduate/freshman.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1434,
   "fields": {
-    "name": "Goldfarb School of Nursing at Barnes-Jewish College",
-    "slug": "goldfarb-school-of-nursing-at-barnes-jewish-college",
+    "name": "Barnes-Jewish College, Goldfarb School of Nursing",
+    "slug": "barnes-jewish-college-goldfarb-school-of-nursing",
     "url": "http://www.barnesjewishcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.barnesjewishcollege.edu/Admissions/Admission-Policies/Undergraduate-Admissions"
   }
 },
 {
@@ -14276,7 +14276,7 @@
     "name": "Goodwin College",
     "slug": "goodwin-college",
     "url": "http://www.goodwin.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.goodwin.edu/admissions/"
   }
 },
 {
@@ -14286,7 +14286,7 @@
     "name": "Gordon State College",
     "slug": "gordon-state-college",
     "url": "http://www.gordonstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gordonstate.edu/admissions/applying-to-gordon"
   }
 },
 {
@@ -14296,7 +14296,7 @@
     "name": "Gordon-Conwell Theological Seminary",
     "slug": "gordon-conwell-theological-seminary",
     "url": "http://www.gordonconwell.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gordonconwell.edu/hamilton/future/Important-Application-Deadlines.cfm"
   }
 },
 {
@@ -14306,7 +14306,7 @@
     "name": "Goucher College",
     "slug": "goucher-college",
     "url": "http://www.goucher.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.goucher.edu/admissions/how-to-apply/first-year-students"
   }
 },
 {
@@ -14316,7 +14316,7 @@
     "name": "Governors State University",
     "slug": "governors-state-university",
     "url": "http://www.govst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.govst.edu/Admissions/Admissions_Process/Freshman/"
   }
 },
 {
@@ -14326,7 +14326,7 @@
     "name": "Grace Bible College",
     "slug": "grace-bible-college",
     "url": "http://www.gbcol.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gbcol.edu/admissions/admissions"
   }
 },
 {
@@ -14336,7 +14336,7 @@
     "name": "Graduate Institute of Applied Linguistics",
     "slug": "graduate-institute-of-applied-linguistics",
     "url": "http://www.gial.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gial.edu/admissions/deadlines/"
   }
 },
 {
@@ -14346,7 +14346,7 @@
     "name": "Graduate Theological Union",
     "slug": "graduate-theological-union",
     "url": "http://gtu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://gtu.edu/admissions/whystudyatgtu"
   }
 },
 {
@@ -14356,7 +14356,7 @@
     "name": "Grand Canyon University",
     "slug": "grand-canyon-university",
     "url": "http://www.gcu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gcu.edu/admissions/requirements/undergraduate-admissions.php"
   }
 },
 {
@@ -14366,7 +14366,7 @@
     "name": "Granite State College",
     "slug": "granite-state-college",
     "url": "http://www.granite.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.granite.edu/students/prospect/getstarted/admissions.php"
   }
 },
 {
@@ -14376,7 +14376,7 @@
     "name": "Gratz College",
     "slug": "gratz-college",
     "url": "http://www.gratz.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gratz.edu/pages/admissions"
   }
 },
 {
@@ -14386,7 +14386,7 @@
     "name": "Great Basin College",
     "slug": "great-basin-college",
     "url": "http://www.gbcnv.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gbcnv.edu/admissions/"
   }
 },
 {
@@ -14396,7 +14396,7 @@
     "name": "Great Lakes Christian College",
     "slug": "great-lakes-christian-college",
     "url": "http://www.glcc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.glcc.edu/admissions/apply-to-glcc/"
   }
 },
 {
@@ -14406,7 +14406,7 @@
     "name": "Grove City College",
     "slug": "grove-city-college",
     "url": "http://www.gcc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gcc.edu/futurestudents/apply/Pages/First-Time-Freshmen-Applicants.aspx"
   }
 },
 {
@@ -14416,7 +14416,7 @@
     "name": "Gulf Coast State College",
     "slug": "gulf-coast-state-college",
     "url": "http://www.gulfcoast.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gulfcoast.edu/admissions/student_type.htm"
   }
 },
 {
@@ -14426,7 +14426,7 @@
     "name": "Icahn School of Medicine at Mount Sinai",
     "slug": "icahn-school-of-medicine-at-mount-sinai",
     "url": "http://icahn.mssm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://icahn.mssm.edu/apply"
   }
 },
 {
@@ -14436,7 +14436,7 @@
     "name": "Idaho State University",
     "slug": "idaho-state-university",
     "url": "http://www.isu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.isu.edu/apply/"
   }
 },
 {
@@ -14446,7 +14446,7 @@
     "name": "Iliff School of Theology",
     "slug": "iliff-school-of-theology",
     "url": "http://www.iliff.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iliff.edu/apply/get-started/application-deadlines"
   }
 },
 {
@@ -14456,7 +14456,7 @@
     "name": "Illinois College",
     "slug": "illinois-college",
     "url": "http://www.ic.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ic.edu/application_information"
   }
 },
 {
@@ -14466,7 +14466,7 @@
     "name": "Illinois College of Optometry",
     "slug": "illinois-college-of-optometry",
     "url": "http://www.ico.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ico.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -14476,17 +14476,17 @@
     "name": "Illinois Institute of Art",
     "slug": "illinois-institute-of-art",
     "url": "https://www.artinstitutes.edu/chicago/",
-    "milestones_url": ""
+    "milestones_url": "https://www.artinstitutes.edu/chicago/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1456,
   "fields": {
-    "name": "Illinois Institute of Art-Schaumburg",
+    "name": "Illinois Institute of Art, Schaumburg",
     "slug": "illinois-institute-of-art-schaumburg",
     "url": "http://www.artinstitutes.edu/schaumburg/",
-    "milestones_url": ""
+    "milestones_url": "https://www.artinstitutes.edu/schaumburg/"
   }
 },
 {
@@ -14496,27 +14496,17 @@
     "name": "Indian River State College",
     "slug": "indian-river-state-college",
     "url": "http://www.irsc.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1458,
-  "fields": {
-    "name": "Indiana University System",
-    "slug": "indiana-university-system",
-    "url": "http://www.indiana.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.irsc.edu/admissions/applynow/applynow.aspx?id=191"
   }
 },
 {
   "model": "planner.school",
   "pk": 1459,
   "fields": {
-    "name": "Indiana University/Purdue University at Columbus",
-    "slug": "indiana-universitypurdue-university-at-columbus",
+    "name": "Indiana University, Purdue University, Columbus",
+    "slug": "indiana-universitypurdue-university-columbus",
     "url": "http://www.iupuc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iupuc.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -14526,7 +14516,7 @@
     "name": "Institute for Clinical Social Work",
     "slug": "institute-for-clinical-social-work",
     "url": "http://www.icsw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.icsw.edu/admissions/"
   }
 },
 {
@@ -14536,7 +14526,7 @@
     "name": "Institute for the Psychological Sciences",
     "slug": "institute-for-the-psychological-sciences",
     "url": "http://ipsciences.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ipsciences.edu/admissions-information-for-m-s-in-clinical-psychology/"
   }
 },
 {
@@ -14546,7 +14536,7 @@
     "name": "Institute of American Indian Arts",
     "slug": "institute-of-american-indian-arts",
     "url": "http://www.iaia.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iaia.edu/admissions/admissions-application-process/"
   }
 },
 {
@@ -14556,7 +14546,7 @@
     "name": "Institute of World Politics",
     "slug": "institute-of-world-politics",
     "url": "http://www.iwp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.iwp.edu/admissions/page/application-deadlines"
   }
 },
 {
@@ -14566,7 +14556,7 @@
     "name": "Interdenominational Theological Center",
     "slug": "interdenominational-theological-center",
     "url": "http://www.itc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.itc.edu/admissions/generalinstruction/"
   }
 },
 {
@@ -14576,7 +14566,7 @@
     "name": "Irell & Manella Graduate School of Biological Sciences",
     "slug": "irell-manella-graduate-school-of-biological-sciences",
     "url": "http://www.cityofhope.org/grad-school",
-    "milestones_url": ""
+    "milestones_url": "http://www.cityofhope.org/education/irell-and-manella-graduate-school-of-biological-sciences/admissions-and-applications"
   }
 },
 {
@@ -14586,7 +14576,7 @@
     "name": "Jarvis Christian College",
     "slug": "jarvis-christian-college",
     "url": "http://www.jarvis.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.jarvis.edu/admissions-welcome-2/"
   }
 },
 {
@@ -14596,7 +14586,7 @@
     "name": "John F. Kennedy University",
     "slug": "john-f-kennedy-university",
     "url": "http://www.jfku.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.jfku.edu/Admissions/Apply-to-JFK-University.html"
   }
 },
 {
@@ -14606,7 +14596,7 @@
     "name": "John Marshall Law School",
     "slug": "john-marshall-law-school",
     "url": "http://www.jmls.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.jmls.edu/admission/jd/"
   }
 },
 {
