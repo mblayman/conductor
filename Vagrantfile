@@ -61,11 +61,15 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
-  # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   sudo apt-get update
-  #   sudo apt-get install -y apache2
-  # SHELL
+  config.vm.define "web01" do |web|
+    web.vm.network "forwarded_port", guest: 80, host: 8080
+    web.vm.network "forwarded_port", guest: 8000, host: 8000
+  end
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.groups = {
+      "webservers" => ["web01"],
+    }
+    ansible.playbook = "playbooks/site.yml"
+  end
 end

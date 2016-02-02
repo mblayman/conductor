@@ -1,0 +1,57 @@
+---
+- name: Install Supervisor
+  sudo: yes
+  apt: name=supervisor state=present
+
+- name: Install Nginx
+  sudo: yes
+  apt: name=nginx-core state=present
+  notify:
+    - Start Nginx
+
+- name: Install uWSGI
+  sudo: yes
+  apt: name={{ item }} state=present
+  with_items:
+    - uwsgi
+    - uwsgi-plugin-python
+
+- name: Create resource account
+  sudo: yes
+  user: name=lcp createhome=no state=present
+
+- name: Create app directory
+  sudo: yes
+  file: path=/srv/lcp state=directory
+
+- template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
+  sudo: yes
+  notify:
+    - Restart Supervisor
+
+- template: src=lcp.conf.j2 dest=/etc/supervisor/conf.d/lcp.conf
+  sudo: yes
+  notify:
+    - Restart Supervisor
+
+- name: Configure Nginx
+  sudo: yes
+  file: dest=/etc/nginx/sites-enabled/default state=absent
+
+- template: src=lcp.com.j2 dest=/etc/nginx/sites-available/lcp.com
+  sudo: yes
+  notify:
+    - Restart Nginx
+
+- template: src=uwsgi_params.j2 dest=/etc/nginx/uwsgi_params
+  sudo: yes
+  notify:
+    - Restart Nginx
+
+- name: Create symlink to lcp.com
+  sudo: yes
+  file: src=/etc/nginx/sites-available/lcp.com
+        dest=/etc/nginx/sites-enabled/lcp.com
+        state=link
+  notify:
+    - Restart Nginx

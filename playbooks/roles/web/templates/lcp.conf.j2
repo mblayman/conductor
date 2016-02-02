@@ -1,0 +1,17 @@
+[program:lcp]
+command=/usr/bin/uwsgi
+  --plugin python
+  --socket /tmp/lcp-uwsgi.sock
+  --module wsgiref.simple_server:demo_app
+  --enable-threads
+  --single-interpreter
+  --master
+  --pythonpath {{ app_path }}
+  --processes 4
+directory={{ app_path }}
+user=www-data
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/lcp.log
+redirect_stderr=true
+stopsignal=QUIT
