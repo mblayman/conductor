@@ -14606,7 +14606,7 @@
     "name": "Johnson University Florida",
     "slug": "johnson-university-florida",
     "url": "http://www.johnsonu.edu/florida/",
-    "milestones_url": ""
+    "milestones_url": "http://www.johnsonu.edu/Florida/Future-Students/Admissions-Calendar.aspx"
   }
 },
 {
@@ -14616,17 +14616,7 @@
     "name": "Johnson & Wales University",
     "slug": "johnson-wales-university",
     "url": "http://www.jwu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1471,
-  "fields": {
-    "name": "Jones International University",
-    "slug": "jones-international-university",
-    "url": "http://www.jiu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://catalog.jwu.edu/admissions/applying/admissionsdecision/#undergraduatetext"
   }
 },
 {
@@ -14636,7 +14626,7 @@
     "name": "The Juilliard School",
     "slug": "the-juilliard-school",
     "url": "http://www.juilliard.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.juilliard.edu/apply-audition/frequently-asked-questions#A3"
   }
 },
 {
@@ -14646,17 +14636,17 @@
     "name": "Labour\u00e9 College",
     "slug": "laboure-college",
     "url": "http://www.laboure.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.laboure.edu/admissions/common-questions.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1474,
   "fields": {
-    "name": "Laguna College of Art & Design",
+    "name": "Laguna College of Art + Design",
     "slug": "laguna-college-of-art-design",
     "url": "http://www.lcad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lcad.edu/admissions/application-dates/"
   }
 },
 {
@@ -14666,7 +14656,7 @@
     "name": "Lake Erie College of Osteopathic Medicine",
     "slug": "lake-erie-college-of-osteopathic-medicine",
     "url": "http://lecom.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://lecom.edu/admissions/apply/do-applications-procedure/"
   }
 },
 {
@@ -14676,7 +14666,7 @@
     "name": "Lake Forest College",
     "slug": "lake-forest-college",
     "url": "http://www.lakeforest.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.lakeforest.edu/admissions/admitted/fall/dates.php"
   }
 },
 {
@@ -14686,7 +14676,7 @@
     "name": "Lake Forest Graduate School of Management",
     "slug": "lake-forest-graduate-school-of-management",
     "url": "http://www.lakeforestmba.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lakeforestmba.edu/admissions/"
   }
 },
 {
@@ -14696,7 +14686,7 @@
     "name": "Lake-Sumter State College",
     "slug": "lake-sumter-state-college",
     "url": "http://www.lssc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lssc.edu/admissions/Pages/Apply%20Online.aspx"
   }
 },
 {
@@ -14706,7 +14696,7 @@
     "name": "Lakeview College of Nursing",
     "slug": "lakeview-college-of-nursing",
     "url": "http://www.lakeviewcol.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lakeviewcol.edu/admissions"
   }
 },
 {
@@ -14716,7 +14706,7 @@
     "name": "Lancaster Theological Seminary",
     "slug": "lancaster-theological-seminary",
     "url": "http://www.lancasterseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://lancasterseminary.edu/admissions/apply"
   }
 },
 {
@@ -14726,7 +14716,7 @@
     "name": "Landmark College",
     "slug": "landmark-college",
     "url": "http://www.landmark.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.landmark.edu/admissions/apply-now"
   }
 },
 {
@@ -14736,7 +14726,7 @@
     "name": "Lane College",
     "slug": "lane-college",
     "url": "http://www.lanecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.lanecollege.edu/lanepage2.asp?id=040002000"
   }
 },
 {
@@ -14746,7 +14736,7 @@
     "name": "Langston University",
     "slug": "langston-university",
     "url": "http://www.langston.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.langston.edu/future-students/first-steps/admissions"
   }
 },
 {
@@ -14756,7 +14746,7 @@
     "name": "Lawrence University",
     "slug": "lawrence-university",
     "url": "http://www.lawrence.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lawrence.edu/admissions/apply"
   }
 },
 {
@@ -14766,7 +14756,7 @@
     "name": "LeMoyne-Owen College",
     "slug": "lemoyne-owen-college",
     "url": "http://www.loc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.loc.edu/enrollment-management/admission-recruitment.asp"
   }
 },
 {
@@ -14776,7 +14766,7 @@
     "name": "Lewis & Clark College",
     "slug": "lewis-clark-college",
     "url": "http://www.lclark.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://college.lclark.edu/offices/admissions/apply/"
   }
 },
 {
@@ -14786,7 +14776,7 @@
     "name": "Liberty University",
     "slug": "liberty-university",
     "url": "http://www.liberty.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.liberty.edu/undergrad/?PID=16409"
   }
 },
 {
@@ -14796,7 +14786,7 @@
     "name": "Life University",
     "slug": "life-university",
     "url": "http://www.life.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.life.edu/admissions-pages/admissions-information/terms-deadlines/"
   }
 },
 {
@@ -14806,7 +14796,7 @@
     "name": "LIM College",
     "slug": "lim-college",
     "url": "http://www.limcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.limcollege.edu/admissions/freshmen"
   }
 },
 {
@@ -14816,7 +14806,7 @@
     "name": "Lincoln College of New England",
     "slug": "lincoln-college-of-new-england",
     "url": "http://www.lincolncollegene.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lincolncollegene.edu/college-admissions/acceptance-process"
   }
 },
 {
@@ -14836,7 +14826,7 @@
     "name": "Lindsey Wilson College",
     "slug": "lindsey-wilson-college",
     "url": "http://www.lindsey.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lindsey.edu/admissions/apply-to-lwc.aspx"
   }
 },
 {
@@ -14846,7 +14836,7 @@
     "name": "Logan University",
     "slug": "logan-university",
     "url": "http://www.logan.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.logan.edu/admissions/applications"
   }
 },
 {
@@ -14856,57 +14846,47 @@
     "name": "Loma Linda University",
     "slug": "loma-linda-university",
     "url": "http://www.llu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1495,
-  "fields": {
-    "name": "Long Island University",
-    "slug": "long-island-university",
-    "url": "http://www.liu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.llu.edu/explore/apply.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1496,
   "fields": {
-    "name": "Long Island University-Arnold & Marie Schwartz College of Pharmacy & Health Sciences",
-    "slug": "long-island-university-arnold-marie-schwartz-college-of-pharmacy-health-sciences",
+    "name": "Long Island University, Pharmacy",
+    "slug": "long-island-university-pharmacy",
     "url": "http://www.liu.edu/pharmacy/",
-    "milestones_url": ""
+    "milestones_url": "http://liu.edu/Pharmacy/Admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1497,
   "fields": {
-    "name": "Long Island University-Brentwood Campus",
-    "slug": "long-island-university-brentwood-campus",
+    "name": "Long Island University, Brentwood",
+    "slug": "long-island-university-brentwood",
     "url": "http://www.liu.edu/brentwood/",
-    "milestones_url": ""
+    "milestones_url": "http://liu.edu/Brentwood/Admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1498,
   "fields": {
-    "name": "Long Island University-Hudson",
+    "name": "Long Island University, Hudson",
     "slug": "long-island-university-hudson",
     "url": "http://www.liu.edu/hudson/",
-    "milestones_url": ""
+    "milestones_url": "http://liu.edu/Hudson/Admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1499,
   "fields": {
-    "name": "Long Island University-Riverhead",
+    "name": "Long Island University, Riverhead",
     "slug": "long-island-university-riverhead",
     "url": "http://www.liu.edu/riverhead/",
-    "milestones_url": ""
+    "milestones_url": "http://liu.edu/Riverhead/Admissions"
   }
 },
 {
@@ -14916,57 +14896,37 @@
     "name": "Longy School of Music of Bard College",
     "slug": "longy-school-of-music-of-bard-college",
     "url": "http://longy.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://longy.edu/admission/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1501,
   "fields": {
-    "name": "Louisiana State University-Law Center",
+    "name": "Louisiana State University, Law Center",
     "slug": "louisiana-state-university-law-center",
     "url": "http://www.law.lsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.law.lsu.edu/prospective-students/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1502,
   "fields": {
-    "name": "Louisiana State University Health Sciences Center-New Orleans",
-    "slug": "louisiana-state-university-health-sciences-center-new-orleans",
+    "name": "Louisiana State University, Health New Orleans",
+    "slug": "louisiana-state-university-health-new-orleans",
     "url": "http://www.lsuhsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lsuhsc.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1503,
   "fields": {
-    "name": "Louisiana State University Health Sciences Center-Shreveport",
-    "slug": "louisiana-state-university-health-sciences-center-shreveport",
+    "name": "Louisiana State University, Health Shreveport",
+    "slug": "louisiana-state-university-health-shreveport",
     "url": "http://www.lsuhscshreveport.edu/Education/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1504,
-  "fields": {
-    "name": "Louisiana State University System",
-    "slug": "louisiana-state-university-system",
-    "url": "http://www.lsusystem.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1505,
-  "fields": {
-    "name": "Louisville Presbyterian Theological Seminary",
-    "slug": "louisville-presbyterian-theological-seminary",
-    "url": "http://www.lpts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lsuhscshreveport.edu/Education/admissions/index"
   }
 },
 {
@@ -14976,7 +14936,7 @@
     "name": "Lourdes University",
     "slug": "lourdes-university",
     "url": "http://www.lourdes.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lourdes.edu/admissions/undergraduate-admissions/apply-now/"
   }
 },
 {
@@ -14986,7 +14946,7 @@
     "name": "Luther Seminary",
     "slug": "luther-seminary",
     "url": "http://www.luthersem.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.luthersem.edu/admissions/"
   }
 },
 {
@@ -14996,7 +14956,7 @@
     "name": "Lutheran School of Theology at Chicago",
     "slug": "lutheran-school-of-theology-at-chicago",
     "url": "http://www.lstc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lstc.edu/admissions/apply/"
   }
 },
 {
@@ -15006,7 +14966,7 @@
     "name": "Lutheran Theological Seminary at Gettysburg",
     "slug": "lutheran-theological-seminary-at-gettysburg",
     "url": "http://www.ltsg.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ltsg.edu/admissions"
   }
 },
 {
@@ -15016,7 +14976,7 @@
     "name": "Lutheran Theological Seminary at Philadelphia",
     "slug": "lutheran-theological-seminary-at-philadelphia",
     "url": "http://ltsp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ltsp.edu/admissions/admissions-faq/"
   }
 },
 {
@@ -15026,7 +14986,7 @@
     "name": "Lynn University",
     "slug": "lynn-university",
     "url": "http://www.lynn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.lynn.edu/admissions/applying-to-lynn/application-deadlines"
   }
 },
 {
@@ -15036,7 +14996,7 @@
     "name": "Naropa University",
     "slug": "naropa-university",
     "url": "http://www.naropa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.naropa.edu/admissions/how-to-apply/undergraduate-applicants/index.php"
   }
 },
 {
@@ -15046,7 +15006,7 @@
     "name": "National American University",
     "slug": "national-american-university",
     "url": "http://www.national.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.national.edu/admissions-financial/future-students/admissions-faq/"
   }
 },
 {
@@ -15056,7 +15016,7 @@
     "name": "National College of Natural Medicine",
     "slug": "national-college-of-natural-medicine",
     "url": "http://www.ncnm.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://admissions.ncnm.edu/application-process/program-application-deadlines/"
   }
 },
 {
@@ -15066,7 +15026,7 @@
     "name": "National Defense University",
     "slug": "national-defense-university",
     "url": "http://www.ndu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ndu.edu/Students/IncomingStudents.aspx"
   }
 },
 {
@@ -15076,17 +15036,7 @@
     "name": "National Graduate School of Quality Management",
     "slug": "national-graduate-school-of-quality-management",
     "url": "http://ngs.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1517,
-  "fields": {
-    "name": "National Hispanic University",
-    "slug": "national-hispanic-university",
-    "url": "http://www.nhu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ngs.edu/admissions/program-start-dates/"
   }
 },
 {
@@ -15096,17 +15046,7 @@
     "name": "National Intelligence University",
     "slug": "national-intelligence-university",
     "url": "http://www.ni-u.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1519,
-  "fields": {
-    "name": "National Labor College",
-    "slug": "national-labor-college",
-    "url": "http://www.nlc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ni-u.edu/wp/admissions-deadlines/"
   }
 },
 {
@@ -15116,7 +15056,7 @@
     "name": "National-Louis University",
     "slug": "national-louis-university",
     "url": "http://www.nl.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nl.edu/admissions/undergraduateadmissions/howtoapplyforundergraduateadmission/"
   }
 },
 {
@@ -15126,7 +15066,7 @@
     "name": "National University",
     "slug": "national-university",
     "url": "http://www.nu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nu.edu/Admissions.html"
   }
 },
 {
@@ -15136,7 +15076,7 @@
     "name": "National University of Health Sciences",
     "slug": "national-university-of-health-sciences",
     "url": "http://www.nuhs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nuhs.edu/admissions/"
   }
 },
 {
@@ -15146,7 +15086,7 @@
     "name": "Navajo Technical University",
     "slug": "navajo-technical-university",
     "url": "http://www.navajotech.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.navajotech.edu/admissions/faq"
   }
 },
 {
@@ -15155,8 +15095,8 @@
   "fields": {
     "name": "Naval Postgraduate School",
     "slug": "naval-postgraduate-school",
-    "url": "http://www.nps.navy.mil/",
-    "milestones_url": ""
+    "url": "http://www.nps.edu/",
+    "milestones_url": "http://www.nps.edu/Academics/Admissions/ImportantDates/Index.html"
   }
 },
 {
