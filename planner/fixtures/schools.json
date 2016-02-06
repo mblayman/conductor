@@ -15106,7 +15106,7 @@
     "name": "Nazarene Bible College",
     "slug": "nazarene-bible-college",
     "url": "http://www.nbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nbc.edu/apply/"
   }
 },
 {
@@ -15116,7 +15116,7 @@
     "name": "Nazareth College",
     "slug": "nazareth-college",
     "url": "http://www.naz.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www2.naz.edu/admissions/first-time/how-apply"
   }
 },
 {
@@ -15126,7 +15126,7 @@
     "name": "Nebraska Christian College",
     "slug": "nebraska-christian-college",
     "url": "http://nechristian.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://nechristian.edu/apply-today/"
   }
 },
 {
@@ -15136,7 +15136,7 @@
     "name": "New England College",
     "slug": "new-england-college",
     "url": "http://www.nec.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nec.edu/admission/undergraduate-programs/apply/"
   }
 },
 {
@@ -15146,7 +15146,7 @@
     "name": "New England College of Business",
     "slug": "new-england-college-of-business",
     "url": "http://www.necb.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.necb.edu/admissions/about-admissions"
   }
 },
 {
@@ -15156,7 +15156,7 @@
     "name": "New England College of Optometry",
     "slug": "new-england-college-of-optometry",
     "url": "http://www.neco.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.neco.edu/admissions"
   }
 },
 {
@@ -15166,7 +15166,7 @@
     "name": "New England Conservatory of Music",
     "slug": "new-england-conservatory-of-music",
     "url": "http://necmusic.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://necmusic.edu/apply-nec/admission-requirements/important-dates"
   }
 },
 {
@@ -15176,7 +15176,7 @@
     "name": "New England Institute of Art",
     "slug": "new-england-institute-of-art",
     "url": "http://www.artinstitutes.edu/boston/",
-    "milestones_url": ""
+    "milestones_url": "http://www.artinstitutes.edu/boston/"
   }
 },
 {
@@ -15186,7 +15186,7 @@
     "name": "New England Institute of Technology",
     "slug": "new-england-institute-of-technology",
     "url": "http://www.neit.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.neit.edu/Admissions/Admissions-Policy"
   }
 },
 {
@@ -15196,7 +15196,7 @@
     "name": "New Hope Christian College",
     "slug": "new-hope-christian-college",
     "url": "http://www.newhope.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.newhope.edu/admissions/admission-standards"
   }
 },
 {
@@ -15206,7 +15206,7 @@
     "name": "New Mexico Highlands University",
     "slug": "new-mexico-highlands-university",
     "url": "http://www.nmhu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nmhu.edu/admissions/"
   }
 },
 {
@@ -15216,7 +15216,7 @@
     "name": "New Orleans Baptist Theological Seminary",
     "slug": "new-orleans-baptist-theological-seminary",
     "url": "http://www.nobts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nobts.edu/enlistment/default.html"
   }
 },
 {
@@ -15226,7 +15226,7 @@
     "name": "New York Chiropractic College",
     "slug": "new-york-chiropractic-college",
     "url": "http://www.nycc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nycc.edu/Admissions_howtoApply.htm"
   }
 },
 {
@@ -15236,7 +15236,7 @@
     "name": "New York Medical College",
     "slug": "new-york-medical-college",
     "url": "http://www.nymc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.nymc.edu/future-students/admission-offices/"
   }
 },
 {
@@ -15246,7 +15246,7 @@
     "name": "NewSchool of Architecture & Design",
     "slug": "newschool-of-architecture-design",
     "url": "http://newschoolarch.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://newschoolarch.edu/admissions/how-to-apply/application-deadlines/"
   }
 },
 {
@@ -15256,7 +15256,7 @@
     "name": "Northcentral University",
     "slug": "northcentral-university",
     "url": "http://www.ncu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ncu.edu/tuition-and-admissions/admissions-requirements"
   }
 },
 {
@@ -15266,7 +15266,7 @@
     "name": "Northeast Ohio Medical University",
     "slug": "northeast-ohio-medical-university",
     "url": "http://www.neomed.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.neomed.edu/admissions/medicine/bsmd/apply"
   }
 },
 {
@@ -15276,27 +15276,27 @@
     "name": "Northeastern Seminary at Roberts Wesleyan College",
     "slug": "northeastern-seminary-at-roberts-wesleyan-college",
     "url": "https://www.nes.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.nes.edu/prospective-seminary-students/seminary-admissions.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1543,
   "fields": {
-    "name": "Northeastern State University-Broken Arrow",
+    "name": "Northeastern State University, Broken Arrow",
     "slug": "northeastern-state-university-broken-arrow",
     "url": "http://www.nsuok.edu/BrokenArrow.aspx",
-    "milestones_url": ""
+    "milestones_url": "http://www.nsuok.edu/BrokenArrow.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1544,
   "fields": {
-    "name": "Northeastern State University-Muskogee",
+    "name": "Northeastern State University, Muskogee",
     "slug": "northeastern-state-university-muskogee",
     "url": "http://www.nsuok.edu/Muskogee.aspx",
-    "milestones_url": ""
+    "milestones_url": "https://www.nsuok.edu/Muskogee.aspx"
   }
 },
 {
@@ -15306,7 +15306,7 @@
     "name": "Northern Baptist Theological Seminary",
     "slug": "northern-baptist-theological-seminary",
     "url": "http://www.seminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.seminary.edu/apply/"
   }
 },
 {
@@ -15316,7 +15316,7 @@
     "name": "Northern Marianas College",
     "slug": "northern-marianas-college",
     "url": "http://www.marianas.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.marianas.edu/content.php?id=1&cat=175"
   }
 },
 {
@@ -15326,7 +15326,7 @@
     "name": "Northern New Mexico College",
     "slug": "northern-new-mexico-college",
     "url": "http://www.nnmc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://nnmc.edu/home/student-gateway/admissions/"
   }
 },
 {
@@ -15336,7 +15336,7 @@
     "name": "Northwest Florida State College",
     "slug": "northwest-florida-state-college",
     "url": "http://www.nwfsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nwfsc.edu/Students/Enrollment/Admissions/"
   }
 },
 {
@@ -15346,7 +15346,7 @@
     "name": "Northwest Indian College",
     "slug": "northwest-indian-college",
     "url": "http://www.nwic.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.nwic.edu/life-on-campus/admissions/"
   }
 },
 {
@@ -15356,7 +15356,7 @@
     "name": "Northwestern Health Sciences University",
     "slug": "northwestern-health-sciences-university",
     "url": "http://www.nwhealth.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://nwhealth.edu/admissions/when-to-apply/"
   }
 },
 {
@@ -15366,7 +15366,7 @@
     "name": "Notre Dame Seminary",
     "slug": "notre-dame-seminary",
     "url": "http://nds.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://nds.edu/registrar/"
   }
 },
 {
@@ -15376,7 +15376,7 @@
     "name": "Oblate School of Theology",
     "slug": "oblate-school-of-theology",
     "url": "http://www.ost.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ost.edu/OblateSite/OST/admissions.html"
   }
 },
 {
@@ -15386,117 +15386,117 @@
     "name": "Oglala Lakota College",
     "slug": "oglala-lakota-college",
     "url": "http://www.olc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.olc.edu/student_services/admissions.htm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1554,
   "fields": {
-    "name": "Ohio State University-Lima",
-    "slug": "ohio-state-university-lima",
+    "name": "The Ohio State University, Lima",
+    "slug": "the-ohio-state-university-lima",
     "url": "http://www.lima.osu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://lima.osu.edu/students/admissions/criteria.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1555,
   "fields": {
-    "name": "Ohio State University-Mansfield",
-    "slug": "ohio-state-university-mansfield",
+    "name": "The Ohio State University, Mansfield",
+    "slug": "the-ohio-state-university-mansfield",
     "url": "http://mansfield.osu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mansfield.osu.edu/future-students/admissions/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1556,
   "fields": {
-    "name": "Ohio State University-Marion",
-    "slug": "ohio-state-university-marion",
+    "name": "The Ohio State University, Marion",
+    "slug": "the-ohio-state-university-marion",
     "url": "http://osumarion.osu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://osumarion.osu.edu/future-students/admissions.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1557,
   "fields": {
-    "name": "Ohio State University-Newark",
-    "slug": "ohio-state-university-newark",
+    "name": "The Ohio State University, Newark",
+    "slug": "the-ohio-state-university-newark",
     "url": "http://newark.osu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://newark.osu.edu/future-students/apply/deadlines-for-students.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1558,
   "fields": {
-    "name": "Ohio University-Eastern Campus",
-    "slug": "ohio-university-eastern-campus",
+    "name": "Ohio University, Eastern",
+    "slug": "ohio-university-eastern",
     "url": "https://www.ohio.edu/eastern/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ohio.edu/eastern/futurestudents/Freshman-Applicants.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1559,
   "fields": {
-    "name": "Ohio University-Lancaster",
+    "name": "Ohio University, Lancaster",
     "slug": "ohio-university-lancaster",
     "url": "http://www.ohio.edu/lancaster/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ohio.edu/lancaster/futurestudents/admissions.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1560,
   "fields": {
-    "name": "Ohio University-Zanesville",
+    "name": "Ohio University, Zanesville",
     "slug": "ohio-university-zanesville",
     "url": "http://www.ohio.edu/zanesville/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ohio.edu/zanesville/futurestudents/freshmen.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1561,
   "fields": {
-    "name": "Oklahoma State University-Center for Health Sciences",
+    "name": "Oklahoma State University, Center for Health Sciences",
     "slug": "oklahoma-state-university-center-for-health-sciences",
     "url": "http://www.healthsciences.okstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.healthsciences.okstate.edu/com/admissions/apply.php"
   }
 },
 {
   "model": "planner.school",
   "pk": 1562,
   "fields": {
-    "name": "Oklahoma State University-Institute of Technology",
+    "name": "Oklahoma State University, Institute of Technology",
     "slug": "oklahoma-state-university-institute-of-technology",
     "url": "http://www.osuit.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://go.osuit.edu/student/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1563,
   "fields": {
-    "name": "Oklahoma State University-Oklahoma City",
+    "name": "Oklahoma State University, Oklahoma City",
     "slug": "oklahoma-state-university-oklahoma-city",
     "url": "http://www.osuokc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.osuokc.edu/apply/admission.aspx#first-time"
   }
 },
 {
   "model": "planner.school",
   "pk": 1564,
   "fields": {
-    "name": "Oklahoma State University-Tulsa",
+    "name": "Oklahoma State University, Tulsa",
     "slug": "oklahoma-state-university-tulsa",
     "url": "http://www.osu-tulsa.okstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.osu-tulsa.okstate.edu/academics/admission.php"
   }
 },
 {
@@ -15506,7 +15506,7 @@
     "name": "Olivet University",
     "slug": "olivet-university",
     "url": "http://www.olivetuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.olivetuniversity.edu/admissions/under-requirements.html"
   }
 },
 {
@@ -15516,17 +15516,17 @@
     "name": "Olympic College",
     "slug": "olympic-college",
     "url": "http://www.olympic.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.olympic.edu/current-students/getting-started/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1567,
   "fields": {
-    "name": "Oregon College of Art & Craft",
-    "slug": "oregon-college-of-art-craft",
+    "name": "Oregon College of Art and Craft",
+    "slug": "oregon-college-of-art-and-craft",
     "url": "http://ocac.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://ocac.edu/admissions"
   }
 },
 {
@@ -15536,7 +15536,7 @@
     "name": "Oregon Health & Science University",
     "slug": "oregon-health-science-university",
     "url": "http://www.ohsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ohsu.edu/xd/education/admissions/index.cfm"
   }
 },
 {
@@ -15546,7 +15546,7 @@
     "name": "Ottawa University",
     "slug": "ottawa-university",
     "url": "http://www.ottawa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ottawa.edu/admissions/residential-students/new-students"
   }
 },
 {
@@ -15556,7 +15556,7 @@
     "name": "Our Lady of Holy Cross College",
     "slug": "our-lady-of-holy-cross-college",
     "url": "http://www.olhcc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://olhcc.edu/admissions/freshman-admissions.html"
   }
 },
 {
@@ -15566,7 +15566,7 @@
     "name": "Ozark Christian College",
     "slug": "ozark-christian-college",
     "url": "http://occ.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://occ.edu/Admissions/default.aspx?id=381"
   }
 },
 {
@@ -15576,7 +15576,7 @@
     "name": "Ranken Technical College",
     "slug": "ranken-technical-college",
     "url": "http://ranken.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://ranken.edu/admissions/"
   }
 },
 {
@@ -15586,7 +15586,7 @@
     "name": "Rasmussen College",
     "slug": "rasmussen-college",
     "url": "http://www.rasmussen.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rasmussen.edu/admissions/"
   }
 },
 {
@@ -15596,7 +15596,7 @@
     "name": "Reconstructionist Rabbinical College",
     "slug": "reconstructionist-rabbinical-college",
     "url": "http://www.rrc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rrc.edu/admissions/apply/transfer-rrc"
   }
 },
 {
