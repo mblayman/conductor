@@ -15606,7 +15606,7 @@
     "name": "Reformed Theological Seminary",
     "slug": "reformed-theological-seminary",
     "url": "http://www.rts.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.rts.edu/onlineapplication/"
   }
 },
 {
@@ -15616,7 +15616,7 @@
     "name": "Research College of Nursing",
     "slug": "research-college-of-nursing",
     "url": "http://researchcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://researchcollege.edu/future-students/admission-process.dot"
   }
 },
 {
@@ -15626,7 +15626,7 @@
     "name": "Resurrection University",
     "slug": "resurrection-university",
     "url": "http://resu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://resu.edu/admissions/undergraduate-admissions/"
   }
 },
 {
@@ -15636,17 +15636,17 @@
     "name": "Richmont Graduate University",
     "slug": "richmont-graduate-university",
     "url": "http://richmont.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://richmont.edu/admissions/applications/application-for-degree-seeking-admission/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1579,
   "fields": {
-    "name": "Ringling College of Art & Design",
+    "name": "Ringling College of Art + Design",
     "slug": "ringling-college-of-art-design",
     "url": "http://www.ringling.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ringling.edu/Apply"
   }
 },
 {
@@ -15656,17 +15656,17 @@
     "name": "Robert Morris University Illinois",
     "slug": "robert-morris-university-illinois",
     "url": "http://www.robertmorris.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.robertmorris.edu/admission/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1581,
   "fields": {
-    "name": "Rocky Mountain College of Art & Design",
+    "name": "Rocky Mountain College of Art + Design",
     "slug": "rocky-mountain-college-of-art-design",
     "url": "http://www.rmcad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rmcad.edu/admissions"
   }
 },
 {
@@ -15676,7 +15676,7 @@
     "name": "Roger Williams University",
     "slug": "roger-williams-university",
     "url": "http://www.rwu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://rwu.edu/admission-financial-aid/undergraduate-admission/freshman"
   }
 },
 {
@@ -15686,7 +15686,7 @@
     "name": "Rosalind Franklin University of Medicine & Science",
     "slug": "rosalind-franklin-university-of-medicine-science",
     "url": "http://www.rosalindfranklin.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://rosalindfranklin.edu/admission-aid/"
   }
 },
 {
@@ -15696,7 +15696,7 @@
     "name": "Roseman University of Health Sciences",
     "slug": "roseman-university-of-health-sciences",
     "url": "http://www.roseman.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.roseman.edu/admissions-college-of-pharmacy/cop---application--process"
   }
 },
 {
@@ -15706,7 +15706,7 @@
     "name": "Rush University",
     "slug": "rush-university",
     "url": "http://www.rushu.rush.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rushu.rush.edu/servlet/Satellite?MetaAttrName=meta_services&ParentId=1208179158872&ParentType=RushUnivLevel1Page&c=content_block&cid=1320160417940&level1-p=1&pagename=Rush%2Fcontent_block%2"
   }
 },
 {
@@ -15716,7 +15716,7 @@
     "name": "Rust College",
     "slug": "rust-college",
     "url": "http://www.rustcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rustcollege.edu/administration/enrollment-services/enrollment-requirements.html"
   }
 },
 {
@@ -15726,17 +15726,7 @@
     "name": "Talladega College",
     "slug": "talladega-college",
     "url": "http://www.talladega.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1588,
-  "fields": {
-    "name": "TCM International Institute",
-    "slug": "tcm-international-institute",
-    "url": "http://www.tcmi.org/",
-    "milestones_url": ""
+    "milestones_url": "http://www.talladega.edu/students/admissions.asp"
   }
 },
 {
@@ -15746,37 +15736,37 @@
     "name": "Tennessee State University",
     "slug": "tennessee-state-university",
     "url": "http://www.tnstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://students.tnstate.edu/admissions/apply-admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1590,
   "fields": {
-    "name": "Texas A&M University-Central Texas",
+    "name": "Texas A&M University, Central Texas",
     "slug": "texas-am-university-central-texas",
     "url": "http://www.tamuct.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tamuct.edu/departments/admissions/admissions.php"
   }
 },
 {
   "model": "planner.school",
   "pk": 1591,
   "fields": {
-    "name": "Texas A&M University Health Science Center",
+    "name": "Texas A&M University, Health Science Center",
     "slug": "texas-am-university-health-science-center",
     "url": "http://www.tamhsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tamhsc.edu/prospective/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1592,
   "fields": {
-    "name": "Texas A&M University-San Antonio",
+    "name": "Texas A&M University, San Antonio",
     "slug": "texas-am-university-san-antonio",
     "url": "http://www.tamusa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tamusa.edu/admissions/freshmanadmissions%20/requirements.html"
   }
 },
 {
@@ -15786,7 +15776,7 @@
     "name": "Texas Chiropractic College",
     "slug": "texas-chiropractic-college",
     "url": "http://www.txchiro.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.txchiro.edu/future-students/admissions.html"
   }
 },
 {
@@ -15796,17 +15786,17 @@
     "name": "Texas College",
     "slug": "texas-college",
     "url": "http://www.texascollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.texascollege.edu/pages/admissions/admissions-application"
   }
 },
 {
   "model": "planner.school",
   "pk": 1595,
   "fields": {
-    "name": "Texas Tech University Health Sciences Center",
+    "name": "Texas Tech University, Health Sciences Center",
     "slug": "texas-tech-university-health-sciences-center",
     "url": "http://www.ttuhsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ttuhsc.edu/shp/admissions/application.aspx"
   }
 },
 {
@@ -15816,7 +15806,7 @@
     "name": "Thomas University",
     "slug": "thomas-university",
     "url": "http://www.thomasu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.thomasu.edu/freshman"
   }
 },
 {
@@ -15826,7 +15816,7 @@
     "name": "Thomas Edison State College",
     "slug": "thomas-edison-state-college",
     "url": "http://www.tesc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tesu.edu/admissions/Apply-Undergrad.cfm"
   }
 },
 {
@@ -15836,7 +15826,7 @@
     "name": "Thomas Jefferson University",
     "slug": "thomas-jefferson-university",
     "url": "http://www.jefferson.edu/university.html",
-    "milestones_url": ""
+    "milestones_url": "http://www.jefferson.edu/university/admissions-office/applying.html"
   }
 },
 {
@@ -15846,7 +15836,7 @@
     "name": "Thomas M. Cooley Law School",
     "slug": "thomas-m-cooley-law-school",
     "url": "http://www.cooley.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cooley.edu/prospective/admissions.html"
   }
 },
 {
@@ -15856,7 +15846,7 @@
     "name": "The Thomas More College of Liberal Arts",
     "slug": "the-thomas-more-college-of-liberal-arts",
     "url": "http://www.thomasmorecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.thomasmorecollege.edu/admissions/accelerated-admissions/"
   }
 },
 {
@@ -15866,7 +15856,7 @@
     "name": "Thunderbird School of Global Management",
     "slug": "thunderbird-school-of-global-management",
     "url": "http://www.thunderbird.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.thunderbird.edu/why-thunderbird/admissions"
   }
 },
 {
@@ -15876,37 +15866,37 @@
     "name": "Touro College",
     "slug": "touro-college",
     "url": "http://www.touro.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www1.touro.edu/shs/home/?disp=deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1603,
   "fields": {
-    "name": "Touro College Los Angeles",
+    "name": "Touro College, Los Angeles",
     "slug": "touro-college-los-angeles",
     "url": "http://www.touro.edu/losangeles/",
-    "milestones_url": ""
+    "milestones_url": "http://legacy.touro.edu/losangeles/admissions.asp"
   }
 },
 {
   "model": "planner.school",
   "pk": 1604,
   "fields": {
-    "name": "Touro University California",
+    "name": "Touro University, California",
     "slug": "touro-university-california",
     "url": "http://www.tu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.tu.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1605,
   "fields": {
-    "name": "Touro University Nevada",
+    "name": "Touro University, Nevada",
     "slug": "touro-university-nevada",
     "url": "http://tun.touro.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://tun.touro.edu/prospective-students/applying-for-admission/"
   }
 },
 {
@@ -15916,7 +15906,7 @@
     "name": "Touro University Worldwide",
     "slug": "touro-university-worldwide",
     "url": "http://www.tuw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tuw.edu/admissions/"
   }
 },
 {
@@ -15926,7 +15916,7 @@
     "name": "Toyota Technological Institute at Chicago",
     "slug": "toyota-technological-institute-at-chicago",
     "url": "http://www.ttic.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://web.ttic.edu/stuapp/apply"
   }
 },
 {
@@ -15936,7 +15926,7 @@
     "name": "Trident University International",
     "slug": "trident-university-international",
     "url": "https://www.trident.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.trident.edu/admissions-and-tuition/"
   }
 },
 {
@@ -15946,7 +15936,7 @@
     "name": "Trinity College of Nursing & Health Sciences",
     "slug": "trinity-college-of-nursing-health-sciences",
     "url": "http://www.trinitycollegeqc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.trinitycollegeqc.edu/prospective-students.aspx"
   }
 },
 {
@@ -15956,7 +15946,7 @@
     "name": "Trinity Lutheran Seminary",
     "slug": "trinity-lutheran-seminary",
     "url": "http://www.tlsohio.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tlsohio.edu/admissions-aid/admissions/apply-now"
   }
 },
 {
@@ -15966,7 +15956,7 @@
     "name": "Trinity Washington University",
     "slug": "trinity-washington-university",
     "url": "http://www.trinitydc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.trinitydc.edu/admissions/"
   }
 },
 {
@@ -15976,7 +15966,7 @@
     "name": "Trinity College of Florida",
     "slug": "trinity-college-of-florida",
     "url": "http://www.trinitycollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.trincoll.edu/Admissions/finaid/prospective/firstyear/Pages/Deadlines.aspx"
   }
 },
 {
@@ -15986,7 +15976,7 @@
     "name": "Turtle Mountain Community College",
     "slug": "turtle-mountain-community-college",
     "url": "http://www.tm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tm.edu/departments/admissions-3/admission_requirements/"
   }
 },
 {
@@ -15996,7 +15986,7 @@
     "name": "Unification Theological Seminary",
     "slug": "unification-theological-seminary",
     "url": "http://www.uts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uts.edu/application-procedures.html"
   }
 },
 {
@@ -16006,7 +15996,7 @@
     "name": "Uniformed Services University of the Health Sciences",
     "slug": "uniformed-services-university-of-the-health-sciences",
     "url": "https://www.usuhs.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.usuhs.edu/apply"
   }
 },
 {
@@ -16033,10 +16023,10 @@
   "model": "planner.school",
   "pk": 1618,
   "fields": {
-    "name": "Union Graduate College",
-    "slug": "union-graduate-college",
-    "url": "http://www.uniongraduatecollege.edu/",
-    "milestones_url": ""
+    "name": "Clarkson University, Capital Region Campus",
+    "slug": "clarkson-university-capital-region-campus",
+    "url": "http://graduate.clarkson.edu/",
+    "milestones_url": "http://graduate.clarkson.edu/admissions/"
   }
 },
 {
@@ -16046,7 +16036,7 @@
     "name": "Union Institute & University",
     "slug": "union-institute-university",
     "url": "http://myunion.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://myunion.edu/future-students/apply/"
   }
 },
 {
@@ -16056,7 +16046,7 @@
     "name": "Union Presbyterian Seminary",
     "slug": "union-presbyterian-seminary",
     "url": "http://www.upsem.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.upsem.edu/admissions/apply/"
   }
 },
 {
@@ -16066,7 +16056,7 @@
     "name": "Union Theological Seminary",
     "slug": "union-theological-seminary",
     "url": "https://utsnyc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://utsnyc.edu/admissions/how-to-apply/dates-and-deadlines/"
   }
 },
 {
@@ -16076,27 +16066,7 @@
     "name": "United States Air Force Academy",
     "slug": "united-states-air-force-academy",
     "url": "http://www.usafa.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1623,
-  "fields": {
-    "name": "United States Army Command & General Staff College",
-    "slug": "united-states-army-command-general-staff-college",
-    "url": "http://usacac.army.mil/organizations/cace/cgsc/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1624,
-  "fields": {
-    "name": "United States Army War College",
-    "slug": "united-states-army-war-college",
-    "url": "http://www.carlisle.army.mil/",
-    "milestones_url": ""
+    "milestones_url": "http://www.academyadmissions.com/"
   }
 },
 {
@@ -16106,7 +16076,7 @@
     "name": "United States Coast Guard Academy",
     "slug": "united-states-coast-guard-academy",
     "url": "http://www.uscga.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uscga.edu/admissions2.aspx?id=79"
   }
 },
 {
@@ -16116,7 +16086,7 @@
     "name": "United States Merchant Marine Academy",
     "slug": "united-states-merchant-marine-academy",
     "url": "http://www.usmma.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.usmma.edu/admissions/admissions-a-to-z"
   }
 },
 {
@@ -16126,7 +16096,7 @@
     "name": "United States Military Academy",
     "slug": "united-states-military-academy",
     "url": "http://www.usma.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.usma.edu/admissions/SitePages/Home.aspx"
   }
 },
 {
