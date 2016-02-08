@@ -3,8 +3,6 @@ from lcp.settings.base import *  # noqa
 DEBUG = True
 
 
-ROOT_URLCONF = 'lcp.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
