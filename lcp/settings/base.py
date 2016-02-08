@@ -51,3 +51,5 @@ TEMPLATES = [
         },
     },
 ]
+
+WSGI_APPLICATION = 'lcp.wsgi.application'

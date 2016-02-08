@@ -20,10 +20,6 @@ from lcp.settings.base import *  # noqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-WSGI_APPLICATION = 'lcp.wsgi.application'
-
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
