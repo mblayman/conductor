@@ -7,3 +7,5 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 # Other settings must explicitly opt-in for debug mode.
 DEBUG = False
+
+ALLOWED_HOSTS = []
