@@ -9,16 +9,14 @@ DATABASES = {
     }
 }
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:4200',
-)
-
-
-# Forcing migrations to run during testing is super annoying
-# when the migration hasn't been generated yet.
-# Skip migrations for tests.
 
 class DisableMigrations(object):
+    """Disable migrations for apps.
+
+    Forcing migrations to run during testing is super annoying
+    when the migration hasn't been generated yet.
+    Skip migrations for tests.
+    """
 
     def __contains__(self, item):
         return True
