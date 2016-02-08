@@ -15,9 +15,6 @@ from lcp.settings.base import *  # noqa
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y$l*8=9d0b^nbf4c#vs+z=d)vb(3rsgvcx!+2as@f5f2s*#x=q'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
