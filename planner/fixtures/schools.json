@@ -16106,7 +16106,7 @@
     "name": "United States Naval Academy",
     "slug": "united-states-naval-academy",
     "url": "http://www.usna.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.usna.edu/Admissions/"
   }
 },
 {
@@ -16116,7 +16116,7 @@
     "name": "United States Naval War College",
     "slug": "united-states-naval-war-college",
     "url": "http://www.usnwc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.usnwc.edu/"
   }
 },
 {
@@ -16126,7 +16126,7 @@
     "name": "United States Sports Academy",
     "slug": "united-states-sports-academy",
     "url": "https://ussa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ussa.edu/admissions/"
   }
 },
 {
@@ -16136,7 +16136,7 @@
     "name": "United States University",
     "slug": "united-states-university",
     "url": "http://www.usuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.usuniversity.edu/admissions/undergraduate-admissions/"
   }
 },
 {
@@ -16146,7 +16146,7 @@
     "name": "United Theological Seminary",
     "slug": "united-theological-seminary",
     "url": "http://united.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://united.edu/application-deadlines/"
   }
 },
 {
@@ -16156,7 +16156,7 @@
     "name": "United Theological Seminary of the Twin Cities",
     "slug": "united-theological-seminary-of-the-twin-cities",
     "url": "http://www.unitedseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.unitedseminary.edu/admissions/application-process/"
   }
 },
 {
@@ -16166,7 +16166,7 @@
     "name": "Unity College",
     "slug": "unity-college",
     "url": "http://www.unity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.unity.edu/admissions/admissions-faqs"
   }
 },
 {
@@ -16176,17 +16176,7 @@
     "name": "Universidad Adventista de las Antillas",
     "slug": "universidad-adventista-de-las-antillas",
     "url": "http://www.uaa.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1636,
-  "fields": {
-    "name": "Universidad Central de Bayam\u00f3n",
-    "slug": "universidad-central-de-bayamon",
-    "url": "http://www.ucb.edu.pr/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uaa.edu/esp/index.php/pasos-para-admision"
   }
 },
 {
@@ -16196,7 +16186,7 @@
     "name": "Universidad Central del Caribe",
     "slug": "universidad-central-del-caribe",
     "url": "http://www.uccaribe.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uccaribe.edu/admission/"
   }
 },
 {
@@ -16206,7 +16196,7 @@
     "name": "Universidad del Sagrado Coraz\u00f3n",
     "slug": "universidad-del-sagrado-corazon",
     "url": "http://www.sagrado.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sagrado.edu/admisiones/"
   }
 },
 {
@@ -16216,117 +16206,117 @@
     "name": "Universidad Interamericana de Puerto Rico",
     "slug": "universidad-interamericana-de-puerto-rico",
     "url": "http://www.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://inter.edu/i2/admisiones/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1640,
   "fields": {
-    "name": "Aguadilla Campus",
-    "slug": "aguadilla-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Aguadilla Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-aguadilla-campus",
     "url": "http://www.aguadilla.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.aguadilla.inter.edu/futuro_estudiante/index.php?id_content=111"
   }
 },
 {
   "model": "planner.school",
   "pk": 1641,
   "fields": {
-    "name": "Arecibo Campus",
-    "slug": "arecibo-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Arecibo Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-arecibo-campus",
     "url": "http://www.arecibo.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.arecibo.inter.edu/servicios/admisiones.htm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1642,
   "fields": {
-    "name": "Barranquitas Campus",
-    "slug": "barranquitas-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Barranquitas Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-barranquitas-campus",
     "url": "http://www.br.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.br.uipr.edu/inter/index.php/Admisiones.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1643,
   "fields": {
-    "name": "Bayam\u00f3n Campus",
-    "slug": "bayamon-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Bayam\u00f3n Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-bayamon-campus",
     "url": "http://bayamon.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://bayamonweb.azurewebsites.net/admision/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1644,
   "fields": {
-    "name": "Fajardo Campus",
-    "slug": "fajardo-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Fajardo Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-fajardo-campus",
     "url": "http://fajardo.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://fajardo.inter.edu/contenido/futuro-estudiante/admisiones-requisitos.htm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1645,
   "fields": {
-    "name": "Guayama Campus",
-    "slug": "guayama-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Guayama Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-guayama-campus",
     "url": "http://www.guayama.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://guayama.inter.edu/wordpress/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1646,
   "fields": {
-    "name": "Metropolitan Campus",
-    "slug": "metropolitan-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Metropolitan Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-metropolitan-campus",
     "url": "http://www.metro.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.metro.inter.edu/admisiones/index.asp"
   }
 },
 {
   "model": "planner.school",
   "pk": 1647,
   "fields": {
-    "name": "Ponce Campus",
-    "slug": "ponce-campus",
+    "name": "Universidad Interamericana de Puerto Rico, Ponce Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-ponce-campus",
     "url": "http://ponce.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ponce.inter.edu/html/GM/index.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1648,
   "fields": {
-    "name": "San Germ\u00e1n Campus",
-    "slug": "san-german-campus",
+    "name": "Universidad Interamericana de Puerto Rico, San Germ\u00e1n Campus",
+    "slug": "universidad-interamericana-de-puerto-rico-san-german-campus",
     "url": "http://www.sg.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sg.inter.edu/index.php?page=admisiones"
   }
 },
 {
   "model": "planner.school",
   "pk": 1649,
   "fields": {
-    "name": "School of Law",
-    "slug": "school-of-law",
+    "name": "Universidad Interamericana de Puerto Rico, School of Law",
+    "slug": "universidad-interamericana-de-puerto-rico-school-of-law",
     "url": "http://www.derecho.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.derecho.inter.edu/inter/futuros-estudiantes_admisiones"
   }
 },
 {
   "model": "planner.school",
   "pk": 1650,
   "fields": {
-    "name": "School of Optometry",
-    "slug": "school-of-optometry",
+    "name": "Universidad Interamericana de Puerto Rico, School of Optometry",
+    "slug": "universidad-interamericana-de-puerto-rico-school-of-optometry",
     "url": "http://www.optonet.inter.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.optonet.inter.edu/admission-process.html"
   }
 },
 {
@@ -16336,17 +16326,7 @@
     "name": "Universidad Politecnica de Puerto Rico",
     "slug": "universidad-politecnica-de-puerto-rico",
     "url": "http://www.pupr.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1652,
-  "fields": {
-    "name": "University System of Maryland",
-    "slug": "university-system-of-maryland",
-    "url": "http://www.usmd.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pupr.edu/admissions/"
   }
 },
 {
@@ -16356,7 +16336,7 @@
     "name": "Urbana University",
     "slug": "urbana-university",
     "url": "http://www.urbana.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.urbana.edu/admissions/admission-requirements/undergraduate-studies.html"
   }
 },
 {
@@ -16366,7 +16346,7 @@
     "name": "Utah Valley University",
     "slug": "utah-valley-university",
     "url": "http://www.uvu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uvu.edu/admissions/deadlines/"
   }
 },
 {
@@ -16376,47 +16356,37 @@
     "name": "University of Advancing Technology",
     "slug": "university-of-advancing-technology",
     "url": "http://www.uat.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1656,
-  "fields": {
-    "name": "University of Alaska System",
-    "slug": "university-of-alaska-system",
-    "url": "http://www.alaska.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uat.edu/admissions/default.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1657,
   "fields": {
-    "name": "Anchorage",
-    "slug": "anchorage",
+    "name": "University of Alaska, Anchorage",
+    "slug": "university-of-alaska-anchorage",
     "url": "http://www.uaa.alaska.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uaa.alaska.edu/futurestudents/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1658,
   "fields": {
-    "name": "Fairbanks",
-    "slug": "fairbanks",
+    "name": "University of Alaska, Fairbanks",
+    "slug": "university-of-alaska-fairbanks",
     "url": "http://www.uaf.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uaf.edu/admissions/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1659,
   "fields": {
-    "name": "Southeast",
-    "slug": "southeast",
+    "name": "University of Alaska, Southeast",
+    "slug": "university-of-alaska-southeast",
     "url": "http://www.uas.alaska.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uas.alaska.edu/apply/admission/index.html"
   }
 },
 {
@@ -16426,27 +16396,17 @@
     "name": "University of Arkansas for Medical Sciences",
     "slug": "university-of-arkansas-for-medical-sciences",
     "url": "http://www.uams.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uams.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1661,
   "fields": {
-    "name": "University of Arkansas-Monticello",
+    "name": "University of Arkansas, Monticello",
     "slug": "university-of-arkansas-monticello",
     "url": "http://www.uamont.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1662,
-  "fields": {
-    "name": "University of Arkansas System",
-    "slug": "university-of-arkansas-system",
-    "url": "http://www.uasys.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uamont.edu/pages/admissions/"
   }
 },
 {
@@ -16456,47 +16416,27 @@
     "name": "University of California Hastings College of the Law",
     "slug": "university-of-california-hastings-college-of-the-law",
     "url": "http://www.uchastings.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uchastings.edu/admissions/index.php"
   }
 },
 {
   "model": "planner.school",
   "pk": 1664,
   "fields": {
-    "name": "University of California-San Francisco",
+    "name": "University of California, San Francisco",
     "slug": "university-of-california-san-francisco",
     "url": "http://www.ucsf.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1665,
-  "fields": {
-    "name": "University of California System",
-    "slug": "university-of-california-system",
-    "url": "http://www.ucop.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ucsf.edu/about/ucsf-overview"
   }
 },
 {
   "model": "planner.school",
   "pk": 1666,
   "fields": {
-    "name": "University of Cincinnati-Blue Ash",
+    "name": "University of Cincinnati, Blue Ash",
     "slug": "university-of-cincinnati-blue-ash",
     "url": "http://www.ucblueash.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1667,
-  "fields": {
-    "name": "University of Colorado System",
-    "slug": "university-of-colorado-system",
-    "url": "http://www.cu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ucblueash.edu/admissions/steps/apply-now.html"
   }
 },
 {
@@ -16506,7 +16446,7 @@
     "name": "University of the District of Columbia",
     "slug": "university-of-the-district-of-columbia",
     "url": "http://www.udc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.udc.edu/admit/admission_deadlines"
   }
 },
 {
@@ -16516,7 +16456,7 @@
     "name": "University of Great Falls",
     "slug": "university-of-great-falls",
     "url": "http://www.ugf.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ugf.edu/ProspectiveStudents/Admissions/UndergraduateStudents/FreshmanApplicationandChecklist/tabid/628/Default.aspx"
   }
 },
 {
@@ -16526,47 +16466,27 @@
     "name": "University of Guam",
     "slug": "university-of-guam",
     "url": "http://www.uog.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1671,
-  "fields": {
-    "name": "University of Hawaii System",
-    "slug": "university-of-hawaii-system",
-    "url": "http://www.hawaii.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uog.edu/admissions/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1672,
   "fields": {
-    "name": "University of Houston-Clear Lake",
+    "name": "University of Houston, Clear Lake",
     "slug": "university-of-houston-clear-lake",
     "url": "http://www.uhcl.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://prtl.uhcl.edu/admissions/freshman/application-deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1673,
   "fields": {
-    "name": "University of Houston-Downtown",
+    "name": "University of Houston, Downtown",
     "slug": "university-of-houston-downtown",
     "url": "http://www.uhd.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1674,
-  "fields": {
-    "name": "University of Illinois System",
-    "slug": "university-of-illinois-system",
-    "url": "http://www.uillinois.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uhd.edu/admissions/Pages/admissions-index.aspx"
   }
 },
 {
@@ -16576,7 +16496,7 @@
     "name": "University of Kansas Medical Center",
     "slug": "university-of-kansas-medical-center",
     "url": "http://www.kumc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kumc.edu/student-services/office-of-admissions.html?students"
   }
 },
 {
