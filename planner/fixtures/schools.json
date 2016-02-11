@@ -16503,30 +16503,30 @@
   "model": "planner.school",
   "pk": 1676,
   "fields": {
-    "name": "University of Maine-Augusta",
+    "name": "University of Maine, Augusta",
     "slug": "university-of-maine-augusta",
     "url": "http://www.uma.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uma.edu/admission/readytoapply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1677,
   "fields": {
-    "name": "University of Maine-Farmington",
+    "name": "University of Maine, Farmington",
     "slug": "university-of-maine-farmington",
     "url": "http://www.umf.maine.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.umf.maine.edu/admission/first-year-students-freshmen/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1678,
   "fields": {
-    "name": "University of Maine-Presque Isle",
+    "name": "University of Maine, Presque Isle",
     "slug": "university-of-maine-presque-isle",
     "url": "http://www.umpi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.umpi.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -16536,67 +16536,47 @@
     "name": "University of Maine School of Law",
     "slug": "university-of-maine-school-of-law",
     "url": "http://mainelaw.maine.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1680,
-  "fields": {
-    "name": "University of Maine System",
-    "slug": "university-of-maine-system",
-    "url": "http://www.maine.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mainelaw.maine.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1681,
   "fields": {
-    "name": "University of Maryland-Baltimore",
+    "name": "University of Maryland, Baltimore",
     "slug": "university-of-maryland-baltimore",
     "url": "http://www.umaryland.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.umaryland.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1682,
   "fields": {
-    "name": "University of Maryland-University College",
+    "name": "University of Maryland, University College",
     "slug": "university-of-maryland-university-college",
     "url": "http://www.umuc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.umuc.edu/students/admissions/startdates.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1683,
   "fields": {
-    "name": "University of Massachusetts Medical School at Worcester",
-    "slug": "university-of-massachusetts-medical-school-at-worcester",
+    "name": "University of Massachusetts Medical School",
+    "slug": "university-of-massachusetts-medical-school",
     "url": "http://www.umassmed.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1684,
-  "fields": {
-    "name": "University of Massachusetts System",
-    "slug": "university-of-massachusetts-system",
-    "url": "http://www.massachusetts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.umassmed.edu/som/admissions/application-process/application-timeline/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1685,
   "fields": {
-    "name": "University of Medicine & Dentistry of New Jersey",
-    "slug": "university-of-medicine-dentistry-of-new-jersey",
-    "url": "http://www.umdnj.edu/",
-    "milestones_url": ""
+    "name": "Rutgers, New Jersey Medical School",
+    "slug": "rutgers-new-jersey-medical-school",
+    "url": "http://njms.rutgers.edu/",
+    "milestones_url": "http://njms.rutgers.edu/admissions/prospective/important_dates.cfm"
   }
 },
 {
@@ -16606,27 +16586,17 @@
     "name": "University of Mississippi Medical Center",
     "slug": "university-of-mississippi-medical-center",
     "url": "https://www.umc.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1687,
-  "fields": {
-    "name": "University of Missouri System",
-    "slug": "university-of-missouri-system",
-    "url": "http://www.umsystem.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.umc.edu/Education/Schools/Medicine/SOM_Admissions/Application_Timeline_and_Deadlines.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1688,
   "fields": {
-    "name": "University of Montana-Western",
+    "name": "University of Montana, Western",
     "slug": "university-of-montana-western",
     "url": "http://www.umwestern.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.umwestern.edu/how-to-apply.html"
   }
 },
 {
