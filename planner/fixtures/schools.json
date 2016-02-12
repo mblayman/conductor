@@ -16606,17 +16606,7 @@
     "name": "University of Nebraska Medical Center",
     "slug": "university-of-nebraska-medical-center",
     "url": "http://www.unmc.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1690,
-  "fields": {
-    "name": "University of Nebraska System",
-    "slug": "university-of-nebraska-system",
-    "url": "http://www.nebraska.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.unmc.edu/studentservices/admissions/index.html"
   }
 },
 {
@@ -16626,27 +16616,27 @@
     "name": "University of New Hampshire School of Law",
     "slug": "university-of-new-hampshire-school-of-law",
     "url": "http://law.unh.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://law.unh.edu/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1692,
   "fields": {
-    "name": "University of North Texas-Dallas",
+    "name": "University of North Texas, Dallas",
     "slug": "university-of-north-texas-dallas",
     "url": "http://www.untdallas.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.untdallas.edu/graduate/apply/deads"
   }
 },
 {
   "model": "planner.school",
   "pk": 1693,
   "fields": {
-    "name": "University of North Texas Health Science Center",
+    "name": "University of North Texas, Health Science Center",
     "slug": "university-of-north-texas-health-science-center",
     "url": "http://www.unthsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.unthsc.edu/students/future-students/admissions/"
   }
 },
 {
@@ -16656,37 +16646,37 @@
     "name": "University of Northwestern Ohio",
     "slug": "university-of-northwestern-ohio",
     "url": "http://www.unoh.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.unoh.edu/future-students/how-to-apply.shtml"
   }
 },
 {
   "model": "planner.school",
   "pk": 1695,
   "fields": {
-    "name": "University of Northwestern-Saint Paul",
-    "slug": "university-of-northwestern-saint-paul",
+    "name": "University of Northwestern, St. Paul",
+    "slug": "university-of-northwestern-st-paul",
     "url": "http://www.unwsp.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.unwsp.edu/web/undergraduate/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1696,
   "fields": {
-    "name": "University of Oklahoma Health Sciences Center",
+    "name": "University of Oklahoma, Health Sciences Center",
     "slug": "university-of-oklahoma-health-sciences-center",
     "url": "http://www.ouhsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.ouhsc.edu/ProspectiveStudents/HowtoApply.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 1697,
   "fields": {
-    "name": "University of Oklahoma-Tulsa",
+    "name": "University of Oklahoma, Tulsa",
     "slug": "university-of-oklahoma-tulsa",
     "url": "http://www.ou.edu/tulsa/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ou.edu/tulsa/apply/"
   }
 },
 {
@@ -16696,7 +16686,7 @@
     "name": "Valencia College",
     "slug": "valencia-college",
     "url": "http://valenciacollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://valenciacollege.edu/admissions-records/admission-details/"
   }
 },
 {
@@ -16706,7 +16696,7 @@
     "name": "Vermont College of Fine Arts",
     "slug": "vermont-college-of-fine-arts",
     "url": "http://vcfa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://vcfa.edu/admissions"
   }
 },
 {
@@ -16716,7 +16706,7 @@
     "name": "Vermont Law School",
     "slug": "vermont-law-school",
     "url": "http://www.vermontlaw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.vermontlaw.edu/admissions/deadlines-and-calendar"
   }
 },
 {
@@ -16726,7 +16716,7 @@
     "name": "Villa Maria College",
     "slug": "villa-maria-college",
     "url": "http://www.villa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.villa.edu/admissions/"
   }
 },
 {
@@ -16736,7 +16726,7 @@
     "name": "Vincennes University",
     "slug": "vincennes-university",
     "url": "http://www.vinu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.vinu.edu/vincennes-campus"
   }
 },
 {
@@ -16746,7 +16736,7 @@
     "name": "Voorhees College",
     "slug": "voorhees-college",
     "url": "https://www.voorhees.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.voorhees.edu/admissions/admissions/admission-information/for-prospective-freshmen"
   }
 },
 {
@@ -16756,7 +16746,7 @@
     "name": "Wade College",
     "slug": "wade-college",
     "url": "http://www.wadecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wadecollege.edu/admissions"
   }
 },
 {
@@ -16766,7 +16756,7 @@
     "name": "Wake Forest University",
     "slug": "wake-forest-university",
     "url": "http://www.wfu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.wfu.edu/apply/process/"
   }
 },
 {
@@ -16776,7 +16766,7 @@
     "name": "Walden University",
     "slug": "walden-university",
     "url": "http://www.waldenu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.waldenu.edu/admissions/checklist"
   }
 },
 {
@@ -16786,7 +16776,7 @@
     "name": "Waldorf College",
     "slug": "waldorf-college",
     "url": "http://www.waldorf.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.waldorf.edu/residential/future-students/admissions/checklist"
   }
 },
 {
@@ -16796,7 +16786,7 @@
     "name": "Walsh College",
     "slug": "walsh-college",
     "url": "http://www.walshcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.walshcollege.edu/Filingdeadlines"
   }
 },
 {
@@ -16806,7 +16796,7 @@
     "name": "Wartburg Theological Seminary",
     "slug": "wartburg-theological-seminary",
     "url": "http://www.wartburgseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wartburgseminary.edu/admissions/enroll/"
   }
 },
 {
