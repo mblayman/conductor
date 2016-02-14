@@ -67,6 +67,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "ansible" do |ansible|
+    # ansible.verbose = "vvvv"
     ansible.groups = {
       "webservers" => ["web01"],
     }
