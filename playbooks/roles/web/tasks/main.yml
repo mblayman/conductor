@@ -16,13 +16,21 @@
     - uwsgi
     - uwsgi-plugin-python
 
+- name: Install Git
+  sudo: yes
+  apt: name=git state=present
+
 - name: Create resource account
   sudo: yes
   user: name=lcp createhome=no state=present
 
 - name: Create app directory
   sudo: yes
-  file: path=/srv/lcp state=directory
+  file: path={{ app_path }} state=directory
+
+- name: Fetch from GitHub
+  sudo: yes
+  git: repo=git@github.com:mblayman/lcp.git dest={{ app_path }} accept_hostkey=yes
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   sudo: yes
