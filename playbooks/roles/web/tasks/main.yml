@@ -24,6 +24,14 @@
   sudo: yes
   user: name=lcp createhome=no state=present
 
+- name: Create root .ssh directory
+  sudo: yes
+  file: path=/root/.ssh owner=root group=root mode=0700 state=directory
+
+- name: Add ssh private key
+  sudo: yes
+  copy: content="{{ ssh_private_key }}" dest=/root/.ssh/id_rsa mode="u=rw,g=,o="
+
 - name: Create app directory
   sudo: yes
   file: path={{ app_path }} state=directory

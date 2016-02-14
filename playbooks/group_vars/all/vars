@@ -1,0 +1,2 @@
+app_path: /srv/lcp
+ssh_private_key: "{{ vault_ssh_private_key }}"
