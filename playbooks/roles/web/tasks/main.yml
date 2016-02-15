@@ -1,71 +1,71 @@
 ---
 - name: Install Supervisor
-  sudo: yes
+  become: yes
   apt: name=supervisor state=present
 
 - name: Install Nginx
-  sudo: yes
+  become: yes
   apt: name=nginx-core state=present
   notify:
     - Start Nginx
 
 - name: Install uWSGI
-  sudo: yes
+  become: yes
   apt: name={{ item }} state=present
   with_items:
     - uwsgi
     - uwsgi-plugin-python
 
 - name: Install Git
-  sudo: yes
+  become: yes
   apt: name=git state=present
 
 - name: Create resource account
-  sudo: yes
+  become: yes
   user: name=lcp createhome=no state=present
 
 - name: Create root .ssh directory
-  sudo: yes
+  become: yes
   file: path=/root/.ssh owner=root group=root mode=0700 state=directory
 
 - name: Add ssh private key
-  sudo: yes
+  become: yes
   copy: content="{{ ssh_private_key }}" dest=/root/.ssh/id_rsa mode="u=rw,g=,o="
 
 - name: Create app directory
-  sudo: yes
+  become: yes
   file: path={{ app_path }} state=directory
 
 - name: Fetch from GitHub
-  sudo: yes
+  become: yes
   git: repo=git@github.com:mblayman/lcp.git dest={{ app_path }} accept_hostkey=yes
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
-  sudo: yes
+  become: yes
   notify:
     - Restart Supervisor
 
 - template: src=lcp.conf.j2 dest=/etc/supervisor/conf.d/lcp.conf
-  sudo: yes
+  become: yes
   notify:
     - Restart Supervisor
 
 - name: Configure Nginx
-  sudo: yes
+  become: yes
   file: dest=/etc/nginx/sites-enabled/default state=absent
 
 - template: src=lcp.com.j2 dest=/etc/nginx/sites-available/lcp.com
-  sudo: yes
+  become: yes
   notify:
     - Restart Nginx
 
 - template: src=uwsgi_params.j2 dest=/etc/nginx/uwsgi_params
-  sudo: yes
+  become: yes
   notify:
     - Restart Nginx
 
 - name: Create symlink to lcp.com
-  sudo: yes
+  become: yes
   file: src=/etc/nginx/sites-available/lcp.com
         dest=/etc/nginx/sites-enabled/lcp.com
         state=link

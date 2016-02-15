@@ -4,10 +4,10 @@
 
 # Supervisor does not restart properly.
 - name: Restart Supervisor
-  sudo: yes
+  become: yes
   #service: name=supervisor state=restarted
   shell: sudo service supervisor stop && sleep 5 && sudo service supervisor start
 
 - name: Restart Nginx
-  sudo: yes
+  become: yes
   service: name=nginx state=restarted
