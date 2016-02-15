@@ -20,6 +20,22 @@
   become: yes
   apt: name=git state=present
 
+- name: Install lxml compilation dependencies
+  become: yes
+  apt: name={{ item }} state=present
+  with_items:
+    - libxml2-dev
+    - libxslt1-dev
+    - libz-dev
+    - python-dev
+
+- name: Install Python package tools
+  become: yes
+  apt: name={{ item }} state=present
+  with_items:
+    - python-pip
+    - python-virtualenv
+
 - name: Create resource account
   become: yes
   user: name=lcp createhome=no state=present
@@ -39,6 +55,12 @@
 - name: Fetch from GitHub
   become: yes
   git: repo=git@github.com:mblayman/lcp.git dest={{ app_path }} accept_hostkey=yes
+
+- name: Install Python dependencies
+  become: yes
+  pip: requirements={{ app_path }}/requirements.txt virtualenv={{ venv_path }}
+  notify:
+    - Restart application
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
