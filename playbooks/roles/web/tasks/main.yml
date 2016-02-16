@@ -93,3 +93,8 @@
         state=link
   notify:
     - Restart Nginx
+
+- name: Migrate the database
+  become: yes
+  django_manage: command=migrate app_path={{ app_path }} virtualenv={{ venv_path }}
+  environment: "{{ django_env }}"
