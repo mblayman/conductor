@@ -2,3 +2,6 @@
 app_path: /srv/lcp
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
+django_env:
+  DJANGO_SETTINGS_MODULE: lcp.settings.development
+  SECRET_KEY: doesnotmatteryet
