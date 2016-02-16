@@ -1,13 +1,14 @@
 [program:lcp]
 command=/usr/bin/uwsgi
-  --plugin python
-  --socket /tmp/lcp-uwsgi.sock
-  --module wsgiref.simple_server:demo_app
-  --enable-threads
-  --single-interpreter
-  --master
-  --pythonpath {{ app_path }}
-  --processes 4
+    --plugin python
+    --socket /tmp/lcp-uwsgi.sock
+    --module lcp.wsgi:application
+    --enable-threads
+    --single-interpreter
+    --master
+    --pythonpath {{ app_path }}
+    --processes 4
+    --virtualenv {{ venv_path }}
 directory={{ app_path }}
 user=www-data
 autostart=true
@@ -15,3 +16,6 @@ autorestart=true
 stdout_logfile=/var/log/lcp.log
 redirect_stderr=true
 stopsignal=QUIT
+environment=
+    DJANGO_SETTINGS_MODULE = lcp.settings.development,
+    SECRET_KEY = doesnotmatteryet,
