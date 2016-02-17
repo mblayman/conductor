@@ -55,6 +55,8 @@
 - name: Fetch from GitHub
   become: yes
   git: repo=git@github.com:mblayman/lcp.git dest={{ app_path }} accept_hostkey=yes
+  notify:
+    - Restart application
 
 - name: Install Python dependencies
   become: yes
