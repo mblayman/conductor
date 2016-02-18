@@ -16806,47 +16806,37 @@
     "name": "Washington & Jefferson College",
     "slug": "washington-jefferson-college",
     "url": "http://www.washjeff.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.washjeff.edu/admission-deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1711,
   "fields": {
-    "name": "Washington State University-Spokane",
+    "name": "Washington State University, Spokane",
     "slug": "washington-state-university-spokane",
     "url": "https://spokane.wsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://spokane.wsu.edu/studentaffairs/admissions/applications/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1712,
   "fields": {
-    "name": "Washington State University-Tri-Cities",
+    "name": "Washington State University, Tri-Cities",
     "slug": "washington-state-university-tri-cities",
     "url": "http://www.tricity.wsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://tricities.wsu.edu/admission/deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1713,
   "fields": {
-    "name": "Washington State University-Vancouver",
+    "name": "Washington State University, Vancouver",
     "slug": "washington-state-university-vancouver",
     "url": "http://www.vancouver.wsu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1714,
-  "fields": {
-    "name": "Washington Theological Union",
-    "slug": "washington-theological-union",
-    "url": "http://www.wtu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://studentaffairs.vancouver.wsu.edu/admissions/dates-deadlines"
   }
 },
 {
@@ -16856,7 +16846,7 @@
     "name": "Wayne State College",
     "slug": "wayne-state-college",
     "url": "http://www.wsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.wsc.edu/info/20000/admissions/138/freshmen/3"
   }
 },
 {
@@ -16866,7 +16856,7 @@
     "name": "Webb Institute",
     "slug": "webb-institute",
     "url": "http://www.webb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.webb.edu/admissions/apply-to-webb-institute/"
   }
 },
 {
@@ -16876,7 +16866,7 @@
     "name": "Weber State University",
     "slug": "weber-state-university",
     "url": "http://www.weber.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.weber.edu/SIS/deadlines.html"
   }
 },
 {
@@ -16886,7 +16876,7 @@
     "name": "Welch College",
     "slug": "welch-college",
     "url": "http://www.welch.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.welch.edu/apply-freshmen"
   }
 },
 {
@@ -16896,7 +16886,7 @@
     "name": "Wesley Theological Seminary",
     "slug": "wesley-theological-seminary",
     "url": "http://www.wesleyseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.wesleyseminary.edu/apply/deadlines/"
   }
 },
 {
@@ -16906,7 +16896,7 @@
     "name": "West Coast University",
     "slug": "west-coast-university",
     "url": "http://westcoastuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://westcoastuniversity.edu/admissions/prospective-students.html"
   }
 },
 {
