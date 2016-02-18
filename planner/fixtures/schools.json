@@ -16903,10 +16903,10 @@
   "model": "planner.school",
   "pk": 1721,
   "fields": {
-    "name": "West Virginia University at Parkersburg",
-    "slug": "west-virginia-university-at-parkersburg",
+    "name": "West Virginia University, Parkersburg",
+    "slug": "west-virginia-university-parkersburg",
     "url": "http://www.wvup.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wvup.edu/future-students/admission/start-here-steps-for-admission/"
   }
 },
 {
@@ -16916,57 +16916,57 @@
     "name": "Western Governors University",
     "slug": "western-governors-university",
     "url": "http://www.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wgu.edu/admissions/enrollment_checklist"
   }
 },
 {
   "model": "planner.school",
   "pk": 1723,
   "fields": {
-    "name": "Western Governors University-Indiana",
+    "name": "Western Governors University, Indiana",
     "slug": "western-governors-university-indiana",
     "url": "http://indiana.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://indiana.wgu.edu/admissions/requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 1724,
   "fields": {
-    "name": "Western Governors University-Missouri",
+    "name": "Western Governors University, Missouri",
     "slug": "western-governors-university-missouri",
     "url": "http://missouri.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://missouri.wgu.edu/admissions/requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 1725,
   "fields": {
-    "name": "Western Governors University-Tennessee",
+    "name": "Western Governors University, Tennessee",
     "slug": "western-governors-university-tennessee",
     "url": "http://tennessee.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://tennessee.wgu.edu/admissions/requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 1726,
   "fields": {
-    "name": "Western Governors University-Texas",
+    "name": "Western Governors University, Texas",
     "slug": "western-governors-university-texas",
     "url": "http://texas.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://texas.wgu.edu/admissions/requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 1727,
   "fields": {
-    "name": "Western Governors University-Washington",
+    "name": "Western Governors University, Washington",
     "slug": "western-governors-university-washington",
     "url": "http://washington.wgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://washington.wgu.edu/admissions/requirements"
   }
 },
 {
@@ -16976,7 +16976,7 @@
     "name": "Western International University",
     "slug": "western-international-university",
     "url": "http://west.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://west.edu/get-started.html"
   }
 },
 {
@@ -16986,7 +16986,7 @@
     "name": "Western Nevada College",
     "slug": "western-nevada-college",
     "url": "http://www.wnc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wnc.edu/new_student/step1.php"
   }
 },
 {
@@ -16996,7 +16996,7 @@
     "name": "Western New Mexico University",
     "slug": "western-new-mexico-university",
     "url": "http://wnmu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.wnmu.edu/undergrad/"
   }
 },
 {
