@@ -17006,17 +17006,17 @@
     "name": "Western Seminary",
     "slug": "western-seminary",
     "url": "http://www.westernseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.westernseminary.edu/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1732,
   "fields": {
-    "name": "Western State University College of Law",
-    "slug": "western-state-university-college-of-law",
+    "name": "Western State College of Law",
+    "slug": "western-state-college-of-law",
     "url": "http://www.wsulaw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wsulaw.edu/prospective-students/first-time-applicant.aspx"
   }
 },
 {
@@ -17026,7 +17026,7 @@
     "name": "Western University of Health Sciences",
     "slug": "western-university-of-health-sciences",
     "url": "http://www.westernu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://prospective.westernu.edu/"
   }
 },
 {
@@ -17056,7 +17056,7 @@
     "name": "Westminster Theological Seminary",
     "slug": "westminster-theological-seminary",
     "url": "http://www.wts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wts.edu/becoming/apply_now.html"
   }
 },
 {
@@ -17066,7 +17066,7 @@
     "name": "Westminster Seminary California",
     "slug": "westminster-seminary-california",
     "url": "http://wscal.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.wscal.edu/admissions/apply"
   }
 },
 {
@@ -17086,7 +17086,7 @@
     "name": "Whitworth University",
     "slug": "whitworth-university",
     "url": "http://www.whitworth.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.whitworth.edu/cms/administration/admissions/prospective-freshmen/key-dates-and-deadlines/"
   }
 },
 {
@@ -17096,7 +17096,7 @@
     "name": "Wilberforce University",
     "slug": "wilberforce-university",
     "url": "http://www.wilberforce.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.wilberforce.edu/admissions/undergraduate-admissions/"
   }
 },
 {
