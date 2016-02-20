@@ -1,0 +1,8 @@
+---
+- name: Install PostgreSQL
+  become: yes
+  apt: name={{ item }} state=present
+  with_items:
+    - libpq-dev
+    - postgresql
+    - python-psycopg2
