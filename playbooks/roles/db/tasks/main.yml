@@ -6,3 +6,18 @@
     - libpq-dev
     - postgresql
     - python-psycopg2
+
+- name: Create the database
+  become: yes
+  become_user: postgres
+  postgresql_db: name=lcp encoding='UTF8' state=present
+
+- name: Create the database user
+  become: yes
+  become_user: postgres
+  postgresql_user: >
+    db=lcp
+    name=lcpuser
+    password=doesnotmatteryet
+    role_attr_flags=NOSUPERUSER,NOCREATEDB
+    state=present
