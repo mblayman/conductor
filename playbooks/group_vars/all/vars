@@ -5,3 +5,7 @@ ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   DJANGO_SETTINGS_MODULE: lcp.settings.staging
   SECRET_KEY: "{{ vault_secret_key }}"
+postgres:
+  db: lcp
+  user: lcp
+  password: "{{ vault_postgres_password }}"

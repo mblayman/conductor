@@ -10,14 +10,14 @@
 - name: Create the database
   become: yes
   become_user: postgres
-  postgresql_db: name=lcp encoding='UTF8' state=present
+  postgresql_db: name={{ postgres.db }} encoding='UTF8' state=present
 
 - name: Create the database user
   become: yes
   become_user: postgres
   postgresql_user: >
-    db=lcp
-    name=lcpuser
-    password=doesnotmatteryet
+    db={{ postgres.db }}
+    name={{ postgres.user }}
+    password={{ postgres.password }}
     role_attr_flags=NOSUPERUSER,NOCREATEDB
     state=present
