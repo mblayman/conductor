@@ -8,10 +8,10 @@
   #service: name=supervisor state=restarted
   shell: sudo service supervisor stop && sleep 5 && sudo service supervisor start
 
-- name: Restart Nginx
-  become: yes
-  service: name=nginx state=restarted
-
 - name: Restart application
   become: yes
   supervisorctl: name=lcp state=restarted config=/etc/supervisor/supervisord.conf
+
+- name: Restart Nginx
+  become: yes
+  service: name=nginx state=restarted

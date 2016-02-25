@@ -29,6 +29,10 @@
     - libz-dev
     - python-dev
 
+- name: Install Psycopg2
+  become: yes
+  apt: name=python-psycopg2 state=present
+
 - name: Install Python package tools
   become: yes
   apt: name={{ item }} state=present
@@ -60,7 +64,10 @@
 
 - name: Install Python dependencies
   become: yes
-  pip: requirements={{ app_path }}/requirements.txt virtualenv={{ venv_path }}
+  pip: >
+    requirements={{ app_path }}/requirements.txt
+    virtualenv={{ venv_path }}
+    virtualenv_site_packages=yes
   notify:
     - Restart application
 
