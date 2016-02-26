@@ -103,6 +103,21 @@
   notify:
     - Restart Nginx
 
+- name: Create /var/www
+  become: yes
+  file: state=directory path=/var/www owner=root group=www-data mode=0750
+
+- name: Create STATIC_ROOT
+  become: yes
+  file: state=directory path={{ django_env.STATIC_ROOT }}
+        owner=www-data group=www-data mode=0750
+
+- name: Collect static files
+  become: yes
+  become_user: www-data
+  django_manage: command=collectstatic app_path={{ app_path }} virtualenv={{ venv_path }}
+  environment: "{{ django_env }}"
+
 - name: Migrate the database
   become: yes
   django_manage: command=migrate app_path={{ app_path }} virtualenv={{ venv_path }}
