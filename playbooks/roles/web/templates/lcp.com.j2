@@ -2,6 +2,10 @@ server {
     listen          80;
     server_name     laymancollegeplanner.com;
 
+    location {{ django_env.STATIC_URL }} {
+        alias {{ django_env.STATIC_ROOT }};
+    }
+
     location / {
         uwsgi_pass      unix:///tmp/lcp-uwsgi.sock;
         include         uwsgi_params;

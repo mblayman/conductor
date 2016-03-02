@@ -9,6 +9,7 @@ django_env:
   POSTGRES_USER: "{{ postgres.user }}"
   POSTGRES_PASSWORD: "{{ postgres.password }}"
   STATIC_ROOT: /var/www/api/
+  STATIC_URL: /static/
 postgres:
   db: lcp
   user: lcp
