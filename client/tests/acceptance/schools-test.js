@@ -13,7 +13,7 @@ moduleForAcceptance('Acceptance | schools', {
 });
 
 test('visiting /schools', function(assert) {
-  TestHelper.handleFindAll('school', 2);
+  TestHelper.mockFindAll('school', 2);
 
   visit('/schools');
 
