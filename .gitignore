@@ -63,3 +63,6 @@ _vimrc_local.vim
 
 .vagrant
 .encryption
+
+# Ansible
+playbooks/roles/nodesource.node

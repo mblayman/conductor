@@ -1,4 +1,6 @@
 ---
 - hosts: webservers
   roles:
+    - role: nodesource.node
+      become: yes
     - web
