@@ -33,6 +33,10 @@
   become: yes
   apt: name=python-psycopg2 state=present
 
+- name: Install Bower
+  become: yes
+  npm: name=bower state=present global=yes
+
 - name: Install Python package tools
   become: yes
   apt: name={{ item }} state=present
