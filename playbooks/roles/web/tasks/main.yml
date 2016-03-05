@@ -75,6 +75,10 @@
   notify:
     - Restart application
 
+- name: Install Ember dependencies
+  become: yes
+  npm: path={{ ember_app_path }}
+
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
   notify:
