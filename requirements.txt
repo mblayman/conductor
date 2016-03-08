@@ -1,4 +1,4 @@
-Django==1.9.3
+Django==1.9.4
 # django-cors-headers does not currently support 1.9.
 # Use the fork for now.
 django-cors-middleware==1.2
