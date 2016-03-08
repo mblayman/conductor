@@ -3,12 +3,13 @@
 module.exports = function(deployTarget) {
   var ENV = {
     build: {},
+    cp: {},
     'revision-data': {type: 'git-commit'}
   };
 
   if (deployTarget === 'development') {
     ENV.build.environment = 'development';
-    // configure other plugins for development deploy target here
+    ENV.cp.destDir = 'tmp/cp-deploy';
   }
 
   if (deployTarget === 'staging') {
@@ -18,7 +19,7 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'production') {
     ENV.build.environment = 'production';
-    // configure other plugins for production deploy target here
+    ENV.cp.destDir = 'tmp/cp-prod-deploy';
   }
 
   // Note: if you need to build some configuration asynchronously, you can return
