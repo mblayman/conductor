@@ -77,7 +77,13 @@
 
 - name: Install Ember dependencies
   become: yes
-  npm: path={{ ember_app_path }}
+  npm: path={{ ember_app_path }} state=latest
+
+- name: Install Bower dependencies
+  become: yes
+  command: bower --allow-root install chdir={{ ember_app_path }}
+  register: bower_result
+  changed_when: "bower_result.stdout != ''"
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
