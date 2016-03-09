@@ -19,7 +19,7 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'production') {
     ENV.build.environment = 'production';
-    ENV.cp.destDir = 'tmp/cp-prod-deploy';
+    ENV.cp.destDir = process.env.CLIENT_ROOT;
   }
 
   // Note: if you need to build some configuration asynchronously, you can return

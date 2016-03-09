@@ -1,6 +1,7 @@
 ---
 app_path: /srv/lcp
 ember_app_path: "{{ app_path }}/client"
+client_root: /var/www/client
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
