@@ -44,6 +44,18 @@
     - python-pip
     - python-virtualenv
 
+- name: Permit HTTP traffic
+  become: yes
+  ufw: rule=allow port=http proto=tcp
+
+- name: Permit SSH traffic
+  become: yes
+  ufw: rule=allow port=ssh proto=tcp
+
+- name: Enable the firewall
+  become: yes
+  ufw: state=enabled
+
 - name: Create resource account
   become: yes
   user: name=lcp createhome=no state=present
