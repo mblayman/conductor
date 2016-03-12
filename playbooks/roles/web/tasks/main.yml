@@ -44,6 +44,10 @@
     - python-pip
     - python-virtualenv
 
+- name: Install fail2ban
+  become: yes
+  apt: name=fail2ban state=present
+
 - name: Permit HTTP traffic
   become: yes
   ufw: rule=allow port=http proto=tcp
@@ -55,6 +59,11 @@
 - name: Enable the firewall
   become: yes
   ufw: state=enabled
+
+- template: src=jail.local.j2 dest=/etc/fail2ban/jail.local
+  become: yes
+  notify:
+    - Restart fail2ban
 
 - name: Create resource account
   become: yes

@@ -2,6 +2,10 @@
 - name: Start Nginx
   service: name=nginx state=started
 
+- name: Restart fail2ban
+  become: yes
+  service: name=fail2ban state=restarted
+
 # Supervisor does not restart properly.
 - name: Restart Supervisor
   become: yes
