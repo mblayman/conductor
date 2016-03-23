@@ -2,7 +2,8 @@ Django==1.9.4
 # django-cors-headers does not currently support 1.9.
 # Use the fork for now.
 django-cors-middleware==1.2
-djangorestframework==3.3.3
+# djangorestframework-jwt does not work with anything newer than 3.2 right now.
+djangorestframework<3.2
 djangorestframework-jsonapi==2.0.0-beta.2
 djangorestframework-jwt==1.7.2
 lxml==3.5.0
