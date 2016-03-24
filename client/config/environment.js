@@ -7,22 +7,10 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
 
-    // TODO: check on simple auth and token settings.
-    'ember-simple-auth': {},
-
     'ember-simple-auth-token': {
       serverTokenEndpoint: 'http://localhost:8080/api-token-auth/',
-      identificationField: 'username',
-      passwordField: 'password',
-      tokenPropertyName: 'token',
-      authorizationPrefix: 'Bearer ',
-      authorizationHeaderName: 'Authorization',
-      headers: {},
-      refreshAccessTokens: true,
       serverTokenRefreshEndpoint: '/api-token-refresh/',
-      tokenExpireName: 'exp',
-      refreshLeeway: 300,
-      timeFactor: 1
+      refreshLeeway: 300
     },
 
     EmberENV: {
