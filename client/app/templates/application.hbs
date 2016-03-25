@@ -1,10 +1,26 @@
-<div class="menu">
-  {{#if session.isAuthenticated}}
-    <a {{action 'invalidateSession'}}>Logout</a>
-  {{else}}
-    {{#link-to 'login'}}Login{{/link-to}}
-  {{/if}}
+<div class="ui large inverted top attached menu">
+  <div class="ui container">
+    {{#link-to 'index' class="active red item" activeClass=""}}Layman College Planner{{/link-to}}
+    <a class="item">Blog</a>
+    <div class="right menu">
+      {{#if session.isAuthenticated}}
+        <div class="item">
+          <a {{action 'invalidateSession'}} class="ui inverted button">Logout</a>
+        </div>
+      {{else}}
+        <div class="item">
+          {{#link-to 'login' class="ui inverted button"}}Login{{/link-to}}
+        </div>
+        <div class="item">
+          {{#link-to 'login' class="ui yellow button"}}Sign Up{{/link-to}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
 </div>
-<div class="main">
-  {{outlet}}
+
+<div class="ui attached segment">
+  <div class="ui container">
+    {{outlet}}
+  </div>
 </div>
