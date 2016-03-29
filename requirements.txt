@@ -1,4 +1,6 @@
-Django==1.9.4
+# The older version of rest framework that JWT must use does not work
+# with Django 1.9. Upgrade Django when you can upgrade DRF.
+Django<1.9
 # django-cors-headers does not currently support 1.9.
 # Use the fork for now.
 django-cors-middleware==1.2
