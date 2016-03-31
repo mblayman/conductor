@@ -18,7 +18,7 @@ from django.contrib import admin
 from rest_framework import routers
 
 from planner.views import SchoolViewSet
-from vendor.views import ObtainJSONWebToken
+from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register('schools', SchoolViewSet)
@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', ObtainJSONWebToken.as_view()),
+    url(r'^api-token-refresh/', RefreshJSONWebToken.as_view()),
 ]

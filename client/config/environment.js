@@ -9,8 +9,8 @@ module.exports = function(environment) {
 
     'ember-simple-auth-token': {
       serverTokenEndpoint: 'http://localhost:8080/api-token-auth/',
-      serverTokenRefreshEndpoint: '/api-token-refresh/',
-      refreshLeeway: 300
+      serverTokenRefreshEndpoint: 'http://localhost:8080/api-token-refresh/',
+      refreshLeeway: 20
     },
 
     EmberENV: {
