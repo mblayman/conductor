@@ -4,8 +4,6 @@ Django==1.9.4
 django-cors-middleware==1.2
 djangorestframework==3.3.3
 djangorestframework-jsonapi==2.0.0-beta.2
-# 1.7.2 does not work with DRF 3.3. Working from master until a release comes out.
-#djangorestframework-jwt==1.7.2
--e git+https://github.com/GetBlimp/django-rest-framework-jwt@master#egg=djangorestframework_jwt
+djangorestframework-jwt==1.8.0
 lxml==3.5.0
 requests==2.9.1
