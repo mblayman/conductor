@@ -4,14 +4,12 @@
     <form {{action 'authenticate' on='submit'}} class="ui large form">
       <div class="ui stacked segment">
         <div class="field">
-<!--   <label for="identification">Login</label> -->
           <div class="ui left icon input">
             <i class="user icon"></i>
             {{input id='identification' placeholder='Username' value=identification}}
           </div>
         </div>
         <div class="field">
-<!--   <label for="password">Password</label> -->
           <div class="ui left icon input">
             <i class="lock icon"></i>
             {{input id='password' placeholder='Password' type='password' value=password}}
