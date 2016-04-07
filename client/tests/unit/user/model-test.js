@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('school', 'Unit | Model | school', {
+moduleForModel('user', 'Unit | Model | user', {
   // Specify the other units that are required for this test.
   needs: []
 });
@@ -11,7 +11,7 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('has a name', function(assert) {
+test('has a username', function(assert) {
   let model = this.subject();
-  assert.ok(model.toJSON().hasOwnProperty('name'));
+  assert.ok(model.toJSON().hasOwnProperty('username'));
 });
