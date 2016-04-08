@@ -38,6 +38,7 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
+    "ember-cp-validations": "2.6.1",
     "ember-data": "^2.4.2",
     "ember-data-factory-guy": "2.4.4",
     "ember-export-application-global": "^1.0.5",
