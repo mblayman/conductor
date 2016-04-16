@@ -3,8 +3,7 @@
     <h2 class="ui red image header">Login to your account</h2>
     <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
       <div class="ui stacked segment">
-        {{#if didValidate}}
-          {{#if (v-get model 'username' 'isInvalid')}}
+          {{#if (and didValidate (v-get model 'username' 'isInvalid'))}}
             <div class="field error">
               <div class="ui left icon input">
                 <i class="user icon"></i>
@@ -19,7 +18,7 @@
               </div>
             </div>
           {{/if}}
-          {{#if (v-get model 'password' 'isInvalid')}}
+          {{#if (and didValidate (v-get model 'password' 'isInvalid'))}}
             <div class="field error">
               <div class="ui left icon input">
                 <i class="lock icon"></i>
@@ -34,20 +33,6 @@
               </div>
             </div>
           {{/if}}
-        {{else}}
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              {{input id='username' placeholder='Username' value=model.username}}
-            </div>
-          </div>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              {{input id='password' placeholder='Password' type='password' value=model.password}}
-            </div>
-          </div>
-        {{/if}}
         {{#if errorMessage}}
           <div class="ui error message">Boom {{errorMessage}}</div>
         {{/if}}
