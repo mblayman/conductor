@@ -1,26 +1,58 @@
 <div class="ui middle aligned center aligned stackable grid">
   <div class="eight wide column">
     <h2 class="ui red image header">Login to your account</h2>
-    <form {{action 'authenticate' on='submit'}} class="ui large form">
+    <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
       <div class="ui stacked segment">
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i>
-            {{input id='username' placeholder='Username' value=model.username}}
+        {{#if didValidate}}
+          {{#if (v-get model 'username' 'isInvalid')}}
+            <div class="field error">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                {{input id='username' placeholder=model.validations.attrs.username.message value=model.username}}
+              </div>
+            </div>
+          {{else}}
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                {{input id='username' placeholder='Username' value=model.username}}
+              </div>
+            </div>
+          {{/if}}
+          {{#if (v-get model 'password' 'isInvalid')}}
+            <div class="field error">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                {{input id='password' placeholder=model.validations.attrs.password.message type='password' value=model.password}}
+              </div>
+            </div>
+          {{else}}
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                {{input id='password' placeholder='Password' type='password' value=model.password}}
+              </div>
+            </div>
+          {{/if}}
+        {{else}}
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              {{input id='username' placeholder='Username' value=model.username}}
+            </div>
           </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            {{input id='password' placeholder='Password' type='password' value=model.password}}
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              {{input id='password' placeholder='Password' type='password' value=model.password}}
+            </div>
           </div>
-        </div>
+        {{/if}}
+        {{#if errorMessage}}
+          <div class="ui error message">Boom {{errorMessage}}</div>
+        {{/if}}
         <button type="submit" class="ui fluid large red submit button">Login</button>
       </div>
-      {{#if errorMessage}}
-        <div class="ui error">{{errorMessage}}</div>
-        <!-- <div class="ui error message">Why doesn't this show?{{errorMessage}}</div> -->
-      {{/if}}
     </form>
 
     <div class="ui message">
