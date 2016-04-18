@@ -66,3 +66,5 @@ _vimrc_local.vim
 
 # Ansible
 playbooks/roles/nodesource.node
+# Ignore DO cache files.
+*.cache
