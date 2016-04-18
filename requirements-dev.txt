@@ -1,5 +1,8 @@
 ansible==2.0.0.2
+dopy
 factory_boy==2.6.0
 flake8
 honcho
 httpie
+# dopy has a bug in the setup.py that is not requiring six.
+six
