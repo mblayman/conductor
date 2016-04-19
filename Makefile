@@ -6,3 +6,6 @@ run:
 
 test:
 	honcho run python manage.py test
+
+deploy:
+	ansible-playbook -i production playbooks/site.yml -u root
