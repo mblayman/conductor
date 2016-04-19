@@ -20,15 +20,6 @@
   become: yes
   apt: name=git state=present
 
-- name: Install lxml compilation dependencies
-  become: yes
-  apt: name={{ item }} state=present
-  with_items:
-    - libxml2-dev
-    - libxslt1-dev
-    - libz-dev
-    - python-dev
-
 - name: Install Psycopg2
   become: yes
   apt: name=python-psycopg2 state=present
