@@ -1,4 +1,7 @@
 ---
+- name: Update apt cache
+  apt: update_cache=yes cache_valid_time=604800
+
 - name: Install PostgreSQL
   become: yes
   apt: name={{ item }} state=present
