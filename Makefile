@@ -9,3 +9,8 @@ test:
 
 deploy:
 	ansible-playbook -i production playbooks/site.yml
+
+galaxy:
+	ansible-galaxy install \
+		kamaln7.swapfile \
+		nodesource.node

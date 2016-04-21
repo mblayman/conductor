@@ -1,6 +1,7 @@
 ---
 - hosts: webservers
   roles:
+    - { role: kamaln7.swapfile, swapfile_size: 1GB, become: yes }
     - role: nodesource.node
       become: yes
     - web
