@@ -56,11 +56,15 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "ansible" do |ansible|
+    ansible.inventory_path = "./playbooks/development"
     # ansible.verbose = "vvvv"
     ansible.groups = {
       "dbservers" => ["web01"],
       "webservers" => ["web01"],
     }
     ansible.playbook = "playbooks/site.yml"
+    ansible.raw_arguments = [
+        "--private-key=./.vagrant/machines/default/virtualbox/private_key"
+    ]
   end
 end

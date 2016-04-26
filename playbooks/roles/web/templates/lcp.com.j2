@@ -1,5 +1,5 @@
 server {
-    listen          8000;
+    listen          {{ client_port }};
     server_name     www.laymancollegeplanner.com;
     root {{ client_root }};
     index index.html;
