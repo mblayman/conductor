@@ -1,7 +1,11 @@
 ---
 app_path: /srv/conductor
 ember_app_path: "{{ app_path }}/client"
+
+client_server_name: "www.{{ root_domain }}"
 client_root: /var/www/client
+
+api_server_name: "api.{{ root_domain }}"
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:

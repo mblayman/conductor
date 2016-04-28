@@ -1,6 +1,6 @@
 server {
     listen          {{ client_port }};
-    server_name     www.laymancollegeplanner.com;
+    server_name     {{ client_server_name }};
     root {{ client_root }};
     index index.html;
 
@@ -11,7 +11,7 @@ server {
 
 server {
     listen          80;
-    server_name     api.laymancollegeplanner.com;
+    server_name     {{ api_server_name }};
 
     location {{ django_env.STATIC_URL }} {
         alias {{ django_env.STATIC_ROOT }};
