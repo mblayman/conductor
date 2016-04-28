@@ -8,7 +8,7 @@ test:
 	honcho run python manage.py test
 
 deploy:
-	ansible-playbook -i production playbooks/site.yml
+	ansible-playbook -i playbooks/production playbooks/site.yml
 
 galaxy:
 	ansible-galaxy install \
