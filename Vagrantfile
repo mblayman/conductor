@@ -51,8 +51,7 @@ Vagrant.configure(2) do |config|
   # end
 
   config.vm.define "web01" do |web|
-    web.vm.network "forwarded_port", guest: 80, host: 8080
-    web.vm.network "forwarded_port", guest: 8000, host: 8000
+    web.vm.network "private_network", ip: "10.1.2.3"
   end
 
   config.vm.provision "ansible" do |ansible|
