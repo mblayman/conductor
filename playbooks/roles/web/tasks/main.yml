@@ -121,7 +121,7 @@
   notify:
     - Restart Supervisor
 
-- template: src=conductor.conf.j2 dest=/etc/supervisor/cconductor.d/lcp.conf
+- template: src=conductor.conf.j2 dest=/etc/supervisor/conf.d/conductor.conf
   become: yes
   notify:
     - Restart Supervisor
@@ -130,7 +130,7 @@
   become: yes
   file: dest=/etc/nginx/sites-enabled/default state=absent
 
-- template: src=conductor.com.j2 dest=/etc/nginx/sites-avaiconductor/lcp.com
+- template: src=conductor.com.j2 dest=/etc/nginx/sites-available/conductor.com
   become: yes
   notify:
     - Restart Nginx
