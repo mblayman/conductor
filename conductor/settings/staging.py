@@ -1,6 +1,6 @@
 import os
 
-from lcp.settings.base import *  # noqa
+from conductor.settings.base import *  # noqa
 
 # FIXME: The wildcard is only here while testing on Vagrant.
 # Host header checking fails without it.

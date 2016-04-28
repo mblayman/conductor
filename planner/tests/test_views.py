@@ -1,4 +1,4 @@
-from lcp.tests import TestCase
+from conductor.tests import TestCase
 from planner import views
 
 

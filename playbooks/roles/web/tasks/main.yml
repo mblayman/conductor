@@ -58,7 +58,7 @@
 
 - name: Create resource account
   become: yes
-  user: name=lcp createhome=no state=present
+  user: name=conductor createhome=no state=present
 
 - name: Create root .ssh directory
   become: yes
@@ -74,7 +74,7 @@
 
 - name: Fetch from GitHub
   become: yes
-  git: repo=git@github.com:mblayman/lcp.git dest={{ app_path }} accept_hostkey=yes
+  git: repo=git@github.com:mblayman/conductor.git dest={{ app_path }} accept_hostkey=yes
   notify:
     - Restart application
 
@@ -121,7 +121,7 @@
   notify:
     - Restart Supervisor
 
-- template: src=lcp.conf.j2 dest=/etc/supervisor/conf.d/lcp.conf
+- template: src=conductor.conf.j2 dest=/etc/supervisor/cconductor.d/lcp.conf
   become: yes
   notify:
     - Restart Supervisor
@@ -130,7 +130,7 @@
   become: yes
   file: dest=/etc/nginx/sites-enabled/default state=absent
 
-- template: src=lcp.com.j2 dest=/etc/nginx/sites-available/lcp.com
+- template: src=conductor.com.j2 dest=/etc/nginx/sites-avaiconductor/lcp.com
   become: yes
   notify:
     - Restart Nginx
@@ -140,10 +140,10 @@
   notify:
     - Restart Nginx
 
-- name: Create symlink to lcp.com
+- name: Create symlink to conductor.com
   become: yes
-  file: src=/etc/nginx/sites-available/lcp.com
-        dest=/etc/nginx/sites-enabled/lcp.com
+  file: src=/etc/nginx/sites-available/conductor.com
+        dest=/etc/nginx/sites-enabled/conductor.com
         state=link
   notify:
     - Restart Nginx

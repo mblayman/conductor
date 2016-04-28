@@ -7,7 +7,7 @@ class UVAScraper(Scraper):
     """Scraper for the University of Virginia"""
 
     def scrape(self):
-        with open('/home/matt/lcp/uva.html', 'r') as f:
+        with open('/home/matt/conductor/uva.html', 'r') as f:
             text = f.read()
 
         html = etree.HTML(text)

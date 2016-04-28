@@ -18,7 +18,7 @@ server {
     }
 
     location / {
-        uwsgi_pass      unix:///tmp/lcp-uwsgi.sock;
+        uwsgi_pass      unix:///tmp/conductor-uwsgi.sock;
         include         uwsgi_params;
     }
 }

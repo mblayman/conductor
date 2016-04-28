@@ -1,8 +1,8 @@
-[program:lcp]
+[program:conductor]
 command=/usr/bin/uwsgi
     --plugin python
-    --socket /tmp/lcp-uwsgi.sock
-    --module lcp.wsgi:application
+    --socket /tmp/conductor-uwsgi.sock
+    --module conductor.wsgi:application
     --enable-threads
     --single-interpreter
     --master
@@ -13,7 +13,7 @@ directory={{ app_path }}
 user=www-data
 autostart=true
 autorestart=true
-stdout_logfile=/var/log/lcp.log
+stdout_logfile=/var/log/conductor.log
 redirect_stderr=true
 stopsignal=QUIT
 environment=

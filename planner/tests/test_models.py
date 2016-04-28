@@ -1,6 +1,6 @@
 import datetime
 
-from lcp.tests import TestCase
+from conductor.tests import TestCase
 
 
 class TestMilestone(TestCase):

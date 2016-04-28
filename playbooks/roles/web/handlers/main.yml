@@ -20,7 +20,7 @@
 
 - name: Restart application
   become: yes
-  supervisorctl: name=lcp state=restarted config=/etc/supervisor/supervisord.conf
+  supervisorctl: name=conductor state=restarted config=/etc/supervisor/supervisord.conf
 
 - name: Restart Nginx
   become: yes

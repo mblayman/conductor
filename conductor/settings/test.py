@@ -1,4 +1,4 @@
-from lcp.settings.base import *  # noqa
+from conductor.settings.base import *  # noqa
 
 DEBUG = True
 
