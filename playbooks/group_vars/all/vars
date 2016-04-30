@@ -2,8 +2,11 @@
 app_path: /srv/conductor
 ember_app_path: "{{ app_path }}/client"
 
-client_server_name: "www.{{ root_domain }}"
+client_domain: "www.{{ root_domain }}"
 client_root: /var/www/client
+ember_env:
+  API_HOST: "http://{{ client_domain }}"
+  CLIENT_ROOT: "{{ client_root }}"
 
 api_server_name: "api.{{ root_domain }}"
 venv_path: /srv/virtualenv
@@ -16,6 +19,7 @@ django_env:
   POSTGRES_PASSWORD: "{{ postgres.password }}"
   STATIC_ROOT: /var/www/api/
   STATIC_URL: /static/
+
 postgres:
   db: conductor
   user: conductor

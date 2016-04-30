@@ -6,7 +6,7 @@ server {
 
 server {
     listen       {{ client_port }};
-    server_name  {{ client_server_name }};
+    server_name  {{ client_domain }};
     root         {{ client_root }};
     index        index.html;
 

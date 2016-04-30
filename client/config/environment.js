@@ -8,8 +8,6 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     'ember-simple-auth-token': {
-      serverTokenEndpoint: 'http://localhost:8080/api-token-auth/',
-      serverTokenRefreshEndpoint: 'http://localhost:8080/api-token-refresh/',
       refreshLeeway: 20,
       timeFactor: 1000, // backend is in seconds and the frontend is in ms.
     },
@@ -33,6 +31,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.API_HOST = 'http://localhost:8080'
   }
 
   if (environment === 'test') {
@@ -48,8 +47,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.APP.API_HOST = process.env.API_HOST;
   }
 
+  ENV['ember-simple-auth-token'].serverTokenEndpoint = ENV.APP.API_HOST + '/api-token-auth/';
+  ENV['ember-simple-auth-token'].serverTokenRefreshEndpoint = ENV.APP.API_HOST + '/api-token-refresh/';
   return ENV;
 };

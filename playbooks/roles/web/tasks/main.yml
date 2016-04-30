@@ -113,8 +113,7 @@
   command: "{{ ember_app_path }}/node_modules/ember-cli/bin/ember deploy production"
   args:
     chdir: "{{ ember_app_path }}"
-  environment:
-    CLIENT_ROOT: "{{ client_root }}"
+  environment: "{{ ember_env }}"
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
