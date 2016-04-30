@@ -1,8 +1,14 @@
 server {
-    listen          {{ client_port }};
-    server_name     {{ client_server_name }};
-    root {{ client_root }};
-    index index.html;
+    listen       {{ client_port }};
+    server_name  {{ root_domain }};
+    return       301 $scheme://{{ client_root }}$request_uri;
+}
+
+server {
+    listen       {{ client_port }};
+    server_name  {{ client_server_name }};
+    root         {{ client_root }};
+    index        index.html;
 
     location / {
         try_files $uri $uri/ /index.html;
@@ -10,16 +16,16 @@ server {
 }
 
 server {
-    listen          80;
-    server_name     {{ api_server_name }};
+    listen       80;
+    server_name  {{ api_server_name }};
 
     location {{ django_env.STATIC_URL }} {
         alias {{ django_env.STATIC_ROOT }};
     }
 
     location / {
-        uwsgi_pass      unix:///tmp/conductor-uwsgi.sock;
-        include         uwsgi_params;
+        uwsgi_pass  unix:///tmp/conductor-uwsgi.sock;
+        include     uwsgi_params;
     }
 }
 
