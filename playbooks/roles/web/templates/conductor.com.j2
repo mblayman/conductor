@@ -17,7 +17,7 @@ server {
 
 server {
     listen       80;
-    server_name  {{ api_server_name }};
+    server_name  {{ api_domain }};
 
     location {{ django_env.STATIC_URL }} {
         alias {{ django_env.STATIC_ROOT }};
