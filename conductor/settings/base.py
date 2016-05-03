@@ -115,7 +115,7 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:4200',
+    os.environ['CORS_ORIGIN_WHITELIST'],
 )
 
 JWT_AUTH = {
