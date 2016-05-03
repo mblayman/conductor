@@ -21,4 +21,4 @@ galaxy:
 bootstrap:
 	ansible-playbook \
 		--private-key=./.vagrant/machines/default/virtualbox/private_key \
-		-i playbooks/development playbooks/bootstrap.yml -vvvv
+		-i playbooks/development playbooks/bootstrap.yml
