@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
     'vendor.apps.VendorConfig',
 ]
