@@ -3,6 +3,6 @@ Django==1.9.6
 # Use the fork for now.
 django-cors-middleware==1.2
 djangorestframework==3.3.3
-djangorestframework-jsonapi==2.0.0-beta.2
+djangorestframework-jsonapi==2.0.1
 djangorestframework-jwt==1.8.0
 requests==2.9.1
