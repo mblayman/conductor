@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('schools');
   this.route('login');
   this.route('signup');
+  this.route('terms');
 });
 
 export default Router;
