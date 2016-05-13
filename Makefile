@@ -4,12 +4,6 @@ schools:
 run:
 	python manage.py runserver 8080
 
-shell:
-	honcho run python manage.py shell
-
-test:
-	honcho run python manage.py test
-
 deploy:
 	ansible-playbook -i playbooks/production playbooks/site.yml
 
