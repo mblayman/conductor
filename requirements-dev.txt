@@ -1,6 +1,6 @@
 ansible==2.0.0.2
 dopy
-factory_boy==2.6.0
+factory_boy==2.7.0
 flake8
 honcho
 httpie
