@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
+    'support.apps.SupportConfig',
     'vendor.apps.VendorConfig',
 ]
 
