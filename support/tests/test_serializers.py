@@ -4,6 +4,11 @@ from support import serializers
 
 class TestSupportTicketSerializer(TestCase):
 
+    def test_serializes_email(self):
+        ticket = self.SupportTicketFactory.create()
+        serializer = serializers.SupportTicketSerializer(ticket)
+        self.assertEqual(ticket.email, serializer.data['email'])
+
     def test_serializes_subject(self):
         ticket = self.SupportTicketFactory.create()
         serializer = serializers.SupportTicketSerializer(ticket)

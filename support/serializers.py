@@ -6,4 +6,4 @@ from support.models import SupportTicket
 class SupportTicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = SupportTicket
-        fields = ('subject', 'message')
+        fields = ('email', 'subject', 'message')

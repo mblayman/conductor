@@ -18,9 +18,11 @@ from django.contrib import admin
 from rest_framework import routers
 
 from planner.views import SchoolViewSet
+from support.views import SupportTicketViewSet
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register('support-tickets', SupportTicketViewSet)
 router.register('schools', SchoolViewSet)
 
 urlpatterns = [
