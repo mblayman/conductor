@@ -1,1 +1,25 @@
-{{outlet}}
+<div class="ui middle aligned center aligned stackable grid">
+  <div class="eight wide column">
+    <h2 class="ui red image header">Contact Us</h2>
+    <form {{action 'submit' on 'submit'}} class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <label class="right aligned">E-mail</label>
+          <div class="ui left icon input">
+            <i class="at icon"></i>
+            {{input type="email" id="email" placeholder="Your email address"}}
+          </div>
+        </div>
+        <div class="field">
+          <label>Subject</label>
+          {{input type="text" id="subject" placeholder="What's on your mind?"}}
+        </div>
+        <div class="field">
+          <label>Message</label>
+          {{textarea rows="10" id="message" placeholder="Please provide some details."}}
+        </div>
+        <button type="submit" class="ui fluid large red submit button">Send request</button>
+      </div>
+    </form>
+  </div>
+</div>
