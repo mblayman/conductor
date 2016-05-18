@@ -1,22 +1,22 @@
 <div class="ui middle aligned center aligned stackable grid">
   <div class="eight wide column">
     <h2 class="ui red image header">Contact Us</h2>
-    <form {{action 'submit' on 'submit'}} class="ui large form">
+    <form {{action 'submit' on='submit'}} class="ui large form">
       <div class="ui stacked segment">
         <div class="field">
           <label>E-mail</label>
           <div class="ui left icon input">
             <i class="at icon"></i>
-            {{input type="email" id="email" placeholder="Your email address"}}
+            {{input type="email" id="email" placeholder="Your email address" value=model.email}}
           </div>
         </div>
         <div class="field">
           <label>Subject</label>
-          {{input type="text" id="subject" placeholder="What's on your mind?"}}
+          {{input type="text" id="subject" placeholder="What's on your mind?" value=model.subject}}
         </div>
         <div class="field">
           <label>Message</label>
-          {{textarea rows="10" id="message" placeholder="Please provide some details."}}
+          {{textarea rows="10" id="message" placeholder="Please provide some details." value=model.message}}
         </div>
         <button type="submit" class="ui fluid large red submit button">Send request</button>
       </div>
