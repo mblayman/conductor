@@ -25,9 +25,15 @@
       <div class="eight wide centered column">
         {{#each flashMessages.queue as |flash|}}
           {{#flash-message flash=flash as |component flash|}}
-            <div class="ui positive message">
-              {{flash.message}}
-            </div>
+            {{#if (eq flash.type "success")}}
+              <div class="ui positive message">
+                {{flash.message}}
+              </div>
+            {{else}}
+              <div class="ui negative message">
+                {{flash.message}}
+              </div>
+            {{/if}}
           {{/flash-message}}
         {{/each}}
       </div>

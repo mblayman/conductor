@@ -16,10 +16,16 @@ export default Ember.Controller.extend({
   },
 
   onValid(model) {
-    console.log(model.get('email'));
-    console.log(model.get('subject'));
-    console.log(model.get('message'));
+    model.save()
+      .then(this.onSuccess.bind(this))
+      .catch(this.onFailure.bind(this));
+  },
+
+  onSuccess() {
     this.get('flashMessages').success('Thanks! We will get back to you soon.');
-    // this.get('model').save();
+  },
+
+  onFailure() {
+    this.get('flashMessages').danger('Oops. Something went wrong. Please try again later.');
   }
 });
