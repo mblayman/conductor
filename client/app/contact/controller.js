@@ -23,7 +23,9 @@ export default Ember.Controller.extend({
   },
 
   onSuccess() {
-    this.get('flashMessages').success('Thanks! We will get back to you soon.');
+    this.get('flashMessages').success('Thanks! We will get back to you soon.', {
+      sticky: true
+    });
     this.set('successful', true);
   },
 
