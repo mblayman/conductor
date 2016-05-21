@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   flashMessages: Ember.inject.service(),
   didValidate: false,
+  successful: false,
 
   actions: {
     submit() {
@@ -23,6 +24,7 @@ export default Ember.Controller.extend({
 
   onSuccess() {
     this.get('flashMessages').success('Thanks! We will get back to you soon.');
+    this.set('successful', true);
   },
 
   onFailure() {
