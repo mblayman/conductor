@@ -17201,22 +17201,12 @@
 },
 {
   "model": "planner.school",
-  "pk": 1751,
-  "fields": {
-    "name": "Bangor Theological Seminary",
-    "slug": "bangor-theological-seminary",
-    "url": "http://www.bts.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
   "pk": 1752,
   "fields": {
     "name": "Bank Street College of Education",
     "slug": "bank-street-college-of-education",
     "url": "https://www.bankstreet.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.bankstreet.edu/graduate-school/admissions/apply-now/"
   }
 },
 {
@@ -17226,7 +17216,7 @@
     "name": "Baptist Missionary Association Theological Seminary",
     "slug": "baptist-missionary-association-theological-seminary",
     "url": "http://bmats.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bmats.edu/apply.htm"
   }
 },
 {
@@ -17236,7 +17226,7 @@
     "name": "Barclay College",
     "slug": "barclay-college",
     "url": "http://www.barclaycollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.barclaycollege.edu/apply/campus/"
   }
 },
 {
@@ -17246,7 +17236,7 @@
     "name": "Bard College",
     "slug": "bard-college",
     "url": "http://www.bard.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bard.edu/admission/firstyear/"
   }
 },
 {
@@ -17256,7 +17246,7 @@
     "name": "Bard College at Simon's Rock",
     "slug": "bard-college-at-simons-rock",
     "url": "http://www.simons-rock.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://simons-rock.edu/admission/tuition-and-financial-aid/dates-and-deadlines.php"
   }
 },
 {
@@ -17266,7 +17256,7 @@
     "name": "Barry University",
     "slug": "barry-university",
     "url": "http://www.barry.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.barry.edu/law/future-students/admissions/application-deadline.html"
   }
 },
 {
@@ -17276,7 +17266,7 @@
     "name": "Bastyr University",
     "slug": "bastyr-university",
     "url": "http://www.bastyr.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bastyr.edu/admissions/application-process/application-deadlines"
   }
 },
 {
@@ -17286,17 +17276,7 @@
     "name": "Bates College",
     "slug": "bates-college",
     "url": "http://www.bates.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1760,
-  "fields": {
-    "name": "Bauder College",
-    "slug": "bauder-college",
-    "url": "http://www.bauder.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bates.edu/admission/apply/application-options/"
   }
 },
 {
@@ -17306,7 +17286,7 @@
     "name": "Bay State College",
     "slug": "bay-state-college",
     "url": "http://www.baystate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.baystate.edu/admissions/common-questions/"
   }
 },
 {
@@ -17316,7 +17296,7 @@
     "name": "Baylor College of Medicine",
     "slug": "baylor-college-of-medicine",
     "url": "http://www.bcm.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.bcm.edu/education/schools/medical-school/admissions/important-dates"
   }
 },
 {
@@ -17326,7 +17306,7 @@
     "name": "Beacon College",
     "slug": "beacon-college",
     "url": "http://www.beaconcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.beaconcollege.edu/beacon-college-admissions/beacon-college-how-to-apply/"
   }
 },
 {
@@ -17336,7 +17316,7 @@
     "name": "Bellevue College",
     "slug": "bellevue-college",
     "url": "http://www.bellevuecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.bellevuecollege.edu/enrollment/deadlines/"
   }
 },
 {
@@ -17346,7 +17326,7 @@
     "name": "Bellevue University",
     "slug": "bellevue-university",
     "url": "http://www.bellevue.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bellevue.edu/application/"
   }
 },
 {
@@ -17356,7 +17336,7 @@
     "name": "Benedict College",
     "slug": "benedict-college",
     "url": "http://www.benedict.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.benedict.edu/cms/?q=applications"
   }
 },
 {
@@ -17366,7 +17346,7 @@
     "name": "Benjamin Franklin Institute of Technology",
     "slug": "benjamin-franklin-institute-of-technology",
     "url": "http://www.bfit.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bfit.edu/admissions---aid/application-process"
   }
 },
 {
@@ -17376,7 +17356,7 @@
     "name": "Bennett College",
     "slug": "bennett-college",
     "url": "http://www.bennett.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://bellenet.bennett.edu/ics/Admissions/"
   }
 },
 {
@@ -17386,7 +17366,7 @@
     "name": "Bennington College",
     "slug": "bennington-college",
     "url": "http://www.bennington.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bennington.edu/Admissions/apply/Deadlines.aspx"
   }
 },
 {
@@ -17396,7 +17376,7 @@
     "name": "Berea College",
     "slug": "berea-college",
     "url": "http://www.berea.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.berea.edu/admissions/academic-requirements/#1458586718501-b8e32cbc-a25b"
   }
 },
 {
@@ -17406,7 +17386,7 @@
     "name": "Berkeley College",
     "slug": "berkeley-college",
     "url": "http://www.berkeleycollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://berkeleycollege.edu/admissions.htm"
   }
 },
 {
@@ -17416,7 +17396,7 @@
     "name": "Berklee College of Music",
     "slug": "berklee-college-of-music",
     "url": "https://www.berklee.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.berklee.edu/admissions/undergraduate/deadlines"
   }
 },
 {
@@ -17436,7 +17416,7 @@
     "name": "Bethany Theological Seminary",
     "slug": "bethany-theological-seminary",
     "url": "http://www.bethanyseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://bethanyseminary.edu/admissions/apply-now/"
   }
 },
 {
@@ -17456,7 +17436,7 @@
     "name": "Bethel University & Seminary",
     "slug": "bethel-university-seminary",
     "url": "http://www.bethel.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.bethel.edu/undergrad/admissions/apply/dates-deadlines"
   }
 },
 {
@@ -17466,7 +17446,7 @@
     "name": "Bethesda University of California",
     "slug": "bethesda-university-of-california",
     "url": "http://www.buc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.buc.edu/en/index.php/admission/ba/schedule"
   }
 },
 {
@@ -17476,7 +17456,7 @@
     "name": "Beulah Heights University",
     "slug": "beulah-heights-university",
     "url": "http://www.beulah.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.beulah.edu/applynow"
   }
 },
 {
@@ -17486,7 +17466,7 @@
     "name": "Biblical Theological Seminary",
     "slug": "biblical-theological-seminary",
     "url": "http://www.biblical.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.biblical.edu/become-a-student/how-to-apply"
   }
 },
 {
@@ -17496,7 +17476,7 @@
     "name": "Bismark State College",
     "slug": "bismark-state-college",
     "url": "http://www.bismarckstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://bismarckstate.edu/academics/records/calendarsdeadlines/"
   }
 },
 {
@@ -17506,7 +17486,7 @@
     "name": "Blessing-Rieman College of Nursing",
     "slug": "blessing-rieman-college-of-nursing",
     "url": "http://www.brcn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.brcn.edu/applynow"
   }
 },
 {
@@ -17516,7 +17496,7 @@
     "name": "Blue Mountain College",
     "slug": "blue-mountain-college",
     "url": "http://www.bmc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.bmc.edu/admission.asp"
   }
 },
 {
@@ -17526,7 +17506,7 @@
     "name": "Boricua College",
     "slug": "boricua-college",
     "url": "http://www.boricuacollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.boricuacollege.edu/_Admissions/Admissions.html"
   }
 },
 {
@@ -17536,7 +17516,7 @@
     "name": "Boston Architectural College",
     "slug": "boston-architectural-college",
     "url": "http://www.the-bac.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://the-bac.edu/admissions/apply"
   }
 },
 {
@@ -17546,7 +17526,7 @@
     "name": "Boston Graduate School of Psychoanalysis",
     "slug": "boston-graduate-school-of-psychoanalysis",
     "url": "http://www.bgsp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.bgsp.edu/admissions-and-financial-aid/application-process/how-to-apply/"
   }
 },
 {
@@ -17556,7 +17536,7 @@
     "name": "Brandman University",
     "slug": "brandman-university",
     "url": "http://www.brandman.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.brandman.edu/admissions/how-apply/undergraduate-admission"
   }
 },
 {
@@ -17566,17 +17546,7 @@
     "name": "Briar Cliff University",
     "slug": "briar-cliff-university",
     "url": "http://www.briarcliff.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1788,
-  "fields": {
-    "name": "Briarcliffe College",
-    "slug": "briarcliffe-college",
-    "url": "http://www.briarcliffe.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.briarcliff.edu/admissions/high-school-students/admissions-checklist/"
   }
 },
 {
@@ -17586,7 +17556,7 @@
     "name": "Brite Divinity School",
     "slug": "brite-divinity-school",
     "url": "http://www.brite.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.brite.edu/admissions/"
   }
 },
 {
@@ -17596,7 +17566,7 @@
     "name": "Broward College",
     "slug": "broward-college",
     "url": "http://www.broward.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.broward.edu/admissions/Pages/default.aspx"
   }
 },
 {
@@ -17616,7 +17586,7 @@
     "name": "Burlington College",
     "slug": "burlington-college",
     "url": "http://www.burlington.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://burlington.edu/admissions/students/how-to-apply/"
   }
 },
 {
@@ -17626,7 +17596,7 @@
     "name": "Cairn University",
     "slug": "cairn-university",
     "url": "http://cairn.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://cairn.edu/admissions/undergrad/apply/"
   }
 },
 {
