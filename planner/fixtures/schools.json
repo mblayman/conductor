@@ -17606,7 +17606,7 @@
     "name": "California Institute of the Arts",
     "slug": "california-institute-of-the-arts",
     "url": "http://calarts.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.calarts.edu/admissions/apply/deadlines"
   }
 },
 {
@@ -17616,7 +17616,7 @@
     "name": "California Institute of Integral Studies",
     "slug": "california-institute-of-integral-studies",
     "url": "http://www.ciis.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ciis.edu/admissions-and-financial-aid/applying-to-ciis"
   }
 },
 {
@@ -17626,37 +17626,17 @@
     "name": "California Northstate University",
     "slug": "california-northstate-university",
     "url": "http://www.cnsu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1797,
-  "fields": {
-    "name": "California State University System",
-    "slug": "california-state-university-system",
-    "url": "http://www.calstate.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1798,
-  "fields": {
-    "name": "Calvary Baptist Seminary",
-    "slug": "calvary-baptist-seminary",
-    "url": "http://www.cbs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://medicine.cnsu.edu/students-com/admissions/admissions-timeline"
   }
 },
 {
   "model": "planner.school",
   "pk": 1799,
   "fields": {
-    "name": "Cambridge College ",
+    "name": "Cambridge College",
     "slug": "cambridge-college",
     "url": "https://www.cambridgecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.cambridgecollege.edu/admissions/admissions-requirements"
   }
 },
 {
@@ -17666,7 +17646,7 @@
     "name": "Cameron University",
     "slug": "cameron-university",
     "url": "http://www.cameron.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cameron.edu/catalog/admissions.html#first-time"
   }
 },
 {
@@ -17676,37 +17656,17 @@
     "name": "Capella University",
     "slug": "capella-university",
     "url": "http://www.capella.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1802,
-  "fields": {
-    "name": "Caribbean University",
-    "slug": "caribbean-university",
-    "url": "http://www.caribbean.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.capella.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1803,
   "fields": {
-    "name": "Carlos Albizu University",
-    "slug": "carlos-albizu-university",
+    "name": "Albizu University",
+    "slug": "albizu-university",
     "url": "http://www.albizu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1804,
-  "fields": {
-    "name": "Carlos Albizu University-Miami Campus",
-    "slug": "carlos-albizu-university-miami-campus",
-    "url": "http://www.mia.albizu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.albizu.edu/Admissions-and-Aid/How-to-Apply"
   }
 },
 {
@@ -17716,7 +17676,7 @@
     "name": "Catholic Theological Union",
     "slug": "catholic-theological-union",
     "url": "http://www.ctu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ctu.edu/apply"
   }
 },
 {
@@ -17726,7 +17686,7 @@
     "name": "Central Baptist Theological Seminary",
     "slug": "central-baptist-theological-seminary",
     "url": "http://www.cbts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cbts.edu/apply-now/"
   }
 },
 {
@@ -17736,7 +17696,7 @@
     "name": "Central Christian College of Kansas",
     "slug": "central-christian-college-of-kansas",
     "url": "http://www.centralchristian.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.centralchristian.edu/academic-calendar"
   }
 },
 {
@@ -17746,7 +17706,7 @@
     "name": "Central Christian College of the Bible",
     "slug": "central-christian-college-of-the-bible",
     "url": "http://www.cccb.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.cccb.edu/future-students/checklists/first-time/"
   }
 },
 {
@@ -17756,17 +17716,7 @@
     "name": "Central Penn College",
     "slug": "central-penn-college",
     "url": "http://www.centralpenn.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1810,
-  "fields": {
-    "name": "Centro de Estudios Avanzados de Puerto Rico y el Caribe",
-    "slug": "centro-de-estudios-avanzados-de-puerto-rico-y-el-caribe",
-    "url": "http://www.ceaprc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.centralpenn.edu/prospective-students/high-school-students/faqs/"
   }
 },
 {
@@ -17776,7 +17726,7 @@
     "name": "Chadron State College",
     "slug": "chadron-state-college",
     "url": "http://www.csc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.csc.edu/admissions/deadlines.csc"
   }
 },
 {
@@ -17786,17 +17736,7 @@
     "name": "Chamberlain College of Nursing",
     "slug": "chamberlain-college-of-nursing",
     "url": "http://www.chamberlain.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1813,
-  "fields": {
-    "name": "Chancellor University",
-    "slug": "chancellor-university",
-    "url": "http://www.chancelloru.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.chamberlain.edu/academic-calendar"
   }
 },
 {
@@ -17804,9 +17744,9 @@
   "pk": 1814,
   "fields": {
     "name": "Charles R. Drew University of Medicine & Science",
-    "slug": "charles-r-drew-university-of-medicine-science",
+    "slug": "charles-r-drew-university-of-medicine-and-science",
     "url": "http://www.cdrewu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cdrewu.edu/Apply"
   }
 },
 {
@@ -17816,7 +17756,7 @@
     "name": "Charter Oak State College",
     "slug": "charter-oak-state-college",
     "url": "http://www.charteroak.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.charteroak.edu/prospective/admissions/faq.cfm#7"
   }
 },
 {
@@ -17826,7 +17766,7 @@
     "name": "Cheyney University",
     "slug": "cheyney-university",
     "url": "http://www.cheyney.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cheyney.edu/admissions/Undergraduate-Admissions.cfm"
   }
 },
 {
@@ -17836,7 +17776,7 @@
     "name": "The Chicago School of Professional Psychology",
     "slug": "the-chicago-school-of-professional-psychology",
     "url": "http://www.thechicagoschool.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://apply.thechicagoschool.edu/"
   }
 },
 {
@@ -17846,7 +17786,7 @@
     "name": "Chicago Theological Seminary",
     "slug": "chicago-theological-seminary",
     "url": "https://www.ctschicago.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ctschicago.edu/admissions/application-deadlines"
   }
 },
 {
@@ -17856,7 +17796,7 @@
     "name": "Chipola College",
     "slug": "chipola-college",
     "url": "http://www.chipola.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.chipola.edu/registrar/Admission-Enrolling-and-Registration.htm"
   }
 },
 {
@@ -17866,7 +17806,7 @@
     "name": "Christ the King Seminary",
     "slug": "christ-the-king-seminary",
     "url": "http://www.cks.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cks.edu/graduate-program-overview"
   }
 },
 {
@@ -17876,7 +17816,7 @@
     "name": "Christendom College",
     "slug": "christendom-college",
     "url": "http://www.christendom.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.christendom.edu/admissions/dates-deadlines-costs/"
   }
 },
 {
@@ -17886,7 +17826,7 @@
     "name": "Christian Theological Seminary",
     "slug": "christian-theological-seminary",
     "url": "http://www.cts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cts.edu/admissions/faqs.aspx"
   }
 },
 {
@@ -17896,7 +17836,7 @@
     "name": "Church Divinity School of the Pacific",
     "slug": "church-divinity-school-of-the-pacific",
     "url": "http://cdsp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cdsp.edu/admissions/apply/"
   }
 },
 {
@@ -17906,7 +17846,7 @@
     "name": "Cincinnati College of Mortuary Science",
     "slug": "cincinnati-college-of-mortuary-science",
     "url": "https://www.ccms.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.ccms.edu/admissions/enrollment-calendar/"
   }
 },
 {
@@ -17916,7 +17856,7 @@
     "name": "The Citadel",
     "slug": "the-citadel",
     "url": "http://www.citadel.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.citadel.edu/root/admissions-requirements/admissions-requirements-for-freshman"
   }
 },
 {
@@ -17926,7 +17866,7 @@
     "name": "City University of Seattle",
     "slug": "city-university-of-seattle",
     "url": "http://www.cityu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cityu.edu/admissions-overview/admissions/"
   }
 },
 {
@@ -17936,7 +17876,7 @@
     "name": "City University of New York",
     "slug": "city-university-of-new-york",
     "url": "http://www.cuny.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www2.cuny.edu/admissions/undergraduate/deadlines/"
   }
 },
 {
@@ -17946,17 +17886,7 @@
     "name": "Graduate School & University Center",
     "slug": "graduate-school-university-center",
     "url": "http://www.gc.cuny.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1829,
-  "fields": {
-    "name": "Claremont Consortium of Colleges",
-    "slug": "claremont-consortium-of-colleges",
-    "url": "http://www.claremont.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.gc.cuny.edu/Prospective-Current-Students/Prospective-Students/Program-Application-Deadlines-Requirements"
   }
 },
 {
@@ -17966,7 +17896,7 @@
     "name": "Claremont Graduate University",
     "slug": "claremont-graduate-university",
     "url": "http://www.cgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cgu.edu/pages/422.asp"
   }
 },
 {
