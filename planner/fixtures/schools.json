@@ -433,7 +433,7 @@
   "model": "planner.school",
   "pk": 44,
   "fields": {
-    "name": "University of California-Los Angeles",
+    "name": "University of California, Los Angeles",
     "slug": "university-of-california-los-angeles",
     "url": "http://www.ucla.edu/",
     "milestones_url": "https://www.admissions.ucla.edu/applicant/notify.htm"
@@ -723,7 +723,7 @@
   "model": "planner.school",
   "pk": 73,
   "fields": {
-    "name": "University of California-San Diego",
+    "name": "University of California, San Diego",
     "slug": "university-of-california-san-diego",
     "url": "http://www.ucsd.edu/",
     "milestones_url": "https://admissions.ucsd.edu/transfers/timeline.html"
@@ -17906,7 +17906,7 @@
     "name": "Keck Graduate Institute of Applied Life Sciences",
     "slug": "keck-graduate-institute-of-applied-life-sciences",
     "url": "http://www.kgi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kgi.edu/admissions/apply-to-kgi"
   }
 },
 {
@@ -17916,7 +17916,7 @@
     "name": "Claremont School of Theology",
     "slug": "claremont-school-of-theology",
     "url": "http://cst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cst.edu/admissions/deadlines-requirements/"
   }
 },
 {
@@ -17926,7 +17926,7 @@
     "name": "Clark University",
     "slug": "clark-university",
     "url": "http://www.clarku.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.clarku.edu/admissions/undergraduate-admissions/how-apply/application-deadlines"
   }
 },
 {
@@ -17936,17 +17936,17 @@
     "name": "Clear Creek Baptist Bible College",
     "slug": "clear-creek-baptist-bible-college",
     "url": "http://www.ccbbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ccbbc.edu/pages/future_students.php?nav=navfuture"
   }
 },
 {
   "model": "planner.school",
   "pk": 1835,
   "fields": {
-    "name": "Cleveland Chiropractic College",
-    "slug": "cleveland-chiropractic-college",
+    "name": "Cleveland University",
+    "slug": "cleveland-university",
     "url": "http://www.cleveland.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cleveland.edu/admissions/how-to-apply"
   }
 },
 {
@@ -17956,7 +17956,7 @@
     "name": "Cleveland Institute of Music",
     "slug": "cleveland-institute-of-music",
     "url": "http://www.cim.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.cim.edu/conservatory/admission/apply"
   }
 },
 {
@@ -17966,7 +17966,7 @@
     "name": "Cogswell Polytechnical College",
     "slug": "cogswell-polytechnical-college",
     "url": "http://www.cogswell.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cogswell.edu/prospective/admissions.php"
   }
 },
 {
@@ -17976,27 +17976,7 @@
     "name": "Colby-Sawyer College",
     "slug": "colby-sawyer-college",
     "url": "http://www.colby-sawyer.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1839,
-  "fields": {
-    "name": "Colegio Universitario de San Juan",
-    "slug": "colegio-universitario-de-san-juan",
-    "url": "http://www.cunisanjuan.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1840,
-  "fields": {
-    "name": "College for Financial Planning",
-    "slug": "college-for-financial-planning",
-    "url": "http://www.cffp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://colby-sawyer.edu/admissions/apply.html"
   }
 },
 {
@@ -18006,17 +17986,17 @@
     "name": "College of the Atlantic",
     "slug": "college-of-the-atlantic",
     "url": "http://www.coa.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.coa.edu/admissions/apply/dates-and-deadlines/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1842,
   "fields": {
-    "name": "College of Biblical Studies-Houston",
-    "slug": "college-of-biblical-studies-houston",
+    "name": "College of Biblical Studies",
+    "slug": "college-of-biblical-studies",
     "url": "http://cbshouston.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://cbshouston.edu/application-and-admission-deadlines"
   }
 },
 {
@@ -18026,7 +18006,7 @@
     "name": "College of Central Florida",
     "slug": "college-of-central-florida",
     "url": "http://www.cf.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cf.edu/go/admissions/admissions/international/important-dates"
   }
 },
 {
@@ -18036,7 +18016,7 @@
     "name": "College of Charleston",
     "slug": "college-of-charleston",
     "url": "http://www.cofc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.cofc.edu/applyingtothecollege/freshmen/deadlines.php"
   }
 },
 {
@@ -18046,7 +18026,7 @@
     "name": "College of the Holy Cross",
     "slug": "college-of-the-holy-cross",
     "url": "http://www.holycross.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.holycross.edu/admissions-aid"
   }
 },
 {
@@ -18056,17 +18036,17 @@
     "name": "College of the Menominee Nation",
     "slug": "college-of-the-menominee-nation",
     "url": "http://www.menominee.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.menominee.edu/Pros_Stu.aspx?id=612"
   }
 },
 {
   "model": "planner.school",
   "pk": 1847,
   "fields": {
-    "name": "College of Saint Rose",
-    "slug": "college-of-saint-rose",
+    "name": "The College of Saint Rose",
+    "slug": "the-college-of-saint-rose",
     "url": "http://www.strose.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.strose.edu/admissions/first-year-students/apply/"
   }
 },
 {
@@ -18076,7 +18056,7 @@
     "name": "College of Southern Nevada",
     "slug": "college-of-southern-nevada",
     "url": "http://www.csn.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.csn.edu/step-1-apply-csn-first-time-college-student"
   }
 },
 {
@@ -18086,7 +18066,7 @@
     "name": "Colorado Christian University",
     "slug": "colorado-christian-university",
     "url": "http://www.ccu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ccu.edu/admissions/freshmen/"
   }
 },
 {
@@ -18096,17 +18076,7 @@
     "name": "Colorado Technical University",
     "slug": "colorado-technical-university",
     "url": "http://www.coloradotech.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1851,
-  "fields": {
-    "name": "Columbia Centro Universitario",
-    "slug": "columbia-centro-universitario",
-    "url": "http://www.columbiacentral.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.coloradotech.edu/admissions/student-admissions-process?dheader=new"
   }
 },
 {
@@ -18126,7 +18096,7 @@
     "name": "Columbia College Chicago",
     "slug": "columbia-college-chicago",
     "url": "http://www.colum.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.colum.edu/admissions/requirements/index.html"
   }
 },
 {
@@ -18136,7 +18106,7 @@
     "name": "Columbia College Hollywood",
     "slug": "columbia-college-hollywood",
     "url": "http://www.columbiacollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.columbiacollege.edu/admissions/general-admissions-requirements"
   }
 },
 {
@@ -18146,7 +18116,7 @@
     "name": "Columbia College of Nursing",
     "slug": "columbia-college-of-nursing",
     "url": "http://www.ccon.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ccon.edu/oth/Page.asp?PageID=OTH100916"
   }
 },
 {
@@ -18156,27 +18126,27 @@
     "name": "Columbia Theological Seminary",
     "slug": "columbia-theological-seminary",
     "url": "http://www.ctsnet.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ctsnet.edu/reminders-deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1857,
   "fields": {
-    "name": "Concordia College-Alabama",
+    "name": "Concordia College, Alabama",
     "slug": "concordia-college-alabama",
     "url": "http://www.ccal.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ccal.edu/?q=admissions-procedures-requirements"
   }
 },
 {
   "model": "planner.school",
   "pk": 1858,
   "fields": {
-    "name": "Concordia Seminary-Saint Louis",
-    "slug": "concordia-seminary-saint-louis",
+    "name": "Concordia Seminary, St. Louis",
+    "slug": "concordia-seminary-st-louis",
     "url": "http://www.csl.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.csl.edu/admissions/"
   }
 },
 {
@@ -18186,17 +18156,17 @@
     "name": "Concordia Theological Seminary",
     "slug": "concordia-theological-seminary",
     "url": "http://www.ctsfw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admission.ctsfw.edu/?dest=apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1860,
   "fields": {
-    "name": "Concordia University-Saint Paul",
-    "slug": "concordia-university-saint-paul",
+    "name": "Concordia University, St. Paul",
+    "slug": "concordia-university-st-paul",
     "url": "http://www.csp.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.csp.edu/admissions/undergraduate-admissions/"
   }
 },
 {
@@ -18205,28 +18175,18 @@
   "fields": {
     "name": "Connecticut College",
     "slug": "connecticut-college",
-    "url": "http://camel.conncoll.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1862,
-  "fields": {
-    "name": "Conservatorio de M\u00fasica de Puerto Rico",
-    "slug": "conservatorio-de-musica-de-puerto-rico",
-    "url": "http://cmpr.edu/",
-    "milestones_url": ""
+    "url": "https://www.conncoll.edu/",
+    "milestones_url": "https://www.conncoll.edu/admission/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1863,
   "fields": {
-    "name": "Conway School of Landscape Design",
-    "slug": "conway-school-of-landscape-design",
+    "name": "The Conway School",
+    "slug": "the-conway-school",
     "url": "http://www.csld.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.csld.edu/admissions/"
   }
 },
 {
@@ -18236,7 +18196,7 @@
     "name": "Cornish College of the Arts",
     "slug": "cornish-college-of-the-arts",
     "url": "http://www.cornish.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.cornish.edu/admission/apply/"
   }
 },
 {
@@ -18246,7 +18206,7 @@
     "name": "Covenant Theological Seminary",
     "slug": "covenant-theological-seminary",
     "url": "http://www.covenantseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.covenantseminary.edu/admissions/admissions-overview/"
   }
 },
 {
@@ -18256,7 +18216,7 @@
     "name": "Cox College",
     "slug": "cox-college",
     "url": "http://coxcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://coxcollege.edu/admissions/"
   }
 },
 {
@@ -18266,7 +18226,7 @@
     "name": "Cranbrook Academy of Art",
     "slug": "cranbrook-academy-of-art",
     "url": "http://cranbrookart.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cranbrookart.edu/admissions/apply-on-line/admissions-information/"
   }
 },
 {
@@ -18276,7 +18236,7 @@
     "name": "Criswell College",
     "slug": "criswell-college",
     "url": "http://www.criswell.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.criswell.edu/admissions/apply/"
   }
 },
 {
@@ -18286,7 +18246,7 @@
     "name": "Crossroads College",
     "slug": "crossroads-college",
     "url": "http://www.crossroadscollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.crossroadscollege.edu/Admissions"
   }
 },
 {
@@ -18296,17 +18256,17 @@
     "name": "Crowley's Ridge College",
     "slug": "crowleys-ridge-college",
     "url": "http://www.crc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.crc.edu/index.php/new-students/admission-guidelines"
   }
 },
 {
   "model": "planner.school",
   "pk": 1871,
   "fields": {
-    "name": "Culinary Institute of America",
-    "slug": "culinary-institute-of-america",
+    "name": "The Culinary Institute of America",
+    "slug": "the-culinary-institute-of-america",
     "url": "http://www.ciachef.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ciachef.edu/applynow/"
   }
 },
 {
@@ -18316,7 +18276,7 @@
     "name": "Curtis Institute of Music",
     "slug": "curtis-institute-of-music",
     "url": "http://www.curtis.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.curtis.edu/admissions/applications/"
   }
 },
 {
@@ -18326,17 +18286,7 @@
     "name": "Hampshire College",
     "slug": "hampshire-college",
     "url": "http://www.hampshire.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1874,
-  "fields": {
-    "name": "Harrington College of Design",
-    "slug": "harrington-college-of-design",
-    "url": "http://www.harrington.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.hampshire.edu/admissions/admissions-hampshire-college"
   }
 },
 {
@@ -18346,7 +18296,7 @@
     "name": "Harris-Stowe State University",
     "slug": "harris-stowe-state-university",
     "url": "http://www.hssu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://live.hssu.edu/ics/admissions/"
   }
 },
 {
@@ -18356,7 +18306,7 @@
     "name": "Harrisburg University of Science & Technology",
     "slug": "harrisburg-university-of-science-technology",
     "url": "http://www.harrisburgu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://harrisburgu.edu/apply/"
   }
 },
 {
@@ -18366,7 +18316,7 @@
     "name": "Hartford Seminary",
     "slug": "hartford-seminary",
     "url": "http://www.hartsem.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hartsem.edu/admissions/"
   }
 },
 {
@@ -18376,7 +18326,7 @@
     "name": "Haskell Indian Nations University",
     "slug": "haskell-indian-nations-university",
     "url": "http://www.haskell.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.haskell.edu/academics/business/how-to-apply.php"
   }
 },
 {
@@ -18386,7 +18336,7 @@
     "name": "Hazelden Graduate School of Addiction Studies",
     "slug": "hazelden-graduate-school-of-addiction-studies",
     "url": "http://www.hazelden.org/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hazelden.org/web/go/gradschool"
   }
 },
 {
@@ -18396,7 +18346,7 @@
     "name": "Hebrew College",
     "slug": "hebrew-college",
     "url": "http://www.hebrewcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hebrewcollege.edu/application-deadlines"
   }
 },
 {
@@ -18406,7 +18356,7 @@
     "name": "Hebrew Union College-Jewish Institute of Religion",
     "slug": "hebrew-union-college-jewish-institute-of-religion",
     "url": "http://huc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://huc.edu/admissions/apply"
   }
 },
 {
@@ -18416,17 +18366,17 @@
     "name": "Heidelberg University",
     "slug": "heidelberg-university",
     "url": "http://www.heidelberg.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.heidelberg.edu/admissions/faq"
   }
 },
 {
   "model": "planner.school",
   "pk": 1883,
   "fields": {
-    "name": "Hellenic College/Holy Cross Greek Orthodox School of Theology",
-    "slug": "hellenic-collegeholy-cross-greek-orthodox-school-of-theology",
+    "name": "Hellenic College Holy Cross",
+    "slug": "hellenic-college-holy-cross",
     "url": "http://www.hchc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hchc.edu/admissions/apply_hellenic"
   }
 },
 {
@@ -18436,7 +18386,7 @@
     "name": "Heritage University",
     "slug": "heritage-university",
     "url": "http://www.heritage.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.heritage.edu/Admissions/FAQs"
   }
 },
 {
@@ -18446,7 +18396,7 @@
     "name": "Herzing University",
     "slug": "herzing-university",
     "url": "https://www.herzing.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.herzing.edu/admissions/undergraduate"
   }
 },
 {
