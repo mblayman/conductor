@@ -18406,7 +18406,7 @@
     "name": "High Point University",
     "slug": "high-point-university",
     "url": "http://www.highpoint.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.highpoint.edu/admissions/freshmen-admissions/"
   }
 },
 {
@@ -18416,17 +18416,17 @@
     "name": "Hilbert College",
     "slug": "hilbert-college",
     "url": "http://www.hilbert.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hilbert.edu/admissions-financial-aid/apply-to-hilbert"
   }
 },
 {
   "model": "planner.school",
   "pk": 1888,
   "fields": {
-    "name": "Hobart & William Smith Colleges",
-    "slug": "hobart-william-smith-colleges",
+    "name": "Hobart and William Smith Colleges",
+    "slug": "hobart-and-william-smith-colleges",
     "url": "http://www.hws.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hws.edu/admissions/firstyear.aspx"
   }
 },
 {
@@ -18436,7 +18436,7 @@
     "name": "Hobe Sound Bible College",
     "slug": "hobe-sound-bible-college",
     "url": "http://hsbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://hsbc.edu/admissions/apply/"
   }
 },
 {
@@ -18446,7 +18446,7 @@
     "name": "Hodges University",
     "slug": "hodges-university",
     "url": "http://www.hodges.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hodges.edu/admissions/undergraduate/"
   }
 },
 {
@@ -18456,7 +18456,7 @@
     "name": "Holy Apostles College & Seminary",
     "slug": "holy-apostles-college-seminary",
     "url": "http://www.holyapostles.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.holyapostles.edu/seminary/admissions/"
   }
 },
 {
@@ -18466,7 +18466,7 @@
     "name": "Hult International Business School",
     "slug": "hult-international-business-school",
     "url": "http://www.hult.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.hult.edu/en/undergraduate/bachelor-of-business-administration/admissions/application-process/"
   }
 },
 {
@@ -18476,7 +18476,7 @@
     "name": "Humphreys College",
     "slug": "humphreys-college",
     "url": "http://www.humphreys.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.humphreys.edu/index.php?option=com_content&view=article&id=74%3Augadmission&catid=1&Itemid=94"
   }
 },
 {
@@ -18486,17 +18486,17 @@
     "name": "Kansas City Art Institute",
     "slug": "kansas-city-art-institute",
     "url": "http://www.kcai.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://kcai.edu/drupal/admissions/application-and-key-dates"
   }
 },
 {
   "model": "planner.school",
   "pk": 1895,
   "fields": {
-    "name": "Kansas City University of Medicine & Biosciences",
-    "slug": "kansas-city-university-of-medicine-biosciences",
+    "name": "Kansas City University of Medicine and Biosciences",
+    "slug": "kansas-city-university-of-medicine-and-biosciences",
     "url": "http://www.kcumb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kcumb.edu/admissions/medical-students/how-to-apply/application-schedule/"
   }
 },
 {
@@ -18506,17 +18506,17 @@
     "name": "Kansas State University",
     "slug": "kansas-state-university",
     "url": "http://www.k-state.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.k-state.edu/admissions/apply/deadlines.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 1897,
   "fields": {
-    "name": "Kansas State University-Salina",
-    "slug": "kansas-state-university-salina",
-    "url": "http://www.salina.k-state.edu/",
-    "milestones_url": ""
+    "name": "Kansas State Polytechnic",
+    "slug": "kansas-state-polytechnic",
+    "url": "http://polytechnic.k-state.edu/",
+    "milestones_url": "http://polytechnic.k-state.edu/admissions/apply/index.html"
   }
 },
 {
@@ -18526,7 +18526,7 @@
     "name": "Kaplan University",
     "slug": "kaplan-university",
     "url": "http://www.kaplanuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kaplanuniversity.edu/admissions/general-admissions-requirements.aspx"
   }
 },
 {
@@ -18536,7 +18536,7 @@
     "name": "Keiser University",
     "slug": "keiser-university",
     "url": "http://www.keiseruniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.keiseruniversity.edu/admissions/"
   }
 },
 {
@@ -18546,17 +18546,17 @@
     "name": "Kendall College",
     "slug": "kendall-college",
     "url": "http://www.kendall.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.kendall.edu/admissions/application-process/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1901,
   "fields": {
-    "name": "Kendall College of Art & Design of Ferris State University",
-    "slug": "kendall-college-of-art-design-of-ferris-state-university",
+    "name": "Kendall College of Art and Design of Ferris State University",
+    "slug": "kendall-college-of-art-and-design-of-ferris-state-university",
     "url": "http://www.kcad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kcad.edu/admissions/apply-undergrad/"
   }
 },
 {
@@ -18566,77 +18566,77 @@
     "name": "Kenrick-Glennon Seminary",
     "slug": "kenrick-glennon-seminary",
     "url": "http://www.kenrick.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://kenrick.edu/support/cardinal-glennon-college/admission-procedures/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1903,
   "fields": {
-    "name": "Kent State University-Ashtabula Campus",
-    "slug": "kent-state-university-ashtabula-campus",
+    "name": "Kent State University, Ashtabula",
+    "slug": "kent-state-university-ashtabula",
     "url": "http://www.ashtabula.kent.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/kent-state-university-ashtabula/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1904,
   "fields": {
-    "name": "Kent State University-College of Podiatric Medicine",
+    "name": "Kent State University, College of Podiatric Medicine",
     "slug": "kent-state-university-college-of-podiatric-medicine",
     "url": "http://www.kent.edu/cpm",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/cpm/admissions-faqs-0"
   }
 },
 {
   "model": "planner.school",
   "pk": 1905,
   "fields": {
-    "name": "Kent State University-Columbiana County",
+    "name": "Kent State University, Columbiana County",
     "slug": "kent-state-university-columbiana-county",
     "url": "http://www.kent.edu/columbiana",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/columbiana/admissions-process"
   }
 },
 {
   "model": "planner.school",
   "pk": 1906,
   "fields": {
-    "name": "Kent State University-Geauga",
+    "name": "Kent State University, Geauga",
     "slug": "kent-state-university-geauga",
     "url": "http://www.kent.edu/geauga",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/geauga/admissions-tuition-aid"
   }
 },
 {
   "model": "planner.school",
   "pk": 1907,
   "fields": {
-    "name": "Kent State University-Stark",
+    "name": "Kent State University, Stark",
     "slug": "kent-state-university-stark",
     "url": "http://www.kent.edu/stark",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/stark/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1908,
   "fields": {
-    "name": "Kent State University-Trumbull Campus",
-    "slug": "kent-state-university-trumbull-campus",
+    "name": "Kent State University, Trumbull",
+    "slug": "kent-state-university-trumbull",
     "url": "http://www.kent.edu/trumbull",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/trumbull/admissions-tuition-aid"
   }
 },
 {
   "model": "planner.school",
   "pk": 1909,
   "fields": {
-    "name": "Kent State University-Tuscarawas",
+    "name": "Kent State University, Tuscarawas",
     "slug": "kent-state-university-tuscarawas",
     "url": "http://www.kent.edu/tusc",
-    "milestones_url": ""
+    "milestones_url": "http://www.kent.edu/tusc/admissions"
   }
 },
 {
@@ -18646,7 +18646,7 @@
     "name": "Keuka College",
     "slug": "keuka-college",
     "url": "http://keuka.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://keuka.edu/apply"
   }
 },
 {
@@ -18656,7 +18656,7 @@
     "name": "King's College",
     "slug": "kings-college",
     "url": "http://www.kings.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.kings.edu/admissions/application-guidelines"
   }
 },
 {
@@ -18666,7 +18666,7 @@
     "name": "Knowledge Systems Institute",
     "slug": "knowledge-systems-institute",
     "url": "http://www.ksi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ksi.edu/index.php/admissions"
   }
 },
 {
@@ -18676,7 +18676,7 @@
     "name": "Knox College",
     "slug": "knox-college",
     "url": "http://www.knox.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.knox.edu/admission/apply-to-knox/first-year-applicants/when-to-apply"
   }
 },
 {
@@ -18686,7 +18686,7 @@
     "name": "Madonna University",
     "slug": "madonna-university",
     "url": "http://www.madonna.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.madonna.edu/admissions-and-aid/undergraduate/first-year-applicants"
   }
 },
 {
@@ -18696,7 +18696,7 @@
     "name": "Maharishi University of Management",
     "slug": "maharishi-university-of-management",
     "url": "https://www.mum.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mum.edu/admissions/faq/"
   }
 },
 {
@@ -18706,7 +18706,7 @@
     "name": "Maine College of Art",
     "slug": "maine-college-of-art",
     "url": "http://www.meca.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.meca.edu/admissions/undergraduate/how-to-apply/"
   }
 },
 {
@@ -18716,7 +18716,7 @@
     "name": "Manhattan Christian College",
     "slug": "manhattan-christian-college",
     "url": "http://www.mccks.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mccks.edu/high-school-checklist"
   }
 },
 {
@@ -18726,7 +18726,7 @@
     "name": "Manhattan College",
     "slug": "manhattan-college",
     "url": "http://manhattan.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://manhattan.edu/admissions/apply-now"
   }
 },
 {
@@ -18736,7 +18736,7 @@
     "name": "Manhattan School of Music",
     "slug": "manhattan-school-of-music",
     "url": "http://www.msmnyc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.msmnyc.edu/Admissions/Apply-To-MSM/Application-Dates-Deadlines"
   }
 },
 {
@@ -18756,7 +18756,7 @@
     "name": "Marine Corps University",
     "slug": "marine-corps-university",
     "url": "http://www.mcu.usmc.mil/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mcu.usmc.mil/"
   }
 },
 {
@@ -18766,7 +18766,7 @@
     "name": "Marist College",
     "slug": "marist-college",
     "url": "http://www.marist.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.marist.edu/admission/freshman/apply.html"
   }
 },
 {
@@ -18776,7 +18776,7 @@
     "name": "Marlboro College",
     "slug": "marlboro-college",
     "url": "http://www.marlboro.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.marlboro.edu/admissions/undergraduate/applying"
   }
 },
 {
@@ -18786,7 +18786,7 @@
     "name": "Marshall B. Ketchum University",
     "slug": "marshall-b-ketchum-university",
     "url": "http://www.ketchum.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ketchum.edu/index.php/admissions/ready-to-apply"
   }
 },
 {
@@ -18796,7 +18796,7 @@
     "name": "Martin Methodist College",
     "slug": "martin-methodist-college",
     "url": "http://www.martinmethodist.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.martinmethodist.edu/admissions/undergraduate"
   }
 },
 {
@@ -18806,7 +18806,7 @@
     "name": "Martin University",
     "slug": "martin-university",
     "url": "http://www.martin.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.martin.edu/how-to-apply-new-students"
   }
 },
 {
@@ -18816,7 +18816,7 @@
     "name": "Maryland University of Integrative Health",
     "slug": "maryland-university-of-integrative-health",
     "url": "http://www.muih.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.muih.edu/admissions/application-process"
   }
 },
 {
@@ -18826,7 +18826,7 @@
     "name": "Marylhurst University",
     "slug": "marylhurst-university",
     "url": "http://www.marylhurst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.marylhurst.edu/admissions/"
   }
 },
 {
@@ -18836,7 +18836,7 @@
     "name": "Marymount California University",
     "slug": "marymount-california-university",
     "url": "http://www.marymountcalifornia.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.marymountcalifornia.edu/admission"
   }
 },
 {
@@ -18846,7 +18846,7 @@
     "name": "Massachusetts School of Law",
     "slug": "massachusetts-school-of-law",
     "url": "http://www.mslaw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mslaw.edu/application-center/"
   }
 },
 {
@@ -18856,17 +18856,17 @@
     "name": "The Master's Seminary",
     "slug": "the-masters-seminary",
     "url": "http://www.tms.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.tms.edu/admissions/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1932,
   "fields": {
-    "name": "Maui College",
+    "name": "University of Hawaii, Maui College",
     "slug": "maui-college",
     "url": "http://maui.hawaii.edu",
-    "milestones_url": ""
+    "milestones_url": "http://maui.hawaii.edu/how-to-apply/admissions/"
   }
 },
 {
@@ -18876,37 +18876,37 @@
     "name": "Mayo Clinic College of Medicine",
     "slug": "mayo-clinic-college-of-medicine",
     "url": "http://www.mayo.edu/education/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mayo.edu/education/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1934,
   "fields": {
-    "name": "Mayo Clinic College of Medicine-Graduate School",
+    "name": "Mayo Clinic College of Medicine, Graduate School",
     "slug": "mayo-clinic-college-of-medicine-graduate-school",
     "url": "http://www.mayo.edu/mgs/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mayo.edu/mgs/application-process"
   }
 },
 {
   "model": "planner.school",
   "pk": 1935,
   "fields": {
-    "name": "Mayo Clinic College of Medicine-Medical School",
+    "name": "Mayo Clinic College of Medicine, Medical School",
     "slug": "mayo-clinic-college-of-medicine-medical-school",
     "url": "http://www.mayo.edu/mms/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mayo.edu/mms/programs/md/admissions-and-application-process"
   }
 },
 {
   "model": "planner.school",
   "pk": 1936,
   "fields": {
-    "name": "Mayo Clinic College of Medicine-School of Health Sciences",
+    "name": "Mayo Clinic College of Medicine, School of Health Sciences",
     "slug": "mayo-clinic-college-of-medicine-school-of-health-sciences",
     "url": "http://www.mayo.edu/mshs/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mayo.edu/mshs/admissions"
   }
 },
 {
