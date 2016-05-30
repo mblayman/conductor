@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  titleToken: 'Contact',
+
   model() {
     return this.store.createRecord('support-ticket');
   },
