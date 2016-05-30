@@ -18916,7 +18916,7 @@
     "name": "Mayville State University",
     "slug": "mayville-state-university",
     "url": "http://www.mayvillestate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mayvillestate.edu/prospective-students/apply-now"
   }
 },
 {
@@ -18926,7 +18926,7 @@
     "name": "McCormick Theological Seminary",
     "slug": "mccormick-theological-seminary",
     "url": "http://mccormick.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mccormick.edu/content/apply-today"
   }
 },
 {
@@ -18936,7 +18936,7 @@
     "name": "Medical College of Wisconsin",
     "slug": "medical-college-of-wisconsin",
     "url": "http://www.mcw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mcw.edu/Medical-School/Admissions/Milwaukee-Campus/Apply-MCW-Milwaukee.htm"
   }
 },
 {
@@ -18946,7 +18946,7 @@
     "name": "Medical University of South Carolina",
     "slug": "medical-university-of-south-carolina",
     "url": "http://www.musc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://academicdepartments.musc.edu/com/admissions/applying_college/timeline.htm"
   }
 },
 {
@@ -18956,7 +18956,7 @@
     "name": "Meharry Medical College",
     "slug": "meharry-medical-college",
     "url": "http://www.mmc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mmc.edu/prospectivestudents/admissions/school-of-medicine/index.html"
   }
 },
 {
@@ -18966,7 +18966,7 @@
     "name": "Memphis Theological Seminary",
     "slug": "memphis-theological-seminary",
     "url": "http://www.memphisseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://memphisseminary.edu/admissions/10229-2/"
   }
 },
 {
@@ -18976,7 +18976,7 @@
     "name": "Mercy College",
     "slug": "mercy-college",
     "url": "http://www.mercy.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mercy.edu/admissions/first-time-freshmen"
   }
 },
 {
@@ -18986,17 +18986,17 @@
     "name": "Mercy College of Health Sciences",
     "slug": "mercy-college-of-health-sciences",
     "url": "http://www.mchs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mchs.edu/apply.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1945,
   "fields": {
-    "name": "Mercy College of Northwest Ohio",
-    "slug": "mercy-college-of-northwest-ohio",
+    "name": "Mercy College of Ohio",
+    "slug": "mercy-college-of-ohio",
     "url": "http://www.mercycollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mercycollege.edu/admissions/apply-now"
   }
 },
 {
@@ -19006,7 +19006,7 @@
     "name": "Merrimack College",
     "slug": "merrimack-college",
     "url": "http://www.merrimack.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.merrimack.edu/admission/undergraduate/deadlines.php"
   }
 },
 {
@@ -19016,7 +19016,7 @@
     "name": "Methodist Theological School in Ohio",
     "slug": "methodist-theological-school-in-ohio",
     "url": "http://www.mtso.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mtso.edu/admissions/apply/"
   }
 },
 {
@@ -19026,7 +19026,7 @@
     "name": "Metropolitan College of New York",
     "slug": "metropolitan-college-of-new-york",
     "url": "http://www.mcny.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mcny.edu/admissions/apply1.php"
   }
 },
 {
@@ -19036,7 +19036,7 @@
     "name": "Metropolitan State University",
     "slug": "metropolitan-state-university",
     "url": "http://www.metrostate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.metrostate.edu/admissions/undergraduate/first-time-freshmen"
   }
 },
 {
@@ -19046,7 +19046,7 @@
     "name": "MGH Institute of Health Professions",
     "slug": "mgh-institute-of-health-professions",
     "url": "http://www.mghihp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mghihp.edu/prospective-students/apply/"
   }
 },
 {
@@ -19056,7 +19056,7 @@
     "name": "Miami Dade College",
     "slug": "miami-dade-college",
     "url": "http://www.mdc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mdc.edu/admissions/"
   }
 },
 {
@@ -19066,17 +19066,17 @@
     "name": "Miami International University of Art & Design",
     "slug": "miami-international-university-of-art-design",
     "url": "http://www.artinstitutes.edu/miami/",
-    "milestones_url": ""
+    "milestones_url": "https://www.artinstitutes.edu/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 1953,
   "fields": {
-    "name": "Miami University-Regional Campuses",
+    "name": "Miami University, Regional Locations",
     "slug": "miami-university-regional-campuses",
     "url": "http://www.regionals.miamioh.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://miamioh.edu/regionals/admission/high-school-students/ftic-application-checklist/index.html"
   }
 },
 {
@@ -19086,7 +19086,7 @@
     "name": "Michigan School of Professional Psychology",
     "slug": "michigan-school-of-professional-psychology",
     "url": "http://mispp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mispp.edu/admissions/faqs/"
   }
 },
 {
@@ -19096,7 +19096,7 @@
     "name": "Mid-America Baptist Theological Seminary",
     "slug": "mid-america-baptist-theological-seminary",
     "url": "http://www.mabts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mabts.edu/admissions/application-process/admissions-policies"
   }
 },
 {
@@ -19106,7 +19106,7 @@
     "name": "Mid-America Christian University",
     "slug": "mid-america-christian-university",
     "url": "http://www.macu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://go.macu.edu/en/"
   }
 },
 {
@@ -19116,7 +19116,7 @@
     "name": "Middle Georgia State University",
     "slug": "middle-georgia-state-university",
     "url": "http://www.mga.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mga.edu/admissions/First-time-students.aspx"
   }
 },
 {
@@ -19126,7 +19126,7 @@
     "name": "Middle Tennessee School of Anesthesia",
     "slug": "middle-tennessee-school-of-anesthesia",
     "url": "http://www.mtsa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.mtsa.edu/Apply_Online/Masters"
   }
 },
 {
@@ -19136,7 +19136,7 @@
     "name": "Midstate College",
     "slug": "midstate-college",
     "url": "http://www.midstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.midstate.edu/admissions/"
   }
 },
 {
@@ -19146,7 +19146,7 @@
     "name": "Midwestern University",
     "slug": "midwestern-university",
     "url": "http://www.midwestern.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.midwestern.edu/programs_and_admission/admissions_overview.html"
   }
 },
 {
@@ -19156,17 +19156,7 @@
     "name": "Miles College",
     "slug": "miles-college",
     "url": "http://www.miles.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1962,
-  "fields": {
-    "name": "Miller College",
-    "slug": "miller-college",
-    "url": "http://www.millercollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://miles.edu/admissions/1/Admissions-Procedures-and-Requirements-"
   }
 },
 {
@@ -19176,7 +19166,7 @@
     "name": "Milwaukee Institute of Art & Design",
     "slug": "milwaukee-institute-of-art-design",
     "url": "http://www.miad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.miad.edu/admissions/1st-time-freshman/application-process"
   }
 },
 {
@@ -19186,7 +19176,7 @@
     "name": "Missouri Western State University",
     "slug": "missouri-western-state-university",
     "url": "http://www.missouriwestern.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.missouriwestern.edu/admissions/deadlines/"
   }
 },
 {
@@ -19196,7 +19186,7 @@
     "name": "Mitchell College",
     "slug": "mitchell-college",
     "url": "http://www.mitchell.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://mitchell.edu/apply-now/"
   }
 },
 {
@@ -19206,17 +19196,17 @@
     "name": "Monroe College",
     "slug": "monroe-college",
     "url": "http://www.monroecollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.monroecollege.edu/Admissions-and-Aid/Admissions/High-School/"
   }
 },
 {
   "model": "planner.school",
   "pk": 1967,
   "fields": {
-    "name": "Montana State University-Billings",
+    "name": "Montana State University, Billings",
     "slug": "montana-state-university-billings",
     "url": "http://www.msubillings.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.msubillings.edu/future/checklist_ns_fall.htm"
   }
 },
 {
@@ -19226,7 +19216,7 @@
     "name": "Montserrat College of Art",
     "slug": "montserrat-college-of-art",
     "url": "http://www.montserrat.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.montserrat.edu/admissions/"
   }
 },
 {
@@ -19236,7 +19226,7 @@
     "name": "Moravian College",
     "slug": "moravian-college",
     "url": "http://www.moravian.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.moravian.edu/apply"
   }
 },
 {
@@ -19246,7 +19236,7 @@
     "name": "Morehouse School of Medicine",
     "slug": "morehouse-school-of-medicine",
     "url": "http://www.msm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.msm.edu/Admissions/index.php"
   }
 },
 {
@@ -19256,7 +19246,7 @@
     "name": "Morris College",
     "slug": "morris-college",
     "url": "http://www.morris.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.morris.edu/admissions"
   }
 },
 {
@@ -19266,7 +19256,7 @@
     "name": "Mount Angel Seminary",
     "slug": "mount-angel-seminary",
     "url": "https://www.mountangelabbey.org/seminary/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mountangelabbey.org/admission/"
   }
 },
 {
@@ -19276,7 +19266,7 @@
     "name": "Mount Holyoke College",
     "slug": "mount-holyoke-college",
     "url": "https://www.mtholyoke.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.mtholyoke.edu/admission/firstyear"
   }
 },
 {
@@ -19291,32 +19281,12 @@
 },
 {
   "model": "planner.school",
-  "pk": 1975,
-  "fields": {
-    "name": "Mount Washington College",
-    "slug": "mount-washington-college",
-    "url": "http://www.mountwashington.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1976,
-  "fields": {
-    "name": "Mountain State University",
-    "slug": "mountain-state-university",
-    "url": "http://www.mountainstate.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
   "pk": 1977,
   "fields": {
     "name": "Pacific Northwest College of Art",
     "slug": "pacific-northwest-college-of-art",
     "url": "http://www.pnca.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://pnca.edu/admissions/reqs/c/bfa_apply"
   }
 },
 {
@@ -19326,7 +19296,7 @@
     "name": "Pacific Oaks College",
     "slug": "pacific-oaks-college",
     "url": "http://www.pacificoaks.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pacificoaks.edu/Admissions/Admissions_Requirements/Bachelors_Completion_Requirements"
   }
 },
 {
@@ -19336,7 +19306,7 @@
     "name": "Pacific School of Religion",
     "slug": "pacific-school-of-religion",
     "url": "http://www.psr.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.psr.edu/admissions/apply-now/"
   }
 },
 {
@@ -19346,7 +19316,7 @@
     "name": "Pacifica Graduate Institute",
     "slug": "pacifica-graduate-institute",
     "url": "http://www.pacifica.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pacifica.edu/admissions/admissions-faqs"
   }
 },
 {
@@ -19356,7 +19326,7 @@
     "name": "Palm Beach State College",
     "slug": "palm-beach-state-college",
     "url": "http://www.palmbeachstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.palmbeachstate.edu/admissions/"
   }
 },
 {
@@ -19366,7 +19336,7 @@
     "name": "Palmer College of Chiropractic",
     "slug": "palmer-college-of-chiropractic",
     "url": "http://www.palmer.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.palmer.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -19376,7 +19346,7 @@
     "name": "Palo Alto University",
     "slug": "palo-alto-university",
     "url": "http://www.paloaltou.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.paloaltou.edu/admissions"
   }
 },
 {
@@ -19386,7 +19356,7 @@
     "name": "Pardee RAND Graduate School",
     "slug": "pardee-rand-graduate-school",
     "url": "http://www.prgs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.prgs.edu/admissions/application.html"
   }
 },
 {
@@ -19396,7 +19366,7 @@
     "name": "Parker University",
     "slug": "parker-university",
     "url": "http://www.parker.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://parker.edu/tuition-financial-aid/"
   }
 },
 {
@@ -19406,7 +19376,7 @@
     "name": "Patten University",
     "slug": "patten-university",
     "url": "http://patten.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://patten.edu/admissions/admissions-requirements/"
   }
 },
 {
@@ -19416,7 +19386,7 @@
     "name": "Peirce College",
     "slug": "peirce-college",
     "url": "http://www.peirce.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.peirce.edu/admissions/applying-to-peirce"
   }
 },
 {
@@ -19426,7 +19396,7 @@
     "name": "Peninsula College",
     "slug": "peninsula-college",
     "url": "http://www.pencol.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pencol.edu/GetStarted"
   }
 },
 {
@@ -19436,7 +19406,7 @@
     "name": "Penn State Law",
     "slug": "penn-state-law",
     "url": "http://pennstatelaw.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://pennstatelaw.psu.edu/admissions/jd-admissions/application-requirements"
   }
 },
 {
@@ -19446,7 +19416,7 @@
     "name": "Pennsylvania College of Art & Design",
     "slug": "pennsylvania-college-of-art-design",
     "url": "http://pcad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://pcad.edu/admissions/faq/"
   }
 },
 {
@@ -19456,37 +19426,27 @@
     "name": "Pennsylvania College of Technology",
     "slug": "pennsylvania-college-of-technology",
     "url": "http://www.pct.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.pct.edu/admissions/applications.htm"
   }
 },
 {
   "model": "planner.school",
   "pk": 1992,
   "fields": {
-    "name": "Pennsylvania State University-Dickinson School of Law",
-    "slug": "pennsylvania-state-university-dickinson-school-of-law",
+    "name": "Pennsylvania State University, Dickinson Law",
+    "slug": "pennsylvania-state-university-dickinson-law",
     "url": "https://dickinsonlaw.psu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://dickinsonlaw.psu.edu/admissions-aid/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 1993,
   "fields": {
-    "name": "Pennsylvania State University-Great Valley School of Graduate Professional Studies",
-    "slug": "pennsylvania-state-university-great-valley-school-of-graduate-professional-studies",
+    "name": "Pennsylvania State University, Great Valley",
+    "slug": "pennsylvania-state-university-great-valley",
     "url": "http://www.sgps.psu.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 1994,
-  "fields": {
-    "name": "Pennsylvania State University-Milton S. Hershey Medical Center",
-    "slug": "pennsylvania-state-university-milton-s-hershey-medical-center",
-    "url": "http://www.pennstatehershey.org/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sgps.psu.edu/Admissions/deadlines.htm"
   }
 },
 {
@@ -19496,7 +19456,7 @@
     "name": "Pensacola State College",
     "slug": "pensacola-state-college",
     "url": "http://www.pensacolastate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pensacolastate.edu/admissions/"
   }
 },
 {
@@ -19506,7 +19466,7 @@
     "name": "Pentecostal Theological Seminary",
     "slug": "pentecostal-theological-seminary",
     "url": "http://www.ptseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ptseminary.edu/admissions/"
   }
 },
 {
@@ -19516,7 +19476,7 @@
     "name": "Peru State College",
     "slug": "peru-state-college",
     "url": "http://www.peru.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.peru.edu/admissions/requirements/freshman"
   }
 },
 {
@@ -19526,7 +19486,7 @@
     "name": "Philadelphia College of Osteopathic Medicine",
     "slug": "philadelphia-college-of-osteopathic-medicine",
     "url": "http://www.pcom.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pcom.edu/admissions/"
   }
 },
 {
@@ -19536,7 +19496,7 @@
     "name": "Philander Smith College",
     "slug": "philander-smith-college",
     "url": "http://www.philander.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.philander.edu/future-students/admissions.aspx"
   }
 },
 {
@@ -19546,7 +19506,7 @@
     "name": "Phillips Graduate Institute",
     "slug": "phillips-graduate-institute",
     "url": "http://www.pgi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pgu.edu/application-process.html"
   }
 },
 {
@@ -19556,7 +19516,7 @@
     "name": "Phillips Theological Seminary",
     "slug": "phillips-theological-seminary",
     "url": "http://ptstulsa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ptstulsa.edu/HowtoApply"
   }
 },
 {
@@ -19566,7 +19526,7 @@
     "name": "Phillips University",
     "slug": "phillips-university",
     "url": "http://www.pulf.org/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pulf.org/index/index.php?top=1"
   }
 },
 {
@@ -19576,7 +19536,7 @@
     "name": "Pillar College",
     "slug": "pillar-college",
     "url": "http://pillar.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://pillar.edu/department-of-admissions/"
   }
 },
 {
@@ -19586,7 +19546,7 @@
     "name": "Pittsburgh Theological Seminary",
     "slug": "pittsburgh-theological-seminary",
     "url": "http://www.pts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.pts.edu/How_to_Apply"
   }
 },
 {
@@ -19596,7 +19556,7 @@
     "name": "Polk State College",
     "slug": "polk-state-college",
     "url": "http://www.polk.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.polk.edu/admission-aid/"
   }
 },
 {
@@ -19606,7 +19566,7 @@
     "name": "Ponce Health Sciences University",
     "slug": "ponce-health-sciences-university",
     "url": "http://www.psm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.psm.edu/future-students/"
   }
 },
 {
@@ -19616,17 +19576,7 @@
     "name": "Pontifical College Josephinum",
     "slug": "pontifical-college-josephinum",
     "url": "http://www.pcj.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2008,
-  "fields": {
-    "name": "Pontificia Universidad Cat\u00f3lica de Puerto Rico",
-    "slug": "pontificia-universidad-catolica-de-puerto-rico",
-    "url": "http://www.pucpr.edu",
-    "milestones_url": ""
+    "milestones_url": "http://www.pcj.edu/admissions/application-forms/"
   }
 },
 {
@@ -19636,7 +19586,7 @@
     "name": "Post University",
     "slug": "post-university",
     "url": "http://www.post.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.post.edu/admissions/oncampus-students/freshmen"
   }
 },
 {
@@ -19646,7 +19596,7 @@
     "name": "Princeton Theological Seminary",
     "slug": "princeton-theological-seminary",
     "url": "http://www.ptsem.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.ptsem.edu/Student_Life/Admissions_and_Financial_Aid/Admissions/"
   }
 },
 {
@@ -19656,87 +19606,87 @@
     "name": "Principia College",
     "slug": "principia-college",
     "url": "http://www.principiacollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.principiacollege.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2012,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Anderson",
+    "name": "Purdue Polytechnic Institute, Anderson",
     "slug": "purdue-polytechnic-institute-anderson",
     "url": "https://polytechnic.purdue.edu/anderson",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/anderson/admissions/apply-at-anderson"
   }
 },
 {
   "model": "planner.school",
   "pk": 2013,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Columbus",
+    "name": "Purdue Polytechnic Institute, Columbus",
     "slug": "purdue-polytechnic-institute-columbus",
     "url": "https://polytechnic.purdue.edu/columbus",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/columbus/admissions/apply-at-columbus"
   }
 },
 {
   "model": "planner.school",
   "pk": 2014,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Kokomo",
+    "name": "Purdue Polytechnic Institute, Kokomo",
     "slug": "purdue-polytechnic-institute-kokomo",
     "url": "https://polytechnic.purdue.edu/kokomo",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/kokomo/admissions/apply-at-kokomo"
   }
 },
 {
   "model": "planner.school",
   "pk": 2015,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Lafayette",
+    "name": "Purdue Polytechnic Institute, Lafayette",
     "slug": "purdue-polytechnic-institute-lafayette",
     "url": "https://polytechnic.purdue.edu/lafayette",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/lafayette/admissions/apply-at-lafayette"
   }
 },
 {
   "model": "planner.school",
   "pk": 2016,
   "fields": {
-    "name": "Purdue Polytechnic Institute-New Albany",
+    "name": "Purdue Polytechnic Institute, New Albany",
     "slug": "purdue-polytechnic-institute-new-albany",
     "url": "https://polytechnic.purdue.edu/new-albany",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/new-albany/admissions/apply-at-new-albany"
   }
 },
 {
   "model": "planner.school",
   "pk": 2017,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Richmond",
+    "name": "Purdue Polytechnic Institute, Richmond",
     "slug": "purdue-polytechnic-institute-richmond",
     "url": "https://polytechnic.purdue.edu/richmond",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/richmond/admissions/apply-at-richmond"
   }
 },
 {
   "model": "planner.school",
   "pk": 2018,
   "fields": {
-    "name": "Purdue Polytechnic Institute-South Bend",
+    "name": "Purdue Polytechnic Institute, South Bend",
     "slug": "purdue-polytechnic-institute-south-bend",
     "url": "https://polytechnic.purdue.edu/south-bend",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/south-bend/admissions/apply-at-south-bend"
   }
 },
 {
   "model": "planner.school",
   "pk": 2019,
   "fields": {
-    "name": "Purdue Polytechnic Institute-Vincennes",
+    "name": "Purdue Polytechnic Institute, Vincennes",
     "slug": "purdue-polytechnic-institute-vincennes",
     "url": "https://polytechnic.purdue.edu/vincennes",
-    "milestones_url": ""
+    "milestones_url": "https://polytechnic.purdue.edu/vincennes/admissions/apply-at-vincennes"
   }
 },
 {
@@ -19746,17 +19696,17 @@
     "name": "Sacred Heart Major Seminary",
     "slug": "sacred-heart-major-seminary",
     "url": "http://www.shms.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.shms.edu/content/admission-deadlines"
   }
 },
 {
   "model": "planner.school",
   "pk": 2021,
   "fields": {
-    "name": "Sacred Heart Seminary & School of Theology",
-    "slug": "sacred-heart-seminary-school-of-theology",
+    "name": "Sacred Heart Seminary and School of Theology",
+    "slug": "sacred-heart-seminary-and-school-of-theology",
     "url": "http://www.shsst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shsst.edu/programs/master-divinity.htm#admissions"
   }
 },
 {
@@ -19766,7 +19716,7 @@
     "name": "Sacred Heart University",
     "slug": "sacred-heart-university",
     "url": "http://www.sacredheart.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sacredheart.edu/admissions/undergraduateadmissions/applynow/importantdatesdeadlines/"
   }
 },
 {
@@ -19776,17 +19726,17 @@
     "name": "The Sage Colleges",
     "slug": "the-sage-colleges",
     "url": "http://www.sage.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sage.edu/admission/undergraduate/apply/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2024,
   "fields": {
-    "name": "Saint Andrews University",
-    "slug": "saint-andrews-university",
+    "name": "St. Andrews University",
+    "slug": "st-andrews-university",
     "url": "http://www.sa.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.sa.edu/admissions"
   }
 },
 {
@@ -19796,7 +19746,7 @@
     "name": "Saint Anthony College of Nursing",
     "slug": "saint-anthony-college-of-nursing",
     "url": "http://www.sacn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sacn.edu/undergraduate/admissions/bsn.html"
   }
 },
 {
@@ -19806,17 +19756,17 @@
     "name": "Saint Augustine's University",
     "slug": "saint-augustines-university",
     "url": "http://www.st-aug.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.st-aug.edu/admission-requirements.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 2027,
   "fields": {
-    "name": "Saint Catharine College",
-    "slug": "saint-catharine-college",
+    "name": "St. Catharine College",
+    "slug": "st-catharine-college",
     "url": "http://www.sccky.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sccky.edu/admissions/first-year.php"
   }
 },
 {
@@ -19826,7 +19776,7 @@
     "name": "Saint Charles Borromeo Seminary",
     "slug": "saint-charles-borromeo-seminary",
     "url": "http://www.scs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.scs.edu/apply"
   }
 },
 {
@@ -19836,47 +19786,47 @@
     "name": "Saint Francis Medical Center College of Nursing",
     "slug": "saint-francis-medical-center-college-of-nursing",
     "url": "http://www.sfmccon.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sfmccon.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2030,
   "fields": {
-    "name": "Saint Gregory the Great Seminary",
-    "slug": "saint-gregory-the-great-seminary",
+    "name": "St. Gregory the Great Seminary",
+    "slug": "st-gregory-the-great-seminary",
     "url": "http://www.stgregoryseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stgregoryseminary.edu/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2031,
   "fields": {
-    "name": "Saint John Vianney College Seminary",
-    "slug": "saint-john-vianney-college-seminary",
+    "name": "St. John Vianney College Seminary",
+    "slug": "st-john-vianney-college-seminary",
     "url": "http://www.sjvcs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjvcs.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2032,
   "fields": {
-    "name": "Saint John's College-Annapolis",
-    "slug": "saint-johns-college-annapolis",
+    "name": "St. John's College, Annapolis",
+    "slug": "st-johns-college-annapolis",
     "url": "http://www.sjc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjc.edu/admissions-and-aid/undergraduate-admissions/apply"
   }
 },
 {
   "model": "planner.school",
   "pk": 2033,
   "fields": {
-    "name": "Saint John's College",
-    "slug": "saint-johns-college",
+    "name": "St. John's College",
+    "slug": "st-johns-college",
     "url": "http://www.stjohnscollegespringfield.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stjohnscollegespringfield.edu/College/Admissions.aspx"
   }
 },
 {
@@ -19903,10 +19853,10 @@
   "model": "planner.school",
   "pk": 2036,
   "fields": {
-    "name": "Saint Johns River State College",
-    "slug": "saint-johns-river-state-college",
+    "name": "St. Johns River State College",
+    "slug": "st-johns-river-state-college",
     "url": "http://www.sjrstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjrstate.edu/admissions.html"
   }
 },
 {
@@ -19916,7 +19866,7 @@
     "name": "Saint Joseph Seminary College",
     "slug": "saint-joseph-seminary-college",
     "url": "http://www.sjasc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjasc.edu/admissions.php"
   }
 },
 {
@@ -19933,20 +19883,20 @@
   "model": "planner.school",
   "pk": 2039,
   "fields": {
-    "name": "Saint Joseph's Seminary",
-    "slug": "saint-josephs-seminary",
+    "name": "St. Joseph's Seminary",
+    "slug": "st-josephs-seminary",
     "url": "http://www.dunwoodie.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.dunwoodie.edu/index.php/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 2040,
   "fields": {
-    "name": "Saint Lawrence University",
-    "slug": "saint-lawrence-university",
+    "name": "St. Lawrence University",
+    "slug": "st-lawrence-university",
     "url": "http://www.stlawu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stlawu.edu/admissions/first-year-student-deadlines"
   }
 },
 {
