@@ -21,8 +21,8 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "broccoli-funnel": "^1.0.1",
-    "ember-ajax": "0.7.1",
-    "ember-cli": "2.5.0",
+    "ember-ajax": "^2.0.1",
+    "ember-cli": "2.6.0",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
@@ -42,7 +42,7 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-cp-validations": "2.8.0",
-    "ember-data": "^2.5.0",
+    "ember-data": "^2.6.0",
     "ember-data-factory-guy": "2.6.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
@@ -50,6 +50,7 @@
     "ember-simple-auth": "1.1.0",
     "ember-simple-auth-token": "1.1.1",
     "ember-truth-helpers": "1.2.0",
+    "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1",
     "semantic-ui-less": "2.1.8"
   }
