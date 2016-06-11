@@ -41,7 +41,7 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-cp-validations": "2.8.0",
+    "ember-cp-validations": "2.9.3",
     "ember-data": "^2.6.0",
     "ember-data-factory-guy": "2.6.6",
     "ember-export-application-global": "^1.0.5",
@@ -50,7 +50,6 @@
     "ember-simple-auth": "1.1.0",
     "ember-simple-auth-token": "1.1.1",
     "ember-truth-helpers": "1.2.0",
-    "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1",
     "semantic-ui-less": "2.1.8"
   }

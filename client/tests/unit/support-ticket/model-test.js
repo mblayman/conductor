@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('support-ticket', 'Unit | Model | support ticket', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['validator:format', 'validator:presence']
 });
 
 test('it exists', function(assert) {
