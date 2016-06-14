@@ -19906,17 +19906,17 @@
     "name": "Saint Leo University",
     "slug": "saint-leo-university",
     "url": "http://www.saintleo.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.saintleo.edu/admissions/undergraduate/how-to-apply.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 2042,
   "fields": {
-    "name": "Saint Luke's College",
-    "slug": "saint-lukes-college",
+    "name": "St. Luke's College",
+    "slug": "st-lukes-college",
     "url": "http://www.stlukescollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stlukescollege.edu/apply-for-admission.aspx"
   }
 },
 {
@@ -19926,7 +19926,7 @@
     "name": "Saint Luke's College of Health Sciences",
     "slug": "saint-lukes-college-of-health-sciences",
     "url": "http://saintlukescollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://saintlukescollege.edu/admissions/application-deadlines"
   }
 },
 {
@@ -19936,7 +19936,7 @@
     "name": "Saint Mary Seminary & Graduate School of Theology",
     "slug": "saint-mary-seminary-graduate-school-of-theology",
     "url": "http://www.stmarysem.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stmarysem.edu/application-form/"
   }
 },
 {
@@ -19946,7 +19946,7 @@
     "name": "Saint Mary's Seminary & University",
     "slug": "saint-marys-seminary-university",
     "url": "http://www.stmarys.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stmarys.edu/seminary/admissions/admission-requirements/"
   }
 },
 {
@@ -19956,17 +19956,17 @@
     "name": "Saint Meinrad Seminary & School of Theology",
     "slug": "saint-meinrad-seminary-school-of-theology",
     "url": "http://www.saintmeinrad.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.saintmeinrad.edu/priesthood-formation/admissions-financial-information/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2047,
   "fields": {
-    "name": "Saint Patrick's Seminary & University",
-    "slug": "saint-patricks-seminary-university",
+    "name": "St. Patrick's Seminary & University",
+    "slug": "st-patricks-seminary-university",
     "url": "http://www.stpatricksseminary.org/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stpsu.edu/academic/academic-programs"
   }
 },
 {
@@ -19976,37 +19976,27 @@
     "name": "Saint Paul School of Theology",
     "slug": "saint-paul-school-of-theology",
     "url": "http://www.spst.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.spst.edu/tuition-and-fees/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2049,
   "fields": {
-    "name": "Saint Petersburg College",
-    "slug": "saint-petersburg-college",
+    "name": "St. Petersburg College",
+    "slug": "st-petersburg-college",
     "url": "http://www.spcollege.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2050,
-  "fields": {
-    "name": "Saint Vincent de Paul Regional Seminary",
-    "slug": "saint-vincent-de-paul-regional-seminary",
-    "url": "http://www.svdp.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.spcollege.edu/calendar/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2051,
   "fields": {
-    "name": "Saint Vincent's College",
-    "slug": "saint-vincents-college",
+    "name": "St. Vincent's College",
+    "slug": "st-vincents-college",
     "url": "http://www.stvincentscollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stvincentscollege.edu/admissions/application-procedure/"
   }
 },
 {
@@ -20016,7 +20006,7 @@
     "name": "Salem International University",
     "slug": "salem-international-university",
     "url": "http://www.salemu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://salemu.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -20026,7 +20016,7 @@
     "name": "Salish Kootenai College",
     "slug": "salish-kootenai-college",
     "url": "http://www.skc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ecampus.skc.edu/ICS/Admissions/Apply_Online.jnz"
   }
 },
 {
@@ -20036,7 +20026,7 @@
     "name": "Salus University",
     "slug": "salus-university",
     "url": "http://www.salus.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.salus.edu/Admissions/Application-Process.aspx"
   }
 },
 {
@@ -20046,7 +20036,7 @@
     "name": "Samuel Merritt University",
     "slug": "samuel-merritt-university",
     "url": "http://www.samuelmerritt.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.samuelmerritt.edu/admission/application"
   }
 },
 {
@@ -20056,7 +20046,7 @@
     "name": "San Francisco Conservatory of Music",
     "slug": "san-francisco-conservatory-of-music",
     "url": "http://www.sfcm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sfcm.edu/application-timeline"
   }
 },
 {
@@ -20066,7 +20056,7 @@
     "name": "San Francisco Theological Seminary",
     "slug": "san-francisco-theological-seminary",
     "url": "http://sfts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://sfts.edu/admissions-aid/quick-facts/#toggle-id-7"
   }
 },
 {
@@ -20076,7 +20066,7 @@
     "name": "San Joaquin College of Law",
     "slug": "san-joaquin-college-of-law",
     "url": "http://www.sjcl.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjcl.edu/index.php/prospective-students/why-sjcl/why-sjcl"
   }
 },
 {
@@ -20086,7 +20076,7 @@
     "name": "San Jos\u00e9 State University",
     "slug": "san-jose-state-university",
     "url": "http://www.sjsu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sjsu.edu/admissions/"
   }
 },
 {
@@ -20096,7 +20086,7 @@
     "name": "San Juan Bautista School of Medicine",
     "slug": "san-juan-bautista-school-of-medicine",
     "url": "http://www.sanjuanbautista.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sanjuanbautista.edu/school/md-program/timetable.html"
   }
 },
 {
@@ -20106,17 +20096,17 @@
     "name": "Santa Fe College",
     "slug": "santa-fe-college",
     "url": "http://www.sfcollege.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sfcollege.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2062,
   "fields": {
-    "name": "Santa Fe University of Art & Design",
-    "slug": "santa-fe-university-of-art-design",
+    "name": "Santa Fe University of Art and Design",
+    "slug": "santa-fe-university-of-art-and-design",
     "url": "http://santafeuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://santafeuniversity.edu/admissions/first-year/"
   }
 },
 {
@@ -20126,7 +20116,7 @@
     "name": "Sarah Lawrence College",
     "slug": "sarah-lawrence-college",
     "url": "http://www.sarahlawrence.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.sarahlawrence.edu/admission/apply/first-year.html"
   }
 },
 {
@@ -20136,17 +20126,7 @@
     "name": "Saybrook University",
     "slug": "saybrook-university",
     "url": "http://www.saybrook.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2065,
-  "fields": {
-    "name": "School for International Training",
-    "slug": "school-for-international-training",
-    "url": "http://www.sit.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.saybrook.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -20156,37 +20136,7 @@
     "name": "School of Visual Arts",
     "slug": "school-of-visual-arts",
     "url": "http://www.sva.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2067,
-  "fields": {
-    "name": "Scripps Research Institute",
-    "slug": "scripps-research-institute",
-    "url": "http://www.scripps.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2068,
-  "fields": {
-    "name": "Seminario Evang\u00e9lico de Puerto Rico",
-    "slug": "seminario-evangelico-de-puerto-rico",
-    "url": "http://www.se-pr.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2069,
-  "fields": {
-    "name": "Seminary of the Immaculate Conception",
-    "slug": "seminary-of-the-immaculate-conception",
-    "url": "http://www.icseminary.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sva.edu/quick_links/apply-to-sva"
   }
 },
 {
@@ -20196,7 +20146,7 @@
     "name": "Seminary of the Southwest",
     "slug": "seminary-of-the-southwest",
     "url": "http://ssw.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://ssw.edu/admissions/application-deadlines/"
   }
 },
 {
@@ -20206,7 +20156,7 @@
     "name": "Seminole State College of Florida",
     "slug": "seminole-state-college-of-florida",
     "url": "http://www.seminolestate.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.seminolestate.edu/future-students/how/"
   }
 },
 {
@@ -20216,7 +20166,7 @@
     "name": "Shaw University",
     "slug": "shaw-university",
     "url": "http://www.shawu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shawu.edu/FreshmanAdmissions/?section=prospective-students"
   }
 },
 {
@@ -20226,7 +20176,7 @@
     "name": "Shawnee State University",
     "slug": "shawnee-state-university",
     "url": "http://www.shawnee.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shawnee.edu/offices/admission/admission-deadlines.aspx"
   }
 },
 {
@@ -20236,7 +20186,7 @@
     "name": "Sherman College of Chiropractic",
     "slug": "sherman-college-of-chiropractic",
     "url": "http://www.sherman.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sherman.edu/?page_id=2378"
   }
 },
 {
@@ -20246,7 +20196,7 @@
     "name": "Shimer College",
     "slug": "shimer-college",
     "url": "http://www.shimer.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.shimer.edu/admissions/how-to-apply/"
   }
 },
 {
