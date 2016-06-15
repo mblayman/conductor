@@ -20206,7 +20206,7 @@
     "name": "Sierra Nevada College",
     "slug": "sierra-nevada-college",
     "url": "http://www.sierranevada.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sierranevada.edu/admissions/undergrad/"
   }
 },
 {
@@ -20216,7 +20216,7 @@
     "name": "Sinte Gleska University",
     "slug": "sinte-gleska-university",
     "url": "http://www.sintegleska.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sintegleska.edu/academic-calendar--class-schedule.html"
   }
 },
 {
@@ -20226,47 +20226,7 @@
     "name": "Sioux Falls Seminary",
     "slug": "sioux-falls-seminary",
     "url": "https://sfseminary.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2079,
-  "fields": {
-    "name": "Sistema Universitario Ana G. M\u00e9ndez",
-    "slug": "sistema-universitario-ana-g-mendez",
-    "url": "http://www.suagm.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2080,
-  "fields": {
-    "name": "Universidad del Este",
-    "slug": "universidad-del-este",
-    "url": "http://www.suagm.edu/une/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2081,
-  "fields": {
-    "name": "Universidad Metropolitana",
-    "slug": "universidad-metropolitana",
-    "url": "http://www.suagm.edu/umet/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2082,
-  "fields": {
-    "name": "Universidad del Turabo",
-    "slug": "universidad-del-turabo",
-    "url": "http://www.suagm.edu/turabo/",
-    "milestones_url": ""
+    "milestones_url": "https://sfseminary.edu/prospective-students/how-to-apply/"
   }
 },
 {
@@ -20276,7 +20236,7 @@
     "name": "Sitting Bull College",
     "slug": "sitting-bull-college",
     "url": "http://sittingbull.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://sittingbull.edu/admissions/"
   }
 },
 {
@@ -20286,7 +20246,7 @@
     "name": "Smith College",
     "slug": "smith-college",
     "url": "http://www.smith.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.smith.edu/admission/firstyear-dates.php"
   }
 },
 {
@@ -20296,7 +20256,7 @@
     "name": "Sofia University",
     "slug": "sofia-university",
     "url": "http://www.sofia.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sofia.edu/admissions/apply/"
   }
 },
 {
@@ -20306,7 +20266,7 @@
     "name": "South College",
     "slug": "south-college",
     "url": "http://www.southcollegetn.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.southcollegetn.edu/admissions/apply"
   }
 },
 {
@@ -20316,7 +20276,7 @@
     "name": "South Florida Bible College & Theological Seminary",
     "slug": "south-florida-bible-college-theological-seminary",
     "url": "http://sfbc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://sfbc.edu/admissions-3/"
   }
 },
 {
@@ -20326,7 +20286,7 @@
     "name": "South Florida State College",
     "slug": "south-florida-state-college",
     "url": "http://www.southflorida.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.southflorida.edu/future-students/apply/steps-enrollment"
   }
 },
 {
@@ -20336,7 +20296,7 @@
     "name": "South Georgia State College",
     "slug": "south-georgia-state-college",
     "url": "http://www.sgsc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sgsc.edu/future-students/1592.cms"
   }
 },
 {
@@ -20346,7 +20306,7 @@
     "name": "South Texas College of Law",
     "slug": "south-texas-college-of-law",
     "url": "http://www.stcl.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.stcl.edu/admissions/apply.html"
   }
 },
 {
@@ -20356,7 +20316,7 @@
     "name": "South University",
     "slug": "south-university",
     "url": "http://www.southuniversity.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.southuniversity.edu/admissions/admission-info/applying"
   }
 },
 {
@@ -20366,7 +20326,7 @@
     "name": "Southeastern Baptist Theological Seminary",
     "slug": "southeastern-baptist-theological-seminary",
     "url": "http://www.sebts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sebts.edu/admissions/application-process/default.aspx"
   }
 },
 {
@@ -20376,7 +20336,7 @@
     "name": "Southeastern Bible College",
     "slug": "southeastern-bible-college",
     "url": "http://www.sebc.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://sebc.edu/admissions/"
   }
 },
 {
@@ -20386,7 +20346,7 @@
     "name": "Southeastern University",
     "slug": "southeastern-university",
     "url": "http://www.seu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.seu.edu/admission/undergraduate/?stud_type=undergraduate"
   }
 },
 {
@@ -20396,7 +20356,7 @@
     "name": "Southern Baptist Theological Seminary",
     "slug": "southern-baptist-theological-seminary",
     "url": "http://www.sbts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sbts.edu/admissions/important-dates-and-deadlines/"
   }
 },
 {
@@ -20406,7 +20366,7 @@
     "name": "Southern California University of Health Sciences",
     "slug": "southern-california-university-of-health-sciences",
     "url": "http://www.scuhs.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.scuhs.edu/admissions/"
   }
 },
 {
@@ -20416,7 +20376,7 @@
     "name": "Southern College of Optometry",
     "slug": "southern-college-of-optometry",
     "url": "http://www.sco.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sco.edu/apply"
   }
 },
 {
@@ -20426,7 +20386,7 @@
     "name": "Southern Nazarene University",
     "slug": "southern-nazarene-university",
     "url": "http://snu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://snu.edu/checklist"
   }
 },
 {
@@ -20436,17 +20396,7 @@
     "name": "Southern University at Shreveport",
     "slug": "southern-university-at-shreveport",
     "url": "http://www.susla.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2100,
-  "fields": {
-    "name": "Southern University System",
-    "slug": "southern-university-system",
-    "url": "http://www.sus.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.susla.edu/admissions"
   }
 },
 {
@@ -20456,7 +20406,7 @@
     "name": "Southwest College of Naturopathic Medicine & Health Sciences",
     "slug": "southwest-college-of-naturopathic-medicine-health-sciences",
     "url": "http://www.scnm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.scnm.edu/admissions-financial-aid/admissions-requirements/doctor-of-naturopathic-medicine/admission-application-deadlines/"
   }
 },
 {
@@ -20466,7 +20416,7 @@
     "name": "Southwest University of Visual Arts",
     "slug": "southwest-university-of-visual-arts",
     "url": "http://www.suva.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.suva.edu/admissions/undergraduate/"
   }
 },
 {
@@ -20476,7 +20426,7 @@
     "name": "Southwestern Adventist University",
     "slug": "southwestern-adventist-university",
     "url": "http://www.swau.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.swau.edu/freshmen-admission-requirements"
   }
 },
 {
@@ -20486,7 +20436,7 @@
     "name": "Southwestern Assemblies of God University",
     "slug": "southwestern-assemblies-of-god-university",
     "url": "http://www.sagu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sagu.edu/admissions/admissions-requirements"
   }
 },
 {
@@ -20496,7 +20446,7 @@
     "name": "Southwestern Baptist Theological Seminary",
     "slug": "southwestern-baptist-theological-seminary",
     "url": "http://www.swbts.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://admissions.swbts.edu/apply/"
   }
 },
 {
@@ -20506,7 +20456,7 @@
     "name": "Southwestern Christian College",
     "slug": "southwestern-christian-college",
     "url": "http://www.swcc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.swcc.edu/admissions.htm"
   }
 },
 {
@@ -20523,10 +20473,10 @@
   "model": "planner.school",
   "pk": 2108,
   "fields": {
-    "name": "Spertus Institute for Jewish Learning & Leadership",
-    "slug": "spertus-institute-for-jewish-learning-leadership",
+    "name": "Spertus Institute for Jewish Learning and Leadership",
+    "slug": "spertus-institute-for-jewish-learning-and-leadership",
     "url": "http://www.spertus.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.spertus.edu/programs-events/majps-deadline"
   }
 },
 {
@@ -20536,17 +20486,7 @@
     "name": "State College of Florida, Manatee-Sarasota",
     "slug": "state-college-of-florida-manatee-sarasota",
     "url": "http://www.scf.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2110,
-  "fields": {
-    "name": "State University of New York System",
-    "slug": "state-university-of-new-york-system",
-    "url": "http://www.suny.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.scf.edu/StudentServices/Tuition/Current_Deadlines.asp"
   }
 },
 {
@@ -20556,7 +20496,7 @@
     "name": "Alfred State University",
     "slug": "alfred-state-university",
     "url": "http://www.alfredstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.alfredstate.edu/admissions/resources/countdown-to-college"
   }
 },
 {
