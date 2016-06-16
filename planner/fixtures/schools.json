@@ -20503,70 +20503,70 @@
   "model": "planner.school",
   "pk": 2112,
   "fields": {
-    "name": "College at Potsdam",
-    "slug": "college-at-potsdam",
+    "name": "SUNY Potsdam",
+    "slug": "suny-potsdam",
     "url": "http://www.potsdam.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.potsdam.edu/admissions/apply/index.cfm"
   }
 },
 {
   "model": "planner.school",
   "pk": 2113,
   "fields": {
-    "name": "College of Optometry",
-    "slug": "college-of-optometry",
+    "name": "SUNY College of Optometry",
+    "slug": "suny-college-of-optometry",
     "url": "http://www.sunyopt.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.sunyopt.edu/education/admissions"
   }
 },
 {
   "model": "planner.school",
   "pk": 2114,
   "fields": {
-    "name": "College of Technology at Canton",
-    "slug": "college-of-technology-at-canton",
+    "name": "SUNY Canton",
+    "slug": "suny-canton",
     "url": "http://www.canton.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.canton.edu/admissions/freshmen.html"
   }
 },
 {
   "model": "planner.school",
   "pk": 2115,
   "fields": {
-    "name": "Downstate Medical Center",
-    "slug": "downstate-medical-center",
+    "name": "SUNY Downstate Medical Center",
+    "slug": "suny-downstate-medical-center",
     "url": "http://www.downstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://sls.downstate.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2116,
   "fields": {
-    "name": "Empire State College",
-    "slug": "empire-state-college",
+    "name": "SUNY Empire State College",
+    "slug": "suny-empire-state-college",
     "url": "http://www.esc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.esc.edu/admissions/associate-bachelors/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2117,
   "fields": {
-    "name": "Fashion Institute of Technology",
-    "slug": "fashion-institute-of-technology",
+    "name": "SUNY Fashion Institute of Technology",
+    "slug": "suny-fashion-institute-of-technology",
     "url": "http://www.fitnyc.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.fitnyc.edu/admissions/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2118,
   "fields": {
-    "name": "Upstate Medical University",
-    "slug": "upstate-medical-university",
+    "name": "SUNY Upstate Medical University",
+    "slug": "suny-upstate-medical-university",
     "url": "http://www.upstate.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.upstate.edu/prospective/"
   }
 },
 {
@@ -20586,7 +20586,7 @@
     "name": "Strayer University",
     "slug": "strayer-university",
     "url": "http://www.strayer.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.strayer.edu/admissions"
   }
 },
 {
@@ -20596,7 +20596,7 @@
     "name": "Sullivan University",
     "slug": "sullivan-university",
     "url": "http://sullivan.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://sullivan.edu/university-admission/"
   }
 },
 {
@@ -20606,7 +20606,7 @@
     "name": "Summit University",
     "slug": "summit-university",
     "url": "http://www.summitu.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.summitu.edu/admissions/undergraduate/"
   }
 },
 {
@@ -20616,7 +20616,7 @@
     "name": "University of Phoenix",
     "slug": "university-of-phoenix",
     "url": "http://www.phoenix.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.phoenix.edu/admissions/admission_requirements.html"
   }
 },
 {
@@ -20626,7 +20626,7 @@
     "name": "University of Pikeville",
     "slug": "university-of-pikeville",
     "url": "http://www.upike.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.upike.edu/Admissions/Apply-to-UPIKE"
   }
 },
 {
@@ -20635,128 +20635,8 @@
   "fields": {
     "name": "University of the Potomac",
     "slug": "university-of-the-potomac",
-    "url": "http://www.potomac.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2126,
-  "fields": {
-    "name": "University of Puerto Rico-Aguadilla",
-    "slug": "university-of-puerto-rico-aguadilla",
-    "url": "http://www.uprag.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2127,
-  "fields": {
-    "name": "University of Puerto Rico-Arecibo",
-    "slug": "university-of-puerto-rico-arecibo",
-    "url": "http://www.upra.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2128,
-  "fields": {
-    "name": "University of Puerto Rico-Bayam\u00f3n",
-    "slug": "university-of-puerto-rico-bayamon",
-    "url": "http://www.uprb.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2129,
-  "fields": {
-    "name": "University of Puerto Rico-Carolina",
-    "slug": "university-of-puerto-rico-carolina",
-    "url": "http://www.uprc.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2130,
-  "fields": {
-    "name": "University of Puerto Rico-Cayey",
-    "slug": "university-of-puerto-rico-cayey",
-    "url": "http://www.cayey.upr.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2131,
-  "fields": {
-    "name": "University of Puerto Rico-Ciencias M\u00e9dicas",
-    "slug": "university-of-puerto-rico-ciencias-medicas",
-    "url": "http://www.rcm.upr.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2132,
-  "fields": {
-    "name": "University of Puerto Rico-Humacao",
-    "slug": "university-of-puerto-rico-humacao",
-    "url": "http://www.uprh.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2133,
-  "fields": {
-    "name": "University of Puerto Rico-Mayag\u00fcez",
-    "slug": "university-of-puerto-rico-mayaguez",
-    "url": "http://www.uprm.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2134,
-  "fields": {
-    "name": "University of Puerto Rico-Ponce",
-    "slug": "university-of-puerto-rico-ponce",
-    "url": "http://www.uprp.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2135,
-  "fields": {
-    "name": "University of Puerto Rico-R\u00edo Piedras",
-    "slug": "university-of-puerto-rico-rio-piedras",
-    "url": "http://www.uprrp.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2136,
-  "fields": {
-    "name": "University of Puerto Rico System",
-    "slug": "university-of-puerto-rico-system",
-    "url": "http://www.upr.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2137,
-  "fields": {
-    "name": "University of Puerto Rico-Utuado",
-    "slug": "university-of-puerto-rico-utuado",
-    "url": "http://www.uprutuado.edu/",
-    "milestones_url": ""
+    "url": "https://potomac.edu/",
+    "milestones_url": "https://potomac.edu/admissions/how-to-apply/"
   }
 },
 {
@@ -20766,7 +20646,7 @@
     "name": "University of Rio Grande",
     "slug": "university-of-rio-grande",
     "url": "http://www.rio.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rio.edu/admissions/Undergraduate-Students.cfm"
   }
 },
 {
@@ -20776,7 +20656,7 @@
     "name": "University of the Rockies",
     "slug": "university-of-the-rockies",
     "url": "http://www.rockies.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.rockies.edu/admissions/online_requirements.htm"
   }
 },
 {
@@ -20796,27 +20676,17 @@
     "name": "University of Saint Joseph",
     "slug": "university-of-saint-joseph",
     "url": "http://www.usj.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2142,
-  "fields": {
-    "name": "University of South Carolina System",
-    "slug": "university-of-south-carolina-system",
-    "url": "http://www.sc.edu/about/system_and_campuses/",
-    "milestones_url": ""
+    "milestones_url": "http://www.usj.edu/admissions-financial-aid/undergraduate-admissions/first-year-students/"
   }
 },
 {
   "model": "planner.school",
   "pk": 2143,
   "fields": {
-    "name": "University of South Florida Sarasota-Manatee",
+    "name": "University of South Florida, Sarasota-Manatee",
     "slug": "university-of-south-florida-sarasota-manatee",
     "url": "http://usfsm.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://usfsm.edu/admissions/deadlines/"
   }
 },
 {
@@ -20836,37 +20706,27 @@
     "name": "University of Tennessee Health Science Center",
     "slug": "university-of-tennessee-health-science-center",
     "url": "http://www.uthsc.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2146,
-  "fields": {
-    "name": "University of Tennessee System",
-    "slug": "university-of-tennessee-system",
-    "url": "http://www.tennessee.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uthsc.edu/admissions/application-deadlines.php"
   }
 },
 {
   "model": "planner.school",
   "pk": 2147,
   "fields": {
-    "name": "University of Texas-Brownsville",
+    "name": "University of Texas, Brownsville",
     "slug": "university-of-texas-brownsville",
     "url": "http://www.utb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.utb.edu/em/adm/Pages/default.aspx"
   }
 },
 {
   "model": "planner.school",
   "pk": 2148,
   "fields": {
-    "name": "University of Texas-El Paso",
+    "name": "University of Texas, El Paso",
     "slug": "university-of-texas-el-paso",
     "url": "http://www.utep.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://academics.utep.edu/"
   }
 },
 {
@@ -20876,7 +20736,7 @@
     "name": "University of Texas Health Science Center at Houston",
     "slug": "university-of-texas-health-science-center-at-houston",
     "url": "http://www.uth.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uth.edu/registrar/applicants/application-dates-degree.htm"
   }
 },
 {
@@ -20886,7 +20746,7 @@
     "name": "University of Texas Health Science Center at San Antonio",
     "slug": "university-of-texas-health-science-center-at-san-antonio",
     "url": "http://uthscsa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://som.uthscsa.edu/Admissions/"
   }
 },
 {
@@ -20896,17 +20756,7 @@
     "name": "University of Texas Health Science Center at Tyler",
     "slug": "university-of-texas-health-science-center-at-tyler",
     "url": "http://www.uthct.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2152,
-  "fields": {
-    "name": "University of Texas M.D. Anderson Cancer Center",
-    "slug": "university-of-texas-md-anderson-cancer-center",
-    "url": "http://www.mdanderson.org/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uthealth.org/academic-and-medical-education/admissions"
   }
 },
 {
@@ -20916,7 +20766,7 @@
     "name": "University of Texas Medical Branch at Galveston",
     "slug": "university-of-texas-medical-branch-at-galveston",
     "url": "http://www.utmb.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.utmb.edu/enrollmentservices/prospectivestudents_applicationforadmission.asp"
   }
 },
 {
@@ -20926,17 +20776,7 @@
     "name": "University of Texas Southwestern Medical Center at Dallas",
     "slug": "university-of-texas-southwestern-medical-center-at-dallas",
     "url": "http://www.utsouthwestern.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2155,
-  "fields": {
-    "name": "University of Texas System",
-    "slug": "university-of-texas-system",
-    "url": "http://www.utsystem.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.utsouthwestern.edu/education/medical-school/admissions/apply/timeline.html"
   }
 },
 {
@@ -20946,7 +20786,7 @@
     "name": "University of the Southwest",
     "slug": "university-of-the-southwest",
     "url": "http://www.usw.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.usw.edu/admissions"
   }
 },
 {
@@ -20956,7 +20796,7 @@
     "name": "University of Toledo",
     "slug": "university-of-toledo",
     "url": "http://www.utoledo.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.utoledo.edu/admission/freshman/admission-standards.html"
   }
 },
 {
@@ -20966,7 +20806,7 @@
     "name": "University of the Virgin Islands",
     "slug": "university-of-the-virgin-islands",
     "url": "http://www.uvi.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uvi.edu/enrollment/admissions/undergraduate-admissions/default.aspx"
   }
 },
 {
@@ -20976,7 +20816,7 @@
     "name": "University of Western States",
     "slug": "university-of-western-states",
     "url": "http://www.uws.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.uws.edu/apply/"
   }
 },
 {
@@ -20986,17 +20826,7 @@
     "name": "University of the West",
     "slug": "university-of-the-west",
     "url": "http://www.uwest.edu/",
-    "milestones_url": ""
-  }
-},
-{
-  "model": "planner.school",
-  "pk": 2161,
-  "fields": {
-    "name": "University of Wisconsin System",
-    "slug": "university-of-wisconsin-system",
-    "url": "http://www.uwsa.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://www.uwest.edu/site/index.php?option=com_content&view=article&id=675&Itemid=601"
   }
 },
 {
@@ -21016,7 +20846,7 @@
     "name": "Youngstown State University",
     "slug": "youngstown-state-university",
     "url": "http://www.ysu.edu/",
-    "milestones_url": ""
+    "milestones_url": "http://cms.ysu.edu/administrative-offices/admissions/how-apply"
   }
 },
 {
@@ -21026,7 +20856,7 @@
     "name": "Zaytuna College",
     "slug": "zaytuna-college",
     "url": "https://www.zaytuna.edu/",
-    "milestones_url": ""
+    "milestones_url": "https://www.zaytuna.edu/admissions/"
   }
 }
 ]
