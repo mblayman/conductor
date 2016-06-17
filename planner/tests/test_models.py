@@ -30,3 +30,17 @@ class TestSchool(TestCase):
             milestones_url='http://admission.virginia.edu/events')
         self.assertEqual(
             'http://admission.virginia.edu/events', school.milestones_url)
+
+
+class TestStudent(TestCase):
+
+    def test_factory(self):
+        student = self.StudentFactory.build()
+
+        self.assertIsNotNone(student.user)
+
+    def test_has_user(self):
+        user = self.UserFactory.build()
+        student = self.StudentFactory.build(user=user)
+
+        self.assertEqual(user, student.user)

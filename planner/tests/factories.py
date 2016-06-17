@@ -1,6 +1,8 @@
 import factory
 from faker import Factory
 
+from accounts.tests.factories import UserFactory
+
 fake = Factory.create()
 
 
@@ -20,3 +22,10 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     slug = factory.Faker('slug')
     url = factory.Faker('url')
     milestones_url = factory.Faker('url')
+
+
+class StudentFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Student'
+
+    user = factory.SubFactory(UserFactory)

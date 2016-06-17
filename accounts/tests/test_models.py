@@ -8,7 +8,3 @@ class TestUser(TestCase):
 
         self.assertNotEqual('', user.username)
         self.assertNotEqual('', user.email)
-
-    def test_has_email(self):
-        user = self.UserFactory.build(email='jane.doe@nowhere.com')
-        self.assertEqual('jane.doe@nowhere.com', user.email)
