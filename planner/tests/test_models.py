@@ -38,9 +38,33 @@ class TestStudent(TestCase):
         student = self.StudentFactory.build()
 
         self.assertIsNotNone(student.user)
+        self.assertNotEqual('', student.first_name)
+        self.assertNotEqual('', student.last_name)
+        self.assertIsNotNone(student.class_year)
 
     def test_has_user(self):
         user = self.UserFactory.build()
         student = self.StudentFactory.build(user=user)
 
         self.assertEqual(user, student.user)
+
+    def test_has_first_name(self):
+        student = self.StudentFactory.build(first_name='Matt')
+
+        self.assertEqual('Matt', student.first_name)
+
+    def test_has_last_name(self):
+        student = self.StudentFactory.build(last_name='Layman')
+
+        self.assertEqual('Layman', student.last_name)
+
+    def test_has_class_year(self):
+        student = self.StudentFactory.build(class_year=2002)
+
+        self.assertEqual(2002, student.class_year)
+
+    def test_default_class_year(self):
+        today = datetime.date.today()
+        student = self.StudentFactory.build()
+
+        self.assertEqual(today.year, student.class_year)

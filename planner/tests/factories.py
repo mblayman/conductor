@@ -29,3 +29,5 @@ class StudentFactory(factory.django.DjangoModelFactory):
         model = 'planner.Student'
 
     user = factory.SubFactory(UserFactory)
+    first_name = factory.Faker('first_name')
+    last_name = factory.Faker('last_name')
