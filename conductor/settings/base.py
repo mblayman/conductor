@@ -93,6 +93,8 @@ USE_TZ = True
 
 STATIC_URL = os.environ['STATIC_URL']
 
+AUTH_USER_MODEL = 'accounts.User'
+
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'EXCEPTION_HANDLER': 'rest_framework_json_api.exceptions.exception_handler',  # noqa
