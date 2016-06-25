@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  tasks:
+  - name: Seed the database with sample data
+    django_manage: command=seed app_path={{ app_path }} virtualenv={{ venv_path }}
+    environment: "{{ django_env }}"

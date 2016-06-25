@@ -1,6 +1,0 @@
----
-- hosts: webservers
-  tasks:
-  - name: Bootstrap the database with sample data
-    django_manage: command=bootstrap app_path={{ app_path }} virtualenv={{ venv_path }}
-    environment: "{{ django_env }}"

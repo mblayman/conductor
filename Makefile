@@ -12,7 +12,7 @@ galaxy:
 		kamaln7.swapfile \
 		nodesource.node
 
-bootstrap:
+seed:
 	ansible-playbook \
 		--private-key=./.vagrant/machines/default/virtualbox/private_key \
-		-i playbooks/development playbooks/bootstrap.yml
+		-i playbooks/development playbooks/seed.yml
