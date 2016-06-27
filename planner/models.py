@@ -25,8 +25,12 @@ def current_year():
     return today.year
 
 
+@python_2_unicode_compatible
 class Student(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
     first_name = models.TextField()
     last_name = models.TextField()
     class_year = models.IntegerField(default=current_year)
+
+    def __str__(self):
+        return '{} {}'.format(self.first_name, self.last_name)
