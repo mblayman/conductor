@@ -7,6 +7,11 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
 
+    'ember-simple-auth': {
+      'routeAfterAuthentication': 'dashboard',
+      'routeIfAlreadyAuthenticated': 'dashboard'
+    },
+
     'ember-simple-auth-token': {
       refreshLeeway: 20,
       timeFactor: 1000, // backend is in seconds and the frontend is in ms.

@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('terms');
   this.route('contact');
   this.route('privacy');
+  this.route('dashboard');
 });
 
 export default Router;
