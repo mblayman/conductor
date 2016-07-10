@@ -17,6 +17,6 @@ test('visiting /signup when already authenticated', function(assert) {
   visit('/signup');
 
   andThen(function() {
-    assert.equal(currentURL(), '/');
+    assert.equal(currentURL(), '/dashboard');
   });
 });
