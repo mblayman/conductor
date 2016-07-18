@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('contact');
   this.route('privacy');
   this.route('dashboard');
+  this.route('students');
 });
 
 export default Router;
