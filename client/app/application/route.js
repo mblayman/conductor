@@ -3,6 +3,7 @@ import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mi
 
 export default Ember.Route.extend(ApplicationRouteMixin, {
   title(tokens) {
+    tokens.reverse();
     tokens.push('College Conductor');
     return tokens.join(' - ');
   }
