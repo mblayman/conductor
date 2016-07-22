@@ -17,9 +17,9 @@ export default Ember.Controller.extend({
             this.set('errorMessage', reason.error || reason);
           });
         } else {
-          // TODO: This will probably break if more validations are added to user.
+          // TODO: There needs to be some kind of reset when leaving login.
           // Clear any previous submission to the server.
-          this.set('errorMessage', '');
+          this.set('errorMessage', 'Oops. Something is out of whack.');
         }
         this.set('didValidate', true);
       });

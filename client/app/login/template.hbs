@@ -1,40 +1,20 @@
-<div class="ui middle aligned center aligned stackable grid">
-  <div class="eight wide column">
+<div class="ui middle aligned centered stackable grid">
+  <div class="six wide column">
     <h2 class="ui red image header">Login to your account</h2>
     <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
       <div class="ui stacked segment">
-          {{#if (and didValidate (v-get model 'username' 'isInvalid'))}}
-            <div class="field error">
-              <div class="ui left icon input">
-                <i class="user icon"></i>
-                {{input id='username' placeholder=model.validations.attrs.username.message value=model.username}}
-              </div>
-            </div>
-          {{else}}
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="user icon"></i>
-                {{input id='username' placeholder='Username' value=model.username}}
-              </div>
-            </div>
-          {{/if}}
-          {{#if (and didValidate (v-get model 'password' 'isInvalid'))}}
-            <div class="field error">
-              <div class="ui left icon input">
-                <i class="lock icon"></i>
-                {{input id='password' placeholder=model.validations.attrs.password.message type='password' value=model.password}}
-              </div>
-            </div>
-          {{else}}
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="lock icon"></i>
-                {{input id='password' placeholder='Password' type='password' value=model.password}}
-              </div>
-            </div>
-          {{/if}}
+        {{field-input inputId='username' inputValue=model.username
+          icon='user' placeholder='Username'
+          errorMessage=model.validations.attrs.username.message
+          isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+
+        {{field-input inputId='password' inputValue=model.password
+          icon='lock' placeholder='Password' inputType='password'
+          errorMessage=model.validations.attrs.password.message
+          isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+
         {{#if errorMessage}}
-          <div class="ui error message">Boom {{errorMessage}}</div>
+          <div class="ui error message">{{errorMessage}}</div>
         {{/if}}
         <button type="submit" class="ui fluid large red submit button">Login</button>
       </div>
@@ -42,7 +22,7 @@
 
     <div class="ui message">
       New to us?
-      {{#link-to 'signup'}}Sign Up{{/link-to}}
+      {{#link-to 'signup'}}Sign Up!{{/link-to}}
     </div>
   </div>
 </div>
