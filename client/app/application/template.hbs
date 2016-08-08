@@ -1,7 +1,6 @@
 <div class="ui large inverted top attached stackable menu">
   <div class="ui container">
     {{#link-to 'index' class="active red item" activeClass=""}}College Conductor{{/link-to}}
-    <a class="item">Blog</a>
     <div class="right menu">
       {{#if session.isAuthenticated}}
         <div class="item">
@@ -18,6 +17,8 @@
     </div>
   </div>
 </div>
+
+{{outlet 'postHeader'}}
 
 <div class="ui attached padded segment">
   <div class="ui stackable grid">
