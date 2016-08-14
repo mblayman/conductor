@@ -12,7 +12,11 @@ Router.map(function() {
   this.route('terms');
   this.route('contact');
   this.route('privacy');
-  this.route('dashboard');
+  this.route('dashboard', function() {
+    this.route('students', function() {
+      this.route('new');
+    });
+  });
   this.route('students', function() {
     this.route('new');
   });
