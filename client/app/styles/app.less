@@ -1,5 +1,13 @@
 @import 'semantic';
 
+/* TODO: Figure out how the heck semantic is actually wiring this together
+   and why I can't import basic color variables.
+   In the interim, hardcode the color value for "black".
+*/
+body {
+    background-color: #1B1C1D;
+}
+
 .masthead.segment {
   min-height: 400px;
   padding: 1em 0em;
@@ -33,4 +41,8 @@
     margin-top: 0.5em;
     font-size: 1.5em;
   }
+}
+
+.application-container {
+  min-height: 600px;
 }

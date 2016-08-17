@@ -4,6 +4,9 @@
     <div class="right menu">
       {{#if session.isAuthenticated}}
         <div class="item">
+          {{#link-to 'dashboard' class="ui inverted button" activeClass=""}}Dashboard{{/link-to}}
+        </div>
+        <div class="item">
           <a {{action 'invalidateSession'}} class="ui inverted button">Logout</a>
         </div>
       {{else}}
@@ -20,7 +23,7 @@
 
 {{outlet 'postHeader'}}
 
-<div class="ui attached padded segment">
+<div class="ui attached padded segment application-container">
   <div class="ui stackable grid">
     <div class="row">
       <div class="eight wide centered column">

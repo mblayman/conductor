@@ -1,2 +1,30 @@
-<h1>Add a student</h1>
-{{outlet}}
+<h2 class="ui header">Add a student</h2>
+<form {{action 'authenticate' on='submit'}} class="ui form{{if errorMessage " error"}}">
+  <div class="fields">
+    <div class="field">
+      {{field-input inputId='username' inputValue=model.username
+        placeholder='First name'
+        errorMessage=model.validations.attrs.username.message
+        isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+    </div>
+    <div class="field">
+      {{field-input inputId='username2' inputValue=model.username
+        placeholder='Last name'
+        errorMessage=model.validations.attrs.username.message
+        isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+    </div>
+  </div>
+  <div class="fields">
+    <div class="two wide field">
+      {{field-input inputId='password' inputValue=model.password
+        placeholder='Class year'
+        errorMessage=model.validations.attrs.password.message
+        isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+    </div>
+  </div>
+
+  {{#if errorMessage}}
+    <div class="ui error message">{{errorMessage}}</div>
+  {{/if}}
+  <button type="submit" class="ui large red submit button">Add student</button>
+</form>
