@@ -12,3 +12,6 @@ class SchoolViewSet(viewsets.ReadOnlyModelViewSet):
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
