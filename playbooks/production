@@ -1,0 +1,9 @@
+[dbservers]
+107.170.50.178
+
+[webservers]
+107.170.50.178
+
+[production:children]
+dbservers
+webservers
