@@ -8,8 +8,9 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     'ember-simple-auth': {
-      'routeAfterAuthentication': 'dashboard',
-      'routeIfAlreadyAuthenticated': 'dashboard'
+      authorizer: 'authorizer:token',
+      routeAfterAuthentication: 'dashboard',
+      routeIfAlreadyAuthenticated: 'dashboard'
     },
 
     'ember-simple-auth-token': {
