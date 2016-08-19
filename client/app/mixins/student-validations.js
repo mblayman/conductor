@@ -6,6 +6,7 @@ export default buildValidations({
   classYear: [
     validator('presence', true),
     validator('number', {
+      allowString: true,
       integer: true,
       positive: true
     })

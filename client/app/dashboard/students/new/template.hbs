@@ -1,25 +1,25 @@
 <h2 class="ui header">Add a student</h2>
-<form {{action 'authenticate' on='submit'}} class="ui form{{if errorMessage " error"}}">
+<form {{action 'create' on='submit'}} class="ui form{{if errorMessage " error"}}">
   <div class="fields">
     <div class="field">
-      {{field-input inputId='username' inputValue=model.username
+      {{field-input inputId='firstName' inputValue=model.firstName
         placeholder='First name'
-        errorMessage=model.validations.attrs.username.message
-        isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+        errorMessage=model.validations.attrs.firstName.message
+        isInvalid=(and didValidate (v-get model 'firstName' 'isInvalid'))}}
     </div>
     <div class="field">
-      {{field-input inputId='username2' inputValue=model.username
+      {{field-input inputId='lastName' inputValue=model.lastName
         placeholder='Last name'
-        errorMessage=model.validations.attrs.username.message
-        isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+        errorMessage=model.validations.attrs.lastName.message
+        isInvalid=(and didValidate (v-get model 'lastName' 'isInvalid'))}}
     </div>
   </div>
   <div class="fields">
     <div class="two wide field">
-      {{field-input inputId='password' inputValue=model.password
+      {{field-input inputId='classYear' inputValue=model.classYear
         placeholder='Class year'
-        errorMessage=model.validations.attrs.password.message
-        isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+        errorMessage=model.validations.attrs.classYear.message
+        isInvalid=(and didValidate (v-get model 'classYear' 'isInvalid'))}}
     </div>
   </div>
 
