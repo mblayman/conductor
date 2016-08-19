@@ -8,19 +8,18 @@ export default Ember.Controller.extend({
   },
 
   onFailure() {
-    console.log('This got called.');
     this.set(
-        'errorMessage',
-        'Huh? Something bad happened. Please contact support if it continues.');
+      'errorMessage',
+      'Huh? Something bad happened. Please contact support if it continues.');
   },
 
   actions: {
     create() {
       this.get('model').validate().then(({model, validations}) => {
         if (validations.get('isValid')) {
-          // TODO: add catch back.
-          // TODO: fix callbacks to properly attach this.
-          model.save().then(this.onSuccess);
+          model.save()
+            .then(this.onSuccess.bind(this))
+            .catch(this.onFailure.bind(this);
         } else {
           // TODO: There needs to be some kind of reset when leaving login.
           // Clear any previous submission to the server.
