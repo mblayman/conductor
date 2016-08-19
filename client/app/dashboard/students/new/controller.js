@@ -18,6 +18,8 @@ export default Ember.Controller.extend({
     create() {
       this.get('model').validate().then(({model, validations}) => {
         if (validations.get('isValid')) {
+          // TODO: add catch back.
+          // TODO: fix callbacks to properly attach this.
           model.save().then(this.onSuccess);
         } else {
           // TODO: There needs to be some kind of reset when leaving login.

@@ -127,6 +127,7 @@ CORS_ORIGIN_WHITELIST = (
 
 JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
 
 JSON_API_FORMAT_TYPES = 'dasherize'
