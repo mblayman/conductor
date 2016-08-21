@@ -130,5 +130,6 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
 
+JSON_API_FORMAT_KEYS = 'dasherize'
 JSON_API_FORMAT_TYPES = 'dasherize'
 JSON_API_PLURALIZE_TYPES = True
