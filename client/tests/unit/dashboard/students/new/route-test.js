@@ -2,7 +2,11 @@ import Ember from 'ember';
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new', {
-  needs: ['model:student']
+  needs: [
+    'model:student',
+    'validator:number',
+    'validator:presence'
+  ]
 });
 
 test('it exists', function(assert) {
