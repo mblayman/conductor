@@ -5,5 +5,12 @@ export default Ember.Route.extend({
 
   model() {
     return this.store.createRecord('student');
+  },
+
+  resetController(controller, isExiting) {
+    if (isExiting) {
+      controller.set('didValidate', false);
+      controller.set('errorMessage', false);
+    }
   }
 });
