@@ -8,7 +8,7 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin, {
     return this.store.createRecord('user');
   },
 
-  resetController(controller, isExiting, transition) {
+  resetController(controller, isExiting) {
     if (isExiting) {
       controller.set('didValidate', false);
       controller.set('errorMessage', false);
