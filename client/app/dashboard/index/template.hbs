@@ -1,0 +1,21 @@
+{{#if model}}
+  <ul>
+    {{#each model as |student|}}
+      <li>Student {{student.firstName}} {{student.lastName}}</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <div class="ui stackable centered grid">
+    <div class="ten wide column">
+      <h1>No students? Inconceivable!</h1>
+      <p>College Conductor is built around students
+        so you’re going to need some.
+        Once you have a student to work with,
+        you can focus on adding schools
+        that the student is interested in.
+      </p>
+      <p>Let’s get you started!</p>
+      {{#link-to 'dashboard.students.new' class="ui large red button"}}Add a student{{/link-to}}
+    </div>
+  </div>
+{{/if}}
