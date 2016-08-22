@@ -19,12 +19,18 @@ class TestStudentViewSet(TestCase):
             actions={'get': 'list', 'post': 'create'})
 
     def test_gets_students(self):
-        student = self.StudentFactory.create()
-        self.assertIn(student, views.StudentViewSet.queryset)
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create(user=user)
+        self.StudentFactory.create()
+        request = self.request_factory.authenticated_get(user)
+        viewset = views.StudentViewSet()
+        viewset.request = request
+        self.assertEqual([student], list(viewset.get_queryset()))
 
     def test_list(self):
         view = self._make_view()
-        request = self.request_factory.get()
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
         response = view(request)
         self.assertEqual(200, response.status_code)
 

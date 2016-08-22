@@ -24,7 +24,7 @@ from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 router = routers.DefaultRouter(trailing_slash=False)
 router.register('schools', SchoolViewSet)
 router.register('support-tickets', SupportTicketViewSet)
-router.register('students', StudentViewSet)
+router.register('students', StudentViewSet, base_name='student')
 
 urlpatterns = [
     url(r'^', include(router.urls)),
