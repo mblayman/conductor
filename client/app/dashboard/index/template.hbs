@@ -1,9 +1,18 @@
 {{#if model}}
-  <ul>
+  <div class="ui cards">
     {{#each model as |student|}}
-      <li>Student {{student.firstName}} {{student.lastName}}</li>
+      <div class="card">
+        <div class="content">
+          <div class="header">{{student.firstName}} {{student.lastName}}</div>
+          <div class="description">{{student.classYear}}</div>
+        </div>
+        <div class="extra content">
+          <i class="add icon"></i>
+          Add School
+        </div>
+      </div>
     {{/each}}
-  </ul>
+  </div>
 {{else}}
   <div class="ui stackable centered grid">
     <div class="ten wide column">
