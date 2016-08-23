@@ -21,8 +21,6 @@ export default Ember.Controller.extend({
             .then(this.onSuccess.bind(this))
             .catch(this.onFailure.bind(this));
         } else {
-          // TODO: There needs to be some kind of reset when leaving login.
-          // Clear any previous submission to the server.
           this.set('errorMessage', 'Oops. Something is out of whack.');
         }
         this.set('didValidate', true);
