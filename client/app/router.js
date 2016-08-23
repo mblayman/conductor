@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('students', function() {
       this.route('new');
     });
+    this.route('student', {path: '/students/:student_id'});
   });
 });
 

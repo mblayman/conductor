@@ -1,16 +1,16 @@
 {{#if model}}
   <div class="ui cards">
     {{#each model as |student|}}
-      <div class="card">
+      {{#link-to 'dashboard.student' student class="red card"}}
         <div class="content">
           <div class="header">{{student.firstName}} {{student.lastName}}</div>
           <div class="description">{{student.classYear}}</div>
         </div>
-        <div class="extra content">
-          <i class="add green icon"></i>
-          Add School
-        </div>
-      </div>
+        <!-- TODO: Use the proper route. -->
+        {{#link-to 'dashboard.students.new' class="ui button attached bottom"}}
+          <i class="add green icon"></i> Add School
+        {{/link-to}}
+      {{/link-to}}
     {{/each}}
   </div>
 {{else}}
