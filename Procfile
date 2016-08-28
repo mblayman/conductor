@@ -1,1 +1,1 @@
-api: make run
+api: python manage.py runserver 8080
