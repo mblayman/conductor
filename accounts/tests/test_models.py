@@ -8,3 +8,11 @@ class TestUser(TestCase):
 
         self.assertNotEqual('', user.username)
         self.assertNotEqual('', user.email)
+
+
+class TestInviteEmail(TestCase):
+
+    def test_factory(self):
+        invite_email = self.InviteEmailFactory.build()
+
+        self.assertNotEqual('', invite_email.email)

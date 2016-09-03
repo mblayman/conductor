@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework import mixins, permissions, viewsets
 
-# Create your views here.
+from accounts.models import InviteEmail
+from accounts.serializers import InviteEmailSerializer
+
+
+class InviteEmailViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
+    queryset = InviteEmail.objects.all()
+    serializer_class = InviteEmailSerializer
+    permission_classes = (permissions.AllowAny,)
