@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('invite-email', 'Unit | Model | invite email', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['validator:format', 'validator:presence']
 });
 
 test('it exists', function(assert) {

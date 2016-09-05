@@ -1,5 +1,7 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
+import InviteEmailValidations from 'client/mixins/invite-email-validations';
+
+export default DS.Model.extend(InviteEmailValidations, {
   email: DS.attr('string')
 });
