@@ -15,8 +15,7 @@ export default Ember.Route.extend({
 
   resetController(controller, isExiting) {
     if (isExiting) {
-      controller.set('didValidate', false);
-      controller.set('errorMessage', false);
+      controller.set('successful', false);
     }
   },
 

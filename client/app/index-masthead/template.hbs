@@ -18,11 +18,15 @@
             Leave us your email address
             and we’ll put you on our invite list.
           </h3>
-          <!-- TODO: This needs to be a form with substance. -->
-          <div class="ui large action input">
-            <input placeholder="Enter your email&hellip;" type="text">
-          {{#link-to 'signup' class="ui large yellow button"}}Add me to the list! <i class="right arrow icon"></i>{{/link-to}}
-          </div>
+          <form {{action 'submit' on='submit'}}>
+            <div class="ui large action input">
+              {{input type="text" id="email" placeholder="Enter your email..." value=model.email}}
+              <button type="submit"
+                class="ui large {{if successful "green" "yellow"}} button"
+                disabled="{{if successful "disabled"}}"
+                >Add me to the list!</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
