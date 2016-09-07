@@ -11,10 +11,20 @@
     - postgresql
     - python-psycopg2
 
+- name: Create locale
+  become: yes
+  locale_gen: name=en_US.UTF-8 state=present
+
 - name: Create the database
   become: yes
   become_user: postgres
-  postgresql_db: name={{ postgres.db }} encoding='UTF8' state=present
+  postgresql_db:
+    name={{ postgres.db }}
+    encoding='UTF8'
+    lc_collate='en_US.UTF-8'
+    lc_ctype='en_US.UTF-8'
+    state=present
+    template='template0'
 
 - name: Create the database user
   become: yes
