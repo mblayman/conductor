@@ -24,6 +24,10 @@
   become: yes
   apt: name=python-psycopg2 state=present
 
+- name: Install Node
+  become: yes
+  apt: name=nodejs state=present
+
 - name: Install Bower
   become: yes
   npm: name=bower state=present global=yes
