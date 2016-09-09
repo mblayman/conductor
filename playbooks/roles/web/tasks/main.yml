@@ -14,7 +14,7 @@
   apt: name={{ item }} state=present
   with_items:
     - uwsgi
-    - uwsgi-plugin-python
+    - uwsgi-plugin-python3
 
 - name: Install Git
   become: yes
@@ -22,7 +22,7 @@
 
 - name: Install Psycopg2
   become: yes
-  apt: name=python-psycopg2 state=present
+  apt: name=python3-psycopg2 state=present
 
 - name: Install Bower
   become: yes
@@ -32,7 +32,7 @@
   become: yes
   apt: name={{ item }} state=present
   with_items:
-    - python-pip
+    - python3-pip
     - python-virtualenv
 
 - name: Install fail2ban
@@ -84,6 +84,7 @@
     requirements={{ app_path }}/requirements.txt
     virtualenv={{ venv_path }}
     virtualenv_site_packages=yes
+    virtualenv_python=python3
   notify:
     - Collect static files
     - Restart application

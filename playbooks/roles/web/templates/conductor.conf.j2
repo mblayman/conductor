@@ -1,6 +1,6 @@
 [program:conductor]
 command=/usr/bin/uwsgi
-    --plugin python
+    --plugin python3
     --socket /tmp/conductor-uwsgi.sock
     --module conductor.wsgi:application
     --enable-threads

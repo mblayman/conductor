@@ -9,7 +9,9 @@
   with_items:
     - libpq-dev
     - postgresql
+    # The Python 2 version is around for Ansible, not Django.
     - python-psycopg2
+    - python3-psycopg2
 
 - name: Create locale
   become: yes
