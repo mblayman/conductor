@@ -13,7 +13,7 @@ venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   CORS_ORIGIN_WHITELIST: "{{ client_domain }}"
-  DJANGO_SETTINGS_MODULE: conductor.settings.staging
+  DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
   SECRET_KEY: "{{ vault_secret_key }}"
   POSTGRES_DB: "{{ postgres.db }}"
   POSTGRES_USER: "{{ postgres.user }}"
