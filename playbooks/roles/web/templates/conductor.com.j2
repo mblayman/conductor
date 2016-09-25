@@ -1,7 +1,7 @@
 server {
     listen       {{ client_port }};
     server_name  {{ root_domain }};
-    return       301 $scheme://{{ client_root }}$request_uri;
+    return       301 $scheme://{{ client_domain }}$request_uri;
 }
 
 server {
