@@ -126,6 +126,10 @@
   notify:
     - Restart Supervisor
 
+- name: Provide environment for manage.py commands
+  template: src=env.j2 dest=/srv/.env
+  become: yes
+
 - name: Configure Nginx
   become: yes
   file: dest=/etc/nginx/sites-enabled/default state=absent
