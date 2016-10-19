@@ -51,6 +51,7 @@
     "ember-simple-auth": "1.1.0",
     "ember-simple-auth-token": "1.1.1",
     "ember-truth-helpers": "1.2.0",
+    "git-repo-info": "1.2.0",
     "loader.js": "^4.0.10",
     "semantic-ui-less": "2.1.8"
   }
