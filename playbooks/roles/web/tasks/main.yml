@@ -130,28 +130,6 @@
   template: src=env.j2 dest=/srv/.env
   become: yes
 
-- name: Configure Nginx
-  become: yes
-  file: dest=/etc/nginx/sites-enabled/default state=absent
-
-- template: src=conductor.com.j2 dest=/etc/nginx/sites-available/conductor.com
-  become: yes
-  notify:
-    - Restart Nginx
-
-- template: src=uwsgi_params.j2 dest=/etc/nginx/uwsgi_params
-  become: yes
-  notify:
-    - Restart Nginx
-
-- name: Create symlink to conductor.com
-  become: yes
-  file: src=/etc/nginx/sites-available/conductor.com
-        dest=/etc/nginx/sites-enabled/conductor.com
-        state=link
-  notify:
-    - Restart Nginx
-
 - name: Create /var/www
   become: yes
   file: state=directory path=/var/www owner=root group=www-data mode=0750
