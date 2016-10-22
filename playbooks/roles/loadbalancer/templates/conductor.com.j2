@@ -18,6 +18,12 @@ server {
 server {
     listen       80;
     server_name  {{ api_domain }};
+    # Using a common root with the client for Let's Encrypt.
+    root         {{ client_root }};
+
+    location ~ /.well-known {
+        allow all;
+    }
 
     location {{ django_env.STATIC_URL }} {
         alias {{ django_env.STATIC_ROOT }};
