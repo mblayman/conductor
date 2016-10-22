@@ -1,4 +1,8 @@
 ---
+- name: Install Certbot
+  become: yes
+  apt: name=letsencrypt state=present
+
 - name: Install Nginx
   become: yes
   apt: name=nginx-core state=present
