@@ -2,3 +2,5 @@
 - include: dbservers.yml
 - include: webservers.yml
 - include: loadbalancer.yml
+  tags:
+    - loadbalancer

@@ -1,4 +1,5 @@
 ---
+deployment: development
 root_domain: conductor.dev
 client_port: 80
 django_settings_module: conductor.settings.staging

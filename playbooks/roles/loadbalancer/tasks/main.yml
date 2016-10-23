@@ -42,3 +42,22 @@
         state=link
   notify:
     - Restart Nginx
+
+- name: Check for cert directory
+  become: yes
+  stat: path=/etc/letsencrypt/live/{{ root_domain }}
+  register: certdir
+
+- name: Create cert
+  become: yes
+  command: >
+    /usr/bin/letsencrypt certonly --webroot
+    --email "{{ email }}"
+    --agree-tos
+    --webroot-path "{{ client_root }}"
+    -d "{{ root_domain }}"
+    -d "{{ client_domain }}"
+    -d "{{ api_domain }}"
+  when: deployment == "production" and certdir.stat.isdir is not defined
+  notify:
+    - Restart Nginx
