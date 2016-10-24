@@ -65,3 +65,14 @@
   when: deployment == "production" and certdir.stat.isdir is not defined
   notify:
     - Restart Nginx
+
+- name: Check for Diffie-Hellman Group
+  stat: path=/etc/ssl/certs/dhparam.pem
+  register: dhparam
+
+- name: Create Diffie-Hellman Group
+  become: yes
+  command: /usr/bin/openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+  when: dhparam.stat.exists == False
+  notify:
+    - Restart Nginx
