@@ -13,6 +13,10 @@
   become: yes
   ufw: rule=allow port=http proto=tcp
 
+- name: Permit HTTPS traffic
+  become: yes
+  ufw: rule=allow port=https proto=tcp
+
 - name: Permit SSH traffic
   become: yes
   ufw: rule=allow port=ssh proto=tcp
