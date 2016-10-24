@@ -1,5 +1,4 @@
 ---
 deployment: production
 root_domain: collegeconductor.com
-client_port: 80
 django_settings_module: conductor.settings.production

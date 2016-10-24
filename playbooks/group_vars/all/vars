@@ -27,3 +27,5 @@ postgres:
   db: conductor
   user: conductor
   password: "{{ vault_postgres_password }}"
+
+cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"

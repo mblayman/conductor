@@ -49,7 +49,7 @@
 
 - name: Check for cert directory
   become: yes
-  stat: path=/etc/letsencrypt/live/{{ root_domain }}
+  stat: path={{ cert_dir }}
   register: certdir
 
 - name: Create cert

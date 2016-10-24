@@ -1,12 +1,22 @@
 server {
-    listen       {{ client_port }};
+    listen 80;
+    listen 443 ssl http2;
     server_name  {{ root_domain }};
+
+    ssl_certificate {{ cert_dir }}/fullchain.pem;
+    ssl_certificate_key {{ cert_dir }}/privkey.pem;
+
     return       301 $scheme://{{ client_domain }}$request_uri;
 }
 
 server {
-    listen       {{ client_port }};
+    listen 80;
+    listen 443 ssl http2;
     server_name  {{ client_domain }};
+
+    ssl_certificate {{ cert_dir }}/fullchain.pem;
+    ssl_certificate_key {{ cert_dir }}/privkey.pem;
+
     root         {{ client_root }};
     index        index.html;
 
@@ -16,8 +26,13 @@ server {
 }
 
 server {
-    listen       80;
+    listen 80;
+    listen 443 ssl http2;
     server_name  {{ api_domain }};
+
+    ssl_certificate {{ cert_dir }}/fullchain.pem;
+    ssl_certificate_key {{ cert_dir }}/privkey.pem;
+
     # Using a common root with the client for Let's Encrypt.
     root         {{ client_root }};
 
@@ -34,4 +49,3 @@ server {
         include     uwsgi_params;
     }
 }
-
