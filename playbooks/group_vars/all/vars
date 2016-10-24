@@ -7,7 +7,7 @@ ember_app_path: "{{ app_path }}/client"
 client_domain: "www.{{ root_domain }}"
 client_root: /var/www/client
 ember_env:
-  API_HOST: "http://{{ api_domain }}"
+  API_HOST: "https://{{ api_domain }}"
   CLIENT_ROOT: "{{ client_root }}"
 
 api_domain: "api.{{ root_domain }}"
