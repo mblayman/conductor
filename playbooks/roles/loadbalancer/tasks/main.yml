@@ -66,6 +66,22 @@
   notify:
     - Restart Nginx
 
+- file: path={{ cert_dir }} owner=root group=root mode=0700 state=directory
+  become: yes
+  when: deployment == "development"
+
+- copy: src=chain.pem dest={{ cert_dir }}/chain.pem
+  become: yes
+  when: deployment == "development"
+
+- copy: src=chain.pem dest={{ cert_dir }}/fullchain.pem
+  become: yes
+  when: deployment == "development"
+
+- copy: src=privkey.pem dest={{ cert_dir }}/privkey.pem
+  become: yes
+  when: deployment == "development"
+
 - name: Check for Diffie-Hellman Group
   stat: path=/etc/ssl/certs/dhparam.pem
   register: dhparam
