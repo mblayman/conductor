@@ -11,6 +11,7 @@ server {
     ssl_certificate_key {{ cert_dir }}/privkey.pem;
     ssl_trusted_certificate {{ cert_dir }}/chain.pem;
     ssl_session_cache shared:SSL:128m;
+    add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
     ssl_stapling on;
     ssl_stapling_verify on;
 
@@ -30,6 +31,7 @@ server {
     ssl_certificate_key {{ cert_dir }}/privkey.pem;
     ssl_trusted_certificate {{ cert_dir }}/chain.pem;
     ssl_session_cache shared:SSL:128m;
+    add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
     ssl_stapling on;
     ssl_stapling_verify on;
 
@@ -54,6 +56,7 @@ server {
     ssl_certificate_key {{ cert_dir }}/privkey.pem;
     ssl_trusted_certificate {{ cert_dir }}/chain.pem;
     ssl_session_cache shared:SSL:128m;
+    add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
     ssl_stapling on;
     ssl_stapling_verify on;
 
