@@ -29,3 +29,6 @@ postgres:
   password: "{{ vault_postgres_password }}"
 
 cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
+
+datadog:
+  api_key: "{{ vault_datadog_api_key }}"

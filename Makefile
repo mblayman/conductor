@@ -6,6 +6,7 @@ deploy:
 
 galaxy:
 	ansible-galaxy install \
+		Datadog.datadog \
 		kamaln7.swapfile \
 		nodesource.node
 

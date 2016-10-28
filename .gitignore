@@ -65,6 +65,7 @@ _vimrc_local.vim
 .encryption
 
 # Ansible
+playbooks/roles/Datadog.datadog
 playbooks/roles/kamaln7.swapfile
 playbooks/roles/nodesource.node
 # Ignore DO cache files.
