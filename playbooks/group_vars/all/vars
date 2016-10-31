@@ -16,6 +16,9 @@ ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   CORS_ORIGIN_WHITELIST: "{{ client_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
+  ROLLBAR_ENABLED: "true"
+  ROLLBAR_ACCESS_TOKEN: "{{ rollbar.access_token }}"
+  ROLLBAR_ENVIRONMENT: "{{ deployment }}"
   SECRET_KEY: "{{ vault_secret_key }}"
   POSTGRES_DB: "{{ postgres.db }}"
   POSTGRES_USER: "{{ postgres.user }}"
@@ -32,3 +35,6 @@ cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
 
 datadog:
   api_key: "{{ vault_datadog_api_key }}"
+
+rollbar:
+  access_token: "{{ vault_rollbar_access_token }}"

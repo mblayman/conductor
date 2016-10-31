@@ -1,5 +1,7 @@
 import os
 
+import rollbar
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -35,6 +37,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
 ROOT_URLCONF = 'conductor.urls'
@@ -133,3 +136,11 @@ JWT_AUTH = {
 JSON_API_FORMAT_KEYS = 'dasherize'
 JSON_API_FORMAT_TYPES = 'dasherize'
 JSON_API_PLURALIZE_TYPES = True
+
+ROLLBAR = {
+    'access_token': os.environ['ROLLBAR_ACCESS_TOKEN'],
+    'environment': os.environ['ROLLBAR_ENVIRONMENT'],
+    'root': BASE_DIR,
+    'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
+}
+rollbar.init(**ROLLBAR)
