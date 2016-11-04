@@ -66,6 +66,18 @@
   notify:
     - Restart Nginx
 
+- copy: src=renewCerts.sh dest=/srv/renewCerts.sh owner=root group=root mode=0750
+  become: yes
+
+- name: Add daily cert renewal check to cron
+  become: yes
+  cron:
+    name: Check for certificate renewal
+    state: present
+    job: /srv/renewCerts.sh
+    special_time: weekly
+  when: deployment == "production"
+
 - file: path={{ cert_dir }} owner=root group=root mode=0700 state=directory
   become: yes
   when: deployment == "development"
