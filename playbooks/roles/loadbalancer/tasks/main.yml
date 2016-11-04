@@ -92,3 +92,21 @@
   when: dhparam.stat.exists == False
   notify:
     - Restart Nginx
+
+# Probably not the best place to notify about a deploy
+# but there will only be one load balancer and it is handled last
+# so this works for now.
+- name: Fetch Git repo info
+  become: yes
+  git:
+    repo: git@github.com:mblayman/conductor.git
+    dest: "{{ app_path }}"
+    update: no
+  register: gitinfo
+
+- name: Notify Rollbar of deployment
+  rollbar_deployment:
+    environment: "{{ deployment }}"
+    revision: "{{ gitinfo.after }}"
+    token: "{{ rollbar.access_token }}"
+    user: mblayman
