@@ -2,3 +2,4 @@
 deployment: development
 root_domain: conductor.dev
 django_settings_module: conductor.settings.staging
+mailgun_api_key: 123456789abcdef

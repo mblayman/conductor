@@ -2,3 +2,4 @@
 deployment: production
 root_domain: collegeconductor.com
 django_settings_module: conductor.settings.production
+mailgun_api_key: "{{ mailgun.api_key }}"
