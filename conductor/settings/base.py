@@ -147,7 +147,7 @@ ROLLBAR = {
 rollbar.init(**ROLLBAR)
 
 EMAIL_BACKEND = 'anymail.backends.test.TestBackend'
-DEFAULT_FROM_EMAIL = 'noreply@mail.collegeconductor.com'
+DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
     'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
 }
