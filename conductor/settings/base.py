@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'anymail',
     'corsheaders',
     'rest_framework',
     'accounts.apps.AccountsConfig',
@@ -144,3 +145,9 @@ ROLLBAR = {
     'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
 }
 rollbar.init(**ROLLBAR)
+
+EMAIL_BACKEND = 'anymail.backends.test.TestBackend'
+DEFAULT_FROM_EMAIL = 'noreply@collegeconductor.com'
+ANYMAIL = {
+    'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
+}
