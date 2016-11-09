@@ -13,3 +13,4 @@ class User(AbstractUser):
 class InviteEmail(models.Model):
     """Record emails for interested people."""
     email = models.EmailField()
+    created_date = models.DateTimeField(auto_now_add=True)
