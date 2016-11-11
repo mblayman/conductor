@@ -116,6 +116,10 @@
     chdir: "{{ ember_app_path }}"
   environment: "{{ ember_env }}"
 
+- name: Enable supervisor
+  become: yes
+  service: name=supervisor enabled=yes state=started
+
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
   notify:
