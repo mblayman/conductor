@@ -79,6 +79,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 

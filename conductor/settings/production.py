@@ -26,3 +26,9 @@ REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = (  # noqa
 )
 
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'
+
+SILENCED_SYSTEM_CHECKS = [
+    # HSTS is set with the Nginx load balancer so the app server
+    # does not need to add that header.
+    'security.W004',
+]
