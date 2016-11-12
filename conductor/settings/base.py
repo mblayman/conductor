@@ -79,7 +79,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
+SESSION_COOKIE_SECURE = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
