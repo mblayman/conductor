@@ -79,9 +79,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_COOKIE_HTTPONLY = True
+CSRF_COOKIE_SECURE = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SESSION_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
