@@ -2,9 +2,7 @@ import os
 
 from conductor.settings.base import *  # noqa
 
-# FIXME: The wildcard is only here while testing on Vagrant.
-# Host header checking fails without it.
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [os.environ['DJANGO_ALLOWED_HOSTS']]
 
 DATABASES = {
     'default': {

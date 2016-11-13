@@ -15,6 +15,7 @@ venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   CORS_ORIGIN_WHITELIST: "{{ client_domain }}"
+  DJANGO_ALLOWED_HOSTS: ".{{ root_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
   MAILGUN_API_KEY: "{{ mailgun_api_key }}"
   ROLLBAR_ENABLED: "true"
