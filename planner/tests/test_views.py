@@ -12,6 +12,20 @@ class TestSchoolViewSet(TestCase):
         self.assertRaises(AttributeError, lambda: viewset.create)
 
 
+class TestSemesterViewSet(TestCase):
+
+    def test_no_create(self):
+        """Sanity check that no create method is available."""
+        viewset = views.SemesterViewSet()
+        self.assertRaises(AttributeError, lambda: viewset.create)
+
+    def test_active_only(self):
+        semester = self.SemesterFactory.create()
+        self.SemesterFactory.create(active=False)
+        viewset = views.SemesterViewSet()
+        self.assertEqual([semester], list(viewset.get_queryset()))
+
+
 class TestStudentViewSet(TestCase):
 
     def _make_view(self):
