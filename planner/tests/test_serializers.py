@@ -15,6 +15,19 @@ class TestSchoolSerializer(TestCase):
         self.assertEqual('Johns Hopkins University', serializer.data['name'])
 
 
+class TestSemesterSerializer(TestCase):
+
+    def test_serializes_id(self):
+        semester = self.SemesterFactory.create()
+        serializer = serializers.SemesterSerializer(semester)
+        self.assertEqual(semester.id, serializer.data['id'])
+
+    def test_serializes_date(self):
+        semester = self.SemesterFactory.create()
+        serializer = serializers.SemesterSerializer(semester)
+        self.assertEqual(str(semester.date), serializer.data['date'])
+
+
 class TestStudentSerializer(TestCase):
 
     def test_serializes_id(self):

@@ -1,12 +1,18 @@
 from rest_framework import serializers
 
-from planner.models import School, Student
+from planner.models import School, Semester, Student
 
 
 class SchoolSerializer(serializers.ModelSerializer):
     class Meta:
         model = School
         fields = ('id', 'name')
+
+
+class SemesterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Semester
+        fields = ('id', 'date')
 
 
 class StudentSerializer(serializers.ModelSerializer):
