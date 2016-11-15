@@ -17,8 +17,6 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT = os.environ['STATIC_ROOT']
-
 REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = (  # noqa
     'rest_framework_json_api.renderers.JSONRenderer',
 )

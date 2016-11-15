@@ -1,1 +1,1 @@
-api: python manage.py runserver 8080
+api: gunicorn --config .gunicorn.py conductor.wsgi:application

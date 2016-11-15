@@ -13,5 +13,3 @@ DATABASES = {
         'HOST': '127.0.0.1',
     }
 }
-
-STATIC_ROOT = os.environ['STATIC_ROOT']

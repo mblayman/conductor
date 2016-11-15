@@ -102,6 +102,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+STATIC_ROOT = os.environ['STATIC_ROOT']
 STATIC_URL = os.environ['STATIC_URL']
 
 AUTH_USER_MODEL = 'accounts.User'
