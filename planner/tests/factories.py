@@ -1,3 +1,5 @@
+import datetime
+
 import factory
 from faker import Factory
 
@@ -22,6 +24,13 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     slug = factory.Faker('slug')
     url = factory.Faker('url')
     milestones_url = factory.Faker('url')
+
+
+class SemesterFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Semester'
+
+    date = factory.LazyFunction(datetime.date.today)
 
 
 class StudentFactory(factory.django.DjangoModelFactory):

@@ -20,6 +20,11 @@ class School(models.Model):
         return self.name
 
 
+class Semester(models.Model):
+    active = models.BooleanField(default=True)
+    date = models.DateField()
+
+
 def current_year():
     today = datetime.date.today()
     return today.year

@@ -68,3 +68,24 @@ class TestStudent(TestCase):
         student = self.StudentFactory.build()
 
         self.assertEqual(today.year, student.class_year)
+
+
+class TestSemester(TestCase):
+
+    def test_factory(self):
+        semester = self.SemesterFactory.build()
+
+        self.assertIsNotNone(semester.date)
+        self.assertTrue(semester.active)
+
+    def test_has_date(self):
+        today = datetime.date.today()
+        semester = self.SemesterFactory.build(date=today)
+
+        self.assertEqual(today, semester.date)
+
+    def test_has_active(self):
+        active = False
+        semester = self.SemesterFactory.build(active=active)
+
+        self.assertFalse(semester.active)
