@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from planner.models import School, Student
+from planner.models import School, Semester, Student
 
 
 @admin.register(School)
@@ -15,6 +15,11 @@ class SchoolAdmin(admin.ModelAdmin):
     list_per_page = 10
     ordering = ['id']
     search_fields = ['name']
+
+
+@admin.register(Semester)
+class SemesterAdmin(admin.ModelAdmin):
+    list_display = ('date', 'active')
 
 
 @admin.register(Student)
