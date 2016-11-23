@@ -49,11 +49,12 @@ class TestStudentViewSet(TestCase):
         self.assertEqual(200, response.status_code)
 
     def test_associates_user(self):
+        semester = self.SemesterFactory.create()
         view = self._make_view()
         data = {
             'first_name': 'Matt',
             'last_name': 'Layman',
-            'class_year': 2002
+            'matriculation_semester': semester.id,
         }
         request = self.request_factory.post(data=data)
         user = self.UserFactory.create()

@@ -40,3 +40,4 @@ class StudentFactory(factory.django.DjangoModelFactory):
     user = factory.SubFactory(UserFactory)
     first_name = factory.Faker('first_name')
     last_name = factory.Faker('last_name')
+    matriculation_semester = factory.SubFactory(SemesterFactory)

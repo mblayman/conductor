@@ -24,4 +24,4 @@ class SemesterAdmin(admin.ModelAdmin):
 
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ('last_name', 'first_name', 'class_year')
+    list_display = ('last_name', 'first_name', 'matriculation_semester')

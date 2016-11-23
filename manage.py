@@ -13,6 +13,7 @@ if __name__ == '__main__':
         os.environ['ROLLBAR_ACCESS_TOKEN'] = 'rollbar'
         os.environ['ROLLBAR_ENVIRONMENT'] = 'test'
         os.environ['SECRET_KEY'] = 'asecrettoeverybody'
+        os.environ['STATIC_ROOT'] = 'static'
         os.environ['STATIC_URL'] = '/static/'
 
     from django.core.management import execute_from_command_line
