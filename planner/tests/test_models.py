@@ -1,5 +1,7 @@
 import datetime
 
+from django.db import models
+
 from conductor.tests import TestCase
 
 
@@ -63,6 +65,13 @@ class TestStudent(TestCase):
         student = self.StudentFactory.build(matriculation_semester=semester)
 
         self.assertEqual(semester, student.matriculation_semester)
+
+    def test_protect_student(self):
+        semester = self.SemesterFactory.create()
+        self.StudentFactory.create(matriculation_semester=semester)
+
+        with self.assertRaises(models.ProtectedError):
+            semester.delete()
 
 
 class TestSemester(TestCase):

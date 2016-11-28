@@ -39,7 +39,8 @@ class Student(models.Model):
     first_name = models.TextField()
     last_name = models.TextField()
     # XXX: Remove null constraint after migration.
-    matriculation_semester = models.ForeignKey(Semester, null=True)
+    matriculation_semester = models.ForeignKey(
+        Semester, null=True, on_delete=models.PROTECT)
 
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
