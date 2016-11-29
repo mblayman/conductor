@@ -23,8 +23,3 @@ test('has a lastName', function(assert) {
   let model = this.subject();
   assert.ok(model.toJSON().hasOwnProperty('lastName'));
 });
-
-test('has a classYear', function(assert) {
-  let model = this.subject();
-  assert.ok(model.toJSON().hasOwnProperty('classYear'));
-});

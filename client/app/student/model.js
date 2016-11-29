@@ -6,5 +6,4 @@ import StudentValidations from 'client/mixins/student-validations';
 export default Model.extend(StudentValidations, {
   firstName: attr('string'),
   lastName: attr('string'),
-  classYear: attr('number')
 });

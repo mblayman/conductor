@@ -7,19 +7,13 @@
         errorMessage=model.validations.attrs.firstName.message
         isInvalid=(and didValidate (v-get model 'firstName' 'isInvalid'))}}
     </div>
+  </div>
+  <div class="fields">
     <div class="field">
       {{field-input inputId='lastName' inputValue=model.lastName
         placeholder='Last name'
         errorMessage=model.validations.attrs.lastName.message
         isInvalid=(and didValidate (v-get model 'lastName' 'isInvalid'))}}
-    </div>
-  </div>
-  <div class="fields">
-    <div class="two wide field">
-      {{field-input inputId='classYear' inputValue=model.classYear
-        placeholder='Class year'
-        errorMessage=model.validations.attrs.classYear.message
-        isInvalid=(and didValidate (v-get model 'classYear' 'isInvalid'))}}
     </div>
   </div>
 
