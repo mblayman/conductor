@@ -3,6 +3,7 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new', {
   needs: [
+    'model:semester',
     'model:student',
     'validator:number',
     'validator:presence'
