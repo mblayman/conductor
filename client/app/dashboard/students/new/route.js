@@ -4,14 +4,17 @@ export default Ember.Route.extend({
   titleToken: 'Add a student',
 
   model() {
-    return this.store.createRecord('student');
+    return Ember.RSVP.hash({
+      student: this.store.createRecord('student'),
+      semesters: this.store.findAll('semester')
+    });
   },
 
   actions: {
     willTransition() {
       // Clean out any unsaved students from the store.
       const model = this.modelFor(this.routeName);
-      model.rollbackAttributes();
+      model.student.rollbackAttributes();
     }
   },
 

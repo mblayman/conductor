@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
 
   actions: {
     create() {
-      this.get('model').validate().then(({model, validations}) => {
+      this.get('model').student.validate().then(({model, validations}) => {
         if (validations.get('isValid')) {
           model.save()
             .then(this.onSuccess.bind(this))

@@ -2,18 +2,27 @@
 <form {{action 'create' on='submit'}} class="ui form{{if errorMessage " error"}}">
   <div class="fields">
     <div class="field">
-      {{field-input inputId='firstName' inputValue=model.firstName
+      {{field-input inputId='firstName' inputValue=model.student.firstName
         placeholder='First name'
-        errorMessage=model.validations.attrs.firstName.message
-        isInvalid=(and didValidate (v-get model 'firstName' 'isInvalid'))}}
+        errorMessage=model.student.validations.attrs.firstName.message
+        isInvalid=(and didValidate (v-get model.student 'firstName' 'isInvalid'))}}
     </div>
   </div>
   <div class="fields">
     <div class="field">
-      {{field-input inputId='lastName' inputValue=model.lastName
+      {{field-input inputId='lastName' inputValue=model.student.lastName
         placeholder='Last name'
-        errorMessage=model.validations.attrs.lastName.message
-        isInvalid=(and didValidate (v-get model 'lastName' 'isInvalid'))}}
+        errorMessage=model.student.validations.attrs.lastName.message
+        isInvalid=(and didValidate (v-get model.student 'lastName' 'isInvalid'))}}
+    </div>
+  </div>
+  <div class="fields">
+    <div class="field">
+      <select class="ui dropdown">
+        {{#each model.semesters as |semester|}}
+          <option value="{{semester.id}}">{{semester.date}}</option>
+        {{/each}}
+      </select>
     </div>
   </div>
 
