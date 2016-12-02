@@ -4,7 +4,7 @@ import Ember from 'ember';
  * Get the season. This is a crude approximation, but it will work.
  */
 function getSeason(month) {
-  if (month < 6) {
+  if (month < 5) {
     return 'Spring';
   } else if (month < 9) {
     return 'Summer';
