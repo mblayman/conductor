@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from rest_framework.test import force_authenticate
 
 from conductor.tests import TestCase
@@ -54,7 +56,8 @@ class TestStudentViewSet(TestCase):
         data = {
             'first_name': 'Matt',
             'last_name': 'Layman',
-            'matriculation_semester': semester.id,
+            'matriculation_semester': OrderedDict({
+                'type': 'semesters', 'id': str(semester.id)}),
         }
         request = self.request_factory.post(data=data)
         user = self.UserFactory.create()

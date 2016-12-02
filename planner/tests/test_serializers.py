@@ -49,4 +49,5 @@ class TestStudentSerializer(TestCase):
         student = self.StudentFactory.create()
         serializer = serializers.StudentSerializer(student)
         self.assertEqual(
-            student.matriculation_semester.id, serializer.data['matriculation_semester'])
+            student.matriculation_semester.id,
+            int(serializer.data['matriculation_semester']['id']))
