@@ -20,7 +20,7 @@
     <div class="field">
       <select class="ui dropdown">
         {{#each model.semesters as |semester|}}
-          <option value="{{semester.id}}">{{semester.date}}</option>
+          <option value="{{semester.id}}">{{humanize-semester semester}}</option>
         {{/each}}
       </select>
     </div>
