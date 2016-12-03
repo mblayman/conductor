@@ -1,19 +1,19 @@
-import TestHelper from 'ember-data-factory-guy/factory-guy-test-helper';
+import { mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
 import { test } from 'qunit';
 import moduleForAcceptance from 'client/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | schools', {
   beforeEach() {
-    TestHelper.setup();
+    mockSetup();
   },
 
   afterEach() {
-    TestHelper.teardown();
+    mockTeardown();
   }
 });
 
 test('visiting /schools', function(assert) {
-  TestHelper.mockFindAll('school', 2);
+  mockFindAll('school', 2);
 
   visit('/schools');
 

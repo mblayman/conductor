@@ -1,14 +1,14 @@
 import Ember from 'ember';
-import TestHelper from 'ember-data-factory-guy/factory-guy-test-helper';
+import { mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new', {
   beforeEach() {
-    TestHelper.setup();
+    mockSetup();
   },
 
   afterEach() {
-    TestHelper.teardown();
+    mockTeardown();
   },
 
   needs: [
@@ -25,7 +25,7 @@ test('it exists', function(assert) {
 });
 
 test('it has a student for its model', function(assert) {
-  TestHelper.mockFindAll('semester', 2);
+  mockFindAll('semester', 2);
 
   let route = this.subject();
   Ember.run(function() {

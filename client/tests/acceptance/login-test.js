@@ -1,15 +1,15 @@
-import TestHelper from 'ember-data-factory-guy/factory-guy-test-helper';
+import { mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
 import { test } from 'qunit';
 import moduleForAcceptance from 'client/tests/helpers/module-for-acceptance';
 import { authenticateSession } from 'client/tests/helpers/ember-simple-auth';
 
 moduleForAcceptance('Acceptance | login', {
   beforeEach() {
-    TestHelper.setup();
+    mockSetup();
   },
 
   afterEach() {
-    TestHelper.teardown();
+    mockTeardown();
   }
 });
 
@@ -22,7 +22,7 @@ test('visiting /login', function(assert) {
 });
 
 test('visiting /login when already authenticated', function(assert) {
-  TestHelper.mockFindAll('student', 2);
+  mockFindAll('student', 2);
 
   authenticateSession(this.application);
   visit('/login');

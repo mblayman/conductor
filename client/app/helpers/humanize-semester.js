@@ -14,6 +14,7 @@ function getSeason(month) {
 
 export function humanizeSemester(params) {
   let semester = params[0];
+  if (!semester.get('date')) { return ''; }
   let season = getSeason(semester.get('date').getMonth());
   let year = semester.get('date').getFullYear();
   return `${season} ${year}`;
