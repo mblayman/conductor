@@ -7,8 +7,6 @@
         errorMessage=model.student.validations.attrs.firstName.message
         isInvalid=(and didValidate (v-get model.student 'firstName' 'isInvalid'))}}
     </div>
-  </div>
-  <div class="fields">
     <div class="field">
       {{field-input inputId='lastName' inputValue=model.student.lastName
         placeholder='Last name'
@@ -18,11 +16,12 @@
   </div>
   <div class="fields">
     <div class="field">
-      <select class="ui dropdown">
+      <label>Applying for</label>
+      {{#x-select class='ui dropdown' action='selectSemester' as |xs|}}
         {{#each model.semesters as |semester|}}
-          <option value="{{semester.id}}">{{humanize-semester semester}}</option>
+          {{#xs.option value=semester}}{{humanize-semester semester}}{{/xs.option}}
         {{/each}}
-      </select>
+      {{/x-select}}
     </div>
   </div>
 

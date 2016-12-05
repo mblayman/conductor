@@ -25,6 +25,10 @@ export default Ember.Controller.extend({
         }
         this.set('didValidate', true);
       });
+    },
+
+    selectSemester(semester) {
+      this.get('model').student.set('matriculationSemester', semester);
     }
   }
 });

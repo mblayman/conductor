@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       student: this.store.createRecord('student'),
-      semesters: this.store.findAll('semester')
+      semesters: this.store.findAll('semester').then((semesters) => semesters.sortBy('date'))
     });
   },
 
