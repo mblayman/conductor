@@ -5,6 +5,6 @@ django-anymail==0.6.1
 django-cors-middleware==1.2
 djangorestframework==3.3.3
 djangorestframework-jsonapi==2.0.1
-djangorestframework-jwt==1.8.0
+djangorestframework-jwt==1.9.0
 requests==2.9.1
 rollbar==0.13.8
