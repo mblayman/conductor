@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from rest_framework_json_api.views import ModelViewSet
 
 from planner.models import School, Semester
 from planner.serializers import (
@@ -15,10 +16,11 @@ class SemesterViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = SemesterSerializer
 
 
-class StudentViewSet(viewsets.ModelViewSet):
+class StudentViewSet(ModelViewSet):
     serializer_class = StudentSerializer
 
-    def get_queryset(self):
+    @property
+    def queryset(self):
         return self.request.user.students.all()
 
     def perform_create(self, serializer):

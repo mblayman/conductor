@@ -41,7 +41,7 @@ class TestStudentViewSet(TestCase):
         request = self.request_factory.authenticated_get(user)
         viewset = views.StudentViewSet()
         viewset.request = request
-        self.assertEqual([student], list(viewset.get_queryset()))
+        self.assertEqual([student], list(viewset.queryset))
 
     def test_list(self):
         view = self._make_view()

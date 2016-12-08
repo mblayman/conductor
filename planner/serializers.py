@@ -16,6 +16,15 @@ class SemesterSerializer(serializers.ModelSerializer):
 
 
 class StudentSerializer(serializers.ModelSerializer):
+    included_serializers = {
+        'matriculation_semester': SemesterSerializer,
+    }
+
     class Meta:
         model = Student
         fields = ('id', 'first_name', 'last_name', 'matriculation_semester')
+
+    class JSONAPIMeta:
+        # XXX: Side loading is currently broken in DJA.
+        # See https://github.com/django-json-api/django-rest-framework-json-api/issues/291
+        included_resources = ['matriculation_semester']
