@@ -41,7 +41,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.APP.API_HOST = 'https://localhost:8080'
+    ENV.APP.API_HOST = 'https://localhost:8080';
   }
 
   if (environment === 'test') {
@@ -57,6 +57,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.APP.API_HOST = process.env.API_HOST;
+    ENV.segment = {
+      WRITE_KEY: process.env.SEGMENT_WRITE_KEY
+    };
   }
 
   ENV['ember-simple-auth-token'].serverTokenEndpoint = ENV.APP.API_HOST + '/api-token-auth/';
