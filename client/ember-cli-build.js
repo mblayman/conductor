@@ -7,6 +7,7 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     lessOptions: {
       paths: [
+        'less',
         'node_modules/semantic-ui-less'
       ]
     }
