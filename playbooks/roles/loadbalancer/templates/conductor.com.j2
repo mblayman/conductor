@@ -44,6 +44,12 @@ server {
     root         {{ client_root }};
     index        index.html;
 
+    gzip on;
+    gzip_types text/css application/javascript;
+    gzip_proxied no-cache no-store private expired auth;
+    gzip_comp_level 5;
+    gzip_vary on;
+
     location / {
         if ($scheme = http) {
             return 301 https://{{ client_domain }}$request_uri;
