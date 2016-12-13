@@ -50,6 +50,12 @@ server {
     gzip_comp_level 5;
     gzip_vary on;
 
+    # Ember hashes CSS and JS so cache them "forever."
+    location ~* \.(css|js)$ {
+        expires max;
+        add_header Cache-Control public;
+    }
+
     location / {
         if ($scheme = http) {
             return 301 https://{{ client_domain }}$request_uri;
