@@ -1,19 +1,18 @@
 @import 'base';
+@import 'definitions/globals/site';
 
-/* TODO: Figure out how the heck semantic is actually wiring this together
-   and why I can't import basic color variables.
-   In the interim, hardcode the color value for "black".
-*/
 body {
-    background-color: #1B1C1D;
+    background-color: @black;
 }
 
 .masthead.segment {
-  min-height: 500px;
+  min-height: 550px;
   padding: 1em 0em;
 }
 .masthead.ui.inverted.segment {
-  border-top: 1px solid #2d2e2f;
+  background: @black;
+  background: linear-gradient(20deg, @black, darken(@red, 10));
+  border-top: 1px solid darken(@red, 20);
 }
 .masthead .logo.item img {
   margin-right: 1em;
@@ -30,6 +29,11 @@ body {
 .masthead h2 {
   font-size: 1.7em;
   font-weight: normal;
+}
+
+/* TODO: Why is this not showing up? Is it a 2.2 styling? */
+.ui.vertical.stripe {
+  padding: 2em 0 4em 0;
 }
 
 @media only screen and (max-width: 700px) {
