@@ -5,6 +5,7 @@ const { service } = Ember.inject;
 
 export default Ember.Route.extend(ApplicationRouteMixin, {
   currentUser: service(),
+  segment: service(),
 
   beforeModel() {
     return this._loadCurrentUser();
@@ -23,5 +24,12 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
     tokens.reverse();
     tokens.push('College Conductor');
     return tokens.join(' - ');
+  },
+
+  identifyUser() {
+    const user = this.get('currentUser.user');
+    if (user) {
+      this.get('segment').identifyUser(user.get('id'), {username: user.get('username')});
+    }
   }
 });
