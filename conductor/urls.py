@@ -20,7 +20,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
 
-from accounts.views import InviteEmailViewSet
+from accounts.views import InviteEmailViewSet, UserViewSet
 from planner.views import SchoolViewSet, SemesterViewSet, StudentViewSet
 from support.views import SupportTicketViewSet
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
@@ -31,6 +31,7 @@ router.register('schools', SchoolViewSet)
 router.register('semesters', SemesterViewSet)
 router.register('support-tickets', SupportTicketViewSet)
 router.register('students', StudentViewSet, base_name='student')
+router.register('users', UserViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
