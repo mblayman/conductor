@@ -57,6 +57,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.APP.API_HOST = process.env.API_HOST;
+    ENV.rollbar = {
+      accessToken: process.env.ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN
+    };
     ENV.segment = {
       WRITE_KEY: process.env.SEGMENT_WRITE_KEY
     };

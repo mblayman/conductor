@@ -9,6 +9,7 @@ client_root: /var/www/client
 ember_env:
   API_HOST: "https://{{ api_domain }}"
   CLIENT_ROOT: "{{ client_root }}"
+  ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN: "{{ rollbar.post_client_item_access_token }}"
   SEGMENT_WRITE_KEY: "{{ segment.write_key }}"
 
 api_domain: "api.{{ root_domain }}"
@@ -44,6 +45,7 @@ mailgun:
 
 rollbar:
   access_token: "{{ vault_rollbar_access_token }}"
+  post_client_item_access_token: "{{ vault.rollbar.post_client_item_access_token }}"
 
 segment:
   write_key: "{{ vault_segment_write_key }}"
