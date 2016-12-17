@@ -58,6 +58,10 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.APP.API_HOST = process.env.API_HOST;
     ENV.rollbar = {
+      // TODO: ember-simple-auth-token is raising errors when tokens expire.
+      // This generates a ton of error noise in rollbar. It needs to be fixed
+      // before I can use this.
+      enabled: false,
       accessToken: process.env.ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN
     };
     ENV.segment = {
