@@ -1,7 +1,7 @@
 {{#if model}}
   <h2>Your students</h2>
   <div class="ui cards">
-    {{#each model as |student|}}
+    {{#each studentsBySemester as |student|}}
       {{#link-to 'dashboard.student' student class="red card"}}
         <div class="content">
           <div class="header">{{student.firstName}} {{student.lastName}}</div>
@@ -10,10 +10,6 @@
             <div class="description">{{humanize-semester student.matriculationSemester}}</div>
           {{/if}}
         </div>
-        <!-- TODO: Use the proper route. -->
-        {{#link-to 'dashboard.students.new' class="ui button attached bottom"}}
-          <i class="add green icon"></i> Add School
-        {{/link-to}}
       {{/link-to}}
     {{/each}}
   </div>
