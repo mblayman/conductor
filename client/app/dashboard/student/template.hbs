@@ -1,2 +1,14 @@
-<h1>{{model.firstName}}</h1>
-{{outlet}}
+<div class="ui stackable grid">
+  <div class="ten wide column">
+    <h2>{{model.firstName}} {{model.lastName}}</h2>
+    <p>Applying for <strong>{{humanize-semester model.matriculationSemester}}</strong></p>
+    <div class="ui icon info message">
+      <i class="university icon"></i>
+      <div class="content">
+        {{model.firstName}} has no schools yet.
+        Search for the first one by clicking the <i>Find school</i> button below.
+      </div>
+    </div>
+    <button type="submit" class="ui large red submit button">Find school</button>
+  </div>
+</div>

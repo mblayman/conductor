@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   didValidate: false,
 
   onSuccess() {
-    this.transitionToRoute('dashboard');
+    this.transitionToRoute('dashboard.student', this.get('model').student);
   },
 
   onFailure() {

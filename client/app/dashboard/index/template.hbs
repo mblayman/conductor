@@ -1,4 +1,5 @@
 {{#if model}}
+  <h2>Your students</h2>
   <div class="ui cards">
     {{#each model as |student|}}
       {{#link-to 'dashboard.student' student class="red card"}}
