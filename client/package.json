@@ -52,7 +52,7 @@
     "ember-truth-helpers": "1.2.0",
     "emberx-select": "2.2.2",
     "loader.js": "^4.0.10",
-    "semantic-ui-less": "2.1.8"
+    "semantic-ui-less": "^2.2.4"
   },
   "engines": {
     "node": ">= 0.12.0"
