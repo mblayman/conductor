@@ -10,5 +10,11 @@ export default Ember.Route.extend({
   model(params) {
     if (params.search.length === 0) { return null; }
     return this.store.query('school', params);
+  },
+
+  resetController(controller, isExiting) {
+    if (isExiting) {
+      controller.set('search', '');
+    }
   }
 });
