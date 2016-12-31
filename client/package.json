@@ -43,6 +43,7 @@
     "ember-cp-validations": "3.1.4",
     "ember-data": "^2.10.0",
     "ember-data-factory-guy": "2.9.8",
+    "ember-debounced-input-helpers": "0.0.2",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-promise-helpers": "1.0.2",
