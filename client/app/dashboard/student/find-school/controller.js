@@ -4,5 +4,6 @@ export default Ember.Controller.extend({
   queryParams: {
     search: 'q'
   },
-  search: ''
+  search: '',
+  currentlyLoading: false
 });

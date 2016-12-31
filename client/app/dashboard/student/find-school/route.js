@@ -12,8 +12,19 @@ export default Ember.Route.extend({
     return this.store.query('school', params);
   },
 
+  actions: {
+    loading(transition) {
+      let controller = this.controllerFor('dashboard.student.find-school');
+      controller.set('currentlyLoading', true);
+      transition.promise.finally(function() {
+          controller.set('currentlyLoading', false);
+      });
+    }
+  },
+
   resetController(controller, isExiting) {
     if (isExiting) {
+      controller.set('currentlyLoading', false);
       controller.set('search', '');
     }
   }

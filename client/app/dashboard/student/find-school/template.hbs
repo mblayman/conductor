@@ -5,30 +5,34 @@
   </div>
 </div>
 
-{{#if model}}
-  <h3>Select a school</h3>
-  <div class="ui cards">
-    {{#each model as |school|}}
-      {{#link-to 'dashboard' class="red card"}}
-        <div class="content">
-          <div class="description">{{school.name}}</div>
-        </div>
-      {{/link-to}}
-    {{/each}}
-  </div>
+{{#if currentlyLoading}}
+  <div class="ui huge active loader"></div>
 {{else}}
-  <div class="ui two column padded centered grid">
-    <div class="row">
-      <div class="center aligned column">
-        <i class="massive grey university icon"></i>
+  {{#if model}}
+    <h3>Select a school</h3>
+    <div class="ui cards">
+      {{#each model as |school|}}
+        {{#link-to 'dashboard' class="red card"}}
+          <div class="content">
+            <div class="description">{{school.name}}</div>
+          </div>
+        {{/link-to}}
+      {{/each}}
+    </div>
+  {{else}}
+    <div class="ui two column padded centered grid">
+      <div class="row">
+        <div class="center aligned column">
+          <i class="massive grey university icon"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          Begin
+          by typing the school name
+          in the search bar.
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="center aligned column">
-        Begin
-        by typing the school name
-        in the search bar.
-      </div>
-    </div>
-  </div>
+  {{/if}}
 {{/if}}
