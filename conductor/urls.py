@@ -27,7 +27,7 @@ from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register('invite-emails', InviteEmailViewSet)
-router.register('schools', SchoolViewSet)
+router.register('schools', SchoolViewSet, base_name='school')
 router.register('semesters', SemesterViewSet)
 router.register('support-tickets', SupportTicketViewSet)
 router.register('students', StudentViewSet, base_name='student')

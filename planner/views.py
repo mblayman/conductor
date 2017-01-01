@@ -1,3 +1,7 @@
+import functools
+import operator
+
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet
@@ -12,9 +16,23 @@ class SchoolPagination(PageNumberPagination):
 
 
 class SchoolViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = School.objects.all()
     serializer_class = SchoolSerializer
     pagination_class = SchoolPagination
+
+    @property
+    def queryset(self):
+        queryset = School.objects.all()
+        search = self.request.query_params.get('search', None)
+        if search:
+            terms = [SearchQuery(term) for term in search.split()]
+            vector = SearchVector('name')
+            query = functools.reduce(operator.or_, terms)
+            queryset = queryset.annotate(
+                rank=SearchRank(vector, query)).order_by('-rank')
+            # This is a magic value. By inspecting rank,
+            # it appeared that anything below 0.04 was junk.
+            queryset = queryset.filter(rank__gte=0.04)
+        return queryset
 
 
 class SemesterViewSet(viewsets.ReadOnlyModelViewSet):
