@@ -1,11 +1,9 @@
 # FIXME: Newer version break becoming the postgres user.
 # See https://github.com/ansible/ansible/issues/16048
 ansible==2.0.0.2
-dopy
 factory_boy==2.8.1
 flake8
 gunicorn
 honcho
 httpie
-# dopy has a bug in the setup.py that is not requiring six.
-six
+psycopg2

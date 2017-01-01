@@ -49,7 +49,6 @@ coverage.xml
 
 # Django stuff:
 *.log
-db.sqlite3
 static/
 
 # Sphinx documentation
