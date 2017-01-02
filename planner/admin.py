@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from planner.models import School, Semester, Student
+from planner.models import School, Semester, Student, TargetSchool
 
 
 @admin.register(School)
@@ -25,3 +25,8 @@ class SemesterAdmin(admin.ModelAdmin):
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'matriculation_semester')
+
+
+@admin.register(TargetSchool)
+class TargetSchoolAdmin(admin.ModelAdmin):
+    list_display = ('student', 'school')

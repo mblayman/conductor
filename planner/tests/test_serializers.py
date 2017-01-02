@@ -51,3 +51,11 @@ class TestStudentSerializer(TestCase):
         self.assertEqual(
             student.matriculation_semester.id,
             int(serializer.data['matriculation_semester']['id']))
+
+    def test_serializes_schools(self):
+        school = self.SchoolFactory.create()
+        student = self.StudentFactory.create(schools=(school,))
+        serializer = serializers.StudentSerializer(student)
+        self.assertEqual(
+            school.id,
+            int(serializer.data['schools'][0]['id']))

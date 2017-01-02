@@ -43,6 +43,15 @@ class Student(models.Model):
     first_name = models.TextField()
     last_name = models.TextField()
     matriculation_semester = models.ForeignKey(Semester, on_delete=models.PROTECT)
+    schools = models.ManyToManyField(School, through='TargetSchool')
 
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
+
+
+class TargetSchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ('school', 'student')

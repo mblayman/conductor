@@ -22,7 +22,13 @@ class StudentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Student
-        fields = ('id', 'first_name', 'last_name', 'matriculation_semester')
+        fields = (
+            'id',
+            'first_name',
+            'last_name',
+            'matriculation_semester',
+            'schools',
+        )
 
     class JSONAPIMeta:
         # XXX: Side loading is currently broken in DJA.

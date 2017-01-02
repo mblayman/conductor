@@ -41,3 +41,20 @@ class StudentFactory(factory.django.DjangoModelFactory):
     first_name = factory.Faker('first_name')
     last_name = factory.Faker('last_name')
     matriculation_semester = factory.SubFactory(SemesterFactory)
+
+    @factory.post_generation
+    def schools(self, create, extracted, **kwargs):
+        if not create:
+            return
+
+        if extracted:
+            for school in extracted:
+                TargetSchoolFactory.create(student=self, school=school)
+
+
+class TargetSchoolFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.TargetSchool'
+
+    school = factory.SubFactory(SchoolFactory)
+    student = factory.SubFactory(StudentFactory)

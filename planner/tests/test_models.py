@@ -34,6 +34,27 @@ class TestSchool(TestCase):
             'http://admission.virginia.edu/events', school.milestones_url)
 
 
+class TestSemester(TestCase):
+
+    def test_factory(self):
+        semester = self.SemesterFactory.build()
+
+        self.assertIsNotNone(semester.date)
+        self.assertTrue(semester.active)
+
+    def test_has_date(self):
+        today = datetime.date.today()
+        semester = self.SemesterFactory.build(date=today)
+
+        self.assertEqual(today, semester.date)
+
+    def test_has_active(self):
+        active = False
+        semester = self.SemesterFactory.build(active=active)
+
+        self.assertFalse(semester.active)
+
+
 class TestStudent(TestCase):
 
     def test_factory(self):
@@ -73,23 +94,29 @@ class TestStudent(TestCase):
         with self.assertRaises(models.ProtectedError):
             semester.delete()
 
+    def test_has_schools(self):
+        school = self.SchoolFactory.create()
+        student = self.StudentFactory.create(schools=(school,))
 
-class TestSemester(TestCase):
+        self.assertEqual([school], list(student.schools.all()))
+
+
+class TestTargetSchool(TestCase):
 
     def test_factory(self):
-        semester = self.SemesterFactory.build()
+        target_school = self.TargetSchoolFactory.build()
 
-        self.assertIsNotNone(semester.date)
-        self.assertTrue(semester.active)
+        self.assertIsNotNone(target_school.school)
+        self.assertIsNotNone(target_school.student)
 
-    def test_has_date(self):
-        today = datetime.date.today()
-        semester = self.SemesterFactory.build(date=today)
+    def test_has_school(self):
+        school = self.SchoolFactory.create()
+        target_school = self.TargetSchoolFactory.build(school=school)
 
-        self.assertEqual(today, semester.date)
+        self.assertEqual(school, target_school.school)
 
-    def test_has_active(self):
-        active = False
-        semester = self.SemesterFactory.build(active=active)
+    def test_has_student(self):
+        student = self.StudentFactory.create()
+        target_school = self.TargetSchoolFactory.build(student=student)
 
-        self.assertFalse(semester.active)
+        self.assertEqual(student, target_school.student)
