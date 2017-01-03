@@ -64,3 +64,28 @@ class TestStudentViewSet(TestCase):
         force_authenticate(request, user)
         response = view(request)
         self.assertEqual(201, response.status_code)
+
+
+class TestTargetSchoolViewSet(TestCase):
+
+    def _make_view(self):
+        return views.TargetSchoolViewSet.as_view(
+            actions={'get': 'list', 'post': 'create'})
+
+    def test_gets_target_schools(self):
+        """For access control, a user can only get their students' schools."""
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create(user=user)
+        target_school = self.TargetSchoolFactory.create(student=student)
+        self.TargetSchoolFactory.create()
+        request = self.request_factory.authenticated_get(user)
+        viewset = views.TargetSchoolViewSet()
+        viewset.request = request
+        self.assertEqual([target_school], list(viewset.queryset))
+
+    def test_list(self):
+        view = self._make_view()
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
+        response = view(request)
+        self.assertEqual(200, response.status_code)

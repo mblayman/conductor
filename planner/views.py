@@ -6,9 +6,10 @@ from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet
 
-from planner.models import School, Semester
+from planner.models import School, Semester, TargetSchool
 from planner.serializers import (
-    SchoolSerializer, SemesterSerializer, StudentSerializer)
+    SchoolSerializer, SemesterSerializer, StudentSerializer,
+    TargetSchoolSerializer)
 
 
 class SchoolPagination(PageNumberPagination):
@@ -49,3 +50,11 @@ class StudentViewSet(ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
+
+class TargetSchoolViewSet(ModelViewSet):
+    serializer_class = TargetSchoolSerializer
+
+    @property
+    def queryset(self):
+        return TargetSchool.objects.filter(student__user=self.request.user)

@@ -1,6 +1,6 @@
 from rest_framework_json_api import serializers
 
-from planner.models import School, Semester, Student
+from planner.models import School, Semester, Student, TargetSchool
 
 
 class SchoolSerializer(serializers.ModelSerializer):
@@ -34,3 +34,9 @@ class StudentSerializer(serializers.ModelSerializer):
         # XXX: Side loading is currently broken in DJA.
         # See https://github.com/django-json-api/django-rest-framework-json-api/issues/291
         included_resources = ['matriculation_semester']
+
+
+class TargetSchoolSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TargetSchool
+        fields = ('id', 'school', 'student')

@@ -21,7 +21,8 @@ from django.contrib import admin
 from rest_framework import routers
 
 from accounts.views import InviteEmailViewSet, UserViewSet
-from planner.views import SchoolViewSet, SemesterViewSet, StudentViewSet
+from planner.views import (
+    SchoolViewSet, SemesterViewSet, StudentViewSet, TargetSchoolViewSet)
 from support.views import SupportTicketViewSet
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
@@ -31,6 +32,8 @@ router.register('schools', SchoolViewSet, base_name='school')
 router.register('semesters', SemesterViewSet)
 router.register('support-tickets', SupportTicketViewSet)
 router.register('students', StudentViewSet, base_name='student')
+router.register(
+    'target-schools', TargetSchoolViewSet, base_name='targetschool')
 router.register('users', UserViewSet)
 
 urlpatterns = [

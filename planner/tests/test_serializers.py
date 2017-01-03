@@ -59,3 +59,25 @@ class TestStudentSerializer(TestCase):
         self.assertEqual(
             school.id,
             int(serializer.data['schools'][0]['id']))
+
+
+class TestTargetSchoolSerializer(TestCase):
+
+    def test_serializes_id(self):
+        target_school = self.TargetSchoolFactory.create()
+        serializer = serializers.TargetSchoolSerializer(target_school)
+        self.assertEqual(target_school.id, serializer.data['id'])
+
+    def test_serializes_school(self):
+        target_school = self.TargetSchoolFactory.create()
+        serializer = serializers.TargetSchoolSerializer(target_school)
+        self.assertEqual(
+            target_school.school.id,
+            int(serializer.data['school']['id']))
+
+    def test_serializes_student(self):
+        target_school = self.TargetSchoolFactory.create()
+        serializer = serializers.TargetSchoolSerializer(target_school)
+        self.assertEqual(
+            target_school.student.id,
+            int(serializer.data['student']['id']))
