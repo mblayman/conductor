@@ -12,11 +12,11 @@
     <h3>Select a school</h3>
     <div class="ui cards">
       {{#each model as |school|}}
-        {{#link-to 'dashboard' class="red card"}}
+        <a {{action "createTargetSchool" school}} class="red card">
           <div class="content">
             <div class="description">{{school.name}}</div>
           </div>
-        {{/link-to}}
+        </a>
       {{/each}}
     </div>
   {{else}}
