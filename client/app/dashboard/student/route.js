@@ -11,6 +11,7 @@ export default Ember.Route.extend({
       const student = this.controller.get('model');
       // TODO: Save a target school.
       // TODO: Show error modal if saving fails (e.g., unique constraint failure)
+      // TODO: Transition back to the student view on success.
       console.log('From route, creating target school with', school.get('name'), student.get('firstName'));
     }
   }
