@@ -1,3 +1,4 @@
+from rest_framework.validators import UniqueTogetherValidator
 from rest_framework_json_api import serializers
 
 from planner.models import School, Semester, Student, TargetSchool
@@ -40,3 +41,9 @@ class TargetSchoolSerializer(serializers.ModelSerializer):
     class Meta:
         model = TargetSchool
         fields = ('id', 'school', 'student')
+        validators = [
+            UniqueTogetherValidator(
+                queryset=TargetSchool.objects.all(),
+                fields=('school', 'student')
+            )
+        ]

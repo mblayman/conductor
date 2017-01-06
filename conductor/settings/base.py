@@ -119,7 +119,7 @@ AUTH_USER_MODEL = 'accounts.User'
 
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
-    'EXCEPTION_HANDLER': 'rest_framework_json_api.exceptions.exception_handler',  # noqa
+    'EXCEPTION_HANDLER': 'vendor.views.custom_exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',

@@ -89,3 +89,19 @@ class TestTargetSchoolViewSet(TestCase):
         request = self.request_factory.authenticated_get(user)
         response = view(request)
         self.assertEqual(200, response.status_code)
+
+    def test_validates_unique_school_student(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create(user=user)
+        target_school = self.TargetSchoolFactory.create(student=student)
+        view = self._make_view()
+        data = {
+            'school': OrderedDict({
+                'type': 'schools', 'id': str(target_school.school.id)}),
+            'student': OrderedDict({
+                'type': 'students', 'id': str(target_school.student.id)}),
+        }
+        request = self.request_factory.post(data=data)
+        force_authenticate(request, user)
+        response = view(request)
+        self.assertEqual(422, response.status_code)
