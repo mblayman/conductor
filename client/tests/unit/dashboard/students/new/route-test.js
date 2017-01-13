@@ -12,6 +12,7 @@ moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new
   },
 
   needs: [
+    'model:school',
     'model:semester',
     'model:student',
     'validator:number',
