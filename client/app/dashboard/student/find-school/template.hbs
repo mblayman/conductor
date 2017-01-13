@@ -11,12 +11,24 @@
   {{#if model}}
     <h3>Select a school</h3>
     <div class="ui cards">
-      {{#each model as |school|}}
-        <a {{action "createTargetSchool" school}} class="red card">
-          <div class="content">
-            <div class="description">{{school.name}}</div>
+      {{#each schoolOptions as |schoolOption|}}
+        {{#if schoolOption.isTargetSchool }}
+          <div class="red card">
+            <div class="content">
+              <div class="description">{{schoolOption.school.name}}</div>
+            </div>
+            <div class="extra content">
+              <i class="star icon"></i>
+              On student’s list
+            </div>
           </div>
-        </a>
+        {{else}}
+          <a {{action "createTargetSchool" schoolOption.school}} class="red card">
+            <div class="content">
+              <div class="description">{{schoolOption.school.name}}</div>
+            </div>
+          </a>
+        {{/if}}
       {{/each}}
     </div>
   {{else}}

@@ -22,6 +22,12 @@ export default Ember.Route.extend({
     }
   },
 
+  setupController(controller, model) {
+    this._super(controller, model);
+    let student = this.modelFor('dashboard.student');
+    controller.set('student', student);
+  },
+
   resetController(controller, isExiting) {
     if (isExiting) {
       controller.set('currentlyLoading', false);
