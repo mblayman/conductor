@@ -14,6 +14,7 @@ export default Ember.Route.extend({
       const targetSchool = this.store.createRecord(
         'target-school', {school: school, student: student});
       targetSchool.save().then(() => {
+        student.reload();
         this.transitionTo('dashboard.student');
       }).catch((reason) => {
         if (reason.errors.length >= 1 && reason.errors[0].detail.includes('unique')) {
