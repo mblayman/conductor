@@ -19,6 +19,7 @@ class SemesterSerializer(serializers.ModelSerializer):
 class StudentSerializer(serializers.ModelSerializer):
     included_serializers = {
         'matriculation_semester': SemesterSerializer,
+        'schools': SchoolSerializer,
     }
 
     class Meta:
