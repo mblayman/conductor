@@ -1,0 +1,4 @@
+---
+- name: Install RabbitMQ
+  become: yes
+  apt: name=rabbitmq-server state=present

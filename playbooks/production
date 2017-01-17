@@ -4,10 +4,14 @@
 [loadbalancer]
 104.131.27.10
 
+[messagingservers]
+104.131.27.10
+
 [webservers]
 104.131.27.10
 
 [production:children]
 dbservers
 loadbalancer
+messagingservers
 webservers

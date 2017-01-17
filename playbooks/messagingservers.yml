@@ -1,0 +1,4 @@
+---
+- hosts: messagingservers
+  roles:
+    - messaging

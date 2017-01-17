@@ -1,5 +1,6 @@
 ---
 - include: dbservers.yml
+- include: messagingservers.yml
 - include: webservers.yml
 - include: loadbalancer.yml
   tags:

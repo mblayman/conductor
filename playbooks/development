@@ -6,10 +6,14 @@ web01
 [loadbalancer]
 web01
 
+[messagingservers]
+web01
+
 [webservers]
 web01
 
 [development:children]
 dbservers
 loadbalancer
+messagingservers
 webservers
