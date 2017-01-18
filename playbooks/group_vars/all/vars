@@ -37,6 +37,8 @@ postgres:
 
 rabbitmq:
   vhost: conductor
+  user: "{{ vault.rabbitmq.user }}"
+  password: "{{ vault.rabbitmq.password }}"
 
 cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
 
