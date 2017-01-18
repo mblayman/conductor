@@ -2,3 +2,9 @@
 - name: Install RabbitMQ
   become: yes
   apt: name=rabbitmq-server state=present
+
+- name: Set the RabbitMQ vhost
+  become: yes
+  rabbitmq_vhost:
+    name: "{{ rabbitmq.vhost }}"
+    state: present

@@ -35,6 +35,9 @@ postgres:
   user: conductor
   password: "{{ vault_postgres_password }}"
 
+rabbitmq:
+  vhost: conductor
+
 cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
 
 datadog:
