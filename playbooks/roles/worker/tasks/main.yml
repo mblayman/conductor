@@ -1,0 +1,5 @@
+---
+- template: src=celery.conf.j2 dest=/etc/supervisor/conf.d/celery.conf
+  become: yes
+  notify:
+    - Restart Supervisor

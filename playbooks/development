@@ -12,8 +12,12 @@ web01
 [webservers]
 web01
 
+[workers]
+web01
+
 [development:children]
 dbservers
 loadbalancer
 messagingservers
 webservers
+workers

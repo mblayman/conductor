@@ -10,8 +10,12 @@
 [webservers]
 104.131.27.10
 
+[workers]
+104.131.27.10
+
 [production:children]
 dbservers
 loadbalancer
 messagingservers
 webservers
+workers

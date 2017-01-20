@@ -1,0 +1,6 @@
+---
+# Supervisor does not restart properly.
+- name: Restart Supervisor
+  become: yes
+  #service: name=supervisor state=restarted
+  shell: sudo service supervisor stop && sleep 5 && sudo service supervisor start
