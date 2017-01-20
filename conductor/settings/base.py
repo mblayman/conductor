@@ -117,6 +117,12 @@ STATIC_URL = os.environ['STATIC_URL']
 
 AUTH_USER_MODEL = 'accounts.User'
 
+CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
+    os.environ['RABBITMQ_USER'],
+    os.environ['RABBITMQ_PASSWORD'],
+    os.environ['RABBITMQ_VHOST']
+)
+
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'EXCEPTION_HANDLER': 'vendor.views.custom_exception_handler',
