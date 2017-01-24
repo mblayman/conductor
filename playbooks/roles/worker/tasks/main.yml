@@ -3,3 +3,9 @@
   become: yes
   notify:
     - Restart Supervisor
+
+- name: Restart Celery
+  become: yes
+  supervisorctl:
+    name: celery
+    state: restarted
