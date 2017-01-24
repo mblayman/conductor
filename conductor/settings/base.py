@@ -1,7 +1,5 @@
 import os
 
-import rollbar
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -168,7 +166,6 @@ ROLLBAR = {
     'root': BASE_DIR,
     'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
 }
-rollbar.init(**ROLLBAR)
 
 EMAIL_BACKEND = 'anymail.backends.test.TestBackend'
 DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
