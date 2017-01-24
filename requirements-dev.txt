@@ -6,4 +6,5 @@ flake8
 gunicorn
 honcho
 httpie
+mock
 psycopg2

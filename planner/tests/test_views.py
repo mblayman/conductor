@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+import mock
 from rest_framework.test import force_authenticate
 
 from conductor.tests import TestCase
@@ -105,3 +106,21 @@ class TestTargetSchoolViewSet(TestCase):
         force_authenticate(request, user)
         response = view(request)
         self.assertEqual(422, response.status_code)
+
+    @mock.patch('planner.views.tasks')
+    def test_triggers_school_audit(self, tasks):
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create(user=user)
+        school = self.SchoolFactory.create()
+        view = self._make_view()
+        data = {
+            'school': OrderedDict({
+                'type': 'schools', 'id': str(school.id)}),
+            'student': OrderedDict({
+                'type': 'students', 'id': str(student.id)}),
+        }
+        request = self.request_factory.post(data=data)
+        force_authenticate(request, user)
+        response = view(request)
+        self.assertEqual(201, response.status_code)
+        tasks.audit_school.delay.assert_called_once_with(school.id)
