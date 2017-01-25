@@ -5,8 +5,7 @@
       <div class="ui stacked segment">
         <div class="field{{if (and didValidate (v-get model 'email' 'isInvalid')) " error"}}">
           <label>E-mail</label>
-          <div class="ui left icon input">
-            <i class="at icon"></i>
+          <div class="ui left input">
             {{input type="email" id="email" placeholder="Your email address" value=model.email}}
           </div>
         </div>
