@@ -5,11 +5,31 @@ from django.db import models
 from conductor.tests import TestCase
 
 
+class TestAudit(TestCase):
+
+    def test_factory(self):
+        audit = self.AuditFactory.create()
+
+        self.assertIsNotNone(audit.school)
+
+    def test_has_created_date(self):
+        audit = self.AuditFactory.create()
+
+        self.assertIsNotNone(audit.created_date)
+
+    def test_has_school(self):
+        school = self.SchoolFactory.create()
+        audit = self.AuditFactory.build(school=school)
+
+        self.assertEqual(school, audit.school)
+
+
 class TestMilestone(TestCase):
 
     def test_has_date(self):
         date = datetime.datetime.now()
         milestone = self.MilestoneFactory.build(date=date)
+
         self.assertEqual(date, milestone.date)
 
 
@@ -17,19 +37,23 @@ class TestSchool(TestCase):
 
     def test_has_name(self):
         school = self.SchoolFactory.build(name='University of Virginia')
+
         self.assertEqual('University of Virginia', school.name)
 
     def test_has_slug(self):
         school = self.SchoolFactory.build(slug='university-of-virginia')
+
         self.assertEqual('university-of-virginia', school.slug)
 
     def test_has_url(self):
         school = self.SchoolFactory.build(url='http://www.virginia.edu/')
+
         self.assertEqual('http://www.virginia.edu/', school.url)
 
     def test_has_milestones_url(self):
         school = self.SchoolFactory.build(
             milestones_url='http://admission.virginia.edu/events')
+
         self.assertEqual(
             'http://admission.virginia.edu/events', school.milestones_url)
 

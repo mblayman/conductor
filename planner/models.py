@@ -5,6 +5,12 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 
+class Audit(models.Model):
+    """An audit is used to keep a school's milestones up-to-date."""
+    created_date = models.DateTimeField(auto_now_add=True)
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+
+
 class Milestone(models.Model):
     date = models.DateTimeField()
 

@@ -26,6 +26,13 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     milestones_url = factory.Faker('url')
 
 
+class AuditFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Audit'
+
+    school = factory.SubFactory(SchoolFactory)
+
+
 class SemesterFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.Semester'
