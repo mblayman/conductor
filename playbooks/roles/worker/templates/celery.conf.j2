@@ -11,7 +11,7 @@ stdout_logfile=/var/log/celery.log
 redirect_stderr=true
 stopsignal=QUIT
 environment=
-    CELERY_WORKER_RUNNING = true,
+    CELERY_WORKER_RUNNING="true",
 {% for env_var, env_value in django_env|dictsort %}
-    {{ env_var }} = {{ env_value }},
+    {{ env_var }}="{{ env_value }}",
 {% endfor %}

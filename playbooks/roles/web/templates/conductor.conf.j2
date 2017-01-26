@@ -18,5 +18,5 @@ redirect_stderr=true
 stopsignal=QUIT
 environment=
 {% for env_var, env_value in django_env|dictsort %}
-    {{ env_var }} = {{ env_value }},
+    {{ env_var }}="{{ env_value }}",
 {% endfor %}

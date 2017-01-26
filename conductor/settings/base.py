@@ -168,7 +168,7 @@ ROLLBAR = {
 }
 
 CONDUCTOR_EMAIL = os.environ['CONDUCTOR_EMAIL']
-EMAIL_BACKEND = 'anymail.backends.test.TestBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
     'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
