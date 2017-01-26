@@ -1,5 +1,7 @@
 import datetime
 
+from django.conf import settings
+from django.core import mail
 from django.utils import timezone
 
 from conductor.tests import TestCase
@@ -34,3 +36,11 @@ class TestAuditSchool(TestCase):
         tasks.audit_school(school.id)
 
         self.assertEqual(2, Audit.objects.count())
+
+    def test_emails_admin(self):
+        school = self.SchoolFactory.create()
+
+        tasks.audit_school(school.id)
+
+        self.assertIn(school.name, mail.outbox[0].subject)
+        self.assertEqual([settings.CONDUCTOR_EMAIL], mail.outbox[0].to)

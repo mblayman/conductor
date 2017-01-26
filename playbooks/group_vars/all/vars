@@ -16,6 +16,7 @@ api_domain: "api.{{ root_domain }}"
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
+  CONDUCTOR_EMAIL: "{{ email }}"
   CORS_ORIGIN_WHITELIST: "{{ client_domain }}"
   DJANGO_ALLOWED_HOSTS: ".{{ root_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"

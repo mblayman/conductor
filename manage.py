@@ -8,6 +8,7 @@ if __name__ == '__main__':
     if 'test' in sys.argv:
         # For now, fake setting the environment for testing.
         os.environ['DJANGO_SETTINGS_MODULE'] = 'conductor.settings.test'
+        os.environ['CONDUCTOR_EMAIL'] = 'matt@conductor.dev'
         os.environ['CORS_ORIGIN_WHITELIST'] = 'localhost:4200'
         os.environ['MAILGUN_API_KEY'] = 'mailgun'
         os.environ['POSTGRES_DB'] = 'conductor'

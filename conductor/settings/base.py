@@ -167,6 +167,7 @@ ROLLBAR = {
     'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
 }
 
+CONDUCTOR_EMAIL = os.environ['CONDUCTOR_EMAIL']
 EMAIL_BACKEND = 'anymail.backends.test.TestBackend'
 DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
