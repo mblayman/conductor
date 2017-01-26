@@ -1,7 +1,12 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from planner.models import School, Semester, Student, TargetSchool
+from planner.models import Audit, School, Semester, Student, TargetSchool
+
+
+@admin.register(Audit)
+class AuditAdmin(admin.ModelAdmin):
+    list_display = ('school', 'created_date')
 
 
 @admin.register(School)
