@@ -20,7 +20,7 @@ django_env:
   CORS_ORIGIN_WHITELIST: "{{ client_domain }}"
   DJANGO_ALLOWED_HOSTS: ".{{ root_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
-  MAILGUN_API_KEY: "{{ mailgun_api_key }}"
+  MAILGUN_API_KEY: "{{ mailgun.api_key }}"
   RABBITMQ_USER: "{{ rabbitmq.user }}"
   RABBITMQ_PASSWORD: "{{ rabbitmq.password }}"
   RABBITMQ_VHOST: "{{ rabbitmq.vhost }}"
