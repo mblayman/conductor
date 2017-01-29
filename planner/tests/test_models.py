@@ -3,6 +3,7 @@ import datetime
 from django.db import models
 
 from conductor.tests import TestCase
+from planner.models import Audit
 
 
 class TestAudit(TestCase):
@@ -11,6 +12,7 @@ class TestAudit(TestCase):
         audit = self.AuditFactory.create()
 
         self.assertIsNotNone(audit.school)
+        self.assertEqual(Audit.PENDING, audit.status)
 
     def test_has_created_date(self):
         audit = self.AuditFactory.create()
@@ -22,6 +24,12 @@ class TestAudit(TestCase):
         audit = self.AuditFactory.build(school=school)
 
         self.assertEqual(school, audit.school)
+
+    def test_has_status(self):
+        status = Audit.COMPLETE
+        audit = self.AuditFactory.build(status=status)
+
+        self.assertEqual(status, audit.status)
 
 
 class TestMilestone(TestCase):

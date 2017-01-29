@@ -7,8 +7,17 @@ from django.utils.encoding import python_2_unicode_compatible
 
 class Audit(models.Model):
     """An audit is used to keep a school's milestones up-to-date."""
+    PENDING = 'pending'
+    COMPLETE = 'complete'
+    STATUS_CHOICES = (
+        (PENDING, 'Pending'),
+        (COMPLETE, 'Complete'),
+    )
+
     created_date = models.DateTimeField(auto_now_add=True)
     school = models.ForeignKey('School', on_delete=models.CASCADE)
+    status = models.CharField(
+        choices=STATUS_CHOICES, default=PENDING, max_length=8)
 
 
 class Milestone(models.Model):
