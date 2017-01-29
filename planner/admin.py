@@ -6,7 +6,8 @@ from planner.models import Audit, School, Semester, Student, TargetSchool
 
 @admin.register(Audit)
 class AuditAdmin(admin.ModelAdmin):
-    list_display = ('school', 'created_date')
+    list_display = ('school', 'created_date', 'status')
+    list_filter = ('status',)
 
 
 @admin.register(School)
