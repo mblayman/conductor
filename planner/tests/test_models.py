@@ -43,6 +43,11 @@ class TestMilestone(TestCase):
 
 class TestSchool(TestCase):
 
+    def test_factory(self):
+        school = self.SchoolFactory.build()
+
+        self.assertFalse(school.rolling)
+
     def test_has_name(self):
         school = self.SchoolFactory.build(name='University of Virginia')
 
@@ -64,6 +69,24 @@ class TestSchool(TestCase):
 
         self.assertEqual(
             'http://admission.virginia.edu/events', school.milestones_url)
+
+    def test_has_rolling(self):
+        rolling = True
+        school = self.SchoolFactory.build(rolling=rolling)
+
+        self.assertTrue(school.rolling)
+
+    def test_has_city(self):
+        city = 'Charlottesville'
+        school = self.SchoolFactory.build(city=city)
+
+        self.assertEqual(city, school.city)
+
+    def test_has_state(self):
+        state = 'VA'
+        school = self.SchoolFactory.build(state=state)
+
+        self.assertEqual(state, school.state)
 
 
 class TestSemester(TestCase):

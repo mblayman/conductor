@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'anymail',
     'corsheaders',
+    'localflavor',
     'rest_framework',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',

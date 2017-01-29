@@ -3,6 +3,7 @@ import datetime
 from django.conf import settings
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
+from localflavor.us.models import USStateField
 
 
 class Audit(models.Model):
@@ -30,6 +31,9 @@ class School(models.Model):
     slug = models.SlugField(max_length=256, unique=True)
     url = models.URLField(unique=True)
     milestones_url = models.URLField()
+    rolling = models.BooleanField(default=False)
+    city = models.CharField(max_length=128, null=True)
+    state = USStateField(null=True)
 
     def __str__(self):
         return self.name
