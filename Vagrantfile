@@ -3,6 +3,8 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = "bento/ubuntu-16.04"
+  # XXX: Version 2.3.1 of the box was broken so I've pinned it for now.
+  config.vm.box_version = "< 2.3"
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "512"
@@ -21,7 +23,7 @@ Vagrant.configure(2) do |config|
     }
     ansible.playbook = "playbooks/site.yml"
     ansible.raw_arguments = [
-        "--private-key=./.vagrant/machines/default/virtualbox/private_key"
+        "--private-key=./.vagrant/machines/web01/virtualbox/private_key"
     ]
   end
 end
