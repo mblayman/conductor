@@ -22,7 +22,24 @@ class Audit(models.Model):
 
 
 class Milestone(models.Model):
+    EARLY_DECISION = 'ED'
+    EARLY_DECISION_1 = 'ED1'
+    EARLY_DECISION_2 = 'ED2'
+    EARLY_ACTION = 'EA'
+    REGULAR_DECISION = 'RD'
+    CATEGORY_CHOICES = (
+        (EARLY_DECISION, 'Early Decision'),
+        (EARLY_DECISION_1, 'Early Decision 1'),
+        (EARLY_DECISION_2, 'Early Decision 2'),
+        (EARLY_ACTION, 'Early Action'),
+        (REGULAR_DECISION, 'Regular Decision'),
+    )
+
+    active = models.BooleanField(default=True)
     date = models.DateTimeField()
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    category = models.CharField(
+        choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8)
 
 
 @python_2_unicode_compatible

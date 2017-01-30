@@ -3,7 +3,7 @@ import datetime
 from django.db import models
 
 from conductor.tests import TestCase
-from planner.models import Audit
+from planner.models import Audit, Milestone
 
 
 class TestAudit(TestCase):
@@ -34,11 +34,37 @@ class TestAudit(TestCase):
 
 class TestMilestone(TestCase):
 
+    def test_factory(self):
+        milestone = self.MilestoneFactory.build()
+
+        self.assertTrue(milestone.active)
+        self.assertIsNotNone(milestone.date)
+        self.assertIsNotNone(milestone.school)
+        self.assertEqual(Milestone.REGULAR_DECISION, milestone.category)
+
+    def test_has_active(self):
+        active = False
+        milestone = self.MilestoneFactory.build(active=active)
+
+        self.assertFalse(milestone.active)
+
     def test_has_date(self):
         date = datetime.datetime.now()
         milestone = self.MilestoneFactory.build(date=date)
 
         self.assertEqual(date, milestone.date)
+
+    def test_has_school(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.build(school=school)
+
+        self.assertEqual(school, milestone.school)
+
+    def test_has_category(self):
+        category = Milestone.EARLY_DECISION_2
+        milestone = self.MilestoneFactory.build(category=category)
+
+        self.assertEqual(category, milestone.category)
 
 
 class TestSchool(TestCase):

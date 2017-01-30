@@ -8,13 +8,6 @@ from accounts.tests.factories import UserFactory
 fake = Factory.create()
 
 
-class MilestoneFactory(factory.django.DjangoModelFactory):
-    class Meta:
-        model = 'planner.Milestone'
-
-    date = factory.Faker('date_time')
-
-
 class SchoolFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.School'
@@ -24,6 +17,14 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     slug = factory.Faker('slug')
     url = factory.Faker('url')
     milestones_url = factory.Faker('url')
+
+
+class MilestoneFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Milestone'
+
+    date = factory.Faker('date_time')
+    school = factory.SubFactory(SchoolFactory)
 
 
 class AuditFactory(factory.django.DjangoModelFactory):
