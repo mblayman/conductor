@@ -4,7 +4,7 @@
     <div class="right menu">
       {{#if session.isAuthenticated}}
         <div class="item">
-          {{#link-to 'dashboard' class="ui inverted button" activeClass=""}}Dashboard{{/link-to}}
+          {{#link-to 'dashboard.index' class="ui inverted button" activeClass=""}}Dashboard{{/link-to}}
         </div>
         <div class="item">
           <a {{action 'invalidateSession'}} class="ui inverted button">Logout</a>
