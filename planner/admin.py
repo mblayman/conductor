@@ -1,13 +1,19 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from planner.models import Audit, School, Semester, Student, TargetSchool
+from planner.models import (
+    Audit, Milestone, School, Semester, Student, TargetSchool)
 
 
 @admin.register(Audit)
 class AuditAdmin(admin.ModelAdmin):
     list_display = ('school', 'created_date', 'status')
     list_filter = ('status',)
+
+
+@admin.register(Milestone)
+class MilestoneAdmin(admin.ModelAdmin):
+    list_display = ('school', 'date', 'category')
 
 
 @admin.register(School)
