@@ -1,6 +1,10 @@
 <div class="ui large inverted top attached stackable menu">
   <div class="ui container">
-    {{#link-to 'index' class="active red item" activeClass=""}}College Conductor{{/link-to}}
+    {{#if session.isAuthenticated}}
+      {{#link-to 'index' class="active red item" activeClass=""}}College Conductor{{/link-to}}
+    {{else}}
+      {{#link-to 'index' class="item" activeClass=""}}College Conductor{{/link-to}}
+    {{/if}}
     <div class="right menu">
       {{#if session.isAuthenticated}}
         <div class="item">
