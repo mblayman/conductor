@@ -13,6 +13,13 @@
     - python-psycopg2
     - python3-psycopg2
 
+- name: Install dependencies for PostgreSQL backup via wal-e
+  become: yes
+  apt: name={{ item }} state=present
+  with_items:
+    - lzop
+    - pv
+
 - name: Create locale
   become: yes
   locale_gen: name=en_US.UTF-8 state=present
