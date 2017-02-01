@@ -88,3 +88,17 @@
     - { variable: AWS_REGION, value: "{{ aws.region }}" }
     - { variable: WALE_S3_PREFIX, value: "{{ wale.s3_prefix }}" }
   no_log: True
+
+- name: Add full backup task to cron
+  become: yes
+  cron:
+    name: Perform full backup of PostgreSQL database
+    state: present
+    job: >
+      /usr/bin/envdir /etc/wal-e/env
+      {{ venv_path }}/bin/wal-e backup-push {{ postgres.storage_path }}
+    user: postgres
+    weekday: "0"
+    hour: "2"
+    minute: "0"
+  when: deployment == "production"

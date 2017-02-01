@@ -38,6 +38,7 @@ postgres:
   db: conductor
   user: conductor
   password: "{{ vault_postgres_password }}"
+  storage_path: /var/lib/postgresql/9.5/main
 
 wale:
   s3_prefix: "s3://collegeconductor/pgbackups/{{ deployment }}"
