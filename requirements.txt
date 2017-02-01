@@ -10,4 +10,4 @@ djangorestframework-jsonapi==2.1.1
 djangorestframework-jwt==1.9.0
 requests==2.9.1
 rollbar==0.13.10
-wal-e==1.0.3
+wal-e[aws]==1.0.3
