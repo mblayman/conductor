@@ -39,12 +39,20 @@ postgres:
   user: conductor
   password: "{{ vault_postgres_password }}"
 
+wale:
+  s3_prefix: "s3://collegeconductor/pgbackups/{{ deployment }}"
+
 rabbitmq:
   vhost: conductor
   user: "{{ vault.rabbitmq.user }}"
   password: "{{ vault.rabbitmq.password }}"
 
 cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
+
+aws:
+  access_key_id: "{{ vault.aws.access_key_id }}"
+  secret_access_key: "{{ vault.aws.secret_access_key }}"
+  region: "{{ vault.aws.region }}"
 
 datadog:
   api_key: "{{ vault_datadog_api_key }}"

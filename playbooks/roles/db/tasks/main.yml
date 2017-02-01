@@ -19,6 +19,20 @@
   with_items:
     - lzop
     - pv
+    # daemontools isn't a dependency, but it provides the envdir command.
+    # This is needed to avoid storing secrets in the archive command.
+    - daemontools
+
+- name: Set PostgreSQL configuration
+  become: yes
+  template:
+    src: postgresql.conf.j2
+    dest: /etc/postgresql/9.5/main/postgresql.conf
+    owner: postgres
+    group: postgres
+    mode: 0644
+  notify:
+    - Restart PostgreSQL
 
 - name: Create locale
   become: yes
@@ -49,3 +63,28 @@
     password={{ postgres.password }}
     role_attr_flags=NOSUPERUSER,NOCREATEDB
     state=present
+
+- name: Create wal-e env directory
+  become: yes
+  file:
+    state: directory
+    path: /etc/wal-e/env
+    owner: root
+    group: postgres
+    mode: 0750
+    recurse: yes
+
+- name: Set environment variables for wal-e
+  become: yes
+  copy:
+    content: "{{ item.value }}"
+    dest: "/etc/wal-e/env/{{ item.variable }}"
+    owner: root
+    group: postgres
+    mode: 0750
+  with_items:
+    - { variable: AWS_ACCESS_KEY_ID, value: "{{ aws.access_key_id }}" }
+    - { variable: AWS_SECRET_ACCESS_KEY, value: "{{ aws.secret_access_key }}" }
+    - { variable: AWS_REGION, value: "{{ aws.region }}" }
+    - { variable: WALE_S3_PREFIX, value: "{{ wale.s3_prefix }}" }
+  no_log: True
