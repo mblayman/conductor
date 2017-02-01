@@ -201,6 +201,12 @@ wal_level = archive
 
 # - Archiving -
 
+{% if deployment == "production" %}
+archive_mode = on
+archive_command = '/usr/bin/envdir /etc/wal-e/env {{ venv_path }}/bin/wal-e wal-push %p'
+archive_timeout = 3600
+{% endif %}
+
 #archive_mode = off             # enables archiving; off, on, or always
                                 # (change requires restart)
 #archive_command = ''           # command to use to archive a logfile segment
