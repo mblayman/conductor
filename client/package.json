@@ -25,7 +25,7 @@
     "ember-cli-deploy": "0.6.4",
     "ember-cli-deploy-build": "0.1.1",
     "ember-cli-deploy-cp": "0.3.0",
-    "ember-cli-deploy-revision-data": "0.3.2",
+    "ember-cli-deploy-revision-data": "0.3.3",
     "ember-cli-document-title": "0.3.3",
     "ember-cli-flash": "1.4.0",
     "ember-cli-htmlbars": "^1.1.1",
