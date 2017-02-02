@@ -1,16 +1,18 @@
-// import Ember from 'ember';
-// import { mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
+import Ember from 'ember';
+import { manualSetup, mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new', {
-  // beforeEach() {
-  //   mockSetup();
-  // },
+  beforeEach() {
+    manualSetup(this.container);
+    mockSetup();
+  },
 
-  // afterEach() {
-  //   mockTeardown();
-  // },
+  afterEach() {
+    mockTeardown();
+  },
 
+  // integration: true
   needs: [
     'model:school',
     'model:semester',
@@ -25,16 +27,16 @@ test('it exists', function(assert) {
   assert.ok(route);
 });
 
-// FIXME: This broke on upgrade to Ember 2.11. No idea why. I reported it.
-// https://github.com/danielspaniel/ember-data-factory-guy/issues/273
-// test('it has a student for its model', function(assert) {
-//   mockFindAll('semester', 2);
+test('it has a student for its model', function(assert) {
+  let done = assert.async();
+  mockFindAll('semester', 2);
 
-//   let route = this.subject();
-//   Ember.run(function() {
-//     let promise = route.model();
-//     promise.then(function(model) {
-//       assert.equal(model.student.get('constructor.modelName'), 'student');
-//     });
-//   });
-// });
+  let route = this.subject();
+  Ember.run(function() {
+    let promise = route.model();
+    promise.then(function(model) {
+      assert.equal(model.student.get('constructor.modelName'), 'student');
+      done();
+    });
+  });
+});
