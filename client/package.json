@@ -43,7 +43,7 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-cp-validations": "3.2.3",
     "ember-data": "^2.11.0",
-    "ember-data-factory-guy": "2.11.4",
+    "ember-data-factory-guy": "2.11.5",
     "ember-debounced-input-helpers": "0.0.2",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
