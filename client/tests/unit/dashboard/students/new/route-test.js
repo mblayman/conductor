@@ -12,7 +12,6 @@ moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new
     mockTeardown();
   },
 
-  // integration: true
   needs: [
     'model:school',
     'model:semester',

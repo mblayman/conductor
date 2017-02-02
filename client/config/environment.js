@@ -13,7 +13,6 @@ module.exports = function(environment) {
 
     'ember-simple-auth-token': {
       refreshLeeway: 20,
-      timeFactor: 1000, // backend is in seconds and the frontend is in ms.
     },
 
     EmberENV: {
