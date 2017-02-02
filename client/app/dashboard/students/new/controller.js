@@ -30,5 +30,9 @@ export default Ember.Controller.extend({
     selectSemester(semester) {
       this.get('model').student.set('matriculationSemester', semester);
     }
-  }
+  },
+
+  semestersByDate: Ember.computed('model.semesters.[]', function() {
+    return this.get('model.semesters').sortBy('date');
+  })
 });
