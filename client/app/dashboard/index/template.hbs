@@ -1,7 +1,7 @@
-{{#if studentsBySemester}}
+{{#if students}}
   <h2>Your students</h2>
   <div class="ui cards">
-    {{#each studentsBySemester as |student|}}
+    {{#each students as |student|}}
       {{#link-to 'dashboard.student' student class="red card"}}
         <div class="content">
           <div class="header">{{student.firstName}} {{student.lastName}}</div>
