@@ -1,7 +1,7 @@
 <div class="ui stackable grid">
-  <div class="ten wide column">
+  <div class="{{if schools 'fifteen' 'ten'}} wide column">
     <p>Applying for <strong>{{humanize-semester model.matriculationSemester}}</strong></p>
-    {{#if model.schools}}
+    {{#if schools}}
       <table class="ui selectable inverted table">
         <thead>
           <tr>
@@ -9,7 +9,7 @@
           </tr>
         </thead>
         <tbody>
-          {{#each model.schools as |school|}}
+          {{#each schools as |school|}}
             <tr>
               <td>{{school.name}}</td>
             </tr>
