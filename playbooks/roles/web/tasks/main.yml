@@ -39,6 +39,12 @@
   become: yes
   apt: name=fail2ban state=present
 
+- name: Install NTP
+  become: yes
+  apt:
+    name: ntp
+    state: present
+
 - name: Permit HTTP traffic
   become: yes
   ufw: rule=allow port=http proto=tcp
