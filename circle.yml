@@ -13,4 +13,4 @@ dependencies:
 test:
   override:
     - python3 manage.py test
-    - cd client && ember test && cd -
+    - cd client && ./node_modules/ember-cli/bin/ember test && cd -
