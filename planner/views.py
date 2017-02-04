@@ -1,7 +1,8 @@
 import functools
 import operator
 
-from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
+from django.contrib.postgres.search import (
+    SearchQuery, SearchRank, SearchVector)
 from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet

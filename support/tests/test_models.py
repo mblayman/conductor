@@ -22,5 +22,5 @@ class TestSupportTicket(TestCase):
         self.assertEqual('Halp!', ticket.subject)
 
     def test_has_message(self):
-        ticket = self.SupportTicketFactory.build(message='How do you internet?')
-        self.assertEqual('How do you internet?', ticket.message)
+        ticket = self.SupportTicketFactory.build(message='How do you do?')
+        self.assertEqual('How do you do?', ticket.message)

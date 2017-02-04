@@ -78,7 +78,8 @@ class Student(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='students')
     first_name = models.TextField()
     last_name = models.TextField()
-    matriculation_semester = models.ForeignKey(Semester, on_delete=models.PROTECT)
+    matriculation_semester = models.ForeignKey(
+        Semester, on_delete=models.PROTECT)
     schools = models.ManyToManyField(School, through='TargetSchool')
 
     def __str__(self):

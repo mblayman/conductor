@@ -14,3 +14,10 @@ test:
   override:
     - python3 manage.py test
     - cd client && ./node_modules/ember-cli/bin/ember test && cd -
+    - >
+        flake8
+        accounts
+        conductor
+        planner
+        support
+        vendor

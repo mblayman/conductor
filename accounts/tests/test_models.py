@@ -22,4 +22,5 @@ class TestInviteEmail(TestCase):
     def test_created_date(self):
         invite_email = self.InviteEmailFactory.create()
 
-        self.assertEqual(datetime.date.today(), invite_email.created_date.date())
+        self.assertEqual(
+            datetime.date.today(), invite_email.created_date.date())
