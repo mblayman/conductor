@@ -2,7 +2,7 @@
 machine:
   python:
     version: 3.5.2
-  nodejs:
+  node:
     version: 6.2.1
 dependencies:
   override:
