@@ -8,7 +8,8 @@ dependencies:
   override:
     - pip install -r requirements.txt -r requirements-dev.txt
     - cd client && npm install && cd -
-    - cd client && ./node_modules/bower/bin/bower install && cd -
+    - npm install -g bower
+    - cd client && bower install && cd -
   cache_directories:
     - "client/bower_components"
     - "client/node_modules"
