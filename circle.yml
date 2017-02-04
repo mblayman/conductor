@@ -1,6 +1,9 @@
 machine:
   python:
     version: 3.5.2
+dependencies:
+  post:
+    - pip install psycopg2
 test:
   override:
     - python3 manage.py test
