@@ -13,3 +13,4 @@ dependencies:
 test:
   override:
     - python3 manage.py test
+    - cd client && ember test && cd -
