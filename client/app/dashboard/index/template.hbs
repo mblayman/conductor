@@ -2,7 +2,7 @@
   <h2>Your students</h2>
   <div class="ui cards">
     {{#each students as |student|}}
-      {{#link-to 'dashboard.student' student class="red card"}}
+      {{#link-to 'dashboard.student' student class="orange card"}}
         <div class="content">
           <div class="header">{{student.firstName}} {{student.lastName}}</div>
           <!-- TODO: Side load to get rid of this non-sense. -->

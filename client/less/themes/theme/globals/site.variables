@@ -47,6 +47,8 @@
     Brand Colors
 --------------------*/
 
+@conductorBlue: #0973ba;
+
 @primaryColor        : @blue;
 @secondaryColor      : @black;
 
@@ -198,6 +200,7 @@
 @green            : #21BA45;
 @teal             : #00B5AD;
 @blue             : #2185D0;
+@blue             : @conductorBlue;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;

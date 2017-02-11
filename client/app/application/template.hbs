@@ -1,21 +1,17 @@
-<div class="ui large inverted top attached stackable menu">
+<div class="ui large top attached stackable borderless menu">
   <div class="ui container">
-    {{#if session.isAuthenticated}}
-      {{#link-to 'index' class="active red item" activeClass=""}}College Conductor{{/link-to}}
-    {{else}}
-      {{#link-to 'index' class="item" activeClass=""}}College Conductor{{/link-to}}
-    {{/if}}
+    {{#link-to 'index' class="item" activeClass=""}}College Conductor{{/link-to}}
     <div class="right menu">
       {{#if session.isAuthenticated}}
         <div class="item">
-          {{#link-to 'dashboard.index' class="ui inverted button" activeClass=""}}Dashboard{{/link-to}}
+          {{#link-to 'dashboard.index' class="ui primary basic button" activeClass=""}}Dashboard{{/link-to}}
         </div>
         <div class="item">
-          <a {{action 'invalidateSession'}} class="ui inverted button">Logout</a>
+          <a {{action 'invalidateSession'}} class="ui basic button">Logout</a>
         </div>
       {{else}}
         <div class="item">
-          {{#link-to 'login' class="ui inverted button"}}Login{{/link-to}}
+          {{#link-to 'login' class="ui primary basic button"}}Login{{/link-to}}
         </div>
       {{/if}}
     </div>
