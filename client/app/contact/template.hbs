@@ -1,6 +1,6 @@
 <div class="ui middle aligned stackable grid">
   <div class="eight wide centered column">
-    <h2 class="ui red image header">Contact Us</h2>
+    <h2 class="ui blue image header">Contact Us</h2>
     <form {{action 'submit' on='submit'}} class="ui large form{{if (and didValidate (v-get model 'isInvalid')) " error"}}">
       <div class="ui stacked segment">
         <div class="field{{if (and didValidate (v-get model 'email' 'isInvalid')) " error"}}">
@@ -29,7 +29,7 @@
           <div class="ui error message">{{v-get model 'message' 'message'}}</div>
         {{/if}}
 
-        <button type="submit" class="ui fluid large {{if successful "green" "red"}} submit button" disabled="{{if successful "disabled"}}">{{if successful "Sent" "Send request"}}</button>
+        <button type="submit" class="ui fluid large {{if successful "green" "orange"}} submit button" disabled="{{if successful "disabled"}}">{{if successful "Sent" "Send request"}}</button>
       </div>
     </form>
   </div>

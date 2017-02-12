@@ -1,5 +1,5 @@
 {{#if students}}
-  <h2>Your students</h2>
+  <h2 class="ui blue header">Your students</h2>
   <div class="ui cards">
     {{#each students as |student|}}
       {{#link-to 'dashboard.student' student class="orange card"}}
@@ -24,7 +24,7 @@
         that the student is interested in.
       </p>
       <p>Let’s get you started!</p>
-      {{#link-to 'dashboard.students.new' class="ui large red button"}}Add a student{{/link-to}}
+      {{#link-to 'dashboard.students.new' class="ui large orange button"}}Add a student{{/link-to}}
     </div>
   </div>
 {{/if}}

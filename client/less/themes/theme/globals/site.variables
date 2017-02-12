@@ -48,6 +48,7 @@
 --------------------*/
 
 @conductorBlue: #0973ba;
+@conductorOrange: #ff9d27;
 
 @primaryColor        : @blue;
 @secondaryColor      : @black;
@@ -195,6 +196,7 @@
 /*---  Colors  ---*/
 @red              : #DB2828;
 @orange           : #F2711C;
+@orange           : @conductorOrange;
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;

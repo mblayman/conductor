@@ -13,7 +13,7 @@
     <div class="ui cards">
       {{#each schoolOptions as |schoolOption|}}
         {{#if schoolOption.isTargetSchool }}
-          <div class="red card">
+          <div class="orange card">
             <div class="content">
               <div class="description">{{schoolOption.school.name}}</div>
             </div>
@@ -23,7 +23,7 @@
             </div>
           </div>
         {{else}}
-          <a {{action "createTargetSchool" schoolOption.school}} class="red card">
+          <a {{action "createTargetSchool" schoolOption.school}} class="orange card">
             <div class="content">
               <div class="description">{{schoolOption.school.name}}</div>
             </div>

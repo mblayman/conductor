@@ -1,6 +1,6 @@
 <div class="ui middle aligned centered stackable grid">
   <div class="six wide column">
-    <h2 class="ui red image header">Login to your account</h2>
+    <h2 class="ui blue image header">Login to your account</h2>
     <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
       <div class="ui stacked segment">
         {{field-input inputId='username' inputValue=model.username
@@ -16,13 +16,8 @@
         {{#if errorMessage}}
           <div class="ui error message">{{errorMessage}}</div>
         {{/if}}
-        <button type="submit" class="ui fluid large red submit button">Login</button>
+        <button type="submit" class="ui fluid large orange submit button">Login</button>
       </div>
     </form>
-
-    <div class="ui message">
-      New to us?
-      {{#link-to 'signup'}}Sign Up!{{/link-to}}
-    </div>
   </div>
 </div>

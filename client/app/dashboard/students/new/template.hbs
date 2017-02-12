@@ -1,4 +1,4 @@
-<h2 class="ui header">Add a student</h2>
+<h2 class="ui blue header">Add a student</h2>
 <form {{action 'create' on='submit'}} class="ui form{{if errorMessage " error"}}">
   <div class="fields">
     <div class="field">
@@ -28,5 +28,5 @@
   {{#if errorMessage}}
     <div class="ui error message">{{errorMessage}}</div>
   {{/if}}
-  <button type="submit" class="ui large red submit button">Add student</button>
+  <button type="submit" class="ui large orange submit button">Add student</button>
 </form>
