@@ -8,10 +8,15 @@ from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet
 
 from planner import tasks
-from planner.models import School, Semester, TargetSchool
+from planner.models import Milestone, School, Semester, TargetSchool
 from planner.serializers import (
-    SchoolSerializer, SemesterSerializer, StudentSerializer,
-    TargetSchoolSerializer)
+    MilestoneSerializer, SchoolSerializer, SemesterSerializer,
+    StudentSerializer, TargetSchoolSerializer)
+
+
+class MilestoneViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Milestone.objects.all().filter(active=True)
+    serializer_class = MilestoneSerializer
 
 
 class SchoolPagination(PageNumberPagination):

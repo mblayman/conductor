@@ -7,6 +7,20 @@ from conductor.tests import TestCase
 from planner import views
 
 
+class TestMilestoneViewSet(TestCase):
+
+    def test_no_create(self):
+        """Sanity check that no create method is available."""
+        viewset = views.MilestoneViewSet()
+        self.assertRaises(AttributeError, lambda: viewset.create)
+
+    def test_active_only(self):
+        milestone = self.MilestoneFactory.create()
+        self.MilestoneFactory.create(active=False)
+        viewset = views.MilestoneViewSet()
+        self.assertEqual([milestone], list(viewset.get_queryset()))
+
+
 class TestSchoolViewSet(TestCase):
 
     def test_no_create(self):

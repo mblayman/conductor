@@ -3,5 +3,5 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   date: attr('date'),
-  category: attr('string'),
+  category: attr('string')
 });

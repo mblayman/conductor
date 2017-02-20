@@ -5,13 +5,25 @@
       <table class="ui selectable orange table">
         <thead>
           <tr>
-            <th>Schools</th>
+            <th class="seven wide">Schools</th>
+            <th class="eight wide"></th>
+            <th class="one wide"></th>
           </tr>
         </thead>
         <tbody>
           {{#each schools as |school|}}
             <tr>
               <td>{{school.name}}</td>
+              <td class="right aligned">
+                {{#each school.milestones as |milestone|}}
+                  <span class="ui blue label">ED1 2/21/17</span>
+                {{/each}}
+                <!-- <span class="ui blue label">ED1 2/21/17</span> -->
+                <!-- <span class="ui green label">ED2 2/21/17</span> -->
+                <!-- <span class="ui orange label">EA 2/21/17</span> -->
+                <!-- <span class="ui grey label">RD 2/21/17</span> -->
+              </td>
+              <td><a href="#"><i class="content icon"></i></a></td>
             </tr>
           {{/each}}
         </tbody>

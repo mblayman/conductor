@@ -23,4 +23,3 @@ test('has a student', function(assert) {
   let model = this.subject();
   assert.ok(model.toJSON().hasOwnProperty('student'));
 });
-

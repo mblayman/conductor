@@ -22,12 +22,14 @@ from rest_framework import routers
 
 from accounts.views import InviteEmailViewSet, UserViewSet
 from planner.views import (
-    SchoolViewSet, SemesterViewSet, StudentViewSet, TargetSchoolViewSet)
+    MilestoneViewSet, SchoolViewSet, SemesterViewSet, StudentViewSet,
+    TargetSchoolViewSet)
 from support.views import SupportTicketViewSet
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register('invite-emails', InviteEmailViewSet)
+router.register('milestones', MilestoneViewSet)
 router.register('schools', SchoolViewSet, base_name='school')
 router.register('semesters', SemesterViewSet)
 router.register('support-tickets', SupportTicketViewSet)

@@ -2,7 +2,9 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('school', 'Unit | Model | school', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: [
+    'model:milestone',
+  ]
 });
 
 test('it exists', function(assert) {
@@ -14,4 +16,9 @@ test('it exists', function(assert) {
 test('has a name', function(assert) {
   let model = this.subject();
   assert.ok(model.toJSON().hasOwnProperty('name'));
+});
+
+test('has many milestones', function(assert) {
+  let model = this.subject();
+  assert.ok(model.toJSON().hasOwnProperty('milestones'));
 });
