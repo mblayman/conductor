@@ -1,5 +1,20 @@
+from dateutil import parser
+
 from conductor.tests import TestCase
 from planner import serializers
+
+
+class TestMilestoneSerializer(TestCase):
+
+    def test_serializes_date(self):
+        milestone = self.MilestoneFactory.create()
+        serializer = serializers.MilestoneSerializer(milestone)
+        self.assertEqual(milestone.date, parser.parse(serializer.data['date']))
+
+    def test_serializes_category(self):
+        milestone = self.MilestoneFactory.create()
+        serializer = serializers.MilestoneSerializer(milestone)
+        self.assertEqual(milestone.category, serializer.data['category'])
 
 
 class TestSchoolSerializer(TestCase):

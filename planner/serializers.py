@@ -1,7 +1,13 @@
 from rest_framework.validators import UniqueTogetherValidator
 from rest_framework_json_api import serializers
 
-from planner.models import School, Semester, Student, TargetSchool
+from planner.models import Milestone, School, Semester, Student, TargetSchool
+
+
+class MilestoneSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Milestone
+        fields = ('date', 'category')
 
 
 class SchoolSerializer(serializers.ModelSerializer):

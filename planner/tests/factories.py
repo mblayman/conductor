@@ -2,6 +2,7 @@ import datetime
 
 import factory
 from faker import Factory
+import pytz
 
 from accounts.tests.factories import UserFactory
 
@@ -23,7 +24,7 @@ class MilestoneFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.Milestone'
 
-    date = factory.Faker('date_time')
+    date = factory.Faker('date_time', tzinfo=pytz.utc)
     school = factory.SubFactory(SchoolFactory)
 
 
