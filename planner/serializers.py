@@ -11,6 +11,10 @@ class MilestoneSerializer(serializers.ModelSerializer):
 
 
 class SchoolSerializer(serializers.ModelSerializer):
+    # XXX: Filtering milestones to active=True with a ResourceRelatedField
+    # does not seem to work. This will be a problem once some dates need
+    # to be eclipsed.
+
     included_serializers = {
         'milestones': MilestoneSerializer,
     }
