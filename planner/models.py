@@ -37,7 +37,8 @@ class Milestone(models.Model):
 
     active = models.BooleanField(default=True)
     date = models.DateTimeField()
-    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school = models.ForeignKey(
+        'School', related_name='milestones', on_delete=models.CASCADE)
     category = models.CharField(
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8)
 

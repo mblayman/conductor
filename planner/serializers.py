@@ -7,13 +7,20 @@ from planner.models import Milestone, School, Semester, Student, TargetSchool
 class MilestoneSerializer(serializers.ModelSerializer):
     class Meta:
         model = Milestone
-        fields = ('date', 'category')
+        fields = ('id', 'date', 'category')
 
 
 class SchoolSerializer(serializers.ModelSerializer):
+    included_serializers = {
+        'milestones': MilestoneSerializer,
+    }
+
     class Meta:
         model = School
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'milestones')
+
+    class JSONAPIMeta:
+        included_resources = ['milestones']
 
 
 class SemesterSerializer(serializers.ModelSerializer):

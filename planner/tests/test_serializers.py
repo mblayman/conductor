@@ -6,6 +6,11 @@ from planner import serializers
 
 class TestMilestoneSerializer(TestCase):
 
+    def test_serializes_id(self):
+        milestone = self.MilestoneFactory.create()
+        serializer = serializers.MilestoneSerializer(milestone)
+        self.assertEqual(milestone.id, serializer.data['id'])
+
     def test_serializes_date(self):
         milestone = self.MilestoneFactory.create()
         serializer = serializers.MilestoneSerializer(milestone)
