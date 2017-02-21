@@ -2,7 +2,9 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('milestone', 'Unit | Model | milestone', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: [
+    'transform:utc'
+  ]
 });
 
 test('it exists', function(assert) {
