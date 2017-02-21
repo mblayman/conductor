@@ -49,7 +49,7 @@ class TestMilestone(TestCase):
         self.assertFalse(milestone.active)
 
     def test_has_date(self):
-        date = datetime.datetime.now()
+        date = datetime.date.today()
         milestone = self.MilestoneFactory.build(date=date)
 
         self.assertEqual(date, milestone.date)
