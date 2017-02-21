@@ -52,6 +52,9 @@ class School(models.Model):
     rolling = models.BooleanField(default=False)
     city = models.CharField(max_length=128, null=True)
     state = USStateField(null=True)
+    audit_notes = models.TextField(
+        help_text='Notes to make performing audits easier',
+        null=True, blank=True)
 
     def __str__(self):
         return self.name

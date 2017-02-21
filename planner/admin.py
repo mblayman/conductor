@@ -16,6 +16,10 @@ class MilestoneAdmin(admin.ModelAdmin):
     list_display = ('school', 'date', 'category')
 
 
+class MilestoneInline(admin.StackedInline):
+    model = Milestone
+
+
 @admin.register(School)
 class SchoolAdmin(admin.ModelAdmin):
     def clickable_url(obj):
@@ -27,6 +31,10 @@ class SchoolAdmin(admin.ModelAdmin):
     list_per_page = 10
     ordering = ['id']
     search_fields = ['name']
+
+    inlines = [
+        MilestoneInline,
+    ]
 
 
 @admin.register(Semester)
