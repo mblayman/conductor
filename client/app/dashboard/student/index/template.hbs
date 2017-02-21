@@ -17,6 +17,10 @@
               <td class="right aligned">
                 {{#each school.milestones as |milestone|}}
                   {{milestone-label milestone=milestone}}
+                {{else}}
+                  <span data-tooltip="We are reviewing dates for this school currently." data-inverted="">
+                    <i class="blue info icon"></i>
+                  </span>
                 {{/each}}
               </td>
               <td><a href="#"><i class="content icon"></i></a></td>
