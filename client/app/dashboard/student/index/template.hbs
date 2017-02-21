@@ -1,5 +1,5 @@
 <div class="ui stackable grid">
-  <div class="{{if schools 'fifteen' 'ten'}} wide column">
+  <div class="{{if schools 'fourteen' 'ten'}} wide column">
     <p>Applying for <strong>{{humanize-semester model.matriculationSemester}}</strong></p>
     {{#if schools}}
       <table class="ui selectable orange table">
@@ -16,12 +16,8 @@
               <td>{{school.name}}</td>
               <td class="right aligned">
                 {{#each school.milestones as |milestone|}}
-                  <span class="ui blue label">ED1 2/21/17</span>
+                  {{milestone-label milestone=milestone}}
                 {{/each}}
-                <!-- <span class="ui blue label">ED1 2/21/17</span> -->
-                <!-- <span class="ui green label">ED2 2/21/17</span> -->
-                <!-- <span class="ui orange label">EA 2/21/17</span> -->
-                <!-- <span class="ui grey label">RD 2/21/17</span> -->
               </td>
               <td><a href="#"><i class="content icon"></i></a></td>
             </tr>
