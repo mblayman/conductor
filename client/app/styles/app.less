@@ -1,5 +1,8 @@
-@import 'base';
-@import 'definitions/globals/site';
+// These colors must be manually synced with semantic settings.
+// It beats the alternative.
+@black: #1B1C1D;
+@lightGreyDown: #c2c4c5;
+@conductorBlue: #0973ba;
 
 body {
     background-color: @black;
@@ -11,8 +14,8 @@ body {
 }
 .masthead.ui.inverted.segment {
   background: @black;
-  background: linear-gradient(20deg, @lightGreyDown, darken(@blue, 10));
-  border-top: 1px solid darken(@blue, 20);
+  background: linear-gradient(20deg, @lightGreyDown, darken(@conductorBlue, 10));
+  border-top: 1px solid darken(@conductorBlue, 20);
 }
 .masthead .logo.item img {
   margin-right: 1em;

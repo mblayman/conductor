@@ -5,12 +5,6 @@ var Funnel = require('broccoli-funnel');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    lessOptions: {
-      paths: [
-        'less',
-        'node_modules/semantic-ui-less'
-      ]
-    }
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -25,10 +19,12 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('bower_components/semantic/dist/semantic.css');
+
   var semanticFonts = new Funnel(
-    'node_modules/semantic-ui-less/themes/default/assets/fonts', {
+    'bower_components/semantic/dist/themes/default/assets', {
       srcDir: '/',
-      destDir: '/assets/fonts'
+      destDir: '/assets/themes/default/assets'
     });
 
   return app.toTree(semanticFonts);
