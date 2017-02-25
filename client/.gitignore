@@ -16,4 +16,4 @@
 npm-debug.log*
 testem.log
 
-/semantic/dist
+/vendor/semantic/dist
