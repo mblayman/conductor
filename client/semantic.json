@@ -18,5 +18,29 @@
   "permission": false,
   "autoInstall": true,
   "rtl": false,
-  "version": "2.2.9"
+  "version": "2.2.9",
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "container",
+    "divider",
+    "header",
+    "icon",
+    "image",
+    "input",
+    "label",
+    "list",
+    "loader",
+    "segment",
+    "form",
+    "grid",
+    "menu",
+    "message",
+    "table",
+    "card",
+    "dropdown",
+    "popup",
+    "search"
+  ]
 }
