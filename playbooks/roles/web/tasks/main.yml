@@ -28,6 +28,10 @@
   become: yes
   npm: name=bower state=present global=yes
 
+- name: Install Gulp
+  become: yes
+  npm: name=gulp state=present global=yes
+
 - name: Install Python package tools
   become: yes
   apt: name={{ item }} state=present
@@ -114,6 +118,12 @@
   command: bower --allow-root install chdir={{ ember_app_path }}
   register: bower_result
   changed_when: "bower_result.stdout != ''"
+
+- name: Build Semantic UI
+  become: yes
+  command: gulp build
+  args:
+    chdir: "{{ ember_app_path }}/vendor/semantic"
 
 - name: Deploy the Ember app
   become: yes
