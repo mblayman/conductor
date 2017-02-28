@@ -25,6 +25,13 @@ export default Ember.Route.extend({
             'Oops. Something went wrong. Please try again later.');
         }
       });
+    },
+
+    deleteTargetSchool(school) {
+      const student = this.controller.get('model');
+      student.get('schools').removeObject(school);
+      // TODO: Do the actual deletion of target school.
+      console.log(`Deleted ${school.get('name')}`);
     }
   }
 });
