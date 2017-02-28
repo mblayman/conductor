@@ -4,7 +4,7 @@
     {{#each students as |student|}}
       {{#link-to 'dashboard.student' student class="orange card"}}
         <div class="content">
-          <div class="header">{{student.firstName}} {{student.lastName}}</div>
+          <div class="header">{{student.fullName}}</div>
           <!-- TODO: Side load to get rid of this non-sense. -->
           {{#if (is-fulfilled student.matriculationSemester)}}
             <div class="description">{{humanize-semester student.matriculationSemester}}</div>
