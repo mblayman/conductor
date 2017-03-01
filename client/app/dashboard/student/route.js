@@ -30,8 +30,13 @@ export default Ember.Route.extend({
     deleteTargetSchool(school) {
       const student = this.controller.get('model');
       student.get('schools').removeObject(school);
-      // TODO: Do the actual deletion of target school.
-      console.log(`Deleted ${school.get('name')}`);
+      // queryRecord is not possible because JSON API always returns an array,
+      // even if it will only ever include one result.
+      this.store.query('target-school', {
+        school: school.get('id'), student: student.get('id')})
+        .then((schools) => {
+          schools.map((school) => { school.destroyRecord(); });
+        });
     }
   }
 });

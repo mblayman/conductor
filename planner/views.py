@@ -3,6 +3,7 @@ import operator
 
 from django.contrib.postgres.search import (
     SearchQuery, SearchRank, SearchVector)
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet
@@ -61,6 +62,8 @@ class StudentViewSet(ModelViewSet):
 
 class TargetSchoolViewSet(ModelViewSet):
     serializer_class = TargetSchoolSerializer
+    filter_backends = (DjangoFilterBackend,)
+    filter_fields = ('school', 'student')
 
     @property
     def queryset(self):
