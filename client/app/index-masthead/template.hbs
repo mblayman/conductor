@@ -5,6 +5,27 @@
         Keep Students On Track<br>For College Admissions
       </h1>
       <h2>Admissions is complicated. Help your students manage the process.</h2>
+      <div class="ui two column centered stackable grid">
+        <div class="center aligned column">
+          <h4>
+            <br>
+            Once the train is ready to leave the station,
+            we’d love to get in touch with you.
+            Leave us your email
+            and we’ll put you on our invite list.
+          </h4>
+          <br>
+          <form {{action 'submit' on='submit'}}>
+            <div class="ui large action input">
+              {{input type="text" id="email" placeholder="Enter your email..." value=model.email}}
+              <button type="submit"
+                class="ui large {{if successful "green" "yellow"}} button"
+                disabled="{{if successful "disabled"}}"
+                >Add me to the list!</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
 </div>
