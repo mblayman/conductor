@@ -1,5 +1,5 @@
 celery==4.0.2
-Django==1.10.4
+Django==1.10.6
 django-anymail==0.8
 # django-cors-headers does not currently support 1.9.
 # Use the fork for now.
