@@ -42,7 +42,7 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-cp-validations": "3.2.3",
+    "ember-cp-validations": "3.3.0",
     "ember-data": "^2.11.0",
     "ember-data-factory-guy": "2.11.5",
     "ember-debounced-input-helpers": "0.0.2",
