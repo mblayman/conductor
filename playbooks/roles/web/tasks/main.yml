@@ -24,10 +24,6 @@
   become: yes
   apt: name=python3-psycopg2 state=present
 
-- name: Install Bower
-  become: yes
-  npm: name=bower state=present global=yes
-
 - name: Install Gulp
   become: yes
   npm: name=gulp state=present global=yes
@@ -104,12 +100,6 @@
   command: npm install --unsafe-perm
   args:
     chdir: "{{ ember_app_path }}"
-
-- name: Install Bower dependencies
-  become: yes
-  command: bower --allow-root install chdir={{ ember_app_path }}
-  register: bower_result
-  changed_when: "bower_result.stdout != ''"
 
 - name: Build Semantic UI
   become: yes

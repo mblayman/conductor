@@ -1,6 +1,0 @@
-{
-  "name": "client",
-  "dependencies": {
-    "jquery-mockjax": "2.2.1"
-  }
-}
