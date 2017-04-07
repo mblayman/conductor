@@ -101,17 +101,9 @@
 
 - name: Install Ember dependencies
   become: yes
-  npm: path={{ ember_app_path }} state=present
-
-# XXX: ansible/ansible-modules-extras#1375
-# Specifying latest before a package is installed will fail, but present is
-# insufficient to make sure the package is up-to-date.
-# I should check on this later, because outdated packages are always showing
-# up and triggering this to always attempt to update even when the package.json
-# is satisfied.
-- name: Install latest Ember dependencies
-  become: yes
-  npm: path={{ ember_app_path }} state=latest
+  command: npm install --unsafe-perm
+  args:
+    chdir: "{{ ember_app_path }}"
 
 - name: Install Bower dependencies
   become: yes
