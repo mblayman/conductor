@@ -7,6 +7,11 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
 
+    featureFlags: {
+    },
+    includeDirByFlag: {
+    },
+
     'ember-simple-auth': {
       authorizer: 'authorizer:token'
     },
