@@ -45,6 +45,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.APP.API_HOST = 'https://localhost:8080';
+
     ENV.featureFlags.ENABLE_SIGNUP = true;
   }
 
@@ -57,6 +58,8 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV.featureFlags.ENABLE_SIGNUP = true;
   }
 
   if (environment === 'production') {
