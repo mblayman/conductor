@@ -1,1 +1,109 @@
-{{outlet}}
+<div class="ui middle aligned centered stackable grid">
+  <div class="row">
+    <div class="eight wide center aligned column">
+      <h2 class="ui blue image header">
+        You&rsquo;re seconds away from automatically tracking your students&rsquo; most critical dates.</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six wide column">
+      <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
+        <div class="ui stacked segment">
+          <div class="field">
+            <label for='username'>Username</label>
+            {{field-input inputId='username' inputValue=model.username
+              icon='user' placeholder='Enter username'
+              errorMessage=model.validations.attrs.username.message
+              isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+          </div>
+
+          <div class="field">
+            <label for='email'>Email</label>
+            {{field-input inputId='email' inputValue=model.email
+              icon='mail' placeholder='Enter email' inputType='email'
+              errorMessage=model.validations.attrs.email.message
+              isInvalid=(and didValidate (v-get model 'email' 'isInvalid'))}}
+          </div>
+
+          <div class="field">
+            <label for='password'>Password</label>
+            {{field-input inputId='password' inputValue=model.password
+              icon='lock' placeholder='Enter password' inputType='password'
+              errorMessage=model.validations.attrs.password.message
+              isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+          </div>
+
+          <h5 class="ui blue image header">Billing information</h5>
+
+          <div class="fields">
+            <div class="thirteen wide field">
+              <label for='card[number]'>Card number</label>
+              {{field-input inputId='card[number]' inputValue=model.cardNumber
+                icon='credit card alternative' placeholder='0000 0000 0000 0000'
+                errorMessage=model.validations.attrs.cardNumber.message
+                isInvalid=(and didValidate (v-get model 'cardNumber' 'isInvalid'))}}
+            </div>
+            <div class="three wide field">
+              <label for='cvc'>CVC</label>
+              {{field-input inputId='cvc' inputValue=model.cvc
+                placeholder='CVC'
+                errorMessage=model.validations.attrs.cvc.message
+                isInvalid=(and didValidate (v-get model 'cvc' 'isInvalid'))}}
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Expiration</label>
+            <div class="two fields">
+              <div class="field">
+                <select class="ui fluid search dropdown" name="card[expire-month]">
+                  <option value="">Month</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <div class="field">
+                <input name="card[expire-year]" maxlength="4" placeholder="Year" type="text">
+              </div>
+            </div>
+          </div>
+
+          {{#if errorMessage}}
+            <div class="ui error message">{{errorMessage}}</div>
+          {{/if}}
+          <button type="submit" class="ui fluid large orange submit button">Start Free Trial</button>
+        </div>
+      </form>
+    </div>
+    <div class="three wide column">
+      <h5>Free for 14 days</h5>
+      <p>You have unrestricted and free access for the next 14 days.</p>
+      <hr>
+      <h5>Safe and secure</h5>
+      <p>We use bank-grade SSL security for your web browser.
+         Additionally, your data is backed up safely every hour.
+      </p>
+      <hr>
+      <h5>About billing</h5>
+      <p>You will not be charged now. TODO: add some copy about when membership starts and the cost. TODO: add copy about not storing card data.</p>
+      <p><a href="#" data-tooltip="
+
+  We ask for your credit card to allow your membership to continue after your free trial, should you choose not to cancel. This also allows us to reduce fraud and prevent multiple free trials for one person. This helps us deliver service for all the honest customers.
+
+  Your credit card not be charged at any point of your free trial. You can cancel anytime.
+
+  We’ll even send you an email three days before your trial is over to remind you it’s about to expire.
+  ">Why do we ask?</a></p>
+    </div>
+  </div>
+</div>

@@ -9,7 +9,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('schools');
   this.route('login');
-  this.route('signup');
+  if (ENABLE_SIGNUP) {
+    this.route('signup');
+  }
   this.route('terms');
   this.route('contact');
   this.route('privacy');
