@@ -2,7 +2,10 @@ import Ember from 'ember';
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:login', 'Unit | Route | login', {
-  needs: ['model:user']
+  needs: [
+    'model:user',
+    'service:session'
+  ]
 });
 
 test('it exists', function(assert) {

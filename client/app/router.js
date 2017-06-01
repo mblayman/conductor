@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('schools');
   this.route('login');
-  if (ENABLE_SIGNUP) { // jshint ignore:line
+  if (ENABLE_SIGNUP) { // eslint-disable-line no-undef
     this.route('signup');
   }
   this.route('terms');
