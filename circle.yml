@@ -8,11 +8,13 @@ dependencies:
   override:
     - pip install -r requirements.txt -r requirements-dev.txt
     - cd client && npm install && cd -
+    - npm install -g gulp
   cache_directories:
     - "client/node_modules"
 test:
   override:
     - python3 manage.py test
+    - cd client/vendor/semantic && gulp build && cd -
     - cd client && ./node_modules/ember-cli/bin/ember test && cd -
     - >
         flake8
