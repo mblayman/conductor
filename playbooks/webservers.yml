@@ -2,7 +2,7 @@
 - hosts: webservers
   roles:
     - role: kamaln7.swapfile
-      swapfile_size: 1GB
+      swapfile_size: 2GB
       become: yes
     - role: nodesource.node
       become: yes
