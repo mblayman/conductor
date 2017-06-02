@@ -41,6 +41,7 @@
     "card",
     "dropdown",
     "popup",
-    "search"
+    "search",
+    "transition"
   ]
 }
