@@ -1,11 +1,17 @@
 import Ember from 'ember';
 import UnauthenticatedRouteMixin from 'ember-simple-auth/mixins/unauthenticated-route-mixin';
+import LoginValidationsMixin from 'client/mixins/login-validations';
+
+const Login = Ember.Object.extend(LoginValidationsMixin, {
+  username: null,
+  password: null
+});
 
 export default Ember.Route.extend(UnauthenticatedRouteMixin, {
   titleToken: 'Login',
 
   model() {
-    return this.store.createRecord('user');
+    return Login.create(Ember.getOwner(this).ownerInjection());
   },
 
   resetController(controller, isExiting) {
