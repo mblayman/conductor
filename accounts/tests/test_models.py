@@ -1,5 +1,7 @@
 import datetime
 
+from django.db.utils import IntegrityError
+
 from conductor.tests import TestCase
 
 
@@ -10,6 +12,11 @@ class TestUser(TestCase):
 
         self.assertNotEqual('', user.username)
         self.assertNotEqual('', user.email)
+
+    def test_unique_email(self):
+        self.UserFactory.create(email='matt@test.com')
+        with self.assertRaises(IntegrityError):
+            self.UserFactory.create(email='matt@test.com')
 
 
 class TestInviteEmail(TestCase):
