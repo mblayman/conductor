@@ -1,17 +1,19 @@
 <div class="ui middle aligned centered stackable grid">
   <div class="six wide column">
     <h2 class="ui blue image header">Login to your account</h2>
-    <form {{action 'authenticate' on='submit'}} class="ui large form{{if errorMessage " error"}}">
+    <form {{action 'authenticate' on='submit'}} class="ui large form error">
       <div class="ui stacked segment">
         {{field-input inputId='username' inputValue=model.username
           icon='user' placeholder='Username'
-          errorMessage=model.validations.attrs.username.message
-          isInvalid=(and didValidate (v-get model 'username' 'isInvalid'))}}
+          errorMessage=(v-get model 'username' 'message')
+          formValidated=didValidate
+          isInvalid=(v-get model 'username' 'isInvalid')}}
 
         {{field-input inputId='password' inputValue=model.password
           icon='lock' placeholder='Password' inputType='password'
-          errorMessage=model.validations.attrs.password.message
-          isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+          errorMessage=(v-get model 'password' 'message')
+          formValidated=didValidate
+          isInvalid=(v-get model 'password' 'isInvalid')}}
 
         {{#if errorMessage}}
           <div class="ui error message">{{errorMessage}}</div>

@@ -2,9 +2,14 @@
   {{#if icon}}
     <i class="{{icon}} icon"></i>
   {{/if}}
-  {{input id=inputId placeholder=placeholder value=inputValue type=inputType}}
+  {{input
+    id=inputId
+    placeholder=placeholder
+    value=inputValue
+    type=inputType
+    focus-out=(action (mut hadFocus) true)}}
 </div>
-{{#if errorMessage}}
+{{#if showError}}
   <div class="ui left error message">
     <p>{{errorMessage}}</p>
   </div>
