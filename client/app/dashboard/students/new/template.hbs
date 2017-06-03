@@ -1,18 +1,16 @@
 <h2 class="ui blue header">Add a student</h2>
-<form {{action 'create' on='submit'}} class="ui form{{if errorMessage " error"}}">
+<form {{action 'create' on='submit'}} class="ui form error">
   <div class="fields">
-    <div class="field">
-      {{field-input inputId='firstName' inputValue=model.student.firstName
-        placeholder='First name'
-        errorMessage=model.student.validations.attrs.firstName.message
-        isInvalid=(and didValidate (v-get model.student 'firstName' 'isInvalid'))}}
-    </div>
-    <div class="field">
-      {{field-input inputId='lastName' inputValue=model.student.lastName
-        placeholder='Last name'
-        errorMessage=model.student.validations.attrs.lastName.message
-        isInvalid=(and didValidate (v-get model.student 'lastName' 'isInvalid'))}}
-    </div>
+    {{field-input inputId='firstName' inputValue=model.student.firstName
+      placeholder='First name'
+      errorMessage=(v-get model.student 'firstName' 'message')
+      formValidated=didValidate
+      isInvalid=(v-get model.student 'firstName' 'isInvalid')}}
+    {{field-input inputId='lastName' inputValue=model.student.lastName
+      placeholder='Last name'
+      errorMessage=(v-get model.student 'lastName' 'message')
+      formValidated=didValidate
+      isInvalid=(v-get model.student 'lastName' 'isInvalid')}}
   </div>
   <div class="fields">
     <div class="field">
