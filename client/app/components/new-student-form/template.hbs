@@ -1,0 +1,31 @@
+<h2 class="ui blue header">Add a student</h2>
+<form {{action (action onSubmit) on="submit"}} class="ui form error">
+  <div class="fields">
+    {{field-input inputId='firstName' inputValue=student.firstName
+      placeholder='First name'
+      errorMessage=(v-get student 'firstName' 'message')
+      formValidated=didValidate
+      isInvalid=(v-get student 'firstName' 'isInvalid')}}
+    {{field-input inputId='lastName' inputValue=student.lastName
+      placeholder='Last name'
+      errorMessage=(v-get student 'lastName' 'message')
+      formValidated=didValidate
+      isInvalid=(v-get student 'lastName' 'isInvalid')}}
+  </div>
+  <div class="fields">
+    <div class="field">
+      <label>Applying for</label>
+      {{#x-select class='ui dropdown' action='selectSemester' as |xs|}}
+        {{#each semesters as |semester|}}
+          {{#xs.option value=semester}}{{humanize-semester semester}}{{/xs.option}}
+        {{/each}}
+      {{/x-select}}
+    </div>
+  </div>
+
+  {{#if errorMessage}}
+    <div class="ui error message">{{errorMessage}}</div>
+  {{/if}}
+  <button type="submit" class="ui large orange submit button">Add student</button>
+</form>
+{{yield}}
