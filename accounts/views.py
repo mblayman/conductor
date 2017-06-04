@@ -20,4 +20,9 @@ class IsUser(permissions.BasePermission):
 class UserViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = (permissions.IsAuthenticated, IsUser)
+    permission_classes = (permissions.AllowAny,)
+
+    def get_permissions(self):
+        if self.action == 'retrieve':
+            self.permission_classes = (permissions.IsAuthenticated, IsUser)
+        return super(UserViewSet, self).get_permissions()
