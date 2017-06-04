@@ -17,3 +17,19 @@ class UserSerializer(serializers.ModelSerializer):
             'username',
             'email',
         )
+
+
+class UserEmailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            'email',
+        )
+
+
+class UserUsernameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            'username',
+        )

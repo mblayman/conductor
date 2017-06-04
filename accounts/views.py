@@ -1,7 +1,9 @@
 from rest_framework import mixins, permissions, viewsets
 
 from accounts.models import InviteEmail, User
-from accounts.serializers import InviteEmailSerializer, UserSerializer
+from accounts.serializers import (
+    InviteEmailSerializer, UserSerializer, UserEmailSerializer,
+    UserUsernameSerializer)
 
 
 class InviteEmailViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
@@ -20,7 +22,6 @@ class IsUser(permissions.BasePermission):
 class UserViewSet(mixins.ListModelMixin,
                   mixins.RetrieveModelMixin,
                   viewsets.GenericViewSet):
-    serializer_class = UserSerializer
     permission_classes = (permissions.AllowAny,)
 
     @property
@@ -32,7 +33,6 @@ class UserViewSet(mixins.ListModelMixin,
         # Only list users when filtering on username or email.
         # This is made safe by having custom serializers when filtering
         # on either of these fields that return very little information.
-        # TODO: Make this comment statement true.
         if 'filter[username]' in self.request.query_params:
             return User.objects.filter(
                 username=self.request.query_params['filter[username]'])
@@ -40,6 +40,18 @@ class UserViewSet(mixins.ListModelMixin,
             return User.objects.filter(
                 email=self.request.query_params['filter[email]'])
         return User.objects.none()
+
+    def get_serializer_class(self):
+        """Get the serializer class.
+
+        The custom serializers for username and email are to ensure
+        that extra user data does not leak out if someone is scanning for it.
+        """
+        if 'filter[username]' in self.request.query_params:
+            return UserUsernameSerializer
+        if 'filter[email]' in self.request.query_params:
+            return UserEmailSerializer
+        return UserSerializer
 
     def get_permissions(self):
         if self.action == 'retrieve':

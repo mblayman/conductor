@@ -26,3 +26,19 @@ class TestUserSerializer(TestCase):
         user = self.UserFactory.create()
         serializer = serializers.UserSerializer(user)
         self.assertEqual(user.email, serializer.data['email'])
+
+
+class TestUserEmailSerializer(TestCase):
+
+    def test_serializes_email(self):
+        user = self.UserFactory.create()
+        serializer = serializers.UserEmailSerializer(user)
+        self.assertEqual(user.email, serializer.data['email'])
+
+
+class TestUserUsernameSerializer(TestCase):
+
+    def test_serializes_username(self):
+        user = self.UserFactory.create()
+        serializer = serializers.UserUsernameSerializer(user)
+        self.assertEqual(user.username, serializer.data['username'])

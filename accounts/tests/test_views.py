@@ -1,6 +1,6 @@
 from rest_framework import permissions
 
-from accounts import views
+from accounts import serializers, views
 from conductor.tests import TestCase
 
 
@@ -60,3 +60,17 @@ class TestUserViewSet(TestCase):
         viewset.request = self.request_factory.get(
             '/users?filter[email]=ernie@sesamestreet.com')
         self.assertEqual([user], list(viewset.get_queryset()))
+
+    def test_email_filter_email_serializer(self):
+        viewset = views.UserViewSet()
+        viewset.request = self.request_factory.get(
+            '/users?filter[email]=ernie@sesamestreet.com')
+        self.assertEqual(
+            serializers.UserEmailSerializer, viewset.get_serializer_class())
+
+    def test_username_filter_username_serializer(self):
+        viewset = views.UserViewSet()
+        viewset.request = self.request_factory.get(
+            '/users?filter[username]=ernie')
+        self.assertEqual(
+            serializers.UserUsernameSerializer, viewset.get_serializer_class())
