@@ -36,7 +36,7 @@ router.register('support-tickets', SupportTicketViewSet)
 router.register('students', StudentViewSet, base_name='student')
 router.register(
     'target-schools', TargetSchoolViewSet, base_name='targetschool')
-router.register('users', UserViewSet)
+router.register('users', UserViewSet, base_name='user')
 
 urlpatterns = [
     url(r'^', include(router.urls)),

@@ -35,3 +35,28 @@ class TestUserViewSet(TestCase):
         view = self._make_view()
         response = view(request, pk=user.id)
         self.assertEqual(403, response.status_code)
+
+    def test_unfiltered_list_empty(self):
+        self.UserFactory.create()
+        viewset = views.UserViewSet()
+        viewset.action = 'list'
+        viewset.request = self.request_factory.get()
+        self.assertEqual(0, len(list(viewset.get_queryset())))
+
+    def test_filters_username(self):
+        self.UserFactory.create(username='burt')
+        user = self.UserFactory.create(username='ernie')
+        viewset = views.UserViewSet()
+        viewset.action = 'list'
+        viewset.request = self.request_factory.get(
+            '/users?filter[username]=ernie')
+        self.assertEqual([user], list(viewset.get_queryset()))
+
+    def test_filters_email(self):
+        self.UserFactory.create(email='burt@sesamestreet.com')
+        user = self.UserFactory.create(email='ernie@sesamestreet.com')
+        viewset = views.UserViewSet()
+        viewset.action = 'list'
+        viewset.request = self.request_factory.get(
+            '/users?filter[email]=ernie@sesamestreet.com')
+        self.assertEqual([user], list(viewset.get_queryset()))
