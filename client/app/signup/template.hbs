@@ -31,8 +31,9 @@
             <label for='password'>Password</label>
             {{field-input inputId='password' inputValue=model.password
               icon='lock' placeholder='Enter password' inputType='password'
-              errorMessage=model.validations.attrs.password.message
-              isInvalid=(and didValidate (v-get model 'password' 'isInvalid'))}}
+              errorMessage=(v-get model 'password' 'message')
+              formValidated=didValidate
+              isInvalid=(v-get model 'password' 'isInvalid')}}
           </div>
 
           {{billing-info}}

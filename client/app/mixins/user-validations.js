@@ -10,5 +10,8 @@ export default buildValidations({
     validator('format', {type: 'email'}),
     validator('unique-email', {debounce: 300})
   ],
-  password: validator('presence', true)
+  password: [
+    validator('presence', true),
+    validator('length', {min: 10})
+  ]
 });
