@@ -17,3 +17,8 @@ test('has a username', function(assert) {
   let model = this.subject();
   assert.ok(model.toJSON().hasOwnProperty('username'));
 });
+
+test('has an email', function(assert) {
+  let model = this.subject();
+  assert.ok(model.toJSON().hasOwnProperty('email'));
+});

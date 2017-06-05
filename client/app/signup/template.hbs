@@ -22,8 +22,9 @@
             <label for='email'>Email</label>
             {{field-input inputId='email' inputValue=model.email
               icon='mail' placeholder='Enter email' inputType='email'
-              errorMessage=model.validations.attrs.email.message
-              isInvalid=(and didValidate (v-get model 'email' 'isInvalid'))}}
+              errorMessage=(v-get model 'email' 'message')
+              formValidated=didValidate
+              isInvalid=(v-get model 'email' 'isInvalid')}}
           </div>
 
           <div class="field">
