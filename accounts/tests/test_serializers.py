@@ -1,3 +1,5 @@
+from django.contrib.auth import authenticate
+
 from conductor.tests import TestCase
 from accounts import serializers
 
@@ -26,6 +28,25 @@ class TestUserSerializer(TestCase):
         user = self.UserFactory.create()
         serializer = serializers.UserSerializer(user)
         self.assertEqual(user.email, serializer.data['email'])
+
+    def test_no_serialize_password(self):
+        user = self.UserFactory.create()
+        serializer = serializers.UserSerializer(user)
+        self.assertNotIn('password', serializer.data.keys())
+
+    def test_creates_user(self):
+        validated_data = {
+            'username': 'matt',
+            'email': 'matt@test.com',
+            'password': 'asecrettoeverybody',
+        }
+        serializer = serializers.UserSerializer()
+        user = serializer.create(validated_data)
+        self.assertEqual(user.username, 'matt')
+        self.assertEqual(user.email, 'matt@test.com')
+        authenticated_user = authenticate(
+            username='matt', password='asecrettoeverybody')
+        self.assertEqual(user, authenticated_user)
 
 
 class TestUserEmailSerializer(TestCase):

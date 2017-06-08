@@ -1,24 +1,17 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  session: Ember.inject.service(),
+import Authenticator from 'client/mixins/authenticator';
+
+export default Ember.Controller.extend(Authenticator, {
   didValidate: false,
 
   actions: {
     authenticate() {
       this.get('model').validate().then(({model, validations}) => {
         if (validations.get('isValid')) {
-          const credentials = {
-            identification: model.get('username'),
-            password: model.get('password')
-          };
-          this.get('session').authenticate('authenticator:jwt', credentials).catch(
+          this.authenticate(model.get('username'), model.get('password')).catch(
             (reason) => {
-              if (reason === undefined) {
-                this.set('errorMessage', 'Hmm. We can’t seem to connect right now.');
-              } else {
-                this.set('errorMessage', reason['non_field_errors'][0]);
-              }
+              this.set('errorMessage', reason);
             });
         } else {
           this.set('errorMessage', 'Oops. Something is out of whack.');

@@ -19,7 +19,8 @@ class IsUser(permissions.BasePermission):
         return request.user.id == obj.id
 
 
-class UserViewSet(mixins.ListModelMixin,
+class UserViewSet(mixins.CreateModelMixin,
+                  mixins.ListModelMixin,
                   mixins.RetrieveModelMixin,
                   viewsets.GenericViewSet):
     permission_classes = (permissions.AllowAny,)
