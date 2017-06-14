@@ -2,3 +2,5 @@
 deployment: development
 root_domain: conductor.dev
 django_settings_module: conductor.settings.staging
+stripe:
+  publishable_key: "{{ vault.stripe.test.publishable_key }}"

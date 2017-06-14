@@ -11,6 +11,7 @@ ember_env:
   CLIENT_ROOT: "{{ client_root }}"
   ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN: "{{ rollbar.post_client_item_access_token }}"
   SEGMENT_WRITE_KEY: "{{ segment.write_key }}"
+  STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 api_domain: "api.{{ root_domain }}"
 venv_path: /srv/virtualenv

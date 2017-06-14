@@ -47,6 +47,10 @@ module.exports = function(environment) {
     ENV.APP.API_HOST = 'https://localhost:8080';
 
     ENV.featureFlags.ENABLE_SIGNUP = true;
+
+    ENV.stripe = {
+      publishableKey: 'pk_test_a_fake_key'
+    };
   }
 
   if (environment === 'test') {
@@ -60,6 +64,10 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
 
     ENV.featureFlags.ENABLE_SIGNUP = true;
+
+    ENV.stripe = {
+      publishableKey: 'pk_test_a_fake_key'
+    };
   }
 
   if (environment === 'production') {
@@ -69,6 +77,9 @@ module.exports = function(environment) {
     };
     ENV.segment = {
       WRITE_KEY: process.env.SEGMENT_WRITE_KEY
+    };
+    ENV.stripe = {
+      publishableKey: process.env.STRIPE_PUBLISHABLE_KEY
     };
   }
 
