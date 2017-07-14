@@ -33,5 +33,5 @@ test('has a matriculationSemester', function(assert) {
 
 test('has many schools', function(assert) {
   let model = this.subject();
-  assert.ok(model.toJSON().hasOwnProperty('schools'));
+  assert.ok(model.get('schools'));
 });

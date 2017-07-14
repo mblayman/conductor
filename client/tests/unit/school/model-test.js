@@ -20,5 +20,5 @@ test('has a name', function(assert) {
 
 test('has many milestones', function(assert) {
   let model = this.subject();
-  assert.ok(model.toJSON().hasOwnProperty('milestones'));
+  assert.ok(model.get('milestones'));
 });
