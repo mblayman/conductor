@@ -2,7 +2,10 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('billing-information', 'Unit | Model | billing information', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: [
+    'validator:presence',
+    'validator:credit-card-number'
+  ]
 });
 
 test('it exists', function(assert) {
