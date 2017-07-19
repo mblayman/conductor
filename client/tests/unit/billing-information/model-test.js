@@ -4,7 +4,8 @@ moduleForModel('billing-information', 'Unit | Model | billing information', {
   // Specify the other units that are required for this test.
   needs: [
     'validator:presence',
-    'validator:credit-card-number'
+    'validator:credit-card-number',
+    'validator:credit-card-cvc'
   ]
 });
 
