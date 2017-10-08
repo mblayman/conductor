@@ -78,6 +78,19 @@
     special_time: weekly
   when: deployment == "production"
 
+# Nginx is configured to get certs, but if a new deployment does not happen,
+# then the cert loaded in memory can get stale.
+# Do a Nginx restart on the weekend to pick up any updated cert.
+- name: Add Nginx restart cron
+  become: yes
+  cron:
+    name: Restart Nginx
+    state: present
+    weekday: 0
+    hour: 3
+    minute: 0
+    job: "service nginx restart"
+
 - file: path={{ cert_dir }} owner=root group=root mode=0700 state=directory
   become: yes
   when: deployment == "development"
