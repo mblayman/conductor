@@ -3,6 +3,7 @@ email: "{{ vault_email }}"
 
 app_path: /srv/conductor
 ember_app_path: "{{ app_path }}/client"
+landing_path: "{{ app_path }}/landing"
 
 client_domain: "www.{{ root_domain }}"
 client_root: /var/www/client
