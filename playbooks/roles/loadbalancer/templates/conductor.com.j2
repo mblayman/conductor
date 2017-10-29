@@ -56,14 +56,18 @@ server {
         add_header Cache-Control public;
     }
 
-    location /app {
-        alias {{ client_root }};
+    # This seems to work ok for now, but the ^~ modifier is somehow causing the index.html
+    # match to fail. So unless a user navigates to /app, they'll get a 404.
+    # XXX: Put /app in the static site, then use this location block to route to the right index.
+    location ^~ /app/ {
+        alias {{ client_root }}/;
+        try_files $uri $uri/ /index.html;
     }
 
     if ($scheme = http) {
         return 301 https://{{ client_domain }}$request_uri;
     }
-    try_files $uri $uri/ /index.html;
+    try_files $uri $uri/ $uri.html /index.html;
 }
 
 server {
