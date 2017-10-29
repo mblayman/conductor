@@ -148,16 +148,23 @@ body, h1, h2, h3, h4, h5, h6 {
 
 footer {
   padding: 50px 0;
-  background-color: #f8f8f8;
 }
 
 p.copyright {
   margin: 15px 0 0;
 }
 
+.bg-light {
+  background-color: white !important;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
 .navbar-brand {
   padding-top: 0;
-  padding-bottom; 0;
+  padding-bottom: 0;
 }
 
 .legal {
