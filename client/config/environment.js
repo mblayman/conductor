@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'client',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/app/',
     locationType: 'auto',
 
     featureFlags: {
