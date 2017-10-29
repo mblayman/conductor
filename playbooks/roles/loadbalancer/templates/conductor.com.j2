@@ -41,7 +41,7 @@ server {
     ssl_stapling on;
     ssl_stapling_verify on;
 
-    root         {{ client_root }};
+    root         {{ landing_root }};
     index        index.html;
 
     gzip on;
@@ -56,12 +56,14 @@ server {
         add_header Cache-Control public;
     }
 
-    location / {
-        if ($scheme = http) {
-            return 301 https://{{ client_domain }}$request_uri;
-        }
-        try_files $uri $uri/ /index.html;
+    location /app {
+        alias {{ client_root }};
     }
+
+    if ($scheme = http) {
+        return 301 https://{{ client_domain }}$request_uri;
+    }
+    try_files $uri $uri/ /index.html;
 }
 
 server {

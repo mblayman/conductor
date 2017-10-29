@@ -5,6 +5,8 @@ app_path: /srv/conductor
 ember_app_path: "{{ app_path }}/client"
 landing_path: "{{ app_path }}/landing"
 
+landing_root: "{{ landing_path }}/_site"
+
 client_domain: "www.{{ root_domain }}"
 client_root: /var/www/client
 ember_env:
