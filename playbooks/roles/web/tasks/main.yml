@@ -95,6 +95,24 @@
     - Collect static files
     - Restart application
 
+- name: Install Bundler
+  become: yes
+  apt: name=bundler state=present
+
+- name: Install Jekyll dependencies
+  become: yes
+  bundler:
+    state: latest
+    chdir: "{{ landing_path }}"
+
+# This needs to stay above the Ember build or else the app directory
+# gets wiped out and stays gone.
+- name: Build the static site
+  become: yes
+  command: bundle exec jekyll build
+  args:
+    chdir: "{{ landing_path }}"
+
 - name: Install Ember dependencies
   become: yes
   command: npm install --unsafe-perm
@@ -140,22 +158,6 @@
   become: yes
   file: state=directory path={{ django_env.STATIC_ROOT }}
         owner=www-data group=www-data mode=0750
-
-- name: Install Bundler
-  become: yes
-  apt: name=bundler state=present
-
-- name: Install Jekyll dependencies
-  become: yes
-  bundler:
-    state: latest
-    chdir: "{{ landing_path }}"
-
-- name: Build the static site
-  become: yes
-  command: bundle exec jekyll build
-  args:
-    chdir: "{{ landing_path }}"
 
 - name: Migrate the database
   become: yes

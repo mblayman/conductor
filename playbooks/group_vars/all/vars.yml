@@ -8,7 +8,7 @@ landing_path: "{{ app_path }}/landing"
 landing_root: "{{ landing_path }}/_site"
 
 client_domain: "www.{{ root_domain }}"
-client_root: /var/www/client
+client_root: "{{ landing_root }}/app"
 ember_env:
   API_HOST: "https://{{ api_domain }}"
   CLIENT_ROOT: "{{ client_root }}"
