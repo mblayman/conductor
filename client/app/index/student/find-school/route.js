@@ -14,7 +14,7 @@ export default Ember.Route.extend({
 
   actions: {
     loading(transition) {
-      let controller = this.controllerFor('dashboard.student.find-school');
+      let controller = this.controllerFor('index.student.find-school');
       controller.set('currentlyLoading', true);
       transition.promise.finally(function() {
           controller.set('currentlyLoading', false);
@@ -24,7 +24,7 @@ export default Ember.Route.extend({
 
   setupController(controller, model) {
     this._super(controller, model);
-    let student = this.modelFor('dashboard.student');
+    let student = this.modelFor('index.student');
     controller.set('student', student);
   },
 

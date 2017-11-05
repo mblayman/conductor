@@ -2,7 +2,7 @@ import Ember from 'ember';
 import { manualSetup, mockFindAll, mockSetup, mockTeardown } from 'ember-data-factory-guy';
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:dashboard/students/new', 'Unit | Route | dashboard/students/new', {
+moduleFor('route:index/students/new', 'Unit | Route | index/students/new', {
   beforeEach() {
     manualSetup(this.container);
     mockSetup();

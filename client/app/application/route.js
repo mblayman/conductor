@@ -7,8 +7,8 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
   currentUser: service(),
   segment: service(),
 
-  routeAfterAuthentication: 'dashboard',
-  routeIfAlreadyAuthenticated: 'dashboard',
+  routeAfterAuthentication: 'index',
+  routeIfAlreadyAuthenticated: 'index',
 
   beforeModel() {
     return this._loadCurrentUser();

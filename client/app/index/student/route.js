@@ -15,7 +15,7 @@ export default Ember.Route.extend({
         'target-school', {school: school, student: student});
       targetSchool.save().then(() => {
         student.reload();
-        this.transitionTo('dashboard.student');
+        this.transitionTo('index.student');
       }).catch((reason) => {
         if (reason.errors.length >= 1 && reason.errors[0].detail.includes('unique')) {
           this.get('flashMessages').danger(

@@ -1,10 +1,8 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:dashboard/student', 'Unit | Route | dashboard/student', {
+moduleFor('route:index/student/find-school', 'Unit | Route | index/student/find school', {
   // Specify the other units that are required for this test.
-  needs: [
-    'service:flashMessages'
-  ]
+  // needs: ['controller:foo']
 });
 
 test('it exists', function(assert) {

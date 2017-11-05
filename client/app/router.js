@@ -13,7 +13,7 @@ Router.map(function() {
     this.route('signup');
   }
   this.route('contact');
-  this.route('dashboard', function() {
+  this.route('index', { path: '/' }, function() {
     this.route('students', function() {
       this.route('new');
     });
