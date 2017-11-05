@@ -12,9 +12,7 @@ Router.map(function() {
   if (ENABLE_SIGNUP) { // eslint-disable-line no-undef
     this.route('signup');
   }
-  this.route('terms');
   this.route('contact');
-  this.route('privacy');
   this.route('dashboard', function() {
     this.route('students', function() {
       this.route('new');
