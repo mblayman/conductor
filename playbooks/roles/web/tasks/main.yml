@@ -112,6 +112,8 @@
   command: bundle exec jekyll build
   args:
     chdir: "{{ landing_path }}"
+  environment:
+    JEKYLL_ENV: "production"
 
 - name: Install Ember dependencies
   become: yes
