@@ -10,6 +10,8 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.1.0)
     ffi (1.9.18)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     forwardable-extended (2.6.0)
     jekyll (3.5.2)
       addressable (~> 2.4)
@@ -68,6 +70,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-sass
   jekyll (= 3.5.2)
   jekyll-assets
   jekyll-feed (~> 0.6)
