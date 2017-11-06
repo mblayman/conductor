@@ -105,6 +105,12 @@
     state: latest
     chdir: "{{ landing_path }}"
 
+- name: Install Jekyll Assets dependencies
+  become: yes
+  command: npm install --unsafe-perm
+  args:
+    chdir: "{{ landing_path }}"
+
 # This needs to stay above the Ember build or else the app directory
 # gets wiped out and stays gone.
 - name: Build the static site
