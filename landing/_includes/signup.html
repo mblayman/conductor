@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-5 offset-lg-2">
+      <div class="col-lg-5 offset-lg-2 mb-3">
         <div class="card">
           <div class="card-body">
             <form>
@@ -27,7 +27,12 @@
                 <input type="password" class="form-control" id="password" placeholder="Password" aria-describedby="passwordHelp">
                 <small id="passwordHelp" class="form-text text-muted">Please use at least 10 characters.</small>
               </div>
-              <button type="submit" class="btn btn-success btn-lg btn-block">Start Free Trial</button>
+              <div class="form-group">
+                <label>Billing information</label>
+                <div id="card-element"></div>
+                <small id="card-errors" class="form-text text-danger"></small>
+              </div>
+              <button type="submit" class="btn btn-success btn-lg btn-block mt-3">Start Free Trial</button>
             </form>
           </div>
         </div>

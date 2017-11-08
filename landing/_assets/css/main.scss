@@ -3,6 +3,8 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
 
 body, html {
   width: 100%;
@@ -175,4 +177,27 @@ p.copyright {
 
 .legal {
   font-weight: 300;
+}
+
+// Signup styles
+.StripeElement {
+  background-color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid $input-border-color;
+}
+
+.StripeElement--focus {
+  color: $input-focus-color;
+  background-color: $input-focus-bg;
+  border-color: $input-focus-border-color;
+  outline: none;
+}
+
+.StripeElement--invalid {
+  border-color: $danger;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }
