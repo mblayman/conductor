@@ -40,6 +40,10 @@ card.addEventListener('change', function(event) {
   }
 });
 
+$('#why-ask').popover({
+  trigger: 'focus'
+});
+
 window.addEventListener('load', function() {
   var form = document.getElementById('signup-form');
   form.addEventListener('submit', function(event) {
