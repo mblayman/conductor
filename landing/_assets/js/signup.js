@@ -40,6 +40,17 @@ card.addEventListener('change', function(event) {
   }
 });
 
+window.addEventListener('load', function() {
+  var form = document.getElementById('signup-form');
+  form.addEventListener('submit', function(event) {
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    form.classList.add('was-validated');
+  }, false);
+}, false);
+
 // TODO: review this.
 // // Handle form submission
 // var form = document.getElementById('payment-form');

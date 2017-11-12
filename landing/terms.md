@@ -8,7 +8,7 @@ permalink: /terms
 **Last updated:** May 11, 2016.
 
 Please read these Terms of Service ("Terms", "Terms of Service")
-carefully before using the https://www.collegeconductor.com website
+carefully before using the [https://www.collegeconductor.com](https://www.collegeconductor.com) website
 (the "Service") operated by Layman College Consulting, LLC.
 ("us", "we", or "our").
 
