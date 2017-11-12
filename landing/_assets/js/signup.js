@@ -46,8 +46,25 @@ var completeSignup = function(stripeToken) {
   // Check the validity again in case creating a token took a long time
   // and the user somehow managed to screw up the form.
   var form = document.getElementById('signup-form');
-  var isValid = form.checkValidity();
-  console.log(isValid, stripeToken);
+  if (!form.checkValidity()) { return; }
+  var $form = $(form);
+  var data = $form.serializeArray();
+  data.push({name: 'stripe_token', value: stripeToken.id});
+  data.push({name: 'postal_code', value: stripeToken.card.address_zip});
+  // TODO: Send data to API.
+  $.post('https://localhost:8080/users', data)
+    .done(function() {
+      // TODO: redirect to app (and authenticate?)
+      console.log('it worked');
+    })
+    .fail(function(jqXHR, textStatus, error) {
+      var serverError = document.getElementById('server-errors');
+      if (jqXHR.responseJSON && jqXHR.responseJSON.errors.length > 0) {
+        serverError.textContent = jqXHR.responseJSON.errors[0].detail;
+      } else {
+        serverError.textContent = 'Sorry, there was a problem handling your request.';
+      }
+    });
 };
 
 window.addEventListener('load', function() {

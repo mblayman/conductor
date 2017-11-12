@@ -15,14 +15,14 @@
             <form id="signup-form" method="POST" action="" novalidate>
               <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter username" autofocus required>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" autofocus required>
                 <div class="invalid-feedback">
                   Please enter a username.
                 </div>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                 <div class="invalid-feedback">
                   Please enter a valid email address.
                 </div>
@@ -30,7 +30,7 @@
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" aria-describedby="passwordHelp" required minlength="10">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" aria-describedby="passwordHelp" required minlength="10">
                 <div class="invalid-feedback">
                   Your password must be at least 10 characters.
                 </div>
@@ -42,6 +42,8 @@
                 <small id="card-errors" class="form-text text-danger"></small>
               </div>
               <button type="submit" class="btn btn-success btn-lg btn-block mt-3">Start Free Trial</button>
+              <p id='server-errors' class="form-text text-danger my-2">
+              </p>
               <small class="form-text text-muted mt-3">
                 By continuing,
                 you agree to College Conductor&rsquo;s
