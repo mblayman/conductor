@@ -120,6 +120,7 @@
     chdir: "{{ landing_path }}"
   environment:
     JEKYLL_ENV: "production"
+    STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 - name: Install Ember dependencies
   become: yes

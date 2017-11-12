@@ -82,3 +82,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  {% comment %}
+    The JavaScript doesn't go through the Liquid engine so this is attaching
+    the environment supplied data via the window.
+  {% endcomment %}
+  window.stripePublishableKey = '{{ site.stripe_publishable_key }}';
+</script>

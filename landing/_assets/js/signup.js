@@ -1,6 +1,5 @@
 // Create a Stripe client
-// TODO: get from env variable
-var stripe = Stripe('pk_test_dMoiQ14JSKvi9u84fDDGbMt5');
+var stripe = Stripe(window.stripePublishableKey);
 
 // Create an instance of Elements
 var elements = stripe.elements();
