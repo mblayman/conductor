@@ -1,7 +1,21 @@
 server {
     listen 80;
+    server_name {{ root_domain }};
+
+    location /.well-known/acme-challenge {
+        # Using a common root with the client for Let's Encrypt.
+        root {{ client_root }};
+        allow all;
+    }
+
+    location / {
+        return 301 https://{{ client_domain }}$request_uri;
+    }
+}
+
+server {
     listen 443 ssl http2;
-    server_name  {{ root_domain }};
+    server_name {{ root_domain }};
 
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
@@ -15,19 +29,27 @@ server {
     ssl_stapling on;
     ssl_stapling_verify on;
 
-    location / {
-        if ($scheme = http) {
-            return 301 https://{{ client_domain }}$request_uri;
-        }
-    }
-
-    return       301 $scheme://{{ client_domain }}$request_uri;
+    return 301 https://{{ client_domain }}$request_uri;
 }
 
 server {
     listen 80;
+    server_name {{ client_domain }};
+
+    location /.well-known/acme-challenge {
+        # Using a common root with the client for Let's Encrypt.
+        root {{ client_root }};
+        allow all;
+    }
+
+    location / {
+        return 301 https://{{ client_domain }}$request_uri;
+    }
+}
+
+server {
     listen 443 ssl http2;
-    server_name  {{ client_domain }};
+    server_name {{ client_domain }};
 
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
@@ -41,8 +63,8 @@ server {
     ssl_stapling on;
     ssl_stapling_verify on;
 
-    root         {{ landing_root }};
-    index        index.html;
+    root {{ landing_root }};
+    index index.html;
 
     gzip on;
     gzip_types text/css application/javascript;
@@ -61,14 +83,25 @@ server {
         try_files $uri $uri/ /app/index.html;
     }
 
-    if ($scheme = http) {
-        return 301 https://{{ client_domain }}$request_uri;
-    }
     try_files $uri $uri/ $uri.html /index.html;
 }
 
 server {
     listen 80;
+    server_name  {{ api_domain }};
+
+    location /.well-known/acme-challenge {
+        # Using a common root with the client for Let's Encrypt.
+        root {{ client_root }};
+        allow all;
+    }
+
+    location / {
+        return 301 https://{{ api_domain }}$request_uri;
+    }
+}
+
+server {
     listen 443 ssl http2;
     server_name  {{ api_domain }};
 
@@ -83,13 +116,6 @@ server {
     add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
     ssl_stapling on;
     ssl_stapling_verify on;
-
-    # Using a common root with the client for Let's Encrypt.
-    root         {{ client_root }};
-
-    location ~ /.well-known {
-        allow all;
-    }
 
     location {{ django_env.STATIC_URL }} {
         alias {{ django_env.STATIC_ROOT }};
