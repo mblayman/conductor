@@ -51,8 +51,7 @@ var completeSignup = function(stripeToken) {
   var data = $form.serializeArray();
   data.push({name: 'stripe_token', value: stripeToken.id});
   data.push({name: 'postal_code', value: stripeToken.card.address_zip});
-  // TODO: Send data to API.
-  $.post('https://localhost:8080/users', data)
+  $.post(window.apiHost + '/users', data)
     .done(function() {
       // TODO: redirect to app (and authenticate?)
       console.log('it worked');

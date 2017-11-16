@@ -119,6 +119,7 @@
   args:
     chdir: "{{ landing_path }}"
   environment:
+    API_HOST: "{{ api_host }}"
     JEKYLL_ENV: "production"
     STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 

@@ -10,13 +10,14 @@ landing_root: "{{ landing_path }}/_site"
 client_domain: "www.{{ root_domain }}"
 client_root: "{{ landing_root }}/app"
 ember_env:
-  API_HOST: "https://{{ api_domain }}"
+  API_HOST: "{{ api_host }}"
   CLIENT_ROOT: "{{ client_root }}"
   ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN: "{{ rollbar.post_client_item_access_token }}"
   SEGMENT_WRITE_KEY: "{{ segment.write_key }}"
   STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 api_domain: "api.{{ root_domain }}"
+api_host: "https://{{ api_domain }}"
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
