@@ -42,6 +42,52 @@ $('#why-ask').popover({
   trigger: 'focus'
 });
 
+// Quick and dirty method to decode a JWT.
+function jwtDecode(rawToken) {
+  var token = {};
+  token.raw = rawToken;
+  token.header = JSON.parse(window.atob(rawToken.split('.')[0]));
+  token.payload = JSON.parse(window.atob(rawToken.split('.')[1]));
+  return token;
+}
+
+/* Transition from landing page to app.
+ *
+ * Grab a JWT with the new user's credentials,
+ * store it in the format that Ember Simple Auth expects,
+ * and redirect to the app.
+ */
+var gotoApp = function(username, password) {
+  $.ajax({
+    url: window.apiHost + '/api-token-auth/',
+    type: 'POST',
+    data: {username: username, password: password},
+    dateType: 'json'
+  })
+    .done(function(data) {
+      token = jwtDecode(data.token);
+      // Store the format that Ember Simple Auth expects to receive.
+      var simpleAuthData = {
+        authenticated: {
+          authenticator: 'authenticator:jwt',
+          token: token.raw,
+          exp: token.payload.exp
+        }
+      }
+      window.localStorage.setItem(
+        'ember_simple_auth-session', JSON.stringify(simpleAuthData));
+      window.location.href = '/app';
+    })
+    .fail(function() {
+      var serverError = document.getElementById('server-errors');
+      serverError.innerHTML = 'Sorry, we were unable to log you in automatically. ' +
+        'We’re redirecting you soon&hellip;';
+      setTimeout(function() {
+        window.location.href = '/app/login';
+      }, 3000);
+    });
+};
+
 var completeSignup = function(stripeToken) {
   // Check the validity again in case creating a token took a long time
   // and the user somehow managed to screw up the form.
@@ -53,10 +99,11 @@ var completeSignup = function(stripeToken) {
   data.push({name: 'postal_code', value: stripeToken.card.address_zip});
   $.post(window.apiHost + '/users', data)
     .done(function() {
-      // TODO: redirect to app (and authenticate?)
-      console.log('it worked');
+      var username = $form.find('input[name="username"]').val();
+      var password = $form.find('input[name="password"]').val();
+      gotoApp(username, password);
     })
-    .fail(function(jqXHR, textStatus, error) {
+    .fail(function(jqXHR) {
       var serverError = document.getElementById('server-errors');
       if (jqXHR.responseJSON && jqXHR.responseJSON.errors.length > 0) {
         serverError.textContent = jqXHR.responseJSON.errors[0].detail;
