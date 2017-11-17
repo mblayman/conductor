@@ -17,3 +17,10 @@ class InviteEmailFactory(factory.django.DjangoModelFactory):
         model = models.InviteEmail
 
     email = factory.Faker('email')
+
+
+class ProfileFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = models.Profile
+
+    user = factory.SubFactory(UserFactory)

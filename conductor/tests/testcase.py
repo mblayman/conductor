@@ -1,6 +1,6 @@
 from django import test
 
-from accounts.tests.factories import InviteEmailFactory, UserFactory
+from accounts.tests.factories import InviteEmailFactory, ProfileFactory, UserFactory
 from conductor.tests.request_factory import RequestFactory
 from planner.tests.factories import (
     AuditFactory, MilestoneFactory, SchoolFactory, SemesterFactory,
@@ -13,6 +13,7 @@ class TestCase(test.TestCase):
 
     # accounts
     InviteEmailFactory = InviteEmailFactory
+    ProfileFactory = ProfileFactory
     UserFactory = UserFactory
     # planner
     AuditFactory = AuditFactory

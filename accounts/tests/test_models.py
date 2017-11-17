@@ -18,6 +18,11 @@ class TestUser(TestCase):
         with self.assertRaises(IntegrityError):
             self.UserFactory.create(email='matt@test.com')
 
+    def test_has_profile(self):
+        user = self.UserFactory.create()
+
+        self.assertIsNotNone(user.profile)
+
 
 class TestInviteEmail(TestCase):
 
@@ -31,3 +36,11 @@ class TestInviteEmail(TestCase):
 
         self.assertEqual(
             datetime.date.today(), invite_email.created_date.date())
+
+
+class TestProfile(TestCase):
+
+    def test_factory(self):
+        profile = self.ProfileFactory.build()
+
+        self.assertIsNotNone(profile.user)
