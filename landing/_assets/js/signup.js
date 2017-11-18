@@ -51,7 +51,8 @@ function jwtDecode(rawToken) {
   return token;
 }
 
-/* Transition from landing page to app.
+/**
+ * Transition from landing page to app.
  *
  * Grab a JWT with the new user's credentials,
  * store it in the format that Ember Simple Auth expects,
@@ -92,7 +93,10 @@ var completeSignup = function(stripeToken) {
   // Check the validity again in case creating a token took a long time
   // and the user somehow managed to screw up the form.
   var form = document.getElementById('signup-form');
-  if (!form.checkValidity()) { return; }
+  if (!form.checkValidity()) {
+    haltProcessing();
+    return;
+  }
   var $form = $(form);
   var data = $form.serializeArray();
   data.push({name: 'stripe_token', value: stripeToken.id});
@@ -110,14 +114,46 @@ var completeSignup = function(stripeToken) {
       } else {
         serverError.textContent = 'Sorry, there was a problem handling your request.';
       }
+      haltProcessing();
     });
 };
+
+// Prevent double clicks with a bit of submit button state management.
+var submitState = {
+  processing: false,
+  buttonText: null,
+};
+
+/**
+ * Check if the form is processing and lock if it's not.
+ */
+var isProcessing = function() {
+  if (submitState.processing) { return true; }
+  submitState.processing = true;
+  var $submit = $('#signup-form').find(':submit')
+  $submit.prop('disabled', true);
+  submitState.buttonText = $submit.html();
+  $submit.html('<i class="fa fa-circle-o-notch fa-spin fa-lg"></i>');
+  return false;
+}
+
+/**
+ * Halt processing and clean up the button.
+ */
+var haltProcessing = function() {
+  var $submit = $('#signup-form').find(':submit')
+  $submit.prop('disabled', false);
+  $submit.html(submitState.buttonText);
+  submitState.processing = false;
+}
+
 
 window.addEventListener('load', function() {
   var form = document.getElementById('signup-form');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
     event.stopPropagation();
+    if (isProcessing()) { return; }
 
     // Check the regular form fields.
     var isValid = form.checkValidity();
@@ -126,11 +162,15 @@ window.addEventListener('load', function() {
       if (result.error) {
         var errorElement = document.getElementById('card-errors');
         errorElement.textContent = result.error.message;
+        haltProcessing();
       } else {
         completeSignup(result.token);
       }
     });
 
     form.classList.add('was-validated');
+    if (!isValid) {
+      haltProcessing();
+    }
   }, false);
 }, false);
