@@ -53,6 +53,6 @@ class TestProfile(TestCase):
         self.assertEqual('21702', profile.postal_code)
 
     def test_has_stripe_customer_id(self):
-        profile = self.ProfileFactory.build(stripe_customer_id='cus_1234567890')
+        profile = self.ProfileFactory.build(stripe_customer_id='cus_1234')
 
-        self.assertEqual('cus_1234567890', profile.stripe_customer_id)
+        self.assertEqual('cus_1234', profile.stripe_customer_id)
