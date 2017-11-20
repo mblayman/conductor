@@ -32,6 +32,10 @@ class Profile(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    postal_code = models.CharField(
+        max_length=32,
+        blank=True,
+    )
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)

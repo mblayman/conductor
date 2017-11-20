@@ -1,4 +1,5 @@
 from django.conf import settings
+
 import factory
 
 from accounts import models

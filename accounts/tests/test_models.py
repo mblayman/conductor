@@ -44,3 +44,9 @@ class TestProfile(TestCase):
         profile = self.ProfileFactory.build()
 
         self.assertIsNotNone(profile.user)
+        self.assertEqual('', profile.postal_code)
+
+    def test_has_postal_code(self):
+        profile = self.ProfileFactory.build(postal_code='21702')
+
+        self.assertEqual('21702', profile.postal_code)
