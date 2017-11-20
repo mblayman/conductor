@@ -36,6 +36,9 @@ class Profile(models.Model):
         max_length=32,
         blank=True,
     )
+    stripe_customer_id = models.CharField(
+        max_length=32,
+    )
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
