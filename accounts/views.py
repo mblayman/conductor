@@ -58,3 +58,9 @@ class UserViewSet(mixins.CreateModelMixin,
         if self.action == 'retrieve':
             self.permission_classes = (permissions.IsAuthenticated, IsUser)
         return super(UserViewSet, self).get_permissions()
+
+    def perform_create(self, serializer):
+        """Give the serializer the Stripe token when creating."""
+        stripe_token = self.request.POST.get('stripe_token')
+        postal_code = self.request.POST.get('postal_code')
+        serializer.save(stripe_token=stripe_token, postal_code=postal_code)

@@ -1,3 +1,5 @@
+from unittest import mock
+
 from django.contrib.auth import authenticate
 
 from conductor.tests import TestCase
@@ -34,19 +36,43 @@ class TestUserSerializer(TestCase):
         serializer = serializers.UserSerializer(user)
         self.assertNotIn('password', serializer.data.keys())
 
-    def test_creates_user(self):
+    @mock.patch('accounts.serializers.stripe_gateway')
+    def test_creates_user(self, stripe_gateway):
+        stripe_gateway.create_customer.return_value = 'cus_1234'
         validated_data = {
             'username': 'matt',
             'email': 'matt@test.com',
             'password': 'asecrettoeverybody',
+            'stripe_token': 'tok_1234',
+            'postal_code': '21702',
         }
         serializer = serializers.UserSerializer()
+
         user = serializer.create(validated_data)
+
         self.assertEqual(user.username, 'matt')
         self.assertEqual(user.email, 'matt@test.com')
+        self.assertEqual(user.profile.postal_code, '21702')
+        self.assertEqual(user.profile.stripe_customer_id, 'cus_1234')
         authenticated_user = authenticate(
             username='matt', password='asecrettoeverybody')
         self.assertEqual(user, authenticated_user)
+
+    @mock.patch('accounts.serializers.stripe_gateway')
+    def test_missing_postal_code(self, stripe_gateway):
+        stripe_gateway.create_customer.return_value = 'cus_1234'
+        validated_data = {
+            'username': 'matt',
+            'email': 'matt@test.com',
+            'password': 'asecrettoeverybody',
+            'stripe_token': 'tok_1234',
+            'postal_code': None,
+        }
+        serializer = serializers.UserSerializer()
+
+        user = serializer.create(validated_data)
+
+        self.assertEqual(user.profile.postal_code, '')
 
 
 class TestUserEmailSerializer(TestCase):

@@ -1,3 +1,5 @@
+from unittest import mock
+
 from rest_framework import permissions
 
 from accounts import serializers, views
@@ -74,3 +76,17 @@ class TestUserViewSet(TestCase):
             '/users?filter[username]=ernie')
         self.assertEqual(
             serializers.UserUsernameSerializer, viewset.get_serializer_class())
+
+    def test_serializer_gets_extra_data(self):
+        serializer = mock.Mock()
+        viewset = views.UserViewSet()
+        viewset.request = self.request_factory.post()
+        viewset.request.POST = {
+            'postal_code': '21702',
+            'stripe_token': 'tok_1234',
+        }
+
+        viewset.perform_create(serializer)
+
+        serializer.save.assert_called_once_with(
+            postal_code='21702', stripe_token='tok_1234')

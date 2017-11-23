@@ -3,4 +3,5 @@ deployment: production
 root_domain: collegeconductor.com
 django_settings_module: conductor.settings.production
 stripe:
+  api_key: "{{ vault.stripe.live.api_key }}"
   publishable_key: "{{ vault.stripe.live.publishable_key }}"

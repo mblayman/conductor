@@ -38,6 +38,7 @@ django_env:
   POSTGRES_PASSWORD: "{{ postgres.password }}"
   STATIC_ROOT: /var/www/api/
   STATIC_URL: /static/
+  STRIPE_API_KEY: "{{ stripe.api_key }}"
 
 postgres:
   db: conductor
