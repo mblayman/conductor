@@ -8,7 +8,6 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     featureFlags: {
-      ENABLE_SIGNUP: false
     },
     includeDirByFlag: {
     },
@@ -46,8 +45,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.APP.API_HOST = 'https://localhost:8080';
 
-    ENV.featureFlags.ENABLE_SIGNUP = true;
-
     ENV.stripe = {
       publishableKey: 'pk_test_a_fake_key'
     };
@@ -62,8 +59,6 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-
-    ENV.featureFlags.ENABLE_SIGNUP = true;
 
     ENV.stripe = {
       publishableKey: 'pk_test_a_fake_key'

@@ -8,9 +8,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('login');
-  if (ENABLE_SIGNUP) { // eslint-disable-line no-undef
-    this.route('signup');
-  }
   this.route('contact');
   // Everything under index is a protected route.
   this.route('index', { path: '/' }, function() {
