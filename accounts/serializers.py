@@ -1,13 +1,7 @@
 from rest_framework_json_api import serializers
 
-from accounts.models import InviteEmail, User
+from accounts.models import User
 from vendor.services import stripe_gateway
-
-
-class InviteEmailSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = InviteEmail
-        fields = ('email',)
 
 
 class UserSerializer(serializers.ModelSerializer):

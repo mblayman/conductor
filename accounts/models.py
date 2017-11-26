@@ -6,12 +6,6 @@ from django.db.models.signals import post_save
 from django.utils.translation import ugettext_lazy as _
 
 
-class InviteEmail(models.Model):
-    """Record emails for interested people."""
-    email = models.EmailField()
-    created_date = models.DateTimeField(auto_now_add=True)
-
-
 class User(AbstractUser):
     """The central user model.
 

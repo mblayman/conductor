@@ -1,5 +1,3 @@
-import datetime
-
 from django.db.utils import IntegrityError
 
 from conductor.tests import TestCase
@@ -22,20 +20,6 @@ class TestUser(TestCase):
         user = self.UserFactory.create()
 
         self.assertIsNotNone(user.profile)
-
-
-class TestInviteEmail(TestCase):
-
-    def test_factory(self):
-        invite_email = self.InviteEmailFactory.build()
-
-        self.assertNotEqual('', invite_email.email)
-
-    def test_created_date(self):
-        invite_email = self.InviteEmailFactory.create()
-
-        self.assertEqual(
-            datetime.date.today(), invite_email.created_date.date())
 
 
 class TestProfile(TestCase):
