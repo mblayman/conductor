@@ -90,6 +90,9 @@ class Student(models.Model):
         Semester, on_delete=models.PROTECT)
     schools = models.ManyToManyField(School, through='TargetSchool')
 
+    class Meta:
+        ordering = ('id',)
+
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
 
@@ -99,4 +102,5 @@ class TargetSchool(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
 
     class Meta:
+        ordering = ('id',)
         unique_together = ('school', 'student')
