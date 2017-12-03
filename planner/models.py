@@ -79,7 +79,11 @@ def current_year():
 
 @python_2_unicode_compatible
 class Student(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='students')
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        related_name='students',
+        on_delete=models.CASCADE
+    )
     first_name = models.TextField()
     last_name = models.TextField()
     matriculation_semester = models.ForeignKey(
