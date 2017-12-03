@@ -50,10 +50,7 @@ class StudentSerializer(serializers.ModelSerializer):
         )
 
     class JSONAPIMeta:
-        # XXX: Side loading is currently broken in DJA.
-        # See https://github.com/django-json-api/
-        # django-rest-framework-json-api/issues/291
-        included_resources = ['matriculation_semester']
+        included_resources = ['matriculation_semester', 'schools']
 
 
 class TargetSchoolSerializer(serializers.ModelSerializer):
