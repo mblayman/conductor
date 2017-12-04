@@ -14,6 +14,11 @@
 /coverage/*
 /libpeerconnection.log
 npm-debug.log*
+yarn-error.log
 testem.log
 
 /vendor/semantic/dist
+# ember-try
+.node_modules.ember-try/
+bower.json.ember-try
+package.json.ember-try
