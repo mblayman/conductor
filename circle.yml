@@ -4,6 +4,15 @@ machine:
     version: 3.5.2
   node:
     version: 6.2.1
+# This whole jobs section is because Ember sucks down too much memory.
+# Ugh, JavaScript
+# See: https://github.com/emberjs/ember.js/issues/15641
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8-browsers
+        environment:
+          JOBS: 1
 dependencies:
   override:
     - pip install -r requirements.txt -r requirements-dev.txt
