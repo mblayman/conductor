@@ -70,16 +70,17 @@ class TestMilestone(TestCase):
 class TestApplicationStatus(TestCase):
 
     def test_factory(self):
-        schedule = self.ApplicationStatusFactory.create()
+        application_status = self.ApplicationStatusFactory.create()
 
-        self.assertIsNotNone(schedule.created_date)
-        self.assertIsNotNone(schedule.student)
+        self.assertIsNotNone(application_status.created_date)
+        self.assertIsNotNone(application_status.student)
 
     def test_has_student(self):
         student = self.StudentFactory.create()
-        schedule = self.ApplicationStatusFactory.create(student=student)
+        application_status = self.ApplicationStatusFactory.create(
+            student=student)
 
-        self.assertEqual(student, schedule.student)
+        self.assertEqual(student, application_status.student)
 
 
 class TestSchool(TestCase):

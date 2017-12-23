@@ -6,6 +6,19 @@ from django.utils.encoding import python_2_unicode_compatible
 from localflavor.us.models import USStateField
 
 
+class ApplicationStatus(models.Model):
+    """An application status represents the artifact that is exported.
+
+    This could be done to either Google Sheets or Microsoft Excel.
+    """
+    created_date = models.DateTimeField(auto_now_add=True)
+    student = models.ForeignKey(
+        'Student',
+        related_name='schedules',
+        on_delete=models.CASCADE
+    )
+
+
 class Audit(models.Model):
     """An audit is used to keep a school's milestones up-to-date."""
     PENDING = 'pending'
@@ -41,19 +54,6 @@ class Milestone(models.Model):
         'School', related_name='milestones', on_delete=models.CASCADE)
     category = models.CharField(
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8)
-
-
-class ApplicationStatus(models.Model):
-    """An application status represents the artifact that is exported.
-
-    This could be done to either Google Sheets or Microsoft Excel.
-    """
-    created_date = models.DateTimeField(auto_now_add=True)
-    student = models.ForeignKey(
-        'Student',
-        related_name='schedules',
-        on_delete=models.CASCADE
-    )
 
 
 @python_2_unicode_compatible

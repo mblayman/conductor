@@ -16,9 +16,9 @@ class TestCase(test.TestCase):
     UserFactory = UserFactory
 
     # planner
+    ApplicationStatusFactory = ApplicationStatusFactory
     AuditFactory = AuditFactory
     MilestoneFactory = MilestoneFactory
-    ApplicationStatusFactory = ApplicationStatusFactory
     SchoolFactory = SchoolFactory
     SemesterFactory = SemesterFactory
     StudentFactory = StudentFactory
