@@ -67,6 +67,21 @@ class TestMilestone(TestCase):
         self.assertEqual(category, milestone.category)
 
 
+class TestSchedule(TestCase):
+
+    def test_factory(self):
+        schedule = self.ScheduleFactory.create()
+
+        self.assertIsNotNone(schedule.created_date)
+        self.assertIsNotNone(schedule.student)
+
+    def test_has_student(self):
+        student = self.StudentFactory.create()
+        schedule = self.ScheduleFactory.create(student=student)
+
+        self.assertEqual(student, schedule.student)
+
+
 class TestSchool(TestCase):
 
     def test_factory(self):

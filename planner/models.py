@@ -43,6 +43,19 @@ class Milestone(models.Model):
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8)
 
 
+class Schedule(models.Model):
+    """A schedule represents the artifact that is exported.
+
+    This could be done to either Google Sheets or Microsoft Excel.
+    """
+    created_date = models.DateTimeField(auto_now_add=True)
+    student = models.ForeignKey(
+        'Student',
+        related_name='schedules',
+        on_delete=models.CASCADE
+    )
+
+
 @python_2_unicode_compatible
 class School(models.Model):
     name = models.TextField()

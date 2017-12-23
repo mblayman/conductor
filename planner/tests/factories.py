@@ -8,6 +8,13 @@ from accounts.tests.factories import UserFactory
 fake = Factory.create()
 
 
+class ScheduleFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'planner.Schedule'
+
+    student = factory.SubFactory('planner.tests.factories.StudentFactory')
+
+
 class SchoolFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.School'
