@@ -14,6 +14,12 @@ class ApplicationStatusSerializer(serializers.ModelSerializer):
             'student'
         )
 
+    def validate_student(self, student):
+        """Validate that the student is associated with the user."""
+        if student.user_id != self.context['request'].user.id:
+            raise serializers.ValidationError('Invalid student')
+        return student
+
 
 class MilestoneSerializer(serializers.ModelSerializer):
     class Meta:

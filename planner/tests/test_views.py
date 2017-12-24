@@ -7,6 +7,44 @@ from conductor.tests import TestCase
 from planner import views
 
 
+class TestApplicationStatusViewSet(TestCase):
+
+    def _make_view(self):
+        return views.ApplicationStatusViewSet.as_view(
+            actions={'get': 'list', 'post': 'create'})
+
+    def test_create(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create(user=user)
+        view = self._make_view()
+        data = {
+            'student': OrderedDict({
+                'type': 'students', 'id': str(student.id)}),
+        }
+        request = self.request_factory.post(data=data)
+        force_authenticate(request, user)
+
+        response = view(request)
+
+        self.assertEqual(201, response.status_code)
+
+    def test_create_different_student(self):
+        """A user may only create an application status for their student."""
+        user = self.UserFactory.create()
+        student = self.StudentFactory.create()
+        view = self._make_view()
+        data = {
+            'student': OrderedDict({
+                'type': 'students', 'id': str(student.id)}),
+        }
+        request = self.request_factory.post(data=data)
+        force_authenticate(request, user)
+
+        response = view(request)
+
+        self.assertEqual(422, response.status_code)
+
+
 class TestMilestoneViewSet(TestCase):
 
     def test_no_create(self):
