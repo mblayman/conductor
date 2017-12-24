@@ -5,23 +5,22 @@ from planner import serializers
 class TestApplicationStatusSerializer(TestCase):
 
     def test_serializes_id(self):
-        application_status = self.ApplicationStatusFactory.create()
-        serializer = serializers.ApplicationStatusSerializer(application_status)
-        self.assertEqual(application_status.id, serializer.data['id'])
+        application = self.ApplicationStatusFactory.create()
+        serializer = serializers.ApplicationStatusSerializer(application)
+        self.assertEqual(application.id, serializer.data['id'])
 
     def test_serializes_created_date(self):
-        application_status = self.ApplicationStatusFactory.create()
-        serializer = serializers.ApplicationStatusSerializer(application_status)
+        application = self.ApplicationStatusFactory.create()
+        serializer = serializers.ApplicationStatusSerializer(application)
         self.assertIn(
-            application_status.created_date.strftime('%Y-%m-%d'),
+            application.created_date.strftime('%Y-%m-%d'),
             serializer.data['created_date'])
 
     def test_serializes_student(self):
-        application_status = self.ApplicationStatusFactory.create()
-        serializer = serializers.ApplicationStatusSerializer(application_status)
+        application = self.ApplicationStatusFactory.create()
+        serializer = serializers.ApplicationStatusSerializer(application)
         self.assertEqual(
-            application_status.student.id,
-            int(serializer.data['student']['id']))
+            application.student.id, int(serializer.data['student']['id']))
 
 
 class TestMilestoneSerializer(TestCase):
