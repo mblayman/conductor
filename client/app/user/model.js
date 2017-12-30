@@ -1,8 +1,6 @@
 import DS from 'ember-data';
 
-import UserValidations from 'client/mixins/user-validations';
-
-export default DS.Model.extend(UserValidations, {
+export default DS.Model.extend({
   username: DS.attr('string'),
   email: DS.attr('string'),
   password: DS.attr('string'),
