@@ -1,6 +1,15 @@
 <div class="ui stackable grid">
   <div class="{{if schools 'fourteen' 'ten'}} wide column">
-    <p>Applying for <strong>{{humanize-semester model.matriculationSemester}}</strong></p>
+    <div class="ui stackable grid">
+      <div class="ten wide column">
+        <p>Applying for <strong>{{humanize-semester model.matriculationSemester}}</strong></p>
+      </div>
+      <div class="six wide column">
+        <a {{action "triggerExport" model}} class="ui right floated blue button">
+          Export to Google Sheets
+        </a>
+      </div>
+    </div>
     {{#if schools}}
       <table class="ui selectable orange table">
         <thead>
