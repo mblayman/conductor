@@ -19,6 +19,7 @@ module.exports = function(environment) {
 
     'ember-simple-auth-token': {
       refreshLeeway: 20,
+      refreshTokenPropertyName: 'token',
     },
 
     EmberENV: {
