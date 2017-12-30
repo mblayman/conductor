@@ -9,7 +9,7 @@ from localflavor.us.models import USStateField
 class ApplicationStatus(models.Model):
     """An application status represents the artifact that is exported.
 
-    This could be done to either Google Sheets or Microsoft Excel.
+    This could be done to Google Sheets.
     """
     created_date = models.DateTimeField(auto_now_add=True)
     student = models.ForeignKey(
