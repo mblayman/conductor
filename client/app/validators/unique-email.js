@@ -1,8 +1,8 @@
-import Ember from 'ember';
+import { inject as service } from '@ember/service';
 import BaseValidator from 'ember-cp-validations/validators/base';
 
 const UniqueEmail = BaseValidator.extend({
-  store: Ember.inject.service(),
+  store: service(),
 
   validate(value) {
     return this.get('store').query('user', {

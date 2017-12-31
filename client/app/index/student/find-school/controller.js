@@ -1,15 +1,16 @@
-import Ember from 'ember';
+import EmberObject, { computed } from '@ember/object';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   queryParams: {
     search: 'q'
   },
   search: '',
   currentlyLoading: false,
-  schoolOptions: Ember.computed('model.@each', function() {
+  schoolOptions: computed('model.@each', function() {
     let schools = this.get('student.schools');
     return this.get('model').map((school) => {
-      return Ember.Object.create({
+      return EmberObject.create({
         school: school,
         isTargetSchool: schools.includes(school)
       });

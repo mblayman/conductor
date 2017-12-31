@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 
 /*
  * Get the season. This is a crude approximation, but it will work.
@@ -20,4 +20,4 @@ export function humanizeSemester(params) {
   return `${season} ${year}`;
 }
 
-export default Ember.Helper.helper(humanizeSemester);
+export default helper(humanizeSemester);

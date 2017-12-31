@@ -1,8 +1,8 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
 
 import Authenticator from 'client/mixins/authenticator';
 
-export default Ember.Controller.extend(Authenticator, {
+export default Controller.extend(Authenticator, {
   didValidate: false,
 
   actions: {

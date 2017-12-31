@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import Service, { inject as service } from '@ember/service';
+import { isEmpty } from '@ember/utils';
+import RSVP from 'rsvp';
 import JWT from 'ember-simple-auth-token/authenticators/jwt';
 
-const { inject: { service }, isEmpty, RSVP } = Ember;
-
-export default Ember.Service.extend({
+export default Service.extend({
   session: service(),
   store: service(),
 

@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { run } from '@ember/runloop';
 import { manualSetup, mockFindAll } from 'ember-data-factory-guy';
 import { moduleFor, test } from 'ember-qunit';
 
@@ -26,7 +26,7 @@ test('it has a student for its model', function(assert) {
   mockFindAll('semester', 2);
 
   let route = this.subject();
-  Ember.run(function() {
+  run(function() {
     let promise = route.model();
     promise.then(function(model) {
       assert.equal(model.student.get('constructor.modelName'), 'student');

@@ -1,10 +1,11 @@
-import Ember from 'ember';
+import { hash } from 'rsvp';
+import Route from '@ember/routing/route';
 
-export default Ember.Route.extend({
+export default Route.extend({
   titleToken: 'Add a student',
 
   model() {
-    return Ember.RSVP.hash({
+    return hash({
       student: this.store.createRecord('student'),
       semesters: this.store.findAll('semester')
     });

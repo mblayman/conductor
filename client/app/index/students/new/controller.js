@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   didValidate: false,
 
   onSuccess() {
@@ -28,7 +29,7 @@ export default Ember.Controller.extend({
     }
   },
 
-  semestersByDate: Ember.computed('model.semesters.[]', function() {
+  semestersByDate: computed('model.semesters.[]', function() {
     return this.get('model.semesters').sortBy('date');
   })
 });

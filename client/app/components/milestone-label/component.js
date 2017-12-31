@@ -1,4 +1,5 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
 
 const COLORS = {
   ED: 'pink',
@@ -8,9 +9,9 @@ const COLORS = {
   RD: 'grey'
 };
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: 'span',
-  color: Ember.computed('milestone.category', function () {
+  color: computed('milestone.category', function () {
     const category = this.get('milestone.category');
     // When the milestone hasn't resolve yet, return no color.
     if (!category) { return ''; }

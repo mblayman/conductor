@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import { inject as service } from '@ember/service';
+import Mixin from '@ember/object/mixin';
 
-export default Ember.Mixin.create({
-  session: Ember.inject.service(),
+export default Mixin.create({
+  session: service(),
 
   authenticate(username, password) {
     const credentials = {
