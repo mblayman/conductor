@@ -1,8 +1,9 @@
 from rest_framework import mixins, permissions, viewsets
 
-from accounts.models import User
+from accounts.models import GoogleDriveAuth, User
 from accounts.serializers import (
-    UserSerializer, UserEmailSerializer, UserUsernameSerializer)
+    GoogleDriveAuthSerializer, UserSerializer, UserEmailSerializer,
+    UserUsernameSerializer)
 
 
 class IsUser(permissions.BasePermission):
@@ -57,3 +58,17 @@ class UserViewSet(mixins.CreateModelMixin,
         stripe_token = self.request.POST.get('stripe_token')
         postal_code = self.request.POST.get('postal_code')
         serializer.save(stripe_token=stripe_token, postal_code=postal_code)
+
+
+class GoogleDriveAuthViewSet(mixins.CreateModelMixin,
+                             mixins.ListModelMixin,
+                             viewsets.GenericViewSet):
+    serializer_class = GoogleDriveAuthSerializer
+
+    @property
+    def queryset(self):
+        user = self.request.user
+        return GoogleDriveAuth.objects.filter(user=user)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)

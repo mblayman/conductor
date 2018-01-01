@@ -1,6 +1,6 @@
 from rest_framework_json_api import serializers
 
-from accounts.models import User
+from accounts.models import GoogleDriveAuth, User
 from vendor.services import stripe_gateway
 
 
@@ -53,4 +53,12 @@ class UserUsernameSerializer(serializers.ModelSerializer):
         model = User
         fields = (
             'username',
+        )
+
+
+class GoogleDriveAuthSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GoogleDriveAuth
+        fields = (
+            'id',
         )

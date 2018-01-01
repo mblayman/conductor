@@ -1,5 +1,7 @@
 from unittest import mock
 
+from rest_framework.test import force_authenticate
+
 from accounts import serializers, views
 from conductor.tests import TestCase
 
@@ -76,3 +78,31 @@ class TestUserViewSet(TestCase):
 
         serializer.save.assert_called_once_with(
             postal_code='21702', stripe_token='tok_1234')
+
+
+class TestGoogleDriveAuthViewSet(TestCase):
+
+    def _make_view(self):
+        return views.GoogleDriveAuthViewSet.as_view(
+            actions={'get': 'list', 'post': 'create'})
+
+    def test_create(self):
+        user = self.UserFactory.create()
+        view = self._make_view()
+        data = {}
+        request = self.request_factory.post(data=data)
+        force_authenticate(request, user)
+
+        response = view(request)
+
+        self.assertEqual(201, response.status_code)
+
+    def test_gets_user_auths(self):
+        """For access control, a user can only get their auths."""
+        user = self.UserFactory.create()
+        auth = self.GoogleDriveAuthFactory.create(user=user)
+        self.GoogleDriveAuthFactory.create()
+        request = self.request_factory.authenticated_get(user)
+        viewset = views.GoogleDriveAuthViewSet()
+        viewset.request = request
+        self.assertEqual([auth], list(viewset.queryset))

@@ -81,3 +81,11 @@ class TestUserUsernameSerializer(TestCase):
         user = self.UserFactory.create()
         serializer = serializers.UserUsernameSerializer(user)
         self.assertEqual(user.username, serializer.data['username'])
+
+
+class TestGoogleDriveAuthSerializer(TestCase):
+
+    def test_serializes_id(self):
+        auth = self.GoogleDriveAuthFactory.create()
+        serializer = serializers.GoogleDriveAuthSerializer(auth)
+        self.assertEqual(auth.id, serializer.data['id'])

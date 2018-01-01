@@ -20,7 +20,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
 
-from accounts.views import UserViewSet
+from accounts.views import GoogleDriveAuthViewSet, UserViewSet
 from planner.views import (
     ApplicationStatusViewSet, MilestoneViewSet, SchoolViewSet, SemesterViewSet,
     StudentViewSet, TargetSchoolViewSet)
@@ -31,6 +31,10 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(
     'application-statuses', ApplicationStatusViewSet,
     base_name='applicationstatus')
+router.register(
+    'google-drive-auths',
+    GoogleDriveAuthViewSet,
+    base_name='googledriveauth')
 router.register('milestones', MilestoneViewSet)
 router.register('schools', SchoolViewSet, base_name='school')
 router.register('semesters', SemesterViewSet)

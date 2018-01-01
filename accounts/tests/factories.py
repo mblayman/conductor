@@ -18,3 +18,10 @@ class ProfileFactory(factory.django.DjangoModelFactory):
         model = models.Profile
 
     user = factory.SubFactory(UserFactory)
+
+
+class GoogleDriveAuthFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = models.GoogleDriveAuth
+
+    user = factory.SubFactory(UserFactory)

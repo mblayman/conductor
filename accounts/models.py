@@ -40,3 +40,16 @@ def create_profile(sender, instance, created, **kwargs):
     """Create a profile for a new user."""
     if created:
         Profile.objects.create(user=instance)
+
+
+class GoogleDriveAuth(models.Model):
+    """Store authorization information for Google Drive.
+
+    This model stores the authorized tokens required to do exports
+    to Google Sheets.
+    """
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        related_name='google_drive_authorizations',
+        on_delete=models.CASCADE
+    )

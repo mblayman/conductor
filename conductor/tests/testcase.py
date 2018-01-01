@@ -1,6 +1,7 @@
 from django import test
 
-from accounts.tests.factories import ProfileFactory, UserFactory
+from accounts.tests.factories import (
+    GoogleDriveAuthFactory, ProfileFactory, UserFactory)
 from conductor.tests.request_factory import RequestFactory
 from planner.tests.factories import (
     ApplicationStatusFactory, AuditFactory, MilestoneFactory, SchoolFactory,
@@ -12,6 +13,7 @@ class TestCase(test.TestCase):
     request_factory = RequestFactory()
 
     # accounts
+    GoogleDriveAuthFactory = GoogleDriveAuthFactory
     ProfileFactory = ProfileFactory
     UserFactory = UserFactory
 

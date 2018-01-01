@@ -1,6 +1,11 @@
 from django.contrib import admin
 
-from accounts.models import Profile, User
+from accounts.models import GoogleDriveAuth, Profile, User
+
+
+@admin.register(GoogleDriveAuth)
+class GoogleDriveAuthAdmin(admin.ModelAdmin):
+    list_display = ('user',)
 
 
 @admin.register(Profile)

@@ -40,3 +40,17 @@ class TestProfile(TestCase):
         profile = self.ProfileFactory.build(stripe_customer_id='cus_1234')
 
         self.assertEqual('cus_1234', profile.stripe_customer_id)
+
+
+class TestGoogleDriveAuth(TestCase):
+
+    def test_factory(self):
+        auth = self.GoogleDriveAuthFactory.create()
+
+        self.assertIsNotNone(auth.user)
+
+    def test_has_user(self):
+        user = self.UserFactory.build()
+        auth = self.GoogleDriveAuthFactory.build(user=user)
+
+        self.assertEqual(user, auth.user)
