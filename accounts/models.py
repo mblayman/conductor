@@ -53,3 +53,7 @@ class GoogleDriveAuth(models.Model):
         related_name='google_drive_authorizations',
         on_delete=models.CASCADE
     )
+    code = models.CharField(
+        max_length=64,
+        help_text='One time authorization code provided by the user',
+    )

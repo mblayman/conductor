@@ -61,4 +61,8 @@ class GoogleDriveAuthSerializer(serializers.ModelSerializer):
         model = GoogleDriveAuth
         fields = (
             'id',
+            'code'
         )
+        extra_kwargs = {
+            'code': {'write_only': True}
+        }

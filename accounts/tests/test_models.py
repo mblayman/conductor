@@ -54,3 +54,9 @@ class TestGoogleDriveAuth(TestCase):
         auth = self.GoogleDriveAuthFactory.build(user=user)
 
         self.assertEqual(user, auth.user)
+
+    def test_has_code(self):
+        code = 'fake_authorization_code'
+        auth = self.GoogleDriveAuthFactory.build(code=code)
+
+        self.assertEqual(code, auth.code)

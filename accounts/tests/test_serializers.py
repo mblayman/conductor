@@ -89,3 +89,8 @@ class TestGoogleDriveAuthSerializer(TestCase):
         auth = self.GoogleDriveAuthFactory.create()
         serializer = serializers.GoogleDriveAuthSerializer(auth)
         self.assertEqual(auth.id, serializer.data['id'])
+
+    def test_no_serialize_code(self):
+        auth = self.GoogleDriveAuthFactory.create()
+        serializer = serializers.GoogleDriveAuthSerializer(auth)
+        self.assertNotIn('code', serializer.data.keys())
