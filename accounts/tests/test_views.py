@@ -89,7 +89,7 @@ class TestGoogleDriveAuthViewSet(TestCase):
     def test_create(self):
         user = self.UserFactory.create()
         view = self._make_view()
-        data = {}
+        data = {'code': 'fake_auth_code'}
         request = self.request_factory.post(data=data)
         force_authenticate(request, user)
 
