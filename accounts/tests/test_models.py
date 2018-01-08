@@ -48,6 +48,7 @@ class TestGoogleDriveAuth(TestCase):
         auth = self.GoogleDriveAuthFactory.create()
 
         self.assertIsNotNone(auth.user)
+        self.assertIsNotNone(auth.created_date)
 
     def test_has_user(self):
         user = self.UserFactory.build()

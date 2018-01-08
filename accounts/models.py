@@ -48,6 +48,7 @@ class GoogleDriveAuth(models.Model):
     This model stores the authorized tokens required to do exports
     to Google Sheets.
     """
+    created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         related_name='google_drive_authorizations',

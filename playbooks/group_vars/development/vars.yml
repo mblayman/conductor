@@ -2,6 +2,8 @@
 deployment: development
 root_domain: conductor.dev
 django_settings_module: conductor.settings.staging
+google:
+  client_id: "{{ vault.google.development.client_id }}"
 stripe:
   api_key: "{{ vault.stripe.test.api_key }}"
   publishable_key: "{{ vault.stripe.test.publishable_key }}"

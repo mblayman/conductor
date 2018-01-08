@@ -12,6 +12,7 @@ client_root: "{{ landing_root }}/app"
 ember_env:
   API_HOST: "{{ api_host }}"
   CLIENT_ROOT: "{{ client_root }}"
+  GOOGLE_CLIENT_ID: "{{ google.client_id }}"
   ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN: "{{ rollbar.post_client_item_access_token }}"
   SEGMENT_WRITE_KEY: "{{ segment.write_key }}"
   STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"

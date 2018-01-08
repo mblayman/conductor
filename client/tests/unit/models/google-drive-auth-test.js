@@ -1,10 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('application-status', 'Unit | Model | application status', {
+moduleForModel('google-drive-auth', 'Unit | Model | google drive auth', {
   // Specify the other units that are required for this test.
-  needs: [
-    'model:student'
-  ]
+  needs: []
 });
 
 test('it exists', function(assert) {
@@ -13,7 +11,7 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('has a student', function(assert) {
+test('has a code', function(assert) {
   let model = this.subject();
-  assert.ok(model.toJSON().hasOwnProperty('student'));
+  assert.ok(model.toJSON().hasOwnProperty('code'));
 });
