@@ -4,12 +4,9 @@ email: "{{ vault_email }}"
 app_path: /srv/conductor
 ember_app_path: "{{ app_path }}/client"
 frontend_path: "{{ app_path }}/frontend"
-landing_path: "{{ app_path }}/landing"
-
-landing_root: "{{ landing_path }}/_site"
 
 client_domain: "www.{{ root_domain }}"
-client_root: "{{ landing_root }}/app"
+client_root: "{{ frontend_path }}/app"
 ember_env:
   API_HOST: "{{ api_host }}"
   CLIENT_ROOT: "{{ client_root }}"
