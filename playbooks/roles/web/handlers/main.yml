@@ -1,10 +1,4 @@
 ---
-- name: Collect static files
-  become: yes
-  become_user: www-data
-  django_manage: command=collectstatic app_path={{ app_path }} virtualenv={{ venv_path }}
-  environment: "{{ django_env }}"
-
 - name: Start Nginx
   service: name=nginx state=started
 

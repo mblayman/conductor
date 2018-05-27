@@ -24,10 +24,6 @@
   become: yes
   apt: name=python3-psycopg2 state=present
 
-- name: Install Gulp
-  become: yes
-  npm: name=gulp state=present global=yes
-
 - name: Install Python package tools
   become: yes
   apt: name={{ item }} state=present
@@ -86,62 +82,25 @@
 
 - name: Install Python dependencies
   become: yes
-  pip: >
-    requirements={{ app_path }}/requirements.txt
-    virtualenv={{ venv_path }}
-    virtualenv_site_packages=yes
-    virtualenv_python=python3
+  pip:
+    requirements: "{{ app_path }}/requirements.txt"
+    virtualenv: "{{ venv_path }}"
+    virtualenv_site_packages: yes
+    virtualenv_python: python3
   notify:
-    - Collect static files
     - Restart application
 
-- name: Install Bundler
-  become: yes
-  apt: name=bundler state=present
-
-- name: Install Jekyll dependencies
-  become: yes
-  bundler:
-    state: present
-    deployment_mode: True
-    chdir: "{{ landing_path }}"
-
-- name: Install Jekyll Assets dependencies
+- name: Install frontend dependencies
   become: yes
   command: npm install --unsafe-perm
   args:
-    chdir: "{{ landing_path }}"
+    chdir: "{{ frontend_path }}"
 
-# This needs to stay above the Ember build or else the app directory
-# gets wiped out and stays gone.
-- name: Build the static site
+- name: Build frontend
   become: yes
-  command: bundle exec jekyll build
+  command: "npm run build"
   args:
-    chdir: "{{ landing_path }}"
-  environment:
-    API_HOST: "{{ api_host }}"
-    JEKYLL_ENV: "production"
-    STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
-
-- name: Install Ember dependencies
-  become: yes
-  command: npm install --unsafe-perm
-  args:
-    chdir: "{{ ember_app_path }}"
-
-- name: Build Semantic UI
-  become: yes
-  command: gulp build
-  args:
-    chdir: "{{ ember_app_path }}/vendor/semantic"
-
-- name: Deploy the Ember app
-  become: yes
-  command: "{{ ember_app_path }}/node_modules/ember-cli/bin/ember deploy production"
-  args:
-    chdir: "{{ ember_app_path }}"
-  environment: "{{ ember_env }}"
+    chdir: "{{ frontend_path }}"
 
 - name: Enable supervisor
   become: yes
@@ -169,6 +128,15 @@
   become: yes
   file: state=directory path={{ django_env.STATIC_ROOT }}
         owner=www-data group=www-data mode=0750
+
+- name: Collect static files
+  become: yes
+  become_user: www-data
+  django_manage:
+    command: collectstatic
+    app_path: "{{ app_path }}"
+    virtualenv: "{{ venv_path }}"
+  environment: "{{ django_env }}"
 
 - name: Migrate the database
   become: yes
