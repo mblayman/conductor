@@ -15,16 +15,16 @@ Including another URLconf
 """
 import os
 
-from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic import TemplateView
 from rest_framework import routers
 
-from accounts.views import GoogleDriveAuthViewSet, UserViewSet
+from accounts.views import GoogleDriveAuthViewSet, UserViewSet, app, signup
 from planner.views import (
     ApplicationStatusViewSet, MilestoneViewSet, SchoolViewSet, SemesterViewSet,
     StudentViewSet, TargetSchoolViewSet)
-from support.views import SupportTicketViewSet
+from support.views import SupportTicketViewSet, contact
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -45,7 +45,27 @@ router.register(
 router.register('users', UserViewSet, base_name='user')
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    # TODO: Remove this when the API is removed.
+    # url(r'^', include(router.urls)),
+    url(r'^$',
+        TemplateView.as_view(template_name='index.html'),
+        name='index'),
+    url(r'^signup/$',
+        signup,
+        name='signup'),
+    url(r'^app/$',
+        app,
+        name='app'),
+    url(r'^contact/$',
+        contact,
+        name='contact'),
+    url(r'^terms/$',
+        TemplateView.as_view(template_name='terms.html'),
+        name='terms'),
+    url(r'^privacy/$',
+        TemplateView.as_view(template_name='privacy.html'),
+        name='privacy'),
+    url('^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', ObtainJSONWebToken.as_view()),
@@ -53,6 +73,5 @@ urlpatterns = [
 ]
 
 if os.environ['DJANGO_SETTINGS_MODULE'] == 'conductor.settings.development':
-    from django.conf.urls.static import static
-    urlpatterns += static(
-        settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+    urlpatterns += staticfiles_urlpatterns()

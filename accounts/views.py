@@ -1,9 +1,40 @@
+from django.conf import settings
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
+from django.shortcuts import render
 from rest_framework import mixins, permissions, viewsets
 
+from accounts.forms import SignupForm
 from accounts.models import GoogleDriveAuth, User
 from accounts.serializers import (
     GoogleDriveAuthSerializer, UserSerializer, UserEmailSerializer,
     UserUsernameSerializer)
+
+
+def signup(request):
+    """Sign up a new user."""
+    if request.method == 'POST':
+        form = SignupForm(data=request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return JsonResponse({'status': 'success'})
+        return JsonResponse({
+            'status': 'error',
+            'errors': dict(form.errors.items()),
+        })
+
+    context = {
+        'stripe_publishable_key': settings.STRIPE_PUBLISHABLE_KEY,
+    }
+    return render(request, 'accounts/signup.html', context)
+
+
+@login_required
+def app(request):
+    """Show the main view for an authenticated user."""
+    return render(request, 'accounts/app.html', {})
 
 
 class IsUser(permissions.BasePermission):

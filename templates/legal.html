@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="content-section-b">
+    <div class="container legal">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          {% block inner-content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

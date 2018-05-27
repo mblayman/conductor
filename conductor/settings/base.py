@@ -2,6 +2,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'conductor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(ROOT_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -96,6 +99,10 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SESSION_COOKIE_SECURE = True
 X_FRAME_OPTIONS = 'DENY'
 
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_REDIRECT_URL = '/app/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -114,8 +121,10 @@ USE_TZ = True
 
 STATIC_ROOT = os.environ['STATIC_ROOT']
 STATIC_URL = os.environ['STATIC_URL']
-
-AUTH_USER_MODEL = 'accounts.User'
+STATICFILES_DIRS = [
+    os.path.join(ROOT_DIR, 'assets'),
+]
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # noqa
 
 CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
     os.environ['RABBITMQ_USER'],
@@ -175,3 +184,5 @@ DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
     'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
 }
+
+STRIPE_PUBLISHABLE_KEY = os.environ['STRIPE_PUBLISHABLE_KEY']

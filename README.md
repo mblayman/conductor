@@ -8,5 +8,5 @@ For Vagrant to work,
 add this line to the hosts file.
 
 ```
-10.1.2.3 www.conductor.dev api.conductor.dev
+10.1.2.3 www.conductor.localhost api.conductor.localhost
 ```

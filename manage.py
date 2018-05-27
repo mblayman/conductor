@@ -23,6 +23,7 @@ if __name__ == '__main__':
         os.environ['STATIC_ROOT'] = 'static'
         os.environ['STATIC_URL'] = '/static/'
         os.environ['STRIPE_API_KEY'] = 'sk_test_fake_key'
+        os.environ['STRIPE_PUBLISHABLE_KEY'] = 'pk_test_fake_key'
 
     from django.core.management import execute_from_command_line
 

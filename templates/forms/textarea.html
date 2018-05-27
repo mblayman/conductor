@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label for="{{ field.name }}-label">{{ field.label }}</label>
+  <textarea class="form-control" id="{{ field.name }}" name="{{ field.name }}"
+    {% if rows %}rows="{{ rows }}"{% endif %}
+    {% if placeholder %}placeholder="{{ placeholder }}"{% endif %}
+  >{% if field.value %}{{ field.value }}{% endif %}</textarea>
+  {% if field.errors %}
+    {% for error in field.errors %}
+      <small class="form-text text-danger">{{ error }}</small>
+    {% endfor %}
+  {% endif %}
+</div>

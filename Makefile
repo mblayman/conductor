@@ -1,3 +1,5 @@
+.PHONY: frontend
+
 schools:
 	honcho run python manage.py dumpdata planner.School --indent 2 -o planner/fixtures/schools.json
 
@@ -14,3 +16,7 @@ seed:
 	ansible-playbook \
 		--private-key=./.vagrant/machines/default/virtualbox/private_key \
 		-i playbooks/development playbooks/seed.yml
+
+frontend:
+	cd frontend && \
+	npm run watch

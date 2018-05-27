@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container h-75">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-primary">Contact Us</h2>
+          <form method="POST">
+            {% csrf_token %}
+            {% include "forms/input.html" with field=form.email placeholder="Your email address" %}
+            {% include "forms/input.html" with field=form.subject placeholder="What’s on your mind?" %}
+            {% include "forms/textarea.html" with field=form.message placeholder="Please provide some details." rows="5" %}
+            <button type="submit" class="btn btn-primary btn-block">Send request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

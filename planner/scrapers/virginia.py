@@ -20,8 +20,3 @@ class UVAScraper(Scraper):
         events_div = div_list[0]
         for row in events_div.xpath('//tr'):
             print('text', row)
-        # TODO: Get list of objects that has raw dates and text
-        # TODO: match text against regular expressions to find milestone types
-        # TODO: create or update milestones.
-        # TODO: Add concept of academic year to milestones?
-        # TODO: Refactor to template pattern to reduce mechanical work needed.

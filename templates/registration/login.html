@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container h-75">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          {% if form.errors %}
+            <div class="alert alert-danger">
+              Your username and password didn’t match.
+              Please try again.
+            </div>
+          {% endif %}
+          <h2 class="text-primary">Login to your account</h2>
+          <form method="POST">
+            {% csrf_token %}
+            {% include "forms/input.html" with field=form.username placeholder="Your username" autofocus=True %}
+            {% include "forms/input.html" with field=form.password placeholder="Your password" %}
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

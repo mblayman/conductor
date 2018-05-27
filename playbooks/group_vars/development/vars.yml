@@ -1,6 +1,6 @@
 ---
 deployment: development
-root_domain: conductor.dev
+root_domain: conductor.localhost
 django_settings_module: conductor.settings.staging
 google:
   client_id: "{{ vault.google.development.client_id }}"
