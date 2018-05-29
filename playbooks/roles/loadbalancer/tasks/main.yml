@@ -61,7 +61,6 @@
     --webroot-path "{{ client_root }}"
     -d "{{ root_domain }}"
     -d "{{ client_domain }}"
-    -d "{{ api_domain }}"
   when: deployment == "production" and certdir.stat.isdir is not defined
   notify:
     - Restart Nginx
