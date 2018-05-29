@@ -132,6 +132,11 @@
 - name: Collect static files
   become: yes
   become_user: www-data
+  # Ansible has some weird permission error with becoming
+  # a different user.
+  # See https://github.com/ansible/ansible/issues/16048
+  vars:
+    ansible_ssh_pipelining: true
   django_manage:
     command: collectstatic
     app_path: "{{ app_path }}"

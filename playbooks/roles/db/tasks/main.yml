@@ -44,6 +44,11 @@
 - name: Create the database
   become: yes
   become_user: postgres
+  # Ansible has some weird permission error with becoming
+  # a different user.
+  # See https://github.com/ansible/ansible/issues/16048
+  vars:
+    ansible_ssh_pipelining: true
   postgresql_db:
     name={{ postgres.db }}
     encoding='UTF8'
@@ -57,6 +62,11 @@
 - name: Create the database user
   become: yes
   become_user: postgres
+  # Ansible has some weird permission error with becoming
+  # a different user.
+  # See https://github.com/ansible/ansible/issues/16048
+  vars:
+    ansible_ssh_pipelining: true
   postgresql_user: >
     db={{ postgres.db }}
     name={{ postgres.user }}
