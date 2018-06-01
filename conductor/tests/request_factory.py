@@ -18,7 +18,7 @@ class RequestFactory(APIRequestFactory):
         request.query_params = request.GET
         return request
 
-    def post(self, path='/', format='json', session=False, **kwargs):
+    def post(self, path='/', format='multipart', session=False, **kwargs):
         """Override the default post to avoid providing a meaningless path."""
         request = super().post(path, format=format, **kwargs)
         request.user = AnonymousUser()

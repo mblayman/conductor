@@ -32,9 +32,9 @@ def signup(request):
 
 
 @login_required
-def app(request):
+def dashboard(request):
     """Show the main view for an authenticated user."""
-    return render(request, 'accounts/app.html', {})
+    return render(request, 'accounts/dashboard.html', {})
 
 
 class IsUser(permissions.BasePermission):

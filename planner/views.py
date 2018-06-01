@@ -3,12 +3,14 @@ import operator
 
 from django.contrib.postgres.search import (
     SearchQuery, SearchRank, SearchVector)
+from django.shortcuts import render
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
 from rest_framework_json_api.views import ModelViewSet
 
 from planner import tasks
+from planner.forms import AddStudentForm
 from planner.models import (
     ApplicationStatus, Milestone, School, Semester, TargetSchool)
 from planner.serializers import (
@@ -82,3 +84,12 @@ class TargetSchoolViewSet(ModelViewSet):
     def perform_create(self, serializer):
         instance = serializer.save()
         tasks.audit_school.delay(instance.school_id)
+
+
+def add_student(request):
+    """Add a student to the user's set."""
+    form = AddStudentForm()
+    context = {
+        'form': form,
+    }
+    return render(request, 'planner/add_student.html', context)

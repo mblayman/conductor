@@ -21,7 +21,7 @@ class TestApplicationStatusViewSet(TestCase):
             'student': OrderedDict({
                 'type': 'students', 'id': str(student.id)}),
         }
-        request = self.request_factory.post(data=data)
+        request = self.request_factory.post(data=data, format='json')
         force_authenticate(request, user)
 
         response = view(request)
@@ -37,7 +37,7 @@ class TestApplicationStatusViewSet(TestCase):
             'student': OrderedDict({
                 'type': 'students', 'id': str(student.id)}),
         }
-        request = self.request_factory.post(data=data)
+        request = self.request_factory.post(data=data, format='json')
         force_authenticate(request, user)
 
         response = view(request)
@@ -112,7 +112,7 @@ class TestStudentViewSet(TestCase):
             'matriculation_semester': OrderedDict({
                 'type': 'semesters', 'id': str(semester.id)}),
         }
-        request = self.request_factory.post(data=data)
+        request = self.request_factory.post(data=data, format='json')
         user = self.UserFactory.create()
         force_authenticate(request, user)
         response = view(request)
@@ -154,7 +154,7 @@ class TestTargetSchoolViewSet(TestCase):
             'student': OrderedDict({
                 'type': 'students', 'id': str(target_school.student.id)}),
         }
-        request = self.request_factory.post(data=data)
+        request = self.request_factory.post(data=data, format='json')
         force_authenticate(request, user)
         response = view(request)
         self.assertEqual(422, response.status_code)
@@ -171,8 +171,27 @@ class TestTargetSchoolViewSet(TestCase):
             'student': OrderedDict({
                 'type': 'students', 'id': str(student.id)}),
         }
-        request = self.request_factory.post(data=data)
+        request = self.request_factory.post(data=data, format='json')
         force_authenticate(request, user)
         response = view(request)
         self.assertEqual(201, response.status_code)
         tasks.audit_school.delay.assert_called_once_with(school.id)
+
+
+class TestAddStudent(TestCase):
+
+    def test_get(self):
+        request = self.request_factory.get()
+
+        response = views.add_student(request)
+
+        self.assertEqual(200, response.status_code)
+
+    @mock.patch('planner.views.render')
+    def test_has_form(self, render):
+        request = self.request_factory.get()
+
+        views.add_student(request)
+
+        context = render.call_args[0][2]
+        self.assertIn('form', context)

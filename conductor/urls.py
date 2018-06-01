@@ -20,10 +20,11 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from rest_framework import routers
 
-from accounts.views import GoogleDriveAuthViewSet, UserViewSet, app, signup
+from accounts.views import (
+    GoogleDriveAuthViewSet, UserViewSet, dashboard, signup)
 from planner.views import (
     ApplicationStatusViewSet, MilestoneViewSet, SchoolViewSet, SemesterViewSet,
-    StudentViewSet, TargetSchoolViewSet)
+    StudentViewSet, TargetSchoolViewSet, add_student)
 from support.views import SupportTicketViewSet, contact
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
@@ -54,8 +55,8 @@ urlpatterns = [
         signup,
         name='signup'),
     url(r'^app/$',
-        app,
-        name='app'),
+        dashboard,
+        name='dashboard'),
     url(r'^contact/$',
         contact,
         name='contact'),
@@ -65,7 +66,11 @@ urlpatterns = [
     url(r'^privacy/$',
         TemplateView.as_view(template_name='privacy.html'),
         name='privacy'),
-    url('^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^students/add/',
+        add_student,
+        name='add_student'),
+
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/', ObtainJSONWebToken.as_view()),
