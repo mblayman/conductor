@@ -45,7 +45,7 @@ class TestContact(TestCase):
             'subject': 'Help me',
             'message': 'I need your help.',
         }
-        request = self.request_factory.post(data=data, format='multipart')
+        request = self.request_factory.post(data=data)
 
         response = views.contact(request)
 
@@ -57,7 +57,7 @@ class TestContact(TestCase):
     @mock.patch('support.views.render')
     def test_failure(self, render):
         data = {}
-        request = self.request_factory.post(data=data, format='multipart')
+        request = self.request_factory.post(data=data)
 
         views.contact(request)
 

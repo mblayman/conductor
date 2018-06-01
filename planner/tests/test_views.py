@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+from django.urls import reverse
 import mock
 from rest_framework.test import force_authenticate
 
@@ -180,8 +181,17 @@ class TestTargetSchoolViewSet(TestCase):
 
 class TestAddStudent(TestCase):
 
-    def test_get(self):
+    def test_requires_login(self):
         request = self.request_factory.get()
+
+        response = views.add_student(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    def test_get(self):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
 
         response = views.add_student(request)
 
@@ -189,7 +199,8 @@ class TestAddStudent(TestCase):
 
     @mock.patch('planner.views.render')
     def test_has_form(self, render):
-        request = self.request_factory.get()
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
 
         views.add_student(request)
 
@@ -205,3 +216,29 @@ class TestAddStudent(TestCase):
 
         context = render.call_args[0][2]
         self.assertEqual('add-student', context['app_nav'])
+
+    def test_success(self):
+        semester = self.SemesterFactory.create()
+        data = {
+            'first_name': 'Joe',
+            'last_name': 'Student',
+            'matriculation_semester': str(semester.id),
+        }
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.add_student(request)
+
+        self.assertEqual(1, user.students.count())
+        self.assertIn(reverse('dashboard'), response.get('Location'))
+
+    @mock.patch('planner.views.render')
+    def test_failure(self, render):
+        data = {}
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        views.add_student(request)
+
+        context = render.call_args[0][2]
+        self.assertFalse(context['form'].is_valid())

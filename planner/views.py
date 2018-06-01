@@ -1,9 +1,12 @@
 import functools
 import operator
 
+from django.contrib.auth.decorators import login_required
 from django.contrib.postgres.search import (
     SearchQuery, SearchRank, SearchVector)
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
 from rest_framework_json_api.pagination import PageNumberPagination
@@ -86,10 +89,16 @@ class TargetSchoolViewSet(ModelViewSet):
         tasks.audit_school.delay(instance.school_id)
 
 
+@login_required
 def add_student(request):
     """Add a student to the user's set."""
-    form = AddStudentForm()
-    # TODO: form submission.
+    if request.method == 'POST':
+        form = AddStudentForm(data=request.POST)
+        if form.is_valid():
+            form.save(request.user)
+            return HttpResponseRedirect(reverse('dashboard'))
+    else:
+        form = AddStudentForm()
     context = {
         'app_nav': 'add-student',
         'form': form,

@@ -47,7 +47,7 @@ class TestSignup(TestCase):
             'stripe_token': 'tok_1234',
             'postal_code': '12345',
         }
-        request = self.request_factory.post(data=data, format='multipart')
+        request = self.request_factory.post(data=data)
 
         response = views.signup(request)
 

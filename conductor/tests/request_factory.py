@@ -18,6 +18,12 @@ class RequestFactory(APIRequestFactory):
         request.query_params = request.GET
         return request
 
+    def authenticated_post(self, user, **kwargs):
+        request = self.post(**kwargs)
+        request.user = user
+        force_authenticate(request, user)
+        return request
+
     def post(self, path='/', format='multipart', session=False, **kwargs):
         """Override the default post to avoid providing a meaningless path."""
         request = super().post(path, format=format, **kwargs)
