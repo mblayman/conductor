@@ -58,12 +58,12 @@ class TestSignup(TestCase):
              'errors': {'username': ['This field is required.']}})
 
 
-class TestApp(TestCase):
+class TestDashboard(TestCase):
 
     def test_requires_login(self):
         request = self.request_factory.get()
 
-        response = views.app(request)
+        response = views.dashboard(request)
 
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('login'), response.get('Location'))
@@ -72,7 +72,7 @@ class TestApp(TestCase):
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
-        response = views.app(request)
+        response = views.dashboard(request)
 
         self.assertEqual(200, response.status_code)
 
