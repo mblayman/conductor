@@ -1,7 +1,16 @@
 {% extends "app.html" %}
 
 {% block content %}
-<form action="" method="">
- {{ form }}
-</form>
+  <h2 class="text-primary">Add student</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-row">
+      {% include "forms/input.html" with field=form.first_name placeholder="First name" form_group_class="col-md-6" autofocus=True %}
+      {% include "forms/input.html" with field=form.last_name placeholder="Last name" form_group_class="col-md-6" %}
+    </div>
+    <div class="form-row">
+      {% include "forms/select.html" with field=form.matriculation_semester form_group_class="col-md-6" %}
+    </div>
+    <button type="submit" class="btn btn-primary">Add student</button>
+  </form>
 {% endblock %}

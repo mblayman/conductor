@@ -195,3 +195,13 @@ class TestAddStudent(TestCase):
 
         context = render.call_args[0][2]
         self.assertIn('form', context)
+
+    @mock.patch('planner.views.render')
+    def test_app_nav(self, render):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
+
+        views.add_student(request)
+
+        context = render.call_args[0][2]
+        self.assertEqual('add-student', context['app_nav'])

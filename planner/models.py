@@ -73,13 +73,17 @@ class School(models.Model):
         return self.name
 
 
-@python_2_unicode_compatible
 class Semester(models.Model):
     active = models.BooleanField(default=True)
     date = models.DateField()
 
     def __str__(self):
-        return str(self.date)
+        season = 'Fall'
+        if self.date.month < 6:
+            season = 'Spring'
+        elif self.date.month < 9:
+            season = 'Summer'
+        return '{} {}'.format(season, self.date.year)
 
 
 # XXX: This is locked in for the default value of the initial migration.

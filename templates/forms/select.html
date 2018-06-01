@@ -1,0 +1,16 @@
+<div class="form-group {{ form_group_class }}">
+  <label for="{{ field.name }}-label">{{ field.label }}</label>
+  <select class="form-control" id="{{ field.name }}" name="{{ field.name }}">
+    {% for item in field.field.queryset %}
+      <option
+        value="{{ item.id }}"
+        {% if field.value == item %}selected{% endif %}
+      >{{ item }}</option>
+    {% endfor %}
+  </select>
+  {% if field.errors %}
+    {% for error in field.errors %}
+      <small class="form-text text-danger">{{ error }}</small>
+    {% endfor %}
+  {% endif %}
+</div>

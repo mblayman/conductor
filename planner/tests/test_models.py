@@ -151,6 +151,24 @@ class TestSemester(TestCase):
 
         self.assertFalse(semester.active)
 
+    def test_spring(self):
+        date = datetime.date(year=2018, month=4, day=1)
+        semester = self.SemesterFactory.build(date=date)
+
+        self.assertEqual('Spring 2018', str(semester))
+
+    def test_summer(self):
+        date = datetime.date(year=2018, month=7, day=1)
+        semester = self.SemesterFactory.build(date=date)
+
+        self.assertEqual('Summer 2018', str(semester))
+
+    def test_fall(self):
+        date = datetime.date(year=2018, month=11, day=1)
+        semester = self.SemesterFactory.build(date=date)
+
+        self.assertEqual('Fall 2018', str(semester))
+
 
 class TestStudent(TestCase):
 

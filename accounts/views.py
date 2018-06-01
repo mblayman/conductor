@@ -34,7 +34,10 @@ def signup(request):
 @login_required
 def dashboard(request):
     """Show the main view for an authenticated user."""
-    return render(request, 'accounts/dashboard.html', {})
+    context = {
+        'app_nav': 'dashboard',
+    }
+    return render(request, 'accounts/dashboard.html', context)
 
 
 class IsUser(permissions.BasePermission):

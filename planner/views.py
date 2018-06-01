@@ -89,7 +89,9 @@ class TargetSchoolViewSet(ModelViewSet):
 def add_student(request):
     """Add a student to the user's set."""
     form = AddStudentForm()
+    # TODO: form submission.
     context = {
+        'app_nav': 'add-student',
         'form': form,
     }
     return render(request, 'planner/add_student.html', context)

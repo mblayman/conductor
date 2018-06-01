@@ -76,6 +76,16 @@ class TestDashboard(TestCase):
 
         self.assertEqual(200, response.status_code)
 
+    @mock.patch('accounts.views.render')
+    def test_app_nav(self, render):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
+
+        views.dashboard(request)
+
+        context = render.call_args[0][2]
+        self.assertEqual('dashboard', context['app_nav'])
+
 
 class TestUserViewSet(TestCase):
 

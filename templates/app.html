@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
 {% block base-content %}
-  {% block content %}{% endblock %}
+  <div class="container my-3 app-container">
+    <div class="row">
+      <div class="col-3">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link
+              {% if app_nav == "dashboard" %}active{% endif %}
+              " href="{% url "dashboard" %}">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link
+              {% if app_nav == "add-student" %}active{% endif %}
+              " href="{% url "add-student" %}">Add student</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-9">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
 {% endblock %}
