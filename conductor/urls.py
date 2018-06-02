@@ -78,5 +78,8 @@ urlpatterns = [
 ]
 
 if os.environ['DJANGO_SETTINGS_MODULE'] == 'conductor.settings.development':
+    import debug_toolbar
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+    urlpatterns += [url(r'^__debug__/', include(debug_toolbar.urls))]
     urlpatterns += staticfiles_urlpatterns()
