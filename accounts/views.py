@@ -34,8 +34,11 @@ def signup(request):
 @login_required
 def dashboard(request):
     """Show the main view for an authenticated user."""
+    students = request.user.students.all().select_related(
+        'matriculation_semester').order_by('last_name')
     context = {
         'app_nav': 'dashboard',
+        'students': students,
     }
     return render(request, 'accounts/dashboard.html', context)
 

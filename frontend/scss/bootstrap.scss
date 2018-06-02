@@ -3,3 +3,7 @@ $orange: #ff9d27;
 
 $grid-gutter-width: 50px !default;
 @import "~bootstrap/scss/bootstrap";
+
+.bg-orange {
+  background-color: $orange !important;
+}
