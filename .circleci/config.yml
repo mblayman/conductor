@@ -1,0 +1,60 @@
+version: 2
+jobs:
+  build-py:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - run:
+          name: Install Python dependencies
+          command: |
+            test -d venv || virtualenv venv
+            venv/bin/pip install -r requirements.txt
+            venv/bin/pip install -r requirements-dev.txt
+      - save_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+          paths:
+            - ~/.cache/pip
+            - venv
+
+  lint-py:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - run:
+          name: Lint Python code
+          command: >
+            venv/bin/flake8
+            accounts
+            conductor
+            planner
+            support
+            vendor
+
+  test-py:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - run:
+          name: Run tests
+          command: venv/bin/python manage.py test
+
+workflows:
+  version: 2
+  test-bless:
+    jobs:
+      - build-py
+      - lint-py:
+          requires:
+            - build-py
+      - test-py:
+          requires:
+            - lint-py
