@@ -2,17 +2,10 @@
 email: "{{ vault_email }}"
 
 app_path: /srv/conductor
-ember_app_path: "{{ app_path }}/client"
 frontend_path: "{{ app_path }}/frontend"
 
 client_domain: "www.{{ root_domain }}"
 client_root: "{{ frontend_path }}"
-ember_env:
-  CLIENT_ROOT: "{{ client_root }}"
-  GOOGLE_CLIENT_ID: "{{ google.client_id }}"
-  ROLLBAR_POST_CLIENT_ITEM_ACCESS_TOKEN: "{{ rollbar.post_client_item_access_token }}"
-  SEGMENT_WRITE_KEY: "{{ segment.write_key }}"
-  STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"

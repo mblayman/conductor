@@ -1,7 +1,0 @@
-{{!-- The milestone may not have resolved yet. Wait until it has data. --}}
-{{#if milestone.category }}
-  <span class="ui {{color}} label">
-    {{milestone.category}} {{moment-format milestone.date 'MM/DD/YY'}}
-  </span>
-{{/if}}
-{{yield}}
