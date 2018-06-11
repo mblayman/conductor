@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+from django.http import Http404
 from django.urls import reverse
 import mock
 from rest_framework.test import force_authenticate
@@ -242,3 +243,42 @@ class TestAddStudent(TestCase):
 
         context = render.call_args[0][2]
         self.assertFalse(context['form'].is_valid())
+
+
+class TestStudentProfile(TestCase):
+
+    def test_requires_login(self):
+        request = self.request_factory.get()
+
+        response = views.student_profile(request, 1)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    def test_valid(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.student_profile(request, student.id)
+
+        self.assertEqual(200, response.status_code)
+
+    def test_unauthorized_user(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory()
+        request = self.request_factory.authenticated_get(user)
+
+        with self.assertRaises(Http404):
+            views.student_profile(request, student.id)
+
+    @mock.patch('planner.views.render')
+    def test_student_in_context(self, render):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_get(user)
+
+        views.student_profile(request, student.id)
+
+        context = render.call_args[0][2]
+        self.assertEqual(student, context['student'])

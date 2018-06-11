@@ -66,6 +66,12 @@ class TestMilestone(TestCase):
 
         self.assertEqual(category, milestone.category)
 
+    def test_str(self):
+        date = datetime.date(2018, 6, 10)
+        milestone = self.MilestoneFactory.build(date=date)
+
+        self.assertEqual('6/10/18', str(milestone))
+
 
 class TestApplicationStatus(TestCase):
 
@@ -129,6 +135,46 @@ class TestSchool(TestCase):
         school = self.SchoolFactory.build(state=state)
 
         self.assertEqual(state, school.state)
+
+    def test_early_decision(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.EARLY_DECISION)
+
+        self.assertEqual(milestone, school.early_decision)
+
+    def test_early_decision_1(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.EARLY_DECISION_1)
+
+        self.assertEqual(milestone, school.early_decision_1)
+
+    def test_early_decision_2(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.EARLY_DECISION_2)
+
+        self.assertEqual(milestone, school.early_decision_2)
+
+    def test_early_action(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.EARLY_ACTION)
+
+        self.assertEqual(milestone, school.early_action)
+
+    def test_regular_decision(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.REGULAR_DECISION)
+
+        self.assertEqual(milestone, school.regular_decision)
+
+    def test_missing_milestone(self):
+        school = self.SchoolFactory.create()
+
+        self.assertIsNone(school.early_decision)
 
 
 class TestSemester(TestCase):

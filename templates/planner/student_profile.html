@@ -1,0 +1,50 @@
+{% extends "app.html" %}
+
+{% block content %}
+  <h2 class="text-primary">{{ student }}</h2>
+  <p>Applying for {{ student.matriculation_semester }}</p>
+
+  {% with schools=student.schools.all %}
+    {% if schools %}
+      <table class="table">
+        <thead>
+          <tr class="bg-primary text-white border-0">
+            <th class="rounded-left border-0">School</th>
+            <th class="border-0">ED</th>
+            <th class="border-0">ED1</th>
+            <th class="border-0">ED2</th>
+            <th class="border-0">EA</th>
+            <th class="rounded-right border-0">RD</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for school in schools %}
+            <tr>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school }}</td>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school.early_decision|default_if_none:'' }}</td>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school.early_decision_1|default_if_none:'' }}</td>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school.early_decision_2|default_if_none:'' }}</td>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school.early_action|default_if_none:'' }}</td>
+              <td
+                {% if forloop.first %}class="border-top-0"{% endif %}
+                >{{ school.regular_decision|default_if_none:'' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No schools</p>
+    {% endif %}
+  {% endwith %}
+
+{% endblock %}

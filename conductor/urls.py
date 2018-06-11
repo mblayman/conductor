@@ -24,7 +24,7 @@ from accounts.views import (
     GoogleDriveAuthViewSet, UserViewSet, dashboard, signup)
 from planner.views import (
     ApplicationStatusViewSet, MilestoneViewSet, SchoolViewSet, SemesterViewSet,
-    StudentViewSet, TargetSchoolViewSet, add_student)
+    StudentViewSet, TargetSchoolViewSet, add_student, student_profile)
 from support.views import SupportTicketViewSet, contact
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
@@ -67,9 +67,13 @@ urlpatterns = [
         TemplateView.as_view(template_name='privacy.html'),
         name='privacy'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
+
     url(r'^students/add/',
         add_student,
         name='add-student'),
+    url(r'^students/(?P<student_id>\d+)/',
+        student_profile,
+        name='student-profile'),
 
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),

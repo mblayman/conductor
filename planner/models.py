@@ -2,7 +2,7 @@ import datetime
 
 from django.conf import settings
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
+from django.utils.functional import cached_property
 from localflavor.us.models import USStateField
 
 
@@ -55,8 +55,10 @@ class Milestone(models.Model):
     category = models.CharField(
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8)
 
+    def __str__(self):
+        return '{:%-m/%-d/%y}'.format(self.date)
 
-@python_2_unicode_compatible
+
 class School(models.Model):
     name = models.TextField()
     slug = models.SlugField(max_length=256, unique=True)
@@ -71,6 +73,32 @@ class School(models.Model):
 
     def __str__(self):
         return self.name
+
+    @cached_property
+    def milestones_dict(self):
+        """Get the active milestones keyed by category."""
+        milestones = self.milestones.filter(active=True).all()
+        return {milestone.category: milestone for milestone in milestones}
+
+    @property
+    def early_decision(self):
+        return self.milestones_dict.get(Milestone.EARLY_DECISION)
+
+    @property
+    def early_decision_1(self):
+        return self.milestones_dict.get(Milestone.EARLY_DECISION_1)
+
+    @property
+    def early_decision_2(self):
+        return self.milestones_dict.get(Milestone.EARLY_DECISION_2)
+
+    @property
+    def early_action(self):
+        return self.milestones_dict.get(Milestone.EARLY_ACTION)
+
+    @property
+    def regular_decision(self):
+        return self.milestones_dict.get(Milestone.REGULAR_DECISION)
 
 
 class Semester(models.Model):
@@ -94,7 +122,6 @@ def current_year():
     return today.year
 
 
-@python_2_unicode_compatible
 class Student(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,

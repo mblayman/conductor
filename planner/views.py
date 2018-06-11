@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.postgres.search import (
     SearchQuery, SearchRank, SearchVector)
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
@@ -104,3 +104,14 @@ def add_student(request):
         'form': form,
     }
     return render(request, 'planner/add_student.html', context)
+
+
+@login_required
+def student_profile(request, student_id):
+    """Show a student's information."""
+    student = get_object_or_404(
+        request.user.students.select_related('matriculation_semester'), id=student_id)
+    context = {
+        'student': student,
+    }
+    return render(request, 'planner/student_profile.html', context)

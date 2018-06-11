@@ -13,7 +13,7 @@
         <tr>
           <td
             {% if forloop.first %}class="border-top-0"{% endif %}
-            >{{ student.first_name }} {{ student.last_name }}</td>
+            ><a href="{% url "student-profile" student.id %}">{{ student }}</a></td>
           <td
             {% if forloop.first %}class="border-top-0"{% endif %}
             >{{ student.matriculation_semester }}</td>
