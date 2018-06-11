@@ -110,7 +110,8 @@ def add_student(request):
 def student_profile(request, student_id):
     """Show a student's information."""
     student = get_object_or_404(
-        request.user.students.select_related('matriculation_semester'), id=student_id)
+        request.user.students.select_related('matriculation_semester'),
+        id=student_id)
     context = {
         'student': student,
     }
