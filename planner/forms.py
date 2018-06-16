@@ -1,6 +1,29 @@
 from django import forms
 
-from planner.models import Semester, Student
+from planner.models import School, Semester, Student, TargetSchool
+
+
+class AddSchoolForm(forms.Form):
+    school = forms.IntegerField()
+
+    def __init__(self, student, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.student = student
+
+    def clean_school(self):
+        """Check that the student does not already have the selected school."""
+        school_id = self.cleaned_data.get('school')
+        school = School.objects.get(id=school_id)
+        if TargetSchool.objects.filter(
+                student=self.student, school=school).exists():
+            raise forms.ValidationError(
+                '{} is already on the student’s list.'.format(school.name))
+        return school
+
+    def save(self):
+        """Create a target school for the student."""
+        TargetSchool.objects.create(
+            student=self.student, school=self.cleaned_data['school'])
 
 
 class AddStudentForm(forms.Form):

@@ -15,6 +15,24 @@
       </div>
     </div>
   </form>
+
+  {% if form.errors %}
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-9">
+          {% for field in form %}
+            {% for error in field.errors %}
+              <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+          {% endfor %}
+          {% for error in form.non_field_errors %}
+            <div class="alert alert-danger">{{ error }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
   {% if q %}
     {% if schools %}
       <table class="table mt-4">
@@ -22,7 +40,13 @@
           {% for school in schools %}
             <tr>
               <td class="w-75 align-middle">{{ school }}</td>
-              <td class="w-25"><button class="btn btn-primary btn-block">Select</button></td>
+              <td class="w-25">
+                <form action="" method="POST">
+                  {% csrf_token %}
+                  <input name="school" type="hidden" value="{{ school.id }}">
+                  <button class="btn btn-primary btn-block" type="submit">Select</button>
+                </form>
+              </td>
             </tr>
           {% endfor %}
         </tbody>

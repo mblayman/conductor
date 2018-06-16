@@ -294,7 +294,7 @@ class TestAddSchool(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('login'), response.get('Location'))
 
-    def test_valid(self):
+    def test_valid_get(self):
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -302,6 +302,22 @@ class TestAddSchool(TestCase):
         response = views.add_school(request, student.id)
 
         self.assertEqual(200, response.status_code)
+
+    def test_valid_post(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        school = self.SchoolFactory.create()
+        data = {
+            'school': str(school.id),
+        }
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.add_school(request, student.id)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(
+            reverse('student-profile', args=[student.id]),
+            response.get('Location'))
 
     def test_unauthorized_user(self):
         user = self.UserFactory.create()
@@ -335,3 +351,14 @@ class TestAddSchool(TestCase):
 
         context = render.call_args[0][2]
         self.assertEqual('University of Virginia', context['q'])
+
+    @mock.patch('planner.views.render')
+    def test_form_in_context(self, render):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_get(user)
+
+        views.add_school(request, student.id)
+
+        context = render.call_args[0][2]
+        self.assertIn('form', context)
