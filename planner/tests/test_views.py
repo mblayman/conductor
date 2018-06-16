@@ -283,6 +283,18 @@ class TestStudentProfile(TestCase):
         context = render.call_args[0][2]
         self.assertEqual(student, context['student'])
 
+    @mock.patch('planner.views.render')
+    def test_schools_in_context(self, render):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        target_school = self.TargetSchoolFactory.create(student=student)
+        request = self.request_factory.authenticated_get(user)
+
+        views.student_profile(request, student.id)
+
+        context = render.call_args[0][2]
+        self.assertEqual([target_school.school], list(context['schools']))
+
 
 class TestAddSchool(TestCase):
 

@@ -112,9 +112,10 @@ def student_profile(request, student_id):
     student = get_object_or_404(
         request.user.students.select_related('matriculation_semester'),
         id=student_id)
-    # TODO: put schools in context and order them.
+    schools = student.schools.all().order_by('name')
     context = {
         'student': student,
+        'schools': schools,
     }
     return render(request, 'planner/student_profile.html', context)
 
@@ -129,7 +130,8 @@ def add_school(request, student_id):
         form = AddSchoolForm(student, data=request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('student-profile', args=[student.id]))
+            return HttpResponseRedirect(
+                reverse('student-profile', args=[student.id]))
     else:
         form = AddSchoolForm(student)
 
