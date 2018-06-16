@@ -116,3 +116,19 @@ def student_profile(request, student_id):
         'student': student,
     }
     return render(request, 'planner/student_profile.html', context)
+
+
+@login_required
+def add_school(request, student_id):
+    """Add a school to a student's list."""
+    student = get_object_or_404(request.user.students, id=student_id)
+    query = request.GET.get('q')
+    schools = []
+    if query:
+        schools = School.objects.search(query)
+    context = {
+        'q': query,
+        'schools': schools,
+        'student': student,
+    }
+    return render(request, 'planner/add_school.html', context)

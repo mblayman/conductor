@@ -24,7 +24,8 @@ from accounts.views import (
     GoogleDriveAuthViewSet, UserViewSet, dashboard, signup)
 from planner.views import (
     ApplicationStatusViewSet, MilestoneViewSet, SchoolViewSet, SemesterViewSet,
-    StudentViewSet, TargetSchoolViewSet, add_student, student_profile)
+    StudentViewSet, TargetSchoolViewSet,
+    add_school, add_student, student_profile)
 from support.views import SupportTicketViewSet, contact
 from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
@@ -71,9 +72,12 @@ urlpatterns = [
     url(r'^students/add/',
         add_student,
         name='add-student'),
-    url(r'^students/(?P<student_id>\d+)/',
+    url(r'^students/(?P<student_id>\d+)/$',
         student_profile,
         name='student-profile'),
+    url(r'^students/(?P<student_id>\d+)/add-school/',
+        add_school,
+        name='add-school'),
 
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),

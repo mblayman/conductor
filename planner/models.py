@@ -5,6 +5,8 @@ from django.db import models
 from django.utils.functional import cached_property
 from localflavor.us.models import USStateField
 
+from planner.managers import SchoolManager
+
 
 class ApplicationStatus(models.Model):
     """An application status represents the artifact that is exported.
@@ -70,6 +72,8 @@ class School(models.Model):
     audit_notes = models.TextField(
         help_text='Notes to make performing audits easier',
         null=True, blank=True)
+
+    objects = SchoolManager()
 
     def __str__(self):
         return self.name
