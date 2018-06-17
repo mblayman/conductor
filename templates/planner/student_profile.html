@@ -5,7 +5,7 @@
   <p>Applying for {{ student.matriculation_semester }}</p>
 
   {% if schools %}
-    <table class="table">
+    <table class="table mb-3" id="schools">
       <thead>
         <tr class="bg-primary text-white border-0">
           <th class="rounded-left border-0">School</th>
@@ -19,24 +19,12 @@
       <tbody>
         {% for school in schools %}
           <tr>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school }}</td>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school.early_decision|default_if_none:'' }}</td>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school.early_decision_2|default_if_none:'' }}</td>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school.restricted_early_action|default_if_none:'' }}</td>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school.early_action|default_if_none:'' }}</td>
-            <td
-              {% if forloop.first %}class="border-top-0"{% endif %}
-              >{{ school.regular_decision|default_if_none:'' }}</td>
+            <td>{{ school }}</td>
+            <td>{{ school.early_decision|default_if_none:'' }}</td>
+            <td>{{ school.early_decision_2|default_if_none:'' }}</td>
+            <td>{{ school.restricted_early_action|default_if_none:'' }}</td>
+            <td>{{ school.early_action|default_if_none:'' }}</td>
+            <td>{{ school.regular_decision|default_if_none:'' }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -46,4 +34,11 @@
   {% endif %}
 
   <a class="btn btn-primary" href="{% url "add-school" student.id %}">Add school</a>
+{% endblock %}
+
+{% block entry %}
+  <script>
+    start('studentProfile', {
+    });
+  </script>
 {% endblock %}

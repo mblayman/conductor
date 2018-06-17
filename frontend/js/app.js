@@ -1,7 +1,9 @@
 import signup from './signup';
+import studentProfile from './student_profile';
 
 var dispatch = {
-  'signup': signup
+  'signup': signup,
+  'studentProfile': studentProfile
 };
 
 function start(entry, data) {

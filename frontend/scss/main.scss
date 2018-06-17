@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 @import "bootstrap";
+@import "~datatables/media/css/jquery.dataTables.css";
 
 // The navbar is fixed to the top so the body needs to be padded accordingly.
 $navbar-height: 108px;
@@ -232,4 +233,40 @@ p.copyright {
 
 .app-container {
   min-height: 500px;
+}
+
+// datatables overrides (back to Bootstrap defaults)
+table.dataTable thead th, table.dataTable tbody td {
+  padding: 0.75rem;
+}
+table.dataTable.no-footer {
+  border-bottom: $table-border-width solid $table-border-color;
+}
+
+// Remove the datatables icon images.
+table.dataTable thead .sorting {
+  background-image: none;
+}
+table.dataTable thead .sorting:before {
+  content: "\f0dc";
+  float: right;
+  font-family: FontAwesome;
+}
+table.dataTable thead .sorting_asc {
+  background-image: none;
+}
+table.dataTable thead .sorting_asc:before {
+  color: $orange;
+  content: "\f0de";
+  float: right;
+  font-family: FontAwesome;
+}
+table.dataTable thead .sorting_desc {
+  background-image: none;
+}
+table.dataTable thead .sorting_desc:before {
+  color: $orange;
+  content: "\f0dd";
+  float: right;
+  font-family: FontAwesome;
 }

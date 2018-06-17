@@ -11,6 +11,7 @@
   "private": true,
   "devDependencies": {
     "css-loader": "^0.28.11",
+    "datatables": "^1.10.17",
     "file-loader": "^1.1.11",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
