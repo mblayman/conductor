@@ -143,19 +143,19 @@ class TestSchool(TestCase):
 
         self.assertEqual(milestone, school.early_decision)
 
-    def test_early_decision_1(self):
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_DECISION_1)
-
-        self.assertEqual(milestone, school.early_decision_1)
-
     def test_early_decision_2(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
             school=school, category=Milestone.EARLY_DECISION_2)
 
         self.assertEqual(milestone, school.early_decision_2)
+
+    def test_restricted_early_action(self):
+        school = self.SchoolFactory.create()
+        milestone = self.MilestoneFactory.create(
+            school=school, category=Milestone.RESTRICTED_EARLY_ACTION)
+
+        self.assertEqual(milestone, school.restricted_early_action)
 
     def test_early_action(self):
         school = self.SchoolFactory.create()

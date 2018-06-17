@@ -38,15 +38,15 @@ class Audit(models.Model):
 
 class Milestone(models.Model):
     EARLY_DECISION = 'ED'
-    EARLY_DECISION_1 = 'ED1'
-    EARLY_DECISION_2 = 'ED2'
+    EARLY_DECISION_2 = 'ED II'
     EARLY_ACTION = 'EA'
+    RESTRICTED_EARLY_ACTION = 'REA'
     REGULAR_DECISION = 'RD'
     CATEGORY_CHOICES = (
         (EARLY_DECISION, 'Early Decision'),
-        (EARLY_DECISION_1, 'Early Decision 1'),
-        (EARLY_DECISION_2, 'Early Decision 2'),
+        (EARLY_DECISION_2, 'Early Decision II'),
         (EARLY_ACTION, 'Early Action'),
+        (RESTRICTED_EARLY_ACTION, 'Restricted Early Action'),
         (REGULAR_DECISION, 'Regular Decision'),
     )
 
@@ -89,16 +89,16 @@ class School(models.Model):
         return self.milestones_dict.get(Milestone.EARLY_DECISION)
 
     @property
-    def early_decision_1(self):
-        return self.milestones_dict.get(Milestone.EARLY_DECISION_1)
-
-    @property
     def early_decision_2(self):
         return self.milestones_dict.get(Milestone.EARLY_DECISION_2)
 
     @property
     def early_action(self):
         return self.milestones_dict.get(Milestone.EARLY_ACTION)
+
+    @property
+    def restricted_early_action(self):
+        return self.milestones_dict.get(Milestone.RESTRICTED_EARLY_ACTION)
 
     @property
     def regular_decision(self):
