@@ -1,6 +1,7 @@
+from unittest import mock
+
 from django.http import Http404
 from django.urls import reverse
-import mock
 
 from conductor.tests import TestCase
 from planner import views
