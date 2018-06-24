@@ -1,7 +1,7 @@
 celery==4.0.2
 Django==1.11.8
-django-anymail==0.8
-django-localflavor==1.6.1
+django-anymail==3.0
+django-localflavor==2.0
 google-api-python-client==1.6.4
 # google-auth-httplib2 has an adapter to make google-auth creds work
 # with the Python client.
