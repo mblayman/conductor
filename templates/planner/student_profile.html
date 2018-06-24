@@ -2,7 +2,21 @@
 
 {% block content %}
   <h2 class="text-primary">{{ student }}</h2>
-  <p>Applying for {{ student.matriculation_semester }}</p>
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-6">
+        <p>Applying for {{ student.matriculation_semester }}</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>
+          <a class="btn btn-primary" href="{% url "add-school" student.id %}">Add school</a>
+          {# TODO: Connect this to an export view. #}
+          <a class="ml-2" href="">Export to Google Sheets</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
 
   {% if schools %}
     <table class="table mb-3" id="schools">
@@ -33,7 +47,6 @@
     <p>No schools</p>
   {% endif %}
 
-  <a class="btn btn-primary" href="{% url "add-school" student.id %}">Add school</a>
 {% endblock %}
 
 {% block entry %}
