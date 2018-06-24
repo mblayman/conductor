@@ -1,5 +1,5 @@
 celery==4.0.2
-Django==2.0
+Django==2.0.6
 django-anymail==3.0
 django-localflavor==2.0
 google-api-python-client==1.6.4
