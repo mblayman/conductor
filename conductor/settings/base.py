@@ -134,7 +134,6 @@ CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
 
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
-    'EXCEPTION_HANDLER': 'vendor.views.custom_exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',

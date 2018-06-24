@@ -1,14 +1,13 @@
+from django import test
 from django.contrib.auth.models import AnonymousUser
 from django.contrib.sessions.middleware import SessionMiddleware
-from rest_framework.test import APIRequestFactory, force_authenticate
 
 
-class RequestFactory(APIRequestFactory):
+class RequestFactory(test.RequestFactory):
 
     def authenticated_get(self, user, **kwargs):
         request = self.get(**kwargs)
         request.user = user
-        force_authenticate(request, user)
         return request
 
     def get(self, path='/', **kwargs):
@@ -21,7 +20,6 @@ class RequestFactory(APIRequestFactory):
     def authenticated_post(self, user, **kwargs):
         request = self.post(**kwargs)
         request.user = user
-        force_authenticate(request, user)
         return request
 
     def post(self, path='/', format='multipart', session=False, **kwargs):
