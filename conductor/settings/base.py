@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.postgres',
     'anymail',
-    'corsheaders',
     'localflavor',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
@@ -41,7 +40,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -128,10 +126,6 @@ CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
     os.environ['RABBITMQ_USER'],
     os.environ['RABBITMQ_PASSWORD'],
     os.environ['RABBITMQ_VHOST']
-)
-
-CORS_ORIGIN_WHITELIST = (
-    os.environ['CORS_ORIGIN_WHITELIST'],
 )
 
 ROLLBAR = {
