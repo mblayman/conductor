@@ -5,7 +5,6 @@ django-cors-headers==2.1.0
 django-filter==1.1.0
 django-localflavor==1.6.1
 djangorestframework==3.5.3
-djangorestframework-jwt==1.11.0
 google-api-python-client==1.6.4
 # google-auth-httplib2 has an adapter to make google-auth creds work
 # with the Python client.

@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_filters',
     'localflavor',
-    'rest_framework',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
     'support.apps.SupportConfig',
@@ -135,11 +134,6 @@ CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
 CORS_ORIGIN_WHITELIST = (
     os.environ['CORS_ORIGIN_WHITELIST'],
 )
-
-JWT_AUTH = {
-    'JWT_ALLOW_REFRESH': True,
-    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
-}
 
 ROLLBAR = {
     'access_token': os.environ['ROLLBAR_ACCESS_TOKEN'],

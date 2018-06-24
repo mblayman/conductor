@@ -7,7 +7,6 @@ from django.views.generic import TemplateView
 from accounts.views import dashboard, signup
 from planner.views import add_school, add_student, student_profile
 from support.views import contact
-from vendor.views import ObtainJSONWebToken, RefreshJSONWebToken
 
 
 urlpatterns = [
@@ -42,8 +41,6 @@ urlpatterns = [
         name='add-school'),
 
     url(r'^admin/', admin.site.urls),
-    url(r'^api-token-auth/', ObtainJSONWebToken.as_view()),
-    url(r'^api-token-refresh/', RefreshJSONWebToken.as_view()),
 ]
 
 if os.environ['DJANGO_SETTINGS_MODULE'] == 'conductor.settings.development':

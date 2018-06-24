@@ -7,10 +7,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [os.environ['DJANGO_ALLOWED_HOSTS']]
 
-REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = (  # noqa
-    'rest_framework_json_api.renderers.JSONRenderer',
-)
-
 EMAIL_BACKEND = 'anymail.backends.mailgun.EmailBackend'
 
 SILENCED_SYSTEM_CHECKS = [
