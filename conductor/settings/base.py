@@ -132,31 +132,6 @@ CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
     os.environ['RABBITMQ_VHOST']
 )
 
-REST_FRAMEWORK = {
-    'PAGE_SIZE': 10,
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-    ),
-    'DEFAULT_PAGINATION_CLASS':
-        'rest_framework_json_api.pagination.PageNumberPagination',
-    'DEFAULT_PARSER_CLASSES': (
-        'rest_framework_json_api.parsers.JSONParser',
-        'rest_framework.parsers.FormParser',
-        'rest_framework.parsers.MultiPartParser',
-        'rest_framework.parsers.JSONParser',
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework_json_api.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer',
-    ),
-    'DEFAULT_METADATA_CLASS': 'rest_framework_json_api.metadata.JSONAPIMetadata',  # noqa
-}
-
 CORS_ORIGIN_WHITELIST = (
     os.environ['CORS_ORIGIN_WHITELIST'],
 )
@@ -165,10 +140,6 @@ JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
-
-JSON_API_FORMAT_KEYS = 'dasherize'
-JSON_API_FORMAT_TYPES = 'dasherize'
-JSON_API_PLURALIZE_TYPES = True
 
 ROLLBAR = {
     'access_token': os.environ['ROLLBAR_ACCESS_TOKEN'],
