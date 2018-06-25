@@ -21,6 +21,17 @@ class TestUser(TestCase):
 
         self.assertIsNotNone(user.profile)
 
+    def test_has_google_drive_auth(self):
+        user = self.UserFactory.create()
+        self.GoogleDriveAuthFactory.create(user=user)
+
+        self.assertTrue(user.has_google_drive_auth)
+
+    def test_has_google_drive_auth_missing(self):
+        user = self.UserFactory.create()
+
+        self.assertFalse(user.has_google_drive_auth)
+
 
 class TestProfile(TestCase):
 

@@ -95,3 +95,32 @@ class TestDashboard(TestCase):
 
         context = render.call_args[0][2]
         self.assertEqual([student], list(context['students']))
+
+
+class TestUserSettings(TestCase):
+
+    def test_requires_login(self):
+        request = self.request_factory.get()
+
+        response = views.user_settings(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    def test_get(self):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.user_settings(request)
+
+        self.assertEqual(200, response.status_code)
+
+    @mock.patch('accounts.views.render')
+    def test_app_nav(self, render):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
+
+        views.user_settings(request)
+
+        context = render.call_args[0][2]
+        self.assertEqual('settings', context['app_nav'])

@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 
-from accounts.views import dashboard, signup
+from accounts.views import dashboard, signup, user_settings
 from planner.views import add_school, add_student, student_profile
 from support.views import contact
 
@@ -20,6 +20,7 @@ urlpatterns = [
          TemplateView.as_view(template_name='privacy.html'), name='privacy'),
 
     path('app/', dashboard, name='dashboard'),
+    path('settings/', user_settings, name='settings'),
 
     # Students
     path('students/add/', add_student, name='add-student'),

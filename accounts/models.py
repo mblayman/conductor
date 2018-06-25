@@ -15,6 +15,11 @@ class User(AbstractUser):
     # Override the default definition to make the email required and unique.
     email = models.EmailField(_('email address'), blank=False, unique=True)
 
+    @property
+    def has_google_drive_auth(self):
+        """Check if the user has authorized Google Drive."""
+        return self.google_drive_authorizations.exists()
+
 
 class Profile(models.Model):
     """Additional data about a user.

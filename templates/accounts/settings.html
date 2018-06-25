@@ -1,0 +1,30 @@
+{% extends "app.html" %}
+
+{% block content %}
+  <h2 class="text-primary mb-2">Settings</h2>
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-9">
+        <hr>
+        <div class="card">
+          <h5 class="card-header">
+            Google Drive
+          </h5>
+          <div class="card-body">
+            <p class="card-text">
+              To export your student’s school list to Google Drive Sheets,
+              we need your permission from Google. This is only required once.
+            </p>
+            {% if user.has_google_drive_auth %}
+              <div class="alert alert-success mb-0">
+                <i class="fa fa-lg fa-check text-success"></i> Google Drive is authorized.
+              </div>
+            {% else %}
+              <a class="btn btn-primary" href="">Authorize Google Drive</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

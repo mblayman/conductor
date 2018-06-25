@@ -36,3 +36,12 @@ def dashboard(request):
         'students': students,
     }
     return render(request, 'accounts/dashboard.html', context)
+
+
+@login_required
+def user_settings(request):
+    """Show the user's settings options."""
+    context = {
+        'app_nav': 'settings',
+    }
+    return render(request, 'accounts/settings.html', context)

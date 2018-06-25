@@ -8,12 +8,20 @@
           <li class="nav-item">
             <a class="nav-link
               {% if app_nav == "dashboard" %}active{% endif %}
-              " href="{% url "dashboard" %}">Dashboard</a>
+              " href="{% url "dashboard" %}"><i class="fa fa-fw fa-home mr-2"></i> Dashboard</a>
           </li>
           <li class="nav-item">
             <a class="nav-link
               {% if app_nav == "add-student" %}active{% endif %}
-              " href="{% url "add-student" %}">Add student</a>
+              " href="{% url "add-student" %}"><i class="fa fa-fw fa-user-plus mr-2"></i> Add student</a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link
+              {% if app_nav == "settings" %}active{% endif %}
+              " href="{% url "settings" %}"><i class="fa fa-fw fa-sliders mr-2"></i> Settings</a>
           </li>
         </ul>
       </div>

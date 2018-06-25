@@ -203,6 +203,9 @@ p.copyright {
   padding-top: 0;
   padding-bottom: 0;
 }
+.navbar-brand img {
+  margin-left: -24px;
+}
 
 .legal {
   font-weight: 300;
@@ -269,4 +272,10 @@ table.dataTable thead .sorting_desc:before {
   content: "\f0dd";
   float: right;
   font-family: FontAwesome;
+}
+
+@media(max-width:460px) {
+    .navbar-brand img {
+      margin-left: 0;
+    }
 }
