@@ -1,3 +1,5 @@
+from unittest import mock
+
 from conductor.tests import TestCase
 from planner.forms import AddSchoolForm, AddStudentForm
 
@@ -27,7 +29,8 @@ class TestAddSchoolForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('school', form.errors)
 
-    def test_save(self):
+    @mock.patch('planner.forms.tasks')
+    def test_save(self, tasks):
         school = self.SchoolFactory.create()
         student = self.StudentFactory.create()
         data = {
@@ -39,6 +42,7 @@ class TestAddSchoolForm(TestCase):
         form.save()
 
         self.assertEqual([school], list(student.schools.all()))
+        tasks.audit_school.delay.assert_called_once_with(school.id)
 
 
 class TestAddStudentForm(TestCase):

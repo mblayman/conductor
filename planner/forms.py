@@ -1,5 +1,6 @@
 from django import forms
 
+from planner import tasks
 from planner.models import School, Semester, Student, TargetSchool
 
 
@@ -22,8 +23,9 @@ class AddSchoolForm(forms.Form):
 
     def save(self):
         """Create a target school for the student."""
-        TargetSchool.objects.create(
-            student=self.student, school=self.cleaned_data['school'])
+        school = self.cleaned_data['school']
+        TargetSchool.objects.create(student=self.student, school=school)
+        tasks.audit_school.delay(school.id)
 
 
 class AddStudentForm(forms.Form):
