@@ -31,3 +31,6 @@ MIGRATION_MODULES = DisableMigrations()
 # and blows up on the first static asset that it encounters.
 # I don't care about testing against the manifested versions.
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+# RabbitMQ doesn't run in CI so run the tasks in process.
+CELERY_TASK_ALWAYS_EAGER = True
