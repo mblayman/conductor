@@ -124,3 +124,25 @@ class TestUserSettings(TestCase):
 
         context = render.call_args[0][2]
         self.assertEqual('settings', context['app_nav'])
+
+
+class TestAuthorizeGoogle(TestCase):
+
+    def test_requires_login(self):
+        request = self.request_factory.get()
+
+        response = views.authorize_google(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    def test_get(self):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.authorize_google(request)
+
+        self.assertEqual(302, response.status_code)
+        # The authorization URL has a scope in it so look for something
+        # that is part of the scope URL.
+        self.assertIn('googleapis', response.get('Location'))

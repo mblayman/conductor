@@ -143,3 +143,14 @@ ANYMAIL = {
 }
 
 STRIPE_PUBLISHABLE_KEY = os.environ['STRIPE_PUBLISHABLE_KEY']
+
+GOOGLE_CLIENT_CONFIG = {
+    'web': {
+        'client_id': '',
+        'project_id': '',
+        'client_secret': '',
+        'redirect_uris': [''],
+        'auth_uri': 'https://testserver',
+        'token_uri': '',
+    }
+}

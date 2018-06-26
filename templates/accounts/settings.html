@@ -20,7 +20,7 @@
                 <i class="fa fa-lg fa-check text-success"></i> Google Drive is authorized.
               </div>
             {% else %}
-              <a class="btn btn-primary" href="">Authorize Google Drive</a>
+              <a class="btn btn-primary" href="{% url "authorize-google" %}">Authorize Google Drive</a>
             {% endif %}
           </div>
         </div>
