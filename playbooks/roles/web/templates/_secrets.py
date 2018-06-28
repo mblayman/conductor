@@ -1,7 +1,7 @@
 from conductor.settings.base import BASE_DIR
 
 
-CONDUCTOR_EMAIL = '{{ secrets.conductor.email }}'
+ALLOWED_HOSTS = ['.{{ root_domain }}']
 
 ANYMAIL = {
     'MAILGUN_API_KEY': '{{ secrets.mailgun.api_key }}',
@@ -12,6 +12,8 @@ CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
     '{{ secrets.rabbitmq.password }}',
     '{{ secrets.rabbitmq.vhost }}',
 )
+
+CONDUCTOR_EMAIL = '{{ secrets.conductor.email }}'
 
 DATABASES = {
     'default': {
@@ -34,3 +36,6 @@ SECRET_KEY = '{{ secrets.conductor.secret_key }}'
 
 STATIC_ROOT = '{{ static_root }}'
 STATIC_URL = '{{ static_url }}'
+
+STRIPE_API_KEY = '{{ secrets.stripe.api_key }}'
+STRIPE_PUBLISHABLE_KEY = 'secrets.stripe.publishable_key }}'

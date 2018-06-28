@@ -138,7 +138,8 @@ ANYMAIL = {
     'MAILGUN_API_KEY': 'mailgun_api_key',
 }
 
-STRIPE_PUBLISHABLE_KEY = os.environ['STRIPE_PUBLISHABLE_KEY']
+STRIPE_API_KEY = 'sk_test_fake_key'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_fake_key'
 
 GOOGLE_CLIENT_CONFIG = {
     'web': {

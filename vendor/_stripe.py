@@ -1,8 +1,7 @@
-import os
-
+from django.conf import settings
 import stripe
 
-stripe.api_key = os.environ['STRIPE_API_KEY']
+stripe.api_key = settings.STRIPE_API_KEY
 
 
 class StripeGateway():

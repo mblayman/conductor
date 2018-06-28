@@ -8,10 +8,7 @@ client_root: "{{ frontend_path }}"
 venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
-  DJANGO_ALLOWED_HOSTS: ".{{ root_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
-  STRIPE_API_KEY: "{{ stripe.api_key }}"
-  STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 static_root: /var/www/conductor/
 static_url: /static/

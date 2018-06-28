@@ -1,11 +1,7 @@
-import os
-
 from conductor.settings.base import *  # noqa
 
 # Let's be clear that DEBUG is off.
 DEBUG = False
-
-ALLOWED_HOSTS = [os.environ['DJANGO_ALLOWED_HOSTS']]
 
 EMAIL_BACKEND = 'anymail.backends.mailgun.EmailBackend'
 

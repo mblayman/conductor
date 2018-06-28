@@ -3,6 +3,3 @@ deployment: development
 root_domain: conductor.test
 django_settings_module: conductor.settings.staging
 secrets: "{{ vault.development }}"
-stripe:
-  api_key: "{{ vault.stripe.test.api_key }}"
-  publishable_key: "{{ vault.stripe.test.publishable_key }}"
