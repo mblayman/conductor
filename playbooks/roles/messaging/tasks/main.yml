@@ -6,15 +6,15 @@
 - name: Set the RabbitMQ vhost
   become: yes
   rabbitmq_vhost:
-    name: "{{ rabbitmq.vhost }}"
+    name: "{{ secrets.rabbitmq.vhost }}"
     state: present
 
 - name: Set the RabbitMQ user
   become: yes
   rabbitmq_user:
-    user: "{{ rabbitmq.user }}"
-    password: "{{ rabbitmq.password }}"
-    vhost: "{{ rabbitmq.vhost }}"
+    user: "{{ secrets.rabbitmq.user }}"
+    password: "{{ secrets.rabbitmq.password }}"
+    vhost: "{{ secrets.rabbitmq.vhost }}"
     configure_priv: .*
     read_priv: .*
     write_priv: .*

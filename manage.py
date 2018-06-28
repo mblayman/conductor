@@ -8,13 +8,6 @@ if __name__ == '__main__':
     if 'test' in sys.argv:
         # For now, fake setting the environment for testing.
         os.environ['DJANGO_SETTINGS_MODULE'] = 'conductor.settings.test'
-        os.environ['MAILGUN_API_KEY'] = 'mailgun'
-        os.environ['POSTGRES_DB'] = 'conductor'
-        os.environ['POSTGRES_PASSWORD'] = 'conductor'
-        os.environ['POSTGRES_USER'] = 'conductor'
-        os.environ['RABBITMQ_USER'] = 'conductor'
-        os.environ['RABBITMQ_PASSWORD'] = 'conductor'
-        os.environ['RABBITMQ_VHOST'] = 'conductor'
         os.environ['ROLLBAR_ACCESS_TOKEN'] = 'rollbar'
         os.environ['ROLLBAR_ENVIRONMENT'] = 'test'
         os.environ['SECRET_KEY'] = 'asecrettoeverybody'

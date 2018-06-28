@@ -10,35 +10,23 @@ ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   DJANGO_ALLOWED_HOSTS: ".{{ root_domain }}"
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
-  MAILGUN_API_KEY: "{{ mailgun.api_key }}"
-  RABBITMQ_USER: "{{ rabbitmq.user }}"
-  RABBITMQ_PASSWORD: "{{ rabbitmq.password }}"
-  RABBITMQ_VHOST: "{{ rabbitmq.vhost }}"
   ROLLBAR_ENABLED: "true"
   ROLLBAR_ACCESS_TOKEN: "{{ rollbar.access_token }}"
   ROLLBAR_ENVIRONMENT: "{{ deployment }}"
   SECRET_KEY: "{{ vault_secret_key }}"
-  POSTGRES_DB: "{{ postgres.db }}"
-  POSTGRES_USER: "{{ postgres.user }}"
-  POSTGRES_PASSWORD: "{{ postgres.password }}"
   STATIC_ROOT: /var/www/api/
   STATIC_URL: /static/
   STRIPE_API_KEY: "{{ stripe.api_key }}"
   STRIPE_PUBLISHABLE_KEY: "{{ stripe.publishable_key }}"
 
 postgres:
-  db: conductor
-  user: conductor
-  password: "{{ vault_postgres_password }}"
+  db: "{{ secrets.postgres.db }}"
+  user: "{{ secrets.postgres.user }}"
+  password: "{{ secrets.postgres.password }}"
   storage_path: /var/lib/postgresql/9.5/main
 
 wale:
   s3_prefix: "s3://collegeconductor/pgbackups/{{ deployment }}"
-
-rabbitmq:
-  vhost: conductor
-  user: "{{ vault.rabbitmq.user }}"
-  password: "{{ vault.rabbitmq.password }}"
 
 cert_dir: "/etc/letsencrypt/live/{{ root_domain }}-0001"
 
@@ -49,9 +37,6 @@ aws:
 
 datadog:
   api_key: "{{ vault_datadog_api_key }}"
-
-mailgun:
-  api_key: "{{ vault_mailgun_api_key }}"
 
 rollbar:
   access_token: "{{ vault_rollbar_access_token }}"

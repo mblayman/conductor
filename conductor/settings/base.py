@@ -12,9 +12,9 @@ DEBUG = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['POSTGRES_DB'],
-        'USER': os.environ['POSTGRES_USER'],
-        'PASSWORD': os.environ['POSTGRES_PASSWORD'],
+        'NAME': 'conductor',
+        'USER': 'conductor',
+        'PASSWORD': 'conductor',
         'HOST': '127.0.0.1',
     }
 }
@@ -122,11 +122,7 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # noqa
 
-CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
-    os.environ['RABBITMQ_USER'],
-    os.environ['RABBITMQ_PASSWORD'],
-    os.environ['RABBITMQ_VHOST']
-)
+CELERY_BROKER_URL = 'amqp://conductor:conductor@localhost:5672/conductor'
 
 ROLLBAR = {
     'access_token': os.environ['ROLLBAR_ACCESS_TOKEN'],
@@ -139,7 +135,7 @@ CONDUCTOR_EMAIL = 'matt@conductor.test'
 EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
-    'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
+    'MAILGUN_API_KEY': 'mailgun_api_key',
 }
 
 STRIPE_PUBLISHABLE_KEY = os.environ['STRIPE_PUBLISHABLE_KEY']

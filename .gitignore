@@ -71,6 +71,7 @@ _vimrc_local.vim
 playbooks/roles/Datadog.datadog
 playbooks/roles/kamaln7.swapfile
 playbooks/roles/nodesource.node
+playbooks/*.retry
 # Ignore DO cache files.
 *.cache
 
