@@ -1,3 +1,6 @@
+from conductor.settings.base import BASE_DIR
+
+
 CONDUCTOR_EMAIL = '{{ secrets.conductor.email }}'
 
 ANYMAIL = {
@@ -18,4 +21,11 @@ DATABASES = {
         'PASSWORD': '{{ postgres.password }}',
         'HOST': '127.0.0.1',
     }
+}
+
+ROLLBAR = {
+    'access_token': '{{ secrets.rollbar.acces_token }}',
+    'environment': '{{ deployment }}',
+    'root': BASE_DIR,
+    'enabled': True,
 }

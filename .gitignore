@@ -75,11 +75,11 @@ playbooks/*.retry
 # Ignore DO cache files.
 *.cache
 
-client/node_modules
-client/tmp
 frontend/node_modules
 assets/*.js
 assets/*.css
 assets/fonts
 assets/images/img
 assets/images/node_modules
+
+conductor/settings/_*.py

@@ -125,10 +125,10 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 CELERY_BROKER_URL = 'amqp://conductor:conductor@localhost:5672/conductor'
 
 ROLLBAR = {
-    'access_token': os.environ['ROLLBAR_ACCESS_TOKEN'],
-    'environment': os.environ['ROLLBAR_ENVIRONMENT'],
+    'access_token': 'rollbar_access_token',
+    'environment': 'development',
     'root': BASE_DIR,
-    'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
+    'enabled': False,
 }
 
 CONDUCTOR_EMAIL = 'matt@conductor.test'
