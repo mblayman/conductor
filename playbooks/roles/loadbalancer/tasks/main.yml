@@ -56,7 +56,7 @@
   become: yes
   command: >
     /usr/bin/letsencrypt certonly --webroot
-    --email "{{ email }}"
+    --email "{{ secrets.conductor.email }}"
     --agree-tos
     --webroot-path "{{ client_root }}"
     -d "{{ root_domain }}"

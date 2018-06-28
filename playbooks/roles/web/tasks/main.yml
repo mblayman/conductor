@@ -109,6 +109,14 @@
     enabled: yes
     state: started
 
+- name: Set secret settings file
+  template:
+    src: _secrets.py
+    dest: "{{ app_path }}/conductor/settings/_secrets.py"
+  become: yes
+  notify:
+    - Restart Supervisor
+
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
   notify:

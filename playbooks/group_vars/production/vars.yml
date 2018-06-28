@@ -2,8 +2,7 @@
 deployment: production
 root_domain: collegeconductor.com
 django_settings_module: conductor.settings.production
-google:
-  client_id: "{{ vault.google.production.client_id }}"
+secrets: "{{ vault.production }}"
 stripe:
   api_key: "{{ vault.stripe.live.api_key }}"
   publishable_key: "{{ vault.stripe.live.publishable_key }}"

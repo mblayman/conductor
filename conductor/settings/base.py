@@ -135,7 +135,7 @@ ROLLBAR = {
     'enabled': bool(os.environ.get('ROLLBAR_ENABLED', False)),
 }
 
-CONDUCTOR_EMAIL = os.environ['CONDUCTOR_EMAIL']
+CONDUCTOR_EMAIL = 'matt@conductor.test'
 EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 DEFAULT_FROM_EMAIL = '"College Conductor" <noreply@mail.collegeconductor.com>'
 ANYMAIL = {
@@ -154,3 +154,9 @@ GOOGLE_CLIENT_CONFIG = {
         'token_uri': '',
     }
 }
+
+# Override development settings with a secrets file.
+try:
+    from ._secrets import *  # noqa
+except ImportError:
+    pass
