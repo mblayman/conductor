@@ -24,8 +24,13 @@ DATABASES = {
 }
 
 ROLLBAR = {
-    'access_token': '{{ secrets.rollbar.acces_token }}',
+    'access_token': '{{ secrets.rollbar.access_token }}',
     'environment': '{{ deployment }}',
     'root': BASE_DIR,
     'enabled': True,
 }
+
+SECRET_KEY = '{{ secrets.conductor.secret_key }}'
+
+STATIC_ROOT = '{{ static_root }}'
+STATIC_URL = '{{ static_url }}'

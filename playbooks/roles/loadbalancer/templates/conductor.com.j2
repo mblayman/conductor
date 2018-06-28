@@ -69,8 +69,8 @@ server {
     gzip_comp_level 5;
     gzip_vary on;
 
-    location {{ django_env.STATIC_URL }} {
-        alias {{ django_env.STATIC_ROOT }};
+    location {{ static_url }} {
+        alias {{ static_root }};
         expires max;
         add_header Cache-Control public;
     }

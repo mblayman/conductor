@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'y$l*8=9d0b^nbf4c#vs+z=d)vb(3rsgvcx!+2as@f5f2s*#x=q'
 
 # Other settings must explicitly opt-in for debug mode.
 DEBUG = False
@@ -115,8 +115,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_ROOT = os.environ['STATIC_ROOT']
-STATIC_URL = os.environ['STATIC_URL']
+STATIC_ROOT = 'static'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(ROOT_DIR, 'assets'),
 ]

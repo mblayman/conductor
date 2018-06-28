@@ -137,8 +137,12 @@
 
 - name: Create STATIC_ROOT
   become: yes
-  file: state=directory path={{ django_env.STATIC_ROOT }}
-        owner=www-data group=www-data mode=0750
+  file:
+    state: directory
+    path: "{{ static_root }}"
+    owner: www-data
+    group: www-data
+    mode: 0750
 
 - name: Collect static files
   become: yes
