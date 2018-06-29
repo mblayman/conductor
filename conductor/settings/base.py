@@ -143,8 +143,8 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_fake_key'
 
 GOOGLE_CLIENT_CONFIG = {
     'web': {
-        'client_id': '',
         'project_id': '',
+        'client_id': '',
         'client_secret': '',
         'redirect_uris': [''],
         'auth_uri': 'https://testserver',

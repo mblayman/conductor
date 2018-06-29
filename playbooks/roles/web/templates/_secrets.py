@@ -25,6 +25,18 @@ DATABASES = {
     }
 }
 
+GOOGLE_CLIENT_CONFIG = {
+    'web': {
+        'project_id': '{{ secrets.google.project_id }}',
+        'client_id': '{{ secrets.google.client_id }}',
+        'client_secret': '{{ secrets.google.client_secret }}',
+        'redirect_uris': ['{{ secrets.google.redirect_uri }}'],
+        'auth_uri': '{{ secrets.google.auth_uri }}',
+        'token_uri': '{{ secrets.google.token_uri }}',
+        'auth_provider_x509_cert_url': '{{ secrets.google.auth_provider_x509_cert_url }}',
+    }
+}
+
 ROLLBAR = {
     'access_token': '{{ secrets.rollbar.access_token }}',
     'environment': '{{ deployment }}',

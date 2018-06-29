@@ -6,6 +6,7 @@ from django.shortcuts import render
 from google_auth_oauthlib.flow import Flow
 
 from accounts.forms import SignupForm
+from accounts.models import GoogleDriveAuth
 
 
 def signup(request):
@@ -64,6 +65,8 @@ def authorize_google(request):
 def oauth2_callback(request):
     """Handle the callback from Google to create an authorization."""
     # TODO: Do what it promises.
+    GoogleDriveAuth.objects.create(
+        user=request.user, code=request.GET.get('code'))
     context = {
         'app_nav': 'settings',
     }
