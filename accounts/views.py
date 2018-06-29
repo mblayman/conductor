@@ -54,7 +54,8 @@ def authorize_google(request):
     """Build and present an auth URL to get permission to use Google Drive."""
     flow = Flow.from_client_config(
         settings.GOOGLE_CLIENT_CONFIG,
-        scopes=['https://www.googleapis.com/auth/drive.file'])
+        scopes=['https://www.googleapis.com/auth/drive.file'],
+        redirect_uri=settings.GOOGLE_CLIENT_CONFIG['web']['redirect_uris'][0])
     # TODO: Put the state in the session so that the callback can validate it.
     authorization_url, state = flow.authorization_url(
         access_type='offline', include_granted_scopes='true', prompt='consent')
