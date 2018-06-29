@@ -6,7 +6,6 @@ from django.shortcuts import render
 from google_auth_oauthlib.flow import Flow
 
 from accounts.forms import SignupForm
-from accounts.models import GoogleDriveAuth
 
 
 def signup(request):
@@ -56,19 +55,34 @@ def authorize_google(request):
         settings.GOOGLE_CLIENT_CONFIG,
         scopes=['https://www.googleapis.com/auth/drive.file'],
         redirect_uri=settings.GOOGLE_CLIENT_CONFIG['web']['redirect_uris'][0])
-    # TODO: Put the state in the session so that the callback can validate it.
     authorization_url, state = flow.authorization_url(
         access_type='offline', include_granted_scopes='true', prompt='consent')
+    request.session['state'] = state
     return HttpResponseRedirect(authorization_url)
 
 
 @login_required
 def oauth2_callback(request):
     """Handle the callback from Google to create an authorization."""
-    # TODO: Do what it promises.
-    GoogleDriveAuth.objects.create(
-        user=request.user, code=request.GET.get('code'))
+    state = request.session.pop('state', '')
+    flow = Flow.from_client_config(
+        settings.GOOGLE_CLIENT_CONFIG,
+        scopes=['https://www.googleapis.com/auth/drive.file'],
+        redirect_uri=settings.GOOGLE_CLIENT_CONFIG['web']['redirect_uris'][0],
+        state=state)
+    flow.fetch_token(authorization_response=request.build_absolute_uri())
+
+    credentials = flow.credentials
+    # GoogleDriveAuth.object.create(
+    #     token=credentials.token,
+    #     refresh_token=credentials.refresh_token,
+    #     id_token=credentials.id_token,
+    # )
+
     context = {
+        'token': credentials.token,
+        'refresh_token': credentials.refresh_token,
+        'id_token': credentials.id_token,
         'app_nav': 'settings',
     }
     return render(request, 'accounts/settings.html', context)

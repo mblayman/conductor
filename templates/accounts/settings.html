@@ -15,6 +15,10 @@
               To export your student’s school list to Google Drive Sheets,
               we need your permission from Google. This is only required once.
             </p>
+            {# XXX: This is only here long enough to see if the flow worked in prod. #}
+            <p>{{ token }}</p>
+            <p>{{ refresh_token }}</p>
+            <p>{{ id_token }}</p>
             {% if user.has_google_drive_auth %}
               <div class="alert alert-success mb-0">
                 <i class="fa fa-lg fa-check text-success"></i> Google Drive is authorized.
