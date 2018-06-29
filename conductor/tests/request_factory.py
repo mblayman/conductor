@@ -10,11 +10,17 @@ class RequestFactory(test.RequestFactory):
         request.user = user
         return request
 
-    def get(self, path='/', **kwargs):
+    def get(self, path='/', session=False, **kwargs):
         """Override the default get to avoid providing a meaningless path."""
         request = super().get(path, **kwargs)
         request.user = AnonymousUser()
         request.query_params = request.GET
+
+        if session:
+            middleware = SessionMiddleware()
+            middleware.process_request(request)
+            request.session.save()
+
         return request
 
     def authenticated_post(self, user, **kwargs):

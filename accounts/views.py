@@ -3,6 +3,7 @@ from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
+from django.urls import reverse
 from google_auth_oauthlib.flow import Flow
 
 from accounts.forms import SignupForm
@@ -72,17 +73,11 @@ def oauth2_callback(request):
         state=state)
     flow.fetch_token(authorization_response=request.build_absolute_uri())
 
-    credentials = flow.credentials
+    # credentials = flow.credentials
     # GoogleDriveAuth.object.create(
     #     token=credentials.token,
     #     refresh_token=credentials.refresh_token,
     #     id_token=credentials.id_token,
     # )
 
-    context = {
-        'token': credentials.token,
-        'refresh_token': credentials.refresh_token,
-        'id_token': credentials.id_token,
-        'app_nav': 'settings',
-    }
-    return render(request, 'accounts/settings.html', context)
+    return HttpResponseRedirect(reverse('settings'))

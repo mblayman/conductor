@@ -138,7 +138,7 @@ class TestAuthorizeGoogle(TestCase):
 
     def test_get(self):
         user = self.UserFactory.build()
-        request = self.request_factory.authenticated_get(user)
+        request = self.request_factory.authenticated_get(user, session=True)
 
         response = views.authorize_google(request)
 
@@ -146,3 +146,26 @@ class TestAuthorizeGoogle(TestCase):
         # The authorization URL has a scope in it so look for something
         # that is part of the scope URL.
         self.assertIn('googleapis', response.get('Location'))
+        self.assertNotEqual('', request.session['state'])
+
+
+class TestOauth2Callback(TestCase):
+
+    def test_requires_login(self):
+        request = self.request_factory.get()
+
+        response = views.oauth2_callback(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    @mock.patch('accounts.views.Flow')
+    def test_get(self, Flow):
+        user = self.UserFactory.build()
+        request = self.request_factory.authenticated_get(user, session=True)
+
+        response = views.oauth2_callback(request)
+
+        # TODO: Check that a Google auth exists with the expected tokens.
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('settings'), response.get('Location'))
