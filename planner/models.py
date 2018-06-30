@@ -1,5 +1,3 @@
-import datetime
-
 from django.conf import settings
 from django.db import models
 from django.utils.functional import cached_property
@@ -116,14 +114,6 @@ class Semester(models.Model):
         elif self.date.month < 9:
             season = 'Summer'
         return '{} {}'.format(season, self.date.year)
-
-
-# XXX: This is locked in for the default value of the initial migration.
-# I'm not sure what needs to be done to let me safely delete this and
-# have migrations continue to work.
-def current_year():
-    today = datetime.date.today()
-    return today.year
 
 
 class Student(models.Model):
