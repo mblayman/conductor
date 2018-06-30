@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block base-content %}
+  <section>
+    <div class="container legal">
+      <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+          <h2>Oops&hellip; something went wrong!</h2>
+          <p>
+            Please <a href="{% url "contact" %}">contact us</a>
+            with any details of what happened
+            at the time of the error
+            and we’ll fix it as soon as we can.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

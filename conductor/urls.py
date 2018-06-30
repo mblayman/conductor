@@ -42,3 +42,8 @@ if os.environ['DJANGO_SETTINGS_MODULE'] == 'conductor.settings.development':
 
     urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
     urlpatterns += staticfiles_urlpatterns()
+
+    # Make it possible to see the custom 500 page.
+    urlpatterns += [
+        path('500/', TemplateView.as_view(template_name='500.html')),
+    ]
