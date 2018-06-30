@@ -52,7 +52,15 @@
           <div class="row justify-content-center">
             <div class="col-6">
               {% for message in messages %}
-                <div class="alert alert-success">{{ message }}</div>
+                <div class="alert
+                  {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                    alert-success
+                  {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                    alert-danger
+                  {% else %}
+                    alert-info
+                  {% endif %}
+                ">{{ message }}</div>
               {% endfor %}
             </div>
           </div>

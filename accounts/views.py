@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
@@ -66,6 +67,12 @@ def authorize_google(request):
 @login_required
 def oauth2_callback(request):
     """Handle the callback from Google to create an authorization."""
+    if request.GET.get('error'):
+        messages.add_message(
+            request, messages.ERROR,
+            'We weren’t able to complete authorization with Google.')
+        return HttpResponseRedirect(reverse('settings'))
+
     state = request.session.pop('state', '')
     flow = Flow.from_client_config(
         settings.GOOGLE_CLIENT_CONFIG,

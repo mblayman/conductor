@@ -180,3 +180,17 @@ class TestOauth2Callback(TestCase):
         self.assertEqual('fake_id_token', auth.id_token)
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('settings'), response.get('Location'))
+
+    @mock.patch('accounts.views.messages')
+    def test_error(self, messages):
+        user = self.UserFactory.create()
+        data = {'error': 'access_denied'}
+        request = self.request_factory.authenticated_get(
+            user, data=data, session=True)
+
+        response = views.oauth2_callback(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('settings'), response.get('Location'))
+        messages.add_message.assert_called_once_with(
+            request, messages.ERROR, mock.ANY)
