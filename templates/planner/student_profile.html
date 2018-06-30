@@ -4,10 +4,10 @@
   <h2 class="text-primary">{{ student }}</h2>
   <div class="container-fluid px-0 mb-3">
     <div class="row">
-      <div class="col-6">
+      <div class="col-sm-6">
         <p>Applying for <strong>{{ student.matriculation_semester }}</strong></p>
       </div>
-      <div class="col-6 text-right">
+      <div class="col-sm-6 text-sm-right">
         <p>
           <a class="btn btn-primary" href="{% url "add-school" student.id %}">Add school</a>
           {# TODO: Connect this to an export view. #}
@@ -19,30 +19,32 @@
 
 
   {% if schools %}
-    <table class="table table-hover mb-3" id="schools">
-      <thead>
-        <tr class="bg-light text-primary">
-          <th class="rounded-left">School</th>
-          <th>ED</th>
-          <th>ED II</th>
-          <th>EA</th>
-          <th>REA</th>
-          <th class="rounded-right">RD</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for school in schools %}
-          <tr>
-            <td>{{ school }}</td>
-            <td>{{ school.early_decision|default_if_none:'' }}</td>
-            <td>{{ school.early_decision_2|default_if_none:'' }}</td>
-            <td>{{ school.restricted_early_action|default_if_none:'' }}</td>
-            <td>{{ school.early_action|default_if_none:'' }}</td>
-            <td>{{ school.regular_decision|default_if_none:'' }}</td>
+    <div class="table-responsive">
+      <table class="table mb-3" id="schools">
+        <thead>
+          <tr class="bg-light text-primary">
+            <th class="rounded-left">School</th>
+            <th>ED</th>
+            <th>ED II</th>
+            <th>EA</th>
+            <th>REA</th>
+            <th class="rounded-right">RD</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for school in schools %}
+            <tr>
+              <td>{{ school }}</td>
+              <td>{{ school.early_decision|default_if_none:'' }}</td>
+              <td>{{ school.early_decision_2|default_if_none:'' }}</td>
+              <td>{{ school.restricted_early_action|default_if_none:'' }}</td>
+              <td>{{ school.early_action|default_if_none:'' }}</td>
+              <td>{{ school.regular_decision|default_if_none:'' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   {% else %}
     <p>No schools</p>
   {% endif %}
