@@ -13,8 +13,9 @@ def add_student(request):
     if request.method == 'POST':
         form = AddStudentForm(data=request.POST)
         if form.is_valid():
-            form.save(request.user)
-            return HttpResponseRedirect(reverse('dashboard'))
+            student = form.save(request.user)
+            redirect_url = reverse('student-profile', args=[student.id])
+            return HttpResponseRedirect(redirect_url)
     else:
         form = AddStudentForm()
     context = {

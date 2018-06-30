@@ -58,9 +58,9 @@ class TestAddStudentForm(TestCase):
         form = AddStudentForm(data=data)
         self.assertTrue(form.is_valid())
 
-        form.save(user)
+        student = form.save(user)
 
-        student = user.students.first()
+        self.assertEqual(user, student.user)
         self.assertEqual('Joe', student.first_name)
         self.assertEqual('Student', student.last_name)
         self.assertEqual(semester, student.matriculation_semester)

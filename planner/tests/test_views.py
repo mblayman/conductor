@@ -58,7 +58,10 @@ class TestAddStudent(TestCase):
         response = views.add_student(request)
 
         self.assertEqual(1, user.students.count())
-        self.assertIn(reverse('dashboard'), response.get('Location'))
+        student = user.students.first()
+        self.assertIn(
+            reverse('student-profile', args=[student.id]),
+            response.get('Location'))
 
     @mock.patch('planner.views.render')
     def test_failure(self, render):
