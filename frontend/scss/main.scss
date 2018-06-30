@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.text-orange {
+  color: $orange;
+}
+
 .lead {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -187,10 +191,6 @@ p.copyright {
   margin: 15px 0 0;
 }
 
-.bg-light {
-  background-color: white !important;
-}
-
 .navbar {
   padding: 0 1rem;
 }
@@ -205,6 +205,13 @@ p.copyright {
 }
 .navbar-brand img {
   margin-left: -24px;
+}
+
+.nav .nav-item .nav-link.active {
+  border-right: 2px solid $orange;
+}
+.nav .nav-item .nav-link.active i {
+  color: $orange;
 }
 
 .legal {
@@ -236,6 +243,13 @@ p.copyright {
 
 .app-container {
   min-height: 500px;
+}
+
+table.table thead tr th {
+  border-bottom: 1px solid $orange;
+}
+table.table tbody tr:first-child td {
+  border-top: 0;
 }
 
 // datatables overrides (back to Bootstrap defaults)

@@ -1,24 +1,35 @@
 {% extends "app.html" %}
 
 {% block content %}
-  <table class="table">
-    <thead>
-      <tr class="bg-primary text-white border-0">
-        <th class="rounded-left border-0 py-2">Student</th>
-        <th class="rounded-right border-0 py-2">Applying for</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for student in students %}
-        <tr>
-          <td
-            {% if forloop.first %}class="border-top-0"{% endif %}
-            ><a href="{% url "student-profile" student.id %}">{{ student }}</a></td>
-          <td
-            {% if forloop.first %}class="border-top-0"{% endif %}
-            >{{ student.matriculation_semester }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10">
+        <table class="table" id="students">
+          <thead>
+            <tr class="bg-light text-primary">
+              <th class="rounded-left">Student</th>
+              <th class="rounded-right">Applying for</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for student in students %}
+              <tr>
+                <td data-order="{{ student.last_name }}">
+                  <a href="{% url "student-profile" student.id %}">{{ student }}</a>
+                </td>
+                <td>{{ student.matriculation_semester }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block entry %}
+  <script>
+    start('dashboard', {
+    });
+  </script>
 {% endblock %}

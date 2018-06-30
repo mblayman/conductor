@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block base-content %}
+  <section>
+    <div class="container legal">
+      <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+          <h2>Page not found</h2>
+          <p>
+            Sorry, we couldn’t find the page you requested.
+          </p>
+          <p>
+            Please feel free to <a href="{% url "contact" %}">contact us</a>
+            if you believe this was an error.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

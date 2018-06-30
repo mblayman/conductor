@@ -2,10 +2,10 @@
 
 {% block content %}
   <h2 class="text-primary">{{ student }}</h2>
-  <div class="container-fluid px-0">
+  <div class="container-fluid px-0 mb-3">
     <div class="row">
       <div class="col-6">
-        <p>Applying for {{ student.matriculation_semester }}</p>
+        <p>Applying for <strong>{{ student.matriculation_semester }}</strong></p>
       </div>
       <div class="col-6 text-right">
         <p>
@@ -19,15 +19,15 @@
 
 
   {% if schools %}
-    <table class="table mb-3" id="schools">
+    <table class="table table-hover mb-3" id="schools">
       <thead>
-        <tr class="bg-primary text-white border-0">
-          <th class="rounded-left border-0">School</th>
-          <th class="border-0">ED</th>
-          <th class="border-0">ED II</th>
-          <th class="border-0">EA</th>
-          <th class="border-0">REA</th>
-          <th class="rounded-right border-0">RD</th>
+        <tr class="bg-light text-primary">
+          <th class="rounded-left">School</th>
+          <th>ED</th>
+          <th>ED II</th>
+          <th>EA</th>
+          <th>REA</th>
+          <th class="rounded-right">RD</th>
         </tr>
       </thead>
       <tbody>
