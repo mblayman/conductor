@@ -2,28 +2,48 @@
 
 {% block content %}
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-10 px-0">
-        <table class="table" id="students">
-          <thead>
-            <tr class="bg-light text-primary">
-              <th class="rounded-left">Student</th>
-              <th class="rounded-right">Applying for</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for student in students %}
-              <tr>
-                <td data-order="{{ student.last_name }}">
-                  <a href="{% url "student-profile" student.id %}">{{ student }}</a>
-                </td>
-                <td>{{ student.matriculation_semester }}</td>
+    {% if students %}
+      <div class="row">
+        <div class="col-sm-10 px-0">
+          <table class="table" id="students">
+            <thead>
+              <tr class="bg-light text-primary">
+                <th class="rounded-left">Student</th>
+                <th class="rounded-right">Applying for</th>
               </tr>
-            {% endfor %}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {% for student in students %}
+                <tr>
+                  <td data-order="{{ student.last_name }}">
+                    <a href="{% url "student-profile" student.id %}">{{ student }}</a>
+                  </td>
+                  <td>{{ student.matriculation_semester }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    {% else %}
+      <div class="row justify-content-center">
+        <div class="col-sm-7">
+          <p class="text-center mb-4">
+            <i class="fa fa-4x fa-user rounded-circle bg-orange text-white px-4 py-3 shadow"></i>
+          </p>
+          <h3 class="text-secondary mb-3">No students? Inconceivable!</h3>
+          <p>
+            All interactions with College Conductor stem
+            from an individual student.
+          </p>
+          <p>
+            Add your first student
+            by clicking the “Add student” button
+            in the sidebar.
+          </p>
+        </div>
+      </div>
+    {% endif %}
   </div>
 {% endblock %}
 
