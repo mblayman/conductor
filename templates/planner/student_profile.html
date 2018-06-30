@@ -45,7 +45,20 @@
       </table>
     </div>
   {% else %}
-    <p>No schools</p>
+    <div class="container-fluid px-0 pt-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-7">
+          <p class="text-center mb-4">
+            <i class="fa fa-4x fa-university rounded-circle bg-orange text-white p-4 shadow"></i>
+          </p>
+          <h3 class=" text-secondary">{{ student }} has no schools yet.</h3>
+          <p>
+            You can add schools for {{ student.first_name }}
+            by clicking the “Add school” button.
+          </p>
+        </div>
+      </div>
+    </div>
   {% endif %}
 
 {% endblock %}
