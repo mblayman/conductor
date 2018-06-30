@@ -4,6 +4,7 @@ from django.conf import settings
 from django.urls import reverse
 
 from accounts import views
+from accounts.models import GoogleDriveAuth
 from conductor.tests import TestCase
 
 
@@ -161,11 +162,21 @@ class TestOauth2Callback(TestCase):
 
     @mock.patch('accounts.views.Flow')
     def test_get(self, Flow):
-        user = self.UserFactory.build()
+        credentials = mock.Mock()
+        credentials.token = 'fake_token'
+        credentials.refresh_token = 'fake_refresh_token'
+        credentials.id_token = 'fake_id_token'
+        flow = mock.Mock()
+        flow.credentials = credentials
+        Flow.from_client_config.return_value = flow
+        user = self.UserFactory.create()
         request = self.request_factory.authenticated_get(user, session=True)
 
         response = views.oauth2_callback(request)
 
-        # TODO: Check that a Google auth exists with the expected tokens.
+        auth = GoogleDriveAuth.objects.get(user=user)
+        self.assertEqual('fake_token', auth.token)
+        self.assertEqual('fake_refresh_token', auth.refresh_token)
+        self.assertEqual('fake_id_token', auth.id_token)
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('settings'), response.get('Location'))

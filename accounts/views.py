@@ -7,6 +7,7 @@ from django.urls import reverse
 from google_auth_oauthlib.flow import Flow
 
 from accounts.forms import SignupForm
+from accounts.models import GoogleDriveAuth
 
 
 def signup(request):
@@ -73,11 +74,12 @@ def oauth2_callback(request):
         state=state)
     flow.fetch_token(authorization_response=request.build_absolute_uri())
 
-    # credentials = flow.credentials
-    # GoogleDriveAuth.object.create(
-    #     token=credentials.token,
-    #     refresh_token=credentials.refresh_token,
-    #     id_token=credentials.id_token,
-    # )
+    credentials = flow.credentials
+    GoogleDriveAuth.objects.create(
+        user=request.user,
+        token=credentials.token,
+        refresh_token=credentials.refresh_token,
+        id_token=credentials.id_token,
+    )
 
     return HttpResponseRedirect(reverse('settings'))

@@ -59,7 +59,12 @@ class GoogleDriveAuth(models.Model):
         related_name='google_drive_authorizations',
         on_delete=models.CASCADE
     )
-    code = models.CharField(
-        max_length=64,
-        help_text='One time authorization code provided by the user',
+    token = models.TextField(
+        help_text='For making Google drive requests',
+    )
+    refresh_token = models.TextField(
+        help_text='For renewing the token validity',
+    )
+    id_token = models.TextField(
+        help_text='The Open ID Connect ID token',
     )

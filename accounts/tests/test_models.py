@@ -67,8 +67,20 @@ class TestGoogleDriveAuth(TestCase):
 
         self.assertEqual(user, auth.user)
 
-    def test_has_code(self):
-        code = 'fake_authorization_code'
-        auth = self.GoogleDriveAuthFactory.build(code=code)
+    def test_has_token(self):
+        token = 'fake_authorization_token'
+        auth = self.GoogleDriveAuthFactory.build(token=token)
 
-        self.assertEqual(code, auth.code)
+        self.assertEqual(token, auth.token)
+
+    def test_has_refresh_token(self):
+        refresh_token = 'fake_authorization_refresh_token'
+        auth = self.GoogleDriveAuthFactory.build(refresh_token=refresh_token)
+
+        self.assertEqual(refresh_token, auth.refresh_token)
+
+    def test_has_id_token(self):
+        id_token = 'fake_authorization_id_token'
+        auth = self.GoogleDriveAuthFactory.build(id_token=id_token)
+
+        self.assertEqual(id_token, auth.id_token)
