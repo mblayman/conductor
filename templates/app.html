@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 
+{# Make an empty messages block because the placement isn't good for the app. #}
+{% block messages %}{% endblock %}
+
 {% block base-content %}
   <div class="container py-3 app-container">
     <div class="row">
@@ -26,6 +29,7 @@
         </ul>
       </div>
       <div class="col-sm-9">
+        {% include "messages.html" with no_justify=True size=9 %}
         {% block content %}{% endblock %}
       </div>
     </div>

@@ -20,8 +20,3 @@ def contact(request):
         form = SupportTicketForm()
     context = {'form': form}
     return render(request, 'support/contact.html', context)
-
-
-def handle_500(request):
-    """Display a customer 500 error page."""
-    return render(request, 'support/500.html', {})

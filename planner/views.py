@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
@@ -5,6 +6,7 @@ from django.urls import reverse
 
 from planner.forms import AddSchoolForm, AddStudentForm
 from planner.models import School
+from planner.tasks import build_schedule
 
 
 @login_required
@@ -49,8 +51,8 @@ def add_school(request, student_id):
         form = AddSchoolForm(student, data=request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(
-                reverse('student-profile', args=[student.id]))
+            redirect_url = reverse('student-profile', args=[student.id])
+            return HttpResponseRedirect(redirect_url)
     else:
         form = AddSchoolForm(student)
 
@@ -65,3 +67,23 @@ def add_school(request, student_id):
         'student': student,
     }
     return render(request, 'planner/add_school.html', context)
+
+
+@login_required
+def export_schedule(request, student_id):
+    """Trigger a schedule export."""
+    student = get_object_or_404(request.user.students, id=student_id)
+
+    if not request.user.has_google_drive_auth:
+        messages.add_message(
+            request, messages.INFO,
+            'We need your permission to access Google Drive before exporting.')
+        return HttpResponseRedirect(reverse('settings'))
+
+    build_schedule.delay(student.id)
+
+    messages.add_message(
+        request, messages.SUCCESS,
+        'We’re exporting the schedule to Google Drive. It will be ready in a moment.')
+    redirect_url = reverse('student-profile', args=[student.id])
+    return HttpResponseRedirect(redirect_url)

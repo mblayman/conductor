@@ -158,8 +158,7 @@ class TestAddSchool(TestCase):
 
         self.assertEqual(302, response.status_code)
         self.assertIn(
-            reverse('student-profile', args=[student.id]),
-            response.get('Location'))
+            reverse('student-profile', args=[student.id]), response.get('Location'))
 
     def test_unauthorized_user(self):
         user = self.UserFactory.create()
@@ -204,3 +203,52 @@ class TestAddSchool(TestCase):
 
         context = render.call_args[0][2]
         self.assertIn('form', context)
+
+
+class TestExportSchedule(TestCase):
+
+    def test_requires_login(self):
+        request = self.request_factory.get()
+
+        response = views.export_schedule(request, 1)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('login'), response.get('Location'))
+
+    def test_unauthorized_user(self):
+        user = self.UserFactory.create()
+        student = self.StudentFactory()
+        request = self.request_factory.authenticated_get(user)
+
+        with self.assertRaises(Http404):
+            views.export_schedule(request, student.id)
+
+    @mock.patch('planner.views.messages')
+    def test_no_google_auth(self, messages):
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.export_schedule(request, student.id)
+
+        messages.add_message.assert_called_once_with(
+            request, messages.INFO, mock.ANY)
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse('settings'), response.get('Location'))
+
+    @mock.patch('planner.views.messages')
+    @mock.patch('planner.views.build_schedule')
+    def test_trigger_task(self, build_schedule, messages):
+        user = self.UserFactory.create()
+        self.GoogleDriveAuthFactory.create(user=user)
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.export_schedule(request, student.id)
+
+        build_schedule.delay.assert_called_once_with(student.id)
+        messages.add_message.assert_called_once_with(
+            request, messages.SUCCESS, mock.ANY)
+        self.assertEqual(302, response.status_code)
+        self.assertIn(
+            reverse('student-profile', args=[student.id]), response.get('Location'))

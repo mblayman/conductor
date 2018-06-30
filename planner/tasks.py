@@ -21,3 +21,8 @@ def audit_school(school_id):
             u'Time to make the donuts',
             to=[settings.CONDUCTOR_EMAIL])
         email.send()
+
+
+@celeryapp.task
+def build_schedule(student_id):
+    """Build a schedule and export it to Google Sheets."""

@@ -1,0 +1,19 @@
+{% if messages %}
+  <div class="container-fluid px-0">
+    <div class="row {% if not no_justify %}justify-content-center{% endif %}">
+      <div class="col-{{ size|default_if_none:"6" }} px-0">
+        {% for message in messages %}
+          <div class="alert
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+              alert-success
+            {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+              alert-danger
+            {% else %}
+              alert-info text-primary
+            {% endif %}
+          ">{{ message }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -10,8 +10,7 @@
       <div class="col-sm-6 text-sm-right">
         <p>
           <a class="btn btn-primary" href="{% url "add-school" student.id %}">Add school</a>
-          {# TODO: Connect this to an export view. #}
-          <a class="ml-2" href="">Export to Google Sheets</a>
+          <a class="ml-2" href="{% url "export-schedule" student.id %}">Export to Google Sheets</a>
         </p>
       </div>
     </div>

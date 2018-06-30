@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 
 from accounts.views import (
     authorize_google, dashboard, oauth2_callback, signup, user_settings)
-from planner.views import add_school, add_student, student_profile
+from planner.views import add_school, add_student, export_schedule, student_profile
 from support.views import contact
 
 
@@ -15,8 +15,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
     path('signup/', signup, name='signup'),
     path('contact/', contact, name='contact'),
-    path('terms/',
-         TemplateView.as_view(template_name='terms.html'), name='terms'),
+    path('terms/', TemplateView.as_view(template_name='terms.html'), name='terms'),
     path('privacy/',
          TemplateView.as_view(template_name='privacy.html'), name='privacy'),
 
@@ -27,10 +26,9 @@ urlpatterns = [
 
     # Students
     path('students/add/', add_student, name='add-student'),
-    path('students/<int:student_id>/',
-         student_profile, name='student-profile'),
-    path('students/<int:student_id>/add-school/',
-         add_school, name='add-school'),
+    path('students/<int:student_id>/', student_profile, name='student-profile'),
+    path('students/<int:student_id>/add-school/', add_school, name='add-school'),
+    path('students/<int:student_id>/export/', export_schedule, name='export-schedule'),
 
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
