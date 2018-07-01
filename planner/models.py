@@ -1,3 +1,6 @@
+import os
+import uuid
+
 from django.conf import settings
 from django.db import models
 from django.utils.functional import cached_property
@@ -59,6 +62,15 @@ class Milestone(models.Model):
         return '{:%-m/%-d/%y}'.format(self.date)
 
 
+def school_image_path(instance, filename):
+    """Give each school a namespace and version.
+
+    The goal is to make the images have long expiration headers.
+    """
+    name, ext = os.path.splitext(filename)
+    return 'schools/{}/{}{}'.format(instance.slug, str(uuid.uuid4()), ext)
+
+
 class School(models.Model):
     name = models.TextField()
     slug = models.SlugField(max_length=256, unique=True)
@@ -70,6 +82,12 @@ class School(models.Model):
     audit_notes = models.TextField(
         help_text='Notes to make performing audits easier',
         null=True, blank=True)
+    # Using a regular FileField instead of ImageField to avoid bringing in Pillow.
+    image = models.FileField(
+        help_text='The school logo or seal at 400x400',
+        upload_to=school_image_path,
+        null=True, blank=True,
+    )
 
     objects = SchoolManager()
 

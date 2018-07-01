@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-sm-3">
       <p class="text-center mb-4">
-        <i class="fa fa-4x fa-university rounded-circle bg-orange text-white p-4 shadow"></i>
+      {% if school.image %}
+        <img src="{{ school.image.url }}" alt="{{ school }}" width="150" height="150">
+      {% else %}
+          <i class="fa fa-4x fa-university rounded-circle bg-orange text-white p-4 shadow"></i>
+      {% endif %}
       </p>
     </div>
     <div class="col-sm-9">

@@ -24,6 +24,7 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     slug = factory.Faker('slug')
     url = factory.Faker('url')
     milestones_url = factory.Faker('url')
+    image = factory.django.FileField()
 
 
 class MilestoneFactory(factory.django.DjangoModelFactory):

@@ -1,5 +1,7 @@
 import os
 
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
@@ -45,6 +47,7 @@ if os.environ['DJANGO_SETTINGS_MODULE'] == 'conductor.settings.development':
 
     urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
     urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
     # Make it possible to see the custom error pages.
     urlpatterns += [

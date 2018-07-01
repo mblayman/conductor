@@ -136,6 +136,11 @@ class TestSchool(TestCase):
 
         self.assertEqual(state, school.state)
 
+    def test_has_image(self):
+        school = self.SchoolFactory.create(image__data=b'imagy stuff')
+
+        self.assertEqual(b'imagy stuff', school.image.read())
+
     def test_early_decision(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(

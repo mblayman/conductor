@@ -122,6 +122,9 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # noqa
 
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
+
 CELERY_BROKER_URL = 'amqp://conductor:conductor@localhost:5672/conductor'
 
 ROLLBAR = {
