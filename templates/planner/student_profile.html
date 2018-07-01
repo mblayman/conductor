@@ -33,7 +33,7 @@
         <tbody>
           {% for school in schools %}
             <tr>
-              <td>{{ school }}</td>
+              <td><a href="{% url "school-detail" school.slug %}">{{ school }}</a></td>
               <td>{{ school.early_decision|default_if_none:'' }}</td>
               <td>{{ school.early_decision_2|default_if_none:'' }}</td>
               <td>{{ school.restricted_early_action|default_if_none:'' }}</td>

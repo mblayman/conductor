@@ -9,6 +9,19 @@ from planner.models import School
 from planner.tasks import build_schedule
 
 
+def school_detail(request, slug):
+    """Show details about a school."""
+    school = get_object_or_404(School, slug=slug)
+    if request.user.is_authenticated:
+        template = 'planner/school.html'
+    else:
+        template = 'planner/school_unauthenticated.html'
+    context = {
+        'school': school,
+    }
+    return render(request, template, context)
+
+
 @login_required
 def add_student(request):
     """Add a student to the user's set."""

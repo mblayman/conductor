@@ -6,7 +6,8 @@ from django.views.generic import TemplateView
 
 from accounts.views import (
     authorize_google, dashboard, oauth2_callback, signup, user_settings)
-from planner.views import add_school, add_student, export_schedule, student_profile
+from planner.views import (
+    add_school, add_student, export_schedule, school_detail, student_profile)
 from support.views import contact
 
 
@@ -23,6 +24,8 @@ urlpatterns = [
     path('settings/', user_settings, name='settings'),
     path('authorize-google/', authorize_google, name='authorize-google'),
     path('oauth2/', oauth2_callback, name='oauth2'),
+
+    path('schools/<slug:slug>/', school_detail, name='school-detail'),
 
     # Students
     path('students/add/', add_student, name='add-student'),

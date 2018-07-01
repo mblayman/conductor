@@ -1,0 +1,12 @@
+{# A single container layout centered for basic layouts#}
+{% extends "base.html" %}
+
+{% block base-content %}
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        {% block basic-content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

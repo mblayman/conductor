@@ -4,6 +4,9 @@ $light: #f6fafe;
 $orange: #ff9d27;
 
 $grid-gutter-width: 50px !default;
+
+$enable-gradients: true;
+
 @import "~bootstrap/scss/bootstrap";
 
 .bg-orange {

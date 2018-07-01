@@ -7,6 +7,54 @@ from conductor.tests import TestCase
 from planner import views
 
 
+class TestSchoolDetail(TestCase):
+
+    def test_unauthenticated(self):
+        school = self.SchoolFactory.create()
+        request = self.request_factory.get()
+
+        response = views.school_detail(request, school.slug)
+
+        self.assertEqual(200, response.status_code)
+
+    def test_bad_school(self):
+        request = self.request_factory.get()
+
+        with self.assertRaises(Http404):
+            views.school_detail(request, 'bad-slug')
+
+    @mock.patch('planner.views.render')
+    def test_school_in_context(self, render):
+        school = self.SchoolFactory.create()
+        request = self.request_factory.get()
+
+        views.school_detail(request, school.slug)
+
+        context = render.call_args[0][2]
+        self.assertEqual(school, context['school'])
+
+    @mock.patch('planner.views.render')
+    def test_authenticated_teplate(self, render):
+        user = self.UserFactory.create()
+        school = self.SchoolFactory.create()
+        request = self.request_factory.authenticated_get(user)
+
+        views.school_detail(request, school.slug)
+
+        template = render.call_args[0][1]
+        self.assertEqual('planner/school.html', template)
+
+    @mock.patch('planner.views.render')
+    def test_unauthenticated_teplate(self, render):
+        school = self.SchoolFactory.create()
+        request = self.request_factory.get()
+
+        views.school_detail(request, school.slug)
+
+        template = render.call_args[0][1]
+        self.assertEqual('planner/school_unauthenticated.html', template)
+
+
 class TestAddStudent(TestCase):
 
     def test_requires_login(self):

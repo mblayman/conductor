@@ -1,0 +1,39 @@
+<div class="container-fluid px-0 mb-3">
+  <div class="row">
+    <div class="col-sm-3">
+      <p class="text-center mb-4">
+        <i class="fa fa-4x fa-university rounded-circle bg-orange text-white p-4 shadow"></i>
+      </p>
+    </div>
+    <div class="col-sm-9">
+      <h2 class="text-center text-primary text-lg-left">{{ school }}</h2>
+      <p><a href="{{ school.url }}" target="_blank">School Website</a></p>
+      {% if school.city %}
+        <p><strong>Location:</strong> {{ school.city }}, {{ school.state }}</p>
+      {% endif %}
+      {% if user.is_authenticated %}
+      {% else %}
+        <h3 class="text-primary">Deadlines</h3>
+      {% endif %}
+    </div>
+  </div>
+  {% if not user.is_authenticated %}
+    <div class="row justify-content-center top-fade">
+      <div class="col-sm-9 bg-light py-4 mx-4 rounded border border-primary text-primary">
+       <h4 class="pb-3">Ready for the full school profile?</h4>
+       <p>
+         Sign up and get this school’s profile
+         as well as profiles
+         from over <strong>2,000</strong> other U.S. colleges and universities.
+       </p>
+       <p>
+         You’ll get access to all the deadlines
+         and tools to help your students navigate college admissions.
+       </p>
+       <p class="text-center m-0">
+         <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free 14 Day Trial</a>
+       </p>
+      </div>
+    </div>
+  {% endif %}
+</div>
