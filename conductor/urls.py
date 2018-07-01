@@ -19,6 +19,8 @@ urlpatterns = [
     path('terms/', TemplateView.as_view(template_name='terms.html'), name='terms'),
     path('privacy/',
          TemplateView.as_view(template_name='privacy.html'), name='privacy'),
+    path('sitemap.xml', TemplateView.as_view(
+        template_name='sitemap.xml', content_type='text/xml'), name='sitemap'),
 
     path('app/', dashboard, name='dashboard'),
     path('settings/', user_settings, name='settings'),

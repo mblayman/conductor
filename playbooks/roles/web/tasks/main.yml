@@ -144,6 +144,14 @@
     group: www-data
     mode: 0750
 
+- name: Make sitemap.xml
+  become: yes
+  django_manage:
+    command: makesitemap
+    app_path: "{{ app_path }}"
+    virtualenv: "{{ venv_path }}"
+  environment: "{{ django_env }}"
+
 - name: Collect static files
   become: yes
   become_user: www-data
