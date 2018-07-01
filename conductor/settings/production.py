@@ -17,4 +17,5 @@ SILENCED_SYSTEM_CHECKS = [
 
 # django-storages
 
+AWS_QUERYSTRING_AUTH = False
 AWS_STORAGE_BUCKET_NAME = 'college-conductor'
