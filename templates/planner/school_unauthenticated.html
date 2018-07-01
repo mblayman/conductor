@@ -1,6 +1,9 @@
 {% extends "basic.html" %}
+{% load support_tags %}
 
 {% block title %}{{ school }}{% endblock %}
+
+{% block meta-description %}Find the important admissions details and deadlines for{% if school.name|startswith:"University,College" %} the{% endif %} {{ school }}{% if school.city %} in {{ school.city }}, {{ school.state }}{% endif %}.{% endblock %}
 
 {% block basic-content %}
   {% include "planner/_school.html" %}
