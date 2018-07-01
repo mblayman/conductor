@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'anymail',
     'localflavor',
+    'storages',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
     'support.apps.SupportConfig',

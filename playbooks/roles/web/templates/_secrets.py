@@ -7,6 +7,10 @@ ANYMAIL = {
     'MAILGUN_API_KEY': '{{ secrets.mailgun.api_key }}',
 }
 
+AWS_ACCESS_KEY_ID = '{{ vault.aws.access_key_id }}'
+AWS_SECRET_ACCESS_KEY = '{{ vault.aws.secret_access_key }}'
+AWS_S3_REGION_NAME = '{{ vault.aws.region }}'
+
 CELERY_BROKER_URL = 'amqp://{}:{}@localhost:5672/{}'.format(
     '{{ secrets.rabbitmq.user }}',
     '{{ secrets.rabbitmq.password }}',
