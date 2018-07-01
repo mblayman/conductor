@@ -144,6 +144,16 @@
     group: www-data
     mode: 0750
 
+- name: Create MEDIA_ROOT
+  become: yes
+  file:
+    state: directory
+    path: /var/www/media/
+    owner: www-data
+    group: www-data
+    mode: 0750
+  when: deployment == "development"
+
 - name: Migrate the database
   become: yes
   django_manage: command=migrate app_path={{ app_path }} virtualenv={{ venv_path }}
