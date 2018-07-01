@@ -69,6 +69,14 @@ server {
     gzip_comp_level 5;
     gzip_vary on;
 
+    {% if deployment == "development" %}
+        location /media/ {
+            alias /var/www/media/;
+            expires max;
+            add_header Cache-Control public;
+        }
+    {% endif %}
+
     location {{ static_url }} {
         alias {{ static_root }};
         expires max;
