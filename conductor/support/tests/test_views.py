@@ -2,9 +2,9 @@ from unittest import mock
 
 from django.urls import reverse
 
+from conductor.support import views
+from conductor.support.models import SupportTicket
 from conductor.tests import TestCase
-from support import views
-from support.models import SupportTicket
 
 
 class TestContact(TestCase):
@@ -16,7 +16,7 @@ class TestContact(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    @mock.patch('support.views.render')
+    @mock.patch('conductor.support.views.render')
     def test_has_form(self, render):
         request = self.request_factory.get()
 
@@ -25,7 +25,7 @@ class TestContact(TestCase):
         context = render.call_args[0][2]
         self.assertIn('form', context)
 
-    @mock.patch('support.views.messages')
+    @mock.patch('conductor.support.views.messages')
     def test_success(self, messages):
         data = {
             'email': 'matt@test.com',
@@ -41,7 +41,7 @@ class TestContact(TestCase):
         messages.add_message.assert_called_once_with(
             request, messages.SUCCESS, mock.ANY)
 
-    @mock.patch('support.views.render')
+    @mock.patch('conductor.support.views.render')
     def test_failure(self, render):
         data = {}
         request = self.request_factory.post(data=data)

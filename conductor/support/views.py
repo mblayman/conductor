@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from support.forms import SupportTicketForm
+from conductor.support.forms import SupportTicketForm
 
 
 def contact(request):

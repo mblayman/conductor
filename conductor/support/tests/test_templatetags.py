@@ -1,6 +1,5 @@
+from conductor.support.templatetags import support_tags
 from conductor.tests import TestCase
-
-from support.templatetags import support_tags
 
 
 class TestStartswith(TestCase):

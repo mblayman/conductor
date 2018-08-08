@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from support.models import SupportTicket
+from conductor.support.models import SupportTicket
 
 
 @admin.register(SupportTicket)

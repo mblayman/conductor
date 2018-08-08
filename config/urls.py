@@ -8,9 +8,9 @@ from django.views.generic import TemplateView
 
 from accounts.views import (
     authorize_google, dashboard, oauth2_callback, signup, user_settings)
+from conductor.support.views import contact
 from planner.views import (
     add_school, add_student, export_schedule, school_detail, student_profile)
-from support.views import contact
 
 
 urlpatterns = [

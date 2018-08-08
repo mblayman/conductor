@@ -32,8 +32,8 @@ jobs:
             venv/bin/flake8
             accounts
             conductor
+            config
             planner
-            support
             vendor
 
   test-py:

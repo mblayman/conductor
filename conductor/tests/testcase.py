@@ -2,11 +2,11 @@ from django import test
 
 from accounts.tests.factories import (
     GoogleDriveAuthFactory, ProfileFactory, UserFactory)
+from conductor.support.tests.factories import SupportTicketFactory
 from conductor.tests.request_factory import RequestFactory
 from planner.tests.factories import (
     ApplicationStatusFactory, AuditFactory, MilestoneFactory, SchoolFactory,
     SemesterFactory, StudentFactory, TargetSchoolFactory)
-from support.tests.factories import SupportTicketFactory
 
 
 class TestCase(test.TestCase):

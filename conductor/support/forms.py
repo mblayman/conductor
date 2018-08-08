@@ -1,6 +1,6 @@
 from django import forms
 
-from support.models import SupportTicket
+from conductor.support.models import SupportTicket
 
 
 class SupportTicketForm(forms.ModelForm):

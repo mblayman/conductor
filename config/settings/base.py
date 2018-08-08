@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'storages',
     'accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
-    'support.apps.SupportConfig',
+    'conductor.support.apps.SupportConfig',
     'vendor.apps.VendorConfig',
 ]
 
