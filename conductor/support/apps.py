@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class SupportConfig(AppConfig):
-    name = 'conductor.support'
+    name = "conductor.support"

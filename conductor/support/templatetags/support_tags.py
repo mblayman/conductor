@@ -9,6 +9,6 @@ def startswith(text, prefix):
 
     This is customized a bit to split on comma and return if anything matches.
     """
-    if ',' in prefix:
-        return any([text.startswith(p) for p in prefix.split(',')])
+    if "," in prefix:
+        return any([text.startswith(p) for p in prefix.split(",")])
     return text.startswith(prefix)

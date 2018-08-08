@@ -3,19 +3,18 @@ from conductor.tests import TestCase
 
 
 class TestStartswith(TestCase):
-
     def test_single_match(self):
-        match = support_tags.startswith('University of Virginia', 'University')
+        match = support_tags.startswith("University of Virginia", "University")
         self.assertTrue(match)
 
     def test_single_no_match(self):
-        match = support_tags.startswith('University of Virginia', 'The')
+        match = support_tags.startswith("University of Virginia", "The")
         self.assertFalse(match)
 
     def test_multiple_match(self):
-        match = support_tags.startswith('College of Charleston', 'University,College')
+        match = support_tags.startswith("College of Charleston", "University,College")
         self.assertTrue(match)
 
     def test_multiple_no_match(self):
-        match = support_tags.startswith('College of Charleston', 'The,A')
+        match = support_tags.startswith("College of Charleston", "The,A")
         self.assertFalse(match)
