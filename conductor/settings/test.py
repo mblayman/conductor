@@ -29,7 +29,7 @@ MIGRATION_MODULES = DisableMigrations()
 
 # factory_boy creates a bunch of junk files for FileFields.
 # Dump them some place that's harmless.
-MEDIA_ROOT = 'media_test'
+MEDIA_ROOT = '/tmp/conductor/media'
 
 # Circle CI doesn't seem to like the ManifestStaticFilesStorage
 # and blows up on the first static asset that it encounters.
