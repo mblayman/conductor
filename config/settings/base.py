@@ -78,9 +78,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"
-    },
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
 CSRF_COOKIE_HTTPONLY = True
@@ -113,9 +111,7 @@ USE_TZ = True
 STATIC_ROOT = "static"
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(ROOT_DIR, "assets")]
-STATICFILES_STORAGE = (
-    "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
-)
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
 MEDIA_ROOT = "media"
 MEDIA_URL = "/media/"
