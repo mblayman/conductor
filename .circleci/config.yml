@@ -28,13 +28,10 @@ jobs:
           key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
       - run:
           name: Lint Python code
-          command: >
-            venv/bin/flake8
-            accounts
-            conductor
-            config
-            planner
-            vendor
+          command: venv/bin/flake8 conductor config manage.py
+      - run:
+          name: Check formatting
+          command: venv/bin/black --check conductor config manage.py
 
   test-py:
     docker:
