@@ -3,14 +3,14 @@ from unittest import mock
 from django.conf import settings
 from django.urls import reverse
 
-from accounts import views
-from accounts.models import GoogleDriveAuth
+from conductor.accounts import views
+from conductor.accounts.models import GoogleDriveAuth
 from conductor.tests import TestCase
 
 
 class TestSignup(TestCase):
 
-    @mock.patch('accounts.views.render')
+    @mock.patch('conductor.accounts.views.render')
     def test_stripe_publishable_key_in_context(self, render):
         request = self.request_factory.get()
 
@@ -20,7 +20,7 @@ class TestSignup(TestCase):
         self.assertEqual(
             settings.STRIPE_PUBLISHABLE_KEY, context['stripe_publishable_key'])
 
-    @mock.patch('accounts.forms.stripe_gateway')
+    @mock.patch('conductor.accounts.forms.stripe_gateway')
     def test_success(self, stripe_gateway):
         stripe_gateway.create_customer.return_value = 'cus_1234'
         data = {
@@ -76,7 +76,7 @@ class TestDashboard(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    @mock.patch('accounts.views.render')
+    @mock.patch('conductor.accounts.views.render')
     def test_app_nav(self, render):
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
@@ -86,7 +86,7 @@ class TestDashboard(TestCase):
         context = render.call_args[0][2]
         self.assertEqual('dashboard', context['app_nav'])
 
-    @mock.patch('accounts.views.render')
+    @mock.patch('conductor.accounts.views.render')
     def test_students_in_context(self, render):
         user = self.UserFactory.create()
         student = self.StudentFactory.create(user=user)
@@ -116,7 +116,7 @@ class TestUserSettings(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    @mock.patch('accounts.views.render')
+    @mock.patch('conductor.accounts.views.render')
     def test_app_nav(self, render):
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
@@ -160,7 +160,7 @@ class TestOauth2Callback(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('login'), response.get('Location'))
 
-    @mock.patch('accounts.views.Flow')
+    @mock.patch('conductor.accounts.views.Flow')
     def test_get(self, Flow):
         credentials = mock.Mock()
         credentials.token = 'fake_token'
@@ -181,7 +181,7 @@ class TestOauth2Callback(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse('settings'), response.get('Location'))
 
-    @mock.patch('accounts.views.messages')
+    @mock.patch('conductor.accounts.views.messages')
     def test_error(self, messages):
         user = self.UserFactory.create()
         data = {'error': 'access_denied'}

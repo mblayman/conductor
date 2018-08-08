@@ -7,8 +7,8 @@ from django.shortcuts import render
 from django.urls import reverse
 from google_auth_oauthlib.flow import Flow
 
-from accounts.forms import SignupForm
-from accounts.models import GoogleDriveAuth
+from conductor.accounts.forms import SignupForm
+from conductor.accounts.models import GoogleDriveAuth
 
 
 def signup(request):

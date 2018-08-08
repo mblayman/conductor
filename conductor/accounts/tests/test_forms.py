@@ -1,6 +1,6 @@
 from unittest import mock
 
-from accounts.forms import SignupForm
+from conductor.accounts.forms import SignupForm
 from conductor.tests import TestCase
 
 
@@ -72,7 +72,7 @@ class TestSignupForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('username', form.errors)
 
-    @mock.patch('accounts.forms.stripe_gateway')
+    @mock.patch('conductor.accounts.forms.stripe_gateway')
     def test_creates_user(self, stripe_gateway):
         stripe_gateway.create_customer.return_value = 'cus_1234'
         data = {
@@ -92,7 +92,7 @@ class TestSignupForm(TestCase):
         self.assertEqual(user.profile.postal_code, '21702')
         self.assertEqual(user.profile.stripe_customer_id, 'cus_1234')
 
-    @mock.patch('accounts.forms.stripe_gateway')
+    @mock.patch('conductor.accounts.forms.stripe_gateway')
     def test_missing_postal_code(self, stripe_gateway):
         stripe_gateway.create_customer.return_value = 'cus_1234'
         data = {

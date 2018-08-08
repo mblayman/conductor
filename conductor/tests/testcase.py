@@ -1,6 +1,6 @@
 from django import test
 
-from accounts.tests.factories import (
+from conductor.accounts.tests.factories import (
     GoogleDriveAuthFactory, ProfileFactory, UserFactory)
 from conductor.support.tests.factories import SupportTicketFactory
 from conductor.tests.request_factory import RequestFactory

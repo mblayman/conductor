@@ -6,7 +6,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 
-from accounts.views import (
+from conductor.accounts.views import (
     authorize_google, dashboard, oauth2_callback, signup, user_settings)
 from conductor.support.views import contact
 from planner.views import (

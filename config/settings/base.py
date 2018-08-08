@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'anymail',
     'localflavor',
     'storages',
-    'accounts.apps.AccountsConfig',
+    'conductor.accounts.apps.AccountsConfig',
     'planner.apps.PlannerConfig',
     'conductor.support.apps.SupportConfig',
     'vendor.apps.VendorConfig',

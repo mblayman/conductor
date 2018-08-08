@@ -3,7 +3,7 @@ import datetime
 import factory
 from faker import Factory
 
-from accounts.tests.factories import UserFactory
+from conductor.accounts.tests.factories import UserFactory
 
 fake = Factory.create()
 

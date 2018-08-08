@@ -2,7 +2,7 @@ from django.conf import settings
 
 import factory
 
-from accounts import models
+from conductor.accounts import models
 
 
 class UserFactory(factory.django.DjangoModelFactory):

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from accounts.models import GoogleDriveAuth, Profile, User
+from conductor.accounts.models import GoogleDriveAuth, Profile, User
 
 
 @admin.register(GoogleDriveAuth)
