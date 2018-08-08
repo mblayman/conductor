@@ -42,6 +42,6 @@ class Command(BaseCommand):
 
     def write_sitemap(self, sitemap):
         sitemap_path = os.path.join(
-            os.path.dirname(settings.BASE_DIR), "templates", "sitemap.xml"
+            settings.ROOT_DIR, "conductor", "templates", "sitemap.xml"
         )
         ElementTree(sitemap).write(sitemap_path, encoding="UTF-8", xml_declaration=True)

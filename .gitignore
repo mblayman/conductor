@@ -83,6 +83,5 @@ assets/images/img
 assets/images/node_modules
 
 conductor/settings/_*.py
+conductor/templates/sitemap.xml
 media
-media_test
-templates/sitemap.xml
