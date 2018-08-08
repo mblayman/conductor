@@ -1,7 +1,7 @@
 from django import forms
 
-from planner import tasks
-from planner.models import School, Semester, Student, TargetSchool
+from conductor.planner import tasks
+from conductor.planner.models import School, Semester, Student, TargetSchool
 
 
 class AddSchoolForm(forms.Form):

@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'localflavor',
     'storages',
     'conductor.accounts.apps.AccountsConfig',
-    'planner.apps.PlannerConfig',
+    'conductor.planner.apps.PlannerConfig',
     'conductor.support.apps.SupportConfig',
     'vendor.apps.VendorConfig',
 ]

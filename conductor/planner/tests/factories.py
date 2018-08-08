@@ -12,7 +12,7 @@ class ApplicationStatusFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'planner.ApplicationStatus'
 
-    student = factory.SubFactory('planner.tests.factories.StudentFactory')
+    student = factory.SubFactory('conductor.planner.tests.factories.StudentFactory')
 
 
 class SchoolFactory(factory.django.DjangoModelFactory):

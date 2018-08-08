@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from planner.models import (
+from conductor.planner.models import (
     Audit, Milestone, School, Semester, Student, TargetSchool)
 
 

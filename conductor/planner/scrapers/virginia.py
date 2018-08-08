@@ -1,6 +1,6 @@
 from lxml import etree
 
-from planner.scrapers.base import Scraper
+from conductor.planner.scrapers.base import Scraper
 
 
 class UVAScraper(Scraper):

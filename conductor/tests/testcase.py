@@ -5,9 +5,7 @@ from conductor.accounts.tests.factories import (
     ProfileFactory,
     UserFactory,
 )
-from conductor.support.tests.factories import SupportTicketFactory
-from conductor.tests.request_factory import RequestFactory
-from planner.tests.factories import (
+from conductor.planner.tests.factories import (
     ApplicationStatusFactory,
     AuditFactory,
     MilestoneFactory,
@@ -16,6 +14,8 @@ from planner.tests.factories import (
     StudentFactory,
     TargetSchoolFactory,
 )
+from conductor.support.tests.factories import SupportTicketFactory
+from conductor.tests.request_factory import RequestFactory
 
 
 class TestCase(test.TestCase):

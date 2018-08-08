@@ -3,7 +3,7 @@ import datetime
 from django.db import models
 
 from conductor.tests import TestCase
-from planner.models import Audit, Milestone
+from conductor.planner.models import Audit, Milestone
 
 
 class TestAudit(TestCase):

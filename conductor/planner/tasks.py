@@ -5,7 +5,7 @@ from django.core.mail import EmailMessage
 from django.utils import timezone
 
 from conductor import celeryapp
-from planner.models import Audit, School
+from conductor.planner.models import Audit, School
 
 
 @celeryapp.task

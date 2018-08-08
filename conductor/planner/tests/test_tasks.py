@@ -4,9 +4,9 @@ from django.conf import settings
 from django.core import mail
 from django.utils import timezone
 
+from conductor.planner import tasks
+from conductor.planner.models import Audit
 from conductor.tests import TestCase
-from planner import tasks
-from planner.models import Audit
 
 
 class TestAuditSchool(TestCase):

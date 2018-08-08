@@ -1,7 +1,7 @@
 from unittest import mock
 
+from conductor.planner.forms import AddSchoolForm, AddStudentForm
 from conductor.tests import TestCase
-from planner.forms import AddSchoolForm, AddStudentForm
 
 
 class TestAddSchoolForm(TestCase):
@@ -29,7 +29,7 @@ class TestAddSchoolForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('school', form.errors)
 
-    @mock.patch('planner.forms.tasks')
+    @mock.patch('conductor.planner.forms.tasks')
     def test_save(self, tasks):
         school = self.SchoolFactory.create()
         student = self.StudentFactory.create()

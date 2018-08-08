@@ -6,7 +6,7 @@ from django.db import models
 from django.utils.functional import cached_property
 from localflavor.us.models import USStateField
 
-from planner.managers import SchoolManager
+from conductor.planner.managers import SchoolManager
 
 
 class ApplicationStatus(models.Model):

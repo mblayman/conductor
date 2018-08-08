@@ -1,5 +1,5 @@
+from conductor.planner.scrapers.base import Scraper
 from conductor.tests import TestCase
-from planner.scrapers.base import Scraper
 
 
 class TestScraper(TestCase):

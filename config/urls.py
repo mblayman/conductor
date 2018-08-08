@@ -9,7 +9,7 @@ from django.views.generic import TemplateView
 from conductor.accounts.views import (
     authorize_google, dashboard, oauth2_callback, signup, user_settings)
 from conductor.support.views import contact
-from planner.views import (
+from conductor.planner.views import (
     add_school, add_student, export_schedule, school_detail, student_profile)
 
 

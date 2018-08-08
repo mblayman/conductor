@@ -4,9 +4,9 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
-from planner.forms import AddSchoolForm, AddStudentForm
-from planner.models import School
-from planner.tasks import build_schedule
+from conductor.planner.forms import AddSchoolForm, AddStudentForm
+from conductor.planner.models import School
+from conductor.planner.tasks import build_schedule
 
 
 def school_detail(request, slug):
