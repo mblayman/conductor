@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'conductor.accounts.apps.AccountsConfig',
     'conductor.planner.apps.PlannerConfig',
     'conductor.support.apps.SupportConfig',
-    'vendor.apps.VendorConfig',
+    'conductor.vendor.apps.VendorConfig',
 ]
 
 MIDDLEWARE = [

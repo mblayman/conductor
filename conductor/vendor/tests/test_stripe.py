@@ -1,12 +1,12 @@
 from unittest import mock
 
 from conductor.tests import TestCase
-from vendor._stripe import StripeGateway
+from conductor.vendor._stripe import StripeGateway
 
 
 class TestStripeGateway(TestCase):
 
-    @mock.patch('vendor._stripe.stripe')
+    @mock.patch('conductor.vendor._stripe.stripe')
     def test_create_customer(self, stripe):
         customer = mock.Mock()
         customer.id = 'cus_1234'
@@ -19,7 +19,7 @@ class TestStripeGateway(TestCase):
 
         self.assertEqual(stripe_customer_id, 'cus_1234')
 
-    @mock.patch('vendor._stripe.stripe')
+    @mock.patch('conductor.vendor._stripe.stripe')
     def test_bad_token(self, stripe):
         """For now, let Stripe errors go. Catch them in Rollbar."""
         class InvalidRequestError(Exception):

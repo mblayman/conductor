@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth import get_user_model, password_validation
 
-from vendor.services import stripe_gateway
+from conductor.vendor.services import stripe_gateway
 
 User = get_user_model()
 
