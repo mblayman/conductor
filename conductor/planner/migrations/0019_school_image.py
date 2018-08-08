@@ -6,14 +6,17 @@ import conductor.planner.models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0018_auto_20180617_0047'),
-    ]
+    dependencies = [("planner", "0018_auto_20180617_0047")]
 
     operations = [
         migrations.AddField(
-            model_name='school',
-            name='image',
-            field=models.FileField(blank=True, help_text='The school logo or seal at 400x400', null=True, upload_to=conductor.planner.models.school_image_path),
-        ),
+            model_name="school",
+            name="image",
+            field=models.FileField(
+                blank=True,
+                help_text="The school logo or seal at 400x400",
+                null=True,
+                upload_to=conductor.planner.models.school_image_path,
+            ),
+        )
     ]

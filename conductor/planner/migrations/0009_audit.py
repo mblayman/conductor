@@ -8,17 +8,28 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0008_auto_20170102_2216'),
-    ]
+    dependencies = [("planner", "0008_auto_20170102_2216")]
 
     operations = [
         migrations.CreateModel(
-            name='Audit',
+            name="Audit",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('school', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='planner.School')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_date", models.DateTimeField(auto_now_add=True)),
+                (
+                    "school",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="planner.School"
+                    ),
+                ),
             ],
-        ),
+        )
     ]

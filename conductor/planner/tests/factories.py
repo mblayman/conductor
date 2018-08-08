@@ -10,52 +10,53 @@ fake = Factory.create()
 
 class ApplicationStatusFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.ApplicationStatus'
+        model = "planner.ApplicationStatus"
 
-    student = factory.SubFactory('conductor.planner.tests.factories.StudentFactory')
+    student = factory.SubFactory("conductor.planner.tests.factories.StudentFactory")
 
 
 class SchoolFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.School'
+        model = "planner.School"
 
     name = factory.LazyAttribute(
-        lambda o: '{0} College'.format(fake.last_name_female()))
-    slug = factory.Faker('slug')
-    url = factory.Faker('url')
-    milestones_url = factory.Faker('url')
+        lambda o: "{0} College".format(fake.last_name_female())
+    )
+    slug = factory.Faker("slug")
+    url = factory.Faker("url")
+    milestones_url = factory.Faker("url")
     image = factory.django.FileField()
 
 
 class MilestoneFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.Milestone'
+        model = "planner.Milestone"
 
-    date = factory.Faker('date')
+    date = factory.Faker("date")
     school = factory.SubFactory(SchoolFactory)
 
 
 class AuditFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.Audit'
+        model = "planner.Audit"
 
     school = factory.SubFactory(SchoolFactory)
 
 
 class SemesterFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.Semester'
+        model = "planner.Semester"
 
     date = factory.LazyFunction(datetime.date.today)
 
 
 class StudentFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.Student'
+        model = "planner.Student"
 
     user = factory.SubFactory(UserFactory)
-    first_name = factory.Faker('first_name')
-    last_name = factory.Faker('last_name')
+    first_name = factory.Faker("first_name")
+    last_name = factory.Faker("last_name")
     matriculation_semester = factory.SubFactory(SemesterFactory)
 
     @factory.post_generation
@@ -70,7 +71,7 @@ class StudentFactory(factory.django.DjangoModelFactory):
 
 class TargetSchoolFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = 'planner.TargetSchool'
+        model = "planner.TargetSchool"
 
     school = factory.SubFactory(SchoolFactory)
     student = factory.SubFactory(StudentFactory)

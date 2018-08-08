@@ -7,14 +7,16 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0013_auto_20170220_2045'),
-    ]
+    dependencies = [("planner", "0013_auto_20170220_2045")]
 
     operations = [
         migrations.AddField(
-            model_name='school',
-            name='audit_notes',
-            field=models.TextField(blank=True, help_text='Notes to make performing audits easier', null=True),
-        ),
+            model_name="school",
+            name="audit_notes",
+            field=models.TextField(
+                blank=True,
+                help_text="Notes to make performing audits easier",
+                null=True,
+            ),
+        )
     ]

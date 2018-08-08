@@ -13,13 +13,15 @@ def audit_school(school_id):
     """Audit a school if it has not been recently audited."""
     audit_window = timezone.now() - datetime.timedelta(days=90)
     if not Audit.objects.filter(
-            created_date__gt=audit_window, school_id=school_id).exists():
+        created_date__gt=audit_window, school_id=school_id
+    ).exists():
         Audit.objects.create(school_id=school_id)
         school = School.objects.get(id=school_id)
         email = EmailMessage(
-            u'An audit of {} is required'.format(school.name),
-            u'Time to make the donuts',
-            to=[settings.CONDUCTOR_EMAIL])
+            u"An audit of {} is required".format(school.name),
+            u"Time to make the donuts",
+            to=[settings.CONDUCTOR_EMAIL],
+        )
         email.send()
 
 

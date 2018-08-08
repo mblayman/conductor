@@ -7,7 +7,7 @@ from django.db import migrations
 
 
 def initial_semesters(apps, schema_editor):
-    Semester = apps.get_model('planner', 'Semester')
+    Semester = apps.get_model("planner", "Semester")
     Semester.objects.create(date=datetime.date(2018, 11, 1))
     Semester.objects.create(date=datetime.date(2019, 4, 1))
     Semester.objects.create(date=datetime.date(2019, 7, 1))
@@ -15,10 +15,6 @@ def initial_semesters(apps, schema_editor):
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0004_auto_20161123_2102'),
-    ]
+    dependencies = [("planner", "0004_auto_20161123_2102")]
 
-    operations = [
-        migrations.RunPython(initial_semesters)
-    ]
+    operations = [migrations.RunPython(initial_semesters)]

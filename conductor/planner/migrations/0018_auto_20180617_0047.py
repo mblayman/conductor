@@ -7,14 +7,22 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0017_applicationstatus'),
-    ]
+    dependencies = [("planner", "0017_applicationstatus")]
 
     operations = [
         migrations.AlterField(
-            model_name='milestone',
-            name='category',
-            field=models.CharField(choices=[('ED', 'Early Decision'), ('ED II', 'Early Decision II'), ('EA', 'Early Action'), ('REA', 'Restricted Early Action'), ('RD', 'Regular Decision')], default='RD', max_length=8),
-        ),
+            model_name="milestone",
+            name="category",
+            field=models.CharField(
+                choices=[
+                    ("ED", "Early Decision"),
+                    ("ED II", "Early Decision II"),
+                    ("EA", "Early Action"),
+                    ("REA", "Restricted Early Action"),
+                    ("RD", "Regular Decision"),
+                ],
+                default="RD",
+                max_length=8,
+            ),
+        )
     ]

@@ -7,14 +7,10 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0014_school_audit_notes'),
-    ]
+    dependencies = [("planner", "0014_school_audit_notes")]
 
     operations = [
         migrations.AlterField(
-            model_name='milestone',
-            name='date',
-            field=models.DateField(),
-        ),
+            model_name="milestone", name="date", field=models.DateField()
+        )
     ]

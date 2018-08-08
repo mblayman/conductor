@@ -7,17 +7,11 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0015_auto_20170221_0229'),
-    ]
+    dependencies = [("planner", "0015_auto_20170221_0229")]
 
     operations = [
+        migrations.AlterModelOptions(name="student", options={"ordering": ("id",)}),
         migrations.AlterModelOptions(
-            name='student',
-            options={'ordering': ('id',)},
-        ),
-        migrations.AlterModelOptions(
-            name='targetschool',
-            options={'ordering': ('id',)},
+            name="targetschool", options={"ordering": ("id",)}
         ),
     ]

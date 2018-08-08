@@ -7,7 +7,6 @@ from conductor.planner.models import Audit, Milestone
 
 
 class TestAudit(TestCase):
-
     def test_factory(self):
         audit = self.AuditFactory.create()
 
@@ -33,7 +32,6 @@ class TestAudit(TestCase):
 
 
 class TestMilestone(TestCase):
-
     def test_factory(self):
         milestone = self.MilestoneFactory.build()
 
@@ -70,11 +68,10 @@ class TestMilestone(TestCase):
         date = datetime.date(2018, 6, 10)
         milestone = self.MilestoneFactory.build(date=date)
 
-        self.assertEqual('6/10/18', str(milestone))
+        self.assertEqual("6/10/18", str(milestone))
 
 
 class TestApplicationStatus(TestCase):
-
     def test_factory(self):
         application_status = self.ApplicationStatusFactory.create()
 
@@ -83,40 +80,38 @@ class TestApplicationStatus(TestCase):
 
     def test_has_student(self):
         student = self.StudentFactory.create()
-        application_status = self.ApplicationStatusFactory.create(
-            student=student)
+        application_status = self.ApplicationStatusFactory.create(student=student)
 
         self.assertEqual(student, application_status.student)
 
 
 class TestSchool(TestCase):
-
     def test_factory(self):
         school = self.SchoolFactory.build()
 
         self.assertFalse(school.rolling)
 
     def test_has_name(self):
-        school = self.SchoolFactory.build(name='University of Virginia')
+        school = self.SchoolFactory.build(name="University of Virginia")
 
-        self.assertEqual('University of Virginia', school.name)
+        self.assertEqual("University of Virginia", school.name)
 
     def test_has_slug(self):
-        school = self.SchoolFactory.build(slug='university-of-virginia')
+        school = self.SchoolFactory.build(slug="university-of-virginia")
 
-        self.assertEqual('university-of-virginia', school.slug)
+        self.assertEqual("university-of-virginia", school.slug)
 
     def test_has_url(self):
-        school = self.SchoolFactory.build(url='http://www.virginia.edu/')
+        school = self.SchoolFactory.build(url="http://www.virginia.edu/")
 
-        self.assertEqual('http://www.virginia.edu/', school.url)
+        self.assertEqual("http://www.virginia.edu/", school.url)
 
     def test_has_milestones_url(self):
         school = self.SchoolFactory.build(
-            milestones_url='http://admission.virginia.edu/events')
+            milestones_url="http://admission.virginia.edu/events"
+        )
 
-        self.assertEqual(
-            'http://admission.virginia.edu/events', school.milestones_url)
+        self.assertEqual("http://admission.virginia.edu/events", school.milestones_url)
 
     def test_has_rolling(self):
         rolling = True
@@ -125,54 +120,59 @@ class TestSchool(TestCase):
         self.assertTrue(school.rolling)
 
     def test_has_city(self):
-        city = 'Charlottesville'
+        city = "Charlottesville"
         school = self.SchoolFactory.build(city=city)
 
         self.assertEqual(city, school.city)
 
     def test_has_state(self):
-        state = 'VA'
+        state = "VA"
         school = self.SchoolFactory.build(state=state)
 
         self.assertEqual(state, school.state)
 
     def test_has_image(self):
-        school = self.SchoolFactory.create(image__data=b'imagy stuff')
+        school = self.SchoolFactory.create(image__data=b"imagy stuff")
 
-        self.assertEqual(b'imagy stuff', school.image.read())
+        self.assertEqual(b"imagy stuff", school.image.read())
 
     def test_early_decision(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_DECISION)
+            school=school, category=Milestone.EARLY_DECISION
+        )
 
         self.assertEqual(milestone, school.early_decision)
 
     def test_early_decision_2(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_DECISION_2)
+            school=school, category=Milestone.EARLY_DECISION_2
+        )
 
         self.assertEqual(milestone, school.early_decision_2)
 
     def test_restricted_early_action(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.RESTRICTED_EARLY_ACTION)
+            school=school, category=Milestone.RESTRICTED_EARLY_ACTION
+        )
 
         self.assertEqual(milestone, school.restricted_early_action)
 
     def test_early_action(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_ACTION)
+            school=school, category=Milestone.EARLY_ACTION
+        )
 
         self.assertEqual(milestone, school.early_action)
 
     def test_regular_decision(self):
         school = self.SchoolFactory.create()
         milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.REGULAR_DECISION)
+            school=school, category=Milestone.REGULAR_DECISION
+        )
 
         self.assertEqual(milestone, school.regular_decision)
 
@@ -183,7 +183,6 @@ class TestSchool(TestCase):
 
 
 class TestSemester(TestCase):
-
     def test_factory(self):
         semester = self.SemesterFactory.build()
 
@@ -206,29 +205,28 @@ class TestSemester(TestCase):
         date = datetime.date(year=2018, month=4, day=1)
         semester = self.SemesterFactory.build(date=date)
 
-        self.assertEqual('Spring 2018', str(semester))
+        self.assertEqual("Spring 2018", str(semester))
 
     def test_summer(self):
         date = datetime.date(year=2018, month=7, day=1)
         semester = self.SemesterFactory.build(date=date)
 
-        self.assertEqual('Summer 2018', str(semester))
+        self.assertEqual("Summer 2018", str(semester))
 
     def test_fall(self):
         date = datetime.date(year=2018, month=11, day=1)
         semester = self.SemesterFactory.build(date=date)
 
-        self.assertEqual('Fall 2018', str(semester))
+        self.assertEqual("Fall 2018", str(semester))
 
 
 class TestStudent(TestCase):
-
     def test_factory(self):
         student = self.StudentFactory.build()
 
         self.assertIsNotNone(student.user)
-        self.assertNotEqual('', student.first_name)
-        self.assertNotEqual('', student.last_name)
+        self.assertNotEqual("", student.first_name)
+        self.assertNotEqual("", student.last_name)
         self.assertIsNotNone(student.matriculation_semester)
 
     def test_has_user(self):
@@ -238,14 +236,14 @@ class TestStudent(TestCase):
         self.assertEqual(user, student.user)
 
     def test_has_first_name(self):
-        student = self.StudentFactory.build(first_name='Matt')
+        student = self.StudentFactory.build(first_name="Matt")
 
-        self.assertEqual('Matt', student.first_name)
+        self.assertEqual("Matt", student.first_name)
 
     def test_has_last_name(self):
-        student = self.StudentFactory.build(last_name='Layman')
+        student = self.StudentFactory.build(last_name="Layman")
 
-        self.assertEqual('Layman', student.last_name)
+        self.assertEqual("Layman", student.last_name)
 
     def test_has_matriculation_semester(self):
         semester = self.SemesterFactory.create()
@@ -268,7 +266,6 @@ class TestStudent(TestCase):
 
 
 class TestTargetSchool(TestCase):
-
     def test_factory(self):
         target_school = self.TargetSchoolFactory.build()
 

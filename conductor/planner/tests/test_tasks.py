@@ -10,7 +10,6 @@ from conductor.tests import TestCase
 
 
 class TestAuditSchool(TestCase):
-
     def test_creates_audit(self):
         school = self.SchoolFactory.create()
         self.AuditFactory.create()  # Ensure filtering on a school is used.

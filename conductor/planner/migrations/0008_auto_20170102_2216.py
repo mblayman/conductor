@@ -8,26 +8,44 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0007_auto_20161214_0213'),
-    ]
+    dependencies = [("planner", "0007_auto_20161214_0213")]
 
     operations = [
         migrations.CreateModel(
-            name='TargetSchool',
+            name="TargetSchool",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('school', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='planner.School')),
-                ('student', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='planner.Student')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "school",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="planner.School"
+                    ),
+                ),
+                (
+                    "student",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="planner.Student",
+                    ),
+                ),
             ],
         ),
         migrations.AddField(
-            model_name='student',
-            name='schools',
-            field=models.ManyToManyField(through='planner.TargetSchool', to='planner.School'),
+            model_name="student",
+            name="schools",
+            field=models.ManyToManyField(
+                through="planner.TargetSchool", to="planner.School"
+            ),
         ),
         migrations.AlterUniqueTogether(
-            name='targetschool',
-            unique_together=set([('school', 'student')]),
+            name="targetschool", unique_together=set([("school", "student")])
         ),
     ]

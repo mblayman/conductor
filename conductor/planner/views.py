@@ -13,58 +13,50 @@ def school_detail(request, slug):
     """Show details about a school."""
     school = get_object_or_404(School, slug=slug)
     if request.user.is_authenticated:
-        template = 'planner/school.html'
+        template = "planner/school.html"
     else:
-        template = 'planner/school_unauthenticated.html'
-    context = {
-        'school': school,
-    }
+        template = "planner/school_unauthenticated.html"
+    context = {"school": school}
     return render(request, template, context)
 
 
 @login_required
 def add_student(request):
     """Add a student to the user's set."""
-    if request.method == 'POST':
+    if request.method == "POST":
         form = AddStudentForm(data=request.POST)
         if form.is_valid():
             student = form.save(request.user)
-            redirect_url = reverse('student-profile', args=[student.id])
+            redirect_url = reverse("student-profile", args=[student.id])
             return HttpResponseRedirect(redirect_url)
     else:
         form = AddStudentForm()
-    context = {
-        'app_nav': 'add-student',
-        'form': form,
-    }
-    return render(request, 'planner/add_student.html', context)
+    context = {"app_nav": "add-student", "form": form}
+    return render(request, "planner/add_student.html", context)
 
 
 @login_required
 def student_profile(request, student_id):
     """Show a student's information."""
     student = get_object_or_404(
-        request.user.students.select_related('matriculation_semester'),
-        id=student_id)
-    schools = student.schools.all().order_by('name')
-    context = {
-        'student': student,
-        'schools': schools,
-    }
-    return render(request, 'planner/student_profile.html', context)
+        request.user.students.select_related("matriculation_semester"), id=student_id
+    )
+    schools = student.schools.all().order_by("name")
+    context = {"student": student, "schools": schools}
+    return render(request, "planner/student_profile.html", context)
 
 
 @login_required
 def add_school(request, student_id):
     """Add a school to a student's list."""
     student = get_object_or_404(request.user.students, id=student_id)
-    query = request.GET.get('q')
+    query = request.GET.get("q")
 
-    if request.method == 'POST':
+    if request.method == "POST":
         form = AddSchoolForm(student, data=request.POST)
         if form.is_valid():
             form.save()
-            redirect_url = reverse('student-profile', args=[student.id])
+            redirect_url = reverse("student-profile", args=[student.id])
             return HttpResponseRedirect(redirect_url)
     else:
         form = AddSchoolForm(student)
@@ -73,13 +65,8 @@ def add_school(request, student_id):
     if query:
         schools = School.objects.search(query)
 
-    context = {
-        'q': query,
-        'form': form,
-        'schools': schools,
-        'student': student,
-    }
-    return render(request, 'planner/add_school.html', context)
+    context = {"q": query, "form": form, "schools": schools, "student": student}
+    return render(request, "planner/add_school.html", context)
 
 
 @login_required
@@ -89,14 +76,18 @@ def export_schedule(request, student_id):
 
     if not request.user.has_google_drive_auth:
         messages.add_message(
-            request, messages.INFO,
-            'We need your permission to access Google Drive before exporting.')
-        return HttpResponseRedirect(reverse('settings'))
+            request,
+            messages.INFO,
+            "We need your permission to access Google Drive before exporting.",
+        )
+        return HttpResponseRedirect(reverse("settings"))
 
     build_schedule.delay(student.id)
 
     messages.add_message(
-        request, messages.SUCCESS,
-        'We’re exporting the schedule to Google Drive. It will be ready in a moment.')
-    redirect_url = reverse('student-profile', args=[student.id])
+        request,
+        messages.SUCCESS,
+        "We’re exporting the schedule to Google Drive. It will be ready in a moment.",
+    )
+    redirect_url = reverse("student-profile", args=[student.id])
     return HttpResponseRedirect(redirect_url)

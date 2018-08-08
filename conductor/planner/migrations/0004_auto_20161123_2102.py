@@ -8,18 +8,17 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0003_semester'),
-    ]
+    dependencies = [("planner", "0003_semester")]
 
     operations = [
-        migrations.RemoveField(
-            model_name='student',
-            name='class_year',
-        ),
+        migrations.RemoveField(model_name="student", name="class_year"),
         migrations.AddField(
-            model_name='student',
-            name='matriculation_semester',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='planner.Semester'),
+            model_name="student",
+            name="matriculation_semester",
+            field=models.ForeignKey(
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to="planner.Semester",
+            ),
         ),
     ]

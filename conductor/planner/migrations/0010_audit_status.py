@@ -7,14 +7,16 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0009_audit'),
-    ]
+    dependencies = [("planner", "0009_audit")]
 
     operations = [
         migrations.AddField(
-            model_name='audit',
-            name='status',
-            field=models.CharField(choices=[('pending', 'Pending'), ('complete', 'Complete')], default='pending', max_length=8),
-        ),
+            model_name="audit",
+            name="status",
+            field=models.CharField(
+                choices=[("pending", "Pending"), ("complete", "Complete")],
+                default="pending",
+                max_length=8,
+            ),
+        )
     ]

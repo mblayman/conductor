@@ -8,24 +8,22 @@ import localflavor.us.models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('planner', '0010_audit_status'),
-    ]
+    dependencies = [("planner", "0010_audit_status")]
 
     operations = [
         migrations.AddField(
-            model_name='school',
-            name='city',
+            model_name="school",
+            name="city",
             field=models.CharField(max_length=128, null=True),
         ),
         migrations.AddField(
-            model_name='school',
-            name='rolling',
+            model_name="school",
+            name="rolling",
             field=models.BooleanField(default=False),
         ),
         migrations.AddField(
-            model_name='school',
-            name='state',
+            model_name="school",
+            name="state",
             field=localflavor.us.models.USStateField(max_length=2, null=True),
         ),
     ]
