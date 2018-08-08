@@ -4,7 +4,7 @@ import stripe
 stripe.api_key = settings.STRIPE_API_KEY
 
 
-class StripeGateway():
+class StripeGateway:
     """A gateway to Stripe
 
     This insulates the rest of the system from Stripe errors
@@ -16,9 +16,7 @@ class StripeGateway():
         # Let this fail on purpose. If it fails, the error monitoring system
         # will log it and I'll learn how to harden it for the conductor env.
         customer = stripe.Customer.create(
-            email=user.email,
-            plan='monthly-14d-1',
-            source=stripe_token
+            email=user.email, plan="monthly-14d-1", source=stripe_token
         )
         return customer.id
 

@@ -2,12 +2,7 @@ from config.settings.base import *  # noqa
 
 DEBUG = True
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',
-    }
-}
+DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": ":memory:"}}
 
 
 class DisableMigrations(object):
@@ -29,12 +24,12 @@ MIGRATION_MODULES = DisableMigrations()
 
 # factory_boy creates a bunch of junk files for FileFields.
 # Dump them some place that's harmless.
-MEDIA_ROOT = '/tmp/conductor/media'
+MEDIA_ROOT = "/tmp/conductor/media"
 
 # Circle CI doesn't seem to like the ManifestStaticFilesStorage
 # and blows up on the first static asset that it encounters.
 # I don't care about testing against the manifested versions.
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 # RabbitMQ doesn't run in CI so run the tasks in process.
 CELERY_TASK_ALWAYS_EAGER = True
