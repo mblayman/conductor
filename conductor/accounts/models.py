@@ -12,8 +12,9 @@ class User(AbstractUser):
     This is a user defined model rather than the default Django User
     to permit easy extension while avoiding joins on other tables.
     """
+
     # Override the default definition to make the email required and unique.
-    email = models.EmailField(_('email address'), blank=False, unique=True)
+    email = models.EmailField(_("email address"), blank=False, unique=True)
 
     @property
     def has_google_drive_auth(self):
@@ -27,17 +28,10 @@ class Profile(models.Model):
     This data is information about a user that is needed infrequently.
     The intent is to pull this on rare occasions like looking up Stripe info.
     """
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-    )
-    postal_code = models.CharField(
-        max_length=32,
-        blank=True,
-    )
-    stripe_customer_id = models.CharField(
-        max_length=32,
-    )
+
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    postal_code = models.CharField(max_length=32, blank=True)
+    stripe_customer_id = models.CharField(max_length=32)
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
@@ -53,18 +47,13 @@ class GoogleDriveAuth(models.Model):
     This model stores the authorized tokens required to do exports
     to Google Sheets.
     """
+
     created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        related_name='google_drive_authorizations',
-        on_delete=models.CASCADE
+        related_name="google_drive_authorizations",
+        on_delete=models.CASCADE,
     )
-    token = models.TextField(
-        help_text='For making Google drive requests',
-    )
-    refresh_token = models.TextField(
-        help_text='For renewing the token validity',
-    )
-    id_token = models.TextField(
-        help_text='The Open ID Connect ID token',
-    )
+    token = models.TextField(help_text="For making Google drive requests")
+    refresh_token = models.TextField(help_text="For renewing the token validity")
+    id_token = models.TextField(help_text="The Open ID Connect ID token")

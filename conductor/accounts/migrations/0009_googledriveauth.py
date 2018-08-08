@@ -9,18 +9,37 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('accounts', '0008_delete_inviteemail'),
-    ]
+    dependencies = [("accounts", "0008_delete_inviteemail")]
 
     operations = [
         migrations.CreateModel(
-            name='GoogleDriveAuth',
+            name="GoogleDriveAuth",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('code', models.CharField(help_text='One time authorization code provided by the user', max_length=64)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='google_drive_authorizations', to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_date", models.DateTimeField(auto_now_add=True)),
+                (
+                    "code",
+                    models.CharField(
+                        help_text="One time authorization code provided by the user",
+                        max_length=64,
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="google_drive_authorizations",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
-        ),
+        )
     ]

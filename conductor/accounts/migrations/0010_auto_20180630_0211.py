@@ -5,36 +5,39 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('accounts', '0009_googledriveauth'),
-    ]
+    dependencies = [("accounts", "0009_googledriveauth")]
 
     operations = [
-        migrations.RemoveField(
-            model_name='googledriveauth',
-            name='code',
-        ),
+        migrations.RemoveField(model_name="googledriveauth", name="code"),
         migrations.AddField(
-            model_name='googledriveauth',
-            name='id_token',
-            field=models.TextField(default='', help_text='The Open ID Connect ID token'),
+            model_name="googledriveauth",
+            name="id_token",
+            field=models.TextField(
+                default="", help_text="The Open ID Connect ID token"
+            ),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='googledriveauth',
-            name='refresh_token',
-            field=models.TextField(default='', help_text='For renewing the token validity'),
+            model_name="googledriveauth",
+            name="refresh_token",
+            field=models.TextField(
+                default="", help_text="For renewing the token validity"
+            ),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='googledriveauth',
-            name='token',
-            field=models.TextField(default='', help_text='For making Google drive requests'),
+            model_name="googledriveauth",
+            name="token",
+            field=models.TextField(
+                default="", help_text="For making Google drive requests"
+            ),
             preserve_default=False,
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
-            field=models.CharField(blank=True, max_length=150, verbose_name='last name'),
+            model_name="user",
+            name="last_name",
+            field=models.CharField(
+                blank=True, max_length=150, verbose_name="last name"
+            ),
         ),
     ]

@@ -7,15 +7,13 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('accounts', '0006_profile_postal_code'),
-    ]
+    dependencies = [("accounts", "0006_profile_postal_code")]
 
     operations = [
         migrations.AddField(
-            model_name='profile',
-            name='stripe_customer_id',
-            field=models.CharField(default='', max_length=32),
+            model_name="profile",
+            name="stripe_customer_id",
+            field=models.CharField(default="", max_length=32),
             preserve_default=False,
-        ),
+        )
     ]

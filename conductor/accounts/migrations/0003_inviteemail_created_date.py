@@ -9,15 +9,16 @@ from django.utils.timezone import utc
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('accounts', '0002_inviteemail'),
-    ]
+    dependencies = [("accounts", "0002_inviteemail")]
 
     operations = [
         migrations.AddField(
-            model_name='inviteemail',
-            name='created_date',
-            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2016, 11, 9, 1, 54, 27, 549715, tzinfo=utc)),
+            model_name="inviteemail",
+            name="created_date",
+            field=models.DateTimeField(
+                auto_now_add=True,
+                default=datetime.datetime(2016, 11, 9, 1, 54, 27, 549715, tzinfo=utc),
+            ),
             preserve_default=False,
-        ),
+        )
     ]

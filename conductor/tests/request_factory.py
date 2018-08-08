@@ -4,13 +4,12 @@ from django.contrib.sessions.middleware import SessionMiddleware
 
 
 class RequestFactory(test.RequestFactory):
-
     def authenticated_get(self, user, **kwargs):
         request = self.get(**kwargs)
         request.user = user
         return request
 
-    def get(self, path='/', session=False, **kwargs):
+    def get(self, path="/", session=False, **kwargs):
         """Override the default get to avoid providing a meaningless path."""
         request = super().get(path, **kwargs)
         request.user = AnonymousUser()
@@ -28,7 +27,7 @@ class RequestFactory(test.RequestFactory):
         request.user = user
         return request
 
-    def post(self, path='/', format='multipart', session=False, **kwargs):
+    def post(self, path="/", format="multipart", session=False, **kwargs):
         """Override the default post to avoid providing a meaningless path."""
         request = super().post(path, format=format, **kwargs)
         request.user = AnonymousUser()

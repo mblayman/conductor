@@ -7,12 +7,6 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('accounts', '0007_profile_stripe_customer_id'),
-    ]
+    dependencies = [("accounts", "0007_profile_stripe_customer_id")]
 
-    operations = [
-        migrations.DeleteModel(
-            name='InviteEmail',
-        ),
-    ]
+    operations = [migrations.DeleteModel(name="InviteEmail")]
