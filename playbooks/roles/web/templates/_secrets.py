@@ -1,4 +1,4 @@
-from conductor.settings.base import BASE_DIR
+from config.settings.base import BASE_DIR
 
 
 ALLOWED_HOSTS = ['.{{ root_domain }}']

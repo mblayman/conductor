@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
-ROOT_URLCONF = 'conductor.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'conductor.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators

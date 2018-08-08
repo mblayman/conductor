@@ -4,7 +4,7 @@ from celery import Celery
 from celery.signals import task_failure
 
 os.environ.setdefault(
-    'DJANGO_SETTINGS_MODULE', 'conductor.settings.development')
+    'DJANGO_SETTINGS_MODULE', 'config.settings.development')
 
 app = Celery('conductor')
 app.config_from_object('django.conf:settings', namespace='CELERY')

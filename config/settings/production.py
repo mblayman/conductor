@@ -1,4 +1,4 @@
-from conductor.settings.base import *  # noqa
+from config.settings.base import *  # noqa
 
 # Let's be clear that DEBUG is off.
 DEBUG = False
