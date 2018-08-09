@@ -1,5 +1,5 @@
 boto3==1.7.48
-celery==4.0.2
+celery==4.2.1
 Django==2.0.6
 django-anymail==3.0
 django-localflavor==2.0

@@ -6,4 +6,5 @@ flake8
 gunicorn
 honcho
 httpie
+pre_commit
 psycopg2
