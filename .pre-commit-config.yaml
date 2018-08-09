@@ -4,6 +4,7 @@ repos:
     hooks:
     - id: flake8
       language_version: python3.7
+      args: [--exclude=migrations]
   - repo: https://github.com/ambv/black
     rev: stable
     hooks:

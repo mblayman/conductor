@@ -22,7 +22,6 @@ from conductor.planner.views import (
     student_profile,
 )
 
-
 urlpatterns = [
     # Marketing/non-authenticated views
     path("", TemplateView.as_view(template_name="index.html"), name="index"),
