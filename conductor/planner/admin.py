@@ -31,7 +31,9 @@ class SchoolAdmin(admin.ModelAdmin):
     def clickable_url(obj):
         return format_html('<a href="{0}" target="_blank">{1}</a>', obj.url, obj.url)
 
-    clickable_url.short_description = "url"
+    clickable_url.short_description = (
+        "url"
+    )  # type: ignore  # noqa https://github.com/python/mypy/issues/708#issuecomment-282351264
 
     list_display = ("name", clickable_url, "milestones_url")
     list_per_page = 10

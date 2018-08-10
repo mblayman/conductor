@@ -85,3 +85,5 @@ assets/images/node_modules
 conductor/settings/_*.py
 conductor/templates/sitemap.xml
 media
+
+.mypy_cache

@@ -32,6 +32,9 @@ jobs:
       - run:
           name: Check formatting
           command: venv/bin/black --check conductor config manage.py
+      - run:
+          name: Check types
+          command: venv/bin/mypy conductor config manage.py
 
   test-py:
     docker:
