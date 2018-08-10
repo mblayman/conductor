@@ -1,3 +1,4 @@
+from typing import Dict
 from unittest import mock
 
 from conductor.accounts.forms import SignupForm
@@ -18,7 +19,7 @@ class TestSignupForm(TestCase):
         self.assertTrue(form.is_valid())
 
     def test_required(self):
-        data = {}
+        data: Dict[str, str] = {}
         form = SignupForm(data)
 
         self.assertFalse(form.is_valid())

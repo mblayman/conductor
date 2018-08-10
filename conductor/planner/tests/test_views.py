@@ -1,3 +1,4 @@
+from typing import Dict
 from unittest import mock
 
 from django.http import Http404
@@ -111,7 +112,7 @@ class TestAddStudent(TestCase):
 
     @mock.patch("conductor.planner.views.render")
     def test_failure(self, render):
-        data = {}
+        data: Dict[str, str] = {}
         user = self.UserFactory.create()
         request = self.request_factory.authenticated_post(user, data=data)
 

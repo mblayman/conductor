@@ -14,7 +14,7 @@ galaxy:
 		nodesource.node
 
 mypy:
-	@git ls-files | grep '.py$$' | grep -v 'tests\|migrations' | xargs mypy
+	@git ls-files | grep '.py$$' | grep -v 'migrations' | xargs mypy
 
 schools:
 	honcho run python manage.py dumpdata planner.School --indent 2 -o planner/fixtures/schools.json

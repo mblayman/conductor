@@ -1,3 +1,4 @@
+from typing import Dict
 from unittest import mock
 
 from django.urls import reverse
@@ -43,7 +44,7 @@ class TestContact(TestCase):
 
     @mock.patch("conductor.support.views.render")
     def test_failure(self, render):
-        data = {}
+        data: Dict[str, str] = {}
         request = self.request_factory.post(data=data)
 
         views.contact(request)
