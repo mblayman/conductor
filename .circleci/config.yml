@@ -34,7 +34,7 @@ jobs:
           command: venv/bin/black --check conductor config manage.py
       - run:
           name: Check types
-          command: venv/bin/mypy conductor config manage.py
+          command: 'source venv/bin/activate && make mypy'
 
   test-py:
     docker:

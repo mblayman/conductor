@@ -1,5 +1,8 @@
+from typing import List, Union
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import QuerySet
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
@@ -61,7 +64,7 @@ def add_school(request, student_id):
     else:
         form = AddSchoolForm(student)
 
-    schools = []
+    schools: Union[List[School], QuerySet] = []
     if query:
         schools = School.objects.search(query)
 
