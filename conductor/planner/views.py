@@ -3,7 +3,7 @@ from typing import List, Union
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import QuerySet
-from django.http import HttpResponseRedirect
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
@@ -12,7 +12,7 @@ from conductor.planner.models import School
 from conductor.planner.tasks import build_schedule
 
 
-def school_detail(request, slug):
+def school_detail(request: HttpRequest, slug: str) -> HttpResponse:
     """Show details about a school."""
     school = get_object_or_404(School, slug=slug)
     if request.user.is_authenticated:
@@ -24,7 +24,7 @@ def school_detail(request, slug):
 
 
 @login_required
-def add_student(request):
+def add_student(request: HttpRequest) -> HttpResponse:
     """Add a student to the user's set."""
     if request.method == "POST":
         form = AddStudentForm(data=request.POST)
@@ -39,7 +39,7 @@ def add_student(request):
 
 
 @login_required
-def student_profile(request, student_id):
+def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
     """Show a student's information."""
     student = get_object_or_404(
         request.user.students.select_related("matriculation_semester"), id=student_id
@@ -50,7 +50,7 @@ def student_profile(request, student_id):
 
 
 @login_required
-def add_school(request, student_id):
+def add_school(request: HttpRequest, student_id: int) -> HttpResponse:
     """Add a school to a student's list."""
     student = get_object_or_404(request.user.students, id=student_id)
     query = request.GET.get("q")
@@ -73,7 +73,7 @@ def add_school(request, student_id):
 
 
 @login_required
-def export_schedule(request, student_id):
+def export_schedule(request: HttpRequest, student_id: int) -> HttpResponseRedirect:
     """Trigger a schedule export."""
     student = get_object_or_404(request.user.students, id=student_id)
 

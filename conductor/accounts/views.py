@@ -2,7 +2,7 @@ from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect, JsonResponse
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 from google_auth_oauthlib.flow import Flow
@@ -11,7 +11,7 @@ from conductor.accounts.forms import SignupForm
 from conductor.accounts.models import GoogleDriveAuth
 
 
-def signup(request):
+def signup(request: HttpRequest) -> HttpResponse:
     """Sign up a new user."""
     if request.method == "POST":
         form = SignupForm(data=request.POST)
@@ -26,7 +26,7 @@ def signup(request):
 
 
 @login_required
-def dashboard(request):
+def dashboard(request: HttpRequest) -> HttpResponse:
     """Show the main view for an authenticated user."""
     students = (
         request.user.students.all()
@@ -38,14 +38,14 @@ def dashboard(request):
 
 
 @login_required
-def user_settings(request):
+def user_settings(request: HttpRequest) -> HttpResponse:
     """Show the user's settings options."""
     context = {"app_nav": "settings"}
     return render(request, "accounts/settings.html", context)
 
 
 @login_required
-def authorize_google(request):
+def authorize_google(request: HttpRequest) -> HttpResponseRedirect:
     """Build and present an auth URL to get permission to use Google Drive."""
     flow = Flow.from_client_config(
         settings.GOOGLE_CLIENT_CONFIG,
@@ -60,7 +60,7 @@ def authorize_google(request):
 
 
 @login_required
-def oauth2_callback(request):
+def oauth2_callback(request: HttpRequest) -> HttpResponseRedirect:
     """Handle the callback from Google to create an authorization."""
     if request.GET.get("error"):
         messages.add_message(
