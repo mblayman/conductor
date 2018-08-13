@@ -1,8 +1,6 @@
 from django.conf import settings
 import stripe
 
-from conductor.accounts.models import User
-
 stripe.api_key = settings.STRIPE_API_KEY
 
 
@@ -13,7 +11,7 @@ class StripeGateway:
     and configures the Stripe module with the API key.
     """
 
-    def create_customer(self, user: User, stripe_token: str) -> str:
+    def create_customer(self, user: settings.AUTH_USER_MODEL, stripe_token: str) -> str:
         """Add a user to Stripe and join them to the plan."""
         # Let this fail on purpose. If it fails, the error monitoring system
         # will log it and I'll learn how to harden it for the conductor env.

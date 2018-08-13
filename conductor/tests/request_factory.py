@@ -1,15 +1,16 @@
 from typing import Any
 
 from django import test
+from django.conf import settings
 from django.contrib.auth.models import AnonymousUser
 from django.contrib.sessions.middleware import SessionMiddleware
 from django.http import HttpRequest
 
-from conductor.accounts.models import User
-
 
 class RequestFactory(test.RequestFactory):
-    def authenticated_get(self, user: User, **kwargs: Any) -> HttpRequest:
+    def authenticated_get(
+        self, user: settings.AUTH_USER_MODEL, **kwargs: Any
+    ) -> HttpRequest:
         request = self.get(**kwargs)
         request.user = user
         return request
@@ -27,7 +28,9 @@ class RequestFactory(test.RequestFactory):
 
         return request
 
-    def authenticated_post(self, user: User, **kwargs: Any) -> HttpRequest:
+    def authenticated_post(
+        self, user: settings.AUTH_USER_MODEL, **kwargs: Any
+    ) -> HttpRequest:
         request = self.post(**kwargs)
         request.user = user
         return request

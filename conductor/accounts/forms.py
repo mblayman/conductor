@@ -1,8 +1,10 @@
 from django import forms
-from django.contrib.auth import password_validation
+from django.conf import settings
+from django.contrib.auth import get_user_model, password_validation
 
-from conductor.accounts.models import User
 from conductor.vendor.services import stripe_gateway
+
+User = get_user_model()
 
 
 class SignupForm(forms.Form):
@@ -52,7 +54,7 @@ class SignupForm(forms.Form):
             except forms.ValidationError as error:
                 self.add_error("password", error)
 
-    def save(self) -> User:
+    def save(self) -> settings.AUTH_USER_MODEL:
         """Create the user.
 
         This will add a new user and start the subscription.

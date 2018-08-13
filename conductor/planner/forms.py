@@ -1,8 +1,8 @@
 from typing import Any
 
 from django import forms
+from django.conf import settings
 
-from conductor.accounts.models import User
 from conductor.planner import tasks
 from conductor.planner.models import School, Semester, Student, TargetSchool
 
@@ -40,7 +40,7 @@ class AddStudentForm(forms.Form):
         empty_label=None,
     )
 
-    def save(self, user: User) -> Student:
+    def save(self, user: settings.AUTH_USER_MODEL) -> Student:
         """Create a new student."""
         student = Student.objects.create(
             first_name=self.cleaned_data["first_name"],
