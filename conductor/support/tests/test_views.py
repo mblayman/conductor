@@ -9,7 +9,7 @@ from conductor.tests import TestCase
 
 
 class TestContact(TestCase):
-    def test_get(self):
+    def test_get(self) -> None:
         request = self.request_factory.get()
 
         response = views.contact(request)
@@ -17,7 +17,7 @@ class TestContact(TestCase):
         self.assertEqual(200, response.status_code)
 
     @mock.patch("conductor.support.views.render")
-    def test_has_form(self, render):
+    def test_has_form(self, render: mock.MagicMock) -> None:
         request = self.request_factory.get()
 
         views.contact(request)
@@ -26,7 +26,7 @@ class TestContact(TestCase):
         self.assertIn("form", context)
 
     @mock.patch("conductor.support.views.messages")
-    def test_success(self, messages):
+    def test_success(self, messages: mock.MagicMock) -> None:
         data = {
             "email": "matt@test.com",
             "subject": "Help me",
@@ -43,7 +43,7 @@ class TestContact(TestCase):
         )
 
     @mock.patch("conductor.support.views.render")
-    def test_failure(self, render):
+    def test_failure(self, render: mock.MagicMock) -> None:
         data: Dict[str, str] = {}
         request = self.request_factory.post(data=data)
 

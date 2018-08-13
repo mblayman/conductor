@@ -13,10 +13,10 @@ class DisableMigrations(object):
     Skip migrations for tests.
     """
 
-    def __contains__(self, item):
+    def __contains__(self, item):  # type: ignore
         return True
 
-    def __getitem__(self, item):
+    def __getitem__(self, item):  # type: ignore
         return None
 
 

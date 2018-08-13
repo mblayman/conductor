@@ -1,9 +1,11 @@
 import datetime
+from typing import Any, List
 
 import factory
 from faker import Factory
 
 from conductor.accounts.tests.factories import UserFactory
+from conductor.planner.models import School
 
 fake = Factory.create()
 
@@ -60,7 +62,7 @@ class StudentFactory(factory.django.DjangoModelFactory):
     matriculation_semester = factory.SubFactory(SemesterFactory)
 
     @factory.post_generation
-    def schools(self, create, extracted, **kwargs):
+    def schools(self, create: bool, extracted: List[School], **kwargs: Any) -> None:
         if not create:
             return
 

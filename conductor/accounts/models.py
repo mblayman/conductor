@@ -1,3 +1,5 @@
+from typing import Any
+
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.dispatch import receiver
@@ -17,7 +19,7 @@ class User(AbstractUser):
     email = models.EmailField(_("email address"), blank=False, unique=True)
 
     @property
-    def has_google_drive_auth(self):
+    def has_google_drive_auth(self) -> bool:
         """Check if the user has authorized Google Drive."""
         return self.google_drive_authorizations.exists()
 
@@ -35,7 +37,9 @@ class Profile(models.Model):
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
-def create_profile(sender, instance, created, **kwargs):
+def create_profile(
+    sender: User, instance: Profile, created: bool, **kwargs: Any
+) -> None:
     """Create a profile for a new user."""
     if created:
         Profile.objects.create(user=instance)

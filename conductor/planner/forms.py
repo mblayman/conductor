@@ -1,5 +1,8 @@
+from typing import Any
+
 from django import forms
 
+from conductor.accounts.models import User
 from conductor.planner import tasks
 from conductor.planner.models import School, Semester, Student, TargetSchool
 
@@ -7,11 +10,11 @@ from conductor.planner.models import School, Semester, Student, TargetSchool
 class AddSchoolForm(forms.Form):
     school = forms.IntegerField()
 
-    def __init__(self, student, *args, **kwargs):
+    def __init__(self, student: Student, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
         self.student = student
 
-    def clean_school(self):
+    def clean_school(self) -> None:
         """Check that the student does not already have the selected school."""
         school_id = self.cleaned_data.get("school")
         school = School.objects.get(id=school_id)
@@ -21,7 +24,7 @@ class AddSchoolForm(forms.Form):
             )
         return school
 
-    def save(self):
+    def save(self) -> None:
         """Create a target school for the student."""
         school = self.cleaned_data["school"]
         TargetSchool.objects.create(student=self.student, school=school)
@@ -37,7 +40,7 @@ class AddStudentForm(forms.Form):
         empty_label=None,
     )
 
-    def save(self, user):
+    def save(self, user: User) -> Student:
         """Create a new student."""
         student = Student.objects.create(
             first_name=self.cleaned_data["first_name"],

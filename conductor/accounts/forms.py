@@ -1,9 +1,8 @@
 from django import forms
-from django.contrib.auth import get_user_model, password_validation
+from django.contrib.auth import password_validation
 
+from conductor.accounts.models import User
 from conductor.vendor.services import stripe_gateway
-
-User = get_user_model()
 
 
 class SignupForm(forms.Form):
@@ -17,7 +16,7 @@ class SignupForm(forms.Form):
     stripe_token = forms.CharField(required=True)
     postal_code = forms.CharField(required=False)
 
-    def clean_email(self):
+    def clean_email(self) -> str:
         """Ensure email uniqueness."""
         email = self.cleaned_data.get("email")
         if User.objects.filter(email=email).exists():
@@ -26,14 +25,14 @@ class SignupForm(forms.Form):
             )
         return email
 
-    def clean_username(self):
+    def clean_username(self) -> str:
         """Ensure username uniqueness."""
         username = self.cleaned_data.get("username")
         if User.objects.filter(username=username).exists():
             raise forms.ValidationError("That username is unavailable.")
         return username
 
-    def clean(self):
+    def clean(self) -> None:
         """Validate the password.
 
         This happens outside of a clean_password method
@@ -53,7 +52,7 @@ class SignupForm(forms.Form):
             except forms.ValidationError as error:
                 self.add_error("password", error)
 
-    def save(self):
+    def save(self) -> User:
         """Create the user.
 
         This will add a new user and start the subscription.

@@ -6,7 +6,7 @@ from conductor.vendor._stripe import StripeGateway
 
 class TestStripeGateway(TestCase):
     @mock.patch("conductor.vendor._stripe.stripe")
-    def test_create_customer(self, stripe):
+    def test_create_customer(self, stripe: mock.MagicMock) -> None:
         customer = mock.Mock()
         customer.id = "cus_1234"
         stripe.Customer.create.return_value = customer
@@ -19,7 +19,7 @@ class TestStripeGateway(TestCase):
         self.assertEqual(stripe_customer_id, "cus_1234")
 
     @mock.patch("conductor.vendor._stripe.stripe")
-    def test_bad_token(self, stripe):
+    def test_bad_token(self, stripe: mock.MagicMock) -> None:
         """For now, let Stripe errors go. Catch them in Rollbar."""
 
         class InvalidRequestError(Exception):

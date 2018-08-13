@@ -1,15 +1,20 @@
+from typing import Any
+
 from django import test
 from django.contrib.auth.models import AnonymousUser
 from django.contrib.sessions.middleware import SessionMiddleware
+from django.http import HttpRequest
+
+from conductor.accounts.models import User
 
 
 class RequestFactory(test.RequestFactory):
-    def authenticated_get(self, user, **kwargs):
+    def authenticated_get(self, user: User, **kwargs: Any) -> HttpRequest:
         request = self.get(**kwargs)
         request.user = user
         return request
 
-    def get(self, path="/", session=False, **kwargs):
+    def get(self, path: str = "/", session: bool = False, **kwargs: Any) -> HttpRequest:
         """Override the default get to avoid providing a meaningless path."""
         request = super().get(path, **kwargs)
         request.user = AnonymousUser()
@@ -22,12 +27,18 @@ class RequestFactory(test.RequestFactory):
 
         return request
 
-    def authenticated_post(self, user, **kwargs):
+    def authenticated_post(self, user: User, **kwargs: Any) -> HttpRequest:
         request = self.post(**kwargs)
         request.user = user
         return request
 
-    def post(self, path="/", format="multipart", session=False, **kwargs):
+    def post(
+        self,
+        path: str = "/",
+        format: str = "multipart",
+        session: bool = False,
+        **kwargs: Any
+    ) -> HttpRequest:
         """Override the default post to avoid providing a meaningless path."""
         request = super().post(path, format=format, **kwargs)
         request.user = AnonymousUser()

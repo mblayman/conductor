@@ -6,7 +6,7 @@ from conductor.tests import TestCase
 
 
 class TestSignupForm(TestCase):
-    def test_valid(self):
+    def test_valid(self) -> None:
         data = {
             "username": "matt",
             "email": "matt@test.com",
@@ -18,7 +18,7 @@ class TestSignupForm(TestCase):
 
         self.assertTrue(form.is_valid())
 
-    def test_required(self):
+    def test_required(self) -> None:
         data: Dict[str, str] = {}
         form = SignupForm(data)
 
@@ -29,7 +29,7 @@ class TestSignupForm(TestCase):
         self.assertIn("stripe_token", form.errors)
         self.assertNotIn("postal_code", form.errors)
 
-    def test_invalid_password(self):
+    def test_invalid_password(self) -> None:
         # Test similar username and password to ensure a user instance
         # is present and valuable.
         data = {
@@ -44,7 +44,7 @@ class TestSignupForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn("password", form.errors)
 
-    def test_unique_email(self):
+    def test_unique_email(self) -> None:
         self.UserFactory.create(email="matt@test.com")
         data = {
             "username": "matt",
@@ -58,7 +58,7 @@ class TestSignupForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn("email", form.errors)
 
-    def test_unique_username(self):
+    def test_unique_username(self) -> None:
         self.UserFactory.create(username="matt")
         data = {
             "username": "matt",
@@ -73,7 +73,7 @@ class TestSignupForm(TestCase):
         self.assertIn("username", form.errors)
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
-    def test_creates_user(self, stripe_gateway):
+    def test_creates_user(self, stripe_gateway: mock.MagicMock) -> None:
         stripe_gateway.create_customer.return_value = "cus_1234"
         data = {
             "username": "matt",
@@ -93,7 +93,7 @@ class TestSignupForm(TestCase):
         self.assertEqual(user.profile.stripe_customer_id, "cus_1234")
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
-    def test_missing_postal_code(self, stripe_gateway):
+    def test_missing_postal_code(self, stripe_gateway: mock.MagicMock) -> None:
         stripe_gateway.create_customer.return_value = "cus_1234"
         data = {
             "username": "matt",

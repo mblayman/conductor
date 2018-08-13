@@ -6,5 +6,5 @@ class SupportTicket(models.Model):
     subject = models.TextField()
     message = models.TextField()
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.subject

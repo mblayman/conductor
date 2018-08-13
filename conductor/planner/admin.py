@@ -28,7 +28,7 @@ class MilestoneInline(admin.StackedInline):
 
 @admin.register(School)
 class SchoolAdmin(admin.ModelAdmin):
-    def clickable_url(obj):
+    def clickable_url(obj: School) -> str:
         return format_html('<a href="{0}" target="_blank">{1}</a>', obj.url, obj.url)
 
     clickable_url.short_description = "url"  # type: ignore  # noqa mypy/708

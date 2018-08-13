@@ -5,7 +5,7 @@ from conductor.tests import TestCase
 
 
 class TestAddSchoolForm(TestCase):
-    def test_valid(self):
+    def test_valid(self) -> None:
         school = self.SchoolFactory.create()
         student = self.StudentFactory.create()
         data = {"school": str(school.id)}
@@ -14,7 +14,7 @@ class TestAddSchoolForm(TestCase):
         self.assertTrue(form.is_valid())
         self.assertEqual(school, form.cleaned_data["school"])
 
-    def test_school_in_student_list(self):
+    def test_school_in_student_list(self) -> None:
         school = self.SchoolFactory.create()
         student = self.StudentFactory.create()
         self.TargetSchoolFactory.create(school=school, student=student)
@@ -25,7 +25,7 @@ class TestAddSchoolForm(TestCase):
         self.assertIn("school", form.errors)
 
     @mock.patch("conductor.planner.forms.tasks")
-    def test_save(self, tasks):
+    def test_save(self, tasks: mock.MagicMock) -> None:
         school = self.SchoolFactory.create()
         student = self.StudentFactory.create()
         data = {"school": str(school.id)}
@@ -39,7 +39,7 @@ class TestAddSchoolForm(TestCase):
 
 
 class TestAddStudentForm(TestCase):
-    def test_save(self):
+    def test_save(self) -> None:
         semester = self.SemesterFactory.create()
         data = {
             "first_name": "Joe",

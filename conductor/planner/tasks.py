@@ -9,7 +9,7 @@ from conductor.planner.models import Audit, School
 
 
 @celeryapp.task
-def audit_school(school_id):
+def audit_school(school_id: int) -> None:
     """Audit a school if it has not been recently audited."""
     audit_window = timezone.now() - datetime.timedelta(days=90)
     if not Audit.objects.filter(
@@ -26,5 +26,5 @@ def audit_school(school_id):
 
 
 @celeryapp.task
-def build_schedule(student_id):
+def build_schedule(student_id: int) -> None:
     """Build a schedule and export it to Google Sheets."""

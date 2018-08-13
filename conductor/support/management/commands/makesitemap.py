@@ -1,4 +1,5 @@
 import os
+from typing import Any
 from xml.etree.ElementTree import Element, ElementTree, SubElement
 
 from django.conf import settings
@@ -11,7 +12,7 @@ from conductor.planner.models import School
 class Command(BaseCommand):
     help = "Make a sitemap.xml"
 
-    def handle(self, *args, **options):
+    def handle(self, *args: Any, **options: Any) -> None:
         """Build a sitemap.xml and output it to the templates directory."""
         sitemap = Element(
             "urlset", attrib={"xmlns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -30,7 +31,9 @@ class Command(BaseCommand):
 
         self.write_sitemap(sitemap)
 
-    def build_url(self, path, change_frequency="monthly", priority=0.5):
+    def build_url(
+        self, path: str, change_frequency: str = "monthly", priority: float = 0.5
+    ) -> Element:
         url = Element("url")
         loc = SubElement(url, "loc")
         loc.text = "https://www.collegeconductor.com" + path
@@ -40,7 +43,7 @@ class Command(BaseCommand):
         priority_node.text = str(priority)
         return url
 
-    def write_sitemap(self, sitemap):
+    def write_sitemap(self, sitemap: Element) -> None:
         sitemap_path = os.path.join(
             settings.ROOT_DIR, "conductor", "templates", "sitemap.xml"
         )

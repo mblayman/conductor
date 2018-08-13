@@ -1,4 +1,5 @@
 import os
+from typing import Any, Dict, Optional
 import uuid
 
 from django.conf import settings
@@ -56,11 +57,11 @@ class Milestone(models.Model):
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "{:%-m/%-d/%y}".format(self.date)
 
 
-def school_image_path(instance, filename):
+def school_image_path(instance: Any, filename: str) -> str:  # Should be School.
     """Give each school a namespace and version.
 
     The goal is to make the images have long expiration headers.
@@ -90,33 +91,33 @@ class School(models.Model):
 
     objects = SchoolManager()
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
     @cached_property
-    def milestones_dict(self):
+    def milestones_dict(self) -> Dict[str, Milestone]:
         """Get the active milestones keyed by category."""
         milestones = self.milestones.filter(active=True).all()
         return {milestone.category: milestone for milestone in milestones}
 
     @property
-    def early_decision(self):
+    def early_decision(self) -> Optional[Milestone]:
         return self.milestones_dict.get(Milestone.EARLY_DECISION)
 
     @property
-    def early_decision_2(self):
+    def early_decision_2(self) -> Optional[Milestone]:
         return self.milestones_dict.get(Milestone.EARLY_DECISION_2)
 
     @property
-    def early_action(self):
+    def early_action(self) -> Optional[Milestone]:
         return self.milestones_dict.get(Milestone.EARLY_ACTION)
 
     @property
-    def restricted_early_action(self):
+    def restricted_early_action(self) -> Optional[Milestone]:
         return self.milestones_dict.get(Milestone.RESTRICTED_EARLY_ACTION)
 
     @property
-    def regular_decision(self):
+    def regular_decision(self) -> Optional[Milestone]:
         return self.milestones_dict.get(Milestone.REGULAR_DECISION)
 
 
@@ -124,7 +125,7 @@ class Semester(models.Model):
     active = models.BooleanField(default=True)
     date = models.DateField()
 
-    def __str__(self):
+    def __str__(self) -> str:
         season = "Fall"
         if self.date.month < 6:
             season = "Spring"
@@ -145,7 +146,7 @@ class Student(models.Model):
     class Meta:
         ordering = ("id",)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "{} {}".format(self.first_name, self.last_name)
 
 

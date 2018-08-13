@@ -1,7 +1,9 @@
 import os
+from typing import Any, Dict
 
 from celery import Celery
 from celery.signals import task_failure
+from django.http import HttpRequest
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.development")
 
@@ -19,11 +21,11 @@ if bool(os.environ.get("CELERY_WORKER_RUNNING", False)):
 
     rollbar.init(**settings.ROLLBAR)
 
-    def celery_base_data_hook(request, data):
+    def celery_base_data_hook(request: HttpRequest, data: Dict[str, str]) -> None:
         data["framework"] = "celery"
 
     rollbar.BASE_DATA_HOOK = celery_base_data_hook
 
     @task_failure.connect
-    def handle_task_failure(**kw):
+    def handle_task_failure(**kw: Any) -> None:
         rollbar.report_exc_info(extra_data=kw)

@@ -10,7 +10,7 @@ from conductor.tests import TestCase
 
 class TestSignup(TestCase):
     @mock.patch("conductor.accounts.views.render")
-    def test_stripe_publishable_key_in_context(self, render):
+    def test_stripe_publishable_key_in_context(self, render: mock.MagicMock) -> None:
         request = self.request_factory.get()
 
         views.signup(request)
@@ -21,7 +21,7 @@ class TestSignup(TestCase):
         )
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
-    def test_success(self, stripe_gateway):
+    def test_success(self, stripe_gateway: mock.MagicMock) -> None:
         stripe_gateway.create_customer.return_value = "cus_1234"
         data = {
             "username": "matt",
@@ -37,7 +37,7 @@ class TestSignup(TestCase):
         self.assertEqual(200, response.status_code)
         self.assertJSONEqual(response.content.decode("utf-8"), {"status": "success"})
 
-    def test_failure(self):
+    def test_failure(self) -> None:
         data = {
             "email": "matt@test.com",
             "password": "asecrettoeverybody",
@@ -56,7 +56,7 @@ class TestSignup(TestCase):
 
 
 class TestDashboard(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.dashboard(request)
@@ -64,7 +64,7 @@ class TestDashboard(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_get(self):
+    def test_get(self) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -73,7 +73,7 @@ class TestDashboard(TestCase):
         self.assertEqual(200, response.status_code)
 
     @mock.patch("conductor.accounts.views.render")
-    def test_app_nav(self, render):
+    def test_app_nav(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -83,7 +83,7 @@ class TestDashboard(TestCase):
         self.assertEqual("dashboard", context["app_nav"])
 
     @mock.patch("conductor.accounts.views.render")
-    def test_students_in_context(self, render):
+    def test_students_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory.create(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -95,7 +95,7 @@ class TestDashboard(TestCase):
 
 
 class TestUserSettings(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.user_settings(request)
@@ -103,7 +103,7 @@ class TestUserSettings(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_get(self):
+    def test_get(self) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -112,7 +112,7 @@ class TestUserSettings(TestCase):
         self.assertEqual(200, response.status_code)
 
     @mock.patch("conductor.accounts.views.render")
-    def test_app_nav(self, render):
+    def test_app_nav(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -123,7 +123,7 @@ class TestUserSettings(TestCase):
 
 
 class TestAuthorizeGoogle(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.authorize_google(request)
@@ -131,7 +131,7 @@ class TestAuthorizeGoogle(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_get(self):
+    def test_get(self) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user, session=True)
 
@@ -145,7 +145,7 @@ class TestAuthorizeGoogle(TestCase):
 
 
 class TestOauth2Callback(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.oauth2_callback(request)
@@ -154,7 +154,7 @@ class TestOauth2Callback(TestCase):
         self.assertIn(reverse("login"), response.get("Location"))
 
     @mock.patch("conductor.accounts.views.Flow")
-    def test_get(self, Flow):
+    def test_get(self, Flow: mock.MagicMock) -> None:
         credentials = mock.Mock()
         credentials.token = "fake_token"
         credentials.refresh_token = "fake_refresh_token"
@@ -175,7 +175,7 @@ class TestOauth2Callback(TestCase):
         self.assertIn(reverse("settings"), response.get("Location"))
 
     @mock.patch("conductor.accounts.views.messages")
-    def test_error(self, messages):
+    def test_error(self, messages: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         data = {"error": "access_denied"}
         request = self.request_factory.authenticated_get(user, data=data, session=True)

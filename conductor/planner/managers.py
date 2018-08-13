@@ -8,7 +8,7 @@ from django.db import models
 class SchoolManager(models.Manager):
     """A manager for schools"""
 
-    def search(self, name):
+    def search(self, name: str) -> models.QuerySet:
         """Search for a school by name."""
         queryset = self.get_queryset()
         terms = [SearchQuery(term) for term in name.split()]

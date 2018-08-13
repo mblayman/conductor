@@ -9,7 +9,7 @@ from conductor.tests import TestCase
 
 
 class TestSchoolDetail(TestCase):
-    def test_unauthenticated(self):
+    def test_unauthenticated(self) -> None:
         school = self.SchoolFactory.create()
         request = self.request_factory.get()
 
@@ -17,14 +17,14 @@ class TestSchoolDetail(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    def test_bad_school(self):
+    def test_bad_school(self) -> None:
         request = self.request_factory.get()
 
         with self.assertRaises(Http404):
             views.school_detail(request, "bad-slug")
 
     @mock.patch("conductor.planner.views.render")
-    def test_school_in_context(self, render):
+    def test_school_in_context(self, render: mock.MagicMock) -> None:
         school = self.SchoolFactory.create()
         request = self.request_factory.get()
 
@@ -34,7 +34,7 @@ class TestSchoolDetail(TestCase):
         self.assertEqual(school, context["school"])
 
     @mock.patch("conductor.planner.views.render")
-    def test_authenticated_teplate(self, render):
+    def test_authenticated_teplate(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         school = self.SchoolFactory.create()
         request = self.request_factory.authenticated_get(user)
@@ -45,7 +45,7 @@ class TestSchoolDetail(TestCase):
         self.assertEqual("planner/school.html", template)
 
     @mock.patch("conductor.planner.views.render")
-    def test_unauthenticated_teplate(self, render):
+    def test_unauthenticated_teplate(self, render: mock.MagicMock) -> None:
         school = self.SchoolFactory.create()
         request = self.request_factory.get()
 
@@ -56,7 +56,7 @@ class TestSchoolDetail(TestCase):
 
 
 class TestAddStudent(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.add_student(request)
@@ -64,7 +64,7 @@ class TestAddStudent(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_get(self):
+    def test_get(self) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -73,7 +73,7 @@ class TestAddStudent(TestCase):
         self.assertEqual(200, response.status_code)
 
     @mock.patch("conductor.planner.views.render")
-    def test_has_form(self, render):
+    def test_has_form(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -83,7 +83,7 @@ class TestAddStudent(TestCase):
         self.assertIn("form", context)
 
     @mock.patch("conductor.planner.views.render")
-    def test_app_nav(self, render):
+    def test_app_nav(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.build()
         request = self.request_factory.authenticated_get(user)
 
@@ -92,7 +92,7 @@ class TestAddStudent(TestCase):
         context = render.call_args[0][2]
         self.assertEqual("add-student", context["app_nav"])
 
-    def test_success(self):
+    def test_success(self) -> None:
         semester = self.SemesterFactory.create()
         data = {
             "first_name": "Joe",
@@ -111,7 +111,7 @@ class TestAddStudent(TestCase):
         )
 
     @mock.patch("conductor.planner.views.render")
-    def test_failure(self, render):
+    def test_failure(self, render: mock.MagicMock) -> None:
         data: Dict[str, str] = {}
         user = self.UserFactory.create()
         request = self.request_factory.authenticated_post(user, data=data)
@@ -123,7 +123,7 @@ class TestAddStudent(TestCase):
 
 
 class TestStudentProfile(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.student_profile(request, 1)
@@ -131,7 +131,7 @@ class TestStudentProfile(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_valid(self):
+    def test_valid(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -140,7 +140,7 @@ class TestStudentProfile(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    def test_unauthorized_user(self):
+    def test_unauthorized_user(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory()
         request = self.request_factory.authenticated_get(user)
@@ -149,7 +149,7 @@ class TestStudentProfile(TestCase):
             views.student_profile(request, student.id)
 
     @mock.patch("conductor.planner.views.render")
-    def test_student_in_context(self, render):
+    def test_student_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -160,7 +160,7 @@ class TestStudentProfile(TestCase):
         self.assertEqual(student, context["student"])
 
     @mock.patch("conductor.planner.views.render")
-    def test_schools_in_context(self, render):
+    def test_schools_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         target_school = self.TargetSchoolFactory.create(student=student)
@@ -173,7 +173,7 @@ class TestStudentProfile(TestCase):
 
 
 class TestAddSchool(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.add_school(request, 1)
@@ -181,7 +181,7 @@ class TestAddSchool(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_valid_get(self):
+    def test_valid_get(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -190,7 +190,7 @@ class TestAddSchool(TestCase):
 
         self.assertEqual(200, response.status_code)
 
-    def test_valid_post(self):
+    def test_valid_post(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         school = self.SchoolFactory.create()
@@ -204,7 +204,7 @@ class TestAddSchool(TestCase):
             reverse("student-profile", args=[student.id]), response.get("Location")
         )
 
-    def test_unauthorized_user(self):
+    def test_unauthorized_user(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory()
         request = self.request_factory.authenticated_get(user)
@@ -213,7 +213,7 @@ class TestAddSchool(TestCase):
             views.add_school(request, student.id)
 
     @mock.patch("conductor.planner.views.render")
-    def test_student_in_context(self, render):
+    def test_student_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -224,7 +224,7 @@ class TestAddSchool(TestCase):
         self.assertEqual(student, context["student"])
 
     @mock.patch("conductor.planner.views.render")
-    def test_query_in_context(self, render):
+    def test_query_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         data = {"q": "University of Virginia"}
@@ -236,7 +236,7 @@ class TestAddSchool(TestCase):
         self.assertEqual("University of Virginia", context["q"])
 
     @mock.patch("conductor.planner.views.render")
-    def test_form_in_context(self, render):
+    def test_form_in_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -248,7 +248,7 @@ class TestAddSchool(TestCase):
 
 
 class TestExportSchedule(TestCase):
-    def test_requires_login(self):
+    def test_requires_login(self) -> None:
         request = self.request_factory.get()
 
         response = views.export_schedule(request, 1)
@@ -256,7 +256,7 @@ class TestExportSchedule(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("login"), response.get("Location"))
 
-    def test_unauthorized_user(self):
+    def test_unauthorized_user(self) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory()
         request = self.request_factory.authenticated_get(user)
@@ -265,7 +265,7 @@ class TestExportSchedule(TestCase):
             views.export_schedule(request, student.id)
 
     @mock.patch("conductor.planner.views.messages")
-    def test_no_google_auth(self, messages):
+    def test_no_google_auth(self, messages: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         request = self.request_factory.authenticated_get(user)
@@ -278,7 +278,9 @@ class TestExportSchedule(TestCase):
 
     @mock.patch("conductor.planner.views.messages")
     @mock.patch("conductor.planner.views.build_schedule")
-    def test_trigger_task(self, build_schedule, messages):
+    def test_trigger_task(
+        self, build_schedule: mock.MagicMock, messages: mock.MagicMock
+    ) -> None:
         user = self.UserFactory.create()
         self.GoogleDriveAuthFactory.create(user=user)
         student = self.StudentFactory(user=user)

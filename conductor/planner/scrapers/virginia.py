@@ -6,7 +6,7 @@ from conductor.planner.scrapers.base import Scraper
 class UVAScraper(Scraper):
     """Scraper for the University of Virginia"""
 
-    def scrape(self):
+    def scrape(self) -> None:
         with open("/home/matt/conductor/uva.html", "r") as f:
             text = f.read()
 
