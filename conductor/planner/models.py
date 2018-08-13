@@ -1,5 +1,5 @@
 import os
-from typing import Any, Dict, Optional
+from typing import Dict, Optional
 import uuid
 
 from django.conf import settings
@@ -61,7 +61,7 @@ class Milestone(models.Model):
         return "{:%-m/%-d/%y}".format(self.date)
 
 
-def school_image_path(instance: Any, filename: str) -> str:  # Should be School.
+def school_image_path(instance: "School", filename: str) -> str:
     """Give each school a namespace and version.
 
     The goal is to make the images have long expiration headers.
