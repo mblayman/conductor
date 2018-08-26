@@ -17,7 +17,7 @@ postgres:
   db: "{{ secrets.postgres.db }}"
   user: "{{ secrets.postgres.user }}"
   password: "{{ secrets.postgres.password }}"
-  storage_path: /var/lib/postgresql/9.5/main
+  storage_path: /var/lib/postgresql/10/main
 
 wale:
   s3_prefix: "s3://collegeconductor/pgbackups/{{ deployment }}"
