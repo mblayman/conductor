@@ -27,7 +27,7 @@
   become: yes
   template:
     src: postgresql.conf.j2
-    dest: /etc/postgresql/9.5/main/postgresql.conf
+    dest: /etc/postgresql/10/main/postgresql.conf
     owner: postgres
     group: postgres
     mode: 0644

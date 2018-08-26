@@ -2,12 +2,10 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "bento/ubuntu-16.04"
-  # XXX: Version 2.3.1 of the box was broken so I've pinned it for now.
-  config.vm.box_version = "< 2.3"
+  config.vm.box = "bento/ubuntu-18.04"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "512"
+    vb.memory = "1024"
   end
 
   config.vm.define "web01" do |web|
