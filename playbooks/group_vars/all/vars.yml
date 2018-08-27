@@ -22,7 +22,7 @@ postgres:
 wale:
   s3_prefix: "s3://collegeconductor/pgbackups/{{ deployment }}"
 
-cert_dir: "/etc/letsencrypt/live/{{ root_domain }}-0001"
+cert_dir: "/etc/letsencrypt/live/{{ root_domain }}"
 
 aws:
   access_key_id: "{{ vault.aws.access_key_id }}"

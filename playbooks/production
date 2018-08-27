@@ -1,17 +1,17 @@
 [dbservers]
-104.131.27.10
+209.97.148.154
 
 [loadbalancer]
-104.131.27.10
+209.97.148.154
 
 [messagingservers]
-104.131.27.10
+209.97.148.154
 
 [webservers]
-104.131.27.10
+209.97.148.154
 
 [workers]
-104.131.27.10
+209.97.148.154
 
 [production:children]
 dbservers
@@ -19,3 +19,6 @@ loadbalancer
 messagingservers
 webservers
 workers
+
+[production:vars]
+ansible_python_interpreter=/usr/bin/python3
