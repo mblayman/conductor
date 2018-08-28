@@ -92,13 +92,13 @@
 
 - name: Install frontend dependencies
   become: yes
-  command: npm install --unsafe-perm
+  command: npm ci --unsafe-perm
   args:
     chdir: "{{ frontend_path }}"
 
 - name: Build frontend
   become: yes
-  command: "npm run build"
+  command: npm run build
   args:
     chdir: "{{ frontend_path }}"
 

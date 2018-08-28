@@ -6,7 +6,7 @@
       become: yes
     - role: nodesource.node
       become: yes
-      nodejs_version: "9.x"
+      nodejs_version: "10.x"
     - role: Datadog.datadog
       datadog_api_key: "{{ datadog.api_key }}"
       when: deployment == "production"
