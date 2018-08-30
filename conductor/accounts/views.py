@@ -53,7 +53,7 @@ def authorize_google(request: HttpRequest) -> HttpResponseRedirect:
         redirect_uri=settings.GOOGLE_CLIENT_CONFIG["web"]["redirect_uris"][0],
     )
     authorization_url, state = flow.authorization_url(
-        access_type="offline", include_granted_scopes="true", prompt="consent"
+        access_type="offline", prompt="consent"
     )
     request.session["state"] = state
     return HttpResponseRedirect(authorization_url)
