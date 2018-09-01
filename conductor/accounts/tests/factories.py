@@ -25,3 +25,4 @@ class GoogleDriveAuthFactory(factory.django.DjangoModelFactory):
         model = models.GoogleDriveAuth
 
     user = factory.SubFactory(UserFactory)
+    refresh_token = factory.Sequence(lambda n: "refresh token {}".format(n))

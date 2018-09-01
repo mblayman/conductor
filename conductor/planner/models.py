@@ -10,8 +10,8 @@ from localflavor.us.models import USStateField
 from conductor.planner.managers import SchoolManager
 
 
-class ApplicationStatus(models.Model):
-    """An application status represents the artifact that is exported.
+class ApplicationSchedule(models.Model):
+    """An application schedule represents the artifact that is exported.
 
     This could be done to Google Sheets.
     """

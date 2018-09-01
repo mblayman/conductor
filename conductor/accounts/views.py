@@ -49,7 +49,7 @@ def authorize_google(request: HttpRequest) -> HttpResponseRedirect:
     """Build and present an auth URL to get permission to use Google Drive."""
     flow = Flow.from_client_config(
         settings.GOOGLE_CLIENT_CONFIG,
-        scopes=["https://www.googleapis.com/auth/drive.file"],
+        scopes=GoogleDriveAuth.SCOPES,
         redirect_uri=settings.GOOGLE_CLIENT_CONFIG["web"]["redirect_uris"][0],
     )
     authorization_url, state = flow.authorization_url(
@@ -73,7 +73,7 @@ def oauth2_callback(request: HttpRequest) -> HttpResponseRedirect:
     state = request.session.pop("state", "")
     flow = Flow.from_client_config(
         settings.GOOGLE_CLIENT_CONFIG,
-        scopes=["https://www.googleapis.com/auth/drive.file"],
+        scopes=GoogleDriveAuth.SCOPES,
         redirect_uri=settings.GOOGLE_CLIENT_CONFIG["web"]["redirect_uris"][0],
         state=state,
     )
@@ -81,10 +81,7 @@ def oauth2_callback(request: HttpRequest) -> HttpResponseRedirect:
 
     credentials = flow.credentials
     GoogleDriveAuth.objects.create(
-        user=request.user,
-        token=credentials.token,
-        refresh_token=credentials.refresh_token,
-        id_token=credentials.id_token,
+        user=request.user, refresh_token=credentials.refresh_token
     )
 
     return HttpResponseRedirect(reverse("settings"))

@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 
 from conductor.planner.models import (
+    ApplicationSchedule,
     Audit,
     Milestone,
     School,
@@ -9,6 +10,11 @@ from conductor.planner.models import (
     Student,
     TargetSchool,
 )
+
+
+@admin.register(ApplicationSchedule)
+class ApplicationScheduleAdmin(admin.ModelAdmin):
+    list_display = ("created_date",)
 
 
 @admin.register(Audit)

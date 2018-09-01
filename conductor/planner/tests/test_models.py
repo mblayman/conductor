@@ -71,18 +71,18 @@ class TestMilestone(TestCase):
         self.assertEqual("6/10/18", str(milestone))
 
 
-class TestApplicationStatus(TestCase):
+class TestApplicationSchedule(TestCase):
     def test_factory(self) -> None:
-        application_status = self.ApplicationStatusFactory.create()
+        application_schedule = self.ApplicationScheduleFactory.create()
 
-        self.assertIsNotNone(application_status.created_date)
-        self.assertIsNotNone(application_status.student)
+        self.assertIsNotNone(application_schedule.created_date)
+        self.assertIsNotNone(application_schedule.student)
 
     def test_has_student(self) -> None:
         student = self.StudentFactory.create()
-        application_status = self.ApplicationStatusFactory.create(student=student)
+        application_schedule = self.ApplicationScheduleFactory.create(student=student)
 
-        self.assertEqual(student, application_status.student)
+        self.assertEqual(student, application_schedule.student)
 
 
 class TestSchool(TestCase):

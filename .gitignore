@@ -82,7 +82,7 @@ assets/fonts
 assets/images/img
 assets/images/node_modules
 
-conductor/settings/_*.py
+config/settings/_*.py
 conductor/templates/sitemap.xml
 media
 

@@ -10,9 +10,9 @@ from conductor.planner.models import School
 fake = Factory.create()
 
 
-class ApplicationStatusFactory(factory.django.DjangoModelFactory):
+class ApplicationScheduleFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = "planner.ApplicationStatus"
+        model = "planner.ApplicationSchedule"
 
     student = factory.SubFactory("conductor.planner.tests.factories.StudentFactory")
 

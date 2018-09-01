@@ -156,9 +156,7 @@ class TestOauth2Callback(TestCase):
     @mock.patch("conductor.accounts.views.Flow")
     def test_get(self, Flow: mock.MagicMock) -> None:
         credentials = mock.Mock()
-        credentials.token = "fake_token"
         credentials.refresh_token = "fake_refresh_token"
-        credentials.id_token = "fake_id_token"
         flow = mock.Mock()
         flow.credentials = credentials
         Flow.from_client_config.return_value = flow
@@ -168,9 +166,7 @@ class TestOauth2Callback(TestCase):
         response = views.oauth2_callback(request)
 
         auth = GoogleDriveAuth.objects.get(user=user)
-        self.assertEqual("fake_token", auth.token)
         self.assertEqual("fake_refresh_token", auth.refresh_token)
-        self.assertEqual("fake_id_token", auth.id_token)
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("settings"), response.get("Location"))
 

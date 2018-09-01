@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Dict
 
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
@@ -6,6 +6,7 @@ from django.dispatch import receiver
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import ugettext_lazy as _
+from google.oauth2.credentials import Credentials
 
 
 class User(AbstractUser):
@@ -52,12 +53,28 @@ class GoogleDriveAuth(models.Model):
     to Google Sheets.
     """
 
+    SCOPES = ["https://www.googleapis.com/auth/drive.file"]
+
     created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         related_name="google_drive_authorizations",
         on_delete=models.CASCADE,
     )
-    token = models.TextField(help_text="For making Google drive requests")
     refresh_token = models.TextField(help_text="For renewing the token validity")
-    id_token = models.TextField(help_text="The Open ID Connect ID token")
+
+    @property
+    def credentials(self) -> Credentials:
+        """Get Google credentials."""
+        return Credentials.from_authorized_user_info(
+            self.authorized_user_info, scopes=self.SCOPES
+        )
+
+    @property
+    def authorized_user_info(self) -> Dict[str, str]:
+        """Get the authorized data required to generate valid credentials."""
+        return {
+            "refresh_token": self.refresh_token,
+            "client_id": settings.GOOGLE_CLIENT_CONFIG["web"]["client_id"],
+            "client_secret": settings.GOOGLE_CLIENT_CONFIG["web"]["client_secret"],
+        }

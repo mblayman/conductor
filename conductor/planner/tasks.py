@@ -5,7 +5,9 @@ from django.core.mail import EmailMessage
 from django.utils import timezone
 
 from conductor import celeryapp
-from conductor.planner.models import Audit, School
+from conductor.accounts.models import GoogleDriveAuth
+from conductor.planner.models import ApplicationSchedule, Audit, School, Student
+from conductor.vendor.services import GoogleGateway
 
 
 @celeryapp.task
@@ -28,3 +30,14 @@ def audit_school(school_id: int) -> None:
 @celeryapp.task
 def build_schedule(student_id: int) -> None:
     """Build a schedule and export it to Google Sheets."""
+    student = Student.objects.get(id=student_id)
+
+    auth = GoogleDriveAuth.objects.get(user=student.user_id)
+    credentials = auth.credentials
+    google_gateway = GoogleGateway(credentials)
+    google_gateway.generate_schedule(student)
+    ApplicationSchedule.objects.create(student=student)
+
+    # Update the refresh token in case it changed.
+    auth.refresh_token = credentials.refresh_token
+    auth.save()

@@ -6,7 +6,7 @@ from conductor.accounts.tests.factories import (
     UserFactory,
 )
 from conductor.planner.tests.factories import (
-    ApplicationStatusFactory,
+    ApplicationScheduleFactory,
     AuditFactory,
     MilestoneFactory,
     SchoolFactory,
@@ -27,7 +27,7 @@ class TestCase(test.TestCase):
     UserFactory = UserFactory
 
     # planner
-    ApplicationStatusFactory = ApplicationStatusFactory
+    ApplicationScheduleFactory = ApplicationScheduleFactory
     AuditFactory = AuditFactory
     MilestoneFactory = MilestoneFactory
     SchoolFactory = SchoolFactory

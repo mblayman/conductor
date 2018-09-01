@@ -64,20 +64,21 @@ class TestGoogleDriveAuth(TestCase):
 
         self.assertEqual(user, auth.user)
 
-    def test_has_token(self) -> None:
-        token = "fake_authorization_token"
-        auth = self.GoogleDriveAuthFactory.build(token=token)
-
-        self.assertEqual(token, auth.token)
-
     def test_has_refresh_token(self) -> None:
         refresh_token = "fake_authorization_refresh_token"
         auth = self.GoogleDriveAuthFactory.build(refresh_token=refresh_token)
 
         self.assertEqual(refresh_token, auth.refresh_token)
 
-    def test_has_id_token(self) -> None:
-        id_token = "fake_authorization_id_token"
-        auth = self.GoogleDriveAuthFactory.build(id_token=id_token)
+    def test_authorized_user_info(self) -> None:
+        """Authorized user info is in Google's expected format."""
+        auth = self.GoogleDriveAuthFactory.build()
 
-        self.assertEqual(id_token, auth.id_token)
+        expected_keys = ["client_id", "client_secret", "refresh_token"]
+        self.assertEqual(expected_keys, sorted(auth.authorized_user_info))
+
+    def test_credentials_has_scope(self) -> None:
+        """Credentials have the scope set."""
+        auth = self.GoogleDriveAuthFactory.build()
+
+        self.assertEqual(auth.SCOPES, auth.credentials.scopes)
