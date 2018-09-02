@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict
 
 from apiclient import discovery
 from google.oauth2.credentials import Credentials
@@ -56,7 +56,7 @@ class GoogleGateway:
         }
         sheets_client.spreadsheets().create(body=data).execute()
 
-    def build_header_row(self) -> List:
+    def build_header_row(self) -> Dict:
         """Build the header row of cells."""
         return {
             "values": [
