@@ -34,6 +34,7 @@ def build_schedule(student_id: int) -> None:
 
     auth = GoogleDriveAuth.objects.get(user=student.user_id)
     credentials = auth.credentials
+
     google_gateway = GoogleGateway(credentials)
     google_gateway.generate_schedule(student)
     ApplicationSchedule.objects.create(student=student)
