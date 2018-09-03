@@ -12,10 +12,12 @@ class TestGoogleGateway(TestCase):
 
         This is a maze.
         """
+        response = mock.MagicMock()
         self.spreadsheets = mock.Mock()
-        sheets_client = mock.Mock()
-        sheets_client.spreadsheets.return_value = self.spreadsheets
-        mock_discovery.build.return_value = sheets_client
+        self.spreadsheets.create.return_value = response
+        service = mock.Mock()
+        service.spreadsheets.return_value = self.spreadsheets
+        mock_discovery.build.return_value = service
 
     def get_create_data(self) -> Dict:
         """Get the data sent to create out of the mock."""
