@@ -94,12 +94,13 @@ class GoogleGateway:
         The create API isn't designed to work with ranges so this method sets
         the formatting of the newly created sheet.
         """
+        sheet_id = google_spreadsheet.sheet_id
         data = {
             "requests": [
                 # Set default font.
                 {
                     "repeatCell": {
-                        "range": {"sheetId": google_spreadsheet.sheet_id},
+                        "range": {"sheetId": sheet_id},
                         "cell": {
                             "userEnteredFormat": {
                                 "textFormat": {"fontFamily": "Average", "fontSize": 10}
@@ -111,10 +112,7 @@ class GoogleGateway:
                 # Update header row font properties.
                 {
                     "repeatCell": {
-                        "range": {
-                            "sheetId": google_spreadsheet.sheet_id,
-                            "endRowIndex": 1,
-                        },
+                        "range": {"sheetId": sheet_id, "endRowIndex": 1},
                         "cell": {
                             "userEnteredFormat": {
                                 "textFormat": {
@@ -127,15 +125,34 @@ class GoogleGateway:
                         "fields": "userEnteredFormat.textFormat(fontSize,bold,underline)",  # noqa
                     }
                 },
+                # Autoresize columns that are too narrow.
+                {
+                    "autoResizeDimensions": {
+                        "dimensions": {"sheetId": sheet_id, "dimension": "COLUMNS"}
+                    }
+                },
+                # Allow more space for the essay list prompts.
+                {
+                    "updateDimensionProperties": {
+                        "range": {
+                            "sheetId": sheet_id,
+                            "dimension": "COLUMNS",
+                            "startIndex": 6,
+                            "endIndex": 7,
+                        },
+                        "properties": {"pixelSize": 314},
+                        "fields": "pixelSize",
+                    }
+                },
                 # Border columns that need borders.
-                self.border_column_right(4, google_spreadsheet.sheet_id),
-                self.border_column_right(5, google_spreadsheet.sheet_id),
-                self.border_column_right(7, google_spreadsheet.sheet_id),
-                self.border_column_right(9, google_spreadsheet.sheet_id),
-                self.border_column_right(11, google_spreadsheet.sheet_id),
-                self.border_column_right(13, google_spreadsheet.sheet_id),
-                self.border_column_right(15, google_spreadsheet.sheet_id),
-                self.border_column_right(17, google_spreadsheet.sheet_id),
+                self.border_column_right(4, sheet_id),
+                self.border_column_right(5, sheet_id),
+                self.border_column_right(7, sheet_id),
+                self.border_column_right(9, sheet_id),
+                self.border_column_right(11, sheet_id),
+                self.border_column_right(13, sheet_id),
+                self.border_column_right(15, sheet_id),
+                self.border_column_right(17, sheet_id),
             ]
         }
         spreadsheets_resource.batchUpdate(
