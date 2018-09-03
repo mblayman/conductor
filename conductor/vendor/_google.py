@@ -23,6 +23,10 @@ SCHEDULE_HEADER_ROW = [
     "Transcript Status",
     "Test Scores",
     "Test Scores Status",
+    "Interview",
+    "Interview Status",
+    "Portfolio",
+    "Portfolio Status",
 ]
 
 
@@ -98,10 +102,7 @@ class GoogleGateway:
                         "range": {"sheetId": google_spreadsheet.sheet_id},
                         "cell": {
                             "userEnteredFormat": {
-                                "textFormat": {
-                                    "fontFamily": "Merriweather",
-                                    "fontSize": 10,
-                                }
+                                "textFormat": {"fontFamily": "Average", "fontSize": 10}
                             }
                         },
                         "fields": "userEnteredFormat.textFormat",
@@ -126,8 +127,33 @@ class GoogleGateway:
                         "fields": "userEnteredFormat.textFormat(fontSize,bold,underline)",  # noqa
                     }
                 },
+                # Border columns that need borders.
+                self.border_column_right(4, google_spreadsheet.sheet_id),
+                self.border_column_right(5, google_spreadsheet.sheet_id),
+                self.border_column_right(7, google_spreadsheet.sheet_id),
+                self.border_column_right(9, google_spreadsheet.sheet_id),
+                self.border_column_right(11, google_spreadsheet.sheet_id),
+                self.border_column_right(13, google_spreadsheet.sheet_id),
+                self.border_column_right(15, google_spreadsheet.sheet_id),
+                self.border_column_right(17, google_spreadsheet.sheet_id),
             ]
         }
         spreadsheets_resource.batchUpdate(
             spreadsheetId=google_spreadsheet.spreadsheet_id, body=data
         ).execute()
+
+    def border_column_right(self, column_index: int, sheet_id: int) -> Dict:
+        """Border the right side of a column."""
+        return {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startColumnIndex": column_index,
+                    "endColumnIndex": column_index + 1,
+                },
+                "cell": {
+                    "userEnteredFormat": {"borders": {"right": {"style": "SOLID"}}}
+                },
+                "fields": "userEnteredFormat.borders.right.style",  # noqa
+            }
+        }
