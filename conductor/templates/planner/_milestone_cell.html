@@ -1,3 +1,9 @@
 {% load planner_tags %}
 {% get_milestone_by_category category milestones as milestone %}
-<td>{{ milestone|default_if_none:'' }}</td>
+<td>
+  <span class="
+    {% if milestone in target_milestones %}
+      bg-primary text-white
+    {% endif %}
+    p-2">{{ milestone|default_if_none:'' }}</span>
+</td>

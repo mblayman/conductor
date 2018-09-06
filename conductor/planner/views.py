@@ -49,7 +49,17 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
     prefetch = Prefetch("milestones", queryset=Milestone.objects.filter(active=True))
     schools = schools.prefetch_related(prefetch).order_by("name")
 
-    context = {"Milestone": Milestone, "student": student, "schools": schools}
+    target_milestone_ids = student.schools.through.objects.values_list(
+        "milestones", flat=True
+    )
+    target_milestones = Milestone.objects.filter(id__in=target_milestone_ids)
+
+    context = {
+        "Milestone": Milestone,
+        "student": student,
+        "schools": schools,
+        "target_milestones": target_milestones,
+    }
     return render(request, "planner/student_profile.html", context)
 
 

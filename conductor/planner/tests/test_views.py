@@ -154,6 +154,8 @@ class TestStudentProfile(TestCase):
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         target_school = self.TargetSchoolFactory.create(student=student)
+        milestone = self.MilestoneFactory.create(school=target_school.school)
+        target_school.milestones.add(milestone)
         request = self.request_factory.authenticated_get(user)
 
         views.student_profile(request, student.id)
@@ -162,6 +164,7 @@ class TestStudentProfile(TestCase):
         self.assertEqual(Milestone, context["Milestone"])
         self.assertEqual(student, context["student"])
         self.assertEqual([target_school.school], list(context["schools"]))
+        self.assertEqual([milestone], list(context["target_milestones"]))
 
 
 class TestAddSchool(TestCase):

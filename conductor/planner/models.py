@@ -125,6 +125,7 @@ class Student(models.Model):
 class TargetSchool(models.Model):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    milestones = models.ManyToManyField(Milestone)
 
     class Meta:
         ordering = ("id",)
