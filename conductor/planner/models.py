@@ -1,10 +1,8 @@
 import os
-from typing import Dict, Optional
 import uuid
 
 from django.conf import settings
 from django.db import models
-from django.utils.functional import cached_property
 from localflavor.us.models import USStateField
 
 from conductor.planner.managers import SchoolManager
@@ -93,32 +91,6 @@ class School(models.Model):
 
     def __str__(self) -> str:
         return self.name
-
-    @cached_property
-    def milestones_dict(self) -> Dict[str, Milestone]:
-        """Get the active milestones keyed by category."""
-        milestones = self.milestones.filter(active=True).all()
-        return {milestone.category: milestone for milestone in milestones}
-
-    @property
-    def early_decision(self) -> Optional[Milestone]:
-        return self.milestones_dict.get(Milestone.EARLY_DECISION)
-
-    @property
-    def early_decision_2(self) -> Optional[Milestone]:
-        return self.milestones_dict.get(Milestone.EARLY_DECISION_2)
-
-    @property
-    def early_action(self) -> Optional[Milestone]:
-        return self.milestones_dict.get(Milestone.EARLY_ACTION)
-
-    @property
-    def restricted_early_action(self) -> Optional[Milestone]:
-        return self.milestones_dict.get(Milestone.RESTRICTED_EARLY_ACTION)
-
-    @property
-    def regular_decision(self) -> Optional[Milestone]:
-        return self.milestones_dict.get(Milestone.REGULAR_DECISION)
 
 
 class Semester(models.Model):

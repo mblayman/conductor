@@ -5,6 +5,7 @@ from django.http import Http404
 from django.urls import reverse
 
 from conductor.planner import views
+from conductor.planner.models import Milestone
 from conductor.tests import TestCase
 
 
@@ -149,18 +150,7 @@ class TestStudentProfile(TestCase):
             views.student_profile(request, student.id)
 
     @mock.patch("conductor.planner.views.render")
-    def test_student_in_context(self, render: mock.MagicMock) -> None:
-        user = self.UserFactory.create()
-        student = self.StudentFactory(user=user)
-        request = self.request_factory.authenticated_get(user)
-
-        views.student_profile(request, student.id)
-
-        context = render.call_args[0][2]
-        self.assertEqual(student, context["student"])
-
-    @mock.patch("conductor.planner.views.render")
-    def test_schools_in_context(self, render: mock.MagicMock) -> None:
+    def test_context(self, render: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         student = self.StudentFactory(user=user)
         target_school = self.TargetSchoolFactory.create(student=student)
@@ -169,6 +159,8 @@ class TestStudentProfile(TestCase):
         views.student_profile(request, student.id)
 
         context = render.call_args[0][2]
+        self.assertEqual(Milestone, context["Milestone"])
+        self.assertEqual(student, context["student"])
         self.assertEqual([target_school.school], list(context["schools"]))
 
 

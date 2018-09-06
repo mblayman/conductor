@@ -136,51 +136,6 @@ class TestSchool(TestCase):
 
         self.assertEqual(b"imagy stuff", school.image.read())
 
-    def test_early_decision(self) -> None:
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_DECISION
-        )
-
-        self.assertEqual(milestone, school.early_decision)
-
-    def test_early_decision_2(self) -> None:
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_DECISION_2
-        )
-
-        self.assertEqual(milestone, school.early_decision_2)
-
-    def test_restricted_early_action(self) -> None:
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.RESTRICTED_EARLY_ACTION
-        )
-
-        self.assertEqual(milestone, school.restricted_early_action)
-
-    def test_early_action(self) -> None:
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.EARLY_ACTION
-        )
-
-        self.assertEqual(milestone, school.early_action)
-
-    def test_regular_decision(self) -> None:
-        school = self.SchoolFactory.create()
-        milestone = self.MilestoneFactory.create(
-            school=school, category=Milestone.REGULAR_DECISION
-        )
-
-        self.assertEqual(milestone, school.regular_decision)
-
-    def test_missing_milestone(self) -> None:
-        school = self.SchoolFactory.create()
-
-        self.assertIsNone(school.early_decision)
-
 
 class TestSemester(TestCase):
     def test_factory(self) -> None:

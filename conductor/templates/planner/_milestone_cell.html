@@ -1,0 +1,3 @@
+{% load planner_tags %}
+{% get_milestone_by_category category milestones as milestone %}
+<td>{{ milestone|default_if_none:'' }}</td>

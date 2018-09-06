@@ -2,13 +2,13 @@ from typing import List, Union
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import QuerySet
+from django.db.models import Prefetch, QuerySet
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 
 from conductor.planner.forms import AddSchoolForm, AddStudentForm
-from conductor.planner.models import School
+from conductor.planner.models import Milestone, School
 from conductor.planner.tasks import build_schedule
 
 
@@ -44,8 +44,12 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
     student = get_object_or_404(
         request.user.students.select_related("matriculation_semester"), id=student_id
     )
-    schools = student.schools.all().order_by("name")
-    context = {"student": student, "schools": schools}
+
+    schools = student.schools.all()
+    prefetch = Prefetch("milestones", queryset=Milestone.objects.filter(active=True))
+    schools = schools.prefetch_related(prefetch).order_by("name")
+
+    context = {"Milestone": Milestone, "student": student, "schools": schools}
     return render(request, "planner/student_profile.html", context)
 
 
