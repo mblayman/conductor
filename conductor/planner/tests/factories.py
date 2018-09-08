@@ -34,7 +34,7 @@ class MilestoneFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = "planner.Milestone"
 
-    date = factory.Faker("date")
+    date = factory.Faker("date_object")
     school = factory.SubFactory(SchoolFactory)
 
 

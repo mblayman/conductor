@@ -1,3 +1,4 @@
+import json
 from typing import Dict
 from unittest import mock
 
@@ -291,3 +292,82 @@ class TestExportSchedule(TestCase):
         self.assertIn(
             reverse("student-profile", args=[student.id]), response.get("Location")
         )
+
+
+class TestSetStudentMilestone(TestCase):
+    def test_requires_login(self) -> None:
+        request = self.request_factory.post()
+
+        response = views.set_student_milestone(request, 1)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("login"), response.get("Location"))
+
+    def test_requires_post(self) -> None:
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.set_student_milestone(request, 1)
+
+        self.assertEqual(405, response.status_code)
+
+    def test_unauthorized_user(self) -> None:
+        user = self.UserFactory.create()
+        student = self.StudentFactory()
+        request = self.request_factory.authenticated_post(user)
+
+        with self.assertRaises(Http404):
+            views.set_student_milestone(request, student.id)
+
+    def test_no_milestone(self) -> None:
+        student = self.StudentFactory()
+        data = {"milestone": 1}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        with self.assertRaises(Http404):
+            views.set_student_milestone(request, student.id)
+
+    def test_no_target_school_for_student(self) -> None:
+        student = self.StudentFactory()
+        milestone = self.MilestoneFactory.create()
+        self.TargetSchoolFactory(school=milestone.school)
+        data = {"milestone": milestone.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        with self.assertRaises(Http404):
+            views.set_student_milestone(request, student.id)
+
+    def test_add_milestone(self) -> None:
+        """A milestone is added to a target school if it's not there."""
+        student = self.StudentFactory()
+        milestone = self.MilestoneFactory.create()
+        target_school = self.TargetSchoolFactory.create(
+            student=student, school=milestone.school
+        )
+        data = {"milestone": milestone.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        response = views.set_student_milestone(request, student.id)
+
+        self.assertEqual(200, response.status_code)
+        self.assertTrue(target_school.milestones.filter(id=milestone.id).exists())
+
+    def test_remove_milestone(self) -> None:
+        """A milestone is removed from a target school if it is there."""
+        student = self.StudentFactory()
+        milestone = self.MilestoneFactory.create()
+        target_school = self.TargetSchoolFactory.create(
+            student=student, school=milestone.school
+        )
+        target_school.milestones.add(milestone)
+        data = {"milestone": milestone.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        response = views.set_student_milestone(request, student.id)
+
+        self.assertEqual(200, response.status_code)
+        self.assertFalse(target_school.milestones.filter(id=milestone.id).exists())

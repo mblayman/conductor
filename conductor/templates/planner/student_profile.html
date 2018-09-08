@@ -68,6 +68,7 @@
 {% block entry %}
   <script>
     start('studentProfile', {
+      studentMilestonesUrl: '{% url "set-student-milestone" student.id %}'
     });
   </script>
 {% endblock %}

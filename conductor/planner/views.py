@@ -1,11 +1,13 @@
+import json
 from typing import List, Union
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Prefetch, QuerySet
-from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
+from django.views.decorators.http import require_POST
 
 from conductor.planner.forms import AddSchoolForm, AddStudentForm
 from conductor.planner.models import Milestone, School
@@ -49,9 +51,9 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
     prefetch = Prefetch("milestones", queryset=Milestone.objects.filter(active=True))
     schools = schools.prefetch_related(prefetch).order_by("name")
 
-    target_milestone_ids = student.schools.through.objects.values_list(
-        "milestones", flat=True
-    )
+    target_milestone_ids = student.schools.through.objects.filter(
+        student=student
+    ).values_list("milestones", flat=True)
     target_milestones = Milestone.objects.filter(id__in=target_milestone_ids)
 
     context = {
@@ -108,3 +110,27 @@ def export_schedule(request: HttpRequest, student_id: int) -> HttpResponseRedire
     )
     redirect_url = reverse("student-profile", args=[student.id])
     return HttpResponseRedirect(redirect_url)
+
+
+@login_required
+@require_POST
+def set_student_milestone(request: HttpRequest, student_id: int) -> JsonResponse:
+    """Set a milestone for a target school.
+
+    Add or remove the milestone depending on whether or not it is set.
+    """
+    student = get_object_or_404(request.user.students, id=student_id)
+    data = json.loads(request.body)
+    milestone = get_object_or_404(
+        Milestone.objects.all().select_related("school"), id=data["milestone"]
+    )
+
+    target_school = get_object_or_404(
+        student.schools.through, student=student, school=milestone.school
+    )
+    if target_school.milestones.filter(id=milestone.id).exists():
+        target_school.milestones.remove(milestone)
+    else:
+        target_school.milestones.add(milestone)
+
+    return JsonResponse({"status": "success"})
