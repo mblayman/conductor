@@ -48,7 +48,10 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
     )
 
     schools = student.schools.all()
-    prefetch = Prefetch("milestones", queryset=Milestone.objects.filter(active=True))
+    prefetch = Prefetch(
+        "milestones",
+        queryset=Milestone.objects.filter(semester=student.matriculation_semester),
+    )
     schools = schools.prefetch_related(prefetch).order_by("name")
 
     target_milestone_ids = student.schools.through.objects.filter(
