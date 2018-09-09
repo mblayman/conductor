@@ -128,9 +128,12 @@ def set_student_milestone(request: HttpRequest, student_id: int) -> JsonResponse
     target_school = get_object_or_404(
         student.schools.through, student=student, school=milestone.school
     )
+    action = ""
     if target_school.milestones.filter(id=milestone.id).exists():
         target_school.milestones.remove(milestone)
+        action = "remove"
     else:
         target_school.milestones.add(milestone)
+        action = "add"
 
-    return JsonResponse({"status": "success"})
+    return JsonResponse({"status": "success", "action": action})

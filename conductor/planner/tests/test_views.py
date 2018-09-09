@@ -354,6 +354,8 @@ class TestSetStudentMilestone(TestCase):
 
         self.assertEqual(200, response.status_code)
         self.assertTrue(target_school.milestones.filter(id=milestone.id).exists())
+        data = json.loads(response.content)
+        self.assertEqual("add", data["action"])
 
     def test_remove_milestone(self) -> None:
         """A milestone is removed from a target school if it is there."""
@@ -371,3 +373,5 @@ class TestSetStudentMilestone(TestCase):
 
         self.assertEqual(200, response.status_code)
         self.assertFalse(target_school.milestones.filter(id=milestone.id).exists())
+        data = json.loads(response.content)
+        self.assertEqual("remove", data["action"])

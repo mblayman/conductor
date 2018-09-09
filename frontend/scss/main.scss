@@ -306,6 +306,13 @@ table.dataTable thead .sorting_desc:before {
   font-family: FontAwesome;
 }
 
+.milestone-cell {
+  cursor: pointer;
+}
+.milestone-cell span {
+  transition: all 0.2s ease;
+}
+
 @media(max-width:460px) {
     .navbar-brand img {
       margin-left: 0;
