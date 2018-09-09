@@ -2,10 +2,10 @@ from collections import namedtuple
 from typing import Dict, List
 
 from apiclient import discovery
-from django.db.models import QuerySet
+from django.db.models import Prefetch, QuerySet
 from google.oauth2.credentials import Credentials
 
-from conductor.planner.models import Student, TargetSchool
+from conductor.planner.models import Milestone, Student, TargetSchool
 
 GoogleSpreadsheet = namedtuple(
     "GoogleSpreadsheet", ["spreadsheet_id", "sheet_id", "schools_count"]
@@ -59,6 +59,10 @@ class GoogleGateway:
         """Add the raw data to the sheet."""
         target_schools = TargetSchool.objects.filter(student=student)
         target_schools = target_schools.select_related("school")
+        prefetch = Prefetch(
+            "milestones", queryset=Milestone.objects.all().order_by("date")
+        )
+        target_schools = target_schools.prefetch_related(prefetch)
         target_schools = target_schools.order_by("school__name")
 
         row_data = [self.build_header_row()]
@@ -102,8 +106,28 @@ class GoogleGateway:
                     ]
                 }
             )
-            blank_rows = SCHOOL_GROUP_SIZE - 1
-            for _ in range(blank_rows):
+            remaining_rows = SCHOOL_GROUP_SIZE - 1
+
+            # Fill with each selected milestone.
+            for milestone in target_school.milestones.all():
+                school_rows.append(
+                    {
+                        "values": [
+                            {},
+                            {},
+                            {"userEnteredValue": {"stringValue": milestone.category}},
+                            {
+                                "userEnteredValue": {
+                                    "stringValue": "{:%B %-d}".format(milestone.date)
+                                }
+                            },
+                        ]
+                    }
+                )
+                remaining_rows -= 1
+
+            # Pad remaining slots.
+            for _ in range(remaining_rows):
                 school_rows.append(self.build_empty_row())
 
         return school_rows
