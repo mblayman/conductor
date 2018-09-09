@@ -54,6 +54,9 @@ class Milestone(models.Model):
     category = models.CharField(
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8
     )
+    semester = models.ForeignKey(
+        "Semester", null=True, related_name="milestones", on_delete=models.PROTECT
+    )
 
     def __str__(self) -> str:
         return "{:%-m/%-d/%y}".format(self.date)

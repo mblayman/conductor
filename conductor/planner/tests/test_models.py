@@ -64,6 +64,12 @@ class TestMilestone(TestCase):
 
         self.assertEqual(category, milestone.category)
 
+    def test_has_semester(self) -> None:
+        semester = self.SemesterFactory.create()
+        milestone = self.MilestoneFactory.build(semester=semester)
+
+        self.assertEqual(semester, milestone.semester)
+
     def test_str(self) -> None:
         date = datetime.date(2018, 6, 10)
         milestone = self.MilestoneFactory.build(date=date)
