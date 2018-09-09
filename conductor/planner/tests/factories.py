@@ -36,6 +36,7 @@ class MilestoneFactory(factory.django.DjangoModelFactory):
 
     date = factory.Faker("date_object")
     school = factory.SubFactory(SchoolFactory)
+    semester = factory.SubFactory("conductor.planner.tests.factories.SemesterFactory")
 
 
 class AuditFactory(factory.django.DjangoModelFactory):

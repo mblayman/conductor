@@ -55,7 +55,7 @@ class Milestone(models.Model):
         choices=CATEGORY_CHOICES, default=REGULAR_DECISION, max_length=8
     )
     semester = models.ForeignKey(
-        "Semester", null=True, related_name="milestones", on_delete=models.PROTECT
+        "Semester", related_name="milestones", on_delete=models.PROTECT
     )
 
     def __str__(self) -> str:
