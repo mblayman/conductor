@@ -38,8 +38,8 @@
               <td><a href="{% url "school-detail" school.slug %}">{{ school }}</a></td>
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_DECISION milestones=school.milestones.all %}
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_DECISION_2 milestones=school.milestones.all %}
-              {% include "planner/_milestone_cell.html" with category=Milestone.RESTRICTED_EARLY_ACTION milestones=school.milestones.all %}
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_ACTION milestones=school.milestones.all %}
+              {% include "planner/_milestone_cell.html" with category=Milestone.RESTRICTED_EARLY_ACTION milestones=school.milestones.all %}
               {% include "planner/_milestone_cell.html" with category=Milestone.REGULAR_DECISION milestones=school.milestones.all %}
             </tr>
           {% endfor %}
