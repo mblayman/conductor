@@ -29,6 +29,7 @@ class Audit(models.Model):
 
     created_date = models.DateTimeField(auto_now_add=True)
     school = models.ForeignKey("School", on_delete=models.CASCADE)
+    semester = models.ForeignKey("Semester", on_delete=models.CASCADE)
     status = models.CharField(choices=STATUS_CHOICES, default=PENDING, max_length=8)
 
 

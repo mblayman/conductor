@@ -20,7 +20,7 @@ class AddSchoolForm(forms.Form):
         school = School.objects.get(id=school_id)
         if TargetSchool.objects.filter(student=self.student, school=school).exists():
             raise forms.ValidationError(
-                "{} is already on the student’s list.".format(school.name)
+                f"{school.name} is already on the student’s list."
             )
         return school
 
@@ -28,7 +28,7 @@ class AddSchoolForm(forms.Form):
         """Create a target school for the student."""
         school = self.cleaned_data["school"]
         TargetSchool.objects.create(student=self.student, school=school)
-        tasks.audit_school.delay(school.id)
+        tasks.audit_school.delay(school.id, self.student.matriculation_semester_id)
 
 
 class AddStudentForm(forms.Form):

@@ -44,6 +44,7 @@ class AuditFactory(factory.django.DjangoModelFactory):
         model = "planner.Audit"
 
     school = factory.SubFactory(SchoolFactory)
+    semester = factory.SubFactory("conductor.planner.tests.factories.SemesterFactory")
 
 
 class SemesterFactory(factory.django.DjangoModelFactory):

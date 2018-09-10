@@ -6,22 +6,29 @@ from django.utils import timezone
 
 from conductor import celeryapp
 from conductor.accounts.models import GoogleDriveAuth
-from conductor.planner.models import ApplicationSchedule, Audit, School, Student
+from conductor.planner.models import (
+    ApplicationSchedule,
+    Audit,
+    School,
+    Semester,
+    Student,
+)
 from conductor.vendor.services import GoogleGateway
 
 
 @celeryapp.task
-def audit_school(school_id: int) -> None:
+def audit_school(school_id: int, semester_id: int) -> None:
     """Audit a school if it has not been recently audited."""
     audit_window = timezone.now() - datetime.timedelta(days=90)
     if not Audit.objects.filter(
-        created_date__gt=audit_window, school_id=school_id
+        created_date__gt=audit_window, school_id=school_id, semester_id=semester_id
     ).exists():
-        Audit.objects.create(school_id=school_id)
+        Audit.objects.create(school_id=school_id, semester_id=semester_id)
         school = School.objects.get(id=school_id)
+        semester = Semester.objects.get(id=semester_id)
         email = EmailMessage(
-            u"An audit of {} is required".format(school.name),
-            u"Time to make the donuts",
+            f"An audit of {school.name} is required for {semester}",
+            "Time to make the donuts",
             to=[settings.CONDUCTOR_EMAIL],
         )
         email.send()

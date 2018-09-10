@@ -35,7 +35,9 @@ class TestAddSchoolForm(TestCase):
         form.save()
 
         self.assertEqual([school], list(student.schools.all()))
-        tasks.audit_school.delay.assert_called_once_with(school.id)
+        tasks.audit_school.delay.assert_called_once_with(
+            school.id, student.matriculation_semester_id
+        )
 
 
 class TestAddStudentForm(TestCase):
