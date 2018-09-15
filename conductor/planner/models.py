@@ -90,6 +90,13 @@ class School(models.Model):
         null=True,
         blank=True,
     )
+    ipeds_id = models.CharField(
+        unique=True,
+        null=True,
+        blank=True,
+        max_length=8,
+        help_text="The school's IPEDS ID from the Department of Education",
+    )
 
     objects = SchoolManager()
 

@@ -142,6 +142,12 @@ class TestSchool(TestCase):
 
         self.assertEqual(b"imagy stuff", school.image.read())
 
+    def test_has_ipeds_id(self) -> None:
+        ipeds_id = "123456"
+        school = self.SchoolFactory.build(ipeds_id=ipeds_id)
+
+        self.assertEqual(ipeds_id, school.ipeds_id)
+
 
 class TestSemester(TestCase):
     def test_factory(self) -> None:
