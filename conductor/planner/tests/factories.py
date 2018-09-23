@@ -5,7 +5,7 @@ import factory
 from faker import Factory
 
 from conductor.accounts.tests.factories import UserFactory
-from conductor.planner.models import School
+from conductor.planner.models import School, SchoolApplication
 
 fake = Factory.create()
 
@@ -28,6 +28,14 @@ class SchoolFactory(factory.django.DjangoModelFactory):
     url = factory.Faker("url")
     milestones_url = factory.Faker("url")
     image = factory.django.FileField()
+
+
+class SchoolApplicationFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = "planner.SchoolApplication"
+
+    school = factory.SubFactory(SchoolFactory)
+    application_type = SchoolApplication.SCHOOL_BASED_APPLICATION
 
 
 class MilestoneFactory(factory.django.DjangoModelFactory):

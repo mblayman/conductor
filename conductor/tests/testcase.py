@@ -10,6 +10,7 @@ from conductor.planner.tests.factories import (
     AuditFactory,
     MilestoneFactory,
     SchoolFactory,
+    SchoolApplicationFactory,
     SemesterFactory,
     StudentFactory,
     TargetSchoolFactory,
@@ -31,6 +32,7 @@ class TestCase(test.TestCase):
     AuditFactory = AuditFactory
     MilestoneFactory = MilestoneFactory
     SchoolFactory = SchoolFactory
+    SchoolApplicationFactory = SchoolApplicationFactory
     SemesterFactory = SemesterFactory
     StudentFactory = StudentFactory
     TargetSchoolFactory = TargetSchoolFactory

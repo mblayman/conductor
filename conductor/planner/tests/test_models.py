@@ -3,7 +3,7 @@ import datetime
 from django.db import models
 
 from conductor.tests import TestCase
-from conductor.planner.models import Audit, Milestone
+from conductor.planner.models import Audit, Milestone, SchoolApplication
 
 
 class TestAudit(TestCase):
@@ -147,6 +147,22 @@ class TestSchool(TestCase):
         school = self.SchoolFactory.build(ipeds_id=ipeds_id)
 
         self.assertEqual(ipeds_id, school.ipeds_id)
+
+
+class TestSchoolApplication(TestCase):
+    def test_has_school(self):
+        school = self.SchoolFactory.create()
+        school_application = self.SchoolApplicationFactory.create(school=school)
+
+        self.assertEqual(school, school_application.school)
+
+    def test_has_application_type(self):
+        application_type = SchoolApplication.SCHOOL_BASED_APPLICATION
+        school_application = self.SchoolApplicationFactory.create(
+            application_type=application_type
+        )
+
+        self.assertEqual(application_type, school_application.application_type)
 
 
 class TestSemester(TestCase):

@@ -6,6 +6,7 @@ from conductor.planner.models import (
     Audit,
     Milestone,
     School,
+    SchoolApplication,
     Semester,
     Student,
     TargetSchool,
@@ -45,6 +46,11 @@ class SchoolAdmin(admin.ModelAdmin):
     search_fields = ["name"]
 
     inlines = [MilestoneInline]
+
+
+@admin.register(SchoolApplication)
+class SchoolApplicationAdmin(admin.ModelAdmin):
+    list_display = ("school", "application_type")
 
 
 @admin.register(Semester)

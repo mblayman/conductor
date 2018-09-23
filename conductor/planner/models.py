@@ -104,6 +104,26 @@ class School(models.Model):
         return self.name
 
 
+class SchoolApplication(models.Model):
+    """The school application represents what types of application a school accepts."""
+
+    COMMON_APP = 0
+    COALITION_APPLICATION = 1
+    UNIVERSAL_COLLEGE_APPLICATION = 2
+    SCHOOL_BASED_APPLICATION = 3
+    APPLICATION_TYPE_CHOICES = (
+        (COMMON_APP, "Common App"),
+        (COALITION_APPLICATION, "Coalition Application"),
+        (UNIVERSAL_COLLEGE_APPLICATION, "Universal College Application"),
+        (SCHOOL_BASED_APPLICATION, "School Based Application"),
+    )
+
+    school = models.ForeignKey(
+        School, related_name="applications", on_delete=models.CASCADE
+    )
+    application_type = models.IntegerField(choices=APPLICATION_TYPE_CHOICES)
+
+
 class Semester(models.Model):
     active = models.BooleanField(default=True)
     date = models.DateField()
