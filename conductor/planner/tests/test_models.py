@@ -150,13 +150,13 @@ class TestSchool(TestCase):
 
 
 class TestSchoolApplication(TestCase):
-    def test_has_school(self):
+    def test_has_school(self) -> None:
         school = self.SchoolFactory.create()
         school_application = self.SchoolApplicationFactory.create(school=school)
 
         self.assertEqual(school, school_application.school)
 
-    def test_has_application_type(self):
+    def test_has_application_type(self) -> None:
         application_type = SchoolApplication.SCHOOL_BASED_APPLICATION
         school_application = self.SchoolApplicationFactory.create(
             application_type=application_type
