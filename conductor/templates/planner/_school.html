@@ -12,6 +12,9 @@
     <div class="col-sm-9">
       <h2 class="text-center text-primary text-lg-left">{{ school }}</h2>
       <p><a href="{{ school.url }}" target="_blank">School Website</a></p>
+      {% if school.ipeds_id %}
+        <p><a href="https://nces.ed.gov/collegenavigator/?id={{ school.ipeds_id }}" target="_blank">College Navigator Profile</a></p>
+      {% endif %}
       {% if school.city %}
         <p><strong>Location:</strong> {{ school.city }}, {{ school.state }}</p>
       {% endif %}
