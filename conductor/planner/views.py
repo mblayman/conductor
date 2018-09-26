@@ -174,3 +174,32 @@ def set_student_milestone(request: HttpRequest, student_id: int) -> JsonResponse
         action = "add"
 
     return JsonResponse({"status": "success", "action": action})
+
+
+@login_required
+@require_POST
+def set_student_school_application(
+    request: HttpRequest, student_id: int
+) -> JsonResponse:
+    """Set a school application for a target school.
+
+    Add or remove the school application depending on whether or not it is set.
+    """
+    student = get_object_or_404(request.user.students, id=student_id)
+    data = json.loads(request.body)
+    school_application = get_object_or_404(
+        SchoolApplication, id=data["school_application"]
+    )
+    target_school = get_object_or_404(
+        student.schools.through, student=student, school_id=school_application.school_id
+    )
+    action = ""
+    if target_school.school_application_id == school_application.id:
+        target_school.school_application = None
+        target_school.save()
+        action = "remove"
+    else:
+        target_school.school_application = school_application
+        target_school.save()
+        action = "add"
+    return JsonResponse({"status": "success", "action": action})

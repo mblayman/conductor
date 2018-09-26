@@ -20,6 +20,7 @@ from conductor.planner.views import (
     export_schedule,
     school_detail,
     set_student_milestone,
+    set_student_school_application,
     student_profile,
 )
 
@@ -51,6 +52,11 @@ urlpatterns = [
         "students/<int:student_id>/milestones/",
         set_student_milestone,
         name="set-student-milestone",
+    ),
+    path(
+        "students/<int:student_id>/school-applications/",
+        set_student_school_application,
+        name="set-student-school-application",
     ),
     path("accounts/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),

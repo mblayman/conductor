@@ -427,3 +427,87 @@ class TestSetStudentMilestone(TestCase):
         self.assertFalse(target_school.milestones.filter(id=milestone.id).exists())
         data = json.loads(response.content)
         self.assertEqual("remove", data["action"])
+
+
+class TestSetSchoolApplication(TestCase):
+    def test_requires_login(self) -> None:
+        request = self.request_factory.post()
+
+        response = views.set_student_school_application(request, 1)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("login"), response.get("Location"))
+
+    def test_requires_post(self) -> None:
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.set_student_school_application(request, 1)
+
+        self.assertEqual(405, response.status_code)
+
+    def test_unauthorized_user(self) -> None:
+        user = self.UserFactory.create()
+        student = self.StudentFactory()
+        request = self.request_factory.authenticated_post(user)
+
+        with self.assertRaises(Http404):
+            views.set_student_school_application(request, student.id)
+
+    def test_no_school_application(self) -> None:
+        student = self.StudentFactory()
+        data = {"school_application": 1}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        with self.assertRaises(Http404):
+            views.set_student_school_application(request, student.id)
+
+    def test_no_target_school_for_student(self) -> None:
+        student = self.StudentFactory()
+        school_application = self.SchoolApplicationFactory.create()
+        self.TargetSchoolFactory(school=school_application.school)
+        data = {"school_application": school_application.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        with self.assertRaises(Http404):
+            views.set_student_school_application(request, student.id)
+
+    def test_add_school_application(self) -> None:
+        student = self.StudentFactory()
+        school_application = self.SchoolApplicationFactory.create()
+        target_school = self.TargetSchoolFactory(
+            student=student, school=school_application.school
+        )
+        data = {"school_application": school_application.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        response = views.set_student_school_application(request, student.id)
+
+        self.assertEqual(200, response.status_code)
+        target_school.refresh_from_db()
+        self.assertEqual(school_application, target_school.school_application)
+        data = json.loads(response.content)
+        self.assertEqual("add", data["action"])
+
+    def test_remove_school_application(self) -> None:
+        student = self.StudentFactory()
+        school_application = self.SchoolApplicationFactory.create()
+        target_school = self.TargetSchoolFactory(
+            student=student,
+            school=school_application.school,
+            school_application=school_application,
+        )
+        data = {"school_application": school_application.id}
+        request = self.request_factory.authenticated_post(student.user)
+        request._body = json.dumps(data)
+
+        response = views.set_student_school_application(request, student.id)
+
+        self.assertEqual(200, response.status_code)
+        target_school.refresh_from_db()
+        self.assertIsNone(target_school.school_application)
+        data = json.loads(response.content)
+        self.assertEqual("remove", data["action"])
