@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import json
-from typing import List, Union
+from typing import Dict, List, Union
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -69,7 +69,7 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
 
     # Group the schools by application type and order them
     # with the most prevalent first.
-    schools_by_application_type = {
+    schools_by_application_type: Dict[str, List[Dict]] = {
         application_type[1]: []
         for application_type in SchoolApplication.APPLICATION_TYPE_CHOICES
     }

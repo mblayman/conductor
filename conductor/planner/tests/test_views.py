@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import json
-from typing import Dict
+from typing import Dict, List
 from unittest import mock
 
 from django.http import Http404
@@ -205,7 +205,7 @@ class TestStudentProfile(TestCase):
         views.student_profile(request, student.id)
 
         context = render.call_args[0][2]
-        expected_data = OrderedDict()
+        expected_data: Dict[str, List[Dict]] = OrderedDict()
         expected_data["School Based Application"] = [
             {"school": school_1, "no_app_selected": False, "selected": True},
             {"school": school_2, "no_app_selected": False, "selected": True},
