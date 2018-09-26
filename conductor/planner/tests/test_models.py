@@ -254,6 +254,7 @@ class TestTargetSchool(TestCase):
 
         self.assertIsNotNone(target_school.school)
         self.assertIsNotNone(target_school.student)
+        self.assertIsNone(target_school.school_application)
 
     def test_has_school(self) -> None:
         school = self.SchoolFactory.create()
@@ -266,3 +267,11 @@ class TestTargetSchool(TestCase):
         target_school = self.TargetSchoolFactory.build(student=student)
 
         self.assertEqual(student, target_school.student)
+
+    def test_has_school_application(self) -> None:
+        school_application = self.SchoolApplicationFactory.create()
+        target_school = self.TargetSchoolFactory.create(
+            school_application=school_application
+        )
+
+        self.assertEqual(school_application, target_school.school_application)
