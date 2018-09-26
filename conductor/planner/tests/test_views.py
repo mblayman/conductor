@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import json
 from typing import Dict
 from unittest import mock
@@ -6,7 +7,7 @@ from django.http import Http404
 from django.urls import reverse
 
 from conductor.planner import views
-from conductor.planner.models import Milestone
+from conductor.planner.models import Milestone, SchoolApplication
 from conductor.tests import TestCase
 
 
@@ -166,6 +167,57 @@ class TestStudentProfile(TestCase):
         self.assertEqual(student, context["student"])
         self.assertEqual([target_school.school], list(context["schools"]))
         self.assertEqual([milestone], list(context["target_milestones"]))
+
+    @mock.patch("conductor.planner.views.render")
+    def test_schools_by_application_type(self, render: mock.MagicMock) -> None:
+        """Order the schools by what application types are available.
+
+        * The application type with the most schools will be ordered first.
+        * The school will only be selected for one app type.
+        * The student may also have no selected app type yet.
+        """
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        school_1 = self.SchoolFactory.create(name="A University")
+        school_application_1 = self.SchoolApplicationFactory.create(
+            school=school_1, application_type=SchoolApplication.SCHOOL_BASED_APPLICATION
+        )
+        self.TargetSchoolFactory.create(
+            student=student, school_application=school_application_1, school=school_1
+        )
+        self.SchoolApplicationFactory.create(
+            school=school_1, application_type=SchoolApplication.COMMON_APP
+        )
+        school_2 = self.SchoolFactory.create(name="B University")
+        school_application_2 = self.SchoolApplicationFactory.create(
+            school=school_2, application_type=SchoolApplication.SCHOOL_BASED_APPLICATION
+        )
+        self.TargetSchoolFactory.create(
+            student=student, school_application=school_application_2, school=school_2
+        )
+        school_3 = self.SchoolFactory.create(name="B University")
+        self.SchoolApplicationFactory.create(
+            school=school_3, application_type=SchoolApplication.COALITION_APPLICATION
+        )
+        self.TargetSchoolFactory.create(student=student, school=school_3)
+        request = self.request_factory.authenticated_get(user)
+
+        views.student_profile(request, student.id)
+
+        context = render.call_args[0][2]
+        expected_data = OrderedDict()
+        expected_data["School Based Application"] = [
+            {"school": school_1, "no_app_selected": False, "selected": True},
+            {"school": school_2, "no_app_selected": False, "selected": True},
+        ]
+        expected_data["Common App"] = [
+            {"school": school_1, "no_app_selected": False, "selected": False}
+        ]
+        expected_data["Coalition Application"] = [
+            {"school": school_3, "no_app_selected": True, "selected": False}
+        ]
+        expected_data["Universal College Application"] = []
+        self.assertEqual(expected_data, context["schools_by_application_type"])
 
 
 class TestAddSchool(TestCase):

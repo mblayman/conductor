@@ -46,6 +46,31 @@
         </tbody>
       </table>
     </div>
+
+    {% for application_type, app_schools in schools_by_application_type.items %}
+      {% if app_schools %}
+          <h5 class="mt-5">
+            {{ application_type }} Schools
+          </h5>
+          <hr>
+          <p>
+            {% for app_school in app_schools %}
+              {% if app_school.no_app_selected %}
+                <a href="#" class="btn btn-secondary">{{ app_school.school }}</a>
+              {% else %}
+                <a href="#" class="btn
+                  {% if app_school.selected %}
+                    btn-primary
+                  {% else %}
+                    btn-outline-secondary
+                  {% endif %}
+                  ">{{ app_school.school }}</a>
+              {% endif %}
+            {% endfor %}
+          </p>
+      {% endif %}
+    {% endfor %}
+
   {% else %}
     <div class="container-fluid px-0 pt-4">
       <div class="row justify-content-center">

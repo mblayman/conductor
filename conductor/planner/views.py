@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import json
 from typing import List, Union
 
@@ -10,7 +11,7 @@ from django.urls import reverse
 from django.views.decorators.http import require_POST
 
 from conductor.planner.forms import AddSchoolForm, AddStudentForm
-from conductor.planner.models import Milestone, School
+from conductor.planner.models import Milestone, School, SchoolApplication
 from conductor.planner.tasks import build_schedule
 
 
@@ -52,17 +53,50 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
         "milestones",
         queryset=Milestone.objects.filter(semester=student.matriculation_semester),
     )
-    schools = schools.prefetch_related(prefetch).order_by("name")
+    schools = schools.prefetch_related(prefetch, "applications").order_by("name")
 
     target_milestone_ids = student.schools.through.objects.filter(
         student=student
     ).values_list("milestones", flat=True)
     target_milestones = Milestone.objects.filter(id__in=target_milestone_ids)
 
+    target_school_applications_ids = student.schools.through.objects.filter(
+        student=student
+    ).values_list("school_application", flat=True)
+    target_school_applications = set(
+        SchoolApplication.objects.filter(id__in=target_school_applications_ids)
+    )
+
+    # Group the schools by application type and order them
+    # with the most prevalent first.
+    schools_by_application_type = {
+        application_type[1]: []
+        for application_type in SchoolApplication.APPLICATION_TYPE_CHOICES
+    }
+    for school in schools:
+        school_applications_set = set(school.applications.all())
+        # Check if the student has a selected application type for the school.
+        no_app_selected = target_school_applications.isdisjoint(school_applications_set)
+        for school_application in school.applications.all():
+            app_school = {
+                "school": school,
+                "no_app_selected": no_app_selected,
+                "selected": school_application in target_school_applications,
+            }
+            schools_by_application_type[
+                school_application.get_application_type_display()
+            ].append(app_school)
+    schools_by_application_type = OrderedDict(
+        sorted(
+            schools_by_application_type.items(), key=lambda x: len(x[1]), reverse=True
+        )
+    )
+
     context = {
         "Milestone": Milestone,
         "student": student,
         "schools": schools,
+        "schools_by_application_type": schools_by_application_type,
         "target_milestones": target_milestones,
     }
     return render(request, "planner/student_profile.html", context)
