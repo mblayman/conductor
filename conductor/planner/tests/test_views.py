@@ -185,7 +185,7 @@ class TestStudentProfile(TestCase):
         self.TargetSchoolFactory.create(
             student=student, school_application=school_application_1, school=school_1
         )
-        self.SchoolApplicationFactory.create(
+        school_application_1b = self.SchoolApplicationFactory.create(
             school=school_1, application_type=SchoolApplication.COMMON_APP
         )
         school_2 = self.SchoolFactory.create(name="B University")
@@ -196,7 +196,7 @@ class TestStudentProfile(TestCase):
             student=student, school_application=school_application_2, school=school_2
         )
         school_3 = self.SchoolFactory.create(name="B University")
-        self.SchoolApplicationFactory.create(
+        school_application_3 = self.SchoolApplicationFactory.create(
             school=school_3, application_type=SchoolApplication.COALITION_APPLICATION
         )
         self.TargetSchoolFactory.create(student=student, school=school_3)
@@ -207,14 +207,34 @@ class TestStudentProfile(TestCase):
         context = render.call_args[0][2]
         expected_data: Dict[str, List[Dict]] = OrderedDict()
         expected_data["School Based Application"] = [
-            {"school": school_1, "no_app_selected": False, "selected": True},
-            {"school": school_2, "no_app_selected": False, "selected": True},
+            {
+                "school": school_1,
+                "school_application": school_application_1,
+                "no_app_selected": False,
+                "selected": True,
+            },
+            {
+                "school": school_2,
+                "school_application": school_application_2,
+                "no_app_selected": False,
+                "selected": True,
+            },
         ]
         expected_data["Common App"] = [
-            {"school": school_1, "no_app_selected": False, "selected": False}
+            {
+                "school": school_1,
+                "school_application": school_application_1b,
+                "no_app_selected": False,
+                "selected": False,
+            }
         ]
         expected_data["Coalition Application"] = [
-            {"school": school_3, "no_app_selected": True, "selected": False}
+            {
+                "school": school_3,
+                "school_application": school_application_3,
+                "no_app_selected": True,
+                "selected": False,
+            }
         ]
         expected_data["Universal College Application"] = []
         self.assertEqual(expected_data, context["schools_by_application_type"])

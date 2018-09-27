@@ -48,6 +48,36 @@ function unlockMilestone(milestoneId) {
   lockedMilestones.splice(lockedMilestones.indexOf(milestoneId), 1);
 }
 
+function makeSendSchoolApplication(studentSchoolApplicationsUrl) {
+  return function(schoolApplicationId) {
+    schoolApplicationId = parseInt(schoolApplicationId, 10)
+    return fetch(studentSchoolApplicationsUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': utils.getCsrfToken()
+      },
+      body: JSON.stringify({'school_application': schoolApplicationId})
+    })
+    .then(checkStatus)
+    .then(parseJSON)
+  }
+}
+
+let lockedSchools = [];
+
+function isSchoolLocked(schoolId) {
+  return lockedSchools.includes(schoolId);
+}
+
+function lockSchool(schoolId) {
+  lockedSchools.push(schoolId);
+}
+
+function unlockSchool(schoolId) {
+  lockedSchools.splice(lockedSchools.indexOf(schoolId), 1);
+}
+
 export default function(data) {
   const sendMilestone = makeSendMilestone(data.studentMilestonesUrl);
 
@@ -71,6 +101,40 @@ export default function(data) {
   }
 
   on('click', '.milestone-cell', onMilestoneClick);
+
+  const sendSchoolApplication = makeSendSchoolApplication(data.studentSchoolApplicationsUrl);
+
+  function onSchoolApplicationClick(ev) {
+    ev.preventDefault();
+    const schoolId = this.dataset.school;
+    if (isSchoolLocked(schoolId)) {
+      return;
+    }
+    lockSchool(schoolId);
+
+    const schoolApplicationId = this.dataset.school_application;
+    sendSchoolApplication(schoolApplicationId)
+    .then(data => {
+      const schoolNodes = document.querySelectorAll(`.school-${schoolId}-btn`);
+      if (data.action === 'add') {
+        schoolNodes.forEach(schoolNode => {
+          schoolNode.classList.add('btn-outline-secondary');
+          schoolNode.classList.remove('btn-primary', 'btn-secondary');
+        });
+        // Style the button clicked as the new selected school application.
+        this.classList.add('btn-primary');
+        this.classList.remove('btn-secondary', 'btn-outline-secondary');
+      } else if (data.action === 'remove') {
+        schoolNodes.forEach(schoolNode => {
+          schoolNode.classList.add('btn-secondary');
+          schoolNode.classList.remove('btn-primary', 'btn-outline-secondary');
+        });
+      }
+      unlockSchool(schoolId);
+    });
+  }
+
+  on('click', '.school-application-btn', onSchoolApplicationClick);
 
   $('#schools').DataTable({
     info: false,

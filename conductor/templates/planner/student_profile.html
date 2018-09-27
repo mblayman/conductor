@@ -56,15 +56,23 @@
           <p>
             {% for app_school in app_schools %}
               {% if app_school.no_app_selected %}
-                <a href="#" class="btn btn-secondary">{{ app_school.school }}</a>
+                <a href="#" class="school-application-btn
+                  school-{{ app_school.school.id }}-btn btn btn-secondary"
+                  data-school="{{ app_school.school.id }}"
+                  data-school_application="{{ app_school.school_application.id }}"
+                >{{ app_school.school }}</a>
               {% else %}
-                <a href="#" class="btn
+                <a href="#" class="school-application-btn btn
+                  school-{{ app_school.school.id }}-btn
                   {% if app_school.selected %}
                     btn-primary
                   {% else %}
                     btn-outline-secondary
                   {% endif %}
-                  ">{{ app_school.school }}</a>
+                  "
+                  data-school="{{ app_school.school.id }}"
+                  data-school_application="{{ app_school.school_application.id }}"
+                >{{ app_school.school }}</a>
               {% endif %}
             {% endfor %}
           </p>
@@ -93,7 +101,8 @@
 {% block entry %}
   <script>
     start('studentProfile', {
-      studentMilestonesUrl: '{% url "set-student-milestone" student.id %}'
+      studentMilestonesUrl: '{% url "set-student-milestone" student.id %}',
+      studentSchoolApplicationsUrl: '{% url "set-student-school-application" student.id %}'
     });
   </script>
 {% endblock %}

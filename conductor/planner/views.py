@@ -80,6 +80,7 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
         for school_application in school.applications.all():
             app_school = {
                 "school": school,
+                "school_application": school_application,
                 "no_app_selected": no_app_selected,
                 "selected": school_application in target_school_applications,
             }
