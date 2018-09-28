@@ -3,7 +3,7 @@ import datetime
 from django.db import models
 
 from conductor.tests import TestCase
-from conductor.planner.models import Audit, Milestone, SchoolApplication
+from conductor.planner.models import Audit, Milestone, SchoolApplication, TargetSchool
 
 
 class TestAudit(TestCase):
@@ -246,6 +246,38 @@ class TestStudent(TestCase):
         student = self.StudentFactory.create(schools=(school,))
 
         self.assertEqual([school], list(student.schools.all()))
+
+
+class TestSoftDeleteModel(TestCase):
+    """Test SoftDeleteModel via TargetSchool.
+
+    SoftDeleteModel is abstract so it's easier to test through a model that uses it.
+    """
+
+    def test_initial_deleted_date(self) -> None:
+        target_school = self.TargetSchoolFactory.create()
+
+        self.assertIsNone(target_school.deleted_date)
+
+    def test_soft_deleted(self) -> None:
+        target_school = self.TargetSchoolFactory.create()
+        target_school_id = target_school.id
+
+        target_school.delete()
+
+        deleted_target_school = TargetSchool.all_objects.get(id=target_school_id)
+        self.assertIsNotNone(deleted_target_school.deleted_date)
+
+    def test_soft_deleted_bulk(self) -> None:
+        """Test that the queryset handles bulk deletion."""
+        self.TargetSchoolFactory.create()
+        self.TargetSchoolFactory.create()
+
+        TargetSchool.objects.all().delete()
+
+        self.assertEqual(
+            2, TargetSchool.all_objects.filter(deleted_date__isnull=False).count()
+        )
 
 
 class TestTargetSchool(TestCase):

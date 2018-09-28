@@ -5,6 +5,7 @@ from django.conf import settings
 from django.db import models
 from localflavor.us.models import USStateField
 
+from conductor.core.models import SoftDeleteModel
 from conductor.planner.managers import SchoolManager
 
 
@@ -153,7 +154,7 @@ class Student(models.Model):
         return "{} {}".format(self.first_name, self.last_name)
 
 
-class TargetSchool(models.Model):
+class TargetSchool(SoftDeleteModel):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     milestones = models.ManyToManyField(Milestone)
