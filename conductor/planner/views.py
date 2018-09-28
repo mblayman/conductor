@@ -10,7 +10,7 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
-from conductor.planner.forms import AddSchoolForm, AddStudentForm
+from conductor.planner.forms import AddSchoolForm, AddStudentForm, RemoveSchoolForm
 from conductor.planner.models import Milestone, School, SchoolApplication
 from conductor.planner.tasks import build_schedule
 
@@ -124,6 +124,30 @@ def add_school(request: HttpRequest, student_id: int) -> HttpResponse:
 
     context = {"q": query, "form": form, "schools": schools, "student": student}
     return render(request, "planner/add_school.html", context)
+
+
+@login_required
+@require_POST
+def remove_school(request: HttpRequest, student_id: int) -> HttpResponseRedirect:
+    """Remove a school from a student's list."""
+    student = get_object_or_404(request.user.students, id=student_id)
+
+    form = RemoveSchoolForm(student, data=request.POST)
+    if form.is_valid():
+        school = form.save()
+        messages.add_message(
+            request, messages.SUCCESS, f"We removed {school} from {student}’s list."
+        )
+    else:
+        messages.add_message(
+            request,
+            messages.ERROR,
+            "There was a problem removing the school. "
+            "Please contact us if the problem persists.",
+        )
+
+    redirect_url = reverse("student-profile", args=[student.id])
+    return HttpResponseRedirect(redirect_url)
 
 
 @login_required

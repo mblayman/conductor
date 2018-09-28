@@ -315,6 +315,64 @@ class TestAddSchool(TestCase):
         self.assertIn("form", context)
 
 
+class TestRemoveSchool(TestCase):
+    def test_requires_login(self) -> None:
+        request = self.request_factory.get()
+
+        response = views.remove_school(request, 1)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("login"), response.get("Location"))
+
+    def test_requires_post(self) -> None:
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.remove_school(request, 1)
+
+        self.assertEqual(405, response.status_code)
+
+    @mock.patch("conductor.planner.views.messages")
+    def test_valid_post(self, messages: mock.MagicMock) -> None:
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        school = self.SchoolFactory.create()
+        data = {"school": str(school.id)}
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.remove_school(request, student.id)
+
+        messages.add_message.assert_called_once_with(
+            request, messages.SUCCESS, mock.ANY
+        )
+        self.assertEqual(302, response.status_code)
+        self.assertIn(
+            reverse("student-profile", args=[student.id]), response.get("Location")
+        )
+
+    @mock.patch("conductor.planner.views.messages")
+    def test_invalid_post(self, messages: mock.MagicMock) -> None:
+        user = self.UserFactory.create()
+        student = self.StudentFactory(user=user)
+        request = self.request_factory.authenticated_post(user, data={})
+
+        response = views.remove_school(request, student.id)
+
+        messages.add_message.assert_called_once_with(request, messages.ERROR, mock.ANY)
+        self.assertEqual(302, response.status_code)
+        self.assertIn(
+            reverse("student-profile", args=[student.id]), response.get("Location")
+        )
+
+    def test_unauthorized_user(self) -> None:
+        user = self.UserFactory.create()
+        student = self.StudentFactory()
+        request = self.request_factory.authenticated_post(user, data={})
+
+        with self.assertRaises(Http404):
+            views.remove_school(request, student.id)
+
+
 class TestExportSchedule(TestCase):
     def test_requires_login(self) -> None:
         request = self.request_factory.get()

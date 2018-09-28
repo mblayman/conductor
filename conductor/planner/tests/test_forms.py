@@ -1,6 +1,6 @@
 from unittest import mock
 
-from conductor.planner.forms import AddSchoolForm, AddStudentForm
+from conductor.planner.forms import AddSchoolForm, AddStudentForm, RemoveSchoolForm
 from conductor.tests import TestCase
 
 
@@ -37,6 +37,32 @@ class TestAddSchoolForm(TestCase):
         self.assertEqual([school], list(student.schools.all()))
         tasks.audit_school.delay.assert_called_once_with(
             school.id, student.matriculation_semester_id
+        )
+
+
+class TestRemoveSchoolForm(TestCase):
+    def test_valid(self) -> None:
+        school = self.SchoolFactory.create()
+        student = self.StudentFactory.create()
+        data = {"school": str(school.id)}
+        form = RemoveSchoolForm(student, data=data)
+
+        self.assertTrue(form.is_valid())
+        self.assertEqual(school, form.cleaned_data["school"])
+
+    def test_save(self) -> None:
+        school = self.SchoolFactory.create()
+        student = self.StudentFactory.create()
+        self.TargetSchoolFactory.create(school=school, student=student)
+        data = {"school": str(school.id)}
+        form = RemoveSchoolForm(student, data=data)
+        self.assertTrue(form.is_valid())
+
+        cleaned_school = form.save()
+
+        self.assertEqual(school, cleaned_school)
+        self.assertEqual(
+            0, student.schools.through.objects.filter(student=student).count()
         )
 
 

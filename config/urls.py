@@ -18,6 +18,7 @@ from conductor.planner.views import (
     add_school,
     add_student,
     export_schedule,
+    remove_school,
     school_detail,
     set_student_milestone,
     set_student_school_application,
@@ -47,6 +48,9 @@ urlpatterns = [
     path("students/add/", add_student, name="add-student"),
     path("students/<int:student_id>/", student_profile, name="student-profile"),
     path("students/<int:student_id>/add-school/", add_school, name="add-school"),
+    path(
+        "students/<int:student_id>/remove-school/", remove_school, name="remove-school"
+    ),
     path("students/<int:student_id>/export/", export_schedule, name="export-schedule"),
     path(
         "students/<int:student_id>/milestones/",

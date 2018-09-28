@@ -31,6 +31,25 @@ class AddSchoolForm(forms.Form):
         tasks.audit_school.delay(school.id, self.student.matriculation_semester_id)
 
 
+class RemoveSchoolForm(forms.Form):
+    school = forms.IntegerField()
+
+    def __init__(self, student: Student, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
+        self.student = student
+
+    def clean_school(self) -> None:
+        """Get the school."""
+        school_id = self.cleaned_data.get("school")
+        return School.objects.get(id=school_id)
+
+    def save(self) -> School:
+        """Delete a target school for the student."""
+        school = self.cleaned_data["school"]
+        TargetSchool.objects.filter(student=self.student, school=school).delete()
+        return school
+
+
 class AddStudentForm(forms.Form):
     first_name = forms.CharField()
     last_name = forms.CharField()
