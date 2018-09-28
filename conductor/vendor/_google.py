@@ -58,7 +58,7 @@ class GoogleGateway:
     ) -> GoogleSpreadsheet:
         """Add the raw data to the sheet."""
         target_schools = TargetSchool.objects.filter(student=student)
-        target_schools = target_schools.select_related("school")
+        target_schools = target_schools.select_related("school", "school_application")
         prefetch = Prefetch(
             "milestones", queryset=Milestone.objects.all().order_by("date")
         )
@@ -99,13 +99,19 @@ class GoogleGateway:
         """Build the rows for each school."""
         school_rows = []
         for target_school in target_schools:
-            school_rows.append(
-                {
-                    "values": [
-                        {"userEnteredValue": {"stringValue": target_school.school.name}}
-                    ]
-                }
-            )
+            school_row = {
+                "values": [
+                    {"userEnteredValue": {"stringValue": target_school.school.name}}
+                ]
+            }
+            if target_school.school_application:
+                application_type = (
+                    target_school.school_application.get_application_type_display()
+                )
+                school_row["values"].append(
+                    {"userEnteredValue": {"stringValue": application_type}}
+                )
+            school_rows.append(school_row)
             remaining_rows = SCHOOL_GROUP_SIZE - 1
 
             # Fill with each selected milestone.

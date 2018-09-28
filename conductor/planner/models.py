@@ -107,15 +107,15 @@ class School(models.Model):
 class SchoolApplication(models.Model):
     """The school application represents what types of application a school accepts."""
 
-    COMMON_APP = 0
+    COMMON_APPLICATION = 0
     COALITION_APPLICATION = 1
     UNIVERSAL_COLLEGE_APPLICATION = 2
     SCHOOL_BASED_APPLICATION = 3
     APPLICATION_TYPE_CHOICES = (
-        (COMMON_APP, "Common App"),
+        (COMMON_APPLICATION, "Common Application"),
         (COALITION_APPLICATION, "Coalition Application"),
         (UNIVERSAL_COLLEGE_APPLICATION, "Universal College Application"),
-        (SCHOOL_BASED_APPLICATION, "School Based Application"),
+        (SCHOOL_BASED_APPLICATION, "School-Based Application"),
     )
 
     school = models.ForeignKey(

@@ -186,7 +186,7 @@ class TestStudentProfile(TestCase):
             student=student, school_application=school_application_1, school=school_1
         )
         school_application_1b = self.SchoolApplicationFactory.create(
-            school=school_1, application_type=SchoolApplication.COMMON_APP
+            school=school_1, application_type=SchoolApplication.COMMON_APPLICATION
         )
         school_2 = self.SchoolFactory.create(name="B University")
         school_application_2 = self.SchoolApplicationFactory.create(
