@@ -265,6 +265,8 @@ class TestSoftDeleteModel(TestCase):
 
         target_school.delete()
 
+        with self.assertRaises(TargetSchool.DoesNotExist):
+            TargetSchool.objects.get(id=target_school_id)
         deleted_target_school = TargetSchool.all_objects.get(id=target_school_id)
         self.assertIsNotNone(deleted_target_school.deleted_date)
 
