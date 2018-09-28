@@ -206,7 +206,7 @@ class TestStudentProfile(TestCase):
 
         context = render.call_args[0][2]
         expected_data: Dict[str, List[Dict]] = OrderedDict()
-        expected_data["School Based Application"] = [
+        expected_data["School-Based Application"] = [
             {
                 "school": school_1,
                 "school_application": school_application_1,
@@ -220,7 +220,7 @@ class TestStudentProfile(TestCase):
                 "selected": True,
             },
         ]
-        expected_data["Common App"] = [
+        expected_data["Common Application"] = [
             {
                 "school": school_1,
                 "school_application": school_application_1b,
