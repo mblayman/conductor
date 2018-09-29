@@ -141,4 +141,13 @@ export default function(data) {
     paging: false,
     searching: false
   });
+
+  $('[data-toggle="popover"]').popover();
+
+  function onClosePopover(ev) {
+    ev.preventDefault();
+    $(this).parents('.popover').popover('hide');
+  }
+
+  on('click', '.close-popover', onClosePopover);
 }

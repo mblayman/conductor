@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.db.models import QuerySet
+from django.http import HttpRequest
 from django.utils.html import format_html
 
 from conductor.planner.models import (
@@ -65,4 +67,7 @@ class StudentAdmin(admin.ModelAdmin):
 
 @admin.register(TargetSchool)
 class TargetSchoolAdmin(admin.ModelAdmin):
-    list_display = ("student", "school")
+    list_display = ("student", "school", "deleted_date")
+
+    def get_queryset(self, request: HttpRequest) -> QuerySet:
+        return self.model.all_objects.all()

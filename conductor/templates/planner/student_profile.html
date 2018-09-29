@@ -35,7 +35,17 @@
         <tbody>
           {% for school in schools %}
             <tr>
-              <td><a href="{% url "school-detail" school.slug %}">{{ school }}</a></td>
+              <td>
+                  <button type="button" class="btn btn-sm btn-outline-light border-0"
+                    data-container="body" data-toggle="popover"
+                    data-placement="bottom" data-html="true"
+                    data-title="Remove School"
+                    data-content="{% include "planner/_remove_school_popover.html" %}"
+                    style="margin-top: -6px;">
+                    <i class="fa fa-times"></i>
+                  </button>
+                  <a href="{% url "school-detail" school.slug %}">{{ school }}</a>
+              </td>
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_DECISION milestones=school.milestones.all %}
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_DECISION_2 milestones=school.milestones.all %}
               {% include "planner/_milestone_cell.html" with category=Milestone.EARLY_ACTION milestones=school.milestones.all %}

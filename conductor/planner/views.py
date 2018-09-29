@@ -48,21 +48,27 @@ def student_profile(request: HttpRequest, student_id: int) -> HttpResponse:
         request.user.students.select_related("matriculation_semester"), id=student_id
     )
 
-    schools = student.schools.all()
+    # The related manager doesn't handle soft deletes
+    # so `students.schools.all()` won't work to return only the schools
+    # that have a non-deleted target school.
+    # The only reliable way to do this is by getting the school IDs directly
+    # from the target school model.
+    target_schools = student.schools.through.objects.filter(student=student)
+    school_ids = target_schools.values_list("school", flat=True)
+
+    schools = student.schools.filter(id__in=school_ids)
     prefetch = Prefetch(
         "milestones",
         queryset=Milestone.objects.filter(semester=student.matriculation_semester),
     )
     schools = schools.prefetch_related(prefetch, "applications").order_by("name")
 
-    target_milestone_ids = student.schools.through.objects.filter(
-        student=student
-    ).values_list("milestones", flat=True)
+    target_milestone_ids = target_schools.values_list("milestones", flat=True)
     target_milestones = Milestone.objects.filter(id__in=target_milestone_ids)
 
-    target_school_applications_ids = student.schools.through.objects.filter(
-        student=student
-    ).values_list("school_application", flat=True)
+    target_school_applications_ids = target_schools.values_list(
+        "school_application", flat=True
+    )
     target_school_applications = set(
         SchoolApplication.objects.filter(id__in=target_school_applications_ids)
     )
@@ -136,7 +142,7 @@ def remove_school(request: HttpRequest, student_id: int) -> HttpResponseRedirect
     if form.is_valid():
         school = form.save()
         messages.add_message(
-            request, messages.SUCCESS, f"We removed {school} from {student}’s list."
+            request, messages.SUCCESS, f"We removed “{school}” from {student}’s list."
         )
     else:
         messages.add_message(

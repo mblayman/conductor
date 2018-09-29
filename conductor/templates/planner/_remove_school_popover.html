@@ -1,0 +1,13 @@
+<p>Are you sure you want to remove this school from the list?</p>
+<form action='{% url 'remove-school' student.id %}' method='POST'>
+  {% csrf_token %}
+  <input name='school' value='{{ school.id }}' type='hidden'>
+  <button type='submit' class='btn btn-sm btn-danger'
+    style='margin-top: -6px;'>
+    Remove
+  </button>
+  <button class='btn btn-sm btn-secondary close-popover'
+    style='margin-top: -6px;'>
+    Cancel
+  </button>
+</form>
