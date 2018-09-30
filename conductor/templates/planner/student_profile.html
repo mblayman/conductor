@@ -67,7 +67,7 @@
             {% for app_school in app_schools %}
               {% if app_school.no_app_selected %}
                 <a href="#" class="school-application-btn
-                  school-{{ app_school.school.id }}-btn btn btn-secondary"
+                  school-{{ app_school.school.id }}-btn btn btn-secondary mb-1"
                   data-school="{{ app_school.school.id }}"
                   data-school_application="{{ app_school.school_application.id }}"
                 >{{ app_school.school }}</a>
@@ -79,6 +79,7 @@
                   {% else %}
                     btn-outline-secondary
                   {% endif %}
+                  mb-1
                   "
                   data-school="{{ app_school.school.id }}"
                   data-school_application="{{ app_school.school_application.id }}"
