@@ -27,7 +27,16 @@ class AddSchoolForm(forms.Form):
     def save(self) -> None:
         """Create a target school for the student."""
         school = self.cleaned_data["school"]
-        TargetSchool.objects.create(student=self.student, school=school)
+        # Revive a target school if it was soft deleted.
+        target_school = TargetSchool.all_objects.filter(
+            student=self.student, school=school
+        ).first()
+        if target_school is None:
+            TargetSchool.objects.create(student=self.student, school=school)
+        else:
+            target_school.deleted_date = None
+            target_school.save()
+
         tasks.audit_school.delay(school.id, self.student.matriculation_semester_id)
 
 

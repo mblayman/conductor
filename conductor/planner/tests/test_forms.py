@@ -39,6 +39,21 @@ class TestAddSchoolForm(TestCase):
             school.id, student.matriculation_semester_id
         )
 
+    @mock.patch("conductor.planner.forms.tasks")
+    def test_save_with_soft_deleted(self, tasks: mock.MagicMock) -> None:
+        school = self.SchoolFactory.create()
+        student = self.StudentFactory.create()
+        target_school = self.TargetSchoolFactory.create(school=school, student=student)
+        target_school.delete()
+        data = {"school": str(school.id)}
+        form = AddSchoolForm(student, data=data)
+        self.assertTrue(form.is_valid())
+
+        form.save()
+
+        target_school.refresh_from_db()
+        self.assertIsNone(target_school.deleted_date)
+
 
 class TestRemoveSchoolForm(TestCase):
     def test_valid(self) -> None:
