@@ -116,6 +116,9 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesSto
 MEDIA_ROOT = "media"
 MEDIA_URL = "/media/"
 
+# The Sites framework is overkill. Set protocol+domain so Celery can make full links.
+DOMAIN = ""
+
 CELERY_BROKER_URL = "amqp://conductor:conductor@localhost:5672/conductor"
 
 ROLLBAR = {

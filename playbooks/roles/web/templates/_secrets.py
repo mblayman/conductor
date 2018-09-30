@@ -27,6 +27,8 @@ DATABASES = {
     }
 }
 
+DOMAIN = "https://{{ client_domain }}"
+
 GOOGLE_CLIENT_CONFIG = {
     "web": {
         "project_id": "{{ secrets.google.project_id }}",

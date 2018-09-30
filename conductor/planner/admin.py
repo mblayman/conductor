@@ -31,8 +31,17 @@ class MilestoneAdmin(admin.ModelAdmin):
     list_display = ("school", "date", "category")
 
 
+class AuditInline(admin.StackedInline):
+    model = Audit
+    extra = 0
+
+
 class MilestoneInline(admin.StackedInline):
     model = Milestone
+
+
+class SchoolApplicationInline(admin.StackedInline):
+    model = SchoolApplication
 
 
 @admin.register(School)
@@ -47,7 +56,7 @@ class SchoolAdmin(admin.ModelAdmin):
     ordering = ["id"]
     search_fields = ["name"]
 
-    inlines = [MilestoneInline]
+    inlines = [AuditInline, MilestoneInline, SchoolApplicationInline]
 
 
 @admin.register(SchoolApplication)

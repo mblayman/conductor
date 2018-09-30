@@ -2,6 +2,7 @@ import datetime
 
 from django.conf import settings
 from django.core.mail import EmailMessage
+from django.urls import reverse
 from django.utils import timezone
 
 from conductor import celeryapp
@@ -26,9 +27,12 @@ def audit_school(school_id: int, semester_id: int) -> None:
         Audit.objects.create(school_id=school_id, semester_id=semester_id)
         school = School.objects.get(id=school_id)
         semester = Semester.objects.get(id=semester_id)
+        school_url = "{}{}".format(
+            settings.DOMAIN, reverse("admin:planner_school_change", args=[school_id])
+        )
         email = EmailMessage(
             f"An audit of {school.name} is required for {semester}",
-            "Time to make the donuts",
+            f"Time to make the donuts\n\n{school_url}",
             to=[settings.CONDUCTOR_EMAIL],
         )
         email.send()
