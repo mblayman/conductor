@@ -4,5 +4,5 @@ from conductor.trackers.models import CommonAppTracker
 
 
 @admin.register(CommonAppTracker)
-class CommonAppTracker(admin.ModelAdmin):
+class CommonAppTrackerAdmin(admin.ModelAdmin):
     list_display = ("name",)
