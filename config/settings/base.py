@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "conductor.accounts.apps.AccountsConfig",
     "conductor.planner.apps.PlannerConfig",
     "conductor.support.apps.SupportConfig",
+    "conductor.trackers.apps.TrackersConfig",
     "conductor.vendor.apps.VendorConfig",
 ]
 
