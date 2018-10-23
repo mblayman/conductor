@@ -1,4 +1,9 @@
+from collections import namedtuple
+
 from django.db import models
+
+
+RawCommonAppSchool = namedtuple("RawCommonAppSchool", ["name", "slug"])
 
 
 class CommonAppTracker(models.Model):
