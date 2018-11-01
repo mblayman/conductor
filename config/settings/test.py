@@ -20,6 +20,8 @@ class DisableMigrations(object):
         return None
 
 
+EMAIL_BACKEND = "django.core.mail.backends.localmem.EmailBackend"
+
 MIGRATION_MODULES = DisableMigrations()
 
 # factory_boy creates a bunch of junk files for FileFields.
