@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 80px;
   padding-bottom: 50px;
   color: #f8f8f8;
-  background: url(../img/intro-bg.jpg) no-repeat center center $blue;
+  background: url(../img/intro-bg.jpg) no-repeat $blue;
   background-size: cover;
   position: relative;
 }
@@ -82,6 +82,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro-social-buttons i {
   font-size: 80%;
+}
+
+.cta {
+  text-align: center;
+  margin-top: -7em;
 }
 
 @media(max-width:767px) {
