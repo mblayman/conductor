@@ -32,9 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-header {
-  padding-top: 0;
+  padding-top: 80px;
   padding-bottom: 50px;
-  text-align: center;
   color: #f8f8f8;
   background: url(../img/intro-bg.jpg) no-repeat center center $blue;
   background-size: cover;
@@ -57,12 +56,17 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-top: 8%;
   padding-bottom: 7%;
+  padding-right: 47%;
 }
 
 .intro-message>h1 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em;
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+}
+.intro-message>p {
+  font-size: 1.2em;
 }
 
 .intro-divider {
@@ -83,9 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:767px) {
   .intro-message {
     padding-bottom: 15%;
-  }
-  .intro-message>h1 {
-    font-size: 3em;
+    padding-right: 0;
   }
   ul.intro-social-buttons>li {
     display: block;
