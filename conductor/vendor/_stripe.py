@@ -2,7 +2,6 @@ from django.conf import settings
 import stripe
 
 stripe.api_key = settings.STRIPE_API_KEY
-stripe.api_version = "2018-10-31"
 
 
 class StripeGateway:
