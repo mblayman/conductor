@@ -2,6 +2,7 @@ from django.conf import settings
 import stripe
 
 stripe.api_key = settings.STRIPE_API_KEY
+stripe.api_version = "2018-10-31"
 
 
 class StripeGateway:
@@ -15,8 +16,11 @@ class StripeGateway:
         """Add a user to Stripe and join them to the plan."""
         # Let this fail on purpose. If it fails, the error monitoring system
         # will log it and I'll learn how to harden it for the conductor env.
-        customer = stripe.Customer.create(
-            email=user.email, plan="monthly-14d-1", source=stripe_token
+        customer = stripe.Customer.create(email=user.email, source=stripe_token)
+        stripe.Subscription.create(
+            customer=customer.id,
+            items=[{"plan": settings.STRIPE_PLAN}],
+            trial_from_plan=True,
         )
         return customer.id
 

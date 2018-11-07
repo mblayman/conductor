@@ -12,5 +12,5 @@ google-auth-httplib2==0.0.3
 google-auth-oauthlib==0.2.0
 requests==2.9.1
 rollbar==0.14.0
-stripe==1.75.0
+stripe==2.11.0
 wal-e[aws]==1.0.3
