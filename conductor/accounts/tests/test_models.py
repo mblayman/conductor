@@ -85,25 +85,25 @@ class TestGoogleDriveAuth(TestCase):
 
 
 class TestProductPlan(TestCase):
-    def test_factory(self):
+    def test_factory(self) -> None:
         product_plan = self.ProductPlanFactory.create()
 
         self.assertFalse(product_plan.active)
         self.assertNotEqual("", product_plan.stripe_plan_id)
         self.assertEqual(0, product_plan.trial_days)
 
-    def test_has_stripe_plan_id(self):
+    def test_has_stripe_plan_id(self) -> None:
         stripe_plan_id = "fake-plan-id"
         product_plan = self.ProductPlanFactory.create(stripe_plan_id=stripe_plan_id)
 
         self.assertEqual(stripe_plan_id, product_plan.stripe_plan_id)
 
-    def test_has_active(self):
+    def test_has_active(self) -> None:
         product_plan = self.ProductPlanFactory.create(active=True)
 
         self.assertTrue(product_plan.active)
 
-    def test_has_trial_days(self):
+    def test_has_trial_days(self) -> None:
         trial_days = 30
         product_plan = self.ProductPlanFactory.create(trial_days=trial_days)
 
