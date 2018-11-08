@@ -26,3 +26,10 @@ class GoogleDriveAuthFactory(factory.django.DjangoModelFactory):
 
     user = factory.SubFactory(UserFactory)
     refresh_token = factory.Sequence(lambda n: "refresh token {}".format(n))
+
+
+class ProductPlanFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = models.ProductPlan
+
+    stripe_plan_id = factory.Sequence(lambda n: "plan_{}".format(n))

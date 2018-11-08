@@ -78,3 +78,10 @@ class GoogleDriveAuth(models.Model):
             "client_id": settings.GOOGLE_CLIENT_CONFIG["web"]["client_id"],
             "client_secret": settings.GOOGLE_CLIENT_CONFIG["web"]["client_secret"],
         }
+
+
+class ProductPlan(models.Model):
+    """A container referencing Stripe product plans."""
+
+    active = models.BooleanField(default=False)
+    stripe_plan_id = models.CharField(max_length=32)

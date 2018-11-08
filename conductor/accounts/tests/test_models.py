@@ -82,3 +82,22 @@ class TestGoogleDriveAuth(TestCase):
         auth = self.GoogleDriveAuthFactory.build()
 
         self.assertEqual(auth.SCOPES, auth.credentials.scopes)
+
+
+class TestProductPlan(TestCase):
+    def test_factory(self):
+        product_plan = self.ProductPlanFactory.create()
+
+        self.assertFalse(product_plan.active)
+        self.assertNotEqual("", product_plan.stripe_plan_id)
+
+    def test_has_stripe_plan_id(self):
+        stripe_plan_id = "fake-plan-id"
+        product_plan = self.ProductPlanFactory.create(stripe_plan_id=stripe_plan_id)
+
+        self.assertEqual(stripe_plan_id, product_plan.stripe_plan_id)
+
+    def test_has_active(self):
+        product_plan = self.ProductPlanFactory.create(active=True)
+
+        self.assertTrue(product_plan.active)

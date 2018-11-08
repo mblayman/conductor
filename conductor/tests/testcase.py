@@ -2,6 +2,7 @@ from django import test
 
 from conductor.accounts.tests.factories import (
     GoogleDriveAuthFactory,
+    ProductPlanFactory,
     ProfileFactory,
     UserFactory,
 )
@@ -25,6 +26,7 @@ class TestCase(test.TestCase):
 
     # accounts
     GoogleDriveAuthFactory = GoogleDriveAuthFactory
+    ProductPlanFactory = ProductPlanFactory
     ProfileFactory = ProfileFactory
     UserFactory = UserFactory
 
