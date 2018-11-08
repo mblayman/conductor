@@ -90,6 +90,7 @@ class TestProductPlan(TestCase):
 
         self.assertFalse(product_plan.active)
         self.assertNotEqual("", product_plan.stripe_plan_id)
+        self.assertEqual(0, product_plan.trial_days)
 
     def test_has_stripe_plan_id(self):
         stripe_plan_id = "fake-plan-id"
@@ -101,3 +102,9 @@ class TestProductPlan(TestCase):
         product_plan = self.ProductPlanFactory.create(active=True)
 
         self.assertTrue(product_plan.active)
+
+    def test_has_trial_days(self):
+        trial_days = 30
+        product_plan = self.ProductPlanFactory.create(trial_days=trial_days)
+
+        self.assertEqual(trial_days, product_plan.trial_days)

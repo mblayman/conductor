@@ -85,3 +85,4 @@ class ProductPlan(models.Model):
 
     active = models.BooleanField(default=False)
     stripe_plan_id = models.CharField(max_length=32)
+    trial_days = models.IntegerField(default=0)
