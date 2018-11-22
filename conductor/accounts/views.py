@@ -8,7 +8,14 @@ from django.urls import reverse
 from google_auth_oauthlib.flow import Flow
 
 from conductor.accounts.forms import SignupForm
-from conductor.accounts.models import GoogleDriveAuth
+from conductor.accounts.models import GoogleDriveAuth, ProductPlan
+
+
+def index(request: HttpRequest) -> HttpResponse:
+    """The landing page."""
+    product_plan = ProductPlan.objects.get(active=True)
+    context = {"product_plan": product_plan}
+    return render(request, "index.html", context)
 
 
 def signup(request: HttpRequest) -> HttpResponse:

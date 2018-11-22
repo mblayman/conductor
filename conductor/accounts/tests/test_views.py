@@ -8,6 +8,18 @@ from conductor.accounts.models import GoogleDriveAuth
 from conductor.tests import TestCase
 
 
+class TestIndex(TestCase):
+    @mock.patch("conductor.accounts.views.render")
+    def test_has_product_plan(self, render: mock.MagicMock) -> None:
+        product_plan = self.ProductPlanFactory.create(active=True)
+        request = self.request_factory.get()
+
+        views.index(request)
+
+        context = render.call_args[0][2]
+        self.assertEqual(product_plan, context["product_plan"])
+
+
 class TestSignup(TestCase):
     @mock.patch("conductor.accounts.views.render")
     def test_stripe_publishable_key_in_context(self, render: mock.MagicMock) -> None:

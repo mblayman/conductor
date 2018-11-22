@@ -9,6 +9,7 @@ from django.views.generic import TemplateView
 from conductor.accounts.views import (
     authorize_google,
     dashboard,
+    index,
     oauth2_callback,
     signup,
     user_settings,
@@ -27,7 +28,7 @@ from conductor.planner.views import (
 
 urlpatterns = [
     # Marketing/non-authenticated views
-    path("", TemplateView.as_view(template_name="index.html"), name="index"),
+    path("", index, name="index"),
     path("signup/", signup, name="signup"),
     path("contact/", contact, name="contact"),
     path("terms/", TemplateView.as_view(template_name="terms.html"), name="terms"),

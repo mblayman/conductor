@@ -20,11 +20,11 @@
         <div class="col-lg-8 mx-auto">
           <div class="shadow-lg p-5 mb-5 bg-white rounded cta d-none d-sm-block">
             <h3 class="mb-4 text-secondary font-weight-normal">Build your first college schedule</h3>
-            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free 14 Day Trial →</a>
+            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free {{ product_plan.trial_days }} Day Trial →</a>
           </div>
           <div class="bg-white p-2 py-4 mb-3 rounded d-block d-sm-none text-center">
             <h3 class="mb-4 text-secondary font-weight-normal">Build your first college schedule</h3>
-            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free 14 Day Trial →</a>
+            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free {{ product_plan.trial_days }} Day Trial →</a>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
           <div class="clearfix"></div>
           <h3 class="mb-4 text-secondary font-weight-normal">Ready to build your first college schedule?</h3>
           <p class="lead">
-            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free 14 Day Trial</a>
+            <a class="btn btn-warning btn-lg text-white" role="button" href="{% url "signup" %}">Start Your Free {{ product_plan.trial_days }} Day Trial</a>
           </p>
         </div>
       </div>
