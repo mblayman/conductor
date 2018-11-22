@@ -1,6 +1,8 @@
 import os
 from typing import List
 
+from celery.schedules import crontab
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR = os.path.dirname(BASE_DIR)
@@ -121,6 +123,12 @@ MEDIA_URL = "/media/"
 DOMAIN = ""
 
 CELERY_BROKER_URL = "amqp://conductor:conductor@localhost:5672/conductor"
+CELERY_BEAT_SCHEDULE = {
+    "common-app-scan": {
+        "task": "trackers.tasks.scan_common_app_schools",
+        "schedule": crontab(day_of_week=0, hour=2, minute=0),
+    }
+}
 
 ROLLBAR = {
     "access_token": "rollbar_access_token",
