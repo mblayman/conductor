@@ -125,7 +125,7 @@ DOMAIN = ""
 CELERY_BROKER_URL = "amqp://conductor:conductor@localhost:5672/conductor"
 CELERY_BEAT_SCHEDULE = {
     "common-app-scan": {
-        "task": "trackers.tasks.scan_common_app_schools",
+        "task": "conductor.trackers.tasks.scan_common_app_schools",
         "schedule": crontab(day_of_week=0, hour=2, minute=0),
     }
 }
