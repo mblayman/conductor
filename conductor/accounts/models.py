@@ -89,7 +89,7 @@ class ProductPlan(models.Model):
     price = models.IntegerField(default=0, help_text="The price in cents")
 
     @property
-    def display_price(self):
+    def display_price(self) -> str:
         """Get the price in a nicely formatted way."""
         dollars = self.price / 100
         return f"${dollars:.2f}"
