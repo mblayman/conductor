@@ -13,7 +13,7 @@ from conductor.accounts.models import GoogleDriveAuth, ProductPlan
 
 def index(request: HttpRequest) -> HttpResponse:
     """The landing page."""
-    product_plan = ProductPlan.objects.get(active=True)
+    product_plan = ProductPlan.objects.filter(active=True).last()
     context = {"product_plan": product_plan}
     return render(request, "index.html", context)
 
@@ -28,7 +28,11 @@ def signup(request: HttpRequest) -> HttpResponse:
             return JsonResponse({"status": "success"})
         return JsonResponse({"status": "error", "errors": dict(form.errors.items())})
 
-    context = {"stripe_publishable_key": settings.STRIPE_PUBLISHABLE_KEY}
+    product_plan = ProductPlan.objects.filter(active=True).last()
+    context = {
+        "product_plan": product_plan,
+        "stripe_publishable_key": settings.STRIPE_PUBLISHABLE_KEY,
+    }
     return render(request, "accounts/signup.html", context)
 
 

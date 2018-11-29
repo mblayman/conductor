@@ -108,3 +108,15 @@ class TestProductPlan(TestCase):
         product_plan = self.ProductPlanFactory.create(trial_days=trial_days)
 
         self.assertEqual(trial_days, product_plan.trial_days)
+
+    def test_has_price(self) -> None:
+        price = 999
+        product_plan = self.ProductPlanFactory.create(price=price)
+
+        self.assertEqual(price, product_plan.price)
+
+    def test_display_price(self) -> None:
+        price = 999
+        product_plan = self.ProductPlanFactory.create(price=price)
+
+        self.assertEqual("$9.99", product_plan.display_price)

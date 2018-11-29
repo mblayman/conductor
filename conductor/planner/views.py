@@ -10,6 +10,7 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
+from conductor.accounts.models import ProductPlan
 from conductor.planner.forms import AddSchoolForm, AddStudentForm, RemoveSchoolForm
 from conductor.planner.models import Milestone, School, SchoolApplication
 from conductor.planner.tasks import build_schedule
@@ -18,11 +19,13 @@ from conductor.planner.tasks import build_schedule
 def school_detail(request: HttpRequest, slug: str) -> HttpResponse:
     """Show details about a school."""
     school = get_object_or_404(School, slug=slug)
+    product_plan = ProductPlan.objects.filter(active=True).last()
+    context = {"school": school, "product_plan": product_plan}
+
     if request.user.is_authenticated:
         template = "planner/school.html"
     else:
         template = "planner/school_unauthenticated.html"
-    context = {"school": school}
     return render(request, template, context)
 
 

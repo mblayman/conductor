@@ -62,8 +62,8 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <h5>Free for 14 days</h5>
-          <p>You have unrestricted and <strong>free</strong> access for the next 14 days.</p>
+          <h5>Free for {{ product_plan.trial_days }} days</h5>
+          <p>You have unrestricted and <strong>free</strong> access for the next {{ product_plan.trial_days }} days.</p>
           <hr>
           <h5>Safe and secure</h5>
           <p>We use bank-grade SSL security for your web browser,
@@ -86,7 +86,7 @@
       ">Why do we ask?</a></p>
           <p>
             If you love College Conductor as much as we think you will,
-            it’s only $9.99/month after your trial ends.
+            it’s only {{ product_plan.display_price }}/month after your trial ends.
           </p>
         </div>
       </div>

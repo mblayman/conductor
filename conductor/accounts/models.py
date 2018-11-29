@@ -86,3 +86,10 @@ class ProductPlan(models.Model):
     active = models.BooleanField(default=False)
     stripe_plan_id = models.CharField(max_length=32)
     trial_days = models.IntegerField(default=0)
+    price = models.IntegerField(default=0, help_text="The price in cents")
+
+    @property
+    def display_price(self):
+        """Get the price in a nicely formatted way."""
+        dollars = self.price / 100
+        return f"${dollars:.2f}"

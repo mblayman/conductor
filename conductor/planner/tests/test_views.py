@@ -27,14 +27,16 @@ class TestSchoolDetail(TestCase):
             views.school_detail(request, "bad-slug")
 
     @mock.patch("conductor.planner.views.render")
-    def test_school_in_context(self, render: mock.MagicMock) -> None:
+    def test_context(self, render: mock.MagicMock) -> None:
         school = self.SchoolFactory.create()
+        product_plan = self.ProductPlanFactory.create(active=True)
         request = self.request_factory.get()
 
         views.school_detail(request, school.slug)
 
         context = render.call_args[0][2]
         self.assertEqual(school, context["school"])
+        self.assertEqual(product_plan, context["product_plan"])
 
     @mock.patch("conductor.planner.views.render")
     def test_authenticated_teplate(self, render: mock.MagicMock) -> None:

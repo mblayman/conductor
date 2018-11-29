@@ -11,6 +11,7 @@ from conductor.tests import TestCase
 class TestIndex(TestCase):
     @mock.patch("conductor.accounts.views.render")
     def test_has_product_plan(self, render: mock.MagicMock) -> None:
+        self.ProductPlanFactory.create(active=True)
         product_plan = self.ProductPlanFactory.create(active=True)
         request = self.request_factory.get()
 
@@ -22,7 +23,8 @@ class TestIndex(TestCase):
 
 class TestSignup(TestCase):
     @mock.patch("conductor.accounts.views.render")
-    def test_stripe_publishable_key_in_context(self, render: mock.MagicMock) -> None:
+    def test_context(self, render: mock.MagicMock) -> None:
+        product_plan = self.ProductPlanFactory.create(active=True)
         request = self.request_factory.get()
 
         views.signup(request)
@@ -31,6 +33,7 @@ class TestSignup(TestCase):
         self.assertEqual(
             settings.STRIPE_PUBLISHABLE_KEY, context["stripe_publishable_key"]
         )
+        self.assertEqual(product_plan, context["product_plan"])
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
     def test_success(self, stripe_gateway: mock.MagicMock) -> None:
