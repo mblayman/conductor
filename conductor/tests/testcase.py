@@ -19,6 +19,7 @@ from conductor.planner.tests.factories import (
 from conductor.support.tests.factories import SupportTicketFactory
 from conductor.tests.request_factory import RequestFactory
 from conductor.trackers.tests.factories import CommonAppTrackerFactory
+from conductor.vendor.tests.factories import PromptSchoolFactory
 
 
 class TestCase(test.TestCase):
@@ -45,3 +46,6 @@ class TestCase(test.TestCase):
 
     # trackers
     CommonAppTrackerFactory = CommonAppTrackerFactory
+
+    # vendor
+    PromptSchoolFactory = PromptSchoolFactory
