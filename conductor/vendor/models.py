@@ -2,7 +2,7 @@ from django.db import models
 
 
 class PromptSchool(models.Model):
-    """The model tracks the integration with Prompts essay listing page."""
+    """This model tracks the integration with Prompt's essay listing page."""
 
     name = models.TextField()
     slug = models.SlugField(max_length=512, unique=True)
