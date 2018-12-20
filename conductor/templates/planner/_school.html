@@ -19,6 +19,9 @@
         <p><strong>Location:</strong> {{ school.city }}, {{ school.state }}</p>
       {% endif %}
       {% if user.is_authenticated %}
+        {% if prompt_school %}
+          <p><a href="http://pages.prompt.com/2018-2019prompts#{{ prompt_school.slug }}" target="_blank">View Prompt Essays</a></p>
+        {% endif %}
       {% else %}
         <h3 class="text-primary">Deadlines</h3>
       {% endif %}

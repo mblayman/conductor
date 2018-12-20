@@ -6,6 +6,10 @@ class PromptSchool(models.Model):
 
     name = models.TextField()
     slug = models.SlugField(max_length=512, unique=True)
-    school = models.ForeignKey(
-        "planner.School", null=True, blank=True, on_delete=models.SET_NULL
+    school = models.OneToOneField(
+        "planner.School",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="prompt_school",
     )

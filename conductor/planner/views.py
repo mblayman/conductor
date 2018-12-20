@@ -20,7 +20,15 @@ def school_detail(request: HttpRequest, slug: str) -> HttpResponse:
     """Show details about a school."""
     school = get_object_or_404(School, slug=slug)
     product_plan = ProductPlan.objects.filter(active=True).last()
-    context = {"school": school, "product_plan": product_plan}
+    if hasattr(school, "prompt_school"):
+        prompt_school = school.prompt_school
+    else:
+        prompt_school = None
+    context = {
+        "school": school,
+        "product_plan": product_plan,
+        "prompt_school": prompt_school,
+    }
 
     if request.user.is_authenticated:
         template = "planner/school.html"
