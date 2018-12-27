@@ -127,7 +127,11 @@ CELERY_BEAT_SCHEDULE = {
     "common-app-scan": {
         "task": "conductor.trackers.tasks.scan_common_app_schools",
         "schedule": crontab(day_of_week=0, hour=2, minute=0),
-    }
+    },
+    "prompt-scan": {
+        "task": "conductor.vendor.tasks.scan_prompt",
+        "schedule": crontab(day_of_week=0, hour=3, minute=0),
+    },
 }
 
 ROLLBAR = {
