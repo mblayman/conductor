@@ -1,4 +1,6 @@
 from bs4 import BeautifulSoup
+from django.conf import settings
+from django.core.mail import EmailMessage
 import requests
 
 from conductor import celeryapp
@@ -14,6 +16,7 @@ def scan_prompt() -> None:
 
     soup = BeautifulSoup(response.text, "html.parser")
     anchors = soup.find_all("a")
+    changed = False
     for anchor in anchors:
         if "id" not in anchor.attrs:
             continue
@@ -22,3 +25,12 @@ def scan_prompt() -> None:
         name = anchor.next_sibling
         if not PromptSchool.objects.filter(slug=slug).exists():
             PromptSchool.objects.create(slug=slug, name=name)
+            changed = True
+
+    if changed:
+        email = EmailMessage(
+            "Found new Prompt schools",
+            "Go check it out.",
+            to=[settings.CONDUCTOR_EMAIL],
+        )
+        email.send()

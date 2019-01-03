@@ -1,6 +1,8 @@
 import os
 from unittest import mock
 
+from django.core import mail
+
 from conductor.tests import TestCase
 from conductor.vendor import tasks
 from conductor.vendor.models import PromptSchool
@@ -27,6 +29,8 @@ class TestScanPrompt(TestCase):
                 slug="colorado-state", name="Colorado State University"
             ).count(),
         )
+        self.assertEqual(1, len(mail.outbox))
+        self.assertIn("Prompt", mail.outbox[0].subject)
 
     def test_skip_existing_prompt_school(self, mock_requests: mock.MagicMock) -> None:
         """Skip creating a prompt school if one already exists."""
