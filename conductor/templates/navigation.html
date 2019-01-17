@@ -15,6 +15,11 @@
               <a class="nav-link" href="{% url "admin:index" %}">Admin</a>
             </li>
           {% endif %}
+          {% if user.is_staff %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "tools-dashboard" %}">Tools</a>
+            </li>
+          {% endif %}
           <li class="nav-item">
             <a class="nav-link" href="{% url "dashboard" %}">Dashboard</a>
           </li>

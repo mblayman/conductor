@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Tools Dashboard{% endblock %}
+
+{% block base-content %}
+<div class="container h-75">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-10">
+      <h1>{{ common_app_count }} Common App school{{ common_app_count|pluralize }} to go</h1>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -5,6 +5,7 @@ from django.urls import reverse
 
 from conductor.support import views
 from conductor.support.models import SupportTicket
+from conductor.trackers.models import CommonAppTracker
 from conductor.tests import TestCase
 
 
@@ -51,3 +52,34 @@ class TestContact(TestCase):
 
         context = render.call_args[0][2]
         self.assertFalse(context["form"].is_valid())
+
+
+class TestToolDashboard(TestCase):
+    def test_staff_only(self) -> None:
+        user = self.UserFactory.create(is_staff=False)
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.tools_dashboard(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("login"), response.get("Location"))
+
+    def test_ok(self) -> None:
+        user = self.UserFactory.create(is_staff=True)
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.tools_dashboard(request)
+
+        self.assertEqual(200, response.status_code)
+
+    @mock.patch("conductor.support.views.render")
+    def test_context(self, render: mock.MagicMock) -> None:
+        self.CommonAppTrackerFactory.create(status=CommonAppTracker.PENDING)
+        self.CommonAppTrackerFactory.create(status=CommonAppTracker.TRACKED)
+        user = self.UserFactory.create(is_staff=True)
+        request = self.request_factory.authenticated_get(user)
+
+        views.tools_dashboard(request)
+
+        context = render.call_args[0][2]
+        self.assertEqual(1, context["common_app_count"])

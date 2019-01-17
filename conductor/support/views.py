@@ -3,7 +3,9 @@ from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
+from conductor.core.decorators import staff_required
 from conductor.support.forms import SupportTicketForm
+from conductor.trackers.models import CommonAppTracker
 
 
 def contact(request: HttpRequest) -> HttpResponse:
@@ -20,3 +22,13 @@ def contact(request: HttpRequest) -> HttpResponse:
         form = SupportTicketForm()
     context = {"form": form}
     return render(request, "support/contact.html", context)
+
+
+@staff_required
+def tools_dashboard(request: HttpRequest) -> HttpResponse:
+    """The entry point for all staff tools."""
+    common_app_count = CommonAppTracker.objects.filter(
+        status=CommonAppTracker.PENDING
+    ).count()
+    context: dict = {"common_app_count": common_app_count}
+    return render(request, "support/tools_dashboard.html", context)

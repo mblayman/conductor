@@ -14,7 +14,7 @@ from conductor.accounts.views import (
     signup,
     user_settings,
 )
-from conductor.support.views import contact
+from conductor.support.views import contact, tools_dashboard
 from conductor.planner.views import (
     add_school,
     add_student,
@@ -31,6 +31,7 @@ urlpatterns = [
     path("", index, name="index"),
     path("signup/", signup, name="signup"),
     path("contact/", contact, name="contact"),
+    path("support/tools/", tools_dashboard, name="tools-dashboard"),
     path("terms/", TemplateView.as_view(template_name="terms.html"), name="terms"),
     path(
         "privacy/", TemplateView.as_view(template_name="privacy.html"), name="privacy"
