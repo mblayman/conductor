@@ -66,6 +66,7 @@ urlpatterns = [
     ),
     path("accounts/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),
+    path("trackers/", include("conductor.trackers.urls")),
 ]
 
 if os.environ["DJANGO_SETTINGS_MODULE"] == "config.settings.development":
