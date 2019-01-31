@@ -6,6 +6,22 @@
 <div class="container h-75">
   <div class="row h-100 justify-content-center align-items-center">
     <div class="col-10">
+      {% if common_app_tracker %}
+        <h3>School: {{ common_app_tracker.name }}
+          (<a href="{% url "admin:trackers_commonapptracker_change" common_app_tracker.id %}" target="_blank">admin</a>)
+        </h3>
+      {% endif %}
+      {% for school in schools %}
+        <form method="POST" action="">
+          {% csrf_token %}
+          <input type="hidden" name="common_app_tracker" value="{{ common_app_tracker.id }}">
+          <input type="hidden" name="school" value="{{ school.id }}">
+          <p>
+            <button class="btn btn-primary mx-2" type="submit">Connect</button>{{ school.name }}
+            (<a href="{% url "admin:planner_school_change" school.id %}" target="_blank">admin</a>)
+          </p>
+        </form>
+      {% endfor %}
     </div>
   </div>
 </div>

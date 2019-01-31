@@ -25,6 +25,26 @@ class TestConnectCommonApps(TestCase):
 
         self.assertEqual(200, response.status_code)
 
+    def test_post_ok(self) -> None:
+        common_app_tracker = self.CommonAppTrackerFactory.create(
+            status=CommonAppTracker.PENDING
+        )
+        school = self.SchoolFactory.create()
+        user = self.UserFactory.create(is_staff=True)
+        data: dict = {
+            "common_app_tracker": str(common_app_tracker.id),
+            "school": str(school.id),
+        }
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.connect_common_apps(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("trackers:connect-common-apps"), response.get("Location"))
+        common_app_tracker.refresh_from_db()
+        self.assertEqual(CommonAppTracker.TRACKED, common_app_tracker.status)
+        self.assertEqual(school, common_app_tracker.school)
+
     @mock.patch("conductor.trackers.views.render")
     def test_context(self, render: mock.MagicMock) -> None:
         common_app_tracker = self.CommonAppTrackerFactory.create(
