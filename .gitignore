@@ -68,6 +68,7 @@ _vimrc_local.vim
 .encryption
 
 # Ansible
+playbooks/plugins
 playbooks/roles/Datadog.datadog
 playbooks/roles/kamaln7.swapfile
 playbooks/roles/nodesource.node

@@ -23,3 +23,6 @@ seed:
 	ansible-playbook \
 		--private-key=./.vagrant/machines/default/virtualbox/private_key \
 		-i playbooks/development playbooks/seed.yml
+
+bootstrap:
+	pip install --target playbooks/plugins mitogen==0.2.5
