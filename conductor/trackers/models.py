@@ -17,12 +17,14 @@ class CommonAppTracker(models.Model):
     INTERNATIONAL = 3
     UNTRACKED = 4
     REMOVED = 5
+    PARKED = 6
     STATUS_CHOICES = (
         (PENDING, "Pending"),
         (TRACKED, "Tracked"),
         (INTERNATIONAL, "International"),
         (UNTRACKED, "Untracked"),
         (REMOVED, "Removed"),
+        (PARKED, "Parked"),
     )
 
     created_date = models.DateTimeField(auto_now_add=True)
