@@ -35,7 +35,9 @@ INSTALLED_APPS = [
     "anymail",
     "localflavor",
     "storages",
+    "waffle",
     "conductor.accounts.apps.AccountsConfig",
+    "conductor.core.apps.CoreConfig",
     "conductor.planner.apps.PlannerConfig",
     "conductor.support.apps.SupportConfig",
     "conductor.trackers.apps.TrackersConfig",
@@ -51,6 +53,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
+    "waffle.middleware.WaffleMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -160,6 +163,8 @@ GOOGLE_CLIENT_CONFIG = {
         "token_uri": "",
     }
 }
+
+WAFFLE_FLAG_MODEL = "core.Flag"
 
 # Override development settings with a secrets file.
 try:

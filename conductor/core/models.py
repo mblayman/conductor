@@ -1,7 +1,12 @@
 from django.db import models
 from django.utils import timezone
+from waffle.models import AbstractUserFlag
 
 from conductor.core.managers import SoftDeleteManager
+
+
+class Flag(AbstractUserFlag):
+    """Customizable version of Waffle's Flag model."""
 
 
 class SoftDeleteModel(models.Model):
