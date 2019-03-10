@@ -55,4 +55,3 @@ STATIC_URL = "{{ static_url }}"
 
 STRIPE_API_KEY = "{{ secrets.stripe.api_key }}"
 STRIPE_PUBLISHABLE_KEY = "{{ secrets.stripe.publishable_key }}"
-STRIPE_PLAN = "{{ secrets.stripe.plan }}"

@@ -7,6 +7,7 @@ from conductor.tests import TestCase
 
 class TestSignupForm(TestCase):
     def test_valid(self) -> None:
+        product_plan = self.ProductPlanFactory.create()
         data = {
             "username": "matt",
             "email": "matt@test.com",
@@ -14,13 +15,15 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": "12345",
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
 
         self.assertTrue(form.is_valid())
+        self.assertEqual(product_plan, form.product_plan)
 
     def test_required(self) -> None:
+        product_plan = self.ProductPlanFactory.create()
         data: Dict[str, str] = {}
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
 
         self.assertFalse(form.is_valid())
         self.assertIn("username", form.errors)
@@ -30,6 +33,7 @@ class TestSignupForm(TestCase):
         self.assertNotIn("postal_code", form.errors)
 
     def test_invalid_password(self) -> None:
+        product_plan = self.ProductPlanFactory.create()
         # Test similar username and password to ensure a user instance
         # is present and valuable.
         data = {
@@ -39,12 +43,13 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": "12345",
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
 
         self.assertFalse(form.is_valid())
         self.assertIn("password", form.errors)
 
     def test_unique_email(self) -> None:
+        product_plan = self.ProductPlanFactory.create()
         self.UserFactory.create(email="matt@test.com")
         data = {
             "username": "matt",
@@ -53,12 +58,13 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": "12345",
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
 
         self.assertFalse(form.is_valid())
         self.assertIn("email", form.errors)
 
     def test_unique_username(self) -> None:
+        product_plan = self.ProductPlanFactory.create()
         self.UserFactory.create(username="matt")
         data = {
             "username": "matt",
@@ -67,13 +73,14 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": "12345",
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
 
         self.assertFalse(form.is_valid())
         self.assertIn("username", form.errors)
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
     def test_creates_user(self, stripe_gateway: mock.MagicMock) -> None:
+        product_plan = self.ProductPlanFactory.create()
         stripe_gateway.create_customer.return_value = "cus_1234"
         data = {
             "username": "matt",
@@ -82,7 +89,7 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": "21702",
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
         self.assertTrue(form.is_valid())
 
         user = form.save()
@@ -94,6 +101,7 @@ class TestSignupForm(TestCase):
 
     @mock.patch("conductor.accounts.forms.stripe_gateway")
     def test_missing_postal_code(self, stripe_gateway: mock.MagicMock) -> None:
+        product_plan = self.ProductPlanFactory.create()
         stripe_gateway.create_customer.return_value = "cus_1234"
         data = {
             "username": "matt",
@@ -102,7 +110,7 @@ class TestSignupForm(TestCase):
             "stripe_token": "tok_1234",
             "postal_code": None,
         }
-        form = SignupForm(data)
+        form = SignupForm(product_plan, data=data)
         self.assertTrue(form.is_valid())
 
         user = form.save()

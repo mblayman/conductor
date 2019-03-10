@@ -20,15 +20,16 @@ def index(request: HttpRequest) -> HttpResponse:
 
 def signup(request: HttpRequest) -> HttpResponse:
     """Sign up a new user."""
+    product_plan = ProductPlan.objects.filter(active=True).last()
+
     if request.method == "POST":
-        form = SignupForm(data=request.POST)
+        form = SignupForm(product_plan, data=request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
             return JsonResponse({"status": "success"})
         return JsonResponse({"status": "error", "errors": dict(form.errors.items())})
 
-    product_plan = ProductPlan.objects.filter(active=True).last()
     context = {
         "product_plan": product_plan,
         "stripe_publishable_key": settings.STRIPE_PUBLISHABLE_KEY,

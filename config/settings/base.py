@@ -151,7 +151,6 @@ ANYMAIL = {"MAILGUN_API_KEY": "mailgun_api_key"}
 
 STRIPE_API_KEY = "sk_test_fake_key"
 STRIPE_PUBLISHABLE_KEY = "pk_test_fake_key"
-STRIPE_PLAN = "fake-plan"
 
 GOOGLE_CLIENT_CONFIG = {
     "web": {

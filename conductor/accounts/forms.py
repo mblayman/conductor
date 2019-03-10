@@ -1,7 +1,10 @@
+from typing import Any
+
 from django import forms
 from django.conf import settings
 from django.contrib.auth import get_user_model, password_validation
 
+from conductor.accounts.models import ProductPlan
 from conductor.vendor.services import stripe_gateway
 
 User = get_user_model()
@@ -17,6 +20,10 @@ class SignupForm(forms.Form):
     password = forms.CharField(required=True)
     stripe_token = forms.CharField(required=True)
     postal_code = forms.CharField(required=False)
+
+    def __init__(self, product_plan: ProductPlan, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
+        self.product_plan = product_plan
 
     def clean_email(self) -> str:
         """Ensure email uniqueness."""
@@ -67,7 +74,7 @@ class SignupForm(forms.Form):
         # Before persisting anything, make sure that the customer creation
         # happens with Stripe.
         stripe_customer_id = stripe_gateway.create_customer(
-            user, self.cleaned_data["stripe_token"]
+            user, self.cleaned_data["stripe_token"], self.product_plan
         )
 
         user.save()
