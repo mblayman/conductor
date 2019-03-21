@@ -1,7 +1,7 @@
 from typing import Dict
 from unittest import mock
 
-from conductor.accounts.forms import SignupForm
+from conductor.accounts.forms import DeactivateForm, SignupForm
 from conductor.tests import TestCase
 
 
@@ -116,3 +116,24 @@ class TestSignupForm(TestCase):
         user = form.save()
 
         self.assertEqual(user.profile.postal_code, "")
+
+
+class TestDeactivateForm(TestCase):
+    def test_matching_email(self) -> None:
+        user = self.UserFactory.create()
+        data = {"email": user.email}
+        form = DeactivateForm(user, data=data)
+
+        is_valid = form.is_valid()
+
+        self.assertTrue(is_valid)
+
+    def test_mismatched_email(self) -> None:
+        user = self.UserFactory.create()
+        data = {"email": f"nomatch-{user.email}"}
+        form = DeactivateForm(user, data=data)
+
+        is_valid = form.is_valid()
+
+        self.assertFalse(is_valid)
+        self.assertIn("email", form.errors)

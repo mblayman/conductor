@@ -9,6 +9,7 @@ from django.views.generic import TemplateView
 from conductor.accounts.views import (
     authorize_google,
     dashboard,
+    deactivate,
     index,
     oauth2_callback,
     signup,
@@ -45,6 +46,7 @@ urlpatterns = [
     path("settings/", user_settings, name="settings"),
     path("authorize-google/", authorize_google, name="authorize-google"),
     path("oauth2/", oauth2_callback, name="oauth2"),
+    path("deactivate/", deactivate, name="deactivate"),
     path("schools/<slug:slug>/", school_detail, name="school-detail"),
     # Students
     path("students/add/", add_student, name="add-student"),

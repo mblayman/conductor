@@ -196,3 +196,43 @@ class TestOauth2Callback(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("settings"), response.get("Location"))
         messages.add_message.assert_called_once_with(request, messages.ERROR, mock.ANY)
+
+
+class TestDeactivate(TestCase):
+    def test_requires_login(self) -> None:
+        request = self.request_factory.get()
+
+        response = views.deactivate(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("login"), response.get("Location"))
+
+    def test_requires_post(self) -> None:
+        user = self.UserFactory.create()
+        request = self.request_factory.authenticated_get(user)
+
+        response = views.deactivate(request)
+
+        self.assertEqual(405, response.status_code)
+
+    def test_success(self) -> None:
+        user = self.UserFactory.create()
+        data = {"email": user.email}
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.deactivate(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("dashboard"), response.get("Location"))
+
+    @mock.patch("conductor.accounts.views.messages")
+    def test_failure(self, messages: mock.MagicMock) -> None:
+        user = self.UserFactory.create()
+        data = {"email": f"nomatch-{user.email}"}
+        request = self.request_factory.authenticated_post(user, data=data)
+
+        response = views.deactivate(request)
+
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("settings"), response.get("Location"))
+        messages.add_message.assert_called_once_with(request, messages.ERROR, mock.ANY)

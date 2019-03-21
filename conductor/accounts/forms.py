@@ -85,3 +85,22 @@ class SignupForm(forms.Form):
         user.profile.save()
 
         return user
+
+
+class DeactivateForm(forms.Form):
+    email = forms.EmailField(required=True)
+
+    def __init__(
+        self, user: settings.AUTH_USER_MODEL, *args: Any, **kwargs: Any
+    ) -> None:
+        super().__init__(*args, **kwargs)
+        self.user = user
+
+    def clean_email(self) -> str:
+        """Ensure email matches user account email."""
+        email = self.cleaned_data.get("email")
+        if self.user.email != email:
+            raise forms.ValidationError(
+                f"The email address of ‘{email}’ does not match the account email of ‘{self.user.email}’."  # noqa
+            )
+        return email
