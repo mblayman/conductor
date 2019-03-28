@@ -2,6 +2,7 @@ from django.conf import settings
 import stripe
 
 from conductor.accounts.models import ProductPlan
+from conductor.core.exceptions import ConductorError
 
 stripe.api_key = settings.STRIPE_API_KEY
 
@@ -29,6 +30,16 @@ class StripeGateway:
             trial_from_plan=True,
         )
         return customer.id
+
+    def cancel_subscription(self, user: settings.AUTH_USER_MODEL) -> None:
+        """Cancel the user's Stripe subscription."""
+        try:
+            customer = stripe.Customer.retrieve(user.profile.stripe_customer_id)
+            subscription_id = customer.subscriptions.data[0].id
+            subscription = stripe.Subscription.retrieve(subscription_id)
+            subscription.delete()
+        except stripe.error.StripeError as ex:
+            raise ConductorError() from ex
 
 
 stripe_gateway = StripeGateway()

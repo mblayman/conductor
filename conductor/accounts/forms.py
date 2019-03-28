@@ -104,3 +104,8 @@ class DeactivateForm(forms.Form):
                 f"The email address of ‘{email}’ does not match the account email of ‘{self.user.email}’."  # noqa
             )
         return email
+
+    def save(self) -> None:
+        """Cancel the user's Stripe subscription."""
+        # TODO: test this.
+        stripe_gateway.cancel_subscription(self.user)
