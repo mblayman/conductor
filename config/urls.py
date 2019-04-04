@@ -42,6 +42,12 @@ urlpatterns = [
         TemplateView.as_view(template_name="sitemap.xml", content_type="text/xml"),
         name="sitemap",
     ),
+    path(
+        "deactivated/",
+        TemplateView.as_view(template_name="accounts/deactivated.html"),
+        name="deactivated",
+    ),
+    # Authenticated views
     path("app/", dashboard, name="dashboard"),
     path("settings/", user_settings, name="settings"),
     path("authorize-google/", authorize_google, name="authorize-google"),

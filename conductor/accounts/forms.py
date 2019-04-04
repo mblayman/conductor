@@ -107,5 +107,6 @@ class DeactivateForm(forms.Form):
 
     def save(self) -> None:
         """Cancel the user's Stripe subscription."""
-        # TODO: test this.
         stripe_gateway.cancel_subscription(self.user)
+        self.user.is_active = False
+        self.user.save()

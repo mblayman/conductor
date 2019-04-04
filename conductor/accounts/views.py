@@ -1,15 +1,17 @@
 from django.conf import settings
 from django.contrib import messages
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 from google_auth_oauthlib.flow import Flow
+import rollbar
 
 from conductor.accounts.forms import DeactivateForm, SignupForm
 from conductor.accounts.models import GoogleDriveAuth, ProductPlan
+from conductor.core.exceptions import ConductorError
 
 
 def index(request: HttpRequest) -> HttpResponse:
@@ -106,10 +108,18 @@ def deactivate(request: HttpRequest) -> HttpResponse:
     """Deactivate a user account."""
     form = DeactivateForm(request.user, data=request.POST)
     if form.is_valid():
-        # TODO: form.save()
-        # TODO: user logout
-        # TODO: redirect to deactivated
-        return HttpResponseRedirect(reverse("dashboard"))
+        try:
+            form.save()
+        except ConductorError:
+            rollbar.report_exc_info()
+            error_message = (
+                "We hit a problem while cancelling your subscription."
+                " Please contact support."
+            )
+            messages.add_message(request, messages.ERROR, error_message)
+            return HttpResponseRedirect(reverse("settings"))
+        logout(request)
+        return HttpResponseRedirect(reverse("deactivated"))
     error_message = form.errors["email"][0]
     messages.add_message(request, messages.ERROR, error_message)
     return HttpResponseRedirect(reverse("settings"))

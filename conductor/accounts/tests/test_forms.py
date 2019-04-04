@@ -137,3 +137,15 @@ class TestDeactivateForm(TestCase):
 
         self.assertFalse(is_valid)
         self.assertIn("email", form.errors)
+
+    @mock.patch("conductor.accounts.forms.stripe_gateway")
+    def test_save(self, stripe_gateway: mock.MagicMock) -> None:
+        """The user subscription gets cancelled and the user is marked inactive."""
+        user = self.UserFactory.create()
+        form = DeactivateForm(user)
+
+        form.save()
+
+        stripe_gateway.cancel_subscription.assert_called_once_with(user)
+        user.refresh_from_db()
+        self.assertFalse(user.is_active)

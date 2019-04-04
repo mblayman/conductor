@@ -5,6 +5,7 @@ from django.urls import reverse
 
 from conductor.accounts import views
 from conductor.accounts.models import GoogleDriveAuth
+from conductor.core.exceptions import ConductorError
 from conductor.tests import TestCase
 
 
@@ -215,15 +216,17 @@ class TestDeactivate(TestCase):
 
         self.assertEqual(405, response.status_code)
 
-    def test_success(self) -> None:
+    @mock.patch("conductor.vendor._stripe.stripe")
+    def test_success(self, stripe: mock.MagicMock) -> None:
         user = self.UserFactory.create()
         data = {"email": user.email}
-        request = self.request_factory.authenticated_post(user, data=data)
+        request = self.request_factory.authenticated_post(user, data=data, session=True)
 
         response = views.deactivate(request)
 
+        self.assertFalse(request.user.is_authenticated)
         self.assertEqual(302, response.status_code)
-        self.assertIn(reverse("dashboard"), response.get("Location"))
+        self.assertIn(reverse("deactivated"), response.get("Location"))
 
     @mock.patch("conductor.accounts.views.messages")
     def test_failure(self, messages: mock.MagicMock) -> None:
@@ -236,3 +239,31 @@ class TestDeactivate(TestCase):
         self.assertEqual(302, response.status_code)
         self.assertIn(reverse("settings"), response.get("Location"))
         messages.add_message.assert_called_once_with(request, messages.ERROR, mock.ANY)
+
+    @mock.patch("conductor.accounts.forms.stripe_gateway")
+    @mock.patch("conductor.accounts.views.rollbar")
+    @mock.patch("conductor.accounts.views.messages")
+    def test_form_save_failure(
+        self,
+        messages: mock.MagicMock,
+        rollbar: mock.MagicMock,
+        stripe_gateway: mock.MagicMock,
+    ) -> None:
+        user = self.UserFactory.create()
+        data = {"email": user.email}
+        request = self.request_factory.authenticated_post(user, data=data)
+        stripe_gateway.cancel_subscription.side_effect = ConductorError
+
+        response = views.deactivate(request)
+
+        self.assertTrue(rollbar.report_exc_info.called)
+        self.assertEqual(302, response.status_code)
+        self.assertIn(reverse("settings"), response.get("Location"))
+        messages.add_message.assert_called_once_with(request, messages.ERROR, mock.ANY)
+
+
+class TestDeactivated(TestCase):
+    def test_ok(self) -> None:
+        response = self.client.get(reverse("deactivated"))
+
+        self.assertEqual(200, response.status_code)
