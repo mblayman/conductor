@@ -1,5 +1,5 @@
 ---
 deployment: development
 root_domain: conductor.test
-django_settings_module: config.settings.staging
+django_settings_module: settings.staging
 secrets: "{{ vault.development }}"

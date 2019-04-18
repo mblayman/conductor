@@ -1,5 +1,5 @@
 ---
 deployment: production
 root_domain: collegeconductor.com
-django_settings_module: config.settings.production
+django_settings_module: settings.production
 secrets: "{{ vault.production }}"

@@ -1,4 +1,4 @@
-from config.settings.base import *  # noqa
+from settings.base import *  # noqa
 
 EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
 

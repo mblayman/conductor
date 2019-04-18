@@ -77,7 +77,7 @@ urlpatterns = [
     path("trackers/", include("conductor.trackers.urls")),
 ]
 
-if os.environ["DJANGO_SETTINGS_MODULE"] == "config.settings.development":
+if os.environ["DJANGO_SETTINGS_MODULE"] == "settings.development":
     import debug_toolbar
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 

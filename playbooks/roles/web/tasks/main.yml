@@ -112,7 +112,7 @@
 - name: Set secret settings file
   template:
     src: _secrets.py
-    dest: "{{ app_path }}/config/settings/_secrets.py"
+    dest: "{{ app_path }}/settings/_secrets.py"
   become: yes
   notify:
     - Restart Supervisor

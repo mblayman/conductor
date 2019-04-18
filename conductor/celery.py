@@ -5,7 +5,7 @@ from celery import Celery
 from celery.signals import task_failure
 from django.http import HttpRequest
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.development")
 
 app = Celery("conductor")
 app.config_from_object("django.conf:settings", namespace="CELERY")

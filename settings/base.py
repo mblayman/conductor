@@ -4,7 +4,7 @@ from typing import List
 from celery.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
 SECRET_KEY = "y$l*8=9d0b^nbf4c#vs+z=d)vb(3rsgvcx!+2as@f5f2s*#x=q"
