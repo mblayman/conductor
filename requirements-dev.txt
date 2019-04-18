@@ -8,6 +8,7 @@ honcho
 httpie
 hupper
 mypy
+pip-tools
 pre_commit
 psycopg2
 watchdog
