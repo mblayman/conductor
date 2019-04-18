@@ -2,7 +2,7 @@
 command=/usr/bin/uwsgi
     --plugin python3
     --socket /tmp/conductor-uwsgi.sock
-    --module config.wsgi:application
+    --module conductor.wsgi:application
     --enable-threads
     --single-interpreter
     --master

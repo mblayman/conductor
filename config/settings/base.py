@@ -56,7 +56,7 @@ MIDDLEWARE = [
     "waffle.middleware.WaffleMiddleware",
 ]
 
-ROOT_URLCONF = "config.urls"
+ROOT_URLCONF = "conductor.urls"
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     }
 ]
 
-WSGI_APPLICATION = "config.wsgi.application"
+WSGI_APPLICATION = "conductor.wsgi.application"
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
