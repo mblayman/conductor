@@ -24,12 +24,13 @@ google-auth-httplib2==0.0.3
 google-auth-oauthlib==0.2.0
 google-auth==1.6.3        # via google-auth-httplib2, google-auth-oauthlib
 greenlet==0.4.15          # via gevent
-httplib2==0.12.1          # via google-api-python-client, google-auth-httplib2, oauth2client
+gunicorn==19.9.0
+httplib2==0.12.3          # via google-api-python-client, google-auth-httplib2, oauth2client
 jmespath==0.9.4           # via boto3, botocore
 kombu==4.5.0              # via celery
 oauth2client==4.1.3       # via google-api-python-client
 oauthlib==3.0.1           # via requests-oauthlib
-pyasn1-modules==0.2.4     # via google-auth, oauth2client
+pyasn1-modules==0.2.5     # via google-auth, oauth2client
 pyasn1==0.4.5             # via oauth2client, pyasn1-modules, rsa
 python-dateutil==2.8.0    # via botocore
 pytz==2019.1              # via celery, django

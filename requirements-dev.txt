@@ -11,4 +11,5 @@ mypy
 pip-tools
 pre_commit
 psycopg2
+shiv
 watchdog
