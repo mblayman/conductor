@@ -47,9 +47,20 @@ jobs:
           name: Run tests
           command: venv/bin/python manage.py test
 
+  package-py:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - run:
+          name: Package Shiv app
+          command: ./package.sh
+
 workflows:
   version: 2
-  test-bless:
+  pipeline:
     jobs:
       - build-py
       - lint-py:
@@ -58,3 +69,6 @@ workflows:
       - test-py:
           requires:
             - lint-py
+      - package-py:
+          requires:
+            - test-py
