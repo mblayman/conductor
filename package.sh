@@ -9,4 +9,6 @@ rm -rf dist conductor.pyz
 pip install . -r requirements.txt --target dist/
 
 ${VENV}shiv --site-packages dist --compressed \
-    -p '/usr/bin/env python3' -o conductor.pyz -e conductor.main
+    -p '/usr/bin/env python3' \
+    -o conductor-${CIRCLE_BUILD_NUM}.pyz \
+    -e conductor.main

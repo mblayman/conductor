@@ -57,6 +57,9 @@ jobs:
       - run:
           name: Package Shiv app
           command: ./package.sh
+      - run:
+          name: Show me the files
+          command: ls
 
 workflows:
   version: 2
