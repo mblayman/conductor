@@ -26,3 +26,6 @@ seed:
 
 bootstrap:
 	pip install --target playbooks/plugins mitogen==0.2.5
+
+compile:
+	pip-compile --output-file requirements.txt requirements.in requirements-prod.in
