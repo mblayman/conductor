@@ -64,7 +64,7 @@ jobs:
           command: ls
       - aws-s3/copy:
           from: "conductor-*.pyz"
-          to: "s3://collegeconductor/apps"
+          to: "s3://collegeconductor/apps/"
 
 workflows:
   version: 2
