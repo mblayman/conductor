@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.9
 jobs:
   build-py:
     docker:
@@ -60,6 +62,10 @@ jobs:
       - run:
           name: Show me the files
           command: ls
+      - aws-s3/copy:
+          from: "conductor-*.pyz"
+          to: "s3://collegeconductor/apps"
+          arguments: "--dryrun"
 
 workflows:
   version: 2
