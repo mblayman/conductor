@@ -30,6 +30,7 @@
   with_items:
     - python3-pip
     - python-virtualenv
+    - python3-boto3  # To do S3 downloads
 
 - name: Install fail2ban
   become: yes
@@ -69,6 +70,12 @@
 - name: Add ssh private key
   become: yes
   copy: content="{{ ssh_private_key }}" dest=/root/.ssh/id_rsa mode="u=rw,g=,o="
+
+- name: Create apps directory
+  become: yes
+  file:
+    path: /srv/apps
+    state: directory
 
 - name: Create app directory
   become: yes

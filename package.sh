@@ -10,5 +10,5 @@ pip install . -r requirements.txt --target dist/
 
 ${VENV}shiv --site-packages dist --compressed \
     -p '/usr/bin/env python3' \
-    -o conductor-${CIRCLE_BUILD_NUM}.pyz \
+    -o conductor-${CIRCLE_SHA1}.pyz \
     -e conductor.main
