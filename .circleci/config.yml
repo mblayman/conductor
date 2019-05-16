@@ -65,7 +65,6 @@ jobs:
       - aws-s3/copy:
           from: "conductor-*.pyz"
           to: "s3://collegeconductor/apps"
-          arguments: "--dryrun"
 
 workflows:
   version: 2
