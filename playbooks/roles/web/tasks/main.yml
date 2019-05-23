@@ -30,6 +30,9 @@
   with_items:
     - python3-pip
     - python-virtualenv
+    # TODO: This was needed for Vagrant. I'm not sure why this was needed
+    # as I thought this was all running on Python 3.
+    - python-boto3  # To do S3 downloads
     - python3-boto3  # To do S3 downloads
 
 - name: Install fail2ban
@@ -83,9 +86,23 @@
 
 - name: Fetch from GitHub
   become: yes
-  git: repo=git@github.com:mblayman/conductor.git dest={{ app_path }} accept_hostkey=yes
+  git:
+    repo: git@github.com:mblayman/conductor.git
+    dest: "{{ app_path }}"
+    accept_hostkey: yes
   notify:
     - Restart application
+  register: gitfetch
+
+- name: Pull latest app from S3
+  become: yes
+  aws_s3:
+    bucket: collegeconductor
+    object: "/apps/conductor-{{ gitfetch.after }}.pyz"
+    dest: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    mode: get
+    aws_access_key: "{{ vault.aws.access_key_id }}"
+    aws_secret_key: "{{ vault.aws.secret_access_key }}"
 
 - name: Install Python dependencies
   become: yes
