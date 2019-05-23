@@ -5,7 +5,7 @@ import django
 from gunicorn.app import wsgiapp
 
 
-def main():
+def main() -> None:
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.development")
     django.setup()
 
