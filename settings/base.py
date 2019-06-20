@@ -3,6 +3,8 @@ from typing import List
 
 from celery.schedules import crontab
 
+import conductor
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
@@ -58,10 +60,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "conductor.urls"
 
+conductor_dir = os.path.dirname(conductor.__file__)
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(ROOT_DIR, "conductor", "templates")],
+        "DIRS": [os.path.join(conductor_dir, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
