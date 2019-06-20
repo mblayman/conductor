@@ -6,8 +6,18 @@ from gunicorn.app import wsgiapp
 
 
 def main() -> None:
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.development")
-    django.setup()
+    if len(sys.argv) > 1:
+        manage = sys.argv[1] == "manage"
+    else:
+        manage = False
 
-    sys.argv.append("conductor.wsgi:application")
-    wsgiapp.run()
+    if manage:
+        from django.core.management import execute_from_command_line
+
+        execute_from_command_line(sys.argv[1:])
+    else:
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.development")
+        django.setup()
+
+        sys.argv.append("conductor.wsgi:application")
+        wsgiapp.run()
