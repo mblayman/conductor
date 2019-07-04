@@ -104,6 +104,15 @@
     aws_access_key: "{{ vault.aws.access_key_id }}"
     aws_secret_key: "{{ vault.aws.secret_access_key }}"
 
+- name: Set the app executable
+  become: yes
+  file:
+    state: file
+    path: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    owner: www-data
+    group: www-data
+    mode: 0750
+
 - name: Install Python dependencies
   become: yes
   pip:
@@ -133,11 +142,39 @@
     enabled: yes
     state: started
 
+- name: Create the settings directory
+  become: yes
+  file:
+    state: directory
+    path: "/srv/apps/settings"
+    owner: www-data
+    group: www-data
+    mode: 0750
+
+- name: Copy the settings directory
+  become: yes
+  copy:
+    src: ../settings/
+    dest: "/srv/apps/settings"
+    owner: www-data
+    group: www-data
+    mode: 0640
+  notify:
+    - Restart Supervisor
+
 - name: Set secret settings file
+  become: yes
+  template:
+    src: _secrets.py
+    dest: "/srv/apps/settings/_secrets.py"
+  notify:
+    - Restart Supervisor
+
+- name: Set secret settings file
+  become: yes
   template:
     src: _secrets.py
     dest: "{{ app_path }}/settings/_secrets.py"
-  become: yes
   notify:
     - Restart Supervisor
 
