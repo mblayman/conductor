@@ -115,13 +115,6 @@
     owner: www-data
     group: www-data
 
-- name: Prime the app to pre-extract to the Shiv root area
-  become: yes
-  shell: "/srv/apps/conductor.pyz manage"
-  args:
-    chdir: "/srv/apps/"
-  environment: "{{ django_env }}"
-
 - name: Install Python dependencies
   become: yes
   pip:
@@ -186,6 +179,13 @@
     dest: "{{ app_path }}/settings/_secrets.py"
   notify:
     - Restart Supervisor
+
+- name: Prime the app to pre-extract to the Shiv root area
+  become: yes
+  shell: "/srv/apps/conductor.pyz manage"
+  args:
+    chdir: "/srv/apps/"
+  environment: "{{ django_env }}"
 
 - template: src=supervisord.conf.j2 dest=/etc/supervisor/supervisord.conf
   become: yes
