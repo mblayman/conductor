@@ -1,15 +1,7 @@
 [program:conductor]
-command=/usr/bin/uwsgi
-    --plugin python3
-    --socket /tmp/conductor-uwsgi.sock
-    --module conductor.wsgi:application
-    --enable-threads
-    --single-interpreter
-    --master
-    --pythonpath {{ app_path }}
-    --processes 4
-    --virtualenv {{ venv_path }}
-directory={{ app_path }}
+command=/srv/apps/conductor.pyz
+    --workers 4
+directory=/srv/apps
 user=www-data
 autostart=true
 autorestart=true

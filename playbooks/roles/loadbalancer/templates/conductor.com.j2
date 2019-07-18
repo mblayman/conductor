@@ -84,7 +84,14 @@ server {
     }
 
     location / {
-        uwsgi_pass  unix:///tmp/conductor-uwsgi.sock;
-        include     uwsgi_params;
+        try_files $uri @proxy_to_app;
+    }
+
+    location @proxy_to_app {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_pass http://127.0.0.1:8000;
     }
 }

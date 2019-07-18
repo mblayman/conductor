@@ -34,11 +34,6 @@
   notify:
     - Restart Nginx
 
-- template: src=uwsgi_params.j2 dest=/etc/nginx/uwsgi_params
-  become: yes
-  notify:
-    - Restart Nginx
-
 - name: Create symlink to conductor.com
   become: yes
   file: src=/etc/nginx/sites-available/conductor.com

@@ -9,13 +9,6 @@
   notify:
     - Start Nginx
 
-- name: Install uWSGI
-  become: yes
-  apt: name={{ item }} state=present
-  with_items:
-    - uwsgi
-    - uwsgi-plugin-python3
-
 - name: Install Git
   become: yes
   apt: name=git state=present
@@ -112,6 +105,22 @@
     owner: www-data
     group: www-data
     mode: 0750
+
+- name: Link to new app version
+  become: yes
+  file:
+    state: link
+    src: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    dest: "/srv/apps/conductor.pyz"
+    owner: www-data
+    group: www-data
+
+- name: Prime the app to pre-extract to the Shiv root area
+  become: yes
+  shell: "/srv/apps/conductor.pyz manage"
+  args:
+    chdir: "/srv/apps/"
+  environment: "{{ django_env }}"
 
 - name: Install Python dependencies
   become: yes

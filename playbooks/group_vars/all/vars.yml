@@ -9,6 +9,7 @@ venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
+  SHIV_ROOT: "/srv/apps/.shiv"
 
 static_root: /var/www/conductor/
 static_url: /static/
