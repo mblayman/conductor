@@ -10,6 +10,8 @@ from conductor.vendor.models import PromptSchool
 @celeryapp.task
 def scan_prompt() -> None:
     """Scan the Prompt website for new schools with essays."""
+    # TODO: This needs to be removed properly, but let's stop the rollbar errors.
+    return
     prompt_school_url = "http://pages.prompt.com/2018-2019prompts"
     response = requests.get(prompt_school_url, timeout=5)
     response.raise_for_status()
