@@ -229,13 +229,22 @@
   django_manage: command=migrate app_path={{ app_path }} virtualenv={{ venv_path }}
   environment: "{{ django_env }}"
 
+- name: Create templates directory
+  become: yes
+  file:
+    state: directory
+    path: /srv/apps/templates/
+    owner: www-data
+    group: www-data
+    mode: 0750
+
 - name: Make sitemap.xml
   become: yes
-  django_manage:
-    command: makesitemap
-    app_path: "{{ app_path }}"
-    virtualenv: "{{ venv_path }}"
+  shell: "/srv/apps/conductor.pyz manage makesitemap /srv/apps/templates/sitemap.xml"
+  args:
+    chdir: "/srv/apps/"
   environment: "{{ django_env }}"
+
 
 - name: Collect static files
   become: yes

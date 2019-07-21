@@ -1,8 +1,7 @@
-import os
+from argparse import ArgumentParser
 from typing import Any
 from xml.etree.ElementTree import Element, ElementTree, SubElement
 
-from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.urls import reverse
 
@@ -11,6 +10,9 @@ from conductor.planner.models import School
 
 class Command(BaseCommand):
     help = "Make a sitemap.xml"
+
+    def add_arguments(self, parser: ArgumentParser) -> None:
+        parser.add_argument("sitemap", help="path to output sitemap")
 
     def handle(self, *args: Any, **options: Any) -> None:
         """Build a sitemap.xml and output it to the templates directory."""
@@ -29,7 +31,7 @@ class Command(BaseCommand):
             url = self.build_url(reverse("school-detail", args=[school.slug]))
             sitemap.append(url)
 
-        self.write_sitemap(sitemap)
+        self.write_sitemap(sitemap, options["sitemap"])
 
     def build_url(
         self, path: str, change_frequency: str = "monthly", priority: float = 0.5
@@ -43,8 +45,5 @@ class Command(BaseCommand):
         priority_node.text = str(priority)
         return url
 
-    def write_sitemap(self, sitemap: Element) -> None:
-        sitemap_path = os.path.join(
-            settings.ROOT_DIR, "conductor", "templates", "sitemap.xml"
-        )
+    def write_sitemap(self, sitemap: Element, sitemap_path: str) -> None:
         ElementTree(sitemap).write(sitemap_path, encoding="UTF-8", xml_declaration=True)
