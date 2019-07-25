@@ -2,6 +2,23 @@ version: 2.1
 orbs:
   aws-s3: circleci/aws-s3@1.0.9
 jobs:
+  build-js:
+    docker:
+      - image: circleci/node:10.14.1
+    steps:
+      - checkout
+      - restore_cache:
+          key: js-cache-{{ checksum "frontend/package-lock.json" }}
+      - run:
+          name: Install JavaScript dependencies
+          command: |
+            cd frontend
+            npm install
+      - save_cache:
+          key: js-cache-{{ checksum "frontend/package-lock.json" }}
+          paths:
+            - frontend/node_modules
+
   build-py:
     docker:
       - image: circleci/python:3.6
@@ -67,6 +84,7 @@ workflows:
   version: 2
   pipeline:
     jobs:
+      - build-js
       - build-py
       - lint-py:
           requires:
