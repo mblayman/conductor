@@ -48,6 +48,7 @@ jobs:
             - venv
 
   build-assets:
+    docker:
       - image: circleci/python:3.6
     steps:
       - checkout
