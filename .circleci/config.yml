@@ -23,6 +23,10 @@ jobs:
           key: js-cache-{{ checksum "frontend/package-lock.json" }}
           paths:
             - frontend/node_modules
+      - save_cache:
+          key: assets-cache
+          paths:
+            - assets
 
   build-py:
     docker:
@@ -42,6 +46,19 @@ jobs:
           paths:
             - ~/.cache/pip
             - venv
+
+  build-assets:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - restore_cache:
+          key: assets-cache
+      - run:
+          name: Run collectstatic
+          command: |
+            venv/bin/python3 manage.py collectstatic --noinput
 
   lint-py:
     docker:
@@ -91,6 +108,10 @@ workflows:
     jobs:
       - build-js
       - build-py
+      - build-assets:
+          requires:
+            - build-js
+            - build-py
       - lint-py:
           requires:
             - build-py
