@@ -60,6 +60,10 @@ jobs:
           name: Run collectstatic
           command: |
             venv/bin/python3 manage.py collectstatic --noinput
+      - run:
+          name: Create assets tarball
+          command: |
+            tar czf assets-${CIRCLE_SHA1}.tar.gz static
 
   lint-py:
     docker:
