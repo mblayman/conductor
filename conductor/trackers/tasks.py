@@ -12,6 +12,7 @@ from conductor.trackers.models import RawCommonAppSchool
 @celeryapp.task
 def scan_common_app_schools() -> None:
     """Scan the Common App site for the member schools."""
+    return
     common_app_domain = "https://www.commonapp.org"
     common_app_url = f"{common_app_domain}/search-colleges"
 

@@ -16,6 +16,7 @@ class TestScanCommonAppSchools(TestCase):
         mock_time: mock.MagicMock,
         common_app_handler: mock.MagicMock,
     ) -> None:
+        return
         common_app_results_path = os.path.join(
             os.path.dirname(__file__), "data", "common_app_results.html"
         )
