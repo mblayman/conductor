@@ -63,7 +63,7 @@ jobs:
       - run:
           name: Create assets tarball
           command: |
-            tar czf assets-${CIRCLE_SHA1}.tar.gz static
+            tar czf assets-${CIRCLE_SHA1}.tar.gz -C static .
       - aws-s3/copy:
           from: "assets-*.tar.gz"
           to: "s3://collegeconductor/assets/"

@@ -245,17 +245,42 @@
     chdir: "/srv/apps/"
   environment: "{{ django_env }}"
 
+# - name: Collect static files
+#   become: yes
+#   become_user: www-data
+#   # Ansible has some weird permission error with becoming
+#   # a different user.
+#   # See https://github.com/ansible/ansible/issues/16048
+#   vars:
+#     ansible_ssh_pipelining: true
+#   django_manage:
+#     command: collectstatic
+#     app_path: "{{ app_path }}"
+#     virtualenv: "{{ venv_path }}"
+#   environment: "{{ django_env }}"
 
-- name: Collect static files
+- name: Create assets directory
   become: yes
-  become_user: www-data
-  # Ansible has some weird permission error with becoming
-  # a different user.
-  # See https://github.com/ansible/ansible/issues/16048
-  vars:
-    ansible_ssh_pipelining: true
-  django_manage:
-    command: collectstatic
-    app_path: "{{ app_path }}"
-    virtualenv: "{{ venv_path }}"
-  environment: "{{ django_env }}"
+  file:
+    path: /srv/assets
+    state: directory
+
+- name: Fetch assets from S3
+  become: yes
+  aws_s3:
+    bucket: collegeconductor
+    object: "/assets/assets-{{ gitfetch.after }}.tar.gz"
+    dest: "/srv/assets/assets-{{ gitfetch.after }}.tar.gz"
+    mode: get
+    aws_access_key: "{{ vault.aws.access_key_id }}"
+    aws_secret_key: "{{ vault.aws.secret_access_key }}"
+
+- name: Extract assets to static root
+  become: yes
+  unarchive:
+    src: "/srv/assets/assets-{{ gitfetch.after }}.tar.gz"
+    dest: "{{ static_root }}"
+    remote_src: yes
+    owner: www-data
+    group: www-data
+    mode: 0644
