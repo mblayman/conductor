@@ -277,10 +277,6 @@
 
 - name: Extract assets to static root
   become: yes
-  unarchive:
-    src: "/srv/assets/assets-{{ gitfetch.after }}.tar.gz"
-    dest: "{{ static_root }}"
-    remote_src: yes
-    owner: www-data
-    group: www-data
-    mode: 0644
+  shell: "tar xzf assets-{{ gitfetch.after }}.tar.gz -C {{ static_root }}"
+  args:
+    chdir: "/srv/assets/"
