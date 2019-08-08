@@ -280,3 +280,18 @@
   shell: "tar xzf assets-{{ gitfetch.after }}.tar.gz -C {{ static_root }}"
   args:
     chdir: "/srv/assets/"
+    warn: False
+
+- name: Ensure www-data owns static assets
+  become: yes
+  file:
+    path: "{{ static_root }}"
+    state: directory
+    recurse: yes
+    owner: www-data
+    group: www-data
+    mode: 0755
+
+- name: Ensure www-data owned files are not executable
+  become: yes
+  shell: "find {{ static_root }} -type f -exec chmod 644 -- {} +"
