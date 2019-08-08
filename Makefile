@@ -10,8 +10,7 @@ frontend:
 galaxy:
 	ansible-galaxy install \
 		Datadog.datadog \
-		kamaln7.swapfile \
-		nodesource.node
+		kamaln7.swapfile
 
 mypy:
 	@git ls-files | grep '.py$$' | grep -v 'migrations' | xargs mypy
