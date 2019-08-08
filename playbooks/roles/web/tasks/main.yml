@@ -214,7 +214,7 @@
 
 - name: Migrate the database
   become: yes
-  django_manage: command=migrate app_path={{ app_path }} virtualenv={{ venv_path }}
+  shell: "/srv/apps/conductor.pyz manage migrate --noinput"
   environment: "{{ django_env }}"
 
 - name: Create templates directory
@@ -229,8 +229,6 @@
 - name: Make sitemap.xml
   become: yes
   shell: "/srv/apps/conductor.pyz manage makesitemap /srv/apps/templates/sitemap.xml"
-  args:
-    chdir: "/srv/apps/"
   environment: "{{ django_env }}"
 
 - name: Create assets directory
