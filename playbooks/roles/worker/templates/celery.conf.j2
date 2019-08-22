@@ -1,32 +1,15 @@
 [program:celery]
-command={{ venv_path }}/bin/celery worker
-    --app conductor:celeryapp
+command=/srv/apps/conductor.pyz celery
     --loglevel INFO
     --concurrency 2
-directory={{ app_path }}
+    --beat
+    --schedule /tmp/celerybeat-schedule
+    --pidfile /tmp/celerybeat.pid
+directory=/srv/apps
 user=www-data
 autostart=true
 autorestart=true
 stdout_logfile=/var/log/celery.log
-redirect_stderr=true
-stopsignal=QUIT
-environment=
-    CELERY_WORKER_RUNNING="true",
-{% for env_var, env_value in django_env|dictsort %}
-    {{ env_var }}="{{ env_value }}",
-{% endfor %}
-
-[program:celerybeat]
-command={{ venv_path }}/bin/celery beat
-    --app conductor:celeryapp
-    --loglevel INFO
-    --schedule /tmp/celerybeat-schedule
-    --pidfile /tmp/celerybeat.pid
-directory={{ app_path }}
-user=www-data
-autostart=true
-autorestart=true
-stdout_logfile=/var/log/celerybeat.log
 redirect_stderr=true
 stopsignal=QUIT
 environment=
