@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-VENV=venv/bin/
+if [ -n "${CI}" ]; then
+    VENV=venv/bin/
+fi
 
 # Clean old build.
 rm -rf dist conductor.pyz
