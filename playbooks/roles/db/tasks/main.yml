@@ -96,6 +96,7 @@
     - { variable: AWS_ACCESS_KEY_ID, value: "{{ aws.access_key_id }}" }
     - { variable: AWS_SECRET_ACCESS_KEY, value: "{{ aws.secret_access_key }}" }
     - { variable: AWS_REGION, value: "{{ aws.region }}" }
+    - { variable: SHIV_ENTRY_POINT, value: "wal_e.cmd:main" }
     - { variable: WALE_S3_PREFIX, value: "{{ wale.s3_prefix }}" }
   no_log: True
 
@@ -106,7 +107,7 @@
     state: present
     job: >
       /usr/bin/envdir /etc/wal-e/env
-      {{ venv_path }}/bin/wal-e backup-push {{ postgres.storage_path }}
+      /srv/apps/conductor.pyz backup-push {{ postgres.storage_path }}
     user: postgres
     weekday: "0"
     hour: "2"

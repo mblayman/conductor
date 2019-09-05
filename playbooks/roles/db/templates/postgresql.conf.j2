@@ -216,7 +216,7 @@ dynamic_shared_memory_type = posix	# the default is the first option
 
 {% if deployment == "production" %}
 archive_mode = on
-archive_command = '/usr/bin/envdir /etc/wal-e/env {{ venv_path }}/bin/wal-e wal-push %p'
+archive_command = '/usr/bin/envdir /etc/wal-e/env /srv/apps/conductor.pyz wal-push %p'
 archive_timeout = 3600
 {% endif %}
 
