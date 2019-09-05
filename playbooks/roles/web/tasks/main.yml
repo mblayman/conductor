@@ -13,16 +13,10 @@
   become: yes
   apt: name=git state=present
 
-- name: Install Psycopg2
-  become: yes
-  apt: name=python3-psycopg2 state=present
-
-- name: Install Python package tools
+- name: Install Python bootstrapping tools
   become: yes
   apt: name={{ item }} state=present
   with_items:
-    - python3-pip
-    - python-virtualenv
     # TODO: This was needed for Vagrant. I'm not sure why this was needed
     # as I thought this was all running on Python 3.
     - python-boto3  # To do S3 downloads
@@ -114,16 +108,6 @@
     dest: "/srv/apps/conductor.pyz"
     owner: www-data
     group: www-data
-
-- name: Install Python dependencies
-  become: yes
-  pip:
-    requirements: "{{ app_path }}/requirements.txt"
-    virtualenv: "{{ venv_path }}"
-    virtualenv_site_packages: yes
-    virtualenv_python: python3
-  notify:
-    - Restart application
 
 - name: Enable supervisor
   become: yes
