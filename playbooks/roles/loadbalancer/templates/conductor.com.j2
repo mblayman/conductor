@@ -3,7 +3,6 @@ server {
     server_name {{ root_domain }};
 
     location /.well-known/acme-challenge {
-        # Using a common root with the client for Let's Encrypt.
         root {{ client_root }};
         allow all;
     }
@@ -37,7 +36,6 @@ server {
     server_name {{ client_domain }};
 
     location /.well-known/acme-challenge {
-        # Using a common root with the client for Let's Encrypt.
         root {{ client_root }};
         allow all;
     }

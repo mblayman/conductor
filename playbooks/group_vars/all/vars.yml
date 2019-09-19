@@ -1,11 +1,9 @@
 ---
 app_path: /srv/conductor
-frontend_path: "{{ app_path }}/frontend"
 
 client_domain: "www.{{ root_domain }}"
-client_root: "{{ frontend_path }}"
+client_root: "/usr/share/nginx/html"
 
-venv_path: /srv/virtualenv
 ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
