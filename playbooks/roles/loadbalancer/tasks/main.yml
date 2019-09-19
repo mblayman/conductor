@@ -115,17 +115,14 @@
 # Probably not the best place to notify about a deploy
 # but there will only be one load balancer and it is handled last
 # so this works for now.
-- name: Fetch Git repo info
+- name: Get the latest SHA from GitHub
   become: yes
-  git:
-    repo: git@github.com:mblayman/conductor.git
-    dest: "{{ app_path }}"
-    update: no
-  register: gitinfo
+  shell: "git ls-remote https://github.com/mblayman/conductor.git refs/heads/master | cut -f1"
+  register: gitsha
 
 - name: Notify Rollbar of deployment
   rollbar_deployment:
     environment: "{{ deployment }}"
-    revision: "{{ gitinfo.after }}"
+    revision: "{{ gitsha.stdout }}"
     token: "{{ secrets.rollbar.access_token }}"
     user: mblayman

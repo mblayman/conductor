@@ -56,5 +56,4 @@ STATIC_URL = "{{ static_url }}"
 STRIPE_API_KEY = "{{ secrets.stripe.api_key }}"
 STRIPE_PUBLISHABLE_KEY = "{{ secrets.stripe.publishable_key }}"
 
-# TODO: This should not be hardcoded. Once the clone is removed, repurpose app_path.
 TEMPLATES[0]["DIRS"].append("/srv/apps/templates")  # type: ignore

@@ -67,26 +67,17 @@
     path: /srv/apps
     state: directory
 
-- name: Create app directory
+- name: Get the latest SHA from GitHub
   become: yes
-  file: path={{ app_path }} state=directory
-
-- name: Fetch from GitHub
-  become: yes
-  git:
-    repo: git@github.com:mblayman/conductor.git
-    dest: "{{ app_path }}"
-    accept_hostkey: yes
-  notify:
-    - Restart application
-  register: gitfetch
+  shell: "git ls-remote https://github.com/mblayman/conductor.git refs/heads/master | cut -f1"
+  register: gitsha
 
 - name: Pull latest app from S3
   become: yes
   aws_s3:
     bucket: collegeconductor
-    object: "/apps/conductor-{{ gitfetch.after }}.pyz"
-    dest: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    object: "/apps/conductor-{{ gitsha.stdout }}.pyz"
+    dest: "/srv/apps/conductor-{{ gitsha.stdout }}.pyz"
     mode: get
     aws_access_key: "{{ vault.aws.access_key_id }}"
     aws_secret_key: "{{ vault.aws.secret_access_key }}"
@@ -95,7 +86,7 @@
   become: yes
   file:
     state: file
-    path: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    path: "/srv/apps/conductor-{{ gitsha.stdout }}.pyz"
     owner: www-data
     group: www-data
     mode: 0750
@@ -104,7 +95,7 @@
   become: yes
   file:
     state: link
-    src: "/srv/apps/conductor-{{ gitfetch.after }}.pyz"
+    src: "/srv/apps/conductor-{{ gitsha.stdout }}.pyz"
     dest: "/srv/apps/conductor.pyz"
     owner: www-data
     group: www-data
@@ -141,14 +132,6 @@
   template:
     src: _secrets.py
     dest: "/srv/apps/settings/_secrets.py"
-  notify:
-    - Restart Supervisor
-
-- name: Set secret settings file
-  become: yes
-  template:
-    src: _secrets.py
-    dest: "{{ app_path }}/settings/_secrets.py"
   notify:
     - Restart Supervisor
 
@@ -225,15 +208,15 @@
   become: yes
   aws_s3:
     bucket: collegeconductor
-    object: "/assets/assets-{{ gitfetch.after }}.tar.gz"
-    dest: "/srv/assets/assets-{{ gitfetch.after }}.tar.gz"
+    object: "/assets/assets-{{ gitsha.stdout }}.tar.gz"
+    dest: "/srv/assets/assets-{{ gitsha.stdout }}.tar.gz"
     mode: get
     aws_access_key: "{{ vault.aws.access_key_id }}"
     aws_secret_key: "{{ vault.aws.secret_access_key }}"
 
 - name: Extract assets to static root
   become: yes
-  shell: "tar xzf assets-{{ gitfetch.after }}.tar.gz -C {{ static_root }}"
+  shell: "tar xzf assets-{{ gitsha.stdout }}.tar.gz -C {{ static_root }}"
   args:
     chdir: "/srv/assets/"
     warn: False

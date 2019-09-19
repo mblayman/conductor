@@ -1,6 +1,4 @@
 ---
-app_path: /srv/conductor
-
 client_domain: "www.{{ root_domain }}"
 client_root: "/usr/share/nginx/html"
 
