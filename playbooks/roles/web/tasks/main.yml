@@ -53,14 +53,6 @@
   become: yes
   user: name=conductor createhome=no state=present
 
-- name: Create root .ssh directory
-  become: yes
-  file: path=/root/.ssh owner=root group=root mode=0700 state=directory
-
-- name: Add ssh private key
-  become: yes
-  copy: content="{{ ssh_private_key }}" dest=/root/.ssh/id_rsa mode="u=rw,g=,o="
-
 - name: Create apps directory
   become: yes
   file:

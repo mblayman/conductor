@@ -2,7 +2,6 @@
 client_domain: "www.{{ root_domain }}"
 client_root: "/usr/share/nginx/html"
 
-ssh_private_key: "{{ vault_ssh_private_key }}"
 django_env:
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
   SHIV_ROOT: "/srv/apps/.shiv"
