@@ -1,1 +1,2 @@
 recursive-include conductor/templates *
+recursive-include conductor/static *

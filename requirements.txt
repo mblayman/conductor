@@ -10,6 +10,7 @@ billiard==3.5.0.5         # via celery
 boto3==1.7.48
 boto==2.49.0              # via wal-e
 botocore==1.10.84         # via boto3, s3transfer
+brotli==1.0.7             # via whitenoise
 cachetools==3.1.0         # via google-auth
 celery==4.2.1
 django-anymail==3.0
@@ -45,3 +46,4 @@ stripe==2.11.0
 uritemplate==3.0.0        # via google-api-python-client
 vine==1.3.0               # via amqp
 wal-e[aws]==1.0.3
+whitenoise[brotli]==4.1.4

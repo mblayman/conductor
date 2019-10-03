@@ -16,3 +16,4 @@ requests==2.9.1
 rollbar==0.14.7
 stripe==2.11.0
 wal-e[aws]==1.0.3
+whitenoise[brotli]==4.1.4
