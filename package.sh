@@ -4,7 +4,7 @@ if [ -n "${CI}" ]; then
     VENV=venv/bin/
 fi
 
-python3 manage.py collectstatic
+python3 manage.py collectstatic --noinput
 
 ${VENV}shiv \
     --compressed \
