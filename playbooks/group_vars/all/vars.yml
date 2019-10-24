@@ -6,9 +6,6 @@ django_env:
   DJANGO_SETTINGS_MODULE: "{{ django_settings_module }}"
   SHIV_ROOT: "/srv/apps/.shiv"
 
-static_root: /var/www/conductor/
-static_url: /static/
-
 postgres:
   db: "{{ secrets.postgres.db }}"
   user: "{{ secrets.postgres.user }}"

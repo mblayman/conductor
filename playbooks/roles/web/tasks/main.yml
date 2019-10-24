@@ -152,15 +152,6 @@
   become: yes
   file: state=directory path=/var/www owner=root group=www-data mode=0750
 
-- name: Create STATIC_ROOT
-  become: yes
-  file:
-    state: directory
-    path: "{{ static_root }}"
-    owner: www-data
-    group: www-data
-    mode: 0750
-
 - name: Create MEDIA_ROOT
   become: yes
   file:
@@ -189,40 +180,3 @@
   become: yes
   shell: "/srv/apps/conductor.pyz manage makesitemap /srv/apps/templates/sitemap.xml"
   environment: "{{ django_env }}"
-
-- name: Create assets directory
-  become: yes
-  file:
-    path: /srv/assets
-    state: directory
-
-- name: Fetch assets from S3
-  become: yes
-  aws_s3:
-    bucket: collegeconductor
-    object: "/assets/assets-{{ gitsha.stdout }}.tar.gz"
-    dest: "/srv/assets/assets-{{ gitsha.stdout }}.tar.gz"
-    mode: get
-    aws_access_key: "{{ vault.aws.access_key_id }}"
-    aws_secret_key: "{{ vault.aws.secret_access_key }}"
-
-- name: Extract assets to static root
-  become: yes
-  shell: "tar xzf assets-{{ gitsha.stdout }}.tar.gz -C {{ static_root }}"
-  args:
-    chdir: "/srv/assets/"
-    warn: False
-
-- name: Ensure www-data owns static assets
-  become: yes
-  file:
-    path: "{{ static_root }}"
-    state: directory
-    recurse: yes
-    owner: www-data
-    group: www-data
-    mode: 0755
-
-- name: Ensure www-data owned files are not executable
-  become: yes
-  shell: "find {{ static_root }} -type f -exec chmod 644 -- {} +"
