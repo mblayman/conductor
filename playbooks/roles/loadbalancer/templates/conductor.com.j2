@@ -61,12 +61,6 @@ server {
     ssl_stapling on;
     ssl_stapling_verify on;
 
-    gzip on;
-    gzip_types text/css application/javascript;
-    gzip_proxied no-cache no-store private expired auth;
-    gzip_comp_level 5;
-    gzip_vary on;
-
     {% if deployment == "development" %}
         location /media/ {
             alias /var/www/media/;
@@ -74,12 +68,6 @@ server {
             add_header Cache-Control public;
         }
     {% endif %}
-
-    location {{ static_url }} {
-        alias {{ static_root }};
-        expires max;
-        add_header Cache-Control public;
-    }
 
     location / {
         try_files $uri @proxy_to_app;
