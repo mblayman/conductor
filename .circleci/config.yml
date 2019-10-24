@@ -24,7 +24,7 @@ jobs:
           paths:
             - frontend/node_modules
       - save_cache:
-          key: assets-cache
+          key: assets-cache-{{ .Revision }}
           paths:
             - assets
 
@@ -55,7 +55,7 @@ jobs:
       - restore_cache:
           key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
       - restore_cache:
-          key: assets-cache
+          key: assets-cache-{{ .Revision }}
       - run:
           name: Run collectstatic
           command: |
@@ -63,10 +63,14 @@ jobs:
       - run:
           name: Create assets tarball
           command: |
-            tar czf assets-${CIRCLE_SHA1}.tar.gz -C static .
+            tar czf assets-${CIRCLE_SHA1}.tar.gz -C conductor/static .
       - aws-s3/copy:
           from: "assets-*.tar.gz"
           to: "s3://collegeconductor/assets/"
+      - save_cache:
+          key: static-cache-{{ .Revision }}
+          paths:
+            - conductor/static
 
   lint-py:
     docker:
@@ -103,6 +107,8 @@ jobs:
       - checkout
       - restore_cache:
           key: py-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements-dev.txt" }}
+      - restore_cache:
+          key: static-cache-{{ .Revision }}
       - run:
           name: Package Shiv app
           command: ./package.sh
