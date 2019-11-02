@@ -20,6 +20,7 @@ django-waffle==0.15.1
 django==2.0.9
 docutils==0.14            # via botocore
 gevent==1.4.0             # via wal-e
+goodconf[yaml]==1.0.0
 google-api-python-client==1.6.4
 google-auth-httplib2==0.0.3
 google-auth-oauthlib==0.2.0
@@ -40,6 +41,8 @@ requests-oauthlib==1.2.0  # via google-auth-oauthlib
 requests==2.9.1
 rollbar==0.14.7
 rsa==4.0                  # via google-auth, oauth2client
+ruamel.yaml.clib==0.2.0   # via ruamel.yaml
+ruamel.yaml==0.16.5       # via goodconf
 s3transfer==0.1.13        # via boto3
 six==1.12.0               # via django-anymail, google-api-python-client, google-auth, oauth2client, python-dateutil, rollbar
 stripe==2.11.0
